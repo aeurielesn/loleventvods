@@ -1,0 +1,1820 @@
+/* Visited links color change */
+.entry a:visited {
+  color: #551a8b;
+}
+.entry a:visited[href="http://lol.eventvods.com"],
+.entry a:visited[href="lol.eventvods.com"] {
+  color: #369;
+}
+/* change width */
+.md {
+  max-width: 90em;
+}
+/* snoo winking! */
+#header-img-a:hover {
+  background: url(%%snoowink%%) 0 2px;
+}
+#header-img-a:hover #header-img {
+  visibility: hidden;
+}
+/* hides "new", "top" and other shpanortcuts */
+#header .tabmenu {
+  visibility: hidden;
+}
+#header .tabmenu li {
+  visibility: hidden;
+}
+/* Top message/announcement */
+.titlebox .usertext-body .md h6 {
+  display: block;
+  position: absolute;
+  top: 136px;
+  left: 10px;
+  background-color: #193064;
+  font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  color: white;
+  text-align: left;
+  padding: 8px 13px 26px 13px;
+  margin: 13px;
+  border-radius: 5px;
+}
+h6 a:link {
+  color: #F2E972;
+}
+h6 a:visited {
+  color: #F2E972;
+}
+.content {
+  padding-top: 2px;
+}
+.titlebox form {
+  position: static;
+}
+.side .md p > em {
+  display: inline-block;
+  padding: 5px;
+  background: #F6E69F;
+  border: 1px solid #ffa500;
+}
+.side .md p > em > strong {
+  font-style: italic;
+}
+/*hides the downvote arrow*/
+.arrow.down {
+  visibility: hidden;
+  display: none;
+}
+/*displays downvote arrow for comments only, after disabling*/
+.comment .arrow.down {
+  visibility: visible;
+  display: block;
+}
+/* Next 4 sections make deleted messages less noticeable -djimbob*/
+form.grayed,
+form.grayed ~ ul.flat-list.buttons {
+  display: none;
+}
+p.tagline > a.expand:first-child + em:after,
+div.collapsed > a.expand:first-child + em:after {
+  visibility: visible;
+  font-size: x-small;
+  font-weight: bold;
+  content: "Comment removed by user";
+}
+p.tagline > a.expand:first-child + em,
+div.collapsed > a.expand:first-child + em {
+  visibility: hidden;
+  font-size: 0;
+}
+div.collapsed > a.expand:first-child + em + time + a.expand,
+div.collapsed > a.expand:first-child + em + time + em + a.expand {
+  display: none;
+}
+/* notice below comments */
+.commentarea {
+  position: static;
+}
+.commentarea .usertext .usertext-edit:after {
+  content: "Note: Please use spoiler tag if you want to discuss/suggest recommended games, picks & bans or something else games related.";
+  display: block;
+  text-align: center;
+  margin-top: -5px;
+  padding: 4px;
+  background-color: #def;
+  border: 1px solid #59c;
+  font-size: 11px;
+  font-weight: bold;
+}
+/* hide "Create your own subreddit" button */
+div.sidebox.create {
+  display: none;
+}
+/* This lowers the links to create space */
+div.content {
+  margin-top: 50px;
+}
+/* tables */
+.md table {
+  border: 1px solid #444;
+  font-family: Arial, Helvetica, Sans-serif;
+  margin: 10px 0px;
+}
+.side .md table {
+  width: 100%;
+}
+.md table * {
+  border: 10px;
+}
+.md table th {
+  text-align: center;
+}
+.md table tr:nth-child(even),
+.md table thead {
+  background-color: #f6f6f6;
+}
+.md table td,
+.md table th {
+  border-right: 1px solid #888;
+  padding: 4px 8px;
+}
+.md th {
+  white-space: nowrap;
+  background-color: #444;
+  color: whitesmoke;
+  padding: 6px 10px;
+  border: 1px solid #444;
+}
+/* Message for non-subscribers 
+.content:before{  
+content: url(%%warning%%) " You're not subscribed to r/LoLeventVoDs yet! Click the subscribe button on the right to add the subreddit to your frontpage! ";
+margin:4px;
+color:#2e2e2e;
+}
+.subscriber .content:before{
+content: " " !important;
+}
+.side .content:before {
+content: " " !important
+}
+*/
+/* subscribers */
+.subscribers .word {
+  display: none;
+}
+.subscribers .number::after {
+  content: " subscribers";
+}
+/*users here now*/
+.users-online .word {
+  display: none;
+}
+.users-online .number::after {
+  content: " viewers online now";
+}
+/* User flair */
+.flairselector .customizer {
+  display: none !important;
+}
+.flair {
+  border: none !important;
+  padding: 0px;
+  background: url(%%flairs%%) no-repeat -9999px -9999px;
+  display: inline-block;
+}
+.flair-red {
+  background-position: 0 0;
+  width: 15px;
+  height: 15px;
+}
+.flair-yellow {
+  background-position: 0 -65px;
+  width: 15px;
+  height: 14px;
+}
+/* spoiler tag */
+.content a[href$="/spoiler"],
+.commentarea a[href$="/spoiler"],
+a[href$="/spoiler"] {
+  background: none repeat scroll 0 0 #000000 !important;
+  color: #000000 !important;
+  cursor: default;
+}
+.content a[href$="/spoiler"]:hover,
+.commentarea a[href$="/spoiler"]:hover,
+a[href$="/spoiler"]:hover {
+  color: #FFFFFF !important;
+}
+/* Spoiler tag version 2 
+a[href$="/spoiler"] {
+    background: #000 !important;
+    color: #000 !important;
+    border: 1px solid #000;
+    padding-right: 1px;
+}
+a[href$="/spoiler"]:hover {
+    color: #FFF !important;
+}
+a[href$="/spoiler"]::before {
+    background: #FFF !important;
+    color: #000 !important;
+    padding: 0px 1px;
+    margin: 0px;
+    margin-right: 1px;
+}
+a[href$="/spoiler"]::before {
+    content: "Spoiler";
+}
+a[href$="/spoiler"][title]::before {
+    content: attr(title) " Spoiler";
+}
+*/
+/* top message  
+body > .content:before {
+    content: "If you're looking for EG vs. DTG VoDs, please use links above until LCS post gets fixed!";
+    display: block;
+font-weight: bold;
+    margin: -10px 315px 10px 10px; 
+    background-color: #eeffdc;
+    padding: 8px;
+    font-size: 13px;
+    border: 1px solid #96c864;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px
+    }
+*/
+/* link-flair */
+.linkflair-ongoing .linkflairlabel {
+  padding: 2px 3px 3px 23px;
+  text-transform: uppercase;
+  margin-left: 1em;
+  background: #fafafa url(%%checkmark%%) 3px 2px no-repeat;
+  color: #777;
+  border-color: #dddddd;
+}
+/* link-flair ongoing TWITCH */
+.linkflair-twitchongoing .linkflairlabel {
+  padding: 2px 3px 3px 23px;
+  text-transform: uppercase;
+  margin-left: 1em;
+  background: #fafafa url(%%checkmark%%) 3px 2px no-repeat;
+  color: #777;
+  border-color: #dddddd;
+}
+/* link-flair finished */
+.linkflair-finished .linkflairlabel {
+  padding: 2px 3px 3px 23px;
+  text-transform: uppercase;
+  margin-left: 1em;
+  background: #fafafa url(%%finished%%) 3px 2px no-repeat;
+  color: #777;
+  border-color: #dddddd;
+}
+/* link-flair finished TWITCH */
+.linkflair-twitchfinished .linkflairlabel {
+  padding: 2px 3px 3px 23px;
+  text-transform: uppercase;
+  margin-left: 1em;
+  background: #fafafa url(%%finished%%) 3px 2px no-repeat;
+  color: #777;
+  border-color: #dddddd;
+}
+.linkflair-featured .linkflairlabel {
+  padding: 2px 3px 3px 23px;
+  text-transform: uppercase;
+  margin-left: 1em;
+  background: #fafafa url(%%checkmark%%) 3px 2px no-repeat;
+  color: #777;
+  border-color: #ddd;
+  font-weight: bold;
+}
+/* link-flair featured TWITCH */
+.linkflair-twitchfeatured .linkflairlabel {
+  padding: 2px 3px 3px 23px;
+  text-transform: uppercase;
+  margin-left: 1em;
+  background: #fafafa url(%%checkmark%%) 3px 2px no-repeat;
+  color: #777;
+  border-color: #dddddd;
+}
+/* link-flair incomplete */
+.linkflair-incomplete .linkflairlabel {
+  padding: 2px 3px 3px 23px;
+  text-transform: uppercase;
+  margin-left: 1em;
+  background: #fafafa url(%%incomplete%%) 3px 2px no-repeat;
+  color: #777;
+  border-color: #dddddd;
+}
+/* link-flair incomplete TWITCH */
+.linkflair-twitchincomplete .linkflairlabel {
+  padding: 2px 3px 3px 23px;
+  text-transform: uppercase;
+  margin-left: 1em;
+  background: #fafafa url(%%incomplete%%) 3px 2px no-repeat;
+  color: #777;
+  border-color: #dddddd;
+}
+/* link-flair upcoming  */
+.linkflair-upcoming .linkflairlabel {
+  padding: 2px 3px 3px 23px;
+  text-transform: uppercase;
+  margin-left: 1em;
+  background: #fafafa url(%%upcoming%%) 3px 2px no-repeat;
+  color: #777;
+  border-color: #dddddd;
+}
+/* link-flair upcoming TWITCH */
+.linkflair-twitchupcoming .linkflairlabel {
+  padding: 2px 3px 3px 23px;
+  text-transform: uppercase;
+  margin-left: 1em;
+  background: #fafafa url(%%upcoming%%) 3px 2px no-repeat;
+  color: #777;
+  border-color: #dddddd;
+}
+/* link-flair finished featured */
+.linkflair-finishedfeatured .linkflairlabel {
+  padding: 2px 3px 3px 23px;
+  text-transform: uppercase;
+  margin-left: 1em;
+  background: #fafafa url(%%finished%%) 3px 2px no-repeat;
+  color: #777;
+  border-color: #dddddd;
+}
+.linkflair-red a.title {
+  color: red !important;
+}
+.linkflair-featured a.title {
+  color: red !important;
+}
+.linkflair-finishedfeatured a.title {
+  color: red !important;
+}
+/* header 
+
+.side .md h6 {
+    position: absolute;
+    top: 40px;
+    left: 300px;
+    background: #eee;
+    border: 1px solid #666;
+    border-radius: 5px;
+    padding: 3px 5px;
+    z-index: 100;
+}
+header end */
+/* submit a new */
+.submit .morelink a {
+  content: '';
+  font-size: 0;
+}
+.submit .morelink a:before {
+  content: 'Submit new VoDs post';
+  font-size: 14px;
+}
+/* star */
+a[href$="star"] {
+  width: 16px;
+  height: 16px;
+  content: "";
+  background-image: url(%%star1%%);
+  position: relative;
+  display: inline-block;
+  cursor: default;
+}
+/* problems */
+a[href$="warning"] {
+  width: 16px;
+  height: 16px;
+  content: "";
+  background-image: url(%%usklicnik%%);
+  position: relative;
+  display: inline-block;
+  cursor: default;
+}
+/* youtube 
+a[href$="youtube1"] {
+    width: 32px;
+    height: 15px;
+    background-image: url(%%youtube1%%);   
+    display: inline-block;
+    cursor: text;
+}
+*/
+/* SIDEBAR CHANGES */
+.side h4,
+.side h5,
+.side h6 {
+  height: 0;
+}
+/* sidebar icons */
+.side a[href*='#icon-'] {
+  color: #000;
+  cursor: default;
+}
+.side a[href*='#icon-']:hover {
+  text-decoration: none;
+}
+.side a[href*='#icon-']::before {
+  display: inline-block;
+  height: 16px;
+  width: 16px;
+  content: '';
+  margin: 0 5px -1px 0;
+  background: url(%%sprites-05%%) 30px 30px no-repeat;
+}
+.side a[href='#icon-exclamation']::before {
+  background-position: -16px -32px;
+}
+.side a[href='#icon-information']::before {
+  background-position: -54px -51px;
+}
+.side a[href='#icon-lightbulb']::before {
+  background-position: -16px -51px;
+}
+.side a[href='#icon-comments']::before {
+  background-position: -35px -89px;
+}
+.side a[href='#icon-unhappy']::before {
+  background-position: -73px -89px;
+}
+.side a[href='#icon-check']::before {
+  background-position: -73px -51px;
+}
+.side a[href='#icon-clock']::before {
+  background-position: -35px -51px;
+}
+.side a[href='#icon-cross']::before {
+  background-position: -35px -70px;
+}
+.side a[href='#icon-smile']::before {
+  background-position: -54px -89px;
+}
+.side a[href='#icon-error']::before {
+  background-position: -54px -32px;
+}
+.side a[href='#icon-note']::before {
+  background-position: -54px -70px;
+}
+.side a[href='#icon-star']::before {
+  background-position: -73px -32px;
+}
+.side a[href='#icon-help']::before {
+  background-position: -16px -70px;
+}
+.side a[href='#icon-time']::before {
+  background-position: -73px -70px;
+}
+.side a[href='#icon-bell']::before {
+  background-position: -35px -32px;
+}
+.side a[href='#icon-eye']::before {
+  background-position: -16px -89px;
+}
+/* timestamps */
+.edited-timestamp::after {
+  content: " (" attr(title) ")";
+  font-size: 90%;
+}
+/* no flairs on front page */
+.listing-page .flair {
+  display: none;
+}
+/* header image */
+#header {
+  background: #02021a url(%%header%%) no-repeat;
+  background-position: 5px 20px;
+  height: 146px;
+}
+#header-bottom-left {
+  height: 20px;
+}
+.redditname a {
+  text-indent: -1px;
+  margin-top: 30px;
+  color: white;
+  font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
+  font-style: italic;
+  font-weight: normal;
+}
+#header-img-a,
+.redditname a,
+.tabmenu {
+  display: inline;
+  float: left;
+}
+.tabmenu {
+  position: relative;
+  top: 100%;
+  margin-top: 47px!important;
+}
+#header-bottom-left span.pagename a {
+  display: block;
+  height: 125px;
+  width: 228px;
+  margin-left: -20px;
+  margin-top: 2px;
+  background: url(%%logo%%) no-repeat scroll 0 0 transparent;
+  font-size: 0!important;
+}
+/* HEADER TEAM POPOUT MENU (credit: /u/gavin19) */
+.side h6 + ul {
+  list-style-type: none;
+  position: absolute;
+  top: 15px;
+  right: 70px;
+  z-index: 99;
+  margin: 0;
+  padding: 3em 0 3em 3em;
+}
+.side h6 + ul li {
+  display: block;
+}
+.side h6 + ul li ~ li {
+  display: none;
+}
+.side h6 + ul li:first-child {
+  position: absolute;
+  right: -60px;
+}
+.side h6 + ul li:first-child a {
+  display: block;
+  height: 60px;
+  width: 45px;
+  background: transparent url(%%lcs5%%) no-repeat 0 0px;
+}
+.side h6 + ul li:first-child a:hover {
+  opacity: .8;
+}
+.side h6 + ul li a[href="/r/LoLeventVoDs"]:before {
+  content: normal;
+}
+.side h6 + ul li a {
+  display: inline-block;
+  width: 30px;
+  height: 25px;
+  line-height: 0px;
+  margin: 0 0px;
+}
+.side .md h6 + ul li {
+  background-color: transparent!important;
+}
+/* Credit for code below goes to /u/Cryptonaut */
+.listing-page .tabmenu li a[href="http://www.reddit.com/promoted/"],
+.listing-page .tabmenu li a[href="http://www.reddit.com/saved/"],
+.listing-page .tabmenu li a[href="http://www.reddit.com/r/LoLeventVoDs/controversial/"],
+.listing-page .tabmenu li a[href="http://www.reddit.com/r/LoLeventVoDs/"],
+.listing-page .tabmenu li a[href="http://www.reddit.com/r/LoLeventVoDs/rising/"],
+.listing-page .tabmenu li a[href="http://www.reddit.com/r/LoLeventVoDs/top/"],
+a#viewImagesButton {
+  display: none;
+}
+/* sidebar
+.side .titlebox:before {
+    content: '';
+    background: #f7fbfc;
+    height: 40px;
+    width: 288px;
+    margin-left:-5px;
+    margin-top: -5px;
+    display: block;
+    border-radius: 10px;
+    position: absolute;
+    }
+.side .titlebox > *:not(form), .side .titlebox .flairtoggle {
+    position: relative;
+    background: transparent;
+    }
+.loggedin .side .titlebox:before { height: 60px; }
+.res.loggedin .titlebox:before { height: 145px; }
+.res:not(.loggedin) .titlebox:before { height: 102px; }
+
+ */
+/* Sidebar headings */
+.titlebox blockquote {
+  border: 1px solid #AAA;
+  text-shadow: 0 1px 0 white;
+  color: #000;
+  font-weight: bold;
+  border-radius: 10px;
+}
+.sidecontentbox .content,
+.linkinfo,
+.footer {
+  background: transparent !important;
+  font-size: small;
+  border: 1px solid #ccc;
+  margin: 7px 0 0;
+  border-radius: 10px;
+}
+.link.last-clicked {
+  overflow: hidden;
+}
+.titlebox h1 a {
+  display: none;
+}
+.titlebox {
+  padding: 10px;
+  background: transparent !important;
+  border: 1px solid #ccc;
+  color: #000;
+  border-radius: 10px;
+}
+.titlebox .bottom {
+  border: 0;
+}
+.titlebox form.toggle {
+  background-color: transparent !important;
+}
+.titlebox .usertext {
+  margin: 15px 0;
+  line-height: 120%;
+}
+.titlebox .usertext .md {
+  margin: 0;
+  padding: 0;
+  overflow: visible;
+}
+.titlebox .usertext .md h2 {
+  font-weight: bold;
+  color: #000 !important;
+}
+.titlebox .usertext .md > h1 {
+  font-size: large;
+  height: 15px;
+  line-height: 15px;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  background-color: #193064 !important;
+  width: 287px;
+  color: #fff !important;
+  padding: 5px 10px;
+  padding-left: 20px;
+  padding-right: 0;
+  margin-right: 13px;
+  margin-left: -18px;
+  border-bottom: 1px solid #193064 !important;
+  margin-bottom: 5px;
+  margin-top: 10px;
+  z-index: 100;
+}
+.titlebox .usertext .md > h1:after {
+  display: block;
+  content: "";
+  border-color: transparent #2B628D transparent transparent !important;
+  border-style: solid;
+  border-width: 15px;
+  height: 0;
+  width: 0;
+  position: absolute;
+  z-index: -1;
+  margin-left: -35px;
+  margin-top: -10px;
+}
+/* drop down */
+.side .md h3 {
+  margin-bottom: 8px;
+}
+.side .md h3 + p + table {
+  display: none;
+}
+.side .md h3 + p:hover + table,
+.side .md h3 + p + table:hover {
+  display: table;
+}
+.side .md h3 + p {
+  position: absolute;
+  margin-top: -25px;
+  height: 30px;
+  width: 294px;
+}
+.side {
+  z-index: -100;
+}
+.side .titlebox .md h3 + ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 3px;
+}
+.md {
+  overflow: visible;
+}
+.titlebox .md h3,
+.titlebox .md h3 a,
+.titlebox h1,
+.titlebox h1 a,
+.titlebox .md h2,
+.titlebox .md h2 a,
+.titlebox .md h4,
+.titlebox .md h4 a {
+  color: #000;
+}
+.sidecontentbox a.helplink {
+  margin-right: 5px;
+}
+.icon-menu a {
+  background: transparent;
+}
+.titlebox .md h3 + ul {
+  display: none;
+}
+.titlebox .md h3:hover + ul,
+.titlebox .md ul:hover {
+  display: block;
+}
+.titlebox .md ul li:hover {
+  background-color: #f7fbfc;
+}
+.titlebox .md h3,
+.titlebox .md h2,
+.titlebox .md h4 {
+  background-color: #ccc!important;
+  width: 280px;
+  height: 26px;
+  line-height: 26px;
+  font-weight: normal;
+  font-size: 12px;
+  padding-left: 20px;
+  margin-top: 4px;
+  margin-left: -11px;
+}
+.titlebox .md h3:after,
+.titlebox .md h2:after,
+.titlebox .md h4:after {
+  margin-bottom: 10px;
+}
+.titlebox .md h3:before {
+  content: "+";
+  color: #000;
+  padding-right: 5px;
+}
+/* table in sidebar */
+.side .md table th {
+  background: #193064;
+  border-top: none;
+  border-left: none;
+  border-bottom: none;
+  border-right: 1px solid #193064;
+  padding: .2em;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  text-shadow: 1px 1px 0 #000;
+  font-size: 11px;
+}
+.side .usertext table {
+  width: 280px;
+  color: #0a5a36!important;
+  font-size: 11px;
+  box-shadow: 1px 1px 1px #193064;
+  margin-top: 0;
+}
+.side .usertext table a {
+  color: #0a5a36;
+}
+.side .usertext table a:hover {
+  text-decoration: underline;
+}
+/* ALTERNATE ROW COLORS */
+.md tr:nth-of-type(odd) {
+  background: #fff;
+  color: #363636;
+}
+.md tr:nth-of-type(even) {
+  background: #EDEDED;
+  color: #363636;
+}
+/* ROW HOVER COLOR */
+.md table tr:hover {
+  background-color: #bdff8b;
+}
+/* top menu */
+.side .md [href="http://www.reddit.com/r/LoLeventVoDs/comments/1m2188/mobafire_challenger_series_season_1_playoffs/"] {
+  position: absolute;
+  display: block;
+  color: white!important;
+  z-index: 99;
+  top: 37px;
+  left: 300px;
+  background-color: #245275;
+  color: #fff;
+  text-align: left;
+  margin: 15px;
+  border-radius: 8px;
+  width: 50px;
+  padding: 7px 0px 7px 0px;
+  background-repeat: no-repeat;
+}
+/*
+.side .md [href="http://www.reddit.com/r/LoLeventVoDs/comments/1iiv7d/s3_lcs_north_america_summer_season_part_2/"] {
+    position:absolute;
+    display: block;
+    color: white!important;
+    z-index: 99;
+    top: 37px;
+    left: 360px;
+    background-color: #245275;
+    color: #fff;
+    text-align: left;
+    margin: 15px;
+    border-radius: 8px;
+    width: 50px;
+    padding: 7px 0px 7px 0px;
+    background-repeat: no-repeat;
+    }
+*/
+/*
+.side .md [href="http://redd.it/1jzos5"] {
+    position:absolute;
+    display: block;
+    color: white!important;
+    z-index: 99;
+    top: 37px;
+    left: 423px;
+    background-color: #245275;
+    color: #fff;
+    text-align: left;
+    margin: 15px;
+    border-radius: 8px;
+    width: 50px;
+    padding: 7px 0px 7px 0px;
+    background-repeat: no-repeat;
+    }
+*/
+/*
+.side .md [href="http://goo.gl/viofO"] {
+    position:absolute;
+    display: block;
+    color: white!important;
+    z-index: 99;
+    top: 37px;
+    left: 465px;
+    background-color: #245275;
+    color: #fff;
+    text-align: left;
+    margin: 15px;
+    border-radius: 8px;
+    width: 50px;
+    padding: 7px 0px 7px 0px;
+    background-repeat: no-repeat;
+    }
+*/
+/*
+.side .md [href="http://goo.gl/GLTl7"] {
+    position:absolute;
+    display: block;
+    color: white!important;
+    z-index: 99;
+    top: 37px;
+    left: 508px;
+    background-color: #245275;
+    color: #fff;
+    text-align: left;
+    margin: 15px;
+    border-radius: 8px;
+    width: 50px;
+    padding: 7px 0px 7px 0px;
+    background-repeat: no-repeat;
+    }
+*/
+.side .md [href="http://www.reddit.com/r/LoLeventVoDs/comments/1ibxqe/lpl_2013_summer_season/"] {
+  position: absolute;
+  display: block;
+  color: white!important;
+  z-index: 99;
+  top: 37px;
+  left: 350px;
+  background-color: #245275;
+  color: #fff;
+  text-align: left;
+  margin: 15px;
+  border-radius: 8px;
+  width: 50px;
+  padding: 7px 0px 7px 0px;
+  background-repeat: no-repeat;
+}
+/* drop down menu top 
+
+.side .md blockquote {
+    position: absolute;
+    top: 47px;
+    left: 340px;
+    border: 5px none;
+    z-index: 99;
+    color: white;
+}
+.side .md blockquote ol {
+    list-style: none;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    color: white;
+    
+}
+.side .md blockquote a:link    {color:white;}
+.side .md blockquote a:visited {color:white;}
+.side .md blockquote ol li { display: none; }
+.side .md blockquote ol li:first-child, .side .md blockquote ol:hover li { display: block; }
+
+.side .md blockquote ul+ul:first-child { width: 80px }
+.side .md blockquote ul+ul { margin-left: 60px; }
+
+ */
+.side .leavecontributor-button,
+table .keyNavAnnotation {
+  display: none;
+}
+.side a[href="http://goo.gl/3kRqh"] {
+  display: inline-block;
+  text-align: center;
+  height: 32px;
+  width: 32px;
+  background: url(%%twitter%%) no-repeat 0 0;
+}
+.side a[href="http://goo.gl/YrFC9"] {
+  display: inline-block;
+  text-align: center;
+  height: 32px;
+  width: 32px;
+  background: url(%%facebook%%) no-repeat 0 0;
+}
+.side a[href="http://goo.gl/BDoQm"] {
+  display: inline-block;
+  text-align: center;
+  height: 32px;
+  width: 32px;
+  background: url(%%youtube%%) no-repeat 0 0;
+}
+/*Sidebar event links */
+.side a[href="http://redd.it/1mdzso"] {
+  display: block;
+  margin-left: -10px;
+  margin-top: -4px;
+  height: 100px;
+  width: 300px;
+  background-image: url(%%worlds2%%);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+.side a[href="http://redd.it/1mdzso"]:hover {
+  background-position: 0 -100px;
+}
+/* twitch, youtube and azubu */
+.streams-azubu1 {
+  background-position: 0 0;
+  width: 120px;
+  height: 22px;
+}
+.streams-azubu2 {
+  background-position: 0 -72px;
+  width: 120px;
+  height: 22px;
+}
+.streams-twitch1 {
+  background-position: 0 -144px;
+  width: 100px;
+  height: 33px;
+}
+.streams-twitch2 {
+  background-position: 0 -227px;
+  width: 100px;
+  height: 33px;
+}
+.streams-youtube1 {
+  background-position: 0 -310px;
+  width: 75px;
+  height: 27px;
+}
+.streams-youtube2 {
+  background-position: 0 -387px;
+  width: 75px;
+  height: 27px;
+}
+/*
+a[href="#azubu"]:after, a[href="#twitch"]:after, a[href="#youtube"]:after{
+content:'';
+	width: 120px;
+	height: 33px;
+	background: transparent url(%%streams%%) no-repeat;
+	display: inline-block;
+	vertical-align: middle;
+	cursor: default !important;
+}
+a[href="#azubu"]:nth-of-type(n):after{
+	background-position: 0px 0px
+}
+
+a[href="#twitch"]:nth-of-type(n):after{
+	background-position: 0px -72px
+}
+
+a[href="#youtube"]:nth-of-type(n):after{
+	background-position: 0px -155px
+}
+*/
+.side .md [href="http://www.youtube.com/watch?v=jWZgBCexH2s"] {
+  position: absolute;
+  display: block;
+  color: white!important;
+  z-index: 99;
+  top: 47px;
+  left: 300px;
+  color: #fff;
+  text-align: left;
+  margin: 15px;
+  width: 75px;
+  height: 27px;
+  border-radius: 8px;
+  padding: 7px 0px 7px 0px;
+  background-image: url(%%streams%%);
+  background-repeat: no-repeat;
+  background-position: 0 -310px;
+  opacity: 0.6;
+}
+.side a[href="http://www.youtube.com/watch?v=jWZgBCexH2s"]:hover {
+  background-position: 0 -310px;
+  opacity: 1;
+}
+.side .md [href="http://www.twitch.tv/riotgames"] {
+  position: absolute;
+  display: block;
+  color: white!important;
+  z-index: 99;
+  top: 46px;
+  left: 390px;
+  color: #fff;
+  text-align: left;
+  margin: 15px;
+  width: 100px;
+  height: 33px;
+  border-radius: 8px;
+  padding: 7px 0px 7px 0px;
+  background-image: url(%%streams%%);
+  background-repeat: no-repeat;
+  background-position: 0 -144px;
+  opacity: 0.6;
+}
+.side a[href="http://www.twitch.tv/riotgames"]:hover {
+  background-position: 0 -144px;
+  opacity: 1;
+}
+.side .md [href="http://www.azubu.tv/channel/detail.do?cn_id=2125982449001&menu=1"] {
+  position: absolute;
+  display: block;
+  color: white!important;
+  z-index: 99;
+  top: 52px;
+  left: 510px;
+  color: #fff;
+  text-align: left;
+  margin: 15px;
+  width: 120px;
+  height: 22px;
+  border-radius: 8px;
+  padding: 7px 0px 7px 0px;
+  background-image: url(%%streams%%);
+  background-repeat: no-repeat;
+  background-position: 0 0px;
+  opacity: 0.6;
+}
+.side a[href="http://www.azubu.tv/channel/detail.do?cn_id=2125982449001&menu=1"]:hover {
+  background-position: 0 0px;
+  opacity: 1;
+}
+.side .md [href="#top"] {
+  position: absolute;
+  display: block;
+  color: #e5e5e5!important;
+  z-index: 99;
+  top: 15px;
+  left: 300px;
+  color: #fff;
+  text-align: left;
+  margin: 15px;
+  height: 27px;
+  border-radius: 8px;
+  padding: 7px 0px 7px 0px;
+}
+.side .md [href="https://www.youtube.com/watch?v=tam2mPPsQqs"] {
+  position: absolute;
+  display: block;
+  color: #e5e5e5!important;
+  z-index: 99;
+  top: 100px;
+  left: 300px;
+  color: #fff;
+  text-align: left;
+  margin: 15px;
+  height: 27px;
+  border-radius: 8px;
+  padding: 7px 0px 7px 0px;
+}
+.side .md [href="http://www.youtube.com/watch?v=3cImB8CNPpA"] {
+  position: absolute;
+  display: block;
+  color: #e5e5e5!important;
+  z-index: 99;
+  top: 100px;
+  left: 450px;
+  color: #fff;
+  text-align: left;
+  margin: 15px;
+  height: 27px;
+  border-radius: 8px;
+  padding: 7px 0px 7px 0px;
+}
+.flags-belgium,
+.flags-checzrepublic,
+.flags-denmark,
+.flags-estonia,
+.flags-finland,
+.flags-france,
+.flags-germany,
+.flags-lithuania,
+.flags-netherlands,
+.flags-norway,
+.flags-poland,
+.flags-russia,
+.flags-scotland,
+.flags-spain,
+.flags-sweden {
+  width: 16px;
+  height: 11px;
+}
+.flags-belgium {
+  background-position: 0 0;
+}
+.flags-checzrepublic {
+  background-position: 0 -61px;
+}
+.flags-denmark {
+  background-position: 0 -122px;
+}
+.flags-estonia {
+  background-position: 0 -183px;
+}
+.flags-finland {
+  background-position: 0 -244px;
+}
+.flags-france {
+  background-position: 0 -305px;
+}
+.flags-germany {
+  background-position: 0 -366px;
+}
+.flags-lithuania {
+  background-position: 0 -427px;
+}
+.flags-netherlands {
+  background-position: 0 -488px;
+}
+.flags-norway {
+  background-position: 0 -549px;
+}
+.flags-poland {
+  background-position: 0 -610px;
+}
+.flags-russia {
+  background-position: 0 -671px;
+}
+.flags-scotland {
+  background-position: 0 -732px;
+}
+.flags-spain {
+  background-position: 0 -793px;
+}
+.flags-sweden {
+  background-position: 0 -854px;
+}
+a[href="#belgium"]:after,
+a[href="#checzrepublic"]:after,
+a[href="#denmark"]:after,
+a[href="#estonia"]:after,
+a[href="#finland"]:after,
+a[href="#france"]:after,
+a[href="#germany"]:after,
+a[href="#lithuania"]:after,
+a[href="#netherlands"]:after,
+a[href="#norway"]:after,
+a[href="#poland"]:after,
+a[href="#russia"]:after,
+a[href="#scotland"]:after,
+a[href="#spain"]:after,
+a[href="#sweden"]:after {
+  content: "";
+  width: 16px;
+  height: 11px;
+  background: url(%%flags%%) no-repeat scroll 16px 11px transparent;
+  display: inline-block;
+  vertical-align: middle;
+  cursor: default !important;
+}
+a[href="#belgium"]:after {
+  background-position: 0 0;
+}
+a[href="#checzrepublic"]:after {
+  background-position: 0 -61px;
+}
+a[href="#denmark"]:after {
+  background-position: 0 -122px;
+}
+a[href="#estonia"]:after {
+  background-position: 0 -183px;
+}
+a[href="#finland"]:after {
+  background-position: 0 -244px;
+}
+a[href="#france"]:after {
+  background-position: 0 -305px;
+}
+a[href="#germany"]:after {
+  background-position: 0 -366px;
+}
+a[href="#lithuania"]:after {
+  background-position: 0 -427px;
+}
+a[href="#netherlands"]:after {
+  background-position: 0 -488px;
+}
+a[href="#norway"]:after {
+  background-position: 0 -549px;
+}
+a[href="#poland"]:after {
+  background-position: 0 -610px;
+}
+a[href="#russia"]:after {
+  background-position: 0 -671px;
+}
+a[href="#scotland"]:after {
+  background-position: 0 -732px;
+}
+a[href="#spain"]:after {
+  background-position: 0 -793px;
+}
+a[href="#sweden"]:after {
+  background-position: 0 -854px;
+}
+.thing .thumbnail[href*="iem_cologne"],
+.thing .thumbnail[href*="gfinity"],
+.thing .thumbnail[href*="mobafire"],
+.thing .thumbnail[href*="gpl"],
+.thing .thumbnail[href*="lcs"],
+.thing .thumbnail[href*="iem"],
+.thing .thumbnail[href*="mlg"],
+.thing .thumbnail[href*="starswar"],
+.thing .thumbnail[href*="ign"],
+.thing .thumbnail[href*="ipl"],
+.thing .thumbnail[href*="regionals"],
+.thing .thumbnail[href*="dreamhack"],
+.thing .thumbnail[href*="tales"],
+.thing .thumbnail[href*="lone"],
+.thing .thumbnail[href*="2_championship"],
+.thing .thumbnail[href*="world_championships"],
+.thing .thumbnail[href*="2_korean"],
+.thing .thumbnail[href*="2_european"],
+.thing .thumbnail[href*="2_south"],
+.thing .thumbnail[href*="na_regionals_com"],
+.thing .thumbnail[href*="pandoratv"],
+.thing .thumbnail[href*="ogn_champ"],
+.thing .thumbnail[href*="ogn_hot"],
+.thing .thumbnail[href*="ogn_ol"],
+.thing .thumbnail[href*="ogn_lol"],
+.thing .thumbnail[href*="shangai"],
+.thing .thumbnail[href*="monster"],
+.thing .thumbnail[href*="lpl"],
+.thing .thumbnail[href*="nlb_spring"],
+.thing .thumbnail[href*="world"],
+.thing .thumbnail[href*="with_the"] {
+  background-position: 0;
+  padding: 0;
+}
+.thing .thumbnail[href*="iem_cologne"],
+.thing .thumbnail[href*="iem"] {
+  background: url(%%iem%%) no-repeat scroll transparent;
+}
+.thing .thumbnail[href*="gfinity"] {
+  background: url(%%gfinity%%) no-repeat scroll transparent;
+}
+.thing .thumbnail[href*="mobafire"] {
+  background: url(%%mcs2%%) no-repeat scroll transparent;
+}
+.thing .thumbnail[href*="gpl"] {
+  background: url(%%gpl%%) no-repeat scroll transparent;
+}
+.thing .thumbnail[href*="lcs"] {
+  background: url(%%lcs2%%) no-repeat scroll transparent;
+}
+.thing .thumbnail[href*="mlg"] {
+  background: url(%%mlg%%) no-repeat scroll transparent;
+}
+.thing .thumbnail[href*="starswar"] {
+  background: url(%%swl%%) no-repeat scroll transparent;
+}
+.thing .thumbnail[href*="ign"],
+.thing .thumbnail[href*="ipl"] {
+  background: url(%%ign%%) no-repeat scroll transparent;
+}
+.thing .thumbnail[href*="regionals"],
+.thing .thumbnail[href*="2_championship"],
+.thing .thumbnail[href*="world_championships"],
+.thing .thumbnail[href*="2_korean"],
+.thing .thumbnail[href*="2_european"],
+.thing .thumbnail[href*="2_south"],
+.thing .thumbnail[href*="na_regionals_com"] {
+  background: url(%%s2wc%%) no-repeat scroll transparent;
+}
+.thing .thumbnail[href*="tales"] {
+  background: url(%%tales%%) no-repeat scroll transparent;
+}
+.thing .thumbnail[href*="lone"] {
+  background: url(%%lonestar%%) no-repeat scroll transparent;
+}
+.thing .thumbnail[href*="pandoratv"],
+.thing .thumbnail[href*="ogn_champ"],
+.thing .thumbnail[href*="ogn_hot"],
+.thing .thumbnail[href*="ogn_ol"],
+.thing .thumbnail[href*="ogn_lol"] {
+  background: url(%%ogn%%) no-repeat scroll transparent;
+}
+.thing .thumbnail[href*="shangai"] {
+  background: url(%%shanghai%%) no-repeat scroll transparent;
+}
+.thing .thumbnail[href*="monster"] {
+  background: url(%%bmc%%) no-repeat scroll transparent;
+}
+.thing .thumbnail[href*="lpl"] {
+  background: url(%%lpl2%%) no-repeat scroll transparent;
+}
+.thing .thumbnail[href*="nlb_spring"] {
+  background: url(%%nlb-spring%%) no-repeat scroll transparent;
+}
+.thing .thumbnail[href*="world"] {
+  background: url(%%worlds3%%) no-repeat scroll transparent;
+}
+.thing .thumbnail[href*="with_the"] {
+  background: url(%%android%%) no-repeat scroll transparent;
+}
+a[href="#america"]:after,
+a[href="#china"]:after,
+a[href="#europe"]:after,
+a[href="#korea"]:after,
+a[href="#sea"]:after {
+  content: "";
+  width: 16px;
+  height: 11px;
+  background: url(%%allstar%%) no-repeat scroll 16px 11px transparent;
+  display: inline-block;
+  vertical-align: 1%;
+  cursor: default !important;
+}
+a[href="#america"]:after {
+  background-position: 0px 0px;
+}
+a[href="#china"]:after {
+  background-position: 0px -61px;
+}
+a[href="#europe"]:after {
+  background-position: 0px -122px;
+}
+a[href="#korea"]:after {
+  background-position: 0px -183px;
+}
+a[href="#sea"]:after {
+  background-position: 0px -244px;
+}
+a[href="#dp"]:after,
+a[href="#dru"]:after,
+a[href="#ete"]:after,
+a[href="#hc"]:after,
+a[href="#rg"]:after {
+  content: "";
+  width: 36px;
+  height: 20px;
+  background: url(%%teams4%%) no-repeat scroll 36px 20px transparent;
+  display: inline-block;
+  vertical-align: middle;
+  cursor: default !important;
+}
+a[href="#dp"]:after {
+  background-position: 0px 0px;
+}
+a[href="#dru"]:after {
+  background-position: 0px -66px;
+}
+a[href="#ete"]:after {
+  background-position: 0px -132px;
+}
+a[href="#hc"]:after {
+  background-position: 0px -198px;
+}
+a[href="#rg"]:after {
+  background-position: 0px -264px;
+}
+a[href="#atn"]:after,
+a[href="#anexis"]:after,
+a[href="#azure"]:after,
+a[href="#c9"]:after,
+a[href="#cjb"]:after,
+a[href="#clg"]:after,
+a[href="#coast"]:after,
+a[href="#col"]:after,
+a[href="#crs"]:after,
+a[href="#cw"]:after,
+a[href="#db"]:after,
+a[href="#dbl"]:after,
+a[href="#dig"]:after,
+a[href="#eg"]:after,
+a[href="#esuba"]:after,
+a[href="#eternity"]:after,
+a[href="#fid"]:after,
+a[href="#fnatic"]:after,
+a[href="#gambit"]:after,
+a[href="#gaming"]:after,
+a[href="#ggu"]:after,
+a[href="#gia"]:after,
+a[href="#im"]:after,
+a[href="#ld"]:after,
+a[href="#marn"]:after,
+a[href="#millenium"]:after,
+a[href="#mrn"]:after,
+a[href="#mym"]:after,
+a[href="#nip"]:after,
+a[href="#pain"]:after,
+a[href="#gq"]:after,
+a[href="#roughnex"]:after,
+a[href="#sk"]:after,
+a[href="#skt"]:after,
+a[href="#tap"]:after,
+a[href="#ts"]:after,
+a[href="#tsb"]:after,
+a[href="#tsm"]:after,
+a[href="#ves"]:after,
+a[href="#vul"]:after {
+  content: '';
+  width: 36px;
+  height: 20px;
+  background: transparent url(%%teams%%) no-repeat;
+  display: inline-block;
+  vertical-align: middle;
+  cursor: default !important;
+}
+a[href*="#atn"]:after {
+  background-position: 0px 0px;
+}
+a[href="#anexis"]:after {
+  background-position: 0px -66px;
+}
+a[href="#azure"]:after {
+  background-position: 0px -132px;
+}
+a[href="#c9"]:after {
+  background-position: 0px -198px;
+}
+a[href="#cjb"]:after {
+  background-position: 0px -264px;
+}
+a[href="#clg"]:after {
+  background-position: 0px -330px;
+}
+a[href="#coast"]:after {
+  background-position: 0px -396px;
+}
+a[href="#col"]:after {
+  background-position: 0px -462px;
+}
+a[href="#crs"]:after {
+  background-position: 0px -528px;
+}
+a[href="#cw"]:after {
+  background-position: 0px -594px;
+}
+a[href="#db"]:after {
+  background-position: 0px -660px;
+}
+a[href="#dbl"]:after {
+  background-position: 0px -726px;
+}
+a[href="#dig"]:after {
+  background-position: 0px -792px;
+}
+a[href="#eg"]:after {
+  background-position: 0px -858px;
+}
+a[href="#esuba"]:after {
+  background-position: 0px -924px;
+}
+a[href="#eternity"]:after {
+  background-position: 0px -994px;
+}
+a[href="#fid"]:after {
+  background-position: 0px -1064px;
+}
+a[href="#fnatic"]:after {
+  background-position: 0px -1130px;
+}
+a[href="#gambit"]:after {
+  background-position: 0px -1196px;
+}
+a[href="#gaming"]:after {
+  background-position: 0px -1262px;
+}
+a[href="#ggu"]:after {
+  background-position: 0px -1327px;
+}
+a[href="#gia"]:after {
+  background-position: 0px -1393px;
+}
+a[href="#im"]:after {
+  background-position: 0px -1459px;
+}
+a[href="#ld"]:after {
+  background-position: 0px -1525px;
+}
+a[href="#marn"]:after {
+  background-position: 0px -1591px;
+}
+a[href="#millenium"]:after {
+  background-position: 0px -1657px;
+}
+a[href="#mrn"]:after {
+  background-position: 0px -1723px;
+}
+a[href="#mym"]:after {
+  background-position: 0px -1789px;
+}
+a[href="#nip"]:after {
+  background-position: 0px -1855px;
+}
+a[href="#pain"]:after {
+  background-position: 0px -1921px;
+}
+a[href="#qg"]:after {
+  background-position: -88px 0px;
+}
+a[href="#roughnex"]:after {
+  background-position: -88px -66px;
+}
+a[href="#sk"]:after {
+  background-position: -88px -136px;
+}
+a[href="#skt"]:after {
+  background-position: -88px -202px;
+}
+a[href="#tap"]:after {
+  background-position: -88px -268px;
+}
+a[href="#ts"]:after {
+  background-position: -88px -334px;
+}
+a[href="#tsb"]:after {
+  background-position: -88px -400px;
+}
+a[href*="#tsm"]:after {
+  background-position: -88px -466px;
+}
+a[href="#ves"]:after {
+  background-position: -88px -532px;
+}
+a[href="#vul"]:after {
+  background-position: -88px -598px;
+}
+a[href="#aaa"]:after,
+a[href="#mouz"]:after,
+a[href="#sns"]:after,
+a[href="#tcm"]:after,
+a[href="#wizards"]:after {
+  content: "";
+  width: 36px;
+  height: 20px;
+  background: url(%%teams2%%) no-repeat scroll 36px 20px transparent;
+  display: inline-block;
+  vertical-align: middle;
+  cursor: default !important;
+}
+a[href="#aaa"]:after {
+  background-position: 0px 0px;
+}
+a[href="#mouz"]:after {
+  background-position: 0px -66px;
+}
+a[href="#sns"]:after {
+  background-position: 0px -132px;
+}
+a[href="#tcm"]:after {
+  background-position: 0px -198px;
+}
+a[href="#wizards"]:after {
+  background-position: 0px -264px;
+}
+a[href="#azure"]:after,
+a[href="#dbl"]:after,
+a[href="#fid"]:after,
+a[href="#qg"]:after,
+a[href="#tap"]:after,
+a[href="#ts"]:after,
+a[href="#tsb"]:after,
+a[href="#ves"]:after {
+  content: "";
+  width: 36px;
+  height: 20px;
+  background: url(%%teams3%%) no-repeat scroll 36px 20px transparent;
+  display: inline-block;
+  vertical-align: middle;
+  cursor: default !important;
+}
+a[href="#azure"]:after {
+  background-position: 0px 0px;
+}
+a[href="#dbl"]:after {
+  background-position: 0px -66px;
+}
+a[href="#fid"]:after {
+  background-position: 0px -132px;
+}
+a[href="#qg"]:after {
+  background-position: 0px -198px;
+}
+a[href="#tap"]:after {
+  background-position: 0px -264px;
+}
+a[href="#ts"]:after {
+  background-position: 0px -330px;
+}
+a[href="#tsb"]:after {
+  background-position: 0px -396px;
+}
+a[href="#ves"]:after {
+  background-position: 0px -462px;
+}
+a[href="#ig"]:after,
+a[href="#omg"]:after,
+a[href="#pe"]:after,
+a[href="#we"]:after {
+  content: "";
+  width: 36px;
+  height: 20px;
+  background: url(%%lpl%%) no-repeat scroll 36px 20px transparent;
+  display: inline-block;
+  vertical-align: middle;
+  cursor: default !important;
+}
+a[href="#ig"]:after {
+  background-position: 0px 0px;
+}
+a[href="#omg"]:after {
+  background-position: 0px -66px;
+}
+a[href="#pe"]:after {
+  background-position: 0px -132px;
+}
+a[href="#we"]:after {
+  background-position: 0px -198px;
+}
+a[href="#aware"]:after,
+a[href="#fxo"]:after {
+  content: "";
+  width: 36px;
+  height: 20px;
+  background: url(%%teams5%%) no-repeat scroll 36px 20px transparent;
+  display: inline-block;
+  vertical-align: middle;
+  cursor: default !important;
+}
+a[href="#aware"]:after {
+  background-position: 0px 0px;
+}
+a[href="#fxo"]:after {
+  background-position: 0px -66px;
+}
+a[href="#awg"]:after,
+a[href="#colA"]:after,
+a[href="#crsA"]:after,
+a[href="#dnl"]:after,
+a[href="#ggLA"]:after,
+a[href="#nwe"]:after,
+a[href="#rxg"]:after,
+a[href="#tbd"]:after,
+a[href="#ts"]:after,
+a[href="#tt"]:after,
+a[href="#ttd"]:after,
+a[href="#wzb"]:after,
+a[href="#xts"]:after,
+a[href="#iodd"]:after {
+  content: "";
+  width: 38px;
+  height: 16px;
+  background: url(%%mcs%%) no-repeat scroll 38px 16px transparent;
+  display: inline-block;
+  vertical-align: middle;
+  cursor: default !important;
+}
+a[href="#awg"]:after {
+  background-position: 0px 0px;
+}
+a[href="#colA"]:after {
+  background-position: 0px -66px;
+}
+a[href="#crsA"]:after {
+  background-position: 0px -132px;
+}
+a[href="#dnl"]:after {
+  background-position: 0px -198px;
+}
+a[href="#ggLA"]:after {
+  background-position: 0px -264px;
+}
+a[href="#nwe"]:after {
+  background-position: 0px -330px;
+}
+a[href="#rxg"]:after {
+  background-position: 0px -396px;
+}
+a[href="#tbd"]:after {
+  background-position: 0px -462px;
+}
+a[href="#ts"]:after {
+  background-position: 0px -528px;
+}
+a[href="#tt"]:after {
+  background-position: 0px -594px;
+}
+a[href="#ttd"]:after {
+  background-position: 0px -660px;
+}
+a[href="#wzb"]:after {
+  background-position: 0px -726px;
+}
+a[href="#xts"]:after {
+  background-position: 0px -792px;
+}
+a[href="#iodd"]:after {
+  background-position: 0px -855px;
+}
+a[href="#bears"]:after,
+a[href="#min"]:after,
+a[href="#ozone"]:after,
+a[href="#royal"]:after,
+a[href="#sword"]:after {
+  content: "";
+  width: 36px;
+  height: 20px;
+  background: url(%%worlds%%) no-repeat scroll 36px 20px transparent;
+  display: inline-block;
+  vertical-align: middle;
+  cursor: default !important;
+}
+a[href="#bears"]:after {
+  background-position: 0px 0px;
+}
+a[href="#min"]:after {
+  background-position: 0px -66px;
+}
+a[href="#ozone"]:after {
+  background-position: 0px -132px;
+}
+a[href="#royal"]:after {
+  background-position: 0px -198px;
+}
+a[href="#sword"]:after {
+  background-position: 0px -264px;
+}
+a[href="#jas"]:after,
+a[href="#nsh"]:after,
+a[href="#nsw"]:after {
+  content: "";
+  width: 36px;
+  height: 20px;
+  background: url(%%wcg%%) no-repeat scroll 36px 20px transparent;
+  display: inline-block;
+  vertical-align: middle;
+  cursor: default !important;
+}
+a[href="#jas"]:after {
+  background-position: 0px 0px;
+}
+a[href="#nsh"]:after {
+  background-position: 0px -66px;
+}
+a[href="#nsw"]:after {
+  background-position: 0px -132px;
+}
+a[href="#nip2"]:after,
+a[href="#shc"]:after {
+  content: "";
+  width: 36px;
+  height: 20px;
+  background: url(%%nip-shc%%) no-repeat scroll 36px 20px transparent;
+  display: inline-block;
+  vertical-align: middle;
+  cursor: default !important;
+}
+a[href="#nip2"]:after {
+  background-position: 0px 0px;
+}
+a[href="#shc"]:after {
+  background-position: 0px -66px;
+}
