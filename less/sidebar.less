@@ -1,0 +1,48 @@
+/* Changes */
+
+.side h4,
+.side h5,
+.side h6 {
+    height:0;
+}
+
+/* Modify submit a new post */
+
+.submit .morelink a {
+    content: '';
+    font-size: 0;
+}
+
+.submit .morelink a:before {
+    content: 'Submit new VoDs post';
+    font-size: 14px;
+}
+
+/* Sidebar icons */
+
+.side a[href*='#icon-'] { color:#000; cursor:default; }
+.side a[href*='#icon-']:hover { text-decoration:none; }
+.side a[href*='#icon-']:before {
+    display:inline-block;
+    height:16px; width:16px;
+    content:'';
+    margin:0 5px -1px 0;
+    background: url(%%sprites-05%%) 30px 30px no-repeat;
+}
+
+.side a[href='#icon-exclamation']:before   {background-position: -16px -32px;}
+.side a[href='#icon-information']:before   {background-position: -54px -51px;}
+.side a[href='#icon-lightbulb']:before     {background-position: -16px -51px;}
+.side a[href='#icon-comments']:before      {background-position: -35px -89px;}
+.side a[href='#icon-unhappy']:before       {background-position: -73px -89px;}
+.side a[href='#icon-check']:before         {background-position: -73px -51px;}
+.side a[href='#icon-clock']:before         {background-position: -35px -51px;}
+.side a[href='#icon-cross']:before         {background-position: -35px -70px;}
+.side a[href='#icon-smile']:before         {background-position: -54px -89px;}
+.side a[href='#icon-error']:before         {background-position: -54px -32px;}
+.side a[href='#icon-note']:before          {background-position: -54px -70px;}
+.side a[href='#icon-star']:before          {background-position: -73px -32px;}
+.side a[href='#icon-help']:before          {background-position: -16px -70px;}
+.side a[href='#icon-time']:before          {background-position: -73px -70px;}
+.side a[href='#icon-bell']:before          {background-position: -35px -32px;}
+.side a[href='#icon-eye']:before           {background-position: -16px -89px;}

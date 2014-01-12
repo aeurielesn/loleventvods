@@ -17,35 +17,6 @@
 #header-img-a:hover #header-img {
   visibility: hidden;
 }
-/* hides "new", "top" and other shpanortcuts */
-#header .tabmenu {
-  visibility: hidden;
-}
-#header .tabmenu li {
-  visibility: hidden;
-}
-/* Top message/announcement */
-.titlebox .usertext-body .md h6 {
-  display: block;
-  position: absolute;
-  top: 136px;
-  left: 10px;
-  background-color: #193064;
-  font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
-  font-size: 15px;
-  font-weight: bold;
-  color: white;
-  text-align: left;
-  padding: 8px 13px 26px 13px;
-  margin: 13px;
-  border-radius: 5px;
-}
-h6 a:link {
-  color: #F2E972;
-}
-h6 a:visited {
-  color: #F2E972;
-}
 .content {
   padding-top: 2px;
 }
@@ -56,7 +27,7 @@ h6 a:visited {
   display: inline-block;
   padding: 5px;
   background: #F6E69F;
-  border: 1px solid #ffa500;
+  border: 1px solid orange;
 }
 .side .md p > em > strong {
   font-style: italic;
@@ -193,43 +164,6 @@ content: " " !important
   width: 15px;
   height: 14px;
 }
-/* spoiler tag */
-.content a[href$="/spoiler"],
-.commentarea a[href$="/spoiler"],
-a[href$="/spoiler"] {
-  background: none repeat scroll 0 0 #000000 !important;
-  color: #000000 !important;
-  cursor: default;
-}
-.content a[href$="/spoiler"]:hover,
-.commentarea a[href$="/spoiler"]:hover,
-a[href$="/spoiler"]:hover {
-  color: #FFFFFF !important;
-}
-/* Spoiler tag version 2 
-a[href$="/spoiler"] {
-    background: #000 !important;
-    color: #000 !important;
-    border: 1px solid #000;
-    padding-right: 1px;
-}
-a[href$="/spoiler"]:hover {
-    color: #FFF !important;
-}
-a[href$="/spoiler"]::before {
-    background: #FFF !important;
-    color: #000 !important;
-    padding: 0px 1px;
-    margin: 0px;
-    margin-right: 1px;
-}
-a[href$="/spoiler"]::before {
-    content: "Spoiler";
-}
-a[href$="/spoiler"][title]::before {
-    content: attr(title) " Spoiler";
-}
-*/
 /* top message  
 body > .content:before {
     content: "If you're looking for EG vs. DTG VoDs, please use links above until LCS post gets fixed!";
@@ -353,29 +287,7 @@ font-weight: bold;
 .linkflair-finishedfeatured a.title {
   color: red !important;
 }
-/* header 
-
-.side .md h6 {
-    position: absolute;
-    top: 40px;
-    left: 300px;
-    background: #eee;
-    border: 1px solid #666;
-    border-radius: 5px;
-    padding: 3px 5px;
-    z-index: 100;
-}
-header end */
-/* submit a new */
-.submit .morelink a {
-  content: '';
-  font-size: 0;
-}
-.submit .morelink a:before {
-  content: 'Submit new VoDs post';
-  font-size: 14px;
-}
-/* star */
+/* Star */
 a[href$="star"] {
   width: 16px;
   height: 16px;
@@ -385,7 +297,7 @@ a[href$="star"] {
   display: inline-block;
   cursor: default;
 }
-/* problems */
+/* Warning */
 a[href$="warning"] {
   width: 16px;
   height: 16px;
@@ -394,131 +306,6 @@ a[href$="warning"] {
   position: relative;
   display: inline-block;
   cursor: default;
-}
-/* youtube 
-a[href$="youtube1"] {
-    width: 32px;
-    height: 15px;
-    background-image: url(%%youtube1%%);   
-    display: inline-block;
-    cursor: text;
-}
-*/
-/* SIDEBAR CHANGES */
-.side h4,
-.side h5,
-.side h6 {
-  height: 0;
-}
-/* sidebar icons */
-.side a[href*='#icon-'] {
-  color: #000;
-  cursor: default;
-}
-.side a[href*='#icon-']:hover {
-  text-decoration: none;
-}
-.side a[href*='#icon-']::before {
-  display: inline-block;
-  height: 16px;
-  width: 16px;
-  content: '';
-  margin: 0 5px -1px 0;
-  background: url(%%sprites-05%%) 30px 30px no-repeat;
-}
-.side a[href='#icon-exclamation']::before {
-  background-position: -16px -32px;
-}
-.side a[href='#icon-information']::before {
-  background-position: -54px -51px;
-}
-.side a[href='#icon-lightbulb']::before {
-  background-position: -16px -51px;
-}
-.side a[href='#icon-comments']::before {
-  background-position: -35px -89px;
-}
-.side a[href='#icon-unhappy']::before {
-  background-position: -73px -89px;
-}
-.side a[href='#icon-check']::before {
-  background-position: -73px -51px;
-}
-.side a[href='#icon-clock']::before {
-  background-position: -35px -51px;
-}
-.side a[href='#icon-cross']::before {
-  background-position: -35px -70px;
-}
-.side a[href='#icon-smile']::before {
-  background-position: -54px -89px;
-}
-.side a[href='#icon-error']::before {
-  background-position: -54px -32px;
-}
-.side a[href='#icon-note']::before {
-  background-position: -54px -70px;
-}
-.side a[href='#icon-star']::before {
-  background-position: -73px -32px;
-}
-.side a[href='#icon-help']::before {
-  background-position: -16px -70px;
-}
-.side a[href='#icon-time']::before {
-  background-position: -73px -70px;
-}
-.side a[href='#icon-bell']::before {
-  background-position: -35px -32px;
-}
-.side a[href='#icon-eye']::before {
-  background-position: -16px -89px;
-}
-/* timestamps */
-.edited-timestamp::after {
-  content: " (" attr(title) ")";
-  font-size: 90%;
-}
-/* no flairs on front page */
-.listing-page .flair {
-  display: none;
-}
-/* header image */
-#header {
-  background: #02021a url(%%header%%) no-repeat;
-  background-position: 5px 20px;
-  height: 146px;
-}
-#header-bottom-left {
-  height: 20px;
-}
-.redditname a {
-  text-indent: -1px;
-  margin-top: 30px;
-  color: white;
-  font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
-  font-style: italic;
-  font-weight: normal;
-}
-#header-img-a,
-.redditname a,
-.tabmenu {
-  display: inline;
-  float: left;
-}
-.tabmenu {
-  position: relative;
-  top: 100%;
-  margin-top: 47px!important;
-}
-#header-bottom-left span.pagename a {
-  display: block;
-  height: 125px;
-  width: 228px;
-  margin-left: -20px;
-  margin-top: 2px;
-  background: url(%%logo%%) no-repeat scroll 0 0 transparent;
-  font-size: 0!important;
 }
 /* HEADER TEAM POPOUT MENU (credit: /u/gavin19) */
 .side h6 + ul {
@@ -562,37 +349,6 @@ a[href$="youtube1"] {
 .side .md h6 + ul li {
   background-color: transparent!important;
 }
-/* Credit for code below goes to /u/Cryptonaut */
-.listing-page .tabmenu li a[href="http://www.reddit.com/promoted/"],
-.listing-page .tabmenu li a[href="http://www.reddit.com/saved/"],
-.listing-page .tabmenu li a[href="http://www.reddit.com/r/LoLeventVoDs/controversial/"],
-.listing-page .tabmenu li a[href="http://www.reddit.com/r/LoLeventVoDs/"],
-.listing-page .tabmenu li a[href="http://www.reddit.com/r/LoLeventVoDs/rising/"],
-.listing-page .tabmenu li a[href="http://www.reddit.com/r/LoLeventVoDs/top/"],
-a#viewImagesButton {
-  display: none;
-}
-/* sidebar
-.side .titlebox:before {
-    content: '';
-    background: #f7fbfc;
-    height: 40px;
-    width: 288px;
-    margin-left:-5px;
-    margin-top: -5px;
-    display: block;
-    border-radius: 10px;
-    position: absolute;
-    }
-.side .titlebox > *:not(form), .side .titlebox .flairtoggle {
-    position: relative;
-    background: transparent;
-    }
-.loggedin .side .titlebox:before { height: 60px; }
-.res.loggedin .titlebox:before { height: 145px; }
-.res:not(.loggedin) .titlebox:before { height: 102px; }
-
- */
 /* Sidebar headings */
 .titlebox blockquote {
   border: 1px solid #AAA;
@@ -1126,6 +882,194 @@ a[href="#youtube"]:nth-of-type(n):after{
   height: 27px;
   border-radius: 8px;
   padding: 7px 0px 7px 0px;
+}
+/* Star */
+a[href$="star"] {
+  width: 16px;
+  height: 16px;
+  content: "";
+  background-image: url(%%star1%%);
+  position: relative;
+  display: inline-block;
+  cursor: default;
+}
+/* Warning */
+a[href$="warning"] {
+  width: 16px;
+  height: 16px;
+  content: "";
+  background-image: url(%%usklicnik%%);
+  position: relative;
+  display: inline-block;
+  cursor: default;
+}
+/* Header image */
+#header {
+  background: #02021a url(%%header%%) no-repeat;
+  background-position: 5px 20px;
+  height: 146px;
+}
+#header-bottom-left {
+  height: 20px;
+}
+.redditname a {
+  text-indent: -1px;
+  margin-top: 30px;
+  color: white;
+  font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
+  font-style: italic;
+  font-weight: normal;
+}
+#header-img-a,
+.redditname a {
+  display: inline;
+  float: left;
+}
+#header-bottom-left span.pagename a {
+  display: block;
+  height: 125px;
+  width: 228px;
+  margin-left: -20px;
+  margin-top: 2px;
+  background: url(%%logo%%) no-repeat scroll 0 0 transparent;
+  font-size: 0!important;
+}
+/* Hides "new", "top" and other tabs */
+#header .tabmenu,
+#viewImagesButton {
+  display: none;
+}
+/* Timestamps */
+.edited-timestamp::after {
+  content: " (" attr(title) ")";
+  font-size: 90%;
+}
+/* Top announcement.
+ * It works by enabling <h6/> in the sidebar as a announcement banner on top
+ * of the main subreddit content.
+ */
+.titlebox .usertext-body .md h6 {
+  display: block;
+  position: absolute;
+  top: 136px;
+  left: 10px;
+  background-color: #193064;
+  font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  color: white;
+  text-align: left;
+  padding: 8px 13px 26px 13px;
+  margin: 13px;
+  border-radius: 5px;
+}
+h6 a {
+  color: #F2E972;
+}
+/* No flairs on front page */
+.listing-page .flair {
+  display: none;
+}
+/* Changes */
+.side h4,
+.side h5,
+.side h6 {
+  height: 0;
+}
+/* Modify submit a new post */
+.submit .morelink a {
+  content: '';
+  font-size: 0;
+}
+.submit .morelink a:before {
+  content: 'Submit new VoDs post';
+  font-size: 14px;
+}
+/* Sidebar icons */
+.side a[href*='#icon-'] {
+  color: #000;
+  cursor: default;
+}
+.side a[href*='#icon-']:hover {
+  text-decoration: none;
+}
+.side a[href*='#icon-']:before {
+  display: inline-block;
+  height: 16px;
+  width: 16px;
+  content: '';
+  margin: 0 5px -1px 0;
+  background: url(%%sprites-05%%) 30px 30px no-repeat;
+}
+.side a[href='#icon-exclamation']:before {
+  background-position: -16px -32px;
+}
+.side a[href='#icon-information']:before {
+  background-position: -54px -51px;
+}
+.side a[href='#icon-lightbulb']:before {
+  background-position: -16px -51px;
+}
+.side a[href='#icon-comments']:before {
+  background-position: -35px -89px;
+}
+.side a[href='#icon-unhappy']:before {
+  background-position: -73px -89px;
+}
+.side a[href='#icon-check']:before {
+  background-position: -73px -51px;
+}
+.side a[href='#icon-clock']:before {
+  background-position: -35px -51px;
+}
+.side a[href='#icon-cross']:before {
+  background-position: -35px -70px;
+}
+.side a[href='#icon-smile']:before {
+  background-position: -54px -89px;
+}
+.side a[href='#icon-error']:before {
+  background-position: -54px -32px;
+}
+.side a[href='#icon-note']:before {
+  background-position: -54px -70px;
+}
+.side a[href='#icon-star']:before {
+  background-position: -73px -32px;
+}
+.side a[href='#icon-help']:before {
+  background-position: -16px -70px;
+}
+.side a[href='#icon-time']:before {
+  background-position: -73px -70px;
+}
+.side a[href='#icon-bell']:before {
+  background-position: -35px -32px;
+}
+.side a[href='#icon-eye']:before {
+  background-position: -16px -89px;
+}
+a[href$="/spoiler"] {
+  background: none repeat scroll 0 0 #000 !important;
+  color: #000 !important;
+  cursor: default;
+  border-radius: 3px;
+  padding: 0 3px;
+}
+a[href$="/spoiler"]:hover {
+  color: #fff !important;
+}
+a[href$="/hidden"] {
+  display: block;
+  background: none repeat scroll 0 0 #000 !important;
+  color: #000 !important;
+  cursor: default;
+  border-radius: 3px;
+  padding: 0 3px;
+}
+a[href$="/hidden"]:hover {
+  display: block;
+  color: #fff !important;
 }
 .flags-belgium,
 .flags-checzrepublic,

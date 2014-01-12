@@ -1,0 +1,25 @@
+/* Top announcement.
+ * It works by enabling <h6/> in the sidebar as a announcement banner on top
+ * of the main subreddit content.
+ */
+
+.titlebox .usertext-body .md h6 {
+    display: block;
+    position: absolute; top: 136px; left: 10px; 
+    background-color: #193064; font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif; font-size: 15px;
+    font-weight: bold;
+    color: white;
+    text-align: left;
+    padding: 8px 13px 26px 13px;
+    margin: 13px;
+    border-radius: 5px; 
+}
+
+h6 a {
+    color:#F2E972;
+}
+
+/* No flairs on front page */
+.listing-page .flair {
+    display: none;
+}

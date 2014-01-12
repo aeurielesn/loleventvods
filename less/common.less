@@ -1,0 +1,49 @@
+/* Header image */
+
+#header {
+    background: #02021A url(%%header%%) no-repeat;
+    background-position: 5px 20px;
+    height: 146px;
+}
+
+#header-bottom-left {
+    height: 20px;
+}
+
+.redditname a {
+    text-indent:-1px;
+    margin-top:30px;
+    color:white; font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
+    font-style:italic;
+    font-weight: normal;
+}
+
+#header-img-a,
+.redditname a {
+    display: inline;
+    float: left;
+}
+
+#header-bottom-left span.pagename a {
+    display: block;
+    height: 125px;
+    width: 228px;
+    margin-left: -20px;
+    margin-top: 2px;
+    background: url(%%logo%%) no-repeat scroll 0 0 transparent;
+    font-size: 0!important;
+}
+
+/* Hides "new", "top" and other tabs */
+
+#header .tabmenu,
+#viewImagesButton {  
+    display: none;
+}
+
+/* Timestamps */
+
+.edited-timestamp::after {
+    content:" (" attr(title) ")";
+    font-size: 90%;
+}
