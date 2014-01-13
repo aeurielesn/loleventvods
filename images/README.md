@@ -1,10 +1,10 @@
 # Visual Resources 
 
-The home for the sprites .
+The home for the sprites.
 
-## Consolidation
+## Sprite Consolidation
 
-The current spritesheets for teams, events, among others; are currently being updated in this [imgur album][teams]. You can find them in the as PSD files.
+The current spritesheets for teams, events, among others; are currently being updated in this [imgur album][teams]. You can find them here as PSD files.
 
 ## GIMP
 
