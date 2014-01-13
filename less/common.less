@@ -13,7 +13,8 @@
 .redditname a {
     text-indent:-1px;
     margin-top:30px;
-    color:white; font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
+    color:white;
+    font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
     font-style:italic;
     font-weight: normal;
 }
@@ -36,10 +37,7 @@
 
 /* Hides "new", "top" and other tabs */
 
-#header .tabmenu,
-#viewImagesButton {  
-    display: none;
-}
+#header .tabmenu, #viewImagesButton { display: none; }
 
 /* Hides domain part from the title of the posts */
 
@@ -55,7 +53,4 @@
 
 /* Timestamps */
 
-.edited-timestamp::after {
-    content:" (" attr(title) ")";
-    font-size: 90%;
-}
+.edited-timestamp::after { content:" (" attr(title) ")"; font-size: 90%; }
