@@ -6,5 +6,5 @@
 # Ignore generated sprites directory
 ./visual-resources/generated-sprites
 
-# Mac filesystem
+# OSX
 .DS_Store
