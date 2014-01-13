@@ -1,1 +1,10 @@
+# Ignore generated images from .psd
+*.png
+*.jpg
+*.gif
+
+# Ignore generated sprites directory
+./visual-resources/generated-sprites
+
+# Mac filesystem
 .DS_Store
