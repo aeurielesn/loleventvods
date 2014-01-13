@@ -883,26 +883,6 @@ a[href="#youtube"]:nth-of-type(n):after{
   border-radius: 8px;
   padding: 7px 0px 7px 0px;
 }
-/* Star */
-a[href$="star"] {
-  width: 16px;
-  height: 16px;
-  content: "";
-  background-image: url(%%star1%%);
-  position: relative;
-  display: inline-block;
-  cursor: default;
-}
-/* Warning */
-a[href$="warning"] {
-  width: 16px;
-  height: 16px;
-  content: "";
-  background-image: url(%%usklicnik%%);
-  position: relative;
-  display: inline-block;
-  cursor: default;
-}
 /* Header image */
 #header {
   background: #02021a url(%%header%%) no-repeat;
@@ -937,6 +917,10 @@ a[href$="warning"] {
 /* Hides "new", "top" and other tabs */
 #header .tabmenu,
 #viewImagesButton {
+  display: none;
+}
+/* Hides domain part from the title of the posts */
+.domain {
   display: none;
 }
 /* Timestamps */
