@@ -745,7 +745,6 @@ a[href$="/hidden"] {
   padding: 0 3px;
 }
 a[href$="/hidden"]:hover {
-  display: block;
   color: #fff !important;
 }
 .flags-belgium,
@@ -992,10 +991,6 @@ a[href="#sweden"]:after {
 .thing .thumbnail[href*="world"] {
   background-position: 0 -665px;
   height: 50px;
-}
-.thing .thumbnail[href*="with_the"] {
-  background-position: 0 -1118px;
-  height: 48px;
 }
 .thing .thumbnail[href*="with_the"] {
   background-position: 0 -1118px;
