@@ -997,6 +997,18 @@ a[href="#sweden"]:after {
   background-position: 0 -1118px;
   height: 48px;
 }
+.thing .thumbnail[href*="with_the"] {
+  background-position: 0 -1118px;
+  height: 48px;
+}
+.thing .thumbnail[href*="na_lcs"] {
+  background-position: 0 -1191px;
+  height: 42px;
+}
+.thing .thumbnail[href*="eu_lcs"] {
+  background-position: 0 -1258px;
+  height: 44px;
+}
 a[href="#america"]:after,
 a[href="#china"]:after,
 a[href="#europe"]:after,
