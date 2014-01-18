@@ -400,8 +400,7 @@ a[href$="warning"] {
 }
 .titlebox .usertext .md > h1 {
   font-size: large;
-  height: 15px;
-  line-height: 15px;
+  line-height: 26px;
   border: 0;
   margin: 0;
   padding: 0;
@@ -490,7 +489,6 @@ a[href$="warning"] {
 .titlebox .md h4 {
   background-color: #ccc!important;
   width: 280px;
-  height: 26px;
   line-height: 26px;
   font-weight: normal;
   font-size: 12px;
