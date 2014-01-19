@@ -907,41 +907,49 @@ a[href="#sweden"]:after {
 .thing .thumbnail[href*="nlb_spring"],
 .thing .thumbnail[href*="world"],
 .thing .thumbnail[href*="with_the"] {
-  background: url(%%thumbnails%%) no-repeat scroll transparent;
+  background: url(%%thumbnails%%) no-repeat top left;
   padding: 0;
 }
 .thing .thumbnail[href*="iem_cologne"],
 .thing .thumbnail[href*="iem"] {
-  background-position: 0 -149px;
+  background-position: 0 -258px;
+  width: 62px;
   height: 30px;
 }
 .thing .thumbnail[href*="gfinity"] {
-  background-position: 0 -302px;
+  background-position: 0 -163px;
+  width: 60px;
   height: 60px;
 }
 .thing .thumbnail[href*="mobafire"] {
-  background-position: 0 0;
+  background-position: 0 -590px;
+  width: 65px;
   height: 44px;
 }
 .thing .thumbnail[href*="gpl"] {
-  background-position: 0 -901px;
+  background-position: 0 -228px;
+  width: 60px;
   height: 25px;
 }
 .thing .thumbnail[href*="lcs"] {
-  background-position: 0 -526px;
+  background-position: 0 -415px;
+  width: 62px;
   height: 44px;
 }
 .thing .thumbnail[href*="mlg"] {
-  background-position: 0 -1011px;
+  background-position: 0 -560px;
+  width: 65px;
   height: 25px;
 }
 .thing .thumbnail[href*="starswar"] {
-  background-position: 0 -250px;
+  background-position: 0 -738px;
+  width: 65px;
   height: 27px;
 }
 .thing .thumbnail[href*="ign"],
 .thing .thumbnail[href*="ipl"] {
-  background-position: 0 -204px;
+  background-position: 0 -293px;
+  width: 65px;
   height: 21px;
 }
 .thing .thumbnail[href*="regionals"],
@@ -951,15 +959,18 @@ a[href="#sweden"]:after {
 .thing .thumbnail[href*="2_european"],
 .thing .thumbnail[href*="2_south"],
 .thing .thumbnail[href*="na_regionals_com"] {
-  background-position: 0 -951px;
+  background-position: 0 -832px;
+  width: 65px;
   height: 35px;
 }
 .thing .thumbnail[href*="tales"] {
-  background-position: 0 -819px;
+  background-position: 0 -770px;
+  width: 60px;
   height: 57px;
 }
 .thing .thumbnail[href*="lone"] {
-  background-position: 0 -1061px;
+  background-position: 0 -464px;
+  width: 65px;
   height: 32px;
 }
 .thing .thumbnail[href*="pandoratv"],
@@ -967,39 +978,48 @@ a[href="#sweden"]:after {
 .thing .thumbnail[href*="ogn_hot"],
 .thing .thumbnail[href*="ogn_ol"],
 .thing .thumbnail[href*="ogn_lol"] {
-  background-position: 0 -450px;
+  background-position: 0 -682px;
+  width: 62px;
   height: 51px;
 }
 .thing .thumbnail[href*="shangai"] {
-  background-position: 0 -595px;
+  background-position: 0 0;
+  width: 63px;
   height: 45px;
 }
 .thing .thumbnail[href*="monster"] {
-  background-position: 0 -69px;
+  background-position: 0 -103px;
+  width: 50px;
   height: 55px;
 }
 .thing .thumbnail[href*="lpl"] {
-  background-position: 0 -740px;
+  background-position: 0 -501px;
+  width: 60px;
   height: 54px;
 }
 .thing .thumbnail[href*="nlb_spring"] {
-  background-position: 0 -387px;
+  background-position: 0 -639px;
+  width: 65px;
   height: 38px;
 }
 .thing .thumbnail[href*="world"] {
-  background-position: 0 -665px;
+  background-position: 0 -872px;
+  width: 60px;
   height: 50px;
 }
-.thing .thumbnail[href*="with_the"] {
-  background-position: 0 -1118px;
+.thing .thumbnail[href*="android"] {
+  background-position: 0 -50px;
+  width: 50px;
   height: 48px;
 }
-.thing .thumbnail[href*="na_lcs"] {
-  background-position: 0 -1191px;
+.thing .thumbnail[href*="lcs_north"] {
+  background-position: 0 -368px;
+  width: 55px;
   height: 42px;
 }
-.thing .thumbnail[href*="eu_lcs"] {
-  background-position: 0 -1258px;
+.thing .thumbnail[href*="lcs_europe"] {
+  background-position: 0 -319px;
+  width: 55px;
   height: 44px;
 }
 a[href="#america"]:after,
