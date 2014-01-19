@@ -49,28 +49,23 @@
 
 /* Social media buttons */
 
-.side a[href="http://goo.gl/3kRqh"] {
-    display:inline-block;
-    text-align: center;
-    height:32px;
-    width:32px;
-    background:url(%%twitter%%) no-repeat 0 0;
-}
+.side a {
+    &[href="http://goo.gl/3kRqh"],
+    &[href="http://goo.gl/YrFC9"],
+    &[href="http://goo.gl/BDoQm"] {
+        display:inline-block;
+        .social;
+    }
 
+    &[href="http://goo.gl/3kRqh"] {
+        .social-twitter;
+    }
 
-.side a[href="http://goo.gl/YrFC9"] {
-    display: inline-block;
-    text-align: center;
-    height:32px;
-    width:32px;
-    background:url(%%facebook%%) no-repeat 0 0;
-}
+    &[href="http://goo.gl/YrFC9"] {
+        .social-facebook;
+    }
 
-
-.side a[href="http://goo.gl/BDoQm"] {
-    display: inline-block;
-    text-align: center;
-    height:32px;
-    width:32px;
-    background:url(%%youtube%%) no-repeat 0 0;
+    &[href="http://goo.gl/BDoQm"] {
+        .social-youtube;
+    }
 }

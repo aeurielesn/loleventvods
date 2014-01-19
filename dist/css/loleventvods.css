@@ -703,26 +703,26 @@ h6 a {
   background-position: -16px -89px;
 }
 /* Social media buttons */
-.side a[href="http://goo.gl/3kRqh"] {
-  display: inline-block;
-  text-align: center;
-  height: 32px;
-  width: 32px;
-  background: url(%%twitter%%) no-repeat 0 0;
-}
-.side a[href="http://goo.gl/YrFC9"] {
-  display: inline-block;
-  text-align: center;
-  height: 32px;
-  width: 32px;
-  background: url(%%facebook%%) no-repeat 0 0;
-}
+.side a[href="http://goo.gl/3kRqh"],
+.side a[href="http://goo.gl/YrFC9"],
 .side a[href="http://goo.gl/BDoQm"] {
   display: inline-block;
-  text-align: center;
-  height: 32px;
+  background: url(%%social%%) no-repeat top left;
+}
+.side a[href="http://goo.gl/3kRqh"] {
+  background-position: 0 -37px;
   width: 32px;
-  background: url(%%youtube%%) no-repeat 0 0;
+  height: 32px;
+}
+.side a[href="http://goo.gl/YrFC9"] {
+  background-position: 0 0;
+  width: 32px;
+  height: 32px;
+}
+.side a[href="http://goo.gl/BDoQm"] {
+  background-position: 0 -74px;
+  width: 32px;
+  height: 33px;
 }
 a[href$="/spoiler"] {
   background: none repeat scroll 0 0 #000 !important;
