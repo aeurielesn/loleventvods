@@ -4,15 +4,15 @@ This folder contains automatically generated sprite files. Details on how each f
 
 ## social.less
 
-- Source file: `social.zip`
+- Source file: `social.zip`.
 - Ignore duplicate images.
 - Don't resize source images.
 - Maintain aspect ratio.
 - True Colour PNG.
-- Class prefix: `.social`.
+- Class prefix: `social-`.
 - Class suffix: `()`.
 - Display width and height.
 
-  [images]: /aeurielesn/loleventvods/tree/master/images
+  [images]: https://github.com/aeurielesn/loleventvods/tree/master/images
   [spritegen]: http://spritegen.website-performance.org
-  [social]: /aeurielesn/loleventvods/tree/master/images/social.zip
+  [social]: https://github.com/aeurielesn/loleventvods/raw/master/images/social.zip
