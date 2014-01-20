@@ -586,7 +586,7 @@ a[href$="warning"] {
 .domain {
   display: none;
 }
-/* Hides leave contributor button and some other stuff */
+/* Hides leave contributor button and RES navigation keys */
 .side .leavecontributor-button,
 table .keyNavAnnotation,
 a[href^="#"] + .keyNavAnnotation {
@@ -596,6 +596,24 @@ a[href^="#"] + .keyNavAnnotation {
 .edited-timestamp::after {
   content: " (" attr(title) ")";
   font-size: 90%;
+}
+/* Collapsable in entry */
+.entry .md h3 {
+  margin-bottom: 8px;
+}
+.entry .md h3 + p + * {
+  display: none;
+}
+.entry .md h3 + p:hover + *,
+.entry .md h3 + p + *:hover,
+.entry .md h3:hover + p + * {
+  display: table;
+}
+.entry .md h3 + p {
+  position: absolute;
+  margin-top: -25px;
+  height: 30px;
+  width: 294px;
 }
 /* Top announcement.
  * It works by enabling <h6/> in the sidebar as a announcement banner on top

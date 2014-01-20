@@ -45,7 +45,7 @@
     display: none;
 }
 
-/* Hides leave contributor button and some other stuff */
+/* Hides leave contributor button and RES navigation keys */
 
 .side .leavecontributor-button, table .keyNavAnnotation, a[href^="#"] + .keyNavAnnotation {
     display: none;
@@ -54,3 +54,26 @@
 /* Timestamps */
 
 .edited-timestamp::after { content:" (" attr(title) ")"; font-size: 90%; }
+
+/* Collapsable in entry */
+
+.entry .md h3 {
+    margin-bottom: 8px;
+    
+    & + p + * {
+        display: none;
+    }
+
+    & + p:hover + *,
+    & + p + *:hover,
+    &:hover + p + * {
+      display: table;
+    }
+
+    & + p {
+      position: absolute;
+      margin-top: -25px;
+      height: 30px;
+      width: 294px;
+    }
+}
