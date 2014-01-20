@@ -38,7 +38,9 @@
     &[href*="world"],
     &[href*="android"],
     &[href*="lcs_north"],
-    &[href*="lcs_europe"] {
+    &[href*="lcs_europe"],
+    &[href*="na_chall"],
+    &[href*="eu_chall"] {
         .thumbnails;
         padding: 0;
     }
@@ -152,6 +154,16 @@
 
     &[href*="lcs_europe"] {
         .thumbnails-lcs-eu;
+        .calculate-width-and-margins();
+    }
+
+    &[href*="na_chall"] {
+        .thumbnails-cs-na;
+        .calculate-width-and-margins();
+    }
+
+    &[href*="eu_chall"] {
+        .thumbnails-cs-eu;
         .calculate-width-and-margins();
     }
 }
