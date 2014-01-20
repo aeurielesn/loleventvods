@@ -15,6 +15,8 @@ This folder contains automatically generated sprite files. Details on how each f
 
 ## thumbnails.less
 
+### Generation
+
 - Source file: [`thumbnails.zip`][thumbnails].
 - Ignore duplicate images.
 - Don't resize source images.
@@ -23,6 +25,10 @@ This folder contains automatically generated sprite files. Details on how each f
 - Class prefix: `thumbnails-`.
 - Class suffix: `()`.
 - Display width and height.
+
+### Postgeneration
+
+- Prefix all `width` with an `@`.
 
   [images]: https://github.com/aeurielesn/loleventvods/tree/master/images
   [spritegen]: http://spritegen.website-performance.org

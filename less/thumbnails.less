@@ -1,3 +1,10 @@
+.calculate-width-and-margins(@thumbnail-width: 80px) {
+  @margin: floor((@thumbnail-width - @width) / 2);
+  width: @width;
+  margin-left: @margin;
+  margin-right: @thumbnail-width - @margin - @width;
+}
+
 .thing .thumbnail {
     &[href*="iem_cologne"],
     &[href*="gfinity"],
@@ -39,35 +46,43 @@
     &[href*="iem_cologne"],
     &[href*="iem"] {
         .thumbnails-iem;
+        .calculate-width-and-margins();
     }
 
     &[href*="gfinity"] {
         .thumbnails-gfinity;
+        .calculate-width-and-margins();
     }
 
     &[href*="mobafire"] {
         .thumbnails-mobafire;
+        .calculate-width-and-margins();
     }
 
     &[href*="gpl"] {
         .thumbnails-gpl;
+        .calculate-width-and-margins();
     }
 
     &[href*="lcs"] {
         .thumbnails-lcs;
+        .calculate-width-and-margins();
     }
 
     &[href*="mlg"] {
         .thumbnails-mlg;
+        .calculate-width-and-margins();
     }
 
     &[href*="starswar"] {
         .thumbnails-starswar;
+        .calculate-width-and-margins();
     }
 
     &[href*="ign"],
     &[href*="ipl"] {
         .thumbnails-ign;
+        .calculate-width-and-margins();
     }
 
     &[href*="regionals"],
@@ -78,14 +93,17 @@
     &[href*="2_south"],
     &[href*="na_regionals_com"] {
         .thumbnails-wcs2;
+        .calculate-width-and-margins();
     }
 
     &[href*="tales"] {
         .thumbnails-tales;
+        .calculate-width-and-margins();
     }
 
     &[href*="lone"] {
         .thumbnails-lone-star-clash;
+        .calculate-width-and-margins();
     }
 
     &[href*="pandoratv"],
@@ -94,37 +112,46 @@
     &[href*="ogn_ol"],
     &[href*="ogn_lol"] {
         .thumbnails-ogn;
+        .calculate-width-and-margins();
     }
 
     &[href*="shangai"] {
         .thumbnails-allstar;
+        .calculate-width-and-margins();
     }
 
     &[href*="monster"] {
         .thumbnails-black-monster-cup;
+        .calculate-width-and-margins();
     }
 
     &[href*="lpl"] {
         .thumbnails-lpl;
+        .calculate-width-and-margins();
     }
 
     &[href*="nlb_spring"] {
         .thumbnails-nlb;
+        .calculate-width-and-margins();
     }
 
     &[href*="world"] {
         .thumbnails-wcs3;
+        .calculate-width-and-margins();
     }
 
     &[href*="android"] {
         .thumbnails-android;
+        .calculate-width-and-margins();
     }
 
     &[href*="lcs_north"] {
         .thumbnails-lcs-na;
+        .calculate-width-and-margins();
     }
 
     &[href*="lcs_europe"] {
         .thumbnails-lcs-eu;
+        .calculate-width-and-margins();
     }
 }
