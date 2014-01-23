@@ -148,22 +148,6 @@ content: " " !important
 .flairselector .customizer {
   display: none !important;
 }
-.flair {
-  border: none !important;
-  padding: 0px;
-  background: url(%%flairs%%) no-repeat -9999px -9999px;
-  display: inline-block;
-}
-.flair-red {
-  background-position: 0 0;
-  width: 15px;
-  height: 15px;
-}
-.flair-yellow {
-  background-position: 0 -65px;
-  width: 15px;
-  height: 14px;
-}
 /* top message  
 body > .content:before {
     content: "If you're looking for EG vs. DTG VoDs, please use links above until LCS post gets fixed!";
@@ -179,114 +163,6 @@ font-weight: bold;
     -webkit-border-radius: 3px
     }
 */
-/* link-flair */
-.linkflair-ongoing .linkflairlabel {
-  padding: 2px 3px 3px 23px;
-  text-transform: uppercase;
-  margin-left: 1em;
-  background: #fafafa url(%%checkmark%%) 3px 2px no-repeat;
-  color: #777;
-  border-color: #dddddd;
-}
-/* link-flair ongoing TWITCH */
-.linkflair-twitchongoing .linkflairlabel {
-  padding: 2px 3px 3px 23px;
-  text-transform: uppercase;
-  margin-left: 1em;
-  background: #fafafa url(%%checkmark%%) 3px 2px no-repeat;
-  color: #777;
-  border-color: #dddddd;
-}
-/* link-flair finished */
-.linkflair-finished .linkflairlabel {
-  padding: 2px 3px 3px 23px;
-  text-transform: uppercase;
-  margin-left: 1em;
-  background: #fafafa url(%%finished%%) 3px 2px no-repeat;
-  color: #777;
-  border-color: #dddddd;
-}
-/* link-flair finished TWITCH */
-.linkflair-twitchfinished .linkflairlabel {
-  padding: 2px 3px 3px 23px;
-  text-transform: uppercase;
-  margin-left: 1em;
-  background: #fafafa url(%%finished%%) 3px 2px no-repeat;
-  color: #777;
-  border-color: #dddddd;
-}
-.linkflair-featured .linkflairlabel {
-  padding: 2px 3px 3px 23px;
-  text-transform: uppercase;
-  margin-left: 1em;
-  background: #fafafa url(%%checkmark%%) 3px 2px no-repeat;
-  color: #777;
-  border-color: #ddd;
-  font-weight: bold;
-}
-/* link-flair featured TWITCH */
-.linkflair-twitchfeatured .linkflairlabel {
-  padding: 2px 3px 3px 23px;
-  text-transform: uppercase;
-  margin-left: 1em;
-  background: #fafafa url(%%checkmark%%) 3px 2px no-repeat;
-  color: #777;
-  border-color: #dddddd;
-}
-/* link-flair incomplete */
-.linkflair-incomplete .linkflairlabel {
-  padding: 2px 3px 3px 23px;
-  text-transform: uppercase;
-  margin-left: 1em;
-  background: #fafafa url(%%incomplete%%) 3px 2px no-repeat;
-  color: #777;
-  border-color: #dddddd;
-}
-/* link-flair incomplete TWITCH */
-.linkflair-twitchincomplete .linkflairlabel {
-  padding: 2px 3px 3px 23px;
-  text-transform: uppercase;
-  margin-left: 1em;
-  background: #fafafa url(%%incomplete%%) 3px 2px no-repeat;
-  color: #777;
-  border-color: #dddddd;
-}
-/* link-flair upcoming  */
-.linkflair-upcoming .linkflairlabel {
-  padding: 2px 3px 3px 23px;
-  text-transform: uppercase;
-  margin-left: 1em;
-  background: #fafafa url(%%upcoming%%) 3px 2px no-repeat;
-  color: #777;
-  border-color: #dddddd;
-}
-/* link-flair upcoming TWITCH */
-.linkflair-twitchupcoming .linkflairlabel {
-  padding: 2px 3px 3px 23px;
-  text-transform: uppercase;
-  margin-left: 1em;
-  background: #fafafa url(%%upcoming%%) 3px 2px no-repeat;
-  color: #777;
-  border-color: #dddddd;
-}
-/* link-flair finished featured */
-.linkflair-finishedfeatured .linkflairlabel {
-  padding: 2px 3px 3px 23px;
-  text-transform: uppercase;
-  margin-left: 1em;
-  background: #fafafa url(%%finished%%) 3px 2px no-repeat;
-  color: #777;
-  border-color: #dddddd;
-}
-.linkflair-red a.title {
-  color: red !important;
-}
-.linkflair-featured a.title {
-  color: red !important;
-}
-.linkflair-finishedfeatured a.title {
-  color: red !important;
-}
 /* Star */
 a[href$="star"] {
   width: 16px;
@@ -930,65 +806,35 @@ a[href="#sweden"]:after {
 .thing .thumbnail[href*="na_chall"],
 .thing .thumbnail[href*="eu_chall"] {
   background: url(%%thumbnails%%) no-repeat top left;
+  width: 70px;
+  height: 50px;
   padding: 0;
 }
 .thing .thumbnail[href*="iem_cologne"],
 .thing .thumbnail[href*="iem"] {
-  background-position: 0 -368px;
-  height: 30px;
-  width: 62px;
-  margin-left: 9px;
-  margin-right: 9px;
+  background-position: 0 -385px;
 }
 .thing .thumbnail[href*="gfinity"] {
-  background-position: 0 -273px;
-  height: 60px;
-  width: 60px;
-  margin-left: 10px;
-  margin-right: 10px;
+  background-position: 0 -275px;
 }
 .thing .thumbnail[href*="mobafire"] {
-  background-position: 0 -700px;
-  height: 44px;
-  width: 65px;
-  margin-left: 7px;
-  margin-right: 8px;
+  background-position: 0 -825px;
 }
 .thing .thumbnail[href*="gpl"] {
-  background-position: 0 -338px;
-  height: 25px;
-  width: 60px;
-  margin-left: 10px;
-  margin-right: 10px;
+  background-position: 0 -330px;
 }
 .thing .thumbnail[href*="lcs"] {
-  background-position: 0 -525px;
-  height: 44px;
-  width: 62px;
-  margin-left: 9px;
-  margin-right: 9px;
+  background-position: 0 -605px;
 }
 .thing .thumbnail[href*="mlg"] {
-  background-position: 0 -670px;
-  height: 25px;
-  width: 65px;
-  margin-left: 7px;
-  margin-right: 8px;
+  background-position: 0 -770px;
 }
 .thing .thumbnail[href*="starswar"] {
-  background-position: 0 -848px;
-  height: 27px;
-  width: 65px;
-  margin-left: 7px;
-  margin-right: 8px;
+  background-position: 0 -990px;
 }
 .thing .thumbnail[href*="ign"],
 .thing .thumbnail[href*="ipl"] {
-  background-position: 0 -403px;
-  height: 21px;
-  width: 65px;
-  margin-left: 7px;
-  margin-right: 8px;
+  background-position: 0 -440px;
 }
 .thing .thumbnail[href*="regionals"],
 .thing .thumbnail[href*="2_championship"],
@@ -997,106 +843,50 @@ a[href="#sweden"]:after {
 .thing .thumbnail[href*="2_european"],
 .thing .thumbnail[href*="2_south"],
 .thing .thumbnail[href*="na_regionals_com"] {
-  background-position: 0 -942px;
-  height: 35px;
-  width: 65px;
-  margin-left: 7px;
-  margin-right: 8px;
+  background-position: 0 -1100px;
 }
 .thing .thumbnail[href*="tales"] {
-  background-position: 0 -880px;
-  height: 57px;
-  width: 60px;
-  margin-left: 10px;
-  margin-right: 10px;
+  background-position: 0 -1045px;
 }
 .thing .thumbnail[href*="lone"] {
-  background-position: 0 -574px;
-  height: 32px;
-  width: 65px;
-  margin-left: 7px;
-  margin-right: 8px;
+  background-position: 0 -660px;
 }
 .thing .thumbnail[href*="pandoratv"],
 .thing .thumbnail[href*="ogn_champ"],
 .thing .thumbnail[href*="ogn_hot"],
 .thing .thumbnail[href*="ogn_ol"],
 .thing .thumbnail[href*="ogn_lol"] {
-  background-position: 0 -792px;
-  height: 51px;
-  width: 62px;
-  margin-left: 9px;
-  margin-right: 9px;
+  background-position: 0 -935px;
 }
 .thing .thumbnail[href*="shangai"] {
   background-position: 0 0;
-  height: 45px;
-  width: 56px;
-  margin-left: 12px;
-  margin-right: 12px;
 }
 .thing .thumbnail[href*="monster"] {
-  background-position: 0 -103px;
-  height: 55px;
-  width: 50px;
-  margin-left: 15px;
-  margin-right: 15px;
+  background-position: 0 -110px;
 }
 .thing .thumbnail[href*="lpl"] {
-  background-position: 0 -611px;
-  height: 54px;
-  width: 60px;
-  margin-left: 10px;
-  margin-right: 10px;
+  background-position: 0 -715px;
 }
 .thing .thumbnail[href*="nlb_spring"] {
-  background-position: 0 -749px;
-  height: 38px;
-  width: 65px;
-  margin-left: 7px;
-  margin-right: 8px;
+  background-position: 0 -880px;
 }
 .thing .thumbnail[href*="world"] {
-  background-position: 0 -982px;
-  height: 50px;
-  width: 60px;
-  margin-left: 10px;
-  margin-right: 10px;
+  background-position: 0 -1155px;
 }
 .thing .thumbnail[href*="android"] {
-  background-position: 0 -50px;
-  height: 48px;
-  width: 42px;
-  margin-left: 19px;
-  margin-right: 19px;
+  background-position: 0 -55px;
 }
 .thing .thumbnail[href*="lcs_north"] {
-  background-position: 0 -478px;
-  height: 42px;
-  width: 55px;
-  margin-left: 12px;
-  margin-right: 13px;
+  background-position: 0 -550px;
 }
 .thing .thumbnail[href*="lcs_europe"] {
-  background-position: 0 -429px;
-  height: 44px;
-  width: 55px;
-  margin-left: 12px;
-  margin-right: 13px;
+  background-position: 0 -495px;
 }
 .thing .thumbnail[href*="na_chall"] {
-  background-position: 0 -218px;
-  height: 50px;
-  width: 50px;
-  margin-left: 15px;
-  margin-right: 15px;
+  background-position: 0 -220px;
 }
 .thing .thumbnail[href*="eu_chall"] {
-  background-position: 0 -163px;
-  height: 50px;
-  width: 50px;
-  margin-left: 15px;
-  margin-right: 15px;
+  background-position: 0 -165px;
 }
 a[href="#america"]:after,
 a[href="#china"]:after,
@@ -1112,19 +902,19 @@ a[href="#sea"]:after {
   cursor: default !important;
 }
 a[href="#america"]:after {
-  background-position: 396px 0px;
+  background-position: -396px 0px;
 }
 a[href="#china"]:after {
-  background-position: 396px -11px;
+  background-position: -396px -11px;
 }
 a[href="#europe"]:after {
-  background-position: 396px -22px;
+  background-position: -396px -22px;
 }
 a[href="#korea"]:after {
-  background-position: 396px -33px;
+  background-position: -396px -33px;
 }
 a[href="#sea"]:after {
-  background-position: 396px -44px;
+  background-position: -396px -44px;
 }
 a[href="#aaa"]:after,
 a[href="#anexis"]:after,
@@ -1140,7 +930,6 @@ a[href="#clg"]:after,
 a[href="#coast"]:after,
 a[href="#cst"]:after,
 a[href="#cog"]:after,
-a[href="#wzb"]:after,
 a[href="#col"]:after,
 a[href="#colA"]:after,
 a[href="#crs"]:after,
@@ -1217,6 +1006,7 @@ a[href="#vul"]:after,
 a[href="#xdg"]:after,
 a[href="#we"]:after,
 a[href="#wizards"]:after,
+a[href="#wzb"]:after,
 a[href="#xts"]:after {
   content: "";
   width: 36px;
@@ -1421,9 +1211,6 @@ a[href="#dnl"]:after {
 a[href="#wzb"]:after {
   background-position: -216px -275px;
 }
-a[href="#xts"]:after {
-  background-position: -360px -125px;
-}
 /* Worlds */
 a[href="#bears"]:after,
 a[href="#gam"]:after {
@@ -1445,7 +1232,6 @@ a[href="#dp"]:after {
   background-position: -252px -100px;
 }
 /* SCAN EUW */
-/* TODO: Check if #ete and #eternity refer to the same team */
 a[href="#ete"]:after,
 a[href="#eternity"]:after {
   background-position: -288px 0px;
@@ -1472,6 +1258,9 @@ a[href="#nip"]:after {
 a[href="#sword"]:after {
   background-position: -324px -100px;
 }
+a[href="#xts"]:after {
+  background-position: -324px -125px;
+}
 /* Unsorted */
 a[href="#esuba"]:after {
   background-position: -360px 0px;
@@ -1481,4 +1270,135 @@ a[href="#pain"]:after {
 }
 a[href="#roughnex"]:after {
   background-position: -360px -50px;
+}
+/* Users */
+.flair {
+  background: url(%%flairs%%) no-repeat top left;
+  display: inline-block;
+  border: 0;
+  padding: 0;
+}
+.flair-red {
+  background-position: 0 -75px;
+  width: 15px;
+  height: 15px;
+}
+.flair-yellow {
+  background-position: 0 -120px;
+  width: 15px;
+  height: 14px;
+}
+/* Links */
+.linkflairlabel {
+  display: none;
+}
+.linkflair-ongoing .thumbnail:before,
+.linkflair-finished .thumbnail:before,
+.linkflair-featured .thumbnail:before,
+.linkflair-incomplete .thumbnail:before,
+.linkflair-upcoming .thumbnail:before,
+.linkflair-finishedfeatured .thumbnail:before,
+.linkflair-twitchongoing .thumbnail:before,
+.linkflair-twitchfinished .thumbnail:before,
+.linkflair-twitchfeatured .thumbnail:before,
+.linkflair-twitchincomplete .thumbnail:before,
+.linkflair-twitchupcoming .thumbnail:before,
+.flairselector .linkflair-ongoing .linkflairlabel,
+.flairselector .linkflair-finished .linkflairlabel,
+.flairselector .linkflair-featured .linkflairlabel,
+.flairselector .linkflair-incomplete .linkflairlabel,
+.flairselector .linkflair-upcoming .linkflairlabel,
+.flairselector .linkflair-finishedfeatured .linkflairlabel,
+.flairselector .linkflair-twitchongoing .linkflairlabel,
+.flairselector .linkflair-twitchfinished .linkflairlabel,
+.flairselector .linkflair-twitchfeatured .linkflairlabel,
+.flairselector .linkflair-twitchincomplete .linkflairlabel,
+.flairselector .linkflair-twitchupcoming .linkflairlabel,
+.flairtemplate .linkflair-ongoing .linkflairlabel,
+.flairtemplate .linkflair-finished .linkflairlabel,
+.flairtemplate .linkflair-featured .linkflairlabel,
+.flairtemplate .linkflair-incomplete .linkflairlabel,
+.flairtemplate .linkflair-upcoming .linkflairlabel,
+.flairtemplate .linkflair-finishedfeatured .linkflairlabel,
+.flairtemplate .linkflair-twitchongoing .linkflairlabel,
+.flairtemplate .linkflair-twitchfinished .linkflairlabel,
+.flairtemplate .linkflair-twitchfeatured .linkflairlabel,
+.flairtemplate .linkflair-twitchincomplete .linkflairlabel,
+.flairtemplate .linkflair-twitchupcoming .linkflairlabel {
+  background: url(%%flairs%%) no-repeat top left;
+  content: "";
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+.linkflair-ongoing .thumbnail:before,
+.linkflair-finished .thumbnail:before,
+.linkflair-featured .thumbnail:before,
+.linkflair-incomplete .thumbnail:before,
+.linkflair-upcoming .thumbnail:before,
+.linkflair-finishedfeatured .thumbnail:before,
+.linkflair-twitchongoing .thumbnail:before,
+.linkflair-twitchfinished .thumbnail:before,
+.linkflair-twitchfeatured .thumbnail:before,
+.linkflair-twitchincomplete .thumbnail:before,
+.linkflair-twitchupcoming .thumbnail:before {
+  position: relative;
+  top: 25px;
+  left: 45px;
+}
+.linkflair-ongoing .thumbnail:before,
+.linkflair-twitchongoing .thumbnail:before,
+.linkflair-featured .thumbnail:before,
+.linkflair-twitchfeatured .thumbnail:before,
+.flairselector .linkflair-ongoing .linkflairlabel,
+.flairselector .linkflair-twitchongoing .linkflairlabel,
+.flairselector .linkflair-featured .linkflairlabel,
+.flairselector .linkflair-twitchfeatured .linkflairlabel,
+.flairtemplate .linkflair-ongoing .linkflairlabel,
+.flairtemplate .linkflair-twitchongoing .linkflairlabel,
+.flairtemplate .linkflair-featured .linkflairlabel,
+.flairtemplate .linkflair-twitchfeatured .linkflairlabel {
+  background-position: 0 -50px;
+  width: 20px;
+  height: 20px;
+}
+.linkflair-incomplete .thumbnail:before,
+.linkflair-twitchincomplete .thumbnail:before,
+.flairselector .linkflair-incomplete .linkflairlabel,
+.flairselector .linkflair-twitchincomplete .linkflairlabel,
+.flairtemplate .linkflair-incomplete .linkflairlabel,
+.flairtemplate .linkflair-twitchincomplete .linkflairlabel {
+  background-position: 0 -25px;
+  width: 20px;
+  height: 20px;
+}
+.linkflair-upcoming .thumbnail:before,
+.linkflair-twitchupcoming .thumbnail:before,
+.flairselector .linkflair-upcoming .linkflairlabel,
+.flairselector .linkflair-twitchupcoming .linkflairlabel,
+.flairtemplate .linkflair-upcoming .linkflairlabel,
+.flairtemplate .linkflair-twitchupcoming .linkflairlabel {
+  background-position: 0 -95px;
+  width: 20px;
+  height: 20px;
+}
+.linkflair-finished .thumbnail:before,
+.linkflair-twitchfinished .thumbnail:before,
+.linkflair-finishedfeatured .thumbnail:before,
+.flairselector .linkflair-finished .linkflairlabel,
+.flairselector .linkflair-twitchfinished .linkflairlabel,
+.flairselector .linkflair-finishedfeatured .linkflairlabel,
+.flairtemplate .linkflair-finished .linkflairlabel,
+.flairtemplate .linkflair-twitchfinished .linkflairlabel,
+.flairtemplate .linkflair-finishedfeatured .linkflairlabel {
+  background-position: 0 0;
+  width: 20px;
+  height: 20px;
+}
+.linkflair-red a.title,
+.linkflair-featured a.title,
+.linkflair-finishedfeatured a.title,
+.linkflair-twitchfeatured a.title {
+  color: red;
 }
