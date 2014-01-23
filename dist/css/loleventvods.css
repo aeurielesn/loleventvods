@@ -423,13 +423,9 @@ a[href$="warning"] {
   background-color: #bdff8b;
 }
 /* Header image */
-#header {
-  background: #02021a url(%%header%%) no-repeat;
-  background-position: 5px 20px;
-  height: 146px;
-}
 #header-bottom-left {
-  height: 20px;
+  background: #02021a url(%%header%%) no-repeat right top;
+  height: 125px;
 }
 .redditname a {
   text-indent: -1px;
@@ -925,23 +921,29 @@ a[href="#azure"]:after,
 a[href="#bears"]:after,
 a[href="#gam"]:after,
 a[href="#c9"]:after,
+a[href$="/wiki/c9"]:before,
 a[href="#cjb"]:after,
 a[href="#clg"]:after,
+a[href$="/wiki/clg"]:before,
 a[href="#coast"]:after,
 a[href="#cst"]:after,
+a[href$="/wiki/coast"]:before,
 a[href="#cog"]:after,
 a[href="#col"]:after,
 a[href="#colA"]:after,
 a[href="#crs"]:after,
 a[href="#crsA"]:after,
+a[href$="/wiki/crs"]:before,
 a[href="#cw"]:after,
 a[href="#db"]:after,
 a[href="#dbl"]:after,
 a[href="#dig"]:after,
+a[href$="/wiki/dig"]:before,
 a[href="#dnl"]:after,
 a[href="#dp"]:after,
 a[href="#dru"]:after,
 a[href="#eg"]:after,
+a[href$="/wiki/eg"]:before,
 a[href="#esuba"]:after,
 a[href="#ete"]:after,
 a[href="#eternity"]:after,
@@ -999,11 +1001,13 @@ a[href="#tcm"]:after,
 a[href="#ts"]:after,
 a[href="#tsb"]:after,
 a[href="#tsm"]:after,
+a[href$="/wiki/tsm"]:before,
 a[href="#tt"]:after,
 a[href="#ttd"]:after,
 a[href="#ves"]:after,
 a[href="#vul"]:after,
 a[href="#xdg"]:after,
+a[href$="/wiki/vul"]:before,
 a[href="#we"]:after,
 a[href="#wizards"]:after,
 a[href="#wzb"]:after,
@@ -1029,7 +1033,8 @@ a[href="#cw"]:after {
 a[href="#db"]:after {
   background-position: 0px -75px;
 }
-a[href="#eg"]:after {
+a[href="#eg"]:after,
+a[href$="/wiki/eg"]:before {
   background-position: 0px -100px;
 }
 a[href="#fnatic"]:after,
@@ -1063,10 +1068,12 @@ a[href="#sk"]:after {
   background-position: 0px -325px;
 }
 /* LCS NA */
-a[href="#c9"]:after {
+a[href="#c9"]:after,
+a[href$="/wiki/c9"]:before {
   background-position: -36px 0px;
 }
-a[href="#clg"]:after {
+a[href="#clg"]:after,
+a[href$="/wiki/clg"]:before {
   background-position: -36px -25px;
 }
 a[href="#col"]:after,
@@ -1074,14 +1081,17 @@ a[href="#colA"]:after {
   background-position: -36px -50px;
 }
 a[href="#crs"]:after,
-a[href="#crsA"]:after {
+a[href="#crsA"]:after,
+a[href$="/wiki/crs"]:before {
   background-position: -36px -75px;
 }
 a[href="#coast"]:after,
-a[href="#cst"]:after {
+a[href="#cst"]:after,
+a[href$="/wiki/coast"]:before {
   background-position: -36px -100px;
 }
-a[href="#dig"]:after {
+a[href="#dig"]:after,
+a[href$="/wiki/dig"]:before {
   background-position: -36px -125px;
 }
 a[href="#ggu"]:after {
@@ -1091,14 +1101,16 @@ a[href="#marn"]:after,
 a[href="#mrn"]:after {
   background-position: -36px -175px;
 }
-a[href*="#tsm"]:after {
+a[href*="#tsm"]:after,
+a[href$="/wiki/tsm"]:before {
   background-position: -36px -200px;
 }
 a[href="#ves"]:after {
   background-position: -36px -225px;
 }
 a[href="#vul"]:after,
-a[href="#xdg"]:after {
+a[href="#xdg"]:after,
+a[href$="/wiki/vul"]:before {
   background-position: -36px -250px;
 }
 /* LCS Promos EU */
