@@ -400,8 +400,7 @@ a[href$="warning"] {
 }
 .titlebox .usertext .md > h1 {
   font-size: large;
-  height: 15px;
-  line-height: 15px;
+  line-height: 26px;
   border: 0;
   margin: 0;
   padding: 0;
@@ -490,7 +489,6 @@ a[href$="warning"] {
 .titlebox .md h4 {
   background-color: #ccc!important;
   width: 280px;
-  height: 26px;
   line-height: 26px;
   font-weight: normal;
   font-size: 12px;
@@ -588,7 +586,7 @@ a[href$="warning"] {
 .domain {
   display: none;
 }
-/* Hides leave contributor button and some other stuff */
+/* Hides leave contributor button and RES navigation keys */
 .side .leavecontributor-button,
 table .keyNavAnnotation,
 a[href^="#"] + .keyNavAnnotation {
@@ -598,6 +596,24 @@ a[href^="#"] + .keyNavAnnotation {
 .edited-timestamp::after {
   content: " (" attr(title) ")";
   font-size: 90%;
+}
+/* Collapsable in entry */
+.entry .md h3 {
+  margin-bottom: 8px;
+}
+.entry .md h3 + p + * {
+  display: none;
+}
+.entry .md h3 + p:hover + *,
+.entry .md h3 + p + *:hover,
+.entry .md h3:hover + p + * {
+  display: table;
+}
+.entry .md h3 + p {
+  position: absolute;
+  margin-top: -25px;
+  height: 30px;
+  width: 294px;
 }
 /* Top announcement.
  * It works by enabling <h6/> in the sidebar as a announcement banner on top
@@ -705,26 +721,26 @@ h6 a {
   background-position: -16px -89px;
 }
 /* Social media buttons */
-.side a[href="http://goo.gl/3kRqh"] {
-  display: inline-block;
-  text-align: center;
-  height: 32px;
-  width: 32px;
-  background: url(%%twitter%%) no-repeat 0 0;
-}
-.side a[href="http://goo.gl/YrFC9"] {
-  display: inline-block;
-  text-align: center;
-  height: 32px;
-  width: 32px;
-  background: url(%%facebook%%) no-repeat 0 0;
-}
+.side a[href="http://goo.gl/3kRqh"],
+.side a[href="http://goo.gl/YrFC9"],
 .side a[href="http://goo.gl/BDoQm"] {
   display: inline-block;
-  text-align: center;
-  height: 32px;
+  background: url(%%social%%) no-repeat top left;
+}
+.side a[href="http://goo.gl/3kRqh"] {
+  background-position: 0 -37px;
   width: 32px;
-  background: url(%%youtube%%) no-repeat 0 0;
+  height: 32px;
+}
+.side a[href="http://goo.gl/YrFC9"] {
+  background-position: 0 0;
+  width: 32px;
+  height: 32px;
+}
+.side a[href="http://goo.gl/BDoQm"] {
+  background-position: 0 -74px;
+  width: 32px;
+  height: 33px;
 }
 a[href$="/spoiler"] {
   background: none repeat scroll 0 0 #000 !important;
@@ -908,43 +924,71 @@ a[href="#sweden"]:after {
 .thing .thumbnail[href*="lpl"],
 .thing .thumbnail[href*="nlb_spring"],
 .thing .thumbnail[href*="world"],
-.thing .thumbnail[href*="with_the"] {
-  background: url(%%thumbnails%%) no-repeat scroll transparent;
+.thing .thumbnail[href*="android"],
+.thing .thumbnail[href*="lcs_north"],
+.thing .thumbnail[href*="lcs_europe"],
+.thing .thumbnail[href*="na_chall"],
+.thing .thumbnail[href*="eu_chall"] {
+  background: url(%%thumbnails%%) no-repeat top left;
   padding: 0;
 }
 .thing .thumbnail[href*="iem_cologne"],
 .thing .thumbnail[href*="iem"] {
-  background-position: 0 -149px;
+  background-position: 0 -368px;
   height: 30px;
+  width: 62px;
+  margin-left: 9px;
+  margin-right: 9px;
 }
 .thing .thumbnail[href*="gfinity"] {
-  background-position: 0 -302px;
+  background-position: 0 -273px;
   height: 60px;
+  width: 60px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 .thing .thumbnail[href*="mobafire"] {
-  background-position: 0 0;
+  background-position: 0 -700px;
   height: 44px;
+  width: 65px;
+  margin-left: 7px;
+  margin-right: 8px;
 }
 .thing .thumbnail[href*="gpl"] {
-  background-position: 0 -901px;
+  background-position: 0 -338px;
   height: 25px;
+  width: 60px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 .thing .thumbnail[href*="lcs"] {
-  background-position: 0 -526px;
+  background-position: 0 -525px;
   height: 44px;
+  width: 62px;
+  margin-left: 9px;
+  margin-right: 9px;
 }
 .thing .thumbnail[href*="mlg"] {
-  background-position: 0 -1011px;
+  background-position: 0 -670px;
   height: 25px;
+  width: 65px;
+  margin-left: 7px;
+  margin-right: 8px;
 }
 .thing .thumbnail[href*="starswar"] {
-  background-position: 0 -250px;
+  background-position: 0 -848px;
   height: 27px;
+  width: 65px;
+  margin-left: 7px;
+  margin-right: 8px;
 }
 .thing .thumbnail[href*="ign"],
 .thing .thumbnail[href*="ipl"] {
-  background-position: 0 -204px;
+  background-position: 0 -403px;
   height: 21px;
+  width: 65px;
+  margin-left: 7px;
+  margin-right: 8px;
 }
 .thing .thumbnail[href*="regionals"],
 .thing .thumbnail[href*="2_championship"],
@@ -953,56 +997,106 @@ a[href="#sweden"]:after {
 .thing .thumbnail[href*="2_european"],
 .thing .thumbnail[href*="2_south"],
 .thing .thumbnail[href*="na_regionals_com"] {
-  background-position: 0 -951px;
+  background-position: 0 -942px;
   height: 35px;
+  width: 65px;
+  margin-left: 7px;
+  margin-right: 8px;
 }
 .thing .thumbnail[href*="tales"] {
-  background-position: 0 -819px;
+  background-position: 0 -880px;
   height: 57px;
+  width: 60px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 .thing .thumbnail[href*="lone"] {
-  background-position: 0 -1061px;
+  background-position: 0 -574px;
   height: 32px;
+  width: 65px;
+  margin-left: 7px;
+  margin-right: 8px;
 }
 .thing .thumbnail[href*="pandoratv"],
 .thing .thumbnail[href*="ogn_champ"],
 .thing .thumbnail[href*="ogn_hot"],
 .thing .thumbnail[href*="ogn_ol"],
 .thing .thumbnail[href*="ogn_lol"] {
-  background-position: 0 -450px;
+  background-position: 0 -792px;
   height: 51px;
+  width: 62px;
+  margin-left: 9px;
+  margin-right: 9px;
 }
 .thing .thumbnail[href*="shangai"] {
-  background-position: 0 -595px;
+  background-position: 0 0;
   height: 45px;
+  width: 56px;
+  margin-left: 12px;
+  margin-right: 12px;
 }
 .thing .thumbnail[href*="monster"] {
-  background-position: 0 -69px;
+  background-position: 0 -103px;
   height: 55px;
+  width: 50px;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 .thing .thumbnail[href*="lpl"] {
-  background-position: 0 -740px;
+  background-position: 0 -611px;
   height: 54px;
+  width: 60px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 .thing .thumbnail[href*="nlb_spring"] {
-  background-position: 0 -387px;
+  background-position: 0 -749px;
   height: 38px;
+  width: 65px;
+  margin-left: 7px;
+  margin-right: 8px;
 }
 .thing .thumbnail[href*="world"] {
-  background-position: 0 -665px;
+  background-position: 0 -982px;
   height: 50px;
+  width: 60px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
-.thing .thumbnail[href*="with_the"] {
-  background-position: 0 -1118px;
+.thing .thumbnail[href*="android"] {
+  background-position: 0 -50px;
   height: 48px;
+  width: 42px;
+  margin-left: 19px;
+  margin-right: 19px;
 }
-.thing .thumbnail[href*="na_lcs"] {
-  background-position: 0 -1191px;
+.thing .thumbnail[href*="lcs_north"] {
+  background-position: 0 -478px;
   height: 42px;
+  width: 55px;
+  margin-left: 12px;
+  margin-right: 13px;
 }
-.thing .thumbnail[href*="eu_lcs"] {
-  background-position: 0 -1258px;
+.thing .thumbnail[href*="lcs_europe"] {
+  background-position: 0 -429px;
   height: 44px;
+  width: 55px;
+  margin-left: 12px;
+  margin-right: 13px;
+}
+.thing .thumbnail[href*="na_chall"] {
+  background-position: 0 -218px;
+  height: 50px;
+  width: 50px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.thing .thumbnail[href*="eu_chall"] {
+  background-position: 0 -163px;
+  height: 50px;
+  width: 50px;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 a[href="#america"]:after,
 a[href="#china"]:after,

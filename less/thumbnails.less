@@ -1,3 +1,10 @@
+.calculate-width-and-margins(@thumbnail-width: 80px) {
+  @margin: floor((@thumbnail-width - @width) / 2);
+  width: @width;
+  margin-left: @margin;
+  margin-right: @thumbnail-width - @margin - @width;
+}
+
 .thing .thumbnail {
     &[href*="iem_cologne"],
     &[href*="gfinity"],
@@ -29,59 +36,55 @@
     &[href*="lpl"],
     &[href*="nlb_spring"],
     &[href*="world"],
-    &[href*="with_the"] {
-        background: url(%%thumbnails%%) no-repeat scroll transparent;
+    &[href*="android"],
+    &[href*="lcs_north"],
+    &[href*="lcs_europe"],
+    &[href*="na_chall"],
+    &[href*="eu_chall"] {
+        .thumbnails;
         padding: 0;
     }
 
     &[href*="iem_cologne"],
     &[href*="iem"] {
-        background-position: 0 -149px;
-        // width: 62px;
-        height: 30px;
+        .thumbnails-iem;
+        .calculate-width-and-margins();
     }
 
     &[href*="gfinity"] {
-        background-position: 0 -302px;
-        // width: 60px;
-        height: 60px;
+        .thumbnails-gfinity;
+        .calculate-width-and-margins();
     }
 
     &[href*="mobafire"] {
-        background-position: 0 0;
-        // width: 65px;
-        height: 44px;
+        .thumbnails-mobafire;
+        .calculate-width-and-margins();
     }
 
     &[href*="gpl"] {
-        background-position: 0 -901px;
-        // width: 60px;
-        height: 25px;
+        .thumbnails-gpl;
+        .calculate-width-and-margins();
     }
 
     &[href*="lcs"] {
-        background-position: 0 -526px;
-        // width: 62px;
-        height: 44px;
+        .thumbnails-lcs;
+        .calculate-width-and-margins();
     }
 
     &[href*="mlg"] {
-        background-position: 0 -1011px;
-        // width: 65px;
-        height: 25px;
+        .thumbnails-mlg;
+        .calculate-width-and-margins();
     }
 
     &[href*="starswar"] {
-        background-position: 0 -250px;
-        // width: 65px;
-        height: 27px;
+        .thumbnails-starswar;
+        .calculate-width-and-margins();
     }
 
     &[href*="ign"],
     &[href*="ipl"] {
-        background-position: 0 -204px;
-        // width: 65px;
-        height: 21px;
+        .thumbnails-ign;
+        .calculate-width-and-margins();
     }
 
     &[href*="regionals"],
@@ -91,21 +94,18 @@
     &[href*="2_european"],
     &[href*="2_south"],
     &[href*="na_regionals_com"] {
-        background-position: 0 -951px;
-        // width: 65px;
-        height: 35px;
+        .thumbnails-wcs2;
+        .calculate-width-and-margins();
     }
 
     &[href*="tales"] {
-        background-position: 0 -819px;
-        // width: 60px;
-        height: 57px;
+        .thumbnails-tales;
+        .calculate-width-and-margins();
     }
 
     &[href*="lone"] {
-        background-position: 0 -1061px;
-        // width: 65px;
-        height: 32px;
+        .thumbnails-lone-star-clash;
+        .calculate-width-and-margins();
     }
 
     &[href*="pandoratv"],
@@ -113,56 +113,57 @@
     &[href*="ogn_hot"],
     &[href*="ogn_ol"],
     &[href*="ogn_lol"] {
-        background-position: 0 -450px;
-        // width: 62px;
-        height: 51px;
+        .thumbnails-ogn;
+        .calculate-width-and-margins();
     }
 
     &[href*="shangai"] {
-        background-position: 0 -595px;
-        // width: 63px;
-        height: 45px;
+        .thumbnails-allstar;
+        .calculate-width-and-margins();
     }
 
     &[href*="monster"] {
-        background-position: 0 -69px;
-        // width: 50px;
-        height: 55px;
+        .thumbnails-black-monster-cup;
+        .calculate-width-and-margins();
     }
 
     &[href*="lpl"] {
-        background-position: 0 -740px;
-        // width: 60px;
-        height: 54px;
+        .thumbnails-lpl;
+        .calculate-width-and-margins();
     }
 
     &[href*="nlb_spring"] {
-        background-position: 0 -387px;
-        // width: 65px;
-        height: 38px;
+        .thumbnails-nlb;
+        .calculate-width-and-margins();
     }
 
     &[href*="world"] {
-        background-position: 0 -665px;
-        // width: 60px;
-        height: 50px;
+        .thumbnails-wcs3;
+        .calculate-width-and-margins();
     }
 
-    &[href*="with_the"] {
-        background-position: 0 -1118px;
-        // width: 50px;
-        height: 48px;
+    &[href*="android"] {
+        .thumbnails-android;
+        .calculate-width-and-margins();
     }
 
-    &[href*="na_lcs"] {
-        background-position: 0 -1191px;
-        // width: 50px;
-        height: 42px;
+    &[href*="lcs_north"] {
+        .thumbnails-lcs-na;
+        .calculate-width-and-margins();
     }
 
-    &[href*="eu_lcs"] {
-        background-position: 0 -1258px;
-        // width: 50px;
-        height: 44px;
+    &[href*="lcs_europe"] {
+        .thumbnails-lcs-eu;
+        .calculate-width-and-margins();
+    }
+
+    &[href*="na_chall"] {
+        .thumbnails-cs-na;
+        .calculate-width-and-margins();
+    }
+
+    &[href*="eu_chall"] {
+        .thumbnails-cs-eu;
+        .calculate-width-and-margins();
     }
 }
