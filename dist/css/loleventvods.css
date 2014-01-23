@@ -469,7 +469,7 @@ a[href^="#"] + .keyNavAnnotation {
   content: " (" attr(title) ")";
   font-size: 90%;
 }
-/* Collapsable in entry */
+/* Collapsable in entries */
 .entry .md h3 {
   margin-bottom: 8px;
 }
@@ -1419,5 +1419,5 @@ a[href="#roughnex"]:after {
 .linkflair-featured a.title,
 .linkflair-finishedfeatured a.title,
 .linkflair-twitchfeatured a.title {
-  color: red;
+  color: red !important;
 }
