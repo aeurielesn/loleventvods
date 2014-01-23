@@ -72,3 +72,13 @@
       width: 294px;
     }
 }
+
+/* This consider that the Team X columns in 
+ * the matches description are left and right aligned
+ */
+
+.expando th {
+    &[align="left"], &[align="right"] {
+        min-width: 70px;
+    }
+}

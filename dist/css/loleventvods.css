@@ -487,6 +487,13 @@ a[href^="#"] + .keyNavAnnotation {
   height: 30px;
   width: 294px;
 }
+/* This consider that the Team X columns in 
+ * the matches description are left and right aligned
+ */
+.expando th[align="left"],
+.expando th[align="right"] {
+  min-width: 70px;
+}
 /* Top announcement.
  * It works by enabling <h6/> in the sidebar as a announcement banner on top
  * of the main subreddit content.
