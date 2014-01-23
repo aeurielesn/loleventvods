@@ -1,0 +1,79 @@
+/* Users */
+
+.flair {
+    .flairs;
+    display:inline-block;
+    border: 0;
+    padding: 0;
+}
+
+.flair-red { 
+    .flairs-red;
+} 
+
+.flair-yellow {
+    .flairs-yellow;
+} 
+
+/* Links */
+
+.linkflairlabel {
+    display: none;
+}
+
+ongoing, finished, featured, incomplete, upcoming, finishedfeatured,
+twitchongoing, twitchfinished, twitchfeatured, twitchincomplete, twitchupcoming {
+    .linkflair-& { 
+        .thumbnail:before, .flairselector & .linkflairlabel, .flairtemplate & .linkflairlabel {
+            .flairs;
+            content: "";
+            display: inline-block;
+            margin: 0;
+            padding: 0;
+            border: 0;
+        }
+        .thumbnail:before {
+            position: relative;
+            top: 25px;
+            left: 45px;
+        }
+    }
+}
+
+ongoing, twitchongoing, featured, twitchfeatured {
+    .linkflair-& {
+        .thumbnail:before, .flairselector & .linkflairlabel, .flairtemplate & .linkflairlabel {
+            .flairs-ongoing;
+        }
+    }
+}
+
+incomplete, twitchincomplete {
+    .linkflair-& {
+        .thumbnail:before, .flairselector & .linkflairlabel, .flairtemplate & .linkflairlabel {
+            .flairs-incomplete;
+        }
+    }
+}
+
+upcoming, twitchupcoming {
+    .linkflair-& {
+        .thumbnail:before, .flairselector & .linkflairlabel, .flairtemplate & .linkflairlabel {
+            .flairs-upcoming;
+        }
+    }
+}
+
+finished, twitchfinished, finishedfeatured {
+    .linkflair-& {
+        .thumbnail:before, .flairselector & .linkflairlabel, .flairtemplate & .linkflairlabel {
+            .flairs-finished;
+        }
+    }
+}
+
+red, featured, finishedfeatured, twitchfeatured {
+    .linkflair-& a.title { 
+        color: red;
+    }
+}
