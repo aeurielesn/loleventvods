@@ -920,6 +920,7 @@ a[href="#sea"]:after {
   background-position: -396px -44px;
 }
 a[href="#aaa"]:after,
+a[href="#all"]:after,
 a[href="#anexis"]:after,
 a[href="#atn"]:after,
 a[href="#aware"]:after,
@@ -993,6 +994,7 @@ a[href="#pe"]:after,
 a[href="#qg"]:after,
 a[href="#qtc"]:after,
 a[href="#rg"]:after,
+a[href="#roc"]:after,
 a[href="#roughnex"]:after,
 a[href="#royal"]:after,
 a[href="#ryl"]:after,
@@ -1031,17 +1033,16 @@ a[href="#xts"]:after {
 a[href="#aaa"]:after {
   background-position: 0px 0px;
 }
-a[href="#atn"]:after {
-  background-position: 0px -25px;
+a[href="#all"]:after {
+  background-position: 0px 25px;
 }
-a[href="#cw"]:after {
+a[href="#atn"]:after {
   background-position: 0px -50px;
 }
-a[href="#db"]:after {
+a[href="#cw"]:after {
   background-position: 0px -75px;
 }
-a[href="#eg"]:after,
-a[href$="/wiki/eg"]:before {
+a[href="#db"]:after {
   background-position: 0px -100px;
 }
 a[href="#fnatic"]:after,
@@ -1058,21 +1059,24 @@ a[href="#gmb"]:after {
 a[href="#ld"]:after {
   background-position: 0px -200px;
 }
-a[href="#millenium"]:after,
-a[href="#mil"]:after {
+a[href="#mym"]:after {
   background-position: 0px -225px;
 }
-a[href="#mym"]:after {
+a[href="#millenium"]:after,
+a[href="#mil"]:after {
   background-position: 0px -250px;
 }
 a[href="#nip2"]:after {
   background-position: 0px -275px;
 }
-a[href="#shc"]:after {
+a[href="#roc"]:after {
   background-position: 0px -300px;
 }
-a[href="#sk"]:after {
+a[href="#shc"]:after {
   background-position: 0px -325px;
+}
+a[href="#sk"]:after {
+  background-position: 0px -350px;
 }
 /* LCS NA */
 a[href="#c9"]:after,
@@ -1101,24 +1105,28 @@ a[href="#dig"]:after,
 a[href$="/wiki/dig"]:before {
   background-position: -36px -125px;
 }
-a[href="#ggu"]:after {
+a[href="#eg"]:after,
+a[href$="/wiki/eg"]:before {
   background-position: -36px -150px;
+}
+a[href="#ggu"]:after {
+  background-position: -36px -175px;
 }
 a[href="#marn"]:after,
 a[href="#mrn"]:after {
-  background-position: -36px -175px;
+  background-position: -36px -200px;
 }
 a[href*="#tsm"]:after,
 a[href$="/wiki/tsm"]:before {
-  background-position: -36px -200px;
+  background-position: -36px -225px;
 }
 a[href="#ves"]:after {
-  background-position: -36px -225px;
+  background-position: -36px -250px;
 }
 a[href="#vul"]:after,
 a[href="#xdg"]:after,
 a[href$="/wiki/vul"]:before {
-  background-position: -36px -250px;
+  background-position: -36px -275px;
 }
 /* LCS Promos EU */
 a[href="#mouz"]:after {
@@ -1193,61 +1201,64 @@ a[href="#we"]:after {
   background-position: -180px -75px;
 }
 /* MCS */
-a[href="#fxo"]:after {
-  background-position: -216px 0px;
-}
-a[href="#nwe"]:after {
-  background-position: -216px -25px;
-}
-a[href="#tbd"]:after {
-  background-position: -216px -50px;
-}
-a[href="#ttd"]:after {
-  background-position: -216px -75px;
-}
 a[href="#aware"]:after,
 a[href="#awg"]:after {
-  background-position: -216px -100px;
-}
-a[href="#nid"]:after {
-  background-position: -216px -125px;
-}
-a[href="#ggLA"]:after {
-  background-position: -216px -150px;
-}
-a[href="#rxg"]:after {
-  background-position: -216px -175px;
-}
-a[href="#tt"]:after {
-  background-position: -216px -200px;
-}
-a[href="#iodd"]:after {
-  background-position: -216px -225px;
+  background-position: -216px 0px;
 }
 a[href="#dnl"]:after {
+  background-position: -216px -25px;
+}
+a[href="#xts"]:after {
+  background-position: -216px -50px;
+}
+a[href="#fxo"]:after {
+  background-position: -216px -75px;
+}
+a[href="#ggLA"]:after {
+  background-position: -216px -100px;
+}
+a[href="#iodd"]:after {
+  background-position: -216px -125px;
+}
+a[href="#nid"]:after {
+  background-position: -216px -150px;
+}
+a[href="#nwe"]:after {
+  background-position: -216px -175px;
+}
+a[href="#rxg"]:after {
+  background-position: -216px -200px;
+}
+a[href="#tbd"]:after {
+  background-position: -216px -225px;
+}
+a[href="#ttd"]:after {
   background-position: -216px -250px;
 }
-a[href="#wzb"]:after {
+a[href="#tt"]:after {
   background-position: -216px -275px;
 }
+a[href="#wzb"]:after {
+  background-position: -216px -300px;
+}
 /* Worlds */
+a[href="#dp"]:after {
+  background-position: -252px 0px;
+}
 a[href="#bears"]:after,
 a[href="#gam"]:after {
-  background-position: -252px 0px;
+  background-position: -252px -25px;
 }
 a[href="#gaming"]:after,
 a[href="#gg"]:after {
-  background-position: -252px -25px;
+  background-position: -252px -50px;
 }
 a[href="#min"]:after,
 a[href="#msk"]:after {
-  background-position: -252px -50px;
+  background-position: -252px -75px;
 }
 a[href="#royal"]:after,
 a[href="#ryl"]:after {
-  background-position: -252px -75px;
-}
-a[href="#dp"]:after {
   background-position: -252px -100px;
 }
 /* SCAN EUW */
@@ -1276,9 +1287,6 @@ a[href="#nip"]:after {
 }
 a[href="#sword"]:after {
   background-position: -324px -100px;
-}
-a[href="#xts"]:after {
-  background-position: -324px -125px;
 }
 /* Unsorted */
 a[href="#esuba"]:after {
