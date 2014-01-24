@@ -10,7 +10,7 @@ The current spritesheets for teams and events, among other things, are currently
 
 Currently, the dimensions for icons and thumbs are as follows:
 
-- **Team icons:** 36px by 20px, with an additional 5px padding beneath (total: 36px by 20px  
+- **Team icons:** 36px by 20px, with an additional 5px padding beneath (total: 36px by 25px) 
 - **Tournament/Event Thumbnails:** 70px by 50px
 
 ## GIMP
