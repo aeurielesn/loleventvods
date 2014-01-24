@@ -15,6 +15,10 @@ This folder contains automatically generated sprite files. Details on how each f
 
 ## thumbnails.less
 
+### Pregeneration
+
+- The size of a thumbnail must be 70px x 50px.
+
 ### Generation
 
 - Source file: [`thumbnails.zip`][thumbnails].
