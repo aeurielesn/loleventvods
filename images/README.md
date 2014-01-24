@@ -4,7 +4,14 @@ The home for the sprites.
 
 ## Sprite Consolidation
 
-The current spritesheets for teams, events, among others; are currently being updated in this [imgur album][teams]. You can find them here as PSD files.
+The current spritesheets for teams and events, among other things, are currently being updated in this [imgur album][teams]. You can find them here as PSD files.
+
+## Sprite Sizing
+
+Currently, the dimensions for icons and thumbs are as follows:
+
+- **Team icons:** 36px by 20px, with an additional 5px padding beneath (total: 36px by 25px) 
+- **Tournament/Event Thumbnails:** 70px by 50px
 
 ## GIMP
 
