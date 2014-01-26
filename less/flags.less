@@ -1,81 +1,38 @@
-.flags-belgium,
-.flags-checzrepublic,
-.flags-denmark,
-.flags-estonia,
-.flags-finland,
-.flags-france,
-.flags-germany,
-.flags-lithuania,
-.flags-netherlands,
-.flags-norway,
-.flags-poland,
-.flags-russia,
-.flags-scotland,
-.flags-spain,
-.flags-sweden {
-    width: 16px;
-    height: 11px;
+@flag-spacing: -61px;
+
+belgium,
+checzrepublic,
+denmark,
+estonia,
+finland,
+france,
+germany,
+lithuania,
+netherlands,
+norway,
+poland,
+russia,
+scotland,
+spain,
+sweden {
+  .flags-& { width: 16px; height: 11px; }
 }
 
-.flags-belgium {
-    background-position: 0 0;
-}
-
-.flags-checzrepublic {
-    background-position: 0 -61px;
-}
-
-.flags-denmark {
-    background-position: 0 -122px;
-}
-
-.flags-estonia {
-    background-position: 0 -183px;
-}
-
-.flags-finland {
-    background-position: 0 -244px;
-}
-
-.flags-france {
-    background-position: 0 -305px;
-}
-
-.flags-germany {
-    background-position: 0 -366px;
-}
-
-.flags-lithuania {
-    background-position: 0 -427px;
-}
-
-.flags-netherlands {
-    background-position: 0 -488px;
-}
-
-.flags-norway {
-    background-position: 0 -549px;
-}
-
-.flags-poland {
-    background-position: 0 -610px;
-}
-
-.flags-russia {
-    background-position: 0 -671px;
-}
-
-.flags-scotland {
-    background-position: 0 -732px;
-}
-
-.flags-spain {
-    background-position: 0 -793px;
-}
-
-.flags-sweden {
-    background-position: 0 -854px;
-}
+.flags-belgium       { .bg-pos; }
+.flags-checzrepublic { .bg-pos(0, @flag-spacing); }
+.flags-denmark       { .bg-pos(0, @flag-spacing * 2); }
+.flags-estonia       { .bg-pos(0, @flag-spacing * 3); }
+.flags-finland       { .bg-pos(0, @flag-spacing * 4); }
+.flags-france        { .bg-pos(0, @flag-spacing * 5); }
+.flags-germany       { .bg-pos(0, @flag-spacing * 6); }
+.flags-lithuania     { .bg-pos(0, @flag-spacing * 7); }
+.flags-netherlands   { .bg-pos(0, @flag-spacing * 8); }
+.flags-norway        { .bg-pos(0, @flag-spacing * 9); }
+.flags-poland        { .bg-pos(0, @flag-spacing * 10); }
+.flags-russia        { .bg-pos(0, @flag-spacing * 11); }
+.flags-scotland      { .bg-pos(0, @flag-spacing * 12); }
+.flags-spain         { .bg-pos(0, @flag-spacing * 13); }
+.flags-sweden        { .bg-pos(0, @flag-spacing * 14); }
 
 a[href="#belgium"]:after,
 a[href="#checzrepublic"]:after,
@@ -101,62 +58,18 @@ a[href="#sweden"]:after {
     cursor: default !important;
 }
 
-a[href="#belgium"]:after {
-    background-position: 0 0;
-}
-
-a[href="#checzrepublic"]:after {
-    background-position: 0 -61px;
-}
-
-a[href="#denmark"]:after {
-    background-position: 0 -122px;
-}
-
-a[href="#estonia"]:after {
-    background-position: 0 -183px;
-}
-
-a[href="#finland"]:after {
-    background-position: 0 -244px;
-}
-
-a[href="#france"]:after {
-    background-position: 0 -305px;
-}
-
-a[href="#germany"]:after {
-    background-position: 0 -366px;
-}
-
-a[href="#lithuania"]:after {
-    background-position: 0 -427px;
-}
-
-a[href="#netherlands"]:after {
-    background-position: 0 -488px;
-}
-
-a[href="#norway"]:after {
-    background-position: 0 -549px;
-}
-
-a[href="#poland"]:after {
-    background-position: 0 -610px;
-}
-
-a[href="#russia"]:after {
-    background-position: 0 -671px;
-}
-
-a[href="#scotland"]:after {
-    background-position: 0 -732px;
-}
-
-a[href="#spain"]:after {
-    background-position: 0 -793px;
-}
-
-a[href="#sweden"]:after {
-    background-position: 0 -854px;
-}
+a[href="#belgium"]:after       { .bg-pos; }
+a[href="#checzrepublic"]:after { .bg-pos(0, @flag-spacing); }
+a[href="#denmark"]:after       { .bg-pos(0, @flag-spacing * 2); }
+a[href="#estonia"]:after       { .bg-pos(0, @flag-spacing * 3); }
+a[href="#finland"]:after       { .bg-pos(0, @flag-spacing * 4); }
+a[href="#france"]:after        { .bg-pos(0, @flag-spacing * 5); }
+a[href="#germany"]:after       { .bg-pos(0, @flag-spacing * 6); }
+a[href="#lithuania"]:after     { .bg-pos(0, @flag-spacing * 7); }
+a[href="#netherlands"]:after   { .bg-pos(0, @flag-spacing * 8); }
+a[href="#norway"]:after        { .bg-pos(0, @flag-spacing * 9); }
+a[href="#poland"]:after        { .bg-pos(0, @flag-spacing * 10); }
+a[href="#russia"]:after        { .bg-pos(0, @flag-spacing * 11); }
+a[href="#scotland"]:after      { .bg-pos(0, @flag-spacing * 12); }
+a[href="#spain"]:after         { .bg-pos(0, @flag-spacing * 13); }
+a[href="#sweden"]:after        { .bg-pos(0, @flag-spacing * 14); }

@@ -1,51 +1,227 @@
-/* Changes */
+@icon-spacing: -19px;
 
+.side .md p > em {
+  display: inline-block;
+  padding: 5px;
+  background: #F6E69F;
+  border: 1px solid orange;
+  & > strong { font-style: italic; }
+}
+
+/* Changes */
 .side h4,
 .side h5,
 .side h6 {
-    height:0;
+  height:0;
 }
 
 /* Modify submit a new post */
-
 .submit .morelink a {
     content: '';
     font-size: 0;
+    &:before { content: 'Submit new VoDs post'; font-size: 14px; }
 }
 
-.submit .morelink a:before {
-    content: 'Submit new VoDs post';
-    font-size: 14px;
+/* Subscribers */
+.subscribers {
+  & .word { display: none; }  
+  & .number::after { content: " subscribers"; }
+}
+
+/* Users here now */
+.users-online .word { display: none; }
+.users-online .number::after { content: " viewers online now"; }
+
+/* User flair */
+.flairselector .customizer { display: none !important; }
+
+/* Sidebar headings */
+.sidecontentbox .content, .linkinfo, .footer {
+  background: transparent !important;
+  font-size: small;
+  border: 1px solid #ccc;
+  margin: 7px 0 0;
+  .border-radius(10px);
+}
+.titlebox {
+  padding: 10px;
+  background: transparent !important;
+  border: 1px solid #ccc;
+  color: #000;
+  .border-radius(10px);
+  & h1 a { display: none; }
+  & blockquote {
+    border: 1px solid #AAA;
+    text-shadow: 0 1px 0 white;
+    color: #000;
+    font-weight: bold;
+    .border-radius(10px);
+  }
+  & .bottom { border: 0; }
+  & form.toggle { background-color: transparent !important; }
+  & .usertext { 
+    margin: 15px 0; 
+    line-height: 120%;
+    & .md { 
+      margin: 0;
+      padding: 0;
+      overflow: visible;
+      & h2 { font-weight: bold; color: #000 !important; }
+      & > h1 {
+        font-size: large;
+        // height: 15px;
+        line-height: 26px;
+        border: none;
+        background-color: #193064 !important;
+        width: 287px;
+        color: #fff !important;
+        padding: 5px 0 0 20px;
+        margin: 10px 13px 5px -18px;
+        border-bottom: 1px solid #193064 !important;
+        z-index: 100;
+        &:after {
+          display: block;
+          content: "";
+          border-color: transparent #2B628D transparent transparent !important;
+          border-style: solid;
+          border-width: 15px;
+          height: 0;
+          width: 0;
+          position: absolute;
+          z-index: -1;
+          margin-left: -35px;
+          margin-top: -10px
+        }
+      }
+    }
+  }
+}
+
+/* drop down */
+.side { 
+  z-index: -100;
+  & .md h3 { 
+    margin-bottom: 8px;
+    & + p + table { display: none; }
+    & + p:hover + table, & + p + table:hover { display: table; }
+    & + p { position: absolute; margin-top: -25px; height: 30px; width: 294px }
+    & + ul {
+      margin-top: 0;
+      margin-bottom: 0;
+      padding: 3px;
+    }
+  }
+}
+.md { overflow: visible; }
+
+.titlebox h1,
+.titlebox .md h2,
+.titlebox .md h3,
+.titlebox .md h4 { 
+  &, & a { color: #000; }
+}
+.sidecontentbox a.helplink { margin-right: 5px; }
+.icon-menu a { background: transparent; }
+
+.titlebox .md {
+  & h3 + ul { display: none; }
+  & h3:hover + ul, & ul:hover { display: block; }
+  & ul li:hover { background-color: #f7fbfc; }
+  & h2, & h3, & h4  {
+    background-color: #ccc!important;
+    width: 280px;
+    // height: 26px;
+    line-height: 26px;
+    font-weight: normal;
+    font-size: 12px;
+    padding-left: 20px;
+    margin-top: 4px;
+    margin-left: -11px;
+    &:after { margin-bottom: 10px; }
+  }
+  & h3:before { content: "+"; color: #000; padding-right: 5px; }
+}
+
+/* Table in sidebar */
+.side {
+  & .md table th {
+    background: #193064;
+    border: none;
+    border-right: 1px solid #193064;
+    padding: .2em;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 1px 1px 0 #000;
+    font-size: 11px
+  }
+
+  & .usertext table {
+    width: 280px;
+    color: #0a5a36!important;
+    font-size:11px;
+    .box-shadow(1px 1px 1px #193064);
+    margin-top: 0;
+    & a { 
+      color: #0a5a36; 
+      &:hover { text-decoration: underline; }
+    }
+  }
+}
+
+
+/* Star */
+a[href$="star"] {
+  width:16px;
+  height:16px;
+  content:"";
+  background-image:url(%%star1%%);
+  position:relative;
+  display:inline-block;
+  cursor:default;
+}
+
+/* Warning */
+a[href$="warning"] {
+  width:16px;
+  height:16px;
+  content:"";
+  background-image:url(%%usklicnik%%);
+  position:relative;
+  display:inline-block;
+  cursor:default;
 }
 
 /* Sidebar icons */
-
-.side a[href*='#icon-'] { color:#000; cursor:default; }
-.side a[href*='#icon-']:hover { text-decoration:none; }
-.side a[href*='#icon-']:before {
+.side a[href*='#icon-'] {
+  color:#000;
+  cursor:default;
+  &:hover { text-decoration: none; }
+  &:before {
     display:inline-block;
     height:16px; width:16px;
     content:'';
     margin:0 5px -1px 0;
     background: url(%%sprites-05%%) 30px 30px no-repeat;
+  }
 }
 
-.side a[href='#icon-exclamation']:before   {background-position: -16px -32px;}
-.side a[href='#icon-information']:before   {background-position: -54px -51px;}
-.side a[href='#icon-lightbulb']:before     {background-position: -16px -51px;}
-.side a[href='#icon-comments']:before      {background-position: -35px -89px;}
-.side a[href='#icon-unhappy']:before       {background-position: -73px -89px;}
-.side a[href='#icon-check']:before         {background-position: -73px -51px;}
-.side a[href='#icon-clock']:before         {background-position: -35px -51px;}
-.side a[href='#icon-cross']:before         {background-position: -35px -70px;}
-.side a[href='#icon-smile']:before         {background-position: -54px -89px;}
-.side a[href='#icon-error']:before         {background-position: -54px -32px;}
-.side a[href='#icon-note']:before          {background-position: -54px -70px;}
-.side a[href='#icon-star']:before          {background-position: -73px -32px;}
-.side a[href='#icon-help']:before          {background-position: -16px -70px;}
-.side a[href='#icon-time']:before          {background-position: -73px -70px;}
-.side a[href='#icon-bell']:before          {background-position: -35px -32px;}
-.side a[href='#icon-eye']:before           {background-position: -16px -89px;}
+.side a[href='#icon-exclamation']:before   { .bg-pos(-16px, -32px); }
+.side a[href='#icon-lightbulb']:before     { .bg-pos(-16px, -32px + @icon-spacing); }
+.side a[href='#icon-help']:before          { .bg-pos(-16px, -32px + @icon-spacing * 2); }
+.side a[href='#icon-eye']:before           { .bg-pos(-16px, -32px + @icon-spacing * 3); }
+.side a[href='#icon-comments']:before      { .bg-pos(-16px + @icon-spacing, -32px); }
+.side a[href='#icon-bell']:before          { .bg-pos(-16px + @icon-spacing, -32px + @icon-spacing); }
+.side a[href='#icon-clock']:before         { .bg-pos(-16px + @icon-spacing, -32px + @icon-spacing * 2); }
+.side a[href='#icon-cross']:before         { .bg-pos(-16px + @icon-spacing, -32px + @icon-spacing * 3); }
+.side a[href='#icon-error']:before         { .bg-pos(-16px + @icon-spacing * 2, -32px); }
+.side a[href='#icon-information']:before   { .bg-pos(-16px + @icon-spacing * 2, -32px + @icon-spacing ); }
+.side a[href='#icon-note']:before          { .bg-pos(-16px + @icon-spacing * 2, -32px + @icon-spacing * 2); }
+.side a[href='#icon-smile']:before         { .bg-pos(-16px + @icon-spacing * 2, -32px + @icon-spacing * 3); }
+.side a[href='#icon-star']:before          { .bg-pos(-16px + @icon-spacing * 3, -32px); }
+.side a[href='#icon-check']:before         { .bg-pos(-16px + @icon-spacing * 3, -32px + @icon-spacing); }
+.side a[href='#icon-time']:before          { .bg-pos(-16px + @icon-spacing * 3, -32px + @icon-spacing * 2); }
+.side a[href='#icon-unhappy']:before       { .bg-pos(-16px + @icon-spacing * 3, -32px + @icon-spacing * 3); }
 
 /* Social media buttons */
 
@@ -56,16 +232,10 @@
         display:inline-block;
         .social;
     }
-
-    &[href="http://goo.gl/3kRqh"] {
-        .social-twitter;
-    }
-
-    &[href="http://goo.gl/YrFC9"] {
-        .social-facebook;
-    }
-
-    &[href="http://goo.gl/BDoQm"] {
-        .social-youtube;
-    }
+    &[href="http://goo.gl/3kRqh"] { .social-twitter; }
+    &[href="http://goo.gl/YrFC9"] { .social-facebook; }
+    &[href="http://goo.gl/BDoQm"] { .social-youtube; }
 }
+
+/* hide "Create your own subreddit" button */
+div.sidebox.create{display: none;}
