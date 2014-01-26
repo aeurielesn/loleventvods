@@ -17,20 +17,120 @@
 #header-img-a:hover #header-img {
   visibility: hidden;
 }
-.content {
-  padding-top: 2px;
-}
 .titlebox form {
   position: static;
 }
-.side .md p > em {
-  display: inline-block;
-  padding: 5px;
-  background: #F6E69F;
-  border: 1px solid orange;
+/* This lowers the links to create space */
+.content {
+  padding-top: 2px;
+  margin-top: 50px;
 }
-.side .md p > em > strong {
+/* Header image */
+#header-bottom-left {
+  background: #02021a url(%%header%%) no-repeat right top;
+  height: 125px;
+}
+.redditname a {
+  text-indent: -1px;
+  margin-top: 30px;
+  color: white;
+  font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
   font-style: italic;
+  font-weight: normal;
+}
+#header-img-a,
+.redditname a {
+  display: inline;
+  float: left;
+}
+#header-bottom-left span.pagename a {
+  display: block;
+  height: 125px;
+  width: 228px;
+  margin-left: -20px;
+  margin-top: 2px;
+  background: url(%%logo%%) no-repeat scroll 0 0 transparent;
+  font-size: 0!important;
+}
+/* Hides tabmenu, domain, leave contributor button & RES nav annotations */
+#header .tabmenu,
+#viewImagesButton,
+.domain,
+.side .leavecontributor-button,
+table .keyNavAnnotation,
+a[href^="#"] + .keyNavAnnotation,
+#siteTable .keyNavAnnotation {
+  display: none;
+}
+.link.last-clicked {
+  overflow: hidden;
+}
+/* Timestamps */
+.edited-timestamp::after {
+  content: " (" attr(title) ")";
+  font-size: 90%;
+}
+/* Collapsable in entries */
+.entry .md h3 {
+  margin-bottom: 8px;
+}
+.entry .md h3 + p {
+  position: absolute;
+  margin-top: -25px;
+  height: 30px;
+  width: 294px;
+}
+.entry .md h3 + p + * {
+  display: none;
+}
+.entry .md h3 + p:hover + *,
+.entry .md h3 + p + *:hover,
+.entry .md h3:hover + p + * {
+  display: table;
+}
+/* tables */
+.md table {
+  border: 1px solid #444;
+  font-family: Arial, Helvetica, Sans-serif;
+  margin: 10px 0px;
+}
+.md table * {
+  border: 10px;
+}
+.md table th {
+  text-align: center;
+}
+.md table tr:nth-child(even),
+.md table thead {
+  background-color: #f6f6f6;
+}
+.md table td,
+.md table th {
+  border-right: 1px solid #888;
+  padding: 4px 8px;
+}
+.side .md table {
+  width: 100%;
+}
+.md th {
+  white-space: nowrap;
+  background-color: #444;
+  color: whitesmoke;
+  padding: 6px 10px;
+  border: 1px solid #444;
+}
+/* ALTERNATE ROW COLORS */
+.md tr:nth-of-type(odd) {
+  background: #fff;
+  color: #363636;
+}
+.md tr:nth-of-type(even) {
+  background: #EDEDED;
+  color: #363636;
+}
+/* ROW HOVER COLOR */
+.md table tr:hover {
+  background-color: #bdff8b;
 }
 /* Hides downvote arrow on posts only; still accessible on comments*/
 .arrow.down {
@@ -46,17 +146,17 @@ form.grayed,
 form.grayed ~ ul.flat-list.buttons {
   display: none;
 }
+p.tagline > a.expand:first-child + em,
+div.collapsed > a.expand:first-child + em {
+  visibility: hidden;
+  font-size: 0;
+}
 p.tagline > a.expand:first-child + em:after,
 div.collapsed > a.expand:first-child + em:after {
   visibility: visible;
   font-size: x-small;
   font-weight: bold;
   content: "Comment removed by user";
-}
-p.tagline > a.expand:first-child + em,
-div.collapsed > a.expand:first-child + em {
-  visibility: hidden;
-  font-size: 0;
 }
 div.collapsed > a.expand:first-child + em + time + a.expand,
 div.collapsed > a.expand:first-child + em + time + em + a.expand {
@@ -77,45 +177,6 @@ div.collapsed > a.expand:first-child + em + time + em + a.expand {
   font-size: 11px;
   font-weight: bold;
 }
-/* hide "Create your own subreddit" button */
-div.sidebox.create {
-  display: none;
-}
-/* This lowers the links to create space */
-div.content {
-  margin-top: 50px;
-}
-/* tables */
-.md table {
-  border: 1px solid #444;
-  font-family: Arial, Helvetica, Sans-serif;
-  margin: 10px 0px;
-}
-.side .md table {
-  width: 100%;
-}
-.md table * {
-  border: 10px;
-}
-.md table th {
-  text-align: center;
-}
-.md table tr:nth-child(even),
-.md table thead {
-  background-color: #f6f6f6;
-}
-.md table td,
-.md table th {
-  border-right: 1px solid #888;
-  padding: 4px 8px;
-}
-.md th {
-  white-space: nowrap;
-  background-color: #444;
-  color: whitesmoke;
-  padding: 6px 10px;
-  border: 1px solid #444;
-}
 /* Message for non-subscribers 
 .content:before {  
   content: url(%%warning%%) " You're not subscribed to r/LoLeventVoDs yet! Click the subscribe button on the right to add the subreddit to your frontpage! ";
@@ -124,56 +185,38 @@ div.content {
 }
 .subscriber .content:before, .side .content:before{ content: " " !important; }
 */
-/* Subscribers */
-.subscribers .word {
+/* This consider that the Team X columns in 
+ * the matches description are left and right aligned
+ */
+.expando th[align="left"],
+.expando th[align="right"] {
+  min-width: 70px;
+}
+/* Top announcement.
+ * It works by enabling <h6/> in the sidebar as a announcement banner on top
+ * of the main subreddit content.
+ */
+.titlebox .usertext-body .md h6 {
+  display: block;
+  position: absolute;
+  top: 136px;
+  left: 10px;
+  background-color: #193064;
+  font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  color: white;
+  text-align: left;
+  padding: 8px 13px 26px 13px;
+  margin: 13px;
+  border-radius: 5px;
+}
+h6 a {
+  color: #F2E972;
+}
+/* No flairs on front page */
+.listing-page .flair {
   display: none;
-}
-.subscribers .number::after {
-  content: " subscribers";
-}
-/* Users here now */
-.users-online .word {
-  display: none;
-}
-.users-online .number::after {
-  content: " viewers online now";
-}
-/* User flair */
-.flairselector .customizer {
-  display: none !important;
-}
-/* top message  
-body > .content:before {
-    content: "If you're looking for EG vs. DTG VoDs, please use links above until LCS post gets fixed!";
-    display: block;
-    font-weight: bold;
-    margin: -10px 315px 10px 10px; 
-    background-color: #eeffdc;
-    padding: 8px;
-    font-size: 13px;
-    border: 1px solid #96c864;
-    .border-radius(3px);
-    }
-*/
-/* Star */
-a[href$="star"] {
-  width: 16px;
-  height: 16px;
-  content: "";
-  background-image: url(%%star1%%);
-  position: relative;
-  display: inline-block;
-  cursor: default;
-}
-/* Warning */
-a[href$="warning"] {
-  width: 16px;
-  height: 16px;
-  content: "";
-  background-image: url(%%usklicnik%%);
-  position: relative;
-  display: inline-block;
-  cursor: default;
 }
 /* HEADER TEAM POPOUT MENU (credit: /u/gavin19) */
 .side h6 + ul {
@@ -196,40 +239,78 @@ a[href$="warning"] {
   right: -60px;
 }
 .side h6 + ul li:first-child a {
-  display: block;
-  height: 60px;
-  width: 45px;
-  background: transparent url(%%thumbnails%%) no-repeat 0 -550px;
-}
-.side h6 + ul li:first-child a:hover {
-  opacity: .8;
-}
-.side h6 + ul li a[href="/r/LoLeventVoDs"]:before {
-  content: normal;
-}
-.side h6 + ul li a {
   display: inline-block;
   width: 30px;
   height: 25px;
   line-height: 0;
   margin: 0;
+  background: transparent url(%%thumbnails%%) no-repeat 0 -550px;
+}
+.side h6 + ul li:first-child a:hover {
+  opacity: 0.8;
+}
+.side h6 + ul li:first-child a[href="/r/LoLeventVoDs"]:before {
+  content: normal;
 }
 .side .md h6 + ul li {
   background-color: transparent!important;
 }
-/* Sidebar headings */
-.titlebox blockquote {
-  border: 1px solid #AAA;
-  text-shadow: 0 1px 0 white;
-  color: #000;
-  font-weight: bold;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  border-radius: 10px;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
+/* top message  
+body > .content:before {
+    content: "If you're looking for EG vs. DTG VoDs, please use links above until LCS post gets fixed!";
+    display: block;
+    font-weight: bold;
+    margin: -10px 315px 10px 10px; 
+    background-color: #eeffdc;
+    padding: 8px;
+    font-size: 13px;
+    border: 1px solid #96c864;
+    .border-radius(3px);
+    }
+*/
+.side .md p > em {
+  display: inline-block;
+  padding: 5px;
+  background: #F6E69F;
+  border: 1px solid orange;
 }
+.side .md p > em > strong {
+  font-style: italic;
+}
+/* Changes */
+.side h4,
+.side h5,
+.side h6 {
+  height: 0;
+}
+/* Modify submit a new post */
+.submit .morelink a {
+  content: '';
+  font-size: 0;
+}
+.submit .morelink a:before {
+  content: 'Submit new VoDs post';
+  font-size: 14px;
+}
+/* Subscribers */
+.subscribers .word {
+  display: none;
+}
+.subscribers .number::after {
+  content: " subscribers";
+}
+/* Users here now */
+.users-online .word {
+  display: none;
+}
+.users-online .number::after {
+  content: " viewers online now";
+}
+/* User flair */
+.flairselector .customizer {
+  display: none !important;
+}
+/* Sidebar headings */
 .sidecontentbox .content,
 .linkinfo,
 .footer {
@@ -244,17 +325,26 @@ a[href$="warning"] {
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
 }
-.link.last-clicked {
-  overflow: hidden;
-}
-.titlebox h1 a {
-  display: none;
-}
 .titlebox {
   padding: 10px;
   background: transparent !important;
   border: 1px solid #ccc;
   color: #000;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+.titlebox h1 a {
+  display: none;
+}
+.titlebox blockquote {
+  border: 1px solid #AAA;
+  text-shadow: 0 1px 0 white;
+  color: #000;
+  font-weight: bold;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   border-radius: 10px;
@@ -307,6 +397,9 @@ a[href$="warning"] {
   margin-top: -10px;
 }
 /* drop down */
+.side {
+  z-index: -100;
+}
 .side .md h3 {
   margin-bottom: 8px;
 }
@@ -323,10 +416,7 @@ a[href$="warning"] {
   height: 30px;
   width: 294px;
 }
-.side {
-  z-index: -100;
-}
-.side .titlebox .md h3 + ul {
+.side .md h3 + ul {
   margin-top: 0;
   margin-bottom: 0;
   padding: 3px;
@@ -335,12 +425,12 @@ a[href$="warning"] {
   overflow: visible;
 }
 .titlebox h1,
-.titlebox h1 a,
 .titlebox .md h2,
-.titlebox .md h2 a,
 .titlebox .md h3,
-.titlebox .md h3 a,
 .titlebox .md h4,
+.titlebox h1 a,
+.titlebox .md h2 a,
+.titlebox .md h3 a,
 .titlebox .md h4 a {
   color: #000;
 }
@@ -360,8 +450,8 @@ a[href$="warning"] {
 .titlebox .md ul li:hover {
   background-color: #f7fbfc;
 }
-.titlebox .md h3,
 .titlebox .md h2,
+.titlebox .md h3,
 .titlebox .md h4 {
   background-color: #ccc!important;
   width: 280px;
@@ -372,8 +462,8 @@ a[href$="warning"] {
   margin-top: 4px;
   margin-left: -11px;
 }
-.titlebox .md h3:after,
 .titlebox .md h2:after,
+.titlebox .md h3:after,
 .titlebox .md h4:after {
   margin-bottom: 10px;
 }
@@ -398,6 +488,8 @@ a[href$="warning"] {
   width: 280px;
   color: #0a5a36!important;
   font-size: 11px;
+  -webkit-box-shadow: 1px 1px 1px #193064;
+  -moz-box-shadow: 1px 1px 1px #193064;
   box-shadow: 1px 1px 1px #193064;
   margin-top: 0;
 }
@@ -407,130 +499,25 @@ a[href$="warning"] {
 .side .usertext table a:hover {
   text-decoration: underline;
 }
-/* ALTERNATE ROW COLORS */
-.md tr:nth-of-type(odd) {
-  background: #fff;
-  color: #363636;
+/* Star */
+a[href$="star"] {
+  width: 16px;
+  height: 16px;
+  content: "";
+  background-image: url(%%star1%%);
+  position: relative;
+  display: inline-block;
+  cursor: default;
 }
-.md tr:nth-of-type(even) {
-  background: #EDEDED;
-  color: #363636;
-}
-/* ROW HOVER COLOR */
-.md table tr:hover {
-  background-color: #bdff8b;
-}
-/* Header image */
-#header-bottom-left {
-  background: #02021a url(%%header%%) no-repeat right top;
-  height: 125px;
-}
-.redditname a {
-  text-indent: -1px;
-  margin-top: 30px;
-  color: white;
-  font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
-  font-style: italic;
-  font-weight: normal;
-}
-#header-img-a,
-.redditname a {
-  display: inline;
-  float: left;
-}
-#header-bottom-left span.pagename a {
-  display: block;
-  height: 125px;
-  width: 228px;
-  margin-left: -20px;
-  margin-top: 2px;
-  background: url(%%logo%%) no-repeat scroll 0 0 transparent;
-  font-size: 0!important;
-}
-/* Hides tabmenu, domain, leave contributor button & RES nav annotations */
-#header .tabmenu,
-#viewImagesButton {
-  display: none;
-}
-.domain {
-  display: none;
-}
-.side .leavecontributor-button,
-table .keyNavAnnotation,
-a[href^="#"] + .keyNavAnnotation,
-#siteTable .keyNavAnnotation {
-  display: none;
-}
-/* Timestamps */
-.edited-timestamp::after {
-  content: " (" attr(title) ")";
-  font-size: 90%;
-}
-/* Collapsable in entries */
-.entry .md h3 {
-  margin-bottom: 8px;
-}
-.entry .md h3 + p + * {
-  display: none;
-}
-.entry .md h3 + p:hover + *,
-.entry .md h3 + p + *:hover,
-.entry .md h3:hover + p + * {
-  display: table;
-}
-.entry .md h3 + p {
-  position: absolute;
-  margin-top: -25px;
-  height: 30px;
-  width: 294px;
-}
-/* This consider that the Team X columns in 
- * the matches description are left and right aligned
- */
-.expando th[align="left"],
-.expando th[align="right"] {
-  min-width: 70px;
-}
-/* Top announcement.
- * It works by enabling <h6/> in the sidebar as a announcement banner on top
- * of the main subreddit content.
- */
-.titlebox .usertext-body .md h6 {
-  display: block;
-  position: absolute;
-  top: 136px;
-  left: 10px;
-  background-color: #193064;
-  font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
-  font-size: 15px;
-  font-weight: bold;
-  color: white;
-  text-align: left;
-  padding: 8px 13px 26px 13px;
-  margin: 13px;
-  border-radius: 5px;
-}
-h6 a {
-  color: #F2E972;
-}
-/* No flairs on front page */
-.listing-page .flair {
-  display: none;
-}
-/* Changes */
-.side h4,
-.side h5,
-.side h6 {
-  height: 0;
-}
-/* Modify submit a new post */
-.submit .morelink a {
-  content: '';
-  font-size: 0;
-}
-.submit .morelink a:before {
-  content: 'Submit new VoDs post';
-  font-size: 14px;
+/* Warning */
+a[href$="warning"] {
+  width: 16px;
+  height: 16px;
+  content: "";
+  background-image: url(%%usklicnik%%);
+  position: relative;
+  display: inline-block;
+  cursor: default;
 }
 /* Sidebar icons */
 .side a[href*='#icon-'] {
@@ -551,50 +538,50 @@ h6 a {
 .side a[href='#icon-exclamation']:before {
   background-position: -16px -32px;
 }
-.side a[href='#icon-information']:before {
-  background-position: -54px -51px;
-}
 .side a[href='#icon-lightbulb']:before {
   background-position: -16px -51px;
-}
-.side a[href='#icon-comments']:before {
-  background-position: -35px -89px;
-}
-.side a[href='#icon-unhappy']:before {
-  background-position: -73px -89px;
-}
-.side a[href='#icon-check']:before {
-  background-position: -73px -51px;
-}
-.side a[href='#icon-clock']:before {
-  background-position: -35px -51px;
-}
-.side a[href='#icon-cross']:before {
-  background-position: -35px -70px;
-}
-.side a[href='#icon-smile']:before {
-  background-position: -54px -89px;
-}
-.side a[href='#icon-error']:before {
-  background-position: -54px -32px;
-}
-.side a[href='#icon-note']:before {
-  background-position: -54px -70px;
-}
-.side a[href='#icon-star']:before {
-  background-position: -73px -32px;
 }
 .side a[href='#icon-help']:before {
   background-position: -16px -70px;
 }
+.side a[href='#icon-eye']:before {
+  background-position: -16px -89px;
+}
+.side a[href='#icon-comments']:before {
+  background-position: -35px -32px;
+}
+.side a[href='#icon-bell']:before {
+  background-position: -35px -51px;
+}
+.side a[href='#icon-clock']:before {
+  background-position: -35px -70px;
+}
+.side a[href='#icon-cross']:before {
+  background-position: -35px -89px;
+}
+.side a[href='#icon-error']:before {
+  background-position: -54px -32px;
+}
+.side a[href='#icon-information']:before {
+  background-position: -54px -51px;
+}
+.side a[href='#icon-note']:before {
+  background-position: -54px -70px;
+}
+.side a[href='#icon-smile']:before {
+  background-position: -54px -89px;
+}
+.side a[href='#icon-star']:before {
+  background-position: -73px -32px;
+}
+.side a[href='#icon-check']:before {
+  background-position: -73px -51px;
+}
 .side a[href='#icon-time']:before {
   background-position: -73px -70px;
 }
-.side a[href='#icon-bell']:before {
-  background-position: -35px -32px;
-}
-.side a[href='#icon-eye']:before {
-  background-position: -16px -89px;
+.side a[href='#icon-unhappy']:before {
+  background-position: -73px -89px;
 }
 /* Social media buttons */
 .side a[href="http://goo.gl/3kRqh"],
@@ -617,6 +604,10 @@ h6 a {
   background-position: 0 -74px;
   width: 32px;
   height: 33px;
+}
+/* hide "Create your own subreddit" button */
+div.sidebox.create {
+  display: none;
 }
 a[href$="/spoiler"] {
   background: none repeat scroll 0 0 #000 !important;
