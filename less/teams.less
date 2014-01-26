@@ -1,36 +1,5 @@
-a[href="#america"]:after,
-a[href="#china"]:after,
-a[href="#europe"]:after,
-a[href="#korea"]:after,
-a[href="#sea"]:after {
-    content:"";
-    width: 16px;
-    height: 11px;
-    background: url(%%teams%%) no-repeat scroll 16px 11px transparent;
-    display: inline-block;
-    vertical-align: 1%;
-    cursor: default !important;
-}
-
-a[href="#america"]:after {
-    background-position: -396px 0px
-}
-
-a[href="#china"]:after {
-    background-position: -396px -11px
-}
-
-a[href="#europe"]:after {
-    background-position: -396px -22px
-}
-
-a[href="#korea"]:after {
-    background-position: -396px -33px
-}
-
-a[href="#sea"]:after {
-    background-position: -396px -44px
-}
+@teams-width: -36px;
+@teams-height: -20px;
 
 a[href="#aaa"]:after,
 a[href="#all"]:after,
@@ -111,343 +80,143 @@ a[href="#we"]:after,
 a[href="#wizards"]:after,
 a[href="#wzb"]:after,
 a[href="#xts"]:after {
-    content:"";
-    width: 36px;
-    height: 20px;
-    background: url(%%teams%%) no-repeat scroll 36px 20px transparent;
-    display: inline-block;
-    vertical-align: middle;
-    cursor: default !important;
+  content:"";
+  width: -@teams-width;
+  height: -@teams-height;
+  background: url(%%teams%%) no-repeat scroll -@teams-width -@teams-height transparent;
+  display: inline-block;
+  vertical-align: middle;
+  cursor: default !important;
 }
 
 
 /* LCS EU */
-a[href="#aaa"]:after {
-    background-position: 0px 0px
-}
-
-a[href="#all"]:after {
-    background-position: 0px -25px
-}
-
-a[href="#atn"]:after {
-    background-position: 0px -50px
-}
-
-a[href="#cw"]:after {
-    background-position: 0px -75px
-}
-
-a[href="#db"]:after {
-    background-position: 0px -100px
-}
-
-a[href="#fnatic"]:after, a[href="#fnc"]:after {
-    background-position: 0px -125px
-}
-
-a[href="#gia"]:after {
-    background-position: 0px -150px
-}
-
-a[href="#gambit"]:after, a[href="#gmb"]:after {
-    background-position: 0px -175px
-}
-
-a[href="#ld"]:after {
-    background-position: 0px -200px
-}
-
-a[href="#mym"]:after {
-    background-position: 0px -225px
-}
-
-a[href="#millenium"]:after, a[href="#mil"]:after {
-    background-position: 0px -250px
-}
-
-a[href="#nip2"]:after {
-    background-position: 0px -275px
-}
-
-a[href="#roc"]:after {
-    background-position: 0px -300px
-}
-
-a[href="#shc"]:after {
-    background-position: 0px -325px
-}
-
-a[href="#sk"]:after {
-    background-position: 0px -350px
-}
+a[href="#aaa"]:after                             { .bg-pos; }
+a[href="#all"]:after                             { .bg-pos(0, @teams-height); }
+a[href="#atn"]:after                             { .bg-pos(0, @teams-height * 2); }
+a[href="#cw"]:after                              { .bg-pos(0, @teams-height * 3); }
+a[href="#db"]:after                              { .bg-pos(0, @teams-height * 4); }
+a[href="#fnatic"]:after, a[href="#fnc"]:after    { .bg-pos(0, @teams-height * 5); }
+a[href="#gia"]:after                             { .bg-pos(0, @teams-height * 6); }
+a[href="#gambit"]:after, a[href="#gmb"]:after    { .bg-pos(0, @teams-height * 7); }
+a[href="#ld"]:after                              { .bg-pos(0, @teams-height * 8); }
+a[href="#mym"]:after                             { .bg-pos(0, @teams-height * 9); }
+a[href="#millenium"]:after, a[href="#mil"]:after { .bg-pos(0, @teams-height * 10); }
+a[href="#nip2"]:after                            { .bg-pos(0, @teams-height * 11); }
+a[href="#roc"]:after                             { .bg-pos(0, @teams-height * 12); }
+a[href="#shc"]:after                             { .bg-pos(0, @teams-height * 13); }
+a[href="#sk"]:after                              { .bg-pos(0, @teams-height * 14); }
 
 
 /* LCS NA */
-a[href="#c9"]:after, a[href$="/wiki/c9"]:before {
-    background-position: -36px 0px
-}
-
-a[href="#clg"]:after, a[href$="/wiki/clg"]:before {
-    background-position: -36px -25px
-}
-
-a[href="#col"]:after, a[href="#colA"]:after {
-    background-position: -36px -50px
-}
-
-a[href="#crs"]:after, a[href="#crsA"]:after, a[href$="/wiki/crs"]:before {
-    background-position: -36px -75px
-}
-
-a[href="#coast"]:after, a[href="#cst"]:after, a[href$="/wiki/coast"]:before {
-    background-position: -36px -100px
-}
-
-a[href="#dig"]:after, a[href$="/wiki/dig"]:before {
-    background-position: -36px -125px
-}
-
-a[href="#eg"]:after, a[href$="/wiki/eg"]:before {
-    background-position: -36px -150px
-}
-
-a[href="#ggu"]:after {
-    background-position: -36px -175px
-}
-
-a[href="#marn"]:after, a[href="#mrn"]:after {
-    background-position: -36px -200px
-}
-
-a[href*="#tsm"]:after, a[href$="/wiki/tsm"]:before {
-    background-position: -36px -225px
-}
-
-a[href="#ves"]:after {
-    background-position: -36px -250px
-}
-
-a[href="#vul"]:after, a[href="#xdg"]:after, a[href$="/wiki/vul"]:before {
-    background-position: -36px -275px
-}
+a[href="#c9"]:after, a[href$="/wiki/c9"]:before                             { .bg-pos(@teams-width, 0); }
+a[href="#clg"]:after, a[href$="/wiki/clg"]:before                           { .bg-pos(@teams-width, @teams-height); }
+a[href="#col"]:after, a[href="#colA"]:after                                 { .bg-pos(@teams-width, @teams-height * 2); }
+a[href="#crs"]:after, a[href="#crsA"]:after, a[href$="/wiki/crs"]:before    { .bg-pos(@teams-width, @teams-height * 3); }
+a[href="#coast"]:after, a[href="#cst"]:after, a[href$="/wiki/coast"]:before { .bg-pos(@teams-width, @teams-height * 4); }
+a[href="#dig"]:after, a[href$="/wiki/dig"]:before                           { .bg-pos(@teams-width, @teams-height * 5); }
+a[href="#eg"]:after, a[href$="/wiki/eg"]:before                             { .bg-pos(@teams-width, @teams-height * 6); }
+a[href="#ggu"]:after                                                        { .bg-pos(@teams-width, @teams-height * 7); }
+a[href="#marn"]:after, a[href="#mrn"]:after                                 { .bg-pos(@teams-width, @teams-height * 8); }
+a[href*="#tsm"]:after, a[href$="/wiki/tsm"]:before                          { .bg-pos(@teams-width, @teams-height * 9); }
+a[href="#ves"]:after                                                        { .bg-pos(@teams-width, @teams-height * 10); }
+a[href="#vul"]:after, a[href="#xdg"]:after, a[href$="/wiki/vul"]:before     { .bg-pos(@teams-width, @teams-height * 11); }
 
 
-/* LCS Promos EU */
-a[href="#mouz"]:after {
-    background-position: -72px 0px
-}
-
-a[href="#tcm"]:after {
-    background-position: -72px -25px
-}
-
-a[href="#wizards"]:after {
-    background-position: -72px -50px
-}
+/* LCS Promos EU */ 
+a[href="#mouz"]:after    { .bg-pos(@teams-width * 2, 0); }
+a[href="#tcm"]:after     { .bg-pos(@teams-width * 2, @teams-height); }
+a[href="#wizards"]:after { .bg-pos(@teams-width * 2, @teams-height * 2); }
 
 
 /* LCS Promos NA */
-a[href="#azure"]:after {
-    background-position: -108px 0px
-}
-
-a[href="#cog"]:after {
-    background-position: -108px -25px
-}
-
-a[href="#dbl"]:after {
-    background-position: -108px -50px
-}
-
-a[href="#fid"]:after {
-    background-position: -108px -75px
-}
-
-a[href="#qg"]:after, a[href="#qtc"]:after {
-    background-position: -108px -100px
-}
-
-a[href="#tap"]:after {
-    background-position: -108px -125px
-}
-
-a[href="#ts"]:after {
-    background-position: -108px -150px
-}
-
-a[href="#tsb"]:after {
-    background-position: -108px -175px
-}
+a[href="#azure"]:after                    { .bg-pos(@teams-width * 3, 0); }
+a[href="#cog"]:after                      { .bg-pos(@teams-width * 3, @teams-height); }
+a[href="#dbl"]:after                      { .bg-pos(@teams-width * 3, @teams-height * 2); }
+a[href="#fid"]:after                      { .bg-pos(@teams-width * 3, @teams-height * 3); }
+a[href="#qg"]:after, a[href="#qtc"]:after { .bg-pos(@teams-width * 3, @teams-height * 4); }
+a[href="#tap"]:after                      { .bg-pos(@teams-width * 3, @teams-height * 5); }
+a[href="#ts"]:after                       { .bg-pos(@teams-width * 3, @teams-height * 6); }
+a[href="#tsb"]:after                      { .bg-pos(@teams-width * 3, @teams-height * 7); }
 
 
 /* OGN */
-a[href="#cjb"]:after {
-    background-position: -144px 0px
-}
-
-a[href="#jas"]:after {
-    background-position: -144px -25px
-}
-
-a[href="#nsw"]:after {
-    background-position: -144px -50px
-}
-
-a[href="#nsh"]:after {
-    background-position: -144px -75px
-}
-
-a[href="#skt"]:after {
-    background-position: -144px -100px
-}
-
-a[href="#ozone"]:after, a[href="#sso"]:after {
-    background-position: -144px -125px
-}
-
-a[href="#im"]:after {
-    background-position: -144px -150px
-}
+a[href="#cjb"]:after                         { .bg-pos(@teams-width * 4, 0); }
+a[href="#im"]:after                          { .bg-pos(@teams-width * 4, @teams-height); }
+a[href="#jas"]:after                         { .bg-pos(@teams-width * 4, @teams-height * 2); }
+a[href="#nsw"]:after                         { .bg-pos(@teams-width * 4, @teams-height * 3); }
+a[href="#nsh"]:after                         { .bg-pos(@teams-width * 4, @teams-height * 4); }
+a[href="#ozone"]:after, a[href="#sso"]:after { .bg-pos(@teams-width * 4, @teams-height * 5); }
+a[href="#skt"]:after                         { .bg-pos(@teams-width * 4, @teams-height * 6); }
 
 
 /* LPL */
-a[href="#ig"]:after {
-    background-position: -180px 0px
-}
+a[href="#ig"]:after  { .bg-pos(@teams-width * 5, 0); }
+a[href="#omg"]:after { .bg-pos(@teams-width * 5, @teams-height); }
+a[href="#pe"]:after  { .bg-pos(@teams-width * 5, @teams-height * 2); }
+a[href="#we"]:after  { .bg-pos(@teams-width * 5, @teams-height * 3); }
 
-a[href="#omg"]:after {
-    background-position: -180px -25px
-}
-
-a[href="#pe"]:after {
-    background-position: -180px -50px
-}
-
-a[href="#we"]:after {
-    background-position: -180px -75px
-}
 
 /* MCS */
-a[href="#aware"]:after, a[href="#awg"]:after {
-    background-position: -216px 0px
-}
+a[href="#aware"]:after, a[href="#awg"]:after { .bg-pos(@teams-width * 6, 0); }
+a[href="#dnl"]:after, a[href="#nid"]:after   { .bg-pos(@teams-width * 6, @teams-height); }
+a[href="#xts"]:after                         { .bg-pos(@teams-width * 6, @teams-height * 2); }
+a[href="#fxo"]:after                         { .bg-pos(@teams-width * 6, @teams-height * 3); }
+a[href="#ggLA"]:after                        { .bg-pos(@teams-width * 6, @teams-height * 4); }
+a[href="#iodd"]:after                        { .bg-pos(@teams-width * 6, @teams-height * 5); }
+a[href="#nwe"]:after                         { .bg-pos(@teams-width * 6, @teams-height * 6); }
+a[href="#rxg"]:after                         { .bg-pos(@teams-width * 6, @teams-height * 7); }
+a[href="#tbd"]:after                         { .bg-pos(@teams-width * 6, @teams-height * 8); }
+a[href="#ttd"]:after                         { .bg-pos(@teams-width * 6, @teams-height * 9); }
+a[href="#tt"]:after                          { .bg-pos(@teams-width * 6, @teams-height * 10); }
+a[href="#wzb"]:after                         { .bg-pos(@teams-width * 6, @teams-height * 11); }
 
-a[href="#dnl"]:after {
-    background-position: -216px -25px
-}
-
-a[href="#xts"]:after {
-    background-position: -216px -50px
-}
-
-a[href="#fxo"]:after {
-    background-position: -216px -75px
-}
-
-a[href="#ggLA"]:after {
-    background-position: -216px -100px
-}
-
-a[href="#iodd"]:after {
-        background-position: -216px -125px
-}
-
-a[href="#nid"]:after {
-    background-position: -216px -150px
-}
-
-a[href="#nwe"]:after {
-    background-position: -216px -175px
-}
-
-a[href="#rxg"]:after {
-    background-position: -216px -200px
-}
-
-a[href="#tbd"]:after {
-    background-position: -216px -225px
-}
-
-a[href="#ttd"]:after {
-    background-position: -216px -250px
-}
-
-a[href="#tt"]:after {
-    background-position: -216px -275px
-}
-
-a[href="#wzb"]:after {
-    background-position: -216px -300px
-}
 
 /* Worlds */
-a[href="#dp"]:after {
-    background-position: -252px 0px
-}
-
-a[href="#bears"]:after, a[href="#gam"]:after {
-    background-position: -252px -25px
-}
-
-a[href="#gaming"]:after, a[href="#gg"]:after {
-    background-position: -252px -50px
-}
-
-a[href="#min"]:after, a[href="#msk"]:after {
-    background-position: -252px -75px
-}
-
-a[href="#royal"]:after, a[href="#ryl"]:after {
-    background-position: -252px -100px
-}
+a[href="#dp"]:after                          { .bg-pos(@teams-width * 7, 0); }
+a[href="#bears"]:after, a[href="#gam"]:after { .bg-pos(@teams-width * 7, @teams-height); }
+a[href="#gaming"]:after, a[href="#gg"]:after { .bg-pos(@teams-width * 7, @teams-height * 2); }
+a[href="#min"]:after, a[href="#msk"]:after   { .bg-pos(@teams-width * 7, @teams-height * 3); }
+a[href="#royal"]:after, a[href="#ryl"]:after { .bg-pos(@teams-width * 7, @teams-height * 4); }
 
 
 /* SCAN EUW */
-a[href="#ete"]:after, a[href="#eternity"]:after {
-    background-position: -288px 0px
-}
-
-a[href="#hc"]:after {
-    background-position: -288px -25px
-}
-
-a[href="#rg"]:after {
-    background-position: -288px -50px
-}
-
-a[href="#anexis"]:after {
-    background-position: -288px -75px
-}
+a[href="#anexis"]:after                         { .bg-pos(@teams-width * 8, 0); }
+a[href="#ete"]:after, a[href="#eternity"]:after { .bg-pos(@teams-width * 8, @teams-height); }
+a[href="#hc"]:after                             { .bg-pos(@teams-width * 8, @teams-height * 2); }
+a[href="#rg"]:after                             { .bg-pos(@teams-width * 8, @teams-height * 3); }
 
 
 /* Disbanded/old */
-a[href="#sns"]:after {
-    background-position: -324px 0px
-}
-
-a[href="#dru"]:after {
-    background-position: -324px -50px
-}
-
-a[href="#nip"]:after {
-    background-position: -324px -75px
-}
-
-a[href="#sword"]:after {
-    background-position: -324px -100px
-}
+a[href="#dru"]:after   { .bg-pos(@teams-width * 9, 0); }
+a[href="#sns"]:after   { .bg-pos(@teams-width * 9, @teams-height); }
+a[href="#nip"]:after   { .bg-pos(@teams-width * 9, @teams-height * 3); }
+a[href="#sword"]:after { .bg-pos(@teams-width * 9, @teams-height * 4); }
 
 
 /* Unsorted */
-a[href="#esuba"]:after {
-    background-position: -360px 0px
+a[href="#esuba"]:after    { .bg-pos(@teams-width * 10, 0); }
+a[href="#pain"]:after     { .bg-pos(@teams-width * 10, @teams-height); }
+a[href="#roughnex"]:after { .bg-pos(@teams-width * 10, @teams-height * 3); }
+
+
+/* Allstars */
+a[href="#america"]:after,
+a[href="#china"]:after,
+a[href="#europe"]:after,
+a[href="#korea"]:after,
+a[href="#sea"]:after {
+  content: "";
+  width: 16px;
+  height: 11px;
+  background: url(%%teams%%) no-repeat scroll 16px 11px transparent;
+  display: inline-block;
+  vertical-align: 1%;
+  cursor: default !important;
 }
 
-a[href="#pain"]:after {
-    background-position: -360px -25px
-}
-
-a[href="#roughnex"]:after {
-    background-position: -360px -50px
-}
+a[href="#america"]:after { .bg-pos(@teams-width * 11, 0px) }
+a[href="#china"]:after   { .bg-pos(@teams-width * 11, -11px); }
+a[href="#europe"]:after  { .bg-pos(@teams-width * 11, -22px); }
+a[href="#korea"]:after   { .bg-pos(@teams-width * 11, -33px); }
+a[href="#sea"]:after     { .bg-pos(@teams-width * 11, -44px); }

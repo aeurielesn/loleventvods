@@ -1,51 +1,49 @@
-/* Changes */
+@icon-spacing: -19px;
 
+/* Changes */
 .side h4,
 .side h5,
 .side h6 {
-    height:0;
+  height:0;
 }
 
 /* Modify submit a new post */
-
 .submit .morelink a {
     content: '';
     font-size: 0;
-}
-
-.submit .morelink a:before {
-    content: 'Submit new VoDs post';
-    font-size: 14px;
+    &:before { content: 'Submit new VoDs post'; font-size: 14px; }
 }
 
 /* Sidebar icons */
-
-.side a[href*='#icon-'] { color:#000; cursor:default; }
-.side a[href*='#icon-']:hover { text-decoration:none; }
-.side a[href*='#icon-']:before {
+.side a[href*='#icon-'] {
+  color:#000;
+  cursor:default;
+  &:hover { text-decoration: none; }
+  &:before {
     display:inline-block;
     height:16px; width:16px;
     content:'';
     margin:0 5px -1px 0;
     background: url(%%sprites-05%%) 30px 30px no-repeat;
+  }
 }
 
-.side a[href='#icon-exclamation']:before   {background-position: -16px -32px;}
-.side a[href='#icon-information']:before   {background-position: -54px -51px;}
-.side a[href='#icon-lightbulb']:before     {background-position: -16px -51px;}
-.side a[href='#icon-comments']:before      {background-position: -35px -89px;}
-.side a[href='#icon-unhappy']:before       {background-position: -73px -89px;}
-.side a[href='#icon-check']:before         {background-position: -73px -51px;}
-.side a[href='#icon-clock']:before         {background-position: -35px -51px;}
-.side a[href='#icon-cross']:before         {background-position: -35px -70px;}
-.side a[href='#icon-smile']:before         {background-position: -54px -89px;}
-.side a[href='#icon-error']:before         {background-position: -54px -32px;}
-.side a[href='#icon-note']:before          {background-position: -54px -70px;}
-.side a[href='#icon-star']:before          {background-position: -73px -32px;}
-.side a[href='#icon-help']:before          {background-position: -16px -70px;}
-.side a[href='#icon-time']:before          {background-position: -73px -70px;}
-.side a[href='#icon-bell']:before          {background-position: -35px -32px;}
-.side a[href='#icon-eye']:before           {background-position: -16px -89px;}
+.side a[href='#icon-exclamation']:before   { .bg-pos(-16px, -32px); }
+.side a[href='#icon-lightbulb']:before     { .bg-pos(-16px, -32px + @icon-spacing); }
+.side a[href='#icon-help']:before          { .bg-pos(-16px, -32px + @icon-spacing * 2); }
+.side a[href='#icon-eye']:before           { .bg-pos(-16px, -32px + @icon-spacing * 3); }
+.side a[href='#icon-comments']:before      { .bg-pos(-16px + @icon-spacing, -32px); }
+.side a[href='#icon-bell']:before          { .bg-pos(-16px + @icon-spacing, -32px + @icon-spacing); }
+.side a[href='#icon-clock']:before         { .bg-pos(-16px + @icon-spacing, -32px + @icon-spacing * 2); }
+.side a[href='#icon-cross']:before         { .bg-pos(-16px + @icon-spacing, -32px + @icon-spacing * 3); }
+.side a[href='#icon-error']:before         { .bg-pos(-16px + @icon-spacing * 2, -32px); }
+.side a[href='#icon-information']:before   { .bg-pos(-16px + @icon-spacing * 2, -32px + @icon-spacing ); }
+.side a[href='#icon-note']:before          { .bg-pos(-16px + @icon-spacing * 2, -32px + @icon-spacing * 2); }
+.side a[href='#icon-smile']:before         { .bg-pos(-16px + @icon-spacing * 2, -32px + @icon-spacing * 3); }
+.side a[href='#icon-star']:before          { .bg-pos(-16px + @icon-spacing * 3, -32px); }
+.side a[href='#icon-check']:before         { .bg-pos(-16px + @icon-spacing * 3, -32px + @icon-spacing); }
+.side a[href='#icon-time']:before          { .bg-pos(-16px + @icon-spacing * 3, -32px + @icon-spacing * 2); }
+.side a[href='#icon-unhappy']:before       { .bg-pos(-16px + @icon-spacing * 3, -32px + @icon-spacing * 3); }
 
 /* Social media buttons */
 
@@ -56,16 +54,7 @@
         display:inline-block;
         .social;
     }
-
-    &[href="http://goo.gl/3kRqh"] {
-        .social-twitter;
-    }
-
-    &[href="http://goo.gl/YrFC9"] {
-        .social-facebook;
-    }
-
-    &[href="http://goo.gl/BDoQm"] {
-        .social-youtube;
-    }
+    &[href="http://goo.gl/3kRqh"] { .social-twitter; }
+    &[href="http://goo.gl/YrFC9"] { .social-facebook; }
+    &[href="http://goo.gl/BDoQm"] { .social-youtube; }
 }

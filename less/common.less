@@ -1,76 +1,47 @@
 /* Header image */
 
-#header-bottom-left {
-  background: #02021a url(%%header%%) no-repeat right top;
-  height: 125px;
-}
+#header-bottom-left { background: #02021a url(%%header%%) no-repeat right top; height: 125px; }
 
 .redditname a {
-    text-indent:-1px;
-    margin-top:30px;
-    color:white;
-    font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
-    font-style:italic;
-    font-weight: normal;
+  text-indent:-1px;
+  margin-top:30px;
+  color:white;
+  font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
+  font-style:italic;
+  font-weight: normal;
 }
 
-#header-img-a,
-.redditname a {
-    display: inline;
-    float: left;
-}
+#header-img-a, .redditname a { display: inline; float: left; }
 
 #header-bottom-left span.pagename a {
-    display: block;
-    height: 125px;
-    width: 228px;
-    margin-left: -20px;
-    margin-top: 2px;
-    background: url(%%logo%%) no-repeat scroll 0 0 transparent;
-    font-size: 0!important;
+  display: block;
+  height: 125px;
+  width: 228px;
+  margin-left: -20px;
+  margin-top: 2px;
+  background: url(%%logo%%) no-repeat scroll 0 0 transparent;
+  font-size: 0!important;
 }
 
-/* Hides "new", "top" and other tabs */
-
-#header .tabmenu, #viewImagesButton { display: none; }
-
-/* Hides domain part from the title of the posts */
-
-.domain {
-    display: none;
-}
-
-/* Hides leave contributor button and RES navigation keys */
-
-.side .leavecontributor-button, table .keyNavAnnotation, a[href^="#"] + .keyNavAnnotation {
-    display: none;
-}
+/* Hides tabmenu, domain, leave contributor button & RES nav annotations */
+#header .tabmenu, #viewImagesButton , .domain, .side .leavecontributor-button,
+table .keyNavAnnotation, a[href^="#"] + .keyNavAnnotation, #siteTable .keyNavAnnotation
+{ display: none; }
 
 /* Timestamps */
-
 .edited-timestamp::after { content:" (" attr(title) ")"; font-size: 90%; }
 
 /* Collapsable in entries */
-
 .entry .md h3 {
-    margin-bottom: 8px;
-    
-    & + p + * {
-        display: none;
-    }
-
-    & + p:hover + *,
-    & + p + *:hover,
-    &:hover + p + * {
-      display: table;
-    }
-
-    & + p {
-      position: absolute;
-      margin-top: -25px;
-      height: 30px;
-      width: 294px;
-    }
+  margin-bottom: 8px;
+  & + p {
+    position: absolute;
+    margin-top: -25px;
+    height: 30px;
+    width: 294px;
+    & + * { display: none; }
+  }
+  & + p:hover + *, & + p + *:hover, &:hover + p + * { display: table; }
 }
 
 /* This consider that the Team X columns in 
@@ -78,7 +49,5 @@
  */
 
 .expando th {
-    &[align="left"], &[align="right"] {
-        min-width: 70px;
-    }
+  &[align="left"], &[align="right"] { min-width: 70px; }
 }
