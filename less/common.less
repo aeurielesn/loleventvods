@@ -1,22 +1,6 @@
-/* Visited links color change */
-.entry a:visited { color: #551a8b; }
-.entry a:visited[href="http://lol.eventvods.com"], .entry a:visited[href="lol.eventvods.com"] { color: #369; }
-
-/* change width */
-.md { max-width:90em; }
-
-/* snoo winking! */
-#header-img-a:hover { 
-  background: url(%%snoowink%%) 0 2px;
-  & #header-img { visibility: hidden; }
-}
-
-.titlebox form { position: static; }
-/* This lowers the links to create space */
-.content { padding-top: 2px;  margin-top: 50px;  }
-
 /* Header image */
 
+#header { border: none; }
 #header-bottom-left { background: #02021a url(%%header%%) no-repeat right top; height: 125px; }
 
 .redditname a {
@@ -40,12 +24,45 @@
   font-size: 0!important;
 }
 
-/* Hides tabmenu, domain, leave contributor button & RES nav annotations */
+/* Moves userbar down below header image */
+#header-bottom-right {
+  bottom: -34px;
+  line-height: 26px;
+  padding-left: 15px;
+  background: #193064;
+  border-radius: 0;
+  border-left: 1px solid #5f99cf;
+  & a { color: #fff; }
+}
+.user { 
+  color: #fff;
+  text-transform: uppercase;
+  & .userkarma { border-color: #fff; }
+}
+.separator { color: #bbb; }
+
+/* RES-specific userbar tweaks */
+#header-bottom-right.res-navTop { 
+  top: 145px;
+  bottom: -34px;
+  line-height: 23px;
+  padding-left: 5px;
+  background: #193064;
+  border-radius: 0;
+  border-left: 1px solid #5f99cf;
+  & #userbarToggle {
+    border-radius: 0;
+    background-color: #193064;
+    border-right: 1px dotted #a1bcd6;
+    border-left: 1px solid #a1bcd6;
+    line-height: 28px;
+  }
+}
+
+/* Hides tabmenu, domain, leave contributor button & RES nav annotations in posts */
 #header .tabmenu, #viewImagesButton , .domain, .side .leavecontributor-button,
 table .keyNavAnnotation, a[href^="#"] + .keyNavAnnotation, #siteTable .keyNavAnnotation
 { display: none; }
-
-.link.last-clicked { overflow: hidden; }
 
 /* Timestamps */
 .edited-timestamp::after { content:" (" attr(title) ")"; font-size: 90%; }
@@ -62,80 +79,6 @@ table .keyNavAnnotation, a[href^="#"] + .keyNavAnnotation, #siteTable .keyNavAnn
   }
   & + p:hover + *, & + p + *:hover, &:hover + p + * { display: table; }
 }
-
-/* tables */
-.md table { 
-  border: 1px solid #444;
-  font-family: Arial, Helvetica, Sans-serif;
-  margin: 10px 0px;
-  & * { border: 10px; }
-  & th { text-align: center; }
-  & tr:nth-child(even), & thead { background-color: #f6f6f6; }
-  & td, & th { border-right: 1px solid #888; padding: 4px 8px; }
-}
-.side .md table { width:100%; }
-
-.md th {
-    white-space: nowrap;
-    background-color: #444;
-    color: whitesmoke;
-    padding: 6px 10px;
-    border: 1px solid #444;
-}
-
-/* ALTERNATE ROW COLORS */
-.md tr:nth-of-type(odd) { background: #fff; color: #363636; }
-.md tr:nth-of-type(even) { background: #EDEDED; color: #363636; }
-
-/* ROW HOVER COLOR */
-.md table tr:hover { background-color: #bdff8b; }
-
-/* Hides downvote arrow on posts only; still accessible on comments*/  
-.arrow.down { visibility: hidden; display: none; }
-.comment .arrow.down { visibility: visible; display: block; }
-
-/* Next 4 sections make deleted messages less noticeable -djimbob*/
-form.grayed, form.grayed ~ ul.flat-list.buttons { display: none }
-p.tagline, div.collapsed {
-  & > a.expand:first-child + em {
-    visibility: hidden;
-    font-size: 0;
-    &:after {
-      visibility: visible;
-      font-size: x-small;
-      font-weight: bold;
-      content: "Comment removed by user"
-    }
-  }
-}
-div.collapsed > a.expand:first-child + em + time {
-   & + a.expand, & + em + a.expand {display: none; }
-}
-
-/* notice below comments */
-.commentarea { 
-  position: static;
-  & .usertext .usertext-edit:after {
-    content: "Note: Please use the spoiler tag if you want to discuss/suggest recommended games, picks & bans or something else related.";
-    display: block;
-    text-align: center;
-    margin-top: -5px;
-    padding: 4px;
-    background-color: #def;
-    border: 1px solid #59c;
-    font-size: 11px;
-    font-weight: bold;
-  }
-}
-
-/* Message for non-subscribers 
-.content:before {  
-  content: url(%%warning%%) " You're not subscribed to r/LoLeventVoDs yet! Click the subscribe button on the right to add the subreddit to your frontpage! ";
-  margin:4px;
-  color:#2e2e2e;
-}
-.subscriber .content:before, .side .content:before{ content: " " !important; }
-*/
 
 /* This consider that the Team X columns in 
  * the matches description are left and right aligned
