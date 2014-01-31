@@ -17,6 +17,7 @@
 
 /* Header image */
 
+#header { border: none; }
 #header-bottom-left { 
   background: #02021a url(%%header%%) no-repeat right top;
   height: 125px;
@@ -41,6 +42,41 @@
   margin-top: 10px;
   background: url(%%logo%%) no-repeat scroll 0 0 transparent;
   font-size: 0!important;
+}
+
+/* Moves userbar down below header image */
+#header-bottom-right {
+  bottom: -34px;
+  line-height: 26px;
+  padding-left: 15px;
+  background: #193064;
+  border-radius: 0;
+  border-left: 1px solid #5f99cf;
+  & a { color: #fff; }
+}
+.user { 
+  color: #fff;
+  text-transform: uppercase;
+  & .userkarma { border-color: #fff; }
+}
+.separator { color: #bbb; }
+
+/* RES-specific userbar tweaks */
+#header-bottom-right.res-navTop { 
+  top: 145px;
+  bottom: -34px;
+  line-height: 23px;
+  padding-left: 5px;
+  background: url(%%gray%%);
+  border-radius: 0;
+  border-left: 1px solid #5f99cf;
+  & #userbarToggle {
+    border-radius: 0;
+    background: url(%%gray%%);
+    border-right: 1px dotted #bbb;
+    border-left: 1px solid #bbb;
+    line-height: 28px;
+  }
 }
 
 /* Hides tabmenu, domain, leave contributor button & RES nav annotations */

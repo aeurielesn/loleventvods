@@ -1,5 +1,7 @@
 @icon-spacing: -19px;
 
+.side { margin: 36px 5px 0 5px; }
+
 .side .md p > em {
   display: inline-block;
   padding: 5px;
@@ -16,10 +18,14 @@
 }
 
 /* Modify submit a new post */
-.submit .morelink a {
+.submit .morelink {
+  background: url(%%gray%%);
+  .border-radius(5px);
+  & a {
     content: '';
     font-size: 0;
     &:before { content: 'Submit new VoDs post'; font-size: 14px; }
+  }
 }
 
 /* Subscribers */
@@ -72,7 +78,7 @@
         // height: 15px;
         line-height: 26px;
         border: none;
-        background-color: #193064 !important;
+        background: url(%%gray%%);
         width: 287px;
         color: #fff !important;
         padding: 5px 0 0 20px;
@@ -82,7 +88,7 @@
         &:after {
           display: block;
           content: "";
-          border-color: transparent #2B628D transparent transparent !important;
+          border-color: transparent #003018 transparent transparent !important;
           border-style: solid;
           border-width: 15px;
           height: 0;
