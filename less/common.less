@@ -5,10 +5,9 @@
 /* change width */
 .md { max-width:90em; }
 
-/* snoo winking! */
-#header-img-a:hover { 
-  background: url(%%snoowink%%) 0 2px;
-  & #header-img { visibility: hidden; }
+/* unsnoo'd! */
+#header-img-a { 
+  display: none;
 }
 
 .titlebox form { position: static; }
@@ -32,7 +31,7 @@
   font-weight: normal;
 }
 
-#header-img-a, .redditname a { display: inline; float: left; }
+.redditname a { display: inline; float: left; }
 
 #header-bottom-left span.pagename a {
   display: block;
