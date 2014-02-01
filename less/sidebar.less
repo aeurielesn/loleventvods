@@ -20,7 +20,7 @@
 .submit .morelink {
   background: url(%%gray%%);
   .border-radius(5px);
-  & a {
+  a {
     content: '';
     font-size: 0;
     &:before {
@@ -36,8 +36,8 @@
 
 /* Subscribers */
 .subscribers {
-  & .word { display: none; }  
-  & .number::after { content: " subscribers"; }
+  .word { display: none; }  
+  .number::after { content: " subscribers"; }
 }
 
 /* Users here now */
@@ -61,24 +61,24 @@
   border: 1px solid #ccc;
   color: #000;
   .border-radius(10px);
-  & h1 a { display: none; }
-  & blockquote {
+  h1 a { display: none; }
+  blockquote {
     border: 1px solid #AAA;
     text-shadow: 0 1px 0 white;
     color: #000;
     font-weight: bold;
     .border-radius(10px);
   }
-  & .bottom { border: 0; }
-  & form.toggle { background-color: transparent !important; }
-  & .usertext { 
+  .bottom { border: 0; }
+  form.toggle { background-color: transparent !important; }
+  .usertext { 
     margin: 15px 0; 
     line-height: 120%;
-    & .md { 
+    .md { 
       margin: 0;
       padding: 0;
       overflow: visible;
-      & h2 { font-weight: bold; color: #000 !important; }
+      h2 { font-weight: bold; color: #000 !important; }
       & > h1 {
         font-size: large;
         line-height: 26px;
@@ -111,7 +111,7 @@
 /* drop down */
 .side { 
   z-index: -100;
-  & .md h3 { 
+  .md h3 { 
     margin-bottom: 8px;
     & + p + table { display: none; }
     & + p:hover + table, & + p + table:hover { display: table; }
@@ -135,10 +135,10 @@
 .icon-menu a { background: transparent; }
 
 .titlebox .md {
-  & h3 + ul { display: none; }
-  & h3:hover + ul, & ul:hover { display: block; }
-  & ul li:hover { background-color: #f7fbfc; }
-  & h2, & h3, & h4  {
+  h3 + ul { display: none; }
+  h3:hover + ul, ul:hover { display: block; }
+  ul li:hover { background-color: #f7fbfc; }
+  h2, h3, h4  {
     background-color: #ccc!important;
     width: 280px;
     // height: 26px;
@@ -150,12 +150,12 @@
     margin-left: -11px;
     &:after { margin-bottom: 10px; }
   }
-  & h3:before { content: "+"; color: #000; padding-right: 5px; }
+  h3:before { content: "+"; color: #000; padding-right: 5px; }
 }
 
 /* Table in sidebar */
 .side {
-  & .md table th {
+  .md table th {
     background: #193064;
     border: none;
     border-right: 1px solid #193064;
@@ -167,13 +167,13 @@
     font-size: 11px
   }
 
-  & .usertext table {
+  .usertext table {
     width: 280px;
     color: #0a5a36!important;
     font-size:11px;
     .box-shadow(1px 1px 1px #193064);
     margin-top: 0;
-    & a { 
+    a { 
       color: #0a5a36; 
       &:hover { text-decoration: underline; }
     }

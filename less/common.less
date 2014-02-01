@@ -56,14 +56,14 @@
   padding-left: 15px;
   background: url(%%gray%%);
   border-radius: 0;
-  & a {
+  a {
     color: #fff;
   }
 }
 
 .user { 
   color: #fff;
-  & .userkarma {
+  .userkarma {
     border-color: #fff;
   }
 }
@@ -81,7 +81,7 @@
   background: url(%%gray%%);
   border-radius: 0;
   border-left: 1px solid #5f99cf;
-  & #userbarToggle {
+  #userbarToggle {
     border-radius: 0;
     background: url(%%gray%%);
     border-right: 1px dotted #bbb;
@@ -91,9 +91,16 @@
 }
 
 /* Hides tabmenu, domain, leave contributor button & RES nav annotations */
-#header .tabmenu, #viewImagesButton , .domain, .side .leavecontributor-button,
-table .keyNavAnnotation, a[href^="#"] + .keyNavAnnotation, #siteTable .keyNavAnnotation
-{ display: none; }
+#header .tabmenu,
+#viewImagesButton,
+.domain,
+.side .leavecontributor-button,
+table .keyNavAnnotation,
+a[href^="#"] + .keyNavAnnotation,
+#siteTable .keyNavAnnotation
+{
+  display: none;
+}
 
 .link.last-clicked { overflow: hidden; }
 
@@ -118,10 +125,10 @@ table .keyNavAnnotation, a[href^="#"] + .keyNavAnnotation, #siteTable .keyNavAnn
   border: 1px solid #444;
   font-family: Arial, Helvetica, Sans-serif;
   margin: 10px 0px;
-  & * { border: 10px; }
-  & th { text-align: center; }
-  & tr:nth-child(even), & thead { background-color: #f6f6f6; }
-  & td, & th { border-right: 1px solid #888; padding: 4px 8px; }
+  * { border: 10px; }
+  th { text-align: center; }
+  tr:nth-child(even), thead { background-color: #f6f6f6; }
+  td, th { border-right: 1px solid #888; padding: 4px 8px; }
 }
 .side .md table { width:100%; }
 
@@ -165,7 +172,7 @@ div.collapsed > a.expand:first-child + em + time {
 /* notice below comments */
 .commentarea { 
   position: static;
-  & .usertext .usertext-edit:after {
+  .usertext .usertext-edit:after {
     content: "Note: Please use the spoiler tag if you want to discuss/suggest recommended games, picks & bans or something else related.";
     display: block;
     text-align: center;
