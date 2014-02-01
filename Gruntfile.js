@@ -9,7 +9,7 @@ module.exports = function(grunt) {
     less: {
       compile: {
         options: {
-          strictMath: true,
+          strictMath: false,
           paths: ["less"]
         },
         files: {
