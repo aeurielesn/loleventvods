@@ -294,3 +294,56 @@ a[href="#youtube"]:nth-of-type(n):after{ background-position: 0px -155px; }
 .subscriber .content:before, .side .content:before{
   content: " " !important;
 }
+
+/* Star */
+a[href$="star"] {
+  width:16px;
+  height:16px;
+  content:"";
+  background-image:url(%%star1%%);
+  position:relative;
+  display:inline-block;
+  cursor:default;
+}
+
+/* Warning */
+a[href$="warning"] {
+  width:16px;
+  height:16px;
+  content:"";
+  background-image:url(%%usklicnik%%);
+  position:relative;
+  display:inline-block;
+  cursor:default;
+}
+
+/* Sidebar icons */
+.side a[href*='#icon-'] {
+  color:#000;
+  cursor:default;
+  &:hover { text-decoration: none; }
+  &:before {
+    display:inline-block;
+    height:16px; width:16px;
+    content:'';
+    margin:0 5px -1px 0;
+    background: url(%%sprites-05%%) 30px 30px no-repeat;
+  }
+}
+
+.side a[href='#icon-exclamation']:before   { .bg-pos(-16px, -32px); }
+.side a[href='#icon-lightbulb']:before     { .bg-pos(-16px, -32px + @icon-spacing); }
+.side a[href='#icon-help']:before          { .bg-pos(-16px, -32px + @icon-spacing * 2); }
+.side a[href='#icon-eye']:before           { .bg-pos(-16px, -32px + @icon-spacing * 3); }
+.side a[href='#icon-comments']:before      { .bg-pos(-16px + @icon-spacing, -32px); }
+.side a[href='#icon-bell']:before          { .bg-pos(-16px + @icon-spacing, -32px + @icon-spacing); }
+.side a[href='#icon-clock']:before         { .bg-pos(-16px + @icon-spacing, -32px + @icon-spacing * 2); }
+.side a[href='#icon-cross']:before         { .bg-pos(-16px + @icon-spacing, -32px + @icon-spacing * 3); }
+.side a[href='#icon-error']:before         { .bg-pos(-16px + @icon-spacing * 2, -32px); }
+.side a[href='#icon-information']:before   { .bg-pos(-16px + @icon-spacing * 2, -32px + @icon-spacing ); }
+.side a[href='#icon-note']:before          { .bg-pos(-16px + @icon-spacing * 2, -32px + @icon-spacing * 2); }
+.side a[href='#icon-smile']:before         { .bg-pos(-16px + @icon-spacing * 2, -32px + @icon-spacing * 3); }
+.side a[href='#icon-star']:before          { .bg-pos(-16px + @icon-spacing * 3, -32px); }
+.side a[href='#icon-check']:before         { .bg-pos(-16px + @icon-spacing * 3, -32px + @icon-spacing); }
+.side a[href='#icon-time']:before          { .bg-pos(-16px + @icon-spacing * 3, -32px + @icon-spacing * 2); }
+.side a[href='#icon-unhappy']:before       { .bg-pos(-16px + @icon-spacing * 3, -32px + @icon-spacing * 3); }
