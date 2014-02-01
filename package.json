@@ -1,0 +1,12 @@
+{
+  "name": "loleventvods",
+  "description": "A collection of CSS customizations for LoLeventVoDs' subreddit.",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aeurielesn/loleventvods.git"
+  },
+  "bugs": {
+    "url": "https://github.com/aeurielesn/loleventvods/issues"
+  }
+}
