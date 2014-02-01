@@ -12,8 +12,7 @@
 
 /* Changes */
 .side h4,
-.side h5,
-.side h6 {
+.side h5 {
   height:0;
 }
 
@@ -24,7 +23,14 @@
   & a {
     content: '';
     font-size: 0;
-    &:before { content: 'Submit new VoDs post'; font-size: 14px; }
+    &:before {
+      content: 'Submit new VoDs post';
+      font-size: 14px;
+      color: white;
+    }
+  }
+  .nub {
+    display: none;
   }
 }
 
@@ -75,13 +81,12 @@
       & h2 { font-weight: bold; color: #000 !important; }
       & > h1 {
         font-size: large;
-        // height: 15px;
         line-height: 26px;
         border: none;
         background: url(%%gray%%);
         width: 287px;
         color: #fff !important;
-        padding: 5px 0 0 20px;
+        padding: 4px 0 4px 20px;
         margin: 10px 13px 5px -18px;
         border-bottom: 1px solid #193064 !important;
         z-index: 100;
@@ -96,7 +101,7 @@
           position: absolute;
           z-index: -1;
           margin-left: -35px;
-          margin-top: -10px
+          margin-top: -10px;
         }
       }
     }

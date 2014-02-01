@@ -19,7 +19,7 @@
 #header { border: none; }
 #header-bottom-left { 
   background: #02021a url(%%header%%) no-repeat right top;
-  height: 125px;
+  height: 126px;
 }
 
 .redditname a {
@@ -44,21 +44,28 @@
 }
 
 /* Moves userbar down below header image */
+
 #header-bottom-right {
   bottom: -34px;
   line-height: 26px;
   padding-left: 15px;
-  background: #193064;
+  background: url(%%gray%%);
   border-radius: 0;
-  border-left: 1px solid #5f99cf;
-  & a { color: #fff; }
+  & a {
+    color: #fff;
+  }
 }
+
 .user { 
   color: #fff;
-  text-transform: uppercase;
-  & .userkarma { border-color: #fff; }
+  & .userkarma {
+    border-color: #fff;
+  }
 }
-.separator { color: #bbb; }
+
+.separator {
+  color: #bbb;
+}
 
 /* RES-specific userbar tweaks */
 #header-bottom-right.res-navTop { 
