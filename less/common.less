@@ -6,7 +6,7 @@
 .md { max-width:90em; }
 
 /* unsnoo'd! */
-#header-img-a { 
+#header-img-a {
   display: none;
 }
 
@@ -15,14 +15,14 @@
 /* This lowers the links to create space */
 
 .content {
-  padding-top: 2px; 
+  padding-top: 2px;
   margin-top: 41px;
 }
 
 /* Header image */
 
 #header { border: none; }
-#header-bottom-left { 
+#header-bottom-left {
   background: #02021a url(%%header%%) no-repeat right top;
   height: 126px;
 }
@@ -61,7 +61,7 @@
   }
 }
 
-.user { 
+.user {
   color: #fff;
   .userkarma {
     border-color: #fff;
@@ -73,7 +73,7 @@
 }
 
 /* RES-specific userbar tweaks */
-#header-bottom-right.res-navTop { 
+#header-bottom-right.res-navTop {
   top: 145px;
   bottom: -34px;
   line-height: 23px;
@@ -121,7 +121,7 @@ a[href^="#"] + .keyNavAnnotation,
 }
 
 /* tables */
-.md table { 
+.md table {
   border: 1px solid #444;
   font-family: Arial, Helvetica, Sans-serif;
   margin: 10px 0px;
@@ -147,7 +147,7 @@ a[href^="#"] + .keyNavAnnotation,
 /* ROW HOVER COLOR */
 .md table tr:hover { background-color: #bdff8b; }
 
-/* Hides downvote arrow on posts only; still accessible on comments*/  
+/* Hides downvote arrow on posts only; still accessible on comments*/
 .arrow.down { visibility: hidden; display: none; }
 .comment .arrow.down { visibility: visible; display: block; }
 
@@ -170,7 +170,7 @@ div.collapsed > a.expand:first-child + em + time {
 }
 
 /* notice below comments */
-.commentarea { 
+.commentarea {
   position: static;
   .usertext .usertext-edit:after {
     content: "Note: Please use the spoiler tag if you want to discuss/suggest recommended games, picks & bans or something else related.";
@@ -185,7 +185,7 @@ div.collapsed > a.expand:first-child + em + time {
   }
 }
 
-/* This consider that the Team X columns in 
+/* This consider that the Team X columns in
  * the matches description are left and right aligned
  */
 
@@ -195,17 +195,36 @@ div.collapsed > a.expand:first-child + em + time {
 
 /* Tournament icons in header */
 
-.side a[href="/r/LoLeventVoDs/comments/1v6w31/s4_lcs_europe_spring_season/"] {
-  background: url(%%eu%%) no-repeat 0 0 transparent;
-  width:148px;
-  height:125px;
-  display: block;
-  position: absolute;
-  top: 20px;
-  right: 640px;
-  z-index: 9999;
+.side {
+  a[href="/r/LoLeventVoDs/comments/1v6w31/s4_lcs_europe_spring_season/"],
+  a[href="/r/LoLeventVoDs/comments/1vgje3/s4_lcs_north_america_spring_season/"],
+  a[href="/r/LoLeventVoDs/comments/1wd6yu/iem_sao_paulo_2014/"],
+  a[href="/r/LoLeventVoDs/comments/1tn6v4/pandoratv_201314_ogn_winter_playoffs/"] {
+    .headers();
+    display: block;
+    position: absolute;
+    top: 19px;
+    z-index: 9999;
+  }
 
-  &:hover {
-    background-position: -148px 0;
+  a[href="/r/LoLeventVoDs/comments/1v6w31/s4_lcs_europe_spring_season/"] {
+    right: 640px;
+    .headers-eu-off();
+    &:hover { .headers-eu-on(); }
+  }
+  a[href="/r/LoLeventVoDs/comments/1vgje3/s4_lcs_north_america_spring_season/"] {
+    right: 0;
+    .headers-na-off();
+    &:hover { .headers-na-on(); }
+  }
+  a[href="/r/LoLeventVoDs/comments/1wd6yu/iem_sao_paulo_2014/"] {
+    right: 400px;
+    .headers-iem-off();
+    &:hover { .headers-iem-on(); }
+  }
+  a[href="/r/LoLeventVoDs/comments/1tn6v4/pandoratv_201314_ogn_winter_playoffs/"] {
+    right: 145px;
+    .headers-ogn-off();
+    &:hover { .headers-ogn-on(); }
   }
 }
