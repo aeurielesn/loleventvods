@@ -183,3 +183,20 @@ div.collapsed > a.expand:first-child + em + time {
 .expando th {
   &[align="left"], &[align="right"] { min-width: 70px; }
 }
+
+/* Tournament icons in header */
+
+.side a[href="/r/LoLeventVoDs/comments/1v6w31/s4_lcs_europe_spring_season/"] {
+  background: url(%%eu%%) no-repeat 0 0 transparent;
+  width:148px;
+  height:125px;
+  display: block;
+  position: absolute;
+  top: 20px;
+  right: 640px;
+  z-index: 9999;
+
+  &:hover {
+    background-position: -148px 0;
+  }
+}
