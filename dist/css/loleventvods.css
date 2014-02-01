@@ -213,7 +213,7 @@ div.collapsed > a.expand:first-child + em + time + em + a.expand {
   font-size: 11px;
   font-weight: bold;
 }
-/* This consider that the Team X columns in 
+/* This consider that the Team X columns in
  * the matches description are left and right aligned
  */
 .expando th[align="left"],
@@ -221,18 +221,52 @@ div.collapsed > a.expand:first-child + em + time + em + a.expand {
   min-width: 70px;
 }
 /* Tournament icons in header */
-.side a[href="/r/LoLeventVoDs/comments/1v6w31/s4_lcs_europe_spring_season/"] {
-  background: url(%%eu%%) no-repeat 0 0 transparent;
-  width: 148px;
+.side a[href="/r/LoLeventVoDs/comments/1v6w31/s4_lcs_europe_spring_season/"],
+.side a[href="/r/LoLeventVoDs/comments/1vgje3/s4_lcs_north_america_spring_season/"],
+.side a[href="/r/LoLeventVoDs/comments/1wd6yu/iem_sao_paulo_2014/"],
+.side a[href="/r/LoLeventVoDs/comments/1tn6v4/pandoratv_201314_ogn_winter_playoffs/"] {
+  background: url(%%headers%%) no-repeat top left;
   height: 125px;
   display: block;
   position: absolute;
-  top: 20px;
-  right: 640px;
+  top: 19px;
   z-index: 9999;
 }
+.side a[href="/r/LoLeventVoDs/comments/1v6w31/s4_lcs_europe_spring_season/"] {
+  right: 640px;
+  background-position: 0 0;
+  width: 149px;
+}
 .side a[href="/r/LoLeventVoDs/comments/1v6w31/s4_lcs_europe_spring_season/"]:hover {
-  background-position: -148px 0;
+  background-position: -154px 0;
+  width: 149px;
+}
+.side a[href="/r/LoLeventVoDs/comments/1vgje3/s4_lcs_north_america_spring_season/"] {
+  right: 0;
+  background-position: -778px 0;
+  width: 150px;
+}
+.side a[href="/r/LoLeventVoDs/comments/1vgje3/s4_lcs_north_america_spring_season/"]:hover {
+  background-position: -933px 0;
+  width: 150px;
+}
+.side a[href="/r/LoLeventVoDs/comments/1wd6yu/iem_sao_paulo_2014/"] {
+  right: 400px;
+  background-position: -308px 0;
+  width: 230px;
+}
+.side a[href="/r/LoLeventVoDs/comments/1wd6yu/iem_sao_paulo_2014/"]:hover {
+  background-position: -543px 0;
+  width: 230px;
+}
+.side a[href="/r/LoLeventVoDs/comments/1tn6v4/pandoratv_201314_ogn_winter_playoffs/"] {
+  right: 145px;
+  background-position: -1088px 0;
+  width: 255px;
+}
+.side a[href="/r/LoLeventVoDs/comments/1tn6v4/pandoratv_201314_ogn_winter_playoffs/"]:hover {
+  background-position: -1348px 0;
+  width: 255px;
 }
 /* Top announcement.
  * It works by enabling <h6/> in the sidebar as a announcement banner on top
