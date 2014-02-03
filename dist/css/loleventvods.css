@@ -578,43 +578,49 @@ body > .content:before {
 .side .usertext table a:hover {
   text-decoration: underline;
 }
-/* Social media buttons */
-.side a[href="http://goo.gl/3kRqh"],
-.side a[href="http://goo.gl/YrFC9"],
-.side a[href="http://goo.gl/BDoQm"] {
-  display: inline-block;
-  background: url(%%social%%) no-repeat top left;
-}
-.side a[href="http://goo.gl/3kRqh"] {
-  background-position: 0 -37px;
-  width: 32px;
-  height: 32px;
-}
-.side a[href="http://goo.gl/YrFC9"] {
-  background-position: 0 0;
-  width: 32px;
-  height: 32px;
-}
-.side a[href="http://goo.gl/BDoQm"] {
-  background-position: 0 -74px;
-  width: 32px;
-  height: 33px;
-}
 /* hide "Create your own subreddit" button */
 div.sidebox.create {
   display: none;
 }
-a[href$="/spoiler"] {
+/* sidebar social media icons */
+.side a[href="https://www.facebook.com/loleventvods"],
+.side a[href="https://www.twitter.com/loleventvods"],
+.side a[href="http://www.youtube.com/loleventvods"],
+.side a[href="https://play.google.com/store/apps/details?id=com.kox.zzreal"] {
+  display: inline-block;
+  background: url(%%sidebar%%);
+  width: 136px;
+  height: 45px;
+}
+.side a[href="https://www.facebook.com/loleventvods"]:hover,
+.side a[href="https://www.twitter.com/loleventvods"]:hover,
+.side a[href="http://www.youtube.com/loleventvods"]:hover,
+.side a[href="https://play.google.com/store/apps/details?id=com.kox.zzreal"]:hover {
+  opacity: 0.6;
+}
+.side a[href="https://www.facebook.com/loleventvods"] {
+  background-position: 0 -95px;
+}
+.side a[href="https://www.twitter.com/loleventvods"] {
+  background-position: 0 -190px;
+}
+.side a[href="http://www.youtube.com/loleventvods"] {
+  background-position: 0 -285px;
+}
+.side a[href="https://play.google.com/store/apps/details?id=com.kox.zzreal"] {
+  background-position: 0 0;
+}
+a[href="/spoiler"] {
   background: none repeat scroll 0 0 #000 !important;
   color: #000 !important;
   cursor: default;
   border-radius: 3px;
   padding: 0 3px;
 }
-a[href$="/spoiler"]:hover {
+a[href="/spoiler"]:hover {
   color: #fff !important;
 }
-a[href$="/hidden"] {
+a[href="/hidden"] {
   display: block;
   background: none repeat scroll 0 0 #000 !important;
   color: #000 !important;
@@ -622,7 +628,7 @@ a[href$="/hidden"] {
   border-radius: 3px;
   padding: 0 3px;
 }
-a[href$="/hidden"]:hover {
+a[href="/hidden"]:hover {
   color: #fff !important;
 }
 .flags-belgium,
