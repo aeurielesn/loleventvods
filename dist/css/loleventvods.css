@@ -10,12 +10,9 @@
 .md {
   max-width: 90em;
 }
-/* snoo winking! */
-#header-img-a:hover {
-  background: url(%%snoowink%%) 0 2px;
-}
-#header-img-a:hover #header-img {
-  visibility: hidden;
+/* unsnoo'd! */
+#header-img-a {
+  display: none;
 }
 .titlebox form {
   position: static;
@@ -23,12 +20,15 @@
 /* This lowers the links to create space */
 .content {
   padding-top: 2px;
-  margin-top: 50px;
+  margin-top: 41px;
 }
 /* Header image */
+#header {
+  border: none;
+}
 #header-bottom-left {
   background: #02021a url(%%header%%) no-repeat right top;
-  height: 125px;
+  height: 126px;
 }
 .redditname a {
   text-indent: -1px;
@@ -38,19 +38,55 @@
   font-style: italic;
   font-weight: normal;
 }
-#header-img-a,
 .redditname a {
   display: inline;
   float: left;
 }
 #header-bottom-left span.pagename a {
   display: block;
-  height: 105px;
-  width: 210px;
-  margin-left: -20px;
+  height: 125px;
+  width: 228px;
+  margin-left: 10px;
   margin-top: 10px;
   background: url(%%logo%%) no-repeat scroll 0 0 transparent;
   font-size: 0!important;
+}
+/* Moves userbar down below header image */
+#header-bottom-right {
+  bottom: -34px;
+  line-height: 26px;
+  padding-left: 15px;
+  background: url(%%gray%%);
+  border-radius: 0;
+}
+#header-bottom-right a {
+  color: #fff;
+}
+.user {
+  color: #fff;
+}
+.user .userkarma {
+  border-color: #fff;
+}
+.separator {
+  color: #bbb;
+}
+/* RES-specific userbar tweaks */
+#header-bottom-right.res-navTop {
+  top: 145px;
+  bottom: -34px;
+  line-height: 23px;
+  padding-left: 5px;
+  background: url(%%gray%%);
+  border-radius: 0;
+  border-left: 1px solid #5f99cf;
+}
+#header-bottom-right.res-navTop #userbarToggle {
+  border-radius: 0;
+  background: url(%%gray%%);
+  border-right: 1px dotted #bbb;
+  border-left: 1px solid #bbb;
+  line-height: 28px;
 }
 /* Hides tabmenu, domain, leave contributor button & RES nav annotations */
 #header .tabmenu,
@@ -177,39 +213,79 @@ div.collapsed > a.expand:first-child + em + time + em + a.expand {
   font-size: 11px;
   font-weight: bold;
 }
-/* Message for non-subscribers 
-.content:before {  
-  content: url(%%warning%%) " You're not subscribed to r/LoLeventVoDs yet! Click the subscribe button on the right to add the subreddit to your frontpage! ";
-  margin:4px;
-  color:#2e2e2e;
-}
-.subscriber .content:before, .side .content:before{ content: " " !important; }
-*/
-/* This consider that the Team X columns in 
+/* This consider that the Team X columns in
  * the matches description are left and right aligned
  */
 .expando th[align="left"],
 .expando th[align="right"] {
   min-width: 70px;
 }
+/* Tournament icons in header */
+.side a[href="/r/LoLeventVoDs/comments/1v6w31/s4_lcs_europe_spring_season/"],
+.side a[href="/r/LoLeventVoDs/comments/1vgje3/s4_lcs_north_america_spring_season/"],
+.side a[href="/r/LoLeventVoDs/comments/1wd6yu/iem_sao_paulo_2014/"],
+.side a[href="/r/LoLeventVoDs/comments/1tn6v4/pandoratv_201314_ogn_winter_playoffs/"] {
+  background: url(%%headers%%) no-repeat top left;
+  height: 125px;
+  display: block;
+  position: absolute;
+  top: 19px;
+  z-index: 9999;
+}
+.side a[href="/r/LoLeventVoDs/comments/1v6w31/s4_lcs_europe_spring_season/"] {
+  right: 640px;
+  background-position: 0 0;
+  width: 149px;
+}
+.side a[href="/r/LoLeventVoDs/comments/1v6w31/s4_lcs_europe_spring_season/"]:hover {
+  background-position: -154px 0;
+  width: 149px;
+}
+.side a[href="/r/LoLeventVoDs/comments/1vgje3/s4_lcs_north_america_spring_season/"] {
+  right: 0;
+  background-position: -778px 0;
+  width: 150px;
+}
+.side a[href="/r/LoLeventVoDs/comments/1vgje3/s4_lcs_north_america_spring_season/"]:hover {
+  background-position: -933px 0;
+  width: 150px;
+}
+.side a[href="/r/LoLeventVoDs/comments/1wd6yu/iem_sao_paulo_2014/"] {
+  right: 400px;
+  background-position: -308px 0;
+  width: 230px;
+}
+.side a[href="/r/LoLeventVoDs/comments/1wd6yu/iem_sao_paulo_2014/"]:hover {
+  background-position: -543px 0;
+  width: 230px;
+}
+.side a[href="/r/LoLeventVoDs/comments/1tn6v4/pandoratv_201314_ogn_winter_playoffs/"] {
+  right: 145px;
+  background-position: -1088px 0;
+  width: 255px;
+}
+.side a[href="/r/LoLeventVoDs/comments/1tn6v4/pandoratv_201314_ogn_winter_playoffs/"]:hover {
+  background-position: -1348px 0;
+  width: 255px;
+}
 /* Top announcement.
  * It works by enabling <h6/> in the sidebar as a announcement banner on top
  * of the main subreddit content.
  */
 .titlebox .usertext-body .md h6 {
+  background: url(%%gray%%);
   display: block;
   position: absolute;
-  top: 136px;
-  left: 10px;
-  background-color: #193064;
+  top: 145px;
+  left: 0;
+  right: 0;
   font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
   font-size: 15px;
   font-weight: bold;
   color: white;
   text-align: left;
-  padding: 8px 13px 26px 13px;
-  margin: 13px;
-  border-radius: 5px;
+  padding: 4px 13px 4px 13px;
+  line-height: 26px;
 }
 h6 a {
   color: #F2E972;
@@ -268,6 +344,9 @@ body > .content:before {
     .border-radius(3px);
     }
 */
+.side {
+  margin: 36px 5px 0 5px;
+}
 .side .md p > em {
   display: inline-block;
   padding: 5px;
@@ -279,11 +358,16 @@ body > .content:before {
 }
 /* Changes */
 .side h4,
-.side h5,
-.side h6 {
+.side h5 {
   height: 0;
 }
 /* Modify submit a new post */
+.submit .morelink {
+  background: url(%%gray%%);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
 .submit .morelink a {
   content: '';
   font-size: 0;
@@ -291,6 +375,10 @@ body > .content:before {
 .submit .morelink a:before {
   content: 'Submit new VoDs post';
   font-size: 14px;
+  color: white;
+}
+.submit .morelink .nub {
+  display: none;
 }
 /* Subscribers */
 .subscribers .word {
@@ -366,10 +454,10 @@ body > .content:before {
   font-size: large;
   line-height: 26px;
   border: none;
-  background-color: #193064 !important;
+  background: url(%%gray%%);
   width: 287px;
   color: #fff !important;
-  padding: 5px 0 0 20px;
+  padding: 4px 0 4px 20px;
   margin: 10px 13px 5px -18px;
   border-bottom: 1px solid #193064 !important;
   z-index: 100;
@@ -377,7 +465,7 @@ body > .content:before {
 .titlebox .usertext .md > h1:after {
   display: block;
   content: "";
-  border-color: transparent #2B628D transparent transparent !important;
+  border-color: transparent #003018 transparent transparent !important;
   border-style: solid;
   border-width: 15px;
   height: 0;
@@ -490,90 +578,6 @@ body > .content:before {
 .side .usertext table a:hover {
   text-decoration: underline;
 }
-/* Star */
-a[href$="star"] {
-  width: 16px;
-  height: 16px;
-  content: "";
-  background-image: url(%%star1%%);
-  position: relative;
-  display: inline-block;
-  cursor: default;
-}
-/* Warning */
-a[href$="warning"] {
-  width: 16px;
-  height: 16px;
-  content: "";
-  background-image: url(%%usklicnik%%);
-  position: relative;
-  display: inline-block;
-  cursor: default;
-}
-/* Sidebar icons */
-.side a[href*='#icon-'] {
-  color: #000;
-  cursor: default;
-}
-.side a[href*='#icon-']:hover {
-  text-decoration: none;
-}
-.side a[href*='#icon-']:before {
-  display: inline-block;
-  height: 16px;
-  width: 16px;
-  content: '';
-  margin: 0 5px -1px 0;
-  background: url(%%sprites-05%%) 30px 30px no-repeat;
-}
-.side a[href='#icon-exclamation']:before {
-  background-position: -16px -32px;
-}
-.side a[href='#icon-lightbulb']:before {
-  background-position: -16px -51px;
-}
-.side a[href='#icon-help']:before {
-  background-position: -16px -70px;
-}
-.side a[href='#icon-eye']:before {
-  background-position: -16px -89px;
-}
-.side a[href='#icon-comments']:before {
-  background-position: -35px -32px;
-}
-.side a[href='#icon-bell']:before {
-  background-position: -35px -51px;
-}
-.side a[href='#icon-clock']:before {
-  background-position: -35px -70px;
-}
-.side a[href='#icon-cross']:before {
-  background-position: -35px -89px;
-}
-.side a[href='#icon-error']:before {
-  background-position: -54px -32px;
-}
-.side a[href='#icon-information']:before {
-  background-position: -54px -51px;
-}
-.side a[href='#icon-note']:before {
-  background-position: -54px -70px;
-}
-.side a[href='#icon-smile']:before {
-  background-position: -54px -89px;
-}
-.side a[href='#icon-star']:before {
-  background-position: -73px -32px;
-}
-.side a[href='#icon-check']:before {
-  background-position: -73px -51px;
-}
-.side a[href='#icon-time']:before {
-  background-position: -73px -70px;
-}
-.side a[href='#icon-unhappy']:before {
-  background-position: -73px -89px;
-}
 /* Social media buttons */
 .side a[href="http://goo.gl/3kRqh"],
 .side a[href="http://goo.gl/YrFC9"],
@@ -622,7 +626,7 @@ a[href$="/hidden"]:hover {
   color: #fff !important;
 }
 .flags-belgium,
-.flags-checzrepublic,
+.flags-czechrepublic,
 .flags-denmark,
 .flags-estonia,
 .flags-finland,
@@ -642,7 +646,7 @@ a[href$="/hidden"]:hover {
 .flags-belgium {
   background-position: 0 0;
 }
-.flags-checzrepublic {
+.flags-czechrepublic {
   background-position: 0 -61px;
 }
 .flags-denmark {
@@ -685,7 +689,7 @@ a[href$="/hidden"]:hover {
   background-position: 0 -854px;
 }
 a[href="#belgium"]:after,
-a[href="#checzrepublic"]:after,
+a[href="#czechrepublic"]:after,
 a[href="#denmark"]:after,
 a[href="#estonia"]:after,
 a[href="#finland"]:after,
@@ -710,7 +714,7 @@ a[href="#sweden"]:after {
 a[href="#belgium"]:after {
   background-position: 0 0;
 }
-a[href="#checzrepublic"]:after {
+a[href="#czechrepublic"]:after {
   background-position: 0 -61px;
 }
 a[href="#denmark"]:after {
