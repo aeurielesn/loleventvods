@@ -277,15 +277,15 @@ a[href="#azubu"]:nth-of-type(n):after{ background-position: 0px 0px; }
 a[href="#twitch"]:nth-of-type(n):after{ background-position: 0px -72px; }
 a[href="#youtube"]:nth-of-type(n):after{ background-position: 0px -155px; }
 
-.streams-azubu1{ background-position: 0 0; width: 120px; height: 22px; } 
-.streams-azubu2{ background-position: 0 -72px; width: 120px; height: 22px; } 
-.streams-twitch1{ background-position: 0 -144px; width: 100px; height: 33px; } 
-.streams-twitch2{ background-position: 0 -227px; width: 100px; height: 33px; } 
-.streams-youtube1{ background-position: 0 -310px; width: 75px; height: 27px; } 
-.streams-youtube2{ background-position: 0 -387px; width: 75px; height: 27px; } 
+.streams-azubu1{ background-position: 0 0; width: 120px; height: 22px; }
+.streams-azubu2{ background-position: 0 -72px; width: 120px; height: 22px; }
+.streams-twitch1{ background-position: 0 -144px; width: 100px; height: 33px; }
+.streams-twitch2{ background-position: 0 -227px; width: 100px; height: 33px; }
+.streams-youtube1{ background-position: 0 -310px; width: 75px; height: 27px; }
+.streams-youtube2{ background-position: 0 -387px; width: 75px; height: 27px; }
 
 /* Message for non-subscribers */
-.content:before {  
+.content:before {
   content: url(%%warning%%) " You're not subscribed to r/LoLeventVoDs yet! Click the subscribe button on the right to add the subreddit to your frontpage! ";
   margin:4px;
   color:#2e2e2e;
@@ -347,3 +347,17 @@ a[href$="warning"] {
 .side a[href='#icon-check']:before         { .bg-pos(-16px + @icon-spacing * 3, -32px + @icon-spacing); }
 .side a[href='#icon-time']:before          { .bg-pos(-16px + @icon-spacing * 3, -32px + @icon-spacing * 2); }
 .side a[href='#icon-unhappy']:before       { .bg-pos(-16px + @icon-spacing * 3, -32px + @icon-spacing * 3); }
+
+/* Old social media buttons */
+
+.side {
+    a[href="http://goo.gl/3kRqh"],
+    a[href="http://goo.gl/YrFC9"],
+    a[href="http://goo.gl/BDoQm"] {
+        display:inline-block;
+        .social;
+    }
+    a[href="http://goo.gl/3kRqh"] { .social-twitter; }
+    a[href="http://goo.gl/YrFC9"] { .social-facebook; }
+    a[href="http://goo.gl/BDoQm"] { .social-youtube; }
+}
