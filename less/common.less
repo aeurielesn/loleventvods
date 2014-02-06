@@ -5,8 +5,23 @@
 /* change width */
 .md { max-width:90em; }
 
-/* unsnoo'd! */
+/* alien */
 #header-img-a {
+  position: absolute;
+  content: "";
+  display: inline-block;
+  top: 145px;
+  left: 0px;
+  width: 35px;
+  height: 34px;
+  background: url(%%alien%%)  no-repeat 0 -1px;
+
+  &:hover {
+    background-position: 0 -36px;
+  }
+}
+
+#header-img {
   display: none;
 }
 
