@@ -10,8 +10,21 @@
 .md {
   max-width: 90em;
 }
-/* unsnoo'd! */
+/* alien */
 #header-img-a {
+  position: absolute;
+  content: "";
+  display: inline-block;
+  top: 145px;
+  left: 0px;
+  width: 35px;
+  height: 34px;
+  background: url(%%alien%%) no-repeat 0 -1px;
+}
+#header-img-a:hover {
+  background-position: 0 -36px;
+}
+#header-img {
   display: none;
 }
 .titlebox form {
@@ -284,8 +297,9 @@ div.collapsed > a.expand:first-child + em + time + em + a.expand {
   font-weight: bold;
   color: white;
   text-align: left;
-  padding: 4px 13px 4px 13px;
+  padding: 4px 13px 4px 4px;
   line-height: 26px;
+  margin-left: 35px;
 }
 h6 a {
   color: #F2E972;
@@ -331,19 +345,6 @@ h6 a {
 .side .md h6 + ul li {
   background-color: transparent!important;
 }
-/* top message  
-body > .content:before {
-    content: "If you're looking for EG vs. DTG VoDs, please use links above until LCS post gets fixed!";
-    display: block;
-    font-weight: bold;
-    margin: -10px 315px 10px 10px; 
-    background-color: #eeffdc;
-    padding: 8px;
-    font-size: 13px;
-    border: 1px solid #96c864;
-    .border-radius(3px);
-    }
-*/
 .side {
   margin: 36px 5px 0 5px;
 }
