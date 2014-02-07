@@ -12,3 +12,6 @@
 
 # OSX
 .DS_Store
+
+# Folders
+node_modules

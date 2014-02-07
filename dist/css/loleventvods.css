@@ -10,21 +10,38 @@
 .md {
   max-width: 90em;
 }
-/* snoo winking! */
+/* alien */
+#header-img-a {
+  position: absolute;
+  content: "";
+  display: inline-block;
+  top: 145px;
+  left: 0px;
+  width: 35px;
+  height: 34px;
+  background: url(%%alien%%) no-repeat 0 -1px;
+}
 #header-img-a:hover {
-  background: url(%%snoowink%%) 0 2px;
+  background-position: 0 -36px;
 }
-#header-img-a:hover #header-img {
-  visibility: hidden;
+#header-img {
+  display: none;
 }
+.titlebox form {
+  position: static;
+}
+/* This lowers the links to create space */
 .content {
   padding-top: 2px;
-  margin-top: 50px;
+  margin-top: 41px;
 }
 /* Header image */
+#header {
+  border: none;
+}
 #header-bottom-left {
   background: #02021a url(%%header%%) no-repeat right top;
-  height: 125px;
+  height: 126px;
 }
 .redditname a {
   text-indent: -1px;
@@ -34,19 +51,55 @@
   font-style: italic;
   font-weight: normal;
 }
-#header-img-a,
 .redditname a {
   display: inline;
   float: left;
 }
 #header-bottom-left span.pagename a {
   display: block;
-  height: 105px;
-  width: 210px;
-  margin-left: -20px;
+  height: 125px;
+  width: 228px;
+  margin-left: 10px;
   margin-top: 10px;
   background: url(%%logo%%) no-repeat scroll 0 0 transparent;
   font-size: 0!important;
+}
+/* Moves userbar down below header image */
+#header-bottom-right {
+  bottom: -34px;
+  line-height: 26px;
+  padding-left: 15px;
+  background: url(%%gray%%);
+  border-radius: 0;
+}
+#header-bottom-right a {
+  color: #fff;
+}
+.user {
+  color: #fff;
+}
+.user .userkarma {
+  border-color: #fff;
+}
+.separator {
+  color: #bbb;
+}
+/* RES-specific userbar tweaks */
+#header-bottom-right.res-navTop {
+  top: 145px;
+  bottom: -34px;
+  line-height: 23px;
+  padding-left: 5px;
+  background: url(%%gray%%);
+  border-radius: 0;
+  border-left: 1px solid #5f99cf;
+}
+#header-bottom-right.res-navTop #userbarToggle {
+  border-radius: 0;
+  background: url(%%gray%%);
+  border-right: 1px dotted #bbb;
+  border-left: 1px solid #bbb;
+  line-height: 28px;
 }
 /* Hides tabmenu, domain, leave contributor button & RES nav annotations */
 #header .tabmenu,
@@ -100,17 +153,33 @@ a[href^="#"] + .keyNavAnnotation,
 .md table thead {
   background-color: #f6f6f6;
 }
-.titlebox form {
-  position: static;
+.md table td,
+.md table th {
+  border-right: 1px solid #888;
+  padding: 4px 8px;
 }
-.side .md p > em {
-  display: inline-block;
-  padding: 5px;
-  background: #F6E69F;
-  border: 1px solid orange;
+.side .md table {
+  width: 100%;
 }
-.side .md p > em > strong {
-  font-style: italic;
+.md th {
+  white-space: nowrap;
+  background-color: #444;
+  color: whitesmoke;
+  padding: 6px 10px;
+  border: 1px solid #444;
+}
+/* ALTERNATE ROW COLORS */
+.md tr:nth-of-type(odd) {
+  background: #fff;
+  color: #363636;
+}
+.md tr:nth-of-type(even) {
+  background: #EDEDED;
+  color: #363636;
+}
+/* ROW HOVER COLOR */
+.md table tr:hover {
+  background-color: #bdff8b;
 }
 /* Hides downvote arrow on posts only; still accessible on comments*/
 .arrow.down {
@@ -157,103 +226,87 @@ div.collapsed > a.expand:first-child + em + time + em + a.expand {
   font-size: 11px;
   font-weight: bold;
 }
-/* hide "Create your own subreddit" button */
-div.sidebox.create {
+/* This consider that the Team X columns in
+ * the matches description are left and right aligned
+ */
+.expando th[align="left"],
+.expando th[align="right"] {
+  min-width: 70px;
+}
+/* Tournament icons in header */
+.side a[href="/r/LoLeventVoDs/comments/1v6w31/s4_lcs_europe_spring_season/"],
+.side a[href="/r/LoLeventVoDs/comments/1vgje3/s4_lcs_north_america_spring_season/"],
+.side a[href="/r/LoLeventVoDs/comments/1wd6yu/iem_sao_paulo_2014/"],
+.side a[href="/r/LoLeventVoDs/comments/1tn6v4/pandoratv_201314_ogn_winter_playoffs/"] {
+  background: url(%%headers%%) no-repeat top left;
+  height: 125px;
+  display: block;
+  position: absolute;
+  top: 19px;
+  z-index: 9999;
+}
+.side a[href="/r/LoLeventVoDs/comments/1v6w31/s4_lcs_europe_spring_season/"] {
+  right: 640px;
+  background-position: 0 0;
+  width: 149px;
+}
+.side a[href="/r/LoLeventVoDs/comments/1v6w31/s4_lcs_europe_spring_season/"]:hover {
+  background-position: -154px 0;
+  width: 149px;
+}
+.side a[href="/r/LoLeventVoDs/comments/1vgje3/s4_lcs_north_america_spring_season/"] {
+  right: 0;
+  background-position: -778px 0;
+  width: 150px;
+}
+.side a[href="/r/LoLeventVoDs/comments/1vgje3/s4_lcs_north_america_spring_season/"]:hover {
+  background-position: -933px 0;
+  width: 150px;
+}
+.side a[href="/r/LoLeventVoDs/comments/1wd6yu/iem_sao_paulo_2014/"] {
+  right: 400px;
+  background-position: -308px 0;
+  width: 230px;
+}
+.side a[href="/r/LoLeventVoDs/comments/1wd6yu/iem_sao_paulo_2014/"]:hover {
+  background-position: -543px 0;
+  width: 230px;
+}
+.side a[href="/r/LoLeventVoDs/comments/1tn6v4/pandoratv_201314_ogn_winter_playoffs/"] {
+  right: 145px;
+  background-position: -1088px 0;
+  width: 255px;
+}
+.side a[href="/r/LoLeventVoDs/comments/1tn6v4/pandoratv_201314_ogn_winter_playoffs/"]:hover {
+  background-position: -1348px 0;
+  width: 255px;
+}
+/* Top announcement.
+ * It works by enabling <h6/> in the sidebar as a announcement banner on top
+ * of the main subreddit content.
+ */
+.titlebox .usertext-body .md h6 {
+  background: url(%%gray%%);
+  display: block;
+  position: absolute;
+  top: 145px;
+  left: 0;
+  right: 0;
+  font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  color: white;
+  text-align: left;
+  padding: 4px 13px 4px 4px;
+  line-height: 26px;
+  margin-left: 35px;
+}
+h6 a {
+  color: #F2E972;
+}
+/* No flairs on front page */
+.listing-page .flair {
   display: none;
-}
-/* This lowers the links to create space */
-div.content {
-  margin-top: 50px;
-}
-/* tables */
-.md table {
-  border: 1px solid #444;
-  font-family: Arial, Helvetica, Sans-serif;
-  margin: 10px 0px;
-}
-.md table * {
-  border: 10px;
-}
-.md table th {
-  text-align: center;
-}
-.md table tr:nth-child(even),
-.md table thead {
-  background-color: #f6f6f6;
-}
-.md table td,
-.md table th {
-  border-right: 1px solid #888;
-  padding: 4px 8px;
-}
-.side .md table {
-  width: 100%;
-}
-.md th {
-  white-space: nowrap;
-  background-color: #444;
-  color: whitesmoke;
-  padding: 6px 10px;
-  border: 1px solid #444;
-}
-/* Message for non-subscribers 
-.content:before {  
-  content: url(%%warning%%) " You're not subscribed to r/LoLeventVoDs yet! Click the subscribe button on the right to add the subreddit to your frontpage! ";
-  margin:4px;
-  color:#2e2e2e;
-}
-.subscriber .content:before, .side .content:before{ content: " " !important; }
-*/
-/* Subscribers */
-.subscribers .word {
-  display: none;
-}
-.subscribers .number::after {
-  content: " subscribers";
-}
-/* Users here now */
-.users-online .word {
-  display: none;
-}
-.users-online .number::after {
-  content: " viewers online now";
-}
-/* User flair */
-.flairselector .customizer {
-  display: none !important;
-}
-/* top message  
-body > .content:before {
-    content: "If you're looking for EG vs. DTG VoDs, please use links above until LCS post gets fixed!";
-    display: block;
-    font-weight: bold;
-    margin: -10px 315px 10px 10px; 
-    background-color: #eeffdc;
-    padding: 8px;
-    font-size: 13px;
-    border: 1px solid #96c864;
-    .border-radius(3px);
-    }
-*/
-/* Star */
-a[href$="star"] {
-  width: 16px;
-  height: 16px;
-  content: "";
-  background-image: url(%%star1%%);
-  position: relative;
-  display: inline-block;
-  cursor: default;
-}
-/* Warning */
-a[href$="warning"] {
-  width: 16px;
-  height: 16px;
-  content: "";
-  background-image: url(%%usklicnik%%);
-  position: relative;
-  display: inline-block;
-  cursor: default;
 }
 /* HEADER TEAM POPOUT MENU (credit: /u/gavin19) */
 .side h6 + ul {
@@ -292,6 +345,60 @@ a[href$="warning"] {
 .side .md h6 + ul li {
   background-color: transparent!important;
 }
+.side {
+  margin: 36px 5px 0 5px;
+}
+.side .md p > em {
+  display: inline-block;
+  padding: 5px;
+  background: #F6E69F;
+  border: 1px solid orange;
+}
+.side .md p > em > strong {
+  font-style: italic;
+}
+/* Changes */
+.side h4,
+.side h5 {
+  height: 0;
+}
+/* Modify submit a new post */
+.submit .morelink {
+  background: url(%%gray%%);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+.submit .morelink a {
+  content: '';
+  font-size: 0;
+}
+.submit .morelink a:before {
+  content: 'Submit new VoDs post';
+  font-size: 14px;
+  color: white;
+}
+.submit .morelink .nub {
+  display: none;
+}
+/* Subscribers */
+.subscribers .word {
+  display: none;
+}
+.subscribers .number::after {
+  content: " subscribers";
+}
+/* Users here now */
+.users-online .word {
+  display: none;
+}
+.users-online .number::after {
+  content: " viewers online now";
+}
+/* User flair */
+.flairselector .customizer {
+  display: none !important;
+}
 /* Sidebar headings */
 .sidecontentbox .content,
 .linkinfo,
@@ -303,9 +410,6 @@ a[href$="warning"] {
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   border-radius: 10px;
-}
-.link.last-clicked {
-  overflow: hidden;
 }
 .titlebox {
   padding: 10px;
@@ -351,10 +455,10 @@ a[href$="warning"] {
   font-size: large;
   line-height: 26px;
   border: none;
-  background-color: #193064 !important;
+  background: url(%%gray%%);
   width: 287px;
   color: #fff !important;
-  padding: 5px 0 0 20px;
+  padding: 4px 0 4px 20px;
   margin: 10px 13px 5px -18px;
   border-bottom: 1px solid #193064 !important;
   z-index: 100;
@@ -362,7 +466,7 @@ a[href$="warning"] {
 .titlebox .usertext .md > h1:after {
   display: block;
   content: "";
-  border-color: transparent #2B628D transparent transparent !important;
+  border-color: transparent #003018 transparent transparent !important;
   border-style: solid;
   border-width: 15px;
   height: 0;
@@ -475,269 +579,49 @@ a[href$="warning"] {
 .side .usertext table a:hover {
   text-decoration: underline;
 }
-/* ALTERNATE ROW COLORS */
-.md tr:nth-of-type(odd) {
-  background: #fff;
-  color: #363636;
-}
-.md tr:nth-of-type(even) {
-  background: #EDEDED;
-  color: #363636;
-}
-/* ROW HOVER COLOR */
-.md table tr:hover {
-  background-color: #bdff8b;
-}
-/* Header image */
-#header {
-  border: none;
-}
-#header-bottom-left {
-  background: #02021a url(%%header%%) no-repeat right top;
-  height: 125px;
-}
-.redditname a {
-  text-indent: -1px;
-  margin-top: 30px;
-  color: white;
-  font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
-  font-style: italic;
-  font-weight: normal;
-}
-#header-img-a,
-.redditname a {
-  display: inline;
-  float: left;
-}
-#header-bottom-left span.pagename a {
-  display: block;
-  height: 125px;
-  width: 228px;
-  margin-left: -20px;
-  margin-top: 2px;
-  background: url(%%logo%%) no-repeat scroll 0 0 transparent;
-  font-size: 0!important;
-}
-/* Moves userbar down below header image */
-#header-bottom-right {
-  bottom: -34px;
-  line-height: 26px;
-  padding-left: 15px;
-  background: #193064;
-  border-radius: 0;
-  border-left: 1px solid #5f99cf;
-}
-#header-bottom-right a {
-  color: #fff;
-}
-.user {
-  color: #fff;
-  text-transform: uppercase;
-}
-.user .userkarma {
-  border-color: #fff;
-}
-.separator {
-  color: #bbb;
-}
-/* RES-specific userbar tweaks */
-#header-bottom-right.res-navTop {
-  top: 145px;
-  bottom: -34px;
-  line-height: 23px;
-  padding-left: 5px;
-  background: #193064;
-  border-radius: 0;
-  border-left: 1px solid #5f99cf;
-}
-#header-bottom-right.res-navTop #userbarToggle {
-  border-radius: 0;
-  background-color: #193064;
-  border-right: 1px dotted #a1bcd6;
-  border-left: 1px solid #a1bcd6;
-  line-height: 28px;
-}
-/* Hides tabmenu, domain, leave contributor button & RES nav annotations in posts */
-#header .tabmenu,
-#viewImagesButton,
-.domain,
-.side .leavecontributor-button,
-table .keyNavAnnotation,
-a[href^="#"] + .keyNavAnnotation,
-#siteTable .keyNavAnnotation {
+/* hide "Create your own subreddit" button */
+div.sidebox.create {
   display: none;
 }
-/* Timestamps */
-.edited-timestamp::after {
-  content: " (" attr(title) ")";
-  font-size: 90%;
-}
-/* Collapsable in entries */
-.entry .md h3 {
-  margin-bottom: 8px;
-}
-.entry .md h3 + p {
-  position: absolute;
-  margin-top: -25px;
-  height: 30px;
-  width: 294px;
-}
-.entry .md h3 + p + * {
-  display: none;
-}
-.entry .md h3 + p:hover + *,
-.entry .md h3 + p + *:hover,
-.entry .md h3:hover + p + * {
-  display: table;
-}
-/* This consider that the Team X columns in 
- * the matches description are left and right aligned
- */
-.expando th[align="left"],
-.expando th[align="right"] {
-  min-width: 70px;
-}
-/* Top announcement.
- * It works by enabling <h6/> in the sidebar as a announcement banner on top
- * of the main subreddit content.
- */
-.titlebox .usertext-body .md h6 {
-  display: block;
-  position: absolute;
-  top: 145px;
-  left: 0;
-  background-color: #193064;
-  font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
-  font-size: 15px;
-  font-weight: bold;
-  color: white;
-  text-align: left;
-  padding: 8px 13px 26px 13px;
-  margin-top: -1px;
-  width: 100%;
-}
-h6 a {
-  color: #F2E972;
-}
-/* No flairs on front page */
-.listing-page .flair {
-  display: none;
-}
-.side {
-  margin: 36px 5px 0 5px;
-}
-/* Changes */
-.side h4,
-.side h5,
-.side h6 {
-  height: 0;
-}
-/* Modify submit a new post */
-.submit .morelink a {
-  content: '';
-  font-size: 0;
-}
-.submit .morelink a:before {
-  content: 'Submit new VoDs post';
-  font-size: 14px;
-}
-/* Sidebar icons */
-.side a[href*='#icon-'] {
-  color: #000;
-  cursor: default;
-}
-.side a[href*='#icon-']:hover {
-  text-decoration: none;
-}
-.side a[href*='#icon-']:before {
+/* sidebar social media icons */
+.side a[href="https://www.facebook.com/loleventvods"],
+.side a[href="https://www.twitter.com/loleventvods"],
+.side a[href="http://www.youtube.com/loleventvods"],
+.side a[href="https://play.google.com/store/apps/details?id=com.kox.zzreal"] {
   display: inline-block;
-  height: 16px;
-  width: 16px;
-  content: '';
-  margin: 0 5px -1px 0;
-  background: url(%%sprites-05%%) 30px 30px no-repeat;
+  background: url(%%sidebar%%);
+  width: 136px;
+  height: 45px;
 }
-.side a[href='#icon-exclamation']:before {
-  background-position: -16px -32px;
+.side a[href="https://www.facebook.com/loleventvods"]:hover,
+.side a[href="https://www.twitter.com/loleventvods"]:hover,
+.side a[href="http://www.youtube.com/loleventvods"]:hover,
+.side a[href="https://play.google.com/store/apps/details?id=com.kox.zzreal"]:hover {
+  opacity: 0.6;
 }
-.side a[href='#icon-lightbulb']:before {
-  background-position: -16px -51px;
+.side a[href="https://www.facebook.com/loleventvods"] {
+  background-position: 0 -95px;
 }
-.side a[href='#icon-help']:before {
-  background-position: -16px -70px;
+.side a[href="https://www.twitter.com/loleventvods"] {
+  background-position: 0 -190px;
 }
-.side a[href='#icon-eye']:before {
-  background-position: -16px -89px;
+.side a[href="http://www.youtube.com/loleventvods"] {
+  background-position: 0 -285px;
 }
-.side a[href='#icon-comments']:before {
-  background-position: -35px -32px;
-}
-.side a[href='#icon-bell']:before {
-  background-position: -35px -51px;
-}
-.side a[href='#icon-clock']:before {
-  background-position: -35px -70px;
-}
-.side a[href='#icon-cross']:before {
-  background-position: -35px -89px;
-}
-.side a[href='#icon-error']:before {
-  background-position: -54px -32px;
-}
-.side a[href='#icon-information']:before {
-  background-position: -54px -51px;
-}
-.side a[href='#icon-note']:before {
-  background-position: -54px -70px;
-}
-.side a[href='#icon-smile']:before {
-  background-position: -54px -89px;
-}
-.side a[href='#icon-star']:before {
-  background-position: -73px -32px;
-}
-.side a[href='#icon-check']:before {
-  background-position: -73px -51px;
-}
-.side a[href='#icon-time']:before {
-  background-position: -73px -70px;
-}
-.side a[href='#icon-unhappy']:before {
-  background-position: -73px -89px;
-}
-/* Social media buttons */
-.side a[href="http://goo.gl/3kRqh"],
-.side a[href="http://goo.gl/YrFC9"],
-.side a[href="http://goo.gl/BDoQm"] {
-  display: inline-block;
-  background: url(%%social%%) no-repeat top left;
-}
-.side a[href="http://goo.gl/3kRqh"] {
-  background-position: 0 -37px;
-  width: 32px;
-  height: 32px;
-}
-.side a[href="http://goo.gl/YrFC9"] {
+.side a[href="https://play.google.com/store/apps/details?id=com.kox.zzreal"] {
   background-position: 0 0;
-  width: 32px;
-  height: 32px;
 }
-.side a[href="http://goo.gl/BDoQm"] {
-  background-position: 0 -74px;
-  width: 32px;
-  height: 33px;
-}
-a[href$="/spoiler"] {
+a[href="/spoiler"] {
   background: none repeat scroll 0 0 #000 !important;
   color: #000 !important;
   cursor: default;
   border-radius: 3px;
   padding: 0 3px;
 }
-a[href$="/spoiler"]:hover {
+a[href="/spoiler"]:hover {
   color: #fff !important;
 }
-a[href$="/hidden"] {
+a[href="/hidden"] {
   display: block;
   background: none repeat scroll 0 0 #000 !important;
   color: #000 !important;
@@ -745,7 +629,7 @@ a[href$="/hidden"] {
   border-radius: 3px;
   padding: 0 3px;
 }
-a[href$="/hidden"]:hover {
+a[href="/hidden"]:hover {
   color: #fff !important;
 }
 .flags-belgium,

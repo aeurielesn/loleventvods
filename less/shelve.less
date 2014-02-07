@@ -277,9 +277,101 @@ a[href="#azubu"]:nth-of-type(n):after{ background-position: 0px 0px; }
 a[href="#twitch"]:nth-of-type(n):after{ background-position: 0px -72px; }
 a[href="#youtube"]:nth-of-type(n):after{ background-position: 0px -155px; }
 
-.streams-azubu1{ background-position: 0 0; width: 120px; height: 22px; } 
-.streams-azubu2{ background-position: 0 -72px; width: 120px; height: 22px; } 
-.streams-twitch1{ background-position: 0 -144px; width: 100px; height: 33px; } 
-.streams-twitch2{ background-position: 0 -227px; width: 100px; height: 33px; } 
-.streams-youtube1{ background-position: 0 -310px; width: 75px; height: 27px; } 
-.streams-youtube2{ background-position: 0 -387px; width: 75px; height: 27px; } 
+.streams-azubu1{ background-position: 0 0; width: 120px; height: 22px; }
+.streams-azubu2{ background-position: 0 -72px; width: 120px; height: 22px; }
+.streams-twitch1{ background-position: 0 -144px; width: 100px; height: 33px; }
+.streams-twitch2{ background-position: 0 -227px; width: 100px; height: 33px; }
+.streams-youtube1{ background-position: 0 -310px; width: 75px; height: 27px; }
+.streams-youtube2{ background-position: 0 -387px; width: 75px; height: 27px; }
+
+/* Message for non-subscribers */
+.content:before {
+  content: url(%%warning%%) " You're not subscribed to r/LoLeventVoDs yet! Click the subscribe button on the right to add the subreddit to your frontpage! ";
+  margin:4px;
+  color:#2e2e2e;
+}
+
+.subscriber .content:before, .side .content:before{
+  content: " " !important;
+}
+
+/* Star */
+a[href$="star"] {
+  width:16px;
+  height:16px;
+  content:"";
+  background-image:url(%%star1%%);
+  position:relative;
+  display:inline-block;
+  cursor:default;
+}
+
+/* Warning */
+a[href$="warning"] {
+  width:16px;
+  height:16px;
+  content:"";
+  background-image:url(%%usklicnik%%);
+  position:relative;
+  display:inline-block;
+  cursor:default;
+}
+
+/* Sidebar icons */
+.side a[href*='#icon-'] {
+  color:#000;
+  cursor:default;
+  &:hover { text-decoration: none; }
+  &:before {
+    display:inline-block;
+    height:16px; width:16px;
+    content:'';
+    margin:0 5px -1px 0;
+    background: url(%%sprites-05%%) 30px 30px no-repeat;
+  }
+}
+
+.side a[href='#icon-exclamation']:before   { .bg-pos(-16px, -32px); }
+.side a[href='#icon-lightbulb']:before     { .bg-pos(-16px, -32px + @icon-spacing); }
+.side a[href='#icon-help']:before          { .bg-pos(-16px, -32px + @icon-spacing * 2); }
+.side a[href='#icon-eye']:before           { .bg-pos(-16px, -32px + @icon-spacing * 3); }
+.side a[href='#icon-comments']:before      { .bg-pos(-16px + @icon-spacing, -32px); }
+.side a[href='#icon-bell']:before          { .bg-pos(-16px + @icon-spacing, -32px + @icon-spacing); }
+.side a[href='#icon-clock']:before         { .bg-pos(-16px + @icon-spacing, -32px + @icon-spacing * 2); }
+.side a[href='#icon-cross']:before         { .bg-pos(-16px + @icon-spacing, -32px + @icon-spacing * 3); }
+.side a[href='#icon-error']:before         { .bg-pos(-16px + @icon-spacing * 2, -32px); }
+.side a[href='#icon-information']:before   { .bg-pos(-16px + @icon-spacing * 2, -32px + @icon-spacing ); }
+.side a[href='#icon-note']:before          { .bg-pos(-16px + @icon-spacing * 2, -32px + @icon-spacing * 2); }
+.side a[href='#icon-smile']:before         { .bg-pos(-16px + @icon-spacing * 2, -32px + @icon-spacing * 3); }
+.side a[href='#icon-star']:before          { .bg-pos(-16px + @icon-spacing * 3, -32px); }
+.side a[href='#icon-check']:before         { .bg-pos(-16px + @icon-spacing * 3, -32px + @icon-spacing); }
+.side a[href='#icon-time']:before          { .bg-pos(-16px + @icon-spacing * 3, -32px + @icon-spacing * 2); }
+.side a[href='#icon-unhappy']:before       { .bg-pos(-16px + @icon-spacing * 3, -32px + @icon-spacing * 3); }
+
+/* Old social media buttons */
+
+.side {
+    a[href="http://goo.gl/3kRqh"],
+    a[href="http://goo.gl/YrFC9"],
+    a[href="http://goo.gl/BDoQm"] {
+        display:inline-block;
+        .social;
+    }
+    a[href="http://goo.gl/3kRqh"] { .social-twitter; }
+    a[href="http://goo.gl/YrFC9"] { .social-facebook; }
+    a[href="http://goo.gl/BDoQm"] { .social-youtube; }
+}
+
+/* top message */
+
+body > .content:before {
+  content: "If you're looking for EG vs. DTG VoDs, please use links above until LCS post gets fixed!";
+  display: block;
+  font-weight: bold;
+  margin: -10px 315px 10px 10px;
+  background-color: #eeffdc;
+  padding: 8px;
+  font-size: 13px;
+  border: 1px solid #96c864;
+  .border-radius(3px);
+}
