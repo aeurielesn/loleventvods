@@ -1,4 +1,5 @@
 @icon-spacing: -19px;
+@social-spacing: -49px;
 
 .side { margin: 36px 5px 0 5px; }
 
@@ -19,7 +20,11 @@
 /* Modify submit a new post */
 .submit .morelink {
   background: url(%%gray%%);
+  border: none;
   .border-radius(5px);
+  &:hover {
+    background-position: 0px -36px;
+  }
   a {
     content: '';
     font-size: 0;
@@ -150,7 +155,15 @@
     margin-left: -11px;
     &:after { margin-bottom: 10px; }
   }
-  h3:before { content: "+"; color: #000; padding-right: 5px; }
+  h3:before { 
+    content: "+";
+    color: #000;
+    padding-right: 5px;
+    &:hover {
+      content: "–";
+      padding-right: 6px;
+    }
+  }
 }
 
 /* Table in sidebar */
@@ -191,8 +204,8 @@ div.sidebox.create{display: none;}
   a[href="https://play.google.com/store/apps/details?id=com.kox.zzreal"] {
     display: inline-block;
     background: url(%%sidebar%%);
-    width: 136px;
-    height: 45px;
+    width: 147px;
+    height: -@social-spacing;
 
     &:hover {
       opacity: 0.6
@@ -200,16 +213,22 @@ div.sidebox.create{display: none;}
   }
 
   a[href="https://www.facebook.com/loleventvods"] {
-    background-position: 0 -95px;
+    background-position: 0 0;
+    margin-left: -10px;
   }
   a[href="https://www.twitter.com/loleventvods"] {
-    background-position: 0 -190px;
+    background-position: 0 @social-spacing;
+    margin-right: -20px;
+    margin-left: 1px;
   }
   a[href="http://www.youtube.com/loleventvods"] {
-    background-position: 0 -285px;
+    background-position: 0 (@social-spacing * 2);
+    margin-left: -10px;
   }
   a[href="https://play.google.com/store/apps/details?id=com.kox.zzreal"] {
-    background-position: 0 0;
+    background-position: 0 (@social-spacing * 3);
+    margin-right: -20px;
+    margin-left: 1px;
   }
 }
 

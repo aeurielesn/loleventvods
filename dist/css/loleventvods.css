@@ -10,7 +10,7 @@
 .md {
   max-width: 90em;
 }
-/* alien */
+/* unsnoo'd! */
 #header-img-a {
   position: absolute;
   content: "";
@@ -19,7 +19,7 @@
   left: 0px;
   width: 35px;
   height: 34px;
-  background: url(%%alien%%) no-repeat 0 -1px;
+  background: url(%%alien-in-black%%) no-repeat 0 -1px;
 }
 #header-img-a:hover {
   background-position: 0 -36px;
@@ -100,6 +100,7 @@
   border-right: 1px dotted #bbb;
   border-left: 1px solid #bbb;
   line-height: 28px;
+  color: #fff;
 }
 /* Hides tabmenu, domain, leave contributor button & RES nav annotations */
 #header .tabmenu,
@@ -110,6 +111,9 @@ table .keyNavAnnotation,
 a[href^="#"] + .keyNavAnnotation,
 #siteTable .keyNavAnnotation {
   display: none;
+}
+.link.last-clicked {
+  overflow: hidden;
 }
 .link.last-clicked {
   overflow: hidden;
@@ -365,9 +369,13 @@ h6 a {
 /* Modify submit a new post */
 .submit .morelink {
   background: url(%%gray%%);
+  border: none;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
+}
+.submit .morelink:hover {
+  background-position: 0px -36px;
 }
 .submit .morelink a {
   content: '';
@@ -552,6 +560,10 @@ h6 a {
   color: #000;
   padding-right: 5px;
 }
+.titlebox .md h3:before:hover {
+  content: "–";
+  padding-right: 6px;
+}
 /* Table in sidebar */
 .side .md table th {
   background: #193064;
@@ -590,8 +602,8 @@ div.sidebox.create {
 .side a[href="https://play.google.com/store/apps/details?id=com.kox.zzreal"] {
   display: inline-block;
   background: url(%%sidebar%%);
-  width: 136px;
-  height: 45px;
+  width: 147px;
+  height: 49px;
 }
 .side a[href="https://www.facebook.com/loleventvods"]:hover,
 .side a[href="https://www.twitter.com/loleventvods"]:hover,
@@ -600,16 +612,26 @@ div.sidebox.create {
   opacity: 0.6;
 }
 .side a[href="https://www.facebook.com/loleventvods"] {
-  background-position: 0 -95px;
+  background-position: 0 0;
+  margin-left: -10px;
 }
 .side a[href="https://www.twitter.com/loleventvods"] {
-  background-position: 0 -190px;
+  background-position: 0 -49px;
+  margin-right: -20px;
+  margin-left: 1px;
 }
 .side a[href="http://www.youtube.com/loleventvods"] {
-  background-position: 0 -285px;
+  background-position: 0 -98px;
+  margin-left: -10px;
 }
 .side a[href="https://play.google.com/store/apps/details?id=com.kox.zzreal"] {
-  background-position: 0 0;
+  background-position: 0 -147px;
+  margin-right: -20px;
+  margin-left: 1px;
+}
+/* hide "Create your own subreddit" button */
+div.sidebox.create {
+  display: none;
 }
 a[href="/spoiler"] {
   background: none repeat scroll 0 0 #000 !important;
