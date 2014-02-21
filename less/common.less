@@ -1,6 +1,11 @@
 /* Visited links color change */
-.entry a:visited { color: #551a8b; }
-.entry a:visited[href="http://lol.eventvods.com"], .entry a:visited[href="lol.eventvods.com"] { color: #369; }
+.entry {
+  a:visited { 
+    color: #551a8b;
+    &[href*="lol.eventvods.com"] { color: #369; }
+  }
+}
+  
 
 /* change width */
 .md { max-width:90em; }
@@ -127,14 +132,14 @@ a[href^="#"] + .keyNavAnnotation,
 /* Collapsable in entries */
 .entry .md h3 {
   margin-bottom: 8px;
-  & + p {
+  + p {
     position: absolute;
     margin-top: -25px;
     height: 30px;
     width: 294px;
-    & + * { display: none; }
+    + * { display: none; }
   }
-  & + p:hover + *, & + p + *:hover, &:hover + p + * { display: table; }
+  + p:hover + *, + p + *:hover, &:hover + p + * { display: table; }
 }
 
 /* Red text in posts */
@@ -177,7 +182,7 @@ a[href^="#"] + .keyNavAnnotation,
 /* Next 4 sections make deleted messages less noticeable -djimbob*/
 form.grayed, form.grayed ~ ul.flat-list.buttons { display: none }
 p.tagline, div.collapsed {
-  & > a.expand:first-child + em {
+  > a.expand:first-child + em {
     visibility: hidden;
     font-size: 0;
     &:after {
@@ -189,7 +194,7 @@ p.tagline, div.collapsed {
   }
 }
 div.collapsed > a.expand:first-child + em + time {
-   & + a.expand, & + em + a.expand {display: none; }
+   + a.expand, + em + a.expand {display: none; }
 }
 
 /* notice below comments */

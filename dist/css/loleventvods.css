@@ -2,8 +2,7 @@
 .entry a:visited {
   color: #551a8b;
 }
-.entry a:visited[href="http://lol.eventvods.com"],
-.entry a:visited[href="lol.eventvods.com"] {
+.entry a:visited[href*="lol.eventvods.com"] {
   color: #369;
 }
 /* change width */
@@ -140,6 +139,11 @@ a[href^="#"] + .keyNavAnnotation,
 .entry .md h3 + p + *:hover,
 .entry .md h3:hover + p + * {
   display: table;
+}
+/* Red text in posts */
+.usertext-body h4 {
+  color: #f00;
+  font-weight: bold;
 }
 /* tables */
 .md table {
@@ -309,7 +313,7 @@ h6 a {
   color: #F2E972;
 }
 /* No flairs on front page */
-.listing-page .flair {
+.listing-page #siteTable .flair {
   display: none;
 }
 /* HEADER TEAM POPOUT MENU (credit: /u/gavin19) */
@@ -604,6 +608,9 @@ div.sidebox.create {
   background: url(%%sidebar%%);
   width: 147px;
   height: 49px;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
 }
 .side a[href="https://www.facebook.com/loleventvods"]:hover,
 .side a[href="https://www.twitter.com/loleventvods"]:hover,

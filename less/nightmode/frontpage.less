@@ -1,9 +1,10 @@
-/* Top announcement.
- * It works by enabling <h6/> in the sidebar as a announcement banner on top
- * of the main subreddit content.
- */
+.res-nightmode, html[lang="dd"] {
+  /* Top announcement.
+   * It works by enabling <h6/> in the sidebar as a announcement banner on top
+   * of the main subreddit content.
+   */
 
-.titlebox .usertext-body .md h6 {
+  .titlebox .usertext-body .md h6 {
     background: url(%%gray%%);
     display: block;
     position: absolute;
@@ -18,28 +19,29 @@
     padding: 4px 13px 4px 4px;
     line-height: 26px;
     margin-left: 35px;
-}
+  }
 
-h6 a {
+  h6 a {
     color:#F2E972;
-}
+  }
 
-/* No flairs on front page */
-.listing-page #siteTable .flair {
-    display: none;
-}
+  /* No flairs on front page */
+  .listing-page #siteTable .flair {
+      display: none;
+  }
 
-/* HEADER TEAM POPOUT MENU (credit: /u/gavin19) */
-.side h6 {
-  + ul {
-    list-style-type: none;
-    position: absolute;
-    top: 15px;
-    right: 70px;
-    z-index: 99;
-    margin: 0;
-    padding: 3em 0 3em 3em;
-    li {
+  /* HEADER TEAM POPOUT MENU (credit: /u/gavin19) */
+  .side h6 {
+    + ul {
+      list-style-type: none;
+      position: absolute;
+      top: 15px;
+      right: 70px;
+      z-index: 99;
+      margin: 0;
+      padding: 3em 0 3em 3em;
+    }
+    + ul li {
       display: block;
       ~ li { display:none; }
       &:first-child {
@@ -61,6 +63,7 @@ h6 a {
       }
     }
   }
-}
 
-.side .md h6 + ul li { background-color: transparent!important; }
+  .side .md h6 + ul li { background-color: transparent!important; }
+
+}
