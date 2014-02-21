@@ -113,8 +113,7 @@
   .side .leavecontributor-button,
   table .keyNavAnnotation,
   a[href^="#"] + .keyNavAnnotation,
-  #siteTable .keyNavAnnotation
-  {
+  #siteTable .keyNavAnnotation {
     display: none;
   }
 
@@ -156,18 +155,19 @@
 
   .md th {
       white-space: nowrap;
-      background-color: #444;
+      background-color: #000;
       color: whitesmoke;
       padding: 6px 10px;
-      border: 1px solid #444;
+      border: 1px solid #000;
   }
 
+  // TODO: Check that row colors are OK
   /* ALTERNATE ROW COLORS */
-  .md tr:nth-of-type(odd) { background: #fff; color: #363636; }
-  .md tr:nth-of-type(even) { background: #EDEDED; color: #363636; }
+  .md tr:nth-of-type(odd) { background: #222; color: #dcdcdc; }
+  .md tr:nth-of-type(even) { background: #333; color: #dcdcdc; }
 
   /* ROW HOVER COLOR */
-  .md table tr:hover { background-color: #bdff8b; }
+  .md table tr:hover { background-color: #9bdd69; }
 
   /* Hides downvote arrow on posts only; still accessible on comments*/
   .arrow.down { visibility: hidden; display: none; }
@@ -188,7 +188,15 @@
     }
   }
   div.collapsed > a.expand:first-child + em + time {
-     + a.expand, + em + a.expand {display: none; }
+    + a.expand, + em + a.expand {display: none; }
+  }
+  
+  /* Change active keynav bg-color */
+  .RES-keyNav-activeElement {
+    &, .usertext-body, .usertext-body .md, .usertext-body .md p,
+    .commentarea & .noncollapsed, .noncollapsed .md, .noncollapsed .md p {
+      background-color: #444 !important;
+    }
   }
 
   /* notice below comments */

@@ -19,8 +19,9 @@
   }
 
   /* Modify submit a new post */
-  .submit .morelink {
+  .submit .morelink, .sidebox .morelink {
     background: url(%%gray%%);
+    background-position: 0px -72px;
     border: none;
     .border-radius(5px);
     &:hover {
@@ -67,6 +68,7 @@
     border: 1px solid #ccc;
     color: #000;
     .border-radius(10px);
+    h1 { border-bottom: none; }
     h1 a { display: none; }
     blockquote {
       border: 1px solid #AAA;
@@ -194,9 +196,6 @@
     }
   }
 
-  /* hide "Create your own subreddit" button */
-  div.sidebox.create{display: none;}
-
   /* sidebar social media icons */
   .side {
     a[href="https://www.facebook.com/loleventvods"],
@@ -237,5 +236,5 @@
   }
 
   /* hide "Create your own subreddit" button */
-  div.sidebox.create{display: none;}
+  .sidebox.create{display: none;}
 }

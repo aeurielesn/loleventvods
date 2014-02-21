@@ -26,8 +26,9 @@
   }
 
   /* No flairs on front page */
-  .listing-page #siteTable .flair {
-      display: none;
+  .listing-page .sitetable {
+    .flair { display: none; }
+    > div:nth-of-type(4n+1) { background-color: #222; }
   }
 
   /* HEADER TEAM POPOUT MENU (credit: /u/gavin19) */
