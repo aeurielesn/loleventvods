@@ -12,13 +12,13 @@
     > strong { font-style: italic; }
   }
 
-  /* Changes */
+  // Changes
   .side h4,
   .side h5 {
     height:0;
   }
 
-  /* Modify submit a new post */
+  // Modify submit a new post
   .submit .morelink, .sidebox .morelink {
     background: url(%%gray%%);
     background-position: 0px -72px;
@@ -41,20 +41,20 @@
     }
   }
 
-  /* Subscribers */
+  // Subscribers
   .subscribers {
     .word { display: none; }
     .number::after { content: " subscribers"; }
   }
 
-  /* Users here now */
+  // Users here now
   .users-online .word { display: none; }
   .users-online .number::after { content: " viewers online now"; }
 
-  /* User flair */
+  // User flair
   .flairselector .customizer { display: none !important; }
 
-  /* Sidebar headings */
+  // Sidebar headings
   .sidecontentbox .content, .linkinfo, .footer {
     background: transparent !important;
     font-size: small;
@@ -116,7 +116,7 @@
     }
   }
 
-  /* drop down */
+  // drop down
   .side {
     z-index: -100;
     .md h3 {
@@ -162,14 +162,14 @@
       content: "+";
       color: #000;
       padding-right: 5px;
-      &:hover {
-        content: "–";
-        padding-right: 6px;
-      }
+    }
+    h3:hover:before {
+      content: "–";
+      padding-right: 6px;
     }
   }
 
-  /* Table in sidebar */
+  // Table in sidebar
   .side {
     .md table th {
       background: #193064;
@@ -196,7 +196,7 @@
     }
   }
 
-  /* sidebar social media icons */
+  // sidebar social media icons
   .side {
     a[href="https://www.facebook.com/loleventvods"],
     a[href="https://www.twitter.com/loleventvods"],
@@ -235,6 +235,6 @@
     }
   }
 
-  /* hide "Create your own subreddit" button */
+  // hide "Create your own subreddit" button
   .sidebox.create{display: none;}
 }

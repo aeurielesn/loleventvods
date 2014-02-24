@@ -1,5 +1,5 @@
 .res-nightmode, html[lang="dd"] {
-  /* Users */
+  // Users
   .flair {
     .flairs;
     display:inline-block;
@@ -9,63 +9,87 @@
   .flair-red { .flairs-red; } 
   .flair-yellow { .flairs-yellow; } 
 
-  /* Links */
+  // Links
   .linkflairlabel { display: none; }
 
-  ongoing, finished, featured, incomplete, upcoming, finishedfeatured,
-  twitchongoing, twitchfinished, twitchfeatured, twitchincomplete, twitchupcoming {
-    .linkflair-& { 
-      .thumbnail:before, .flairselector & .linkflairlabel, .flairtemplate & .linkflairlabel {
-        .flairs;
-        content: "";
-        display: inline-block;
-        margin: 0;
-        padding: 0;
-        border: 0;
-      }
-      .thumbnail:before {
-        position: relative;
-        top: 25px;
-        left: 45px;
-      }
+}
+
+ongoing, finished, featured, incomplete, upcoming, finishedfeatured,
+twitchongoing, twitchfinished, twitchfeatured, twitchincomplete, twitchupcoming {
+  .res-nightmode .linkflair-&, html[lang="dd"] .linkflair-& { 
+    .thumbnail:before {
+      .flairs;
+      content: "";
+      display: inline-block;
+      margin: 0;
+      padding: 0;
+      border: 0;
+      position: relative;
+      top: 25px;
+      left: 45px;
     }
   }
+  .res-nightmode .flairselector .linkflair-& .linkflairlabel, .res-nightmode .flairtemplate .linkflair-& .linkflairlabel,
+  html[lang="dd"] .flairselector .linkflair-& .linkflairlabel, html[lang="dd"] .flairtemplate .linkflair-& .linkflairlabel {
+    .flairs;
+    content: "";
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+}
 
-  ongoing, twitchongoing, featured, twitchfeatured {
-    .linkflair-& {
-      .thumbnail:before, .flairselector & .linkflairlabel, .flairtemplate & .linkflairlabel {
-        .flairs-ongoing;
-      }
+ongoing, twitchongoing, featured, twitchfeatured {
+  .res-nightmode .linkflair-&, html[lang="dd"] .linkflair-& {
+    .thumbnail:before {
+      .flairs-ongoing;
     }
   }
+  .res-nightmode .flairselector .linkflair-& .linkflairlabel, .res-nightmode .flairtemplate .linkflair-& .linkflairlabel,
+  html[lang="dd"] .flairselector .linkflair-& .linkflairlabel, html[lang="dd"] .flairtemplate .linkflair-& .linkflairlabel {
+    .flairs-ongoing;
+  }
+}
 
-  incomplete, twitchincomplete {
-    .linkflair-& {
-      .thumbnail:before, .flairselector & .linkflairlabel, .flairtemplate & .linkflairlabel {
-        .flairs-incomplete;
-      }
+incomplete, twitchincomplete {
+  .res-nightmode .linkflair-&, html[lang="dd"] .linkflair-& {
+    .thumbnail:before {
+      .flairs-incomplete;
     }
   }
+  .res-nightmode .flairselector .linkflair-& .linkflairlabel, .res-nightmode .flairtemplate .linkflair-& .linkflairlabel,
+  html[lang="dd"] .flairselector .linkflair-& .linkflairlabel, html[lang="dd"] .flairtemplate .linkflair-& .linkflairlabel {
+    .flairs-incomplete;
+  }
+}
 
-  upcoming, twitchupcoming {
-    .linkflair-& {
-      .thumbnail:before, .flairselector & .linkflairlabel, .flairtemplate & .linkflairlabel {
-        .flairs-upcoming;
-      }
+upcoming, twitchupcoming {
+  .res-nightmode .linkflair-&, html[lang="dd"] .linkflair-& {
+    .thumbnail:before {
+      .flairs-upcoming;
     }
   }
+  .res-nightmode .flairselector .linkflair-& .linkflairlabel, .res-nightmode .flairtemplate .linkflair-& .linkflairlabel,
+  html[lang="dd"] .flairselector .linkflair-& .linkflairlabel, html[lang="dd"] .flairtemplate .linkflair-& .linkflairlabel {
+    .flairs-upcoming;
+  }
+}
 
-  finished, twitchfinished, finishedfeatured {
-    .linkflair-& {
-      .thumbnail:before, .flairselector & .linkflairlabel, .flairtemplate & .linkflairlabel {
-        .flairs-finished;
-      }
+finished, twitchfinished, finishedfeatured {
+  .res-nightmode .linkflair-&, html[lang="dd"] .linkflair-& {
+    .thumbnail:before {
+      .flairs-finished;
     }
   }
+  .res-nightmode .flairselector .linkflair-& .linkflairlabel, .res-nightmode .flairtemplate .linkflair-& .linkflairlabel,
+  html[lang="dd"] .flairselector .linkflair-& .linkflairlabel, html[lang="dd"] .flairtemplate .linkflair-& .linkflairlabel {
+    .flairs-finished;
+  }
+}
 
-  red, featured, finishedfeatured, twitchfeatured {
-    .linkflair-& a.title { 
-      color: red !important;
-    }
+red, featured, finishedfeatured, twitchfeatured {
+  .res-nightmode .linkflair-& a.title, html[lang="dd"] .linkflair-& a.title { 
+    color: red !important;
   }
 }

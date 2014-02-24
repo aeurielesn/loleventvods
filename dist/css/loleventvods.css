@@ -564,7 +564,7 @@ h6 a {
   color: #000;
   padding-right: 5px;
 }
-.titlebox .md h3:before:hover {
+.titlebox .md h3:hover:before {
   content: "–";
   padding-right: 6px;
 }
@@ -1445,5 +1445,2071 @@ a[href="#sea"]:after {
 .linkflair-featured a.title,
 .linkflair-finishedfeatured a.title,
 .linkflair-twitchfeatured a.title {
+  color: red !important;
+}
+.res-nightmode .entry a:visited,
+html[lang="dd"] .entry a:visited {
+  color: #551a8b;
+}
+.res-nightmode .entry a:visited[href*="lol.eventvods.com"],
+html[lang="dd"] .entry a:visited[href*="lol.eventvods.com"] {
+  color: #369;
+}
+.res-nightmode .md,
+html[lang="dd"] .md {
+  max-width: 90em;
+}
+.res-nightmode #header-img-a,
+html[lang="dd"] #header-img-a {
+  position: absolute;
+  content: "";
+  display: inline-block;
+  top: 145px;
+  left: 0px;
+  width: 35px;
+  height: 34px;
+  background: url(%%alien-in-black%%) no-repeat 0 -1px;
+}
+.res-nightmode #header-img-a:hover,
+html[lang="dd"] #header-img-a:hover {
+  background-position: 0 -36px;
+}
+.res-nightmode #header-img,
+html[lang="dd"] #header-img {
+  display: none;
+}
+.res-nightmode .titlebox form,
+html[lang="dd"] .titlebox form {
+  position: static;
+}
+.res-nightmode .content,
+html[lang="dd"] .content {
+  padding-top: 2px;
+  margin-top: 41px;
+}
+.res-nightmode #header,
+html[lang="dd"] #header {
+  border: none;
+}
+.res-nightmode #header-bottom-left,
+html[lang="dd"] #header-bottom-left {
+  background: #02021a url(%%header%%) no-repeat right top;
+  height: 126px;
+}
+.res-nightmode .redditname a,
+html[lang="dd"] .redditname a {
+  text-indent: -1px;
+  margin-top: 30px;
+  color: white;
+  display: inline;
+  float: left;
+  font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
+  font-style: italic;
+  font-weight: normal;
+}
+.res-nightmode #header-bottom-left span.pagename a,
+html[lang="dd"] #header-bottom-left span.pagename a {
+  display: block;
+  height: 125px;
+  width: 228px;
+  margin-left: 10px;
+  margin-top: 10px;
+  background: url(%%logo%%) no-repeat scroll 0 0 transparent;
+  font-size: 0!important;
+}
+.res-nightmode #header-bottom-right,
+html[lang="dd"] #header-bottom-right {
+  bottom: -34px;
+  line-height: 26px;
+  padding-left: 15px;
+  background: url(%%gray%%);
+  border-radius: 0;
+}
+.res-nightmode #header-bottom-right a,
+html[lang="dd"] #header-bottom-right a {
+  color: #fff;
+}
+.res-nightmode .user,
+html[lang="dd"] .user {
+  color: #fff;
+}
+.res-nightmode .user .userkarma,
+html[lang="dd"] .user .userkarma {
+  border-color: #fff;
+}
+.res-nightmode .separator,
+html[lang="dd"] .separator {
+  color: #bbb;
+}
+.res-nightmode #header-bottom-right.res-navTop,
+html[lang="dd"] #header-bottom-right.res-navTop {
+  top: 145px;
+  bottom: -34px;
+  line-height: 23px;
+  padding-left: 5px;
+  background: url(%%gray%%);
+  border-radius: 0;
+  border-left: 1px solid #5f99cf;
+}
+.res-nightmode #header-bottom-right.res-navTop #userbarToggle,
+html[lang="dd"] #header-bottom-right.res-navTop #userbarToggle {
+  border-radius: 0;
+  background: url(%%gray%%);
+  border-right: 1px dotted #bbb;
+  border-left: 1px solid #bbb;
+  line-height: 28px;
+  color: #fff;
+}
+.res-nightmode #header .tabmenu,
+html[lang="dd"] #header .tabmenu,
+.res-nightmode #viewImagesButton,
+html[lang="dd"] #viewImagesButton,
+.res-nightmode .domain,
+html[lang="dd"] .domain,
+.res-nightmode .side .leavecontributor-button,
+html[lang="dd"] .side .leavecontributor-button,
+.res-nightmode table .keyNavAnnotation,
+html[lang="dd"] table .keyNavAnnotation,
+.res-nightmode a[href^="#"] + .keyNavAnnotation,
+html[lang="dd"] a[href^="#"] + .keyNavAnnotation,
+.res-nightmode #siteTable .keyNavAnnotation,
+html[lang="dd"] #siteTable .keyNavAnnotation {
+  display: none;
+}
+.res-nightmode .link.last-clicked,
+html[lang="dd"] .link.last-clicked {
+  overflow: hidden;
+}
+.res-nightmode .edited-timestamp::after,
+html[lang="dd"] .edited-timestamp::after {
+  content: " (" attr(title) ")";
+  font-size: 90%;
+}
+.res-nightmode .entry .md h3,
+html[lang="dd"] .entry .md h3 {
+  margin-bottom: 8px;
+}
+.res-nightmode .entry .md h3 + p,
+html[lang="dd"] .entry .md h3 + p {
+  position: absolute;
+  margin-top: -25px;
+  height: 30px;
+  width: 294px;
+}
+.res-nightmode .entry .md h3 + p + *,
+html[lang="dd"] .entry .md h3 + p + * {
+  display: none;
+}
+.res-nightmode .entry .md h3 + p:hover + *,
+html[lang="dd"] .entry .md h3 + p:hover + *,
+.res-nightmode .entry .md h3 + p + *:hover,
+html[lang="dd"] .entry .md h3 + p + *:hover,
+.res-nightmode .entry .md h3:hover + p + *,
+html[lang="dd"] .entry .md h3:hover + p + * {
+  display: table;
+}
+.res-nightmode .usertext-body h4,
+html[lang="dd"] .usertext-body h4 {
+  color: #f00;
+  font-weight: bold;
+}
+.res-nightmode .md table,
+html[lang="dd"] .md table {
+  border: 1px solid #444;
+  font-family: Arial, Helvetica, Sans-serif;
+  margin: 10px 0px;
+}
+.res-nightmode .md table *,
+html[lang="dd"] .md table * {
+  border: 10px;
+}
+.res-nightmode .md table th,
+html[lang="dd"] .md table th {
+  text-align: center;
+}
+.res-nightmode .md table tr:nth-child(even),
+html[lang="dd"] .md table tr:nth-child(even),
+.res-nightmode .md table thead,
+html[lang="dd"] .md table thead {
+  background-color: #f6f6f6;
+}
+.res-nightmode .md table td,
+html[lang="dd"] .md table td,
+.res-nightmode .md table th,
+html[lang="dd"] .md table th {
+  border-right: 1px solid #888;
+  padding: 4px 8px;
+}
+.res-nightmode .side .md table,
+html[lang="dd"] .side .md table {
+  width: 100%;
+}
+.res-nightmode .md th,
+html[lang="dd"] .md th {
+  white-space: nowrap;
+  background-color: #000;
+  color: whitesmoke;
+  padding: 6px 10px;
+  border: 1px solid #000;
+}
+.res-nightmode .md tr:nth-of-type(odd),
+html[lang="dd"] .md tr:nth-of-type(odd) {
+  background: #222;
+  color: #dcdcdc;
+}
+.res-nightmode .md tr:nth-of-type(even),
+html[lang="dd"] .md tr:nth-of-type(even) {
+  background: #333;
+  color: #dcdcdc;
+}
+.res-nightmode .md table tr:hover,
+html[lang="dd"] .md table tr:hover {
+  background-color: #9bdd69;
+}
+.res-nightmode .arrow.down,
+html[lang="dd"] .arrow.down {
+  visibility: hidden;
+  display: none;
+}
+.res-nightmode .comment .arrow.down,
+html[lang="dd"] .comment .arrow.down {
+  visibility: visible;
+  display: block;
+}
+.res-nightmode form.grayed,
+html[lang="dd"] form.grayed,
+.res-nightmode form.grayed ~ ul.flat-list.buttons,
+html[lang="dd"] form.grayed ~ ul.flat-list.buttons {
+  display: none;
+}
+.res-nightmode p.tagline > a.expand:first-child + em,
+html[lang="dd"] p.tagline > a.expand:first-child + em,
+.res-nightmode div.collapsed > a.expand:first-child + em,
+html[lang="dd"] div.collapsed > a.expand:first-child + em {
+  visibility: hidden;
+  font-size: 0;
+}
+.res-nightmode p.tagline > a.expand:first-child + em:after,
+html[lang="dd"] p.tagline > a.expand:first-child + em:after,
+.res-nightmode div.collapsed > a.expand:first-child + em:after,
+html[lang="dd"] div.collapsed > a.expand:first-child + em:after {
+  visibility: visible;
+  font-size: x-small;
+  font-weight: bold;
+  content: "Comment removed by user";
+}
+.res-nightmode div.collapsed > a.expand:first-child + em + time + a.expand,
+html[lang="dd"] div.collapsed > a.expand:first-child + em + time + a.expand,
+.res-nightmode div.collapsed > a.expand:first-child + em + time + em + a.expand,
+html[lang="dd"] div.collapsed > a.expand:first-child + em + time + em + a.expand {
+  display: none;
+}
+.res-nightmode .RES-keyNav-activeElement,
+html[lang="dd"] .RES-keyNav-activeElement,
+.res-nightmode .RES-keyNav-activeElement .usertext-body,
+html[lang="dd"] .RES-keyNav-activeElement .usertext-body,
+.res-nightmode .RES-keyNav-activeElement .usertext-body .md,
+html[lang="dd"] .RES-keyNav-activeElement .usertext-body .md,
+.res-nightmode .RES-keyNav-activeElement .usertext-body .md p,
+html[lang="dd"] .RES-keyNav-activeElement .usertext-body .md p,
+.commentarea .res-nightmode .RES-keyNav-activeElement .noncollapsed,
+.commentarea html[lang="dd"] .RES-keyNav-activeElement .noncollapsed,
+.res-nightmode .RES-keyNav-activeElement .noncollapsed .md,
+html[lang="dd"] .RES-keyNav-activeElement .noncollapsed .md,
+.res-nightmode .RES-keyNav-activeElement .noncollapsed .md p,
+html[lang="dd"] .RES-keyNav-activeElement .noncollapsed .md p {
+  background-color: #444 !important;
+}
+.res-nightmode .commentarea,
+html[lang="dd"] .commentarea {
+  position: static;
+}
+.res-nightmode .commentarea .usertext .usertext-edit:after,
+html[lang="dd"] .commentarea .usertext .usertext-edit:after {
+  content: "Note: Please use the spoiler tag if you want to discuss/suggest recommended games, picks & bans or something else related.";
+  display: block;
+  text-align: center;
+  margin-top: -5px;
+  padding: 4px;
+  background-color: #def;
+  border: 1px solid #59c;
+  font-size: 11px;
+  font-weight: bold;
+}
+.res-nightmode .expando th[align="left"],
+html[lang="dd"] .expando th[align="left"],
+.res-nightmode .expando th[align="right"],
+html[lang="dd"] .expando th[align="right"] {
+  min-width: 70px;
+}
+.res-nightmode .side a[href="/r/LoLeventVoDs/comments/1v6w31/s4_lcs_europe_spring_season/"],
+html[lang="dd"] .side a[href="/r/LoLeventVoDs/comments/1v6w31/s4_lcs_europe_spring_season/"],
+.res-nightmode .side a[href="/r/LoLeventVoDs/comments/1vgje3/s4_lcs_north_america_spring_season/"],
+html[lang="dd"] .side a[href="/r/LoLeventVoDs/comments/1vgje3/s4_lcs_north_america_spring_season/"],
+.res-nightmode .side a[href="/r/LoLeventVoDs/comments/1wd6yu/iem_sao_paulo_2014/"],
+html[lang="dd"] .side a[href="/r/LoLeventVoDs/comments/1wd6yu/iem_sao_paulo_2014/"],
+.res-nightmode .side a[href="/r/LoLeventVoDs/comments/1tn6v4/pandoratv_201314_ogn_winter_playoffs/"],
+html[lang="dd"] .side a[href="/r/LoLeventVoDs/comments/1tn6v4/pandoratv_201314_ogn_winter_playoffs/"] {
+  background: url(%%headers%%) no-repeat top left;
+  height: 125px;
+  display: block;
+  position: absolute;
+  top: 19px;
+  z-index: 9999;
+}
+.res-nightmode .side a[href="/r/LoLeventVoDs/comments/1v6w31/s4_lcs_europe_spring_season/"],
+html[lang="dd"] .side a[href="/r/LoLeventVoDs/comments/1v6w31/s4_lcs_europe_spring_season/"] {
+  right: 640px;
+  background-position: 0 0;
+  width: 149px;
+}
+.res-nightmode .side a[href="/r/LoLeventVoDs/comments/1v6w31/s4_lcs_europe_spring_season/"]:hover,
+html[lang="dd"] .side a[href="/r/LoLeventVoDs/comments/1v6w31/s4_lcs_europe_spring_season/"]:hover {
+  background-position: -154px 0;
+  width: 149px;
+}
+.res-nightmode .side a[href="/r/LoLeventVoDs/comments/1vgje3/s4_lcs_north_america_spring_season/"],
+html[lang="dd"] .side a[href="/r/LoLeventVoDs/comments/1vgje3/s4_lcs_north_america_spring_season/"] {
+  right: 0;
+  background-position: -778px 0;
+  width: 150px;
+}
+.res-nightmode .side a[href="/r/LoLeventVoDs/comments/1vgje3/s4_lcs_north_america_spring_season/"]:hover,
+html[lang="dd"] .side a[href="/r/LoLeventVoDs/comments/1vgje3/s4_lcs_north_america_spring_season/"]:hover {
+  background-position: -933px 0;
+  width: 150px;
+}
+.res-nightmode .side a[href="/r/LoLeventVoDs/comments/1wd6yu/iem_sao_paulo_2014/"],
+html[lang="dd"] .side a[href="/r/LoLeventVoDs/comments/1wd6yu/iem_sao_paulo_2014/"] {
+  right: 400px;
+  background-position: -308px 0;
+  width: 230px;
+}
+.res-nightmode .side a[href="/r/LoLeventVoDs/comments/1wd6yu/iem_sao_paulo_2014/"]:hover,
+html[lang="dd"] .side a[href="/r/LoLeventVoDs/comments/1wd6yu/iem_sao_paulo_2014/"]:hover {
+  background-position: -543px 0;
+  width: 230px;
+}
+.res-nightmode .side a[href="/r/LoLeventVoDs/comments/1tn6v4/pandoratv_201314_ogn_winter_playoffs/"],
+html[lang="dd"] .side a[href="/r/LoLeventVoDs/comments/1tn6v4/pandoratv_201314_ogn_winter_playoffs/"] {
+  right: 145px;
+  background-position: -1088px 0;
+  width: 255px;
+}
+.res-nightmode .side a[href="/r/LoLeventVoDs/comments/1tn6v4/pandoratv_201314_ogn_winter_playoffs/"]:hover,
+html[lang="dd"] .side a[href="/r/LoLeventVoDs/comments/1tn6v4/pandoratv_201314_ogn_winter_playoffs/"]:hover {
+  background-position: -1348px 0;
+  width: 255px;
+}
+.res-nightmode .titlebox .usertext-body .md h6,
+html[lang="dd"] .titlebox .usertext-body .md h6 {
+  background: url(%%gray%%);
+  display: block;
+  position: absolute;
+  top: 145px;
+  left: 0;
+  right: 0;
+  font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  color: white;
+  text-align: left;
+  padding: 4px 13px 4px 4px;
+  line-height: 26px;
+  margin-left: 35px;
+}
+.res-nightmode h6 a,
+html[lang="dd"] h6 a {
+  color: #F2E972;
+}
+.res-nightmode .listing-page .sitetable .flair,
+html[lang="dd"] .listing-page .sitetable .flair {
+  display: none;
+}
+.res-nightmode .listing-page .sitetable > div:nth-of-type(4n+1),
+html[lang="dd"] .listing-page .sitetable > div:nth-of-type(4n+1) {
+  background-color: #222;
+}
+.res-nightmode .side h6 + ul,
+html[lang="dd"] .side h6 + ul {
+  list-style-type: none;
+  position: absolute;
+  top: 15px;
+  right: 70px;
+  z-index: 99;
+  margin: 0;
+  padding: 3em 0 3em 3em;
+}
+.res-nightmode .side h6 + ul li,
+html[lang="dd"] .side h6 + ul li {
+  display: block;
+}
+.res-nightmode .side h6 + ul li ~ li,
+html[lang="dd"] .side h6 + ul li ~ li {
+  display: none;
+}
+.res-nightmode .side h6 + ul li:first-child,
+html[lang="dd"] .side h6 + ul li:first-child {
+  position: absolute;
+  right: -60px;
+}
+.res-nightmode .side h6 + ul li:first-child a,
+html[lang="dd"] .side h6 + ul li:first-child a {
+  display: inline-block;
+  width: 30px;
+  height: 25px;
+  line-height: 0;
+  margin: 0;
+  background: transparent url(%%thumbnails%%) no-repeat 0 -550px;
+}
+.res-nightmode .side h6 + ul li:first-child a:hover,
+html[lang="dd"] .side h6 + ul li:first-child a:hover {
+  opacity: 0.8;
+}
+.res-nightmode .side h6 + ul li:first-child a[href="/r/LoLeventVoDs"]:before,
+html[lang="dd"] .side h6 + ul li:first-child a[href="/r/LoLeventVoDs"]:before {
+  content: normal;
+}
+.res-nightmode .side .md h6 + ul li,
+html[lang="dd"] .side .md h6 + ul li {
+  background-color: transparent!important;
+}
+.res-nightmode,
+html[lang="dd"] {
+  /* Changes */
+  /* Modify submit a new post */
+  /* Subscribers */
+  /* Users here now */
+  /* User flair */
+  /* Sidebar headings */
+  /* drop down */
+  /* Table in sidebar */
+  /* sidebar social media icons */
+  /* hide "Create your own subreddit" button */
+}
+.res-nightmode .side,
+html[lang="dd"] .side {
+  margin: 36px 5px 0 5px;
+}
+.res-nightmode .side .md p > em,
+html[lang="dd"] .side .md p > em {
+  display: inline-block;
+  padding: 5px;
+  background: #F6E69F;
+  border: 1px solid orange;
+}
+.res-nightmode .side .md p > em > strong,
+html[lang="dd"] .side .md p > em > strong {
+  font-style: italic;
+}
+.res-nightmode .side h4,
+html[lang="dd"] .side h4,
+.res-nightmode .side h5,
+html[lang="dd"] .side h5 {
+  height: 0;
+}
+.res-nightmode .submit .morelink,
+html[lang="dd"] .submit .morelink,
+.res-nightmode .sidebox .morelink,
+html[lang="dd"] .sidebox .morelink {
+  background: url(%%gray%%);
+  background-position: 0px -72px;
+  border: none;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+.res-nightmode .submit .morelink:hover,
+html[lang="dd"] .submit .morelink:hover,
+.res-nightmode .sidebox .morelink:hover,
+html[lang="dd"] .sidebox .morelink:hover {
+  background-position: 0px -36px;
+}
+.res-nightmode .submit .morelink a,
+html[lang="dd"] .submit .morelink a,
+.res-nightmode .sidebox .morelink a,
+html[lang="dd"] .sidebox .morelink a {
+  content: '';
+  font-size: 0;
+}
+.res-nightmode .submit .morelink a:before,
+html[lang="dd"] .submit .morelink a:before,
+.res-nightmode .sidebox .morelink a:before,
+html[lang="dd"] .sidebox .morelink a:before {
+  content: 'Submit new VoDs post';
+  font-size: 14px;
+  color: white;
+}
+.res-nightmode .submit .morelink .nub,
+html[lang="dd"] .submit .morelink .nub,
+.res-nightmode .sidebox .morelink .nub,
+html[lang="dd"] .sidebox .morelink .nub {
+  display: none;
+}
+.res-nightmode .subscribers .word,
+html[lang="dd"] .subscribers .word {
+  display: none;
+}
+.res-nightmode .subscribers .number::after,
+html[lang="dd"] .subscribers .number::after {
+  content: " subscribers";
+}
+.res-nightmode .users-online .word,
+html[lang="dd"] .users-online .word {
+  display: none;
+}
+.res-nightmode .users-online .number::after,
+html[lang="dd"] .users-online .number::after {
+  content: " viewers online now";
+}
+.res-nightmode .flairselector .customizer,
+html[lang="dd"] .flairselector .customizer {
+  display: none !important;
+}
+.res-nightmode .sidecontentbox .content,
+html[lang="dd"] .sidecontentbox .content,
+.res-nightmode .linkinfo,
+html[lang="dd"] .linkinfo,
+.res-nightmode .footer,
+html[lang="dd"] .footer {
+  background: transparent !important;
+  font-size: small;
+  border: 1px solid #ccc;
+  margin: 7px 0 0;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+.res-nightmode .titlebox,
+html[lang="dd"] .titlebox {
+  padding: 10px;
+  background: transparent !important;
+  border: 1px solid #ccc;
+  color: #000;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+.res-nightmode .titlebox h1,
+html[lang="dd"] .titlebox h1 {
+  border-bottom: none;
+}
+.res-nightmode .titlebox h1 a,
+html[lang="dd"] .titlebox h1 a {
+  display: none;
+}
+.res-nightmode .titlebox blockquote,
+html[lang="dd"] .titlebox blockquote {
+  border: 1px solid #AAA;
+  text-shadow: 0 1px 0 white;
+  color: #000;
+  font-weight: bold;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+.res-nightmode .titlebox .bottom,
+html[lang="dd"] .titlebox .bottom {
+  border: 0;
+}
+.res-nightmode .titlebox form.toggle,
+html[lang="dd"] .titlebox form.toggle {
+  background-color: transparent !important;
+}
+.res-nightmode .titlebox .usertext,
+html[lang="dd"] .titlebox .usertext {
+  margin: 15px 0;
+  line-height: 120%;
+}
+.res-nightmode .titlebox .usertext .md,
+html[lang="dd"] .titlebox .usertext .md {
+  margin: 0;
+  padding: 0;
+  overflow: visible;
+}
+.res-nightmode .titlebox .usertext .md h2,
+html[lang="dd"] .titlebox .usertext .md h2 {
+  font-weight: bold;
+  color: #000 !important;
+}
+.res-nightmode .titlebox .usertext .md > h1,
+html[lang="dd"] .titlebox .usertext .md > h1 {
+  font-size: large;
+  line-height: 26px;
+  border: none;
+  background: url(%%gray%%);
+  width: 287px;
+  color: #fff !important;
+  padding: 4px 0 4px 20px;
+  margin: 10px 13px 5px -18px;
+  border-bottom: 1px solid #193064 !important;
+  z-index: 100;
+}
+.res-nightmode .titlebox .usertext .md > h1:after,
+html[lang="dd"] .titlebox .usertext .md > h1:after {
+  display: block;
+  content: "";
+  border-color: transparent #003018 transparent transparent !important;
+  border-style: solid;
+  border-width: 15px;
+  height: 0;
+  width: 0;
+  position: absolute;
+  z-index: -1;
+  margin-left: -35px;
+  margin-top: -10px;
+}
+.res-nightmode .side,
+html[lang="dd"] .side {
+  z-index: -100;
+}
+.res-nightmode .side .md h3,
+html[lang="dd"] .side .md h3 {
+  margin-bottom: 8px;
+}
+.res-nightmode .side .md h3 + p + table,
+html[lang="dd"] .side .md h3 + p + table {
+  display: none;
+}
+.res-nightmode .side .md h3 + p:hover + table,
+html[lang="dd"] .side .md h3 + p:hover + table,
+.res-nightmode .side .md h3 + p + table:hover,
+html[lang="dd"] .side .md h3 + p + table:hover {
+  display: table;
+}
+.res-nightmode .side .md h3 + p,
+html[lang="dd"] .side .md h3 + p {
+  position: absolute;
+  margin-top: -25px;
+  height: 30px;
+  width: 294px;
+}
+.res-nightmode .side .md h3 + ul,
+html[lang="dd"] .side .md h3 + ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 3px;
+}
+.res-nightmode .md,
+html[lang="dd"] .md {
+  overflow: visible;
+}
+.res-nightmode .titlebox h1,
+html[lang="dd"] .titlebox h1,
+.res-nightmode .titlebox .md h2,
+html[lang="dd"] .titlebox .md h2,
+.res-nightmode .titlebox .md h3,
+html[lang="dd"] .titlebox .md h3,
+.res-nightmode .titlebox .md h4,
+html[lang="dd"] .titlebox .md h4,
+.res-nightmode .titlebox h1 a,
+html[lang="dd"] .titlebox h1 a,
+.res-nightmode .titlebox .md h2 a,
+html[lang="dd"] .titlebox .md h2 a,
+.res-nightmode .titlebox .md h3 a,
+html[lang="dd"] .titlebox .md h3 a,
+.res-nightmode .titlebox .md h4 a,
+html[lang="dd"] .titlebox .md h4 a {
+  color: #000;
+}
+.res-nightmode .sidecontentbox a.helplink,
+html[lang="dd"] .sidecontentbox a.helplink {
+  margin-right: 5px;
+}
+.res-nightmode .icon-menu a,
+html[lang="dd"] .icon-menu a {
+  background: transparent;
+}
+.res-nightmode .titlebox .md h3 + ul,
+html[lang="dd"] .titlebox .md h3 + ul {
+  display: none;
+}
+.res-nightmode .titlebox .md h3:hover + ul,
+html[lang="dd"] .titlebox .md h3:hover + ul,
+.res-nightmode .titlebox .md ul:hover,
+html[lang="dd"] .titlebox .md ul:hover {
+  display: block;
+}
+.res-nightmode .titlebox .md ul li:hover,
+html[lang="dd"] .titlebox .md ul li:hover {
+  background-color: #f7fbfc;
+}
+.res-nightmode .titlebox .md h2,
+html[lang="dd"] .titlebox .md h2,
+.res-nightmode .titlebox .md h3,
+html[lang="dd"] .titlebox .md h3,
+.res-nightmode .titlebox .md h4,
+html[lang="dd"] .titlebox .md h4 {
+  background-color: #ccc!important;
+  width: 280px;
+  line-height: 26px;
+  font-weight: normal;
+  font-size: 12px;
+  padding-left: 20px;
+  margin-top: 4px;
+  margin-left: -11px;
+}
+.res-nightmode .titlebox .md h2:after,
+html[lang="dd"] .titlebox .md h2:after,
+.res-nightmode .titlebox .md h3:after,
+html[lang="dd"] .titlebox .md h3:after,
+.res-nightmode .titlebox .md h4:after,
+html[lang="dd"] .titlebox .md h4:after {
+  margin-bottom: 10px;
+}
+.res-nightmode .titlebox .md h3:before,
+html[lang="dd"] .titlebox .md h3:before {
+  content: "+";
+  color: #000;
+  padding-right: 5px;
+}
+.res-nightmode .titlebox .md h3:hover:before,
+html[lang="dd"] .titlebox .md h3:hover:before {
+  content: "–";
+  padding-right: 6px;
+}
+.res-nightmode .side .md table th,
+html[lang="dd"] .side .md table th {
+  background: #193064;
+  border: none;
+  border-right: 1px solid #193064;
+  padding: .2em;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  text-shadow: 1px 1px 0 #000;
+  font-size: 11px;
+}
+.res-nightmode .side .usertext table,
+html[lang="dd"] .side .usertext table {
+  width: 280px;
+  color: #0a5a36!important;
+  font-size: 11px;
+  -webkit-box-shadow: 1px 1px 1px #193064;
+  -moz-box-shadow: 1px 1px 1px #193064;
+  box-shadow: 1px 1px 1px #193064;
+  margin-top: 0;
+}
+.res-nightmode .side .usertext table a,
+html[lang="dd"] .side .usertext table a {
+  color: #0a5a36;
+}
+.res-nightmode .side .usertext table a:hover,
+html[lang="dd"] .side .usertext table a:hover {
+  text-decoration: underline;
+}
+.res-nightmode .side a[href="https://www.facebook.com/loleventvods"],
+html[lang="dd"] .side a[href="https://www.facebook.com/loleventvods"],
+.res-nightmode .side a[href="https://www.twitter.com/loleventvods"],
+html[lang="dd"] .side a[href="https://www.twitter.com/loleventvods"],
+.res-nightmode .side a[href="http://www.youtube.com/loleventvods"],
+html[lang="dd"] .side a[href="http://www.youtube.com/loleventvods"],
+.res-nightmode .side a[href="https://play.google.com/store/apps/details?id=com.kox.zzreal"],
+html[lang="dd"] .side a[href="https://play.google.com/store/apps/details?id=com.kox.zzreal"] {
+  display: inline-block;
+  background: url(%%sidebar%%);
+  width: 147px;
+  height: 49px;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.res-nightmode .side a[href="https://www.facebook.com/loleventvods"]:hover,
+html[lang="dd"] .side a[href="https://www.facebook.com/loleventvods"]:hover,
+.res-nightmode .side a[href="https://www.twitter.com/loleventvods"]:hover,
+html[lang="dd"] .side a[href="https://www.twitter.com/loleventvods"]:hover,
+.res-nightmode .side a[href="http://www.youtube.com/loleventvods"]:hover,
+html[lang="dd"] .side a[href="http://www.youtube.com/loleventvods"]:hover,
+.res-nightmode .side a[href="https://play.google.com/store/apps/details?id=com.kox.zzreal"]:hover,
+html[lang="dd"] .side a[href="https://play.google.com/store/apps/details?id=com.kox.zzreal"]:hover {
+  opacity: 0.6;
+}
+.res-nightmode .side a[href="https://www.facebook.com/loleventvods"],
+html[lang="dd"] .side a[href="https://www.facebook.com/loleventvods"] {
+  background-position: 0 0;
+  margin-left: -10px;
+}
+.res-nightmode .side a[href="https://www.twitter.com/loleventvods"],
+html[lang="dd"] .side a[href="https://www.twitter.com/loleventvods"] {
+  background-position: 0 -49px;
+  margin-right: -20px;
+  margin-left: 1px;
+}
+.res-nightmode .side a[href="http://www.youtube.com/loleventvods"],
+html[lang="dd"] .side a[href="http://www.youtube.com/loleventvods"] {
+  background-position: 0 -98px;
+  margin-left: -10px;
+}
+.res-nightmode .side a[href="https://play.google.com/store/apps/details?id=com.kox.zzreal"],
+html[lang="dd"] .side a[href="https://play.google.com/store/apps/details?id=com.kox.zzreal"] {
+  background-position: 0 -147px;
+  margin-right: -20px;
+  margin-left: 1px;
+}
+.res-nightmode .sidebox.create,
+html[lang="dd"] .sidebox.create {
+  display: none;
+}
+.res-nightmode a[href="/spoiler"],
+html[lang="dd"] a[href="/spoiler"] {
+  background: none repeat scroll 0 0 #000 !important;
+  color: #000 !important;
+  cursor: default;
+  border-radius: 3px;
+  padding: 0 3px;
+}
+.res-nightmode a[href="/spoiler"]:hover,
+html[lang="dd"] a[href="/spoiler"]:hover {
+  color: #fff !important;
+}
+.res-nightmode a[href="/hidden"],
+html[lang="dd"] a[href="/hidden"] {
+  display: block;
+  background: none repeat scroll 0 0 #000 !important;
+  color: #000 !important;
+  cursor: default;
+  border-radius: 3px;
+  padding: 0 3px;
+}
+.res-nightmode a[href="/hidden"]:hover,
+html[lang="dd"] a[href="/hidden"]:hover {
+  color: #fff !important;
+}
+.res-nightmode .flags-belgium,
+.res-nightmode .flags-czechrepublic,
+.res-nightmode .flags-denmark,
+.res-nightmode .flags-estonia,
+.res-nightmode .flags-finland,
+.res-nightmode .flags-france,
+.res-nightmode .flags-germany,
+.res-nightmode .flags-lithuania,
+.res-nightmode .flags-netherlands,
+.res-nightmode .flags-norway,
+.res-nightmode .flags-poland,
+.res-nightmode .flags-russia,
+.res-nightmode .flags-scotland,
+.res-nightmode .flags-spain,
+.res-nightmode .flags-sweden,
+html[lang="dd"] .flags-belgium,
+html[lang="dd"] .flags-czechrepublic,
+html[lang="dd"] .flags-denmark,
+html[lang="dd"] .flags-estonia,
+html[lang="dd"] .flags-finland,
+html[lang="dd"] .flags-france,
+html[lang="dd"] .flags-germany,
+html[lang="dd"] .flags-lithuania,
+html[lang="dd"] .flags-netherlands,
+html[lang="dd"] .flags-norway,
+html[lang="dd"] .flags-poland,
+html[lang="dd"] .flags-russia,
+html[lang="dd"] .flags-scotland,
+html[lang="dd"] .flags-spain,
+html[lang="dd"] .flags-sweden {
+  width: 16px;
+  height: 11px;
+}
+.res-nightmode .flags-belgium,
+html[lang="dd"] .flags-belgium {
+  background-position: 0 0;
+}
+.res-nightmode .flags-czechrepublic,
+html[lang="dd"] .flags-czechrepublic {
+  background-position: 0 -61px;
+}
+.res-nightmode .flags-denmark,
+html[lang="dd"] .flags-denmark {
+  background-position: 0 -122px;
+}
+.res-nightmode .flags-estonia,
+html[lang="dd"] .flags-estonia {
+  background-position: 0 -183px;
+}
+.res-nightmode .flags-finland,
+html[lang="dd"] .flags-finland {
+  background-position: 0 -244px;
+}
+.res-nightmode .flags-france,
+html[lang="dd"] .flags-france {
+  background-position: 0 -305px;
+}
+.res-nightmode .flags-germany,
+html[lang="dd"] .flags-germany {
+  background-position: 0 -366px;
+}
+.res-nightmode .flags-lithuania,
+html[lang="dd"] .flags-lithuania {
+  background-position: 0 -427px;
+}
+.res-nightmode .flags-netherlands,
+html[lang="dd"] .flags-netherlands {
+  background-position: 0 -488px;
+}
+.res-nightmode .flags-norway,
+html[lang="dd"] .flags-norway {
+  background-position: 0 -549px;
+}
+.res-nightmode .flags-poland,
+html[lang="dd"] .flags-poland {
+  background-position: 0 -610px;
+}
+.res-nightmode .flags-russia,
+html[lang="dd"] .flags-russia {
+  background-position: 0 -671px;
+}
+.res-nightmode .flags-scotland,
+html[lang="dd"] .flags-scotland {
+  background-position: 0 -732px;
+}
+.res-nightmode .flags-spain,
+html[lang="dd"] .flags-spain {
+  background-position: 0 -793px;
+}
+.res-nightmode .flags-sweden,
+html[lang="dd"] .flags-sweden {
+  background-position: 0 -854px;
+}
+.res-nightmode a[href="#belgium"]:after,
+html[lang="dd"] a[href="#belgium"]:after,
+.res-nightmode a[href="#czechrepublic"]:after,
+html[lang="dd"] a[href="#czechrepublic"]:after,
+.res-nightmode a[href="#denmark"]:after,
+html[lang="dd"] a[href="#denmark"]:after,
+.res-nightmode a[href="#estonia"]:after,
+html[lang="dd"] a[href="#estonia"]:after,
+.res-nightmode a[href="#finland"]:after,
+html[lang="dd"] a[href="#finland"]:after,
+.res-nightmode a[href="#france"]:after,
+html[lang="dd"] a[href="#france"]:after,
+.res-nightmode a[href="#germany"]:after,
+html[lang="dd"] a[href="#germany"]:after,
+.res-nightmode a[href="#lithuania"]:after,
+html[lang="dd"] a[href="#lithuania"]:after,
+.res-nightmode a[href="#netherlands"]:after,
+html[lang="dd"] a[href="#netherlands"]:after,
+.res-nightmode a[href="#norway"]:after,
+html[lang="dd"] a[href="#norway"]:after,
+.res-nightmode a[href="#poland"]:after,
+html[lang="dd"] a[href="#poland"]:after,
+.res-nightmode a[href="#russia"]:after,
+html[lang="dd"] a[href="#russia"]:after,
+.res-nightmode a[href="#scotland"]:after,
+html[lang="dd"] a[href="#scotland"]:after,
+.res-nightmode a[href="#spain"]:after,
+html[lang="dd"] a[href="#spain"]:after,
+.res-nightmode a[href="#sweden"]:after,
+html[lang="dd"] a[href="#sweden"]:after {
+  content: "";
+  width: 16px;
+  height: 11px;
+  background: url(%%flags%%) no-repeat scroll 16px 11px transparent;
+  display: inline-block;
+  vertical-align: middle;
+  cursor: default !important;
+}
+.res-nightmode a[href="#belgium"]:after,
+html[lang="dd"] a[href="#belgium"]:after {
+  background-position: 0 0;
+}
+.res-nightmode a[href="#czechrepublic"]:after,
+html[lang="dd"] a[href="#czechrepublic"]:after {
+  background-position: 0 -61px;
+}
+.res-nightmode a[href="#denmark"]:after,
+html[lang="dd"] a[href="#denmark"]:after {
+  background-position: 0 -122px;
+}
+.res-nightmode a[href="#estonia"]:after,
+html[lang="dd"] a[href="#estonia"]:after {
+  background-position: 0 -183px;
+}
+.res-nightmode a[href="#finland"]:after,
+html[lang="dd"] a[href="#finland"]:after {
+  background-position: 0 -244px;
+}
+.res-nightmode a[href="#france"]:after,
+html[lang="dd"] a[href="#france"]:after {
+  background-position: 0 -305px;
+}
+.res-nightmode a[href="#germany"]:after,
+html[lang="dd"] a[href="#germany"]:after {
+  background-position: 0 -366px;
+}
+.res-nightmode a[href="#lithuania"]:after,
+html[lang="dd"] a[href="#lithuania"]:after {
+  background-position: 0 -427px;
+}
+.res-nightmode a[href="#netherlands"]:after,
+html[lang="dd"] a[href="#netherlands"]:after {
+  background-position: 0 -488px;
+}
+.res-nightmode a[href="#norway"]:after,
+html[lang="dd"] a[href="#norway"]:after {
+  background-position: 0 -549px;
+}
+.res-nightmode a[href="#poland"]:after,
+html[lang="dd"] a[href="#poland"]:after {
+  background-position: 0 -610px;
+}
+.res-nightmode a[href="#russia"]:after,
+html[lang="dd"] a[href="#russia"]:after {
+  background-position: 0 -671px;
+}
+.res-nightmode a[href="#scotland"]:after,
+html[lang="dd"] a[href="#scotland"]:after {
+  background-position: 0 -732px;
+}
+.res-nightmode a[href="#spain"]:after,
+html[lang="dd"] a[href="#spain"]:after {
+  background-position: 0 -793px;
+}
+.res-nightmode a[href="#sweden"]:after,
+html[lang="dd"] a[href="#sweden"]:after {
+  background-position: 0 -854px;
+}
+.res-nightmode .thing .thumbnail[href*="iem_cologne"],
+html[lang="dd"] .thing .thumbnail[href*="iem_cologne"],
+.res-nightmode .thing .thumbnail[href*="gfinity"],
+html[lang="dd"] .thing .thumbnail[href*="gfinity"],
+.res-nightmode .thing .thumbnail[href*="mobafire"],
+html[lang="dd"] .thing .thumbnail[href*="mobafire"],
+.res-nightmode .thing .thumbnail[href*="gpl"],
+html[lang="dd"] .thing .thumbnail[href*="gpl"],
+.res-nightmode .thing .thumbnail[href*="lcs"],
+html[lang="dd"] .thing .thumbnail[href*="lcs"],
+.res-nightmode .thing .thumbnail[href*="iem"],
+html[lang="dd"] .thing .thumbnail[href*="iem"],
+.res-nightmode .thing .thumbnail[href*="mlg"],
+html[lang="dd"] .thing .thumbnail[href*="mlg"],
+.res-nightmode .thing .thumbnail[href*="starswar"],
+html[lang="dd"] .thing .thumbnail[href*="starswar"],
+.res-nightmode .thing .thumbnail[href*="ign"],
+html[lang="dd"] .thing .thumbnail[href*="ign"],
+.res-nightmode .thing .thumbnail[href*="ipl"],
+html[lang="dd"] .thing .thumbnail[href*="ipl"],
+.res-nightmode .thing .thumbnail[href*="regionals"],
+html[lang="dd"] .thing .thumbnail[href*="regionals"],
+.res-nightmode .thing .thumbnail[href*="dreamhack"],
+html[lang="dd"] .thing .thumbnail[href*="dreamhack"],
+.res-nightmode .thing .thumbnail[href*="tales"],
+html[lang="dd"] .thing .thumbnail[href*="tales"],
+.res-nightmode .thing .thumbnail[href*="lone"],
+html[lang="dd"] .thing .thumbnail[href*="lone"],
+.res-nightmode .thing .thumbnail[href*="2_championship"],
+html[lang="dd"] .thing .thumbnail[href*="2_championship"],
+.res-nightmode .thing .thumbnail[href*="world_championships"],
+html[lang="dd"] .thing .thumbnail[href*="world_championships"],
+.res-nightmode .thing .thumbnail[href*="2_korean"],
+html[lang="dd"] .thing .thumbnail[href*="2_korean"],
+.res-nightmode .thing .thumbnail[href*="2_european"],
+html[lang="dd"] .thing .thumbnail[href*="2_european"],
+.res-nightmode .thing .thumbnail[href*="2_south"],
+html[lang="dd"] .thing .thumbnail[href*="2_south"],
+.res-nightmode .thing .thumbnail[href*="na_regionals_com"],
+html[lang="dd"] .thing .thumbnail[href*="na_regionals_com"],
+.res-nightmode .thing .thumbnail[href*="pandoratv"],
+html[lang="dd"] .thing .thumbnail[href*="pandoratv"],
+.res-nightmode .thing .thumbnail[href*="ogn_champ"],
+html[lang="dd"] .thing .thumbnail[href*="ogn_champ"],
+.res-nightmode .thing .thumbnail[href*="ogn_hot"],
+html[lang="dd"] .thing .thumbnail[href*="ogn_hot"],
+.res-nightmode .thing .thumbnail[href*="ogn_ol"],
+html[lang="dd"] .thing .thumbnail[href*="ogn_ol"],
+.res-nightmode .thing .thumbnail[href*="ogn_lol"],
+html[lang="dd"] .thing .thumbnail[href*="ogn_lol"],
+.res-nightmode .thing .thumbnail[href*="shangai"],
+html[lang="dd"] .thing .thumbnail[href*="shangai"],
+.res-nightmode .thing .thumbnail[href*="monster"],
+html[lang="dd"] .thing .thumbnail[href*="monster"],
+.res-nightmode .thing .thumbnail[href*="lpl"],
+html[lang="dd"] .thing .thumbnail[href*="lpl"],
+.res-nightmode .thing .thumbnail[href*="nlb_spring"],
+html[lang="dd"] .thing .thumbnail[href*="nlb_spring"],
+.res-nightmode .thing .thumbnail[href*="world"],
+html[lang="dd"] .thing .thumbnail[href*="world"],
+.res-nightmode .thing .thumbnail[href*="android"],
+html[lang="dd"] .thing .thumbnail[href*="android"],
+.res-nightmode .thing .thumbnail[href*="lcs_north"],
+html[lang="dd"] .thing .thumbnail[href*="lcs_north"],
+.res-nightmode .thing .thumbnail[href*="lcs_europe"],
+html[lang="dd"] .thing .thumbnail[href*="lcs_europe"],
+.res-nightmode .thing .thumbnail[href*="na_chall"],
+html[lang="dd"] .thing .thumbnail[href*="na_chall"],
+.res-nightmode .thing .thumbnail[href*="eu_chall"],
+html[lang="dd"] .thing .thumbnail[href*="eu_chall"] {
+  background: url(%%thumbnails%%) no-repeat top left;
+  width: 70px;
+  height: 50px;
+  padding: 0;
+}
+.res-nightmode .thing .thumbnail[href*="iem_cologne"],
+html[lang="dd"] .thing .thumbnail[href*="iem_cologne"],
+.res-nightmode .thing .thumbnail[href*="iem"],
+html[lang="dd"] .thing .thumbnail[href*="iem"] {
+  background-position: 0 -385px;
+}
+.res-nightmode .thing .thumbnail[href*="gfinity"],
+html[lang="dd"] .thing .thumbnail[href*="gfinity"] {
+  background-position: 0 -275px;
+}
+.res-nightmode .thing .thumbnail[href*="mobafire"],
+html[lang="dd"] .thing .thumbnail[href*="mobafire"] {
+  background-position: 0 -825px;
+}
+.res-nightmode .thing .thumbnail[href*="gpl"],
+html[lang="dd"] .thing .thumbnail[href*="gpl"] {
+  background-position: 0 -330px;
+}
+.res-nightmode .thing .thumbnail[href*="lcs"],
+html[lang="dd"] .thing .thumbnail[href*="lcs"] {
+  background-position: 0 -605px;
+}
+.res-nightmode .thing .thumbnail[href*="mlg"],
+html[lang="dd"] .thing .thumbnail[href*="mlg"] {
+  background-position: 0 -770px;
+}
+.res-nightmode .thing .thumbnail[href*="starswar"],
+html[lang="dd"] .thing .thumbnail[href*="starswar"] {
+  background-position: 0 -990px;
+}
+.res-nightmode .thing .thumbnail[href*="ign"],
+html[lang="dd"] .thing .thumbnail[href*="ign"],
+.res-nightmode .thing .thumbnail[href*="ipl"],
+html[lang="dd"] .thing .thumbnail[href*="ipl"] {
+  background-position: 0 -440px;
+}
+.res-nightmode .thing .thumbnail[href*="regionals"],
+html[lang="dd"] .thing .thumbnail[href*="regionals"],
+.res-nightmode .thing .thumbnail[href*="2_championship"],
+html[lang="dd"] .thing .thumbnail[href*="2_championship"],
+.res-nightmode .thing .thumbnail[href*="world_championships"],
+html[lang="dd"] .thing .thumbnail[href*="world_championships"],
+.res-nightmode .thing .thumbnail[href*="2_korean"],
+html[lang="dd"] .thing .thumbnail[href*="2_korean"],
+.res-nightmode .thing .thumbnail[href*="2_european"],
+html[lang="dd"] .thing .thumbnail[href*="2_european"],
+.res-nightmode .thing .thumbnail[href*="2_south"],
+html[lang="dd"] .thing .thumbnail[href*="2_south"],
+.res-nightmode .thing .thumbnail[href*="na_regionals_com"],
+html[lang="dd"] .thing .thumbnail[href*="na_regionals_com"] {
+  background-position: 0 -1100px;
+}
+.res-nightmode .thing .thumbnail[href*="tales"],
+html[lang="dd"] .thing .thumbnail[href*="tales"] {
+  background-position: 0 -1045px;
+}
+.res-nightmode .thing .thumbnail[href*="lone"],
+html[lang="dd"] .thing .thumbnail[href*="lone"] {
+  background-position: 0 -660px;
+}
+.res-nightmode .thing .thumbnail[href*="pandoratv"],
+html[lang="dd"] .thing .thumbnail[href*="pandoratv"],
+.res-nightmode .thing .thumbnail[href*="ogn_champ"],
+html[lang="dd"] .thing .thumbnail[href*="ogn_champ"],
+.res-nightmode .thing .thumbnail[href*="ogn_hot"],
+html[lang="dd"] .thing .thumbnail[href*="ogn_hot"],
+.res-nightmode .thing .thumbnail[href*="ogn_ol"],
+html[lang="dd"] .thing .thumbnail[href*="ogn_ol"],
+.res-nightmode .thing .thumbnail[href*="ogn_lol"],
+html[lang="dd"] .thing .thumbnail[href*="ogn_lol"] {
+  background-position: 0 -935px;
+}
+.res-nightmode .thing .thumbnail[href*="shangai"],
+html[lang="dd"] .thing .thumbnail[href*="shangai"] {
+  background-position: 0 0;
+}
+.res-nightmode .thing .thumbnail[href*="monster"],
+html[lang="dd"] .thing .thumbnail[href*="monster"] {
+  background-position: 0 -110px;
+}
+.res-nightmode .thing .thumbnail[href*="lpl"],
+html[lang="dd"] .thing .thumbnail[href*="lpl"] {
+  background-position: 0 -715px;
+}
+.res-nightmode .thing .thumbnail[href*="nlb_spring"],
+html[lang="dd"] .thing .thumbnail[href*="nlb_spring"] {
+  background-position: 0 -880px;
+}
+.res-nightmode .thing .thumbnail[href*="world"],
+html[lang="dd"] .thing .thumbnail[href*="world"] {
+  background-position: 0 -1155px;
+}
+.res-nightmode .thing .thumbnail[href*="android"],
+html[lang="dd"] .thing .thumbnail[href*="android"] {
+  background-position: 0 -55px;
+}
+.res-nightmode .thing .thumbnail[href*="lcs_north"],
+html[lang="dd"] .thing .thumbnail[href*="lcs_north"] {
+  background-position: 0 -550px;
+}
+.res-nightmode .thing .thumbnail[href*="lcs_europe"],
+html[lang="dd"] .thing .thumbnail[href*="lcs_europe"] {
+  background-position: 0 -495px;
+}
+.res-nightmode .thing .thumbnail[href*="na_chall"],
+html[lang="dd"] .thing .thumbnail[href*="na_chall"] {
+  background-position: 0 -220px;
+}
+.res-nightmode .thing .thumbnail[href*="eu_chall"],
+html[lang="dd"] .thing .thumbnail[href*="eu_chall"] {
+  background-position: 0 -165px;
+}
+.res-nightmode a[href="#aaa"]:after,
+html[lang="dd"] a[href="#aaa"]:after,
+.res-nightmode a[href="#all"]:after,
+html[lang="dd"] a[href="#all"]:after,
+.res-nightmode a[href="#anexis"]:after,
+html[lang="dd"] a[href="#anexis"]:after,
+.res-nightmode a[href="#atn"]:after,
+html[lang="dd"] a[href="#atn"]:after,
+.res-nightmode a[href="#aware"]:after,
+html[lang="dd"] a[href="#aware"]:after,
+.res-nightmode a[href="#awg"]:after,
+html[lang="dd"] a[href="#awg"]:after,
+.res-nightmode a[href="#azure"]:after,
+html[lang="dd"] a[href="#azure"]:after,
+.res-nightmode a[href="#bears"]:after,
+html[lang="dd"] a[href="#bears"]:after,
+.res-nightmode a[href="#gam"]:after,
+html[lang="dd"] a[href="#gam"]:after,
+.res-nightmode a[href="#c9"]:after,
+html[lang="dd"] a[href="#c9"]:after,
+.res-nightmode a[href$="/wiki/c9"]:before,
+html[lang="dd"] a[href$="/wiki/c9"]:before,
+.res-nightmode a[href="#cjb"]:after,
+html[lang="dd"] a[href="#cjb"]:after,
+.res-nightmode a[href="#clg"]:after,
+html[lang="dd"] a[href="#clg"]:after,
+.res-nightmode a[href$="/wiki/clg"]:before,
+html[lang="dd"] a[href$="/wiki/clg"]:before,
+.res-nightmode a[href="#coast"]:after,
+html[lang="dd"] a[href="#coast"]:after,
+.res-nightmode a[href="#cst"]:after,
+html[lang="dd"] a[href="#cst"]:after,
+.res-nightmode a[href$="/wiki/coast"]:before,
+html[lang="dd"] a[href$="/wiki/coast"]:before,
+.res-nightmode a[href="#cog"]:after,
+html[lang="dd"] a[href="#cog"]:after,
+.res-nightmode a[href="#col"]:after,
+html[lang="dd"] a[href="#col"]:after,
+.res-nightmode a[href="#colA"]:after,
+html[lang="dd"] a[href="#colA"]:after,
+.res-nightmode a[href="#crs"]:after,
+html[lang="dd"] a[href="#crs"]:after,
+.res-nightmode a[href="#crsA"]:after,
+html[lang="dd"] a[href="#crsA"]:after,
+.res-nightmode a[href$="/wiki/crs"]:before,
+html[lang="dd"] a[href$="/wiki/crs"]:before,
+.res-nightmode a[href="#cw"]:after,
+html[lang="dd"] a[href="#cw"]:after,
+.res-nightmode a[href="#db"]:after,
+html[lang="dd"] a[href="#db"]:after,
+.res-nightmode a[href="#dbl"]:after,
+html[lang="dd"] a[href="#dbl"]:after,
+.res-nightmode a[href="#dig"]:after,
+html[lang="dd"] a[href="#dig"]:after,
+.res-nightmode a[href$="/wiki/dig"]:before,
+html[lang="dd"] a[href$="/wiki/dig"]:before,
+.res-nightmode a[href="#dnl"]:after,
+html[lang="dd"] a[href="#dnl"]:after,
+.res-nightmode a[href="#dp"]:after,
+html[lang="dd"] a[href="#dp"]:after,
+.res-nightmode a[href="#dru"]:after,
+html[lang="dd"] a[href="#dru"]:after,
+.res-nightmode a[href="#eg"]:after,
+html[lang="dd"] a[href="#eg"]:after,
+.res-nightmode a[href$="/wiki/eg"]:before,
+html[lang="dd"] a[href$="/wiki/eg"]:before,
+.res-nightmode a[href="#esuba"]:after,
+html[lang="dd"] a[href="#esuba"]:after,
+.res-nightmode a[href="#ete"]:after,
+html[lang="dd"] a[href="#ete"]:after,
+.res-nightmode a[href="#eternity"]:after,
+html[lang="dd"] a[href="#eternity"]:after,
+.res-nightmode a[href="#fid"]:after,
+html[lang="dd"] a[href="#fid"]:after,
+.res-nightmode a[href="#fnatic"]:after,
+html[lang="dd"] a[href="#fnatic"]:after,
+.res-nightmode a[href="#fnc"]:after,
+html[lang="dd"] a[href="#fnc"]:after,
+.res-nightmode a[href="#fxo"]:after,
+html[lang="dd"] a[href="#fxo"]:after,
+.res-nightmode a[href="#gambit"]:after,
+html[lang="dd"] a[href="#gambit"]:after,
+.res-nightmode a[href="#gmb"]:after,
+html[lang="dd"] a[href="#gmb"]:after,
+.res-nightmode a[href="#gaming"]:after,
+html[lang="dd"] a[href="#gaming"]:after,
+.res-nightmode a[href="#gg"]:after,
+html[lang="dd"] a[href="#gg"]:after,
+.res-nightmode a[href="#ggLA"]:after,
+html[lang="dd"] a[href="#ggLA"]:after,
+.res-nightmode a[href="#ggu"]:after,
+html[lang="dd"] a[href="#ggu"]:after,
+.res-nightmode a[href="#gia"]:after,
+html[lang="dd"] a[href="#gia"]:after,
+.res-nightmode a[href="#hc"]:after,
+html[lang="dd"] a[href="#hc"]:after,
+.res-nightmode a[href="#ig"]:after,
+html[lang="dd"] a[href="#ig"]:after,
+.res-nightmode a[href="#im"]:after,
+html[lang="dd"] a[href="#im"]:after,
+.res-nightmode a[href="#iodd"]:after,
+html[lang="dd"] a[href="#iodd"]:after,
+.res-nightmode a[href="#jas"]:after,
+html[lang="dd"] a[href="#jas"]:after,
+.res-nightmode a[href="#ld"]:after,
+html[lang="dd"] a[href="#ld"]:after,
+.res-nightmode a[href="#marn"]:after,
+html[lang="dd"] a[href="#marn"]:after,
+.res-nightmode a[href="#mrn"]:after,
+html[lang="dd"] a[href="#mrn"]:after,
+.res-nightmode a[href="#millenium"]:after,
+html[lang="dd"] a[href="#millenium"]:after,
+.res-nightmode a[href="#mil"]:after,
+html[lang="dd"] a[href="#mil"]:after,
+.res-nightmode a[href="#min"]:after,
+html[lang="dd"] a[href="#min"]:after,
+.res-nightmode a[href="#msk"]:after,
+html[lang="dd"] a[href="#msk"]:after,
+.res-nightmode a[href="#mouz"]:after,
+html[lang="dd"] a[href="#mouz"]:after,
+.res-nightmode a[href="#mym"]:after,
+html[lang="dd"] a[href="#mym"]:after,
+.res-nightmode a[href="#nid"]:after,
+html[lang="dd"] a[href="#nid"]:after,
+.res-nightmode a[href="#nip"]:after,
+html[lang="dd"] a[href="#nip"]:after,
+.res-nightmode a[href="#nip2"]:after,
+html[lang="dd"] a[href="#nip2"]:after,
+.res-nightmode a[href="#nsh"]:after,
+html[lang="dd"] a[href="#nsh"]:after,
+.res-nightmode a[href="#nsw"]:after,
+html[lang="dd"] a[href="#nsw"]:after,
+.res-nightmode a[href="#nwe"]:after,
+html[lang="dd"] a[href="#nwe"]:after,
+.res-nightmode a[href="#omg"]:after,
+html[lang="dd"] a[href="#omg"]:after,
+.res-nightmode a[href="#ozone"]:after,
+html[lang="dd"] a[href="#ozone"]:after,
+.res-nightmode a[href="#sso"]:after,
+html[lang="dd"] a[href="#sso"]:after,
+.res-nightmode a[href="#pain"]:after,
+html[lang="dd"] a[href="#pain"]:after,
+.res-nightmode a[href="#pe"]:after,
+html[lang="dd"] a[href="#pe"]:after,
+.res-nightmode a[href="#qg"]:after,
+html[lang="dd"] a[href="#qg"]:after,
+.res-nightmode a[href="#qtc"]:after,
+html[lang="dd"] a[href="#qtc"]:after,
+.res-nightmode a[href="#rg"]:after,
+html[lang="dd"] a[href="#rg"]:after,
+.res-nightmode a[href="#roc"]:after,
+html[lang="dd"] a[href="#roc"]:after,
+.res-nightmode a[href="#roughnex"]:after,
+html[lang="dd"] a[href="#roughnex"]:after,
+.res-nightmode a[href="#royal"]:after,
+html[lang="dd"] a[href="#royal"]:after,
+.res-nightmode a[href="#ryl"]:after,
+html[lang="dd"] a[href="#ryl"]:after,
+.res-nightmode a[href="#rxg"]:after,
+html[lang="dd"] a[href="#rxg"]:after,
+.res-nightmode a[href="#shc"]:after,
+html[lang="dd"] a[href="#shc"]:after,
+.res-nightmode a[href="#sk"]:after,
+html[lang="dd"] a[href="#sk"]:after,
+.res-nightmode a[href="#skt"]:after,
+html[lang="dd"] a[href="#skt"]:after,
+.res-nightmode a[href="#sns"]:after,
+html[lang="dd"] a[href="#sns"]:after,
+.res-nightmode a[href="#sword"]:after,
+html[lang="dd"] a[href="#sword"]:after,
+.res-nightmode a[href="#tap"]:after,
+html[lang="dd"] a[href="#tap"]:after,
+.res-nightmode a[href="#tbd"]:after,
+html[lang="dd"] a[href="#tbd"]:after,
+.res-nightmode a[href="#tcm"]:after,
+html[lang="dd"] a[href="#tcm"]:after,
+.res-nightmode a[href="#ts"]:after,
+html[lang="dd"] a[href="#ts"]:after,
+.res-nightmode a[href="#tsb"]:after,
+html[lang="dd"] a[href="#tsb"]:after,
+.res-nightmode a[href="#tsm"]:after,
+html[lang="dd"] a[href="#tsm"]:after,
+.res-nightmode a[href$="/wiki/tsm"]:before,
+html[lang="dd"] a[href$="/wiki/tsm"]:before,
+.res-nightmode a[href="#tt"]:after,
+html[lang="dd"] a[href="#tt"]:after,
+.res-nightmode a[href="#ttd"]:after,
+html[lang="dd"] a[href="#ttd"]:after,
+.res-nightmode a[href="#ves"]:after,
+html[lang="dd"] a[href="#ves"]:after,
+.res-nightmode a[href="#vul"]:after,
+html[lang="dd"] a[href="#vul"]:after,
+.res-nightmode a[href="#xdg"]:after,
+html[lang="dd"] a[href="#xdg"]:after,
+.res-nightmode a[href$="/wiki/vul"]:before,
+html[lang="dd"] a[href$="/wiki/vul"]:before,
+.res-nightmode a[href="#we"]:after,
+html[lang="dd"] a[href="#we"]:after,
+.res-nightmode a[href="#wizards"]:after,
+html[lang="dd"] a[href="#wizards"]:after,
+.res-nightmode a[href="#wzb"]:after,
+html[lang="dd"] a[href="#wzb"]:after,
+.res-nightmode a[href="#xts"]:after,
+html[lang="dd"] a[href="#xts"]:after {
+  content: "";
+  width: 36px;
+  height: 20px;
+  background: url(%%teams%%) no-repeat scroll 0 0 transparent;
+  display: inline-block;
+  vertical-align: middle;
+  cursor: default !important;
+}
+.res-nightmode a[href="#anexis"]:after,
+html[lang="dd"] a[href="#anexis"]:after,
+.res-nightmode a[href="#c9"]:after,
+html[lang="dd"] a[href="#c9"]:after,
+.res-nightmode a[href$="/wiki/c9"]:before,
+html[lang="dd"] a[href$="/wiki/c9"]:before,
+.res-nightmode a[href="#clg"]:after,
+html[lang="dd"] a[href="#clg"]:after,
+.res-nightmode a[href$="/wiki/clg"]:before,
+html[lang="dd"] a[href$="/wiki/clg"]:before,
+.res-nightmode a[href="#gaming"]:after,
+html[lang="dd"] a[href="#gaming"]:after,
+.res-nightmode a[href="#gg"]:after,
+html[lang="dd"] a[href="#gg"]:after,
+.res-nightmode a[href="#ig"]:after,
+html[lang="dd"] a[href="#ig"]:after,
+.res-nightmode a[href="#marn"]:after,
+html[lang="dd"] a[href="#marn"]:after,
+.res-nightmode a[href="#mrn"]:after,
+html[lang="dd"] a[href="#mrn"]:after,
+.res-nightmode a[href="#royal"]:after,
+html[lang="dd"] a[href="#royal"]:after,
+.res-nightmode a[href="#ryl"]:after,
+html[lang="dd"] a[href="#ryl"]:after,
+.res-nightmode a[href="#sk"]:after,
+html[lang="dd"] a[href="#sk"]:after,
+.res-nightmode a[href="#tbd"]:after,
+html[lang="dd"] a[href="#tbd"]:after,
+.res-nightmode a[href="#tsm"]:after,
+html[lang="dd"] a[href="#tsm"]:after,
+.res-nightmode a[href$="/wiki/tsm"]:before,
+html[lang="dd"] a[href$="/wiki/tsm"]:before,
+.res-nightmode a[href="#ves"]:after,
+html[lang="dd"] a[href="#ves"]:after,
+.res-nightmode a[href="#wzb"]:after,
+html[lang="dd"] a[href="#wzb"]:after {
+  background: url(%%nightmode-teams%%) no-repeat scroll 0 0 transparent;
+}
+.res-nightmode a[href="#aaa"]:after,
+html[lang="dd"] a[href="#aaa"]:after {
+  background-position: 0 0;
+}
+.res-nightmode a[href="#all"]:after,
+html[lang="dd"] a[href="#all"]:after {
+  background-position: 0 -20px;
+}
+.res-nightmode a[href="#atn"]:after,
+html[lang="dd"] a[href="#atn"]:after {
+  background-position: 0 -40px;
+}
+.res-nightmode a[href="#cw"]:after,
+html[lang="dd"] a[href="#cw"]:after {
+  background-position: 0 -60px;
+}
+.res-nightmode a[href="#db"]:after,
+html[lang="dd"] a[href="#db"]:after {
+  background-position: 0 -80px;
+}
+.res-nightmode a[href="#fnatic"]:after,
+html[lang="dd"] a[href="#fnatic"]:after,
+.res-nightmode a[href="#fnc"]:after,
+html[lang="dd"] a[href="#fnc"]:after {
+  background-position: 0 -100px;
+}
+.res-nightmode a[href="#gia"]:after,
+html[lang="dd"] a[href="#gia"]:after {
+  background-position: 0 -120px;
+}
+.res-nightmode a[href="#gambit"]:after,
+html[lang="dd"] a[href="#gambit"]:after,
+.res-nightmode a[href="#gmb"]:after,
+html[lang="dd"] a[href="#gmb"]:after {
+  background-position: 0 -140px;
+}
+.res-nightmode a[href="#ld"]:after,
+html[lang="dd"] a[href="#ld"]:after {
+  background-position: 0 -160px;
+}
+.res-nightmode a[href="#mym"]:after,
+html[lang="dd"] a[href="#mym"]:after {
+  background-position: 0 -180px;
+}
+.res-nightmode a[href="#millenium"]:after,
+html[lang="dd"] a[href="#millenium"]:after,
+.res-nightmode a[href="#mil"]:after,
+html[lang="dd"] a[href="#mil"]:after {
+  background-position: 0 -200px;
+}
+.res-nightmode a[href="#nip2"]:after,
+html[lang="dd"] a[href="#nip2"]:after {
+  background-position: 0 -220px;
+}
+.res-nightmode a[href="#roc"]:after,
+html[lang="dd"] a[href="#roc"]:after {
+  background-position: 0 -240px;
+}
+.res-nightmode a[href="#shc"]:after,
+html[lang="dd"] a[href="#shc"]:after {
+  background-position: 0 -260px;
+}
+.res-nightmode a[href="#sk"]:after,
+html[lang="dd"] a[href="#sk"]:after {
+  background-position: -36px -20px;
+}
+.res-nightmode a[href="#c9"]:after,
+html[lang="dd"] a[href="#c9"]:after,
+.res-nightmode a[href$="/wiki/c9"]:before,
+html[lang="dd"] a[href$="/wiki/c9"]:before {
+  background-position: 0 -20px;
+}
+.res-nightmode a[href="#clg"]:after,
+html[lang="dd"] a[href="#clg"]:after,
+.res-nightmode a[href$="/wiki/clg"]:before,
+html[lang="dd"] a[href$="/wiki/clg"]:before {
+  background-position: 0 -40px;
+}
+.res-nightmode a[href="#col"]:after,
+html[lang="dd"] a[href="#col"]:after,
+.res-nightmode a[href="#colA"]:after,
+html[lang="dd"] a[href="#colA"]:after {
+  background-position: -36px -40px;
+}
+.res-nightmode a[href="#crs"]:after,
+html[lang="dd"] a[href="#crs"]:after,
+.res-nightmode a[href="#crsA"]:after,
+html[lang="dd"] a[href="#crsA"]:after,
+.res-nightmode a[href$="/wiki/crs"]:before,
+html[lang="dd"] a[href$="/wiki/crs"]:before {
+  background-position: -36px -60px;
+}
+.res-nightmode a[href="#coast"]:after,
+html[lang="dd"] a[href="#coast"]:after,
+.res-nightmode a[href="#cst"]:after,
+html[lang="dd"] a[href="#cst"]:after,
+.res-nightmode a[href$="/wiki/coast"]:before,
+html[lang="dd"] a[href$="/wiki/coast"]:before {
+  background-position: -36px -80px;
+}
+.res-nightmode a[href="#dig"]:after,
+html[lang="dd"] a[href="#dig"]:after,
+.res-nightmode a[href$="/wiki/dig"]:before,
+html[lang="dd"] a[href$="/wiki/dig"]:before {
+  background-position: -36px -100px;
+}
+.res-nightmode a[href="#eg"]:after,
+html[lang="dd"] a[href="#eg"]:after,
+.res-nightmode a[href$="/wiki/eg"]:before,
+html[lang="dd"] a[href$="/wiki/eg"]:before {
+  background-position: -36px -120px;
+}
+.res-nightmode a[href="#ggu"]:after,
+html[lang="dd"] a[href="#ggu"]:after {
+  background-position: -36px -140px;
+}
+.res-nightmode a[href="#marn"]:after,
+html[lang="dd"] a[href="#marn"]:after,
+.res-nightmode a[href="#mrn"]:after,
+html[lang="dd"] a[href="#mrn"]:after {
+  background-position: 0 -100px;
+}
+.res-nightmode a[href="#tsm"]:after,
+html[lang="dd"] a[href="#tsm"]:after,
+.res-nightmode a[href$="/wiki/tsm"]:before,
+html[lang="dd"] a[href$="/wiki/tsm"]:before {
+  background-position: 0 -60px;
+}
+.res-nightmode a[href="#ves"]:after,
+html[lang="dd"] a[href="#ves"]:after {
+  background-position: -36px -80px;
+}
+.res-nightmode a[href="#vul"]:after,
+html[lang="dd"] a[href="#vul"]:after,
+.res-nightmode a[href="#xdg"]:after,
+html[lang="dd"] a[href="#xdg"]:after,
+.res-nightmode a[href$="/wiki/vul"]:before,
+html[lang="dd"] a[href$="/wiki/vul"]:before {
+  background-position: -36px -220px;
+}
+.res-nightmode a[href="#mouz"]:after,
+html[lang="dd"] a[href="#mouz"]:after {
+  background-position: -72px 0;
+}
+.res-nightmode a[href="#tcm"]:after,
+html[lang="dd"] a[href="#tcm"]:after {
+  background-position: -72px -20px;
+}
+.res-nightmode a[href="#wizards"]:after,
+html[lang="dd"] a[href="#wizards"]:after {
+  background-position: -72px -40px;
+}
+.res-nightmode a[href="#azure"]:after,
+html[lang="dd"] a[href="#azure"]:after {
+  background-position: -108px 0;
+}
+.res-nightmode a[href="#cog"]:after,
+html[lang="dd"] a[href="#cog"]:after {
+  background-position: -108px -20px;
+}
+.res-nightmode a[href="#dbl"]:after,
+html[lang="dd"] a[href="#dbl"]:after {
+  background-position: -108px -40px;
+}
+.res-nightmode a[href="#fid"]:after,
+html[lang="dd"] a[href="#fid"]:after {
+  background-position: -108px -60px;
+}
+.res-nightmode a[href="#qg"]:after,
+html[lang="dd"] a[href="#qg"]:after,
+.res-nightmode a[href="#qtc"]:after,
+html[lang="dd"] a[href="#qtc"]:after {
+  background-position: -108px -80px;
+}
+.res-nightmode a[href="#tap"]:after,
+html[lang="dd"] a[href="#tap"]:after {
+  background-position: -108px -100px;
+}
+.res-nightmode a[href="#ts"]:after,
+html[lang="dd"] a[href="#ts"]:after {
+  background-position: -108px -120px;
+}
+.res-nightmode a[href="#tsb"]:after,
+html[lang="dd"] a[href="#tsb"]:after {
+  background-position: -108px -140px;
+}
+.res-nightmode a[href="#cjb"]:after,
+html[lang="dd"] a[href="#cjb"]:after {
+  background-position: -144px 0;
+}
+.res-nightmode a[href="#im"]:after,
+html[lang="dd"] a[href="#im"]:after {
+  background-position: -144px -20px;
+}
+.res-nightmode a[href="#jas"]:after,
+html[lang="dd"] a[href="#jas"]:after {
+  background-position: -144px -40px;
+}
+.res-nightmode a[href="#nsw"]:after,
+html[lang="dd"] a[href="#nsw"]:after {
+  background-position: -144px -60px;
+}
+.res-nightmode a[href="#nsh"]:after,
+html[lang="dd"] a[href="#nsh"]:after {
+  background-position: -144px -80px;
+}
+.res-nightmode a[href="#ozone"]:after,
+html[lang="dd"] a[href="#ozone"]:after,
+.res-nightmode a[href="#sso"]:after,
+html[lang="dd"] a[href="#sso"]:after {
+  background-position: -144px -100px;
+}
+.res-nightmode a[href="#skt"]:after,
+html[lang="dd"] a[href="#skt"]:after {
+  background-position: -144px -120px;
+}
+.res-nightmode a[href="#ig"]:after,
+html[lang="dd"] a[href="#ig"]:after {
+  background-position: 0 -80px;
+}
+.res-nightmode a[href="#omg"]:after,
+html[lang="dd"] a[href="#omg"]:after {
+  background-position: -180px -20px;
+}
+.res-nightmode a[href="#pe"]:after,
+html[lang="dd"] a[href="#pe"]:after {
+  background-position: -180px -40px;
+}
+.res-nightmode a[href="#we"]:after,
+html[lang="dd"] a[href="#we"]:after {
+  background-position: -180px -60px;
+}
+.res-nightmode a[href="#aware"]:after,
+html[lang="dd"] a[href="#aware"]:after,
+.res-nightmode a[href="#awg"]:after,
+html[lang="dd"] a[href="#awg"]:after {
+  background-position: -216px 0;
+}
+.res-nightmode a[href="#dnl"]:after,
+html[lang="dd"] a[href="#dnl"]:after,
+.res-nightmode a[href="#nid"]:after,
+html[lang="dd"] a[href="#nid"]:after {
+  background-position: -216px -20px;
+}
+.res-nightmode a[href="#xts"]:after,
+html[lang="dd"] a[href="#xts"]:after {
+  background-position: -216px -40px;
+}
+.res-nightmode a[href="#fxo"]:after,
+html[lang="dd"] a[href="#fxo"]:after {
+  background-position: -216px -60px;
+}
+.res-nightmode a[href="#ggLA"]:after,
+html[lang="dd"] a[href="#ggLA"]:after {
+  background-position: -216px -80px;
+}
+.res-nightmode a[href="#iodd"]:after,
+html[lang="dd"] a[href="#iodd"]:after {
+  background-position: -216px -100px;
+}
+.res-nightmode a[href="#nwe"]:after,
+html[lang="dd"] a[href="#nwe"]:after {
+  background-position: -216px -120px;
+}
+.res-nightmode a[href="#rxg"]:after,
+html[lang="dd"] a[href="#rxg"]:after {
+  background-position: -216px -140px;
+}
+.res-nightmode a[href="#tbd"]:after,
+html[lang="dd"] a[href="#tbd"]:after {
+  background-position: -36px -40px;
+}
+.res-nightmode a[href="#ttd"]:after,
+html[lang="dd"] a[href="#ttd"]:after {
+  background-position: -216px -180px;
+}
+.res-nightmode a[href="#tt"]:after,
+html[lang="dd"] a[href="#tt"]:after {
+  background-position: -216px -200px;
+}
+.res-nightmode a[href="#wzb"]:after,
+html[lang="dd"] a[href="#wzb"]:after {
+  background-position: -36px -100px;
+}
+.res-nightmode a[href="#dp"]:after,
+html[lang="dd"] a[href="#dp"]:after {
+  background-position: -252px 0;
+}
+.res-nightmode a[href="#bears"]:after,
+html[lang="dd"] a[href="#bears"]:after,
+.res-nightmode a[href="#gam"]:after,
+html[lang="dd"] a[href="#gam"]:after {
+  background-position: -252px -20px;
+}
+.res-nightmode a[href="#gaming"]:after,
+html[lang="dd"] a[href="#gaming"]:after,
+.res-nightmode a[href="#gg"]:after,
+html[lang="dd"] a[href="#gg"]:after {
+  background-position: 0 -60px;
+}
+.res-nightmode a[href="#min"]:after,
+html[lang="dd"] a[href="#min"]:after,
+.res-nightmode a[href="#msk"]:after,
+html[lang="dd"] a[href="#msk"]:after {
+  background-position: -252px -60px;
+}
+.res-nightmode a[href="#royal"]:after,
+html[lang="dd"] a[href="#royal"]:after,
+.res-nightmode a[href="#ryl"]:after,
+html[lang="dd"] a[href="#ryl"]:after {
+  background-position: -36px 0;
+}
+.res-nightmode a[href="#anexis"]:after,
+html[lang="dd"] a[href="#anexis"]:after {
+  background-position: 0 0;
+}
+.res-nightmode a[href="#ete"]:after,
+html[lang="dd"] a[href="#ete"]:after,
+.res-nightmode a[href="#eternity"]:after,
+html[lang="dd"] a[href="#eternity"]:after {
+  background-position: -288px -20px;
+}
+.res-nightmode a[href="#hc"]:after,
+html[lang="dd"] a[href="#hc"]:after {
+  background-position: -288px -40px;
+}
+.res-nightmode a[href="#rg"]:after,
+html[lang="dd"] a[href="#rg"]:after {
+  background-position: -288px -60px;
+}
+.res-nightmode a[href="#dru"]:after,
+html[lang="dd"] a[href="#dru"]:after {
+  background-position: -324px 0;
+}
+.res-nightmode a[href="#sns"]:after,
+html[lang="dd"] a[href="#sns"]:after {
+  background-position: -324px -20px;
+}
+.res-nightmode a[href="#nip"]:after,
+html[lang="dd"] a[href="#nip"]:after {
+  background-position: -324px -60px;
+}
+.res-nightmode a[href="#sword"]:after,
+html[lang="dd"] a[href="#sword"]:after {
+  background-position: -324px -80px;
+}
+.res-nightmode a[href="#esuba"]:after,
+html[lang="dd"] a[href="#esuba"]:after {
+  background-position: -360px 0;
+}
+.res-nightmode a[href="#pain"]:after,
+html[lang="dd"] a[href="#pain"]:after {
+  background-position: -360px -20px;
+}
+.res-nightmode a[href="#roughnex"]:after,
+html[lang="dd"] a[href="#roughnex"]:after {
+  background-position: -360px -60px;
+}
+.res-nightmode a[href="#america"]:after,
+html[lang="dd"] a[href="#america"]:after,
+.res-nightmode a[href="#china"]:after,
+html[lang="dd"] a[href="#china"]:after,
+.res-nightmode a[href="#europe"]:after,
+html[lang="dd"] a[href="#europe"]:after,
+.res-nightmode a[href="#korea"]:after,
+html[lang="dd"] a[href="#korea"]:after,
+.res-nightmode a[href="#sea"]:after,
+html[lang="dd"] a[href="#sea"]:after {
+  content: "";
+  width: 16px;
+  height: 11px;
+  background: url(%%teams%%) no-repeat scroll 16px 11px transparent;
+  display: inline-block;
+  vertical-align: 1%;
+  cursor: default !important;
+}
+.res-nightmode a[href="#america"]:after,
+html[lang="dd"] a[href="#america"]:after {
+  background-position: -396px 0px;
+}
+.res-nightmode a[href="#china"]:after,
+html[lang="dd"] a[href="#china"]:after {
+  background-position: -396px -11px;
+}
+.res-nightmode a[href="#europe"]:after,
+html[lang="dd"] a[href="#europe"]:after {
+  background-position: -396px -22px;
+}
+.res-nightmode a[href="#korea"]:after,
+html[lang="dd"] a[href="#korea"]:after {
+  background-position: -396px -33px;
+}
+.res-nightmode a[href="#sea"]:after,
+html[lang="dd"] a[href="#sea"]:after {
+  background-position: -396px -44px;
+}
+.res-nightmode .flair,
+html[lang="dd"] .flair {
+  background: url(%%flairs%%) no-repeat top left;
+  display: inline-block;
+  border: 0;
+  padding: 0;
+}
+.res-nightmode .flair-red,
+html[lang="dd"] .flair-red {
+  background-position: 0 -75px;
+  width: 15px;
+  height: 15px;
+}
+.res-nightmode .flair-yellow,
+html[lang="dd"] .flair-yellow {
+  background-position: 0 -120px;
+  width: 15px;
+  height: 14px;
+}
+.res-nightmode .linkflairlabel,
+html[lang="dd"] .linkflairlabel {
+  display: none;
+}
+.res-nightmode .linkflair-ongoing .thumbnail:before,
+.res-nightmode .linkflair-finished .thumbnail:before,
+.res-nightmode .linkflair-featured .thumbnail:before,
+.res-nightmode .linkflair-incomplete .thumbnail:before,
+.res-nightmode .linkflair-upcoming .thumbnail:before,
+.res-nightmode .linkflair-finishedfeatured .thumbnail:before,
+.res-nightmode .linkflair-twitchongoing .thumbnail:before,
+.res-nightmode .linkflair-twitchfinished .thumbnail:before,
+.res-nightmode .linkflair-twitchfeatured .thumbnail:before,
+.res-nightmode .linkflair-twitchincomplete .thumbnail:before,
+.res-nightmode .linkflair-twitchupcoming .thumbnail:before,
+html[lang="dd"] .linkflair-ongoing .thumbnail:before,
+html[lang="dd"] .linkflair-finished .thumbnail:before,
+html[lang="dd"] .linkflair-featured .thumbnail:before,
+html[lang="dd"] .linkflair-incomplete .thumbnail:before,
+html[lang="dd"] .linkflair-upcoming .thumbnail:before,
+html[lang="dd"] .linkflair-finishedfeatured .thumbnail:before,
+html[lang="dd"] .linkflair-twitchongoing .thumbnail:before,
+html[lang="dd"] .linkflair-twitchfinished .thumbnail:before,
+html[lang="dd"] .linkflair-twitchfeatured .thumbnail:before,
+html[lang="dd"] .linkflair-twitchincomplete .thumbnail:before,
+html[lang="dd"] .linkflair-twitchupcoming .thumbnail:before {
+  background: url(%%flairs%%) no-repeat top left;
+  content: "";
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  position: relative;
+  top: 25px;
+  left: 45px;
+}
+.res-nightmode .flairselector .linkflair-ongoing .linkflairlabel,
+.res-nightmode .flairselector .linkflair-finished .linkflairlabel,
+.res-nightmode .flairselector .linkflair-featured .linkflairlabel,
+.res-nightmode .flairselector .linkflair-incomplete .linkflairlabel,
+.res-nightmode .flairselector .linkflair-upcoming .linkflairlabel,
+.res-nightmode .flairselector .linkflair-finishedfeatured .linkflairlabel,
+.res-nightmode .flairselector .linkflair-twitchongoing .linkflairlabel,
+.res-nightmode .flairselector .linkflair-twitchfinished .linkflairlabel,
+.res-nightmode .flairselector .linkflair-twitchfeatured .linkflairlabel,
+.res-nightmode .flairselector .linkflair-twitchincomplete .linkflairlabel,
+.res-nightmode .flairselector .linkflair-twitchupcoming .linkflairlabel,
+.res-nightmode .flairtemplate .linkflair-ongoing .linkflairlabel,
+.res-nightmode .flairtemplate .linkflair-finished .linkflairlabel,
+.res-nightmode .flairtemplate .linkflair-featured .linkflairlabel,
+.res-nightmode .flairtemplate .linkflair-incomplete .linkflairlabel,
+.res-nightmode .flairtemplate .linkflair-upcoming .linkflairlabel,
+.res-nightmode .flairtemplate .linkflair-finishedfeatured .linkflairlabel,
+.res-nightmode .flairtemplate .linkflair-twitchongoing .linkflairlabel,
+.res-nightmode .flairtemplate .linkflair-twitchfinished .linkflairlabel,
+.res-nightmode .flairtemplate .linkflair-twitchfeatured .linkflairlabel,
+.res-nightmode .flairtemplate .linkflair-twitchincomplete .linkflairlabel,
+.res-nightmode .flairtemplate .linkflair-twitchupcoming .linkflairlabel,
+html[lang="dd"] .flairselector .linkflair-ongoing .linkflairlabel,
+html[lang="dd"] .flairselector .linkflair-finished .linkflairlabel,
+html[lang="dd"] .flairselector .linkflair-featured .linkflairlabel,
+html[lang="dd"] .flairselector .linkflair-incomplete .linkflairlabel,
+html[lang="dd"] .flairselector .linkflair-upcoming .linkflairlabel,
+html[lang="dd"] .flairselector .linkflair-finishedfeatured .linkflairlabel,
+html[lang="dd"] .flairselector .linkflair-twitchongoing .linkflairlabel,
+html[lang="dd"] .flairselector .linkflair-twitchfinished .linkflairlabel,
+html[lang="dd"] .flairselector .linkflair-twitchfeatured .linkflairlabel,
+html[lang="dd"] .flairselector .linkflair-twitchincomplete .linkflairlabel,
+html[lang="dd"] .flairselector .linkflair-twitchupcoming .linkflairlabel,
+html[lang="dd"] .flairtemplate .linkflair-ongoing .linkflairlabel,
+html[lang="dd"] .flairtemplate .linkflair-finished .linkflairlabel,
+html[lang="dd"] .flairtemplate .linkflair-featured .linkflairlabel,
+html[lang="dd"] .flairtemplate .linkflair-incomplete .linkflairlabel,
+html[lang="dd"] .flairtemplate .linkflair-upcoming .linkflairlabel,
+html[lang="dd"] .flairtemplate .linkflair-finishedfeatured .linkflairlabel,
+html[lang="dd"] .flairtemplate .linkflair-twitchongoing .linkflairlabel,
+html[lang="dd"] .flairtemplate .linkflair-twitchfinished .linkflairlabel,
+html[lang="dd"] .flairtemplate .linkflair-twitchfeatured .linkflairlabel,
+html[lang="dd"] .flairtemplate .linkflair-twitchincomplete .linkflairlabel,
+html[lang="dd"] .flairtemplate .linkflair-twitchupcoming .linkflairlabel {
+  background: url(%%flairs%%) no-repeat top left;
+  content: "";
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+.res-nightmode .linkflair-ongoing .thumbnail:before,
+.res-nightmode .linkflair-twitchongoing .thumbnail:before,
+.res-nightmode .linkflair-featured .thumbnail:before,
+.res-nightmode .linkflair-twitchfeatured .thumbnail:before,
+html[lang="dd"] .linkflair-ongoing .thumbnail:before,
+html[lang="dd"] .linkflair-twitchongoing .thumbnail:before,
+html[lang="dd"] .linkflair-featured .thumbnail:before,
+html[lang="dd"] .linkflair-twitchfeatured .thumbnail:before {
+  background-position: 0 -50px;
+  width: 20px;
+  height: 20px;
+}
+.res-nightmode .flairselector .linkflair-ongoing .linkflairlabel,
+.res-nightmode .flairselector .linkflair-twitchongoing .linkflairlabel,
+.res-nightmode .flairselector .linkflair-featured .linkflairlabel,
+.res-nightmode .flairselector .linkflair-twitchfeatured .linkflairlabel,
+.res-nightmode .flairtemplate .linkflair-ongoing .linkflairlabel,
+.res-nightmode .flairtemplate .linkflair-twitchongoing .linkflairlabel,
+.res-nightmode .flairtemplate .linkflair-featured .linkflairlabel,
+.res-nightmode .flairtemplate .linkflair-twitchfeatured .linkflairlabel,
+html[lang="dd"] .flairselector .linkflair-ongoing .linkflairlabel,
+html[lang="dd"] .flairselector .linkflair-twitchongoing .linkflairlabel,
+html[lang="dd"] .flairselector .linkflair-featured .linkflairlabel,
+html[lang="dd"] .flairselector .linkflair-twitchfeatured .linkflairlabel,
+html[lang="dd"] .flairtemplate .linkflair-ongoing .linkflairlabel,
+html[lang="dd"] .flairtemplate .linkflair-twitchongoing .linkflairlabel,
+html[lang="dd"] .flairtemplate .linkflair-featured .linkflairlabel,
+html[lang="dd"] .flairtemplate .linkflair-twitchfeatured .linkflairlabel {
+  background-position: 0 -50px;
+  width: 20px;
+  height: 20px;
+}
+.res-nightmode .linkflair-incomplete .thumbnail:before,
+.res-nightmode .linkflair-twitchincomplete .thumbnail:before,
+html[lang="dd"] .linkflair-incomplete .thumbnail:before,
+html[lang="dd"] .linkflair-twitchincomplete .thumbnail:before {
+  background-position: 0 -25px;
+  width: 20px;
+  height: 20px;
+}
+.res-nightmode .flairselector .linkflair-incomplete .linkflairlabel,
+.res-nightmode .flairselector .linkflair-twitchincomplete .linkflairlabel,
+.res-nightmode .flairtemplate .linkflair-incomplete .linkflairlabel,
+.res-nightmode .flairtemplate .linkflair-twitchincomplete .linkflairlabel,
+html[lang="dd"] .flairselector .linkflair-incomplete .linkflairlabel,
+html[lang="dd"] .flairselector .linkflair-twitchincomplete .linkflairlabel,
+html[lang="dd"] .flairtemplate .linkflair-incomplete .linkflairlabel,
+html[lang="dd"] .flairtemplate .linkflair-twitchincomplete .linkflairlabel {
+  background-position: 0 -25px;
+  width: 20px;
+  height: 20px;
+}
+.res-nightmode .linkflair-upcoming .thumbnail:before,
+.res-nightmode .linkflair-twitchupcoming .thumbnail:before,
+html[lang="dd"] .linkflair-upcoming .thumbnail:before,
+html[lang="dd"] .linkflair-twitchupcoming .thumbnail:before {
+  background-position: 0 -95px;
+  width: 20px;
+  height: 20px;
+}
+.res-nightmode .flairselector .linkflair-upcoming .linkflairlabel,
+.res-nightmode .flairselector .linkflair-twitchupcoming .linkflairlabel,
+.res-nightmode .flairtemplate .linkflair-upcoming .linkflairlabel,
+.res-nightmode .flairtemplate .linkflair-twitchupcoming .linkflairlabel,
+html[lang="dd"] .flairselector .linkflair-upcoming .linkflairlabel,
+html[lang="dd"] .flairselector .linkflair-twitchupcoming .linkflairlabel,
+html[lang="dd"] .flairtemplate .linkflair-upcoming .linkflairlabel,
+html[lang="dd"] .flairtemplate .linkflair-twitchupcoming .linkflairlabel {
+  background-position: 0 -95px;
+  width: 20px;
+  height: 20px;
+}
+.res-nightmode .linkflair-finished .thumbnail:before,
+.res-nightmode .linkflair-twitchfinished .thumbnail:before,
+.res-nightmode .linkflair-finishedfeatured .thumbnail:before,
+html[lang="dd"] .linkflair-finished .thumbnail:before,
+html[lang="dd"] .linkflair-twitchfinished .thumbnail:before,
+html[lang="dd"] .linkflair-finishedfeatured .thumbnail:before {
+  background-position: 0 0;
+  width: 20px;
+  height: 20px;
+}
+.res-nightmode .flairselector .linkflair-finished .linkflairlabel,
+.res-nightmode .flairselector .linkflair-twitchfinished .linkflairlabel,
+.res-nightmode .flairselector .linkflair-finishedfeatured .linkflairlabel,
+.res-nightmode .flairtemplate .linkflair-finished .linkflairlabel,
+.res-nightmode .flairtemplate .linkflair-twitchfinished .linkflairlabel,
+.res-nightmode .flairtemplate .linkflair-finishedfeatured .linkflairlabel,
+html[lang="dd"] .flairselector .linkflair-finished .linkflairlabel,
+html[lang="dd"] .flairselector .linkflair-twitchfinished .linkflairlabel,
+html[lang="dd"] .flairselector .linkflair-finishedfeatured .linkflairlabel,
+html[lang="dd"] .flairtemplate .linkflair-finished .linkflairlabel,
+html[lang="dd"] .flairtemplate .linkflair-twitchfinished .linkflairlabel,
+html[lang="dd"] .flairtemplate .linkflair-finishedfeatured .linkflairlabel {
+  background-position: 0 0;
+  width: 20px;
+  height: 20px;
+}
+.res-nightmode .linkflair-red a.title,
+.res-nightmode .linkflair-featured a.title,
+.res-nightmode .linkflair-finishedfeatured a.title,
+.res-nightmode .linkflair-twitchfeatured a.title,
+html[lang="dd"] .linkflair-red a.title,
+html[lang="dd"] .linkflair-featured a.title,
+html[lang="dd"] .linkflair-finishedfeatured a.title,
+html[lang="dd"] .linkflair-twitchfeatured a.title {
   color: red !important;
 }
