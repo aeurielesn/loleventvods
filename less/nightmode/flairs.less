@@ -16,19 +16,7 @@
 
 ongoing, finished, featured, incomplete, upcoming, finishedfeatured,
 twitchongoing, twitchfinished, twitchfeatured, twitchincomplete, twitchupcoming {
-  .res-nightmode .linkflair-&, html[lang="dd"] .linkflair-& { 
-    .thumbnail:before {
-      .flairs;
-      content: "";
-      display: inline-block;
-      margin: 0;
-      padding: 0;
-      border: 0;
-      position: relative;
-      top: 25px;
-      left: 45px;
-    }
-  }
+  .res-nightmode .linkflair-& .thumbnail:before, html[lang="dd"] .linkflair-& .thumbnail:before, 
   .res-nightmode .flairselector .linkflair-& .linkflairlabel, .res-nightmode .flairtemplate .linkflair-& .linkflairlabel,
   html[lang="dd"] .flairselector .linkflair-& .linkflairlabel, html[lang="dd"] .flairtemplate .linkflair-& .linkflairlabel {
     .flairs;
@@ -37,15 +25,14 @@ twitchongoing, twitchfinished, twitchfeatured, twitchincomplete, twitchupcoming 
     margin: 0;
     padding: 0;
     border: 0;
+    position: relative;
+    top: 25px;
+    left: 45px;
   }
 }
 
 ongoing, twitchongoing, featured, twitchfeatured {
-  .res-nightmode .linkflair-&, html[lang="dd"] .linkflair-& {
-    .thumbnail:before {
-      .flairs-ongoing;
-    }
-  }
+  .res-nightmode .linkflair-& .thumbnail:before, html[lang="dd"] .linkflair-& .thumbnail:before,
   .res-nightmode .flairselector .linkflair-& .linkflairlabel, .res-nightmode .flairtemplate .linkflair-& .linkflairlabel,
   html[lang="dd"] .flairselector .linkflair-& .linkflairlabel, html[lang="dd"] .flairtemplate .linkflair-& .linkflairlabel {
     .flairs-ongoing;
@@ -53,11 +40,7 @@ ongoing, twitchongoing, featured, twitchfeatured {
 }
 
 incomplete, twitchincomplete {
-  .res-nightmode .linkflair-&, html[lang="dd"] .linkflair-& {
-    .thumbnail:before {
-      .flairs-incomplete;
-    }
-  }
+  .res-nightmode .linkflair-& .thumbnail:before, html[lang="dd"] .linkflair-& .thumbnail:before,
   .res-nightmode .flairselector .linkflair-& .linkflairlabel, .res-nightmode .flairtemplate .linkflair-& .linkflairlabel,
   html[lang="dd"] .flairselector .linkflair-& .linkflairlabel, html[lang="dd"] .flairtemplate .linkflair-& .linkflairlabel {
     .flairs-incomplete;
@@ -65,11 +48,7 @@ incomplete, twitchincomplete {
 }
 
 upcoming, twitchupcoming {
-  .res-nightmode .linkflair-&, html[lang="dd"] .linkflair-& {
-    .thumbnail:before {
-      .flairs-upcoming;
-    }
-  }
+  .res-nightmode .linkflair-& .thumbnail:before, html[lang="dd"] .linkflair-& .thumbnail:before,
   .res-nightmode .flairselector .linkflair-& .linkflairlabel, .res-nightmode .flairtemplate .linkflair-& .linkflairlabel,
   html[lang="dd"] .flairselector .linkflair-& .linkflairlabel, html[lang="dd"] .flairtemplate .linkflair-& .linkflairlabel {
     .flairs-upcoming;
@@ -77,11 +56,7 @@ upcoming, twitchupcoming {
 }
 
 finished, twitchfinished, finishedfeatured {
-  .res-nightmode .linkflair-&, html[lang="dd"] .linkflair-& {
-    .thumbnail:before {
-      .flairs-finished;
-    }
-  }
+  .res-nightmode .linkflair-& .thumbnail:before, html[lang="dd"] .linkflair-& .thumbnail:before,
   .res-nightmode .flairselector .linkflair-& .linkflairlabel, .res-nightmode .flairtemplate .linkflair-& .linkflairlabel,
   html[lang="dd"] .flairselector .linkflair-& .linkflairlabel, html[lang="dd"] .flairtemplate .linkflair-& .linkflairlabel {
     .flairs-finished;

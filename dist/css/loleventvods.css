@@ -3333,27 +3333,6 @@ html[lang="dd"] .linkflairlabel {
 .res-nightmode .linkflair-twitchfeatured .thumbnail:before,
 .res-nightmode .linkflair-twitchincomplete .thumbnail:before,
 .res-nightmode .linkflair-twitchupcoming .thumbnail:before,
-html[lang="dd"] .linkflair-ongoing .thumbnail:before,
-html[lang="dd"] .linkflair-finished .thumbnail:before,
-html[lang="dd"] .linkflair-featured .thumbnail:before,
-html[lang="dd"] .linkflair-incomplete .thumbnail:before,
-html[lang="dd"] .linkflair-upcoming .thumbnail:before,
-html[lang="dd"] .linkflair-finishedfeatured .thumbnail:before,
-html[lang="dd"] .linkflair-twitchongoing .thumbnail:before,
-html[lang="dd"] .linkflair-twitchfinished .thumbnail:before,
-html[lang="dd"] .linkflair-twitchfeatured .thumbnail:before,
-html[lang="dd"] .linkflair-twitchincomplete .thumbnail:before,
-html[lang="dd"] .linkflair-twitchupcoming .thumbnail:before {
-  background: url(%%flairs%%) no-repeat top left;
-  content: "";
-  display: inline-block;
-  margin: 0;
-  padding: 0;
-  border: 0;
-  position: relative;
-  top: 25px;
-  left: 45px;
-}
 .res-nightmode .flairselector .linkflair-ongoing .linkflairlabel,
 .res-nightmode .flairselector .linkflair-finished .linkflairlabel,
 .res-nightmode .flairselector .linkflair-featured .linkflairlabel,
@@ -3376,6 +3355,17 @@ html[lang="dd"] .linkflair-twitchupcoming .thumbnail:before {
 .res-nightmode .flairtemplate .linkflair-twitchfeatured .linkflairlabel,
 .res-nightmode .flairtemplate .linkflair-twitchincomplete .linkflairlabel,
 .res-nightmode .flairtemplate .linkflair-twitchupcoming .linkflairlabel,
+html[lang="dd"] .linkflair-ongoing .thumbnail:before,
+html[lang="dd"] .linkflair-finished .thumbnail:before,
+html[lang="dd"] .linkflair-featured .thumbnail:before,
+html[lang="dd"] .linkflair-incomplete .thumbnail:before,
+html[lang="dd"] .linkflair-upcoming .thumbnail:before,
+html[lang="dd"] .linkflair-finishedfeatured .thumbnail:before,
+html[lang="dd"] .linkflair-twitchongoing .thumbnail:before,
+html[lang="dd"] .linkflair-twitchfinished .thumbnail:before,
+html[lang="dd"] .linkflair-twitchfeatured .thumbnail:before,
+html[lang="dd"] .linkflair-twitchincomplete .thumbnail:before,
+html[lang="dd"] .linkflair-twitchupcoming .thumbnail:before,
 html[lang="dd"] .flairselector .linkflair-ongoing .linkflairlabel,
 html[lang="dd"] .flairselector .linkflair-finished .linkflairlabel,
 html[lang="dd"] .flairselector .linkflair-featured .linkflairlabel,
@@ -3409,14 +3399,6 @@ html[lang="dd"] .flairtemplate .linkflair-twitchupcoming .linkflairlabel {
 .res-nightmode .linkflair-twitchongoing .thumbnail:before,
 .res-nightmode .linkflair-featured .thumbnail:before,
 .res-nightmode .linkflair-twitchfeatured .thumbnail:before,
-html[lang="dd"] .linkflair-ongoing .thumbnail:before,
-html[lang="dd"] .linkflair-twitchongoing .thumbnail:before,
-html[lang="dd"] .linkflair-featured .thumbnail:before,
-html[lang="dd"] .linkflair-twitchfeatured .thumbnail:before {
-  background-position: 0 -50px;
-  width: 20px;
-  height: 20px;
-}
 .res-nightmode .flairselector .linkflair-ongoing .linkflairlabel,
 .res-nightmode .flairselector .linkflair-twitchongoing .linkflairlabel,
 .res-nightmode .flairselector .linkflair-featured .linkflairlabel,
@@ -3425,6 +3407,10 @@ html[lang="dd"] .linkflair-twitchfeatured .thumbnail:before {
 .res-nightmode .flairtemplate .linkflair-twitchongoing .linkflairlabel,
 .res-nightmode .flairtemplate .linkflair-featured .linkflairlabel,
 .res-nightmode .flairtemplate .linkflair-twitchfeatured .linkflairlabel,
+html[lang="dd"] .linkflair-ongoing .thumbnail:before,
+html[lang="dd"] .linkflair-twitchongoing .thumbnail:before,
+html[lang="dd"] .linkflair-featured .thumbnail:before,
+html[lang="dd"] .linkflair-twitchfeatured .thumbnail:before,
 html[lang="dd"] .flairselector .linkflair-ongoing .linkflairlabel,
 html[lang="dd"] .flairselector .linkflair-twitchongoing .linkflairlabel,
 html[lang="dd"] .flairselector .linkflair-featured .linkflairlabel,
@@ -3439,16 +3425,12 @@ html[lang="dd"] .flairtemplate .linkflair-twitchfeatured .linkflairlabel {
 }
 .res-nightmode .linkflair-incomplete .thumbnail:before,
 .res-nightmode .linkflair-twitchincomplete .thumbnail:before,
-html[lang="dd"] .linkflair-incomplete .thumbnail:before,
-html[lang="dd"] .linkflair-twitchincomplete .thumbnail:before {
-  background-position: 0 -25px;
-  width: 20px;
-  height: 20px;
-}
 .res-nightmode .flairselector .linkflair-incomplete .linkflairlabel,
 .res-nightmode .flairselector .linkflair-twitchincomplete .linkflairlabel,
 .res-nightmode .flairtemplate .linkflair-incomplete .linkflairlabel,
 .res-nightmode .flairtemplate .linkflair-twitchincomplete .linkflairlabel,
+html[lang="dd"] .linkflair-incomplete .thumbnail:before,
+html[lang="dd"] .linkflair-twitchincomplete .thumbnail:before,
 html[lang="dd"] .flairselector .linkflair-incomplete .linkflairlabel,
 html[lang="dd"] .flairselector .linkflair-twitchincomplete .linkflairlabel,
 html[lang="dd"] .flairtemplate .linkflair-incomplete .linkflairlabel,
@@ -3459,16 +3441,12 @@ html[lang="dd"] .flairtemplate .linkflair-twitchincomplete .linkflairlabel {
 }
 .res-nightmode .linkflair-upcoming .thumbnail:before,
 .res-nightmode .linkflair-twitchupcoming .thumbnail:before,
-html[lang="dd"] .linkflair-upcoming .thumbnail:before,
-html[lang="dd"] .linkflair-twitchupcoming .thumbnail:before {
-  background-position: 0 -95px;
-  width: 20px;
-  height: 20px;
-}
 .res-nightmode .flairselector .linkflair-upcoming .linkflairlabel,
 .res-nightmode .flairselector .linkflair-twitchupcoming .linkflairlabel,
 .res-nightmode .flairtemplate .linkflair-upcoming .linkflairlabel,
 .res-nightmode .flairtemplate .linkflair-twitchupcoming .linkflairlabel,
+html[lang="dd"] .linkflair-upcoming .thumbnail:before,
+html[lang="dd"] .linkflair-twitchupcoming .thumbnail:before,
 html[lang="dd"] .flairselector .linkflair-upcoming .linkflairlabel,
 html[lang="dd"] .flairselector .linkflair-twitchupcoming .linkflairlabel,
 html[lang="dd"] .flairtemplate .linkflair-upcoming .linkflairlabel,
@@ -3480,19 +3458,15 @@ html[lang="dd"] .flairtemplate .linkflair-twitchupcoming .linkflairlabel {
 .res-nightmode .linkflair-finished .thumbnail:before,
 .res-nightmode .linkflair-twitchfinished .thumbnail:before,
 .res-nightmode .linkflair-finishedfeatured .thumbnail:before,
-html[lang="dd"] .linkflair-finished .thumbnail:before,
-html[lang="dd"] .linkflair-twitchfinished .thumbnail:before,
-html[lang="dd"] .linkflair-finishedfeatured .thumbnail:before {
-  background-position: 0 0;
-  width: 20px;
-  height: 20px;
-}
 .res-nightmode .flairselector .linkflair-finished .linkflairlabel,
 .res-nightmode .flairselector .linkflair-twitchfinished .linkflairlabel,
 .res-nightmode .flairselector .linkflair-finishedfeatured .linkflairlabel,
 .res-nightmode .flairtemplate .linkflair-finished .linkflairlabel,
 .res-nightmode .flairtemplate .linkflair-twitchfinished .linkflairlabel,
 .res-nightmode .flairtemplate .linkflair-finishedfeatured .linkflairlabel,
+html[lang="dd"] .linkflair-finished .thumbnail:before,
+html[lang="dd"] .linkflair-twitchfinished .thumbnail:before,
+html[lang="dd"] .linkflair-finishedfeatured .thumbnail:before,
 html[lang="dd"] .flairselector .linkflair-finished .linkflairlabel,
 html[lang="dd"] .flairselector .linkflair-twitchfinished .linkflairlabel,
 html[lang="dd"] .flairselector .linkflair-finishedfeatured .linkflairlabel,
