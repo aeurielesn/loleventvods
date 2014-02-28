@@ -64,7 +64,9 @@ finished, twitchfinished, finishedfeatured {
 }
 
 red, featured, finishedfeatured, twitchfeatured {
-  .res-nightmode .linkflair-& a.title, html[lang="dd"] .linkflair-& a.title { 
+  .res-nightmode .linkflair-& a.title, 
+  .res-nightmode .linkflair-& .RES-keyNav-activeElement a.title:first-of-type, 
+  html[lang="dd"] .linkflair-& a.title { 
     color: red !important;
   }
 }
