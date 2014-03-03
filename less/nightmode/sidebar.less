@@ -1,48 +1,24 @@
 @icon-spacing: -19px;
 @social-spacing: -49px;
 
-.res-nightmode h1 {
-  border-bottom: none !important;
+.res-nightmode {
+  h1 {
+    border-bottom: none !important;
+  }
+  .sidebox {
+    background-color: transparent!important;
+    border: none!important;
+  }
 }
 
 .res-nightmode, html[lang="dd"] {
-  .side { margin: 36px 5px 0 5px; }
   
-  // DO WE EVEN USE THIS!?
-  .side .md p > em {
-    display: inline-block;
-    padding: 5px;
-    background: #F6E69F;
-    border: 1px solid orange;
-    > strong { font-style: italic; }
-  }
-
-  // Changes
-  .side h4,
-  .side h5 {
-    height:0;
-  }
-
   // Modify submit a new post
-  .submit .morelink, .sidebox .morelink {
+  .sidebox .morelink, .submit .morelink {
     background: url(%%gray%%);
     background-position: 0px -72px;
-    border: none;
-    .border-radius(5px);
     &:hover {
       background-position: 0px -36px;
-    }
-    a {
-      content: '';
-      font-size: 0;
-      &:before {
-        content: 'Submit new VoDs post';
-        font-size: 14px;
-        color: white;
-      }
-    }
-    .nub {
-      display: none;
     }
   }
 
