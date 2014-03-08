@@ -1,5 +1,4 @@
 @icon-spacing: -19px;
-@social-spacing: -49px;
 
 .side { margin: 36px 5px 0 5px; }
 
@@ -201,14 +200,7 @@ div.sidebox.create{display: none;}
   a[href="https://www.twitter.com/loleventvods"],
   a[href="http://www.youtube.com/loleventvods"],
   a[href="https://play.google.com/store/apps/details?id=com.kox.zzreal"] {
-    display: inline-block;
-    background: url(%%sidebar%%);
-    width: 147px;
-    height: -@social-spacing;
-    text-indent: 100%;
-    white-space: nowrap;
-    overflow: hidden;
-
+    .social();
     &:hover {
       opacity: 0.6
     }
@@ -216,21 +208,19 @@ div.sidebox.create{display: none;}
 
   a[href="https://www.facebook.com/loleventvods"] {
     background-position: 0 0;
-    margin-left: -10px;
+    .social-left-col();
   }
   a[href="https://www.twitter.com/loleventvods"] {
     background-position: 0 @social-spacing;
-    margin-right: -20px;
-    margin-left: 1px;
+    .social-right-col();
   }
   a[href="http://www.youtube.com/loleventvods"] {
     background-position: 0 (@social-spacing * 2);
-    margin-left: -10px;
+    .social-left-col();
   }
   a[href="https://play.google.com/store/apps/details?id=com.kox.zzreal"] {
     background-position: 0 (@social-spacing * 3);
-    margin-right: -20px;
-    margin-left: 1px;
+    .social-right-col();
   }
 }
 

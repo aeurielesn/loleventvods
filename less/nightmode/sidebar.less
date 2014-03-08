@@ -2,12 +2,12 @@
 @social-spacing: -49px;
 
 .res-nightmode {
-  h1 {
-    border-bottom: none !important;
-  }
+  h1 { border-bottom: none !important; }
   .sidebox {
     background-color: transparent!important;
     border: none!important;
+    color: #222!important;
+    border-radius: 5px!important;
   }
 }
 
@@ -16,205 +16,18 @@
   // Modify submit a new post
   .sidebox .morelink, .submit .morelink {
     background: url(%%gray%%);
-    background-position: 0px -72px;
-    &:hover {
-      background-position: 0px -36px;
+    background-position: 0px -68px;
+    &:hover { background-position: 0px -34px; }
+    a { 
+      &:before { color: #000; }
+      &:hover:before { color: #fff; }
     }
   }
-
-  // Subscribers
-  .subscribers {
-    .word { display: none; }
-    .number::after { content: " subscribers"; }
-  }
-
-  // Users here now
-  .users-online .word { display: none; }
-  .users-online .number::after { content: " viewers online now"; }
-
-  // User flair
-  .flairselector .customizer { display: none !important; }
 
   // Sidebar headings
-  .sidecontentbox .content, .linkinfo, .footer {
-    background: transparent !important;
-    font-size: small;
-    border: 1px solid #ccc;
-    margin: 7px 0 0;
-    .border-radius(10px);
+  .titlebox .usertext .md > h1 {
+    background-position: 0px -68px;
+    color: #000 !important;
+    &:after { border-color: transparent #ccc transparent transparent !important; }
   }
-  .titlebox {
-    padding: 10px;
-    background: transparent !important;
-    border: 1px solid #ccc;
-    color: #000;
-    .border-radius(10px);
-    h1 { border-bottom: none; }
-    h1 a { display: none; }
-    blockquote {
-      border: 1px solid #AAA;
-      text-shadow: 0 1px 0 white;
-      color: #000;
-      font-weight: bold;
-      .border-radius(10px);
-    }
-    .bottom { border: 0; }
-    form.toggle { background-color: transparent !important; }
-    .usertext {
-      margin: 15px 0;
-      line-height: 120%;
-      .md {
-        margin: 0;
-        padding: 0;
-        overflow: visible;
-        h2 { font-weight: bold; color: #000 !important; }
-        > h1 {
-          font-size: large;
-          line-height: 26px;
-          border: none;
-          background: url(%%gray%%);
-          width: 287px;
-          color: #fff !important;
-          padding: 4px 0 4px 20px;
-          margin: 10px 13px 5px -18px;
-          border-bottom: 1px solid #193064 !important;
-          z-index: 100;
-          &:after {
-            display: block;
-            content: "";
-            border-color: transparent #003018 transparent transparent !important;
-            border-style: solid;
-            border-width: 15px;
-            height: 0;
-            width: 0;
-            position: absolute;
-            z-index: -1;
-            margin-left: -35px;
-            margin-top: -10px;
-          }
-        }
-      }
-    }
-  }
-
-  // drop down
-  .side {
-    z-index: -100;
-    .md h3 {
-      margin-bottom: 8px;
-      + p + table { display: none; }
-      + p:hover + table, + p + table:hover { display: table; }
-      + p { position: absolute; margin-top: -25px; height: 30px; width: 294px }
-      + ul {
-        margin-top: 0;
-        margin-bottom: 0;
-        padding: 3px;
-      }
-    }
-  }
-  .md { overflow: visible; }
-
-  .titlebox h1,
-  .titlebox .md h2,
-  .titlebox .md h3,
-  .titlebox .md h4 {
-    &, a { color: #000; }
-  }
-  .sidecontentbox a.helplink { margin-right: 5px; }
-  .icon-menu a { background: transparent; }
-
-  .titlebox .md {
-    h3 + ul { display: none; }
-    h3:hover + ul, ul:hover { display: block; }
-    h2, h3, h4  {
-      background-color: #ccc!important;
-      width: 280px;
-      // height: 26px;
-      line-height: 26px;
-      font-weight: normal;
-      font-size: 12px;
-      padding-left: 20px;
-      margin-top: 4px;
-      margin-left: -11px;
-      &:after { margin-bottom: 10px; }
-    }
-    h3:before { 
-      content: "+";
-      color: #000;
-      padding-right: 5px;
-    }
-    h3:hover:before {
-      content: "–";
-      padding-right: 6px;
-    }
-  }
-
-  // Table in sidebar
-  .side {
-    .md table th {
-      background: #193064;
-      border: none;
-      border-right: 1px solid #193064;
-      padding: .2em;
-      color: #fff;
-      font-weight: bold;
-      text-align: center;
-      text-shadow: 1px 1px 0 #000;
-      font-size: 11px
-    }
-
-    .usertext table {
-      width: 280px;
-      color: #0a5a36!important;
-      font-size:11px;
-      .box-shadow(1px 1px 1px #193064);
-      margin-top: 0;
-      a {
-        color: #0a5a36;
-        &:hover { text-decoration: underline; }
-      }
-    }
-  }
-
-  // sidebar social media icons
-  .side {
-    a[href="https://www.facebook.com/loleventvods"],
-    a[href="https://www.twitter.com/loleventvods"],
-    a[href="http://www.youtube.com/loleventvods"],
-    a[href="https://play.google.com/store/apps/details?id=com.kox.zzreal"] {
-      display: inline-block;
-      background: url(%%sidebar%%);
-      width: 147px;
-      height: -@social-spacing;
-      text-indent: 100%;
-      white-space: nowrap;
-      overflow: hidden;
-
-      &:hover {
-        opacity: 0.6
-      }
-    }
-
-    a[href="https://www.facebook.com/loleventvods"] {
-      background-position: 0 0;
-      margin-left: -10px;
-    }
-    a[href="https://www.twitter.com/loleventvods"] {
-      background-position: 0 @social-spacing;
-      margin-right: -20px;
-      margin-left: 1px;
-    }
-    a[href="http://www.youtube.com/loleventvods"] {
-      background-position: 0 (@social-spacing * 2);
-      margin-left: -10px;
-    }
-    a[href="https://play.google.com/store/apps/details?id=com.kox.zzreal"] {
-      background-position: 0 (@social-spacing * 3);
-      margin-right: -20px;
-      margin-left: 1px;
-    }
-  }
-
-  // hide "Create your own subreddit" button
-  .sidebox.create{display: none;}
 }

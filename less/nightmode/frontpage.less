@@ -4,16 +4,16 @@
   // of the main subreddit content.
 
   .titlebox .usertext-body .md h6 {
-    background: url(%%gray%%) 0px -72px;
+    background-position: 0px -68px;
     color: #222;
-  }
-
-  h6 a {
-    color: #F2E972!important;
+    a { color: #F2E972!important; }
   }
 
   // No flairs on front page
   .listing-page .sitetable .flair { display: none; }
+  
+  // Changes stickied post coloring to make it visible for RES key nav highlighting
+  .RES-keyNav-activeElement .tagline .stickied-tagline { color: #7c7; }
 }
 .res-nightmode {
   .listing-page .sitetable > div:nth-of-type(4n+1) { background-color: #222; }
