@@ -1,4 +1,4 @@
-.calculate-width-and-margins(@thumbnail-width: 80px) {
+.calculate-width-and-margins(@thumbnail-width: 70px) {
   @margin: floor((@thumbnail-width - @width) / 2);
   width: @width;
   margin-left: @margin;
@@ -6,164 +6,143 @@
 }
 
 .thing .thumbnail {
-    &[href*="iem_cologne"],
-    &[href*="gfinity"],
-    &[href*="mobafire"],
-    &[href*="gpl"],
-    &[href*="lcs"],
-    &[href*="iem"],
-    &[href*="mlg"],
-    &[href*="starswar"],
-    &[href*="ign"],
-    &[href*="ipl"],
-    &[href*="regionals"],
-    &[href*="dreamhack"],
-    &[href*="tales"],
-    &[href*="lone"],
-    &[href*="2_championship"],
-    &[href*="world_championships"],
-    &[href*="2_korean"],
-    &[href*="2_european"],
-    &[href*="2_south"],
-    &[href*="na_regionals_com"],
-    &[href*="pandoratv"],
-    &[href*="ogn_champ"],
-    &[href*="ogn_hot"],
-    &[href*="ogn_ol"],
-    &[href*="ogn_lol"],
-    &[href*="shangai"],
-    &[href*="monster"],
-    &[href*="lpl"],
-    &[href*="nlb_spring"],
-    &[href*="world"],
-    &[href*="android"],
-    &[href*="lcs_north"],
-    &[href*="lcs_europe"],
-    &[href*="na_chall"],
-    &[href*="eu_chall"] {
-        .thumbnails;
-        padding: 0;
-    }
+  &[href*="iem_cologne"],
+  &[href*="gfinity"],
+  &[href*="mobafire"],
+  &[href*="gpl"],
+  &[href*="lcs"],
+  &[href*="iem"],
+  &[href*="mlg"],
+  &[href*="starswar"],
+  &[href*="ign"],
+  &[href*="ipl"],
+  &[href*="regionals"],
+  &[href*="dreamhack"],
+  &[href*="tales"],
+  &[href*="lone"],
+  &[href*="2_championship"],
+  &[href*="world_championships"],
+  &[href*="2_korean"],
+  &[href*="2_european"],
+  &[href*="2_south"],
+  &[href*="na_regionals_com"],
+  &[href*="pandoratv"],
+  &[href*="ogn_champ"],
+  &[href*="ogn_hot"],
+  &[href*="ogn_ol"],
+  &[href*="ogn_lol"],
+  &[href*="shangai"],
+  &[href*="monster"],
+  &[href*="lpl"],
+  &[href*="nlb_spring"],
+  &[href*="world"],
+  &[href*="android"],
+  &[href*="lcs_north"],
+  &[href*="lcs_europe"],
+  &[href*="na_chall"],
+  &[href*="eu_chall"] {
+    .thumbnails;
+    padding: 0;
+  }
 
-    &[href*="iem_cologne"],
-    &[href*="iem"] {
-        .thumbnails-iem;
-        //.calculate-width-and-margins();
-    }
+  &[href*="iem_cologne"],
+  &[href*="iem"] {
+    .thumbnails-iem;
+  }
 
-    &[href*="gfinity"] {
-        .thumbnails-gfinity;
-        //.calculate-width-and-margins();
-    }
+  &[href*="gfinity"] {
+    .thumbnails-gfinity;
+  }
 
-    &[href*="mobafire"] {
-        .thumbnails-mobafire;
-        //.calculate-width-and-margins();
-    }
+  &[href*="mobafire"] {
+    .thumbnails-mobafire;
+  }
 
-    &[href*="gpl"] {
-        .thumbnails-gpl;
-        //.calculate-width-and-margins();
-    }
+  &[href*="gpl"] {
+    .thumbnails-gpl;
+  }
 
-    &[href*="lcs"] {
-        .thumbnails-lcs;
-        //.calculate-width-and-margins();
-    }
+  &[href*="lcs"] {
+    .thumbnails-lcs;
+  }
 
-    &[href*="mlg"] {
-        .thumbnails-mlg;
-        //.calculate-width-and-margins();
-    }
+  &[href*="mlg"] {
+    .thumbnails-mlg;
+  }
 
-    &[href*="starswar"] {
-        .thumbnails-starswar;
-        //.calculate-width-and-margins();
-    }
+  &[href*="starswar"] {
+    .thumbnails-starswar;
+  }
 
-    &[href*="ign"],
-    &[href*="ipl"] {
-        .thumbnails-ign;
-        //.calculate-width-and-margins();
-    }
+  &[href*="ign"],
+  &[href*="ipl"] {
+    .thumbnails-ign;
+  }
 
-    &[href*="regionals"],
-    &[href*="2_championship"],
-    &[href*="world_championships"],
-    &[href*="2_korean"],
-    &[href*="2_european"],
-    &[href*="2_south"],
-    &[href*="na_regionals_com"] {
-        .thumbnails-wcs2;
-        //.calculate-width-and-margins();
-    }
+  &[href*="regionals"],
+  &[href*="2_championship"],
+  &[href*="world_championships"],
+  &[href*="2_korean"],
+  &[href*="2_european"],
+  &[href*="2_south"],
+  &[href*="na_regionals_com"] {
+    .thumbnails-wcs2;
+  }
 
-    &[href*="tales"] {
-        .thumbnails-tales;
-        //.calculate-width-and-margins();
-    }
+  &[href*="tales"] {
+    .thumbnails-tales;
+  }
 
-    &[href*="lone"] {
-        .thumbnails-lone-star-clash;
-        //.calculate-width-and-margins();
-    }
+  &[href*="lone"] {
+    .thumbnails-lone-star-clash;
+  }
 
-    &[href*="pandoratv"],
-    &[href*="ogn_champ"],
-    &[href*="ogn_hot"],
-    &[href*="ogn_ol"],
-    &[href*="ogn_lol"] {
-        .thumbnails-ogn;
-        //.calculate-width-and-margins();
-    }
+  &[href*="pandoratv"],
+  &[href*="ogn_champ"],
+  &[href*="ogn_hot"],
+  &[href*="ogn_ol"],
+  &[href*="ogn_lol"] {
+    .thumbnails-ogn;
+    
+  }
 
-    &[href*="shangai"] {
-        .thumbnails-allstar;
-        //.calculate-width-and-margins();
-    }
+  &[href*="shangai"] {
+    .thumbnails-allstar;
+  }
 
-    &[href*="monster"] {
-        .thumbnails-black-monster-cup;
-        //.calculate-width-and-margins();
-    }
+  &[href*="monster"] {
+    .thumbnails-black-monster-cup;
+  }
 
-    &[href*="lpl"] {
-        .thumbnails-lpl;
-        //.calculate-width-and-margins();
-    }
+  &[href*="lpl"] {
+    .thumbnails-lpl;
+  }
 
-    &[href*="nlb_spring"] {
-        .thumbnails-nlb;
-        //.calculate-width-and-margins();
-    }
+  &[href*="nlb_spring"] {
+    .thumbnails-nlb;
+  }
 
-    &[href*="world"] {
-        .thumbnails-wcs3;
-        //.calculate-width-and-margins();
-    }
+  &[href*="world"] {
+    .thumbnails-wcs3;
+  }
 
-    &[href*="android"] {
-        .thumbnails-android;
-        //.calculate-width-and-margins();
-    }
+  &[href*="android"] {
+    .thumbnails-android;
+  }
 
-    &[href*="lcs_north"] {
-        .thumbnails-lcs-na;
-        //.calculate-width-and-margins();
-    }
+  &[href*="lcs_north"] {
+    .thumbnails-lcs-na;
+  }
 
-    &[href*="lcs_europe"] {
-        .thumbnails-lcs-eu;
-        //.calculate-width-and-margins();
-    }
+  &[href*="lcs_europe"] {
+    .thumbnails-lcs-eu;
+  }
 
-    &[href*="na_chall"] {
-        .thumbnails-cs-na;
-        //.calculate-width-and-margins();
-    }
+  &[href*="na_chall"] {
+    .thumbnails-cs-na;
+  }
 
-    &[href*="eu_chall"] {
-        .thumbnails-cs-eu;
-        //.calculate-width-and-margins();
-    }
+  &[href*="eu_chall"] {
+    .thumbnails-cs-eu;
+  }
 }

@@ -1,6 +1,17 @@
+@social-spacing: -49px;
+
 .social() {
-    background: url(%%social%%) no-repeat top left;
+  display: inline-block;
+  background: url(%%sidebar%%) no-repeat;
+  width: 147px;
+  height: -@social-spacing;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
 }
+
+.social-left-col()  { margin-left: -10px; }
+.social-right-col() { margin-left: 1px; margin-right: -20px; }
 
 .social-facebook() {
     background-position: 0 0;

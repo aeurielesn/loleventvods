@@ -1,72 +1,11 @@
 .res-nightmode, html[lang="dd"] {
-  // Users
-  .flair {
-    .flairs;
-    display:inline-block;
-    border: 0;
-    padding: 0;
-  }
-  .flair-red { .flairs-red; } 
-  .flair-yellow { .flairs-yellow; } 
-
-  // Links
-  .linkflairlabel { display: none; }
-
-}
-
-ongoing, finished, featured, incomplete, upcoming, finishedfeatured,
-twitchongoing, twitchfinished, twitchfeatured, twitchincomplete, twitchupcoming {
-  .res-nightmode .linkflair-& .thumbnail:before, html[lang="dd"] .linkflair-& .thumbnail:before, 
-  .res-nightmode .flairselector .linkflair-& .linkflairlabel, .res-nightmode .flairtemplate .linkflair-& .linkflairlabel,
-  html[lang="dd"] .flairselector .linkflair-& .linkflairlabel, html[lang="dd"] .flairtemplate .linkflair-& .linkflairlabel {
-    .flairs;
-    content: "";
-    display: inline-block;
-    margin: 0;
-    padding: 0;
-    border: 0;
-    position: relative;
-    top: 25px;
-    left: 45px;
-  }
-}
-
-ongoing, twitchongoing, featured, twitchfeatured {
-  .res-nightmode .linkflair-& .thumbnail:before, html[lang="dd"] .linkflair-& .thumbnail:before,
-  .res-nightmode .flairselector .linkflair-& .linkflairlabel, .res-nightmode .flairtemplate .linkflair-& .linkflairlabel,
-  html[lang="dd"] .flairselector .linkflair-& .linkflairlabel, html[lang="dd"] .flairtemplate .linkflair-& .linkflairlabel {
-    .flairs-ongoing;
-  }
-}
-
-incomplete, twitchincomplete {
-  .res-nightmode .linkflair-& .thumbnail:before, html[lang="dd"] .linkflair-& .thumbnail:before,
-  .res-nightmode .flairselector .linkflair-& .linkflairlabel, .res-nightmode .flairtemplate .linkflair-& .linkflairlabel,
-  html[lang="dd"] .flairselector .linkflair-& .linkflairlabel, html[lang="dd"] .flairtemplate .linkflair-& .linkflairlabel {
-    .flairs-incomplete;
-  }
-}
-
-upcoming, twitchupcoming {
-  .res-nightmode .linkflair-& .thumbnail:before, html[lang="dd"] .linkflair-& .thumbnail:before,
-  .res-nightmode .flairselector .linkflair-& .linkflairlabel, .res-nightmode .flairtemplate .linkflair-& .linkflairlabel,
-  html[lang="dd"] .flairselector .linkflair-& .linkflairlabel, html[lang="dd"] .flairtemplate .linkflair-& .linkflairlabel {
-    .flairs-upcoming;
-  }
-}
-
-finished, twitchfinished, finishedfeatured {
-  .res-nightmode .linkflair-& .thumbnail:before, html[lang="dd"] .linkflair-& .thumbnail:before,
-  .res-nightmode .flairselector .linkflair-& .linkflairlabel, .res-nightmode .flairtemplate .linkflair-& .linkflairlabel,
-  html[lang="dd"] .flairselector .linkflair-& .linkflairlabel, html[lang="dd"] .flairtemplate .linkflair-& .linkflairlabel {
-    .flairs-finished;
-  }
+  // Linkflair Menu Changes
+  .drop-choices { background-color: #fff; }
+  .RES-keyNav-activeElement .drop-choices a.title:first-of-type { color: #222!important; }
 }
 
 red, featured, finishedfeatured, twitchfeatured {
-  .res-nightmode .linkflair-& a.title, 
-  .res-nightmode .linkflair-& .RES-keyNav-activeElement a.title:first-of-type, 
-  html[lang="dd"] .linkflair-& a.title { 
+  .res-nightmode .linkflair-& .RES-keyNav-activeElement a.title:first-of-type { 
     color: red !important;
   }
 }

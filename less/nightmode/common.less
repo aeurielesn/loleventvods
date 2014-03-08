@@ -8,18 +8,14 @@
 
   // alien
   #header-img-a {
+    border-right: 1px solid #222;
     .bg-pos(0, @header-spacing * 2);
-    
-    &:hover {
-      .bg-pos(0, @header-spacing * 3);
-    }
+    &:hover { .bg-pos(0, @header-spacing * 3); }
   }
 
   // Header image
 
-  #header-bottom-left {
-    background: #02021a url(%%header%%) no-repeat right top!important;
-  }
+  #header-bottom-left { background: #02021a url(%%header%%) no-repeat right top!important; }
 
   // Moves userbar down below header image
 
@@ -40,7 +36,7 @@
   #header-bottom-right.res-navTop {
     top: 145px;
     bottom: @header-spacing;
-    line-height: (@header-spacing + 11) * -1;
+    line-height: 22px;
     padding-left: 5px;
     background: url(%%gray%%) 0px (@header-spacing * 2);
     border-radius: 0;
@@ -55,26 +51,10 @@
     }
   }
 
-  // Hides tabmenu, domain, leave contributor button & RES nav annotations
-  #header .tabmenu,
-  #viewImagesButton,
-  .domain,
-  .side .leavecontributor-button,
-  table .keyNavAnnotation,
-  a[href^="#"] + .keyNavAnnotation,
-  #siteTable .keyNavAnnotation {
-    display: none;
-  }
-
   .link.last-clicked { overflow: hidden; }
   
-  // Switches out sprites for more nightmode-friendly versions
-  .thumbnail.self {
-    background: url(%%nightmode-sprites%%) #222!important;
-  }
-
-  // Timestamps
-  .edited-timestamp::after { content:" (" attr(title) ")"; font-size: 90%; }
+  // Switches out default thumb for nightmode-friendly version
+  .thumbnail { background: url(%%nightmode-sprites%%) 0px 1px no-repeat #222; }
 
   // Collapsable in entries
   .entry {
@@ -83,10 +63,7 @@
   }
 
   // Red text in posts
-  .usertext-body h4 {
-    color: #f00;
-    font-weight: bold;
-  }
+  .usertext-body h4 { color: #f00; font-weight: bold; }
 
   // tables
   .md table {
@@ -106,37 +83,21 @@
   // ROW HOVER COLOR
   .md table tr:hover { 
     background-color: #7d7; 
-    color: #fff;
+    color: #222;
     a { color: #55c!important; }
   }
 
   // Hides downvote arrow on posts only; still accessible on comments
   // Also replaces default RES nightmode arrow sprites
-  .arrow { background: url(%%nightmode-sprites%%)!important; }
-  .arrow.up, .arrow.up:hover { .bg-pos(-30px, -50px); }
-  .arrow.upmod { .bg-pos(-45px, -50px); }
-  .arrow.down { visibility: hidden; display: none; }
-  .comment .arrow.down, .comment .arrow.down:hover { visibility: visible; display: block; .bg-pos(0px, -50px); }
-  .comment .arrow.downmod { .bg-pos(-15px, -50px); }
-
-  // Next 4 sections make deleted messages less noticeable -djimbob
-  form.grayed, form.grayed ~ ul.flat-list.buttons { display: none }
-  p.tagline, div.collapsed {
-    > a.expand:first-child + em {
-      visibility: hidden;
-      font-size: 0;
-      &:after {
-        visibility: visible;
-        font-size: x-small;
-        font-weight: bold;
-        content: "Comment removed by user"
-      }
-    }
-  }
-  div.collapsed > a.expand:first-child + em + time {
-    + a.expand, + em + a.expand {display: none; }
-  }
+  .arrow, .arrow.up, .arrow.up:hover, .arrow.upmod,
+  .arrow.down, .arrow.down:hover, .arrow.downmod { background: url(%%nightmode-sprites%%)!important; }
   
+  .arrow.up, .arrow.up:hover { background-position: -30px -52px!important; }
+  .arrow.upmod { background-position: -45px -52px!important; }
+  .arrow.down { visibility: hidden; display: none; }
+  .comment .arrow.down, .comment .arrow.down:hover { visibility: visible; display: block; background-position: 0px -52px!important; }
+  .comment .arrow.downmod { background-position: -15px -52px!important; }
+
   // Change active keynav bg-color
   .RES-keyNav-activeElement {
     &, .usertext-body, .usertext-body .md, .usertext-body .md p,
@@ -144,12 +105,11 @@
       background-color: #444 !important;
     }
   }
-
+  
   // notice below comments
-  .commentarea .usertext .usertext-edit:after { background-color: inherit; }
+  .commentarea .usertext .usertext-edit:after { background-color: inherit; color: #ccc; }
 
   // Tournament icons in header
-
   .side {
     a[href="/r/LoLeventVoDs/comments/1v6w31/s4_lcs_europe_spring_season/"],
     a[href="/r/LoLeventVoDs/comments/1vgje3/s4_lcs_north_america_spring_season/"],

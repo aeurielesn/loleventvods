@@ -1,0 +1,39 @@
+// Intended to internalize most of RES's nightmode styling
+
+html[lang="dd"] {
+  body, body .content, .side, .flairselector, .linefield, 
+  .icon-menu a, .side .leavemoderator, .side .leavecontributor-button, 
+  .side .titlebox, .side .spacer .titlebox .redditname, .side .titlebox .flairtoggle, 
+  .side .usertext-body .md ol, .side .usertext-body .md ol ol,
+  .side .usertext-body .md ol ol li, .side blockquote, .modactionlisting table * {
+    background-color: #222;
+  }
+  .share-button .option, .share .option,  .help-toggle .option, 
+  .tagline .head .author, .parent .author, .parent .subreddit, 
+  .link .score.dislikes, .linkcompressed .score.dislikes, 
+  .dsq-help, .reddiquette, .RES-keyNav-activeElement .md, a[rel="tag"], 
+  #subscribe a, .tagline a, .footer a, .wired a, .side a, 
+  .subredditbox li a, #authorInfoToolTip h3 a, .morecomments a, .comment .md p a {
+    color: #007dc3;
+  }
+  .RES-keyNav-activeElement {
+    .usertext .md a, .tagline a, .parent-link {
+      color: #8ad;
+    }
+  }
+  .entry .buttons li a, .entry .morecomments .gray, .markdownEditor .RESCharCounter {
+    color: #aaa;
+  }
+  > .content > .spacer > .sitetable::before, > .content > .sharelink ~ .sitetable::before, 
+  .side .age, .trophy-info *, .golddvertisement, .flair-jump .title, #siteTable .thing .title.loggedin, 
+  #siteTable .thing .title, .NERdupe p.title::after, .savedComment, .organic-listing .thing .title,
+  .side .titlebox form.flairtoggle, .NERPageMarker, .side .titlebox {
+    color: #ddd;
+  }
+  .side .usertext-body .md em, .side .usertext-body .md p {
+    color: #eee;
+  }
+  #commentNavButtons *, .updateTime, .toggle .option {
+    color: #fff;
+  }
+}
