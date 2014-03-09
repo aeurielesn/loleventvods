@@ -24,10 +24,15 @@ html[lang="dd"] {
   .entry .buttons li a, .entry .morecomments .gray, .markdownEditor .RESCharCounter {
     color: #aaa;
   }
+  .side .spacer, .content, .traffic-tables .traffic-table tr, .sitetable .thing .md, 
+  .parentComment .md, .post-body.entry-content, .dsq-auth-header, .instructions .preftable th, 
+  #BigEditor .markdownEditor a, #BigEditor .markdownEditor .RESMacroDropdownTitle {
+    color: #ccc;
+  }
   > .content > .spacer > .sitetable::before, > .content > .sharelink ~ .sitetable::before, 
   .side .age, .trophy-info *, .golddvertisement, .flair-jump .title, #siteTable .thing .title.loggedin, 
   #siteTable .thing .title, .NERdupe p.title::after, .savedComment, .organic-listing .thing .title,
-  .side .titlebox form.flairtoggle, .NERPageMarker, .side .titlebox {
+  .side .titlebox form.flairtoggle, .NERPageMarker {
     color: #ddd;
   }
   .side .usertext-body .md em, .side .usertext-body .md p {
@@ -35,5 +40,41 @@ html[lang="dd"] {
   }
   #commentNavButtons *, .updateTime, .toggle .option {
     color: #fff;
+  }
+  .linkcompressed .entry .buttons li a, .link .usertext .md,
+  .thing .compressed, .organic-listing .link, .link.promotedlink, 
+  .link.promotedlink.promoted, .commentreply .help tr,
+  .organic-listing .linkcompressed, .sr-interest-bar .bubble {
+    background: none;
+  }
+  .comment { border-radius: 3px; border: none!important; }
+  .comments-page .comment,
+  .comments-page .comment .comment .comment, 
+  .comments-page .comment .comment .comment .comment .comment, 
+  .comments-page .comment .comment .comment .comment .comment .comment .comment, 
+  .comments-page .comment .comment .comment .comment .comment .comment .comment .comment .comment,
+  .res-commentBoxes .comments-page .comment,
+  .res-commentBoxes .comments-page .comment .comment .comment, 
+  .res-commentBoxes .comments-page .comment .comment .comment .comment .comment, 
+  .res-commentBoxes .comments-page .comment .comment .comment .comment .comment .comment .comment, 
+  .res-commentBoxes .comments-page .comment .comment .comment .comment .comment .comment .comment .comment .comment {
+    background-color: #181818!important;
+  }
+  .comments-page .comment .comment,
+  .comments-page .comment .comment .comment .comment, 
+  .comments-page .comment .comment .comment .comment .comment .comment, 
+  .comments-page .comment .comment .comment .comment .comment .comment .comment .comment,
+  .comments-page .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment,
+  .res-commentBoxes .comments-page .comment .comment,
+  .res-commentBoxes .comments-page .comment .comment .comment .comment, 
+  .res-commentBoxes .comments-page .comment .comment .comment .comment .comment .comment, 
+  .res-commentBoxes .comments-page .comment .comment .comment .comment .comment .comment .comment .comment,
+  .res-commentBoxes .comments-page .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment {
+    margin-right: 0px;
+    background-color: #222!important;
+  }
+  // Comment active keynav bg-color fix
+  .RES-keyNav-activeElement, .commentarea .RES-keyNav-activeElement .md, .commentarea .RES-keyNav-activeElement.entry .noncollapsed {
+    background-color: transparent !important;
   }
 }

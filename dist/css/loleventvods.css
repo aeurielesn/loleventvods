@@ -18,6 +18,7 @@
   left: 0px;
   width: 35px;
   height: 34px;
+  border-right: 1px solid #ccc;
   background: url(%%alien%%) no-repeat;
 }
 #header-img-a:hover {
@@ -602,7 +603,7 @@ div.sidebox.create {
 .side a[href="http://www.youtube.com/loleventvods"],
 .side a[href="https://play.google.com/store/apps/details?id=com.kox.zzreal"] {
   display: inline-block;
-  background: url(%%sidebar%%);
+  background: url(%%sidebar%%) no-repeat;
   width: 147px;
   height: 49px;
   text-indent: 100%;
@@ -621,8 +622,8 @@ div.sidebox.create {
 }
 .side a[href="https://www.twitter.com/loleventvods"] {
   background-position: 0 -49px;
-  margin-right: -20px;
   margin-left: 1px;
+  margin-right: -20px;
 }
 .side a[href="http://www.youtube.com/loleventvods"] {
   background-position: 0 -98px;
@@ -630,8 +631,8 @@ div.sidebox.create {
 }
 .side a[href="https://play.google.com/store/apps/details?id=com.kox.zzreal"] {
   background-position: 0 -147px;
-  margin-right: -20px;
   margin-left: 1px;
+  margin-right: -20px;
 }
 /* hide "Create your own subreddit" button */
 div.sidebox.create {
@@ -680,46 +681,46 @@ a[href="/hidden"]:hover {
   background-position: 0 0;
 }
 .flags-czechrepublic {
-  background-position: 0 -61px;
+  background-position: 0 -11px;
 }
 .flags-denmark {
-  background-position: 0 -122px;
+  background-position: 0 -22px;
 }
 .flags-estonia {
-  background-position: 0 -183px;
+  background-position: 0 -33px;
 }
 .flags-finland {
-  background-position: 0 -244px;
+  background-position: 0 -44px;
 }
 .flags-france {
-  background-position: 0 -305px;
+  background-position: 0 -55px;
 }
 .flags-germany {
-  background-position: 0 -366px;
+  background-position: 0 -66px;
 }
 .flags-lithuania {
-  background-position: 0 -427px;
+  background-position: 0 -77px;
 }
 .flags-netherlands {
-  background-position: 0 -488px;
+  background-position: 0 -88px;
 }
 .flags-norway {
-  background-position: 0 -549px;
+  background-position: 0 -99px;
 }
 .flags-poland {
-  background-position: 0 -610px;
+  background-position: 0 -110px;
 }
 .flags-russia {
-  background-position: 0 -671px;
+  background-position: 0 -121px;
 }
 .flags-scotland {
-  background-position: 0 -732px;
+  background-position: 0 -132px;
 }
 .flags-spain {
-  background-position: 0 -793px;
+  background-position: 0 -143px;
 }
 .flags-sweden {
-  background-position: 0 -854px;
+  background-position: 0 -154px;
 }
 a[href="#belgium"]:after,
 a[href="#czechrepublic"]:after,
@@ -748,46 +749,46 @@ a[href="#belgium"]:after {
   background-position: 0 0;
 }
 a[href="#czechrepublic"]:after {
-  background-position: 0 -61px;
+  background-position: 0 -11px;
 }
 a[href="#denmark"]:after {
-  background-position: 0 -122px;
+  background-position: 0 -22px;
 }
 a[href="#estonia"]:after {
-  background-position: 0 -183px;
+  background-position: 0 -33px;
 }
 a[href="#finland"]:after {
-  background-position: 0 -244px;
+  background-position: 0 -44px;
 }
 a[href="#france"]:after {
-  background-position: 0 -305px;
+  background-position: 0 -55px;
 }
 a[href="#germany"]:after {
-  background-position: 0 -366px;
+  background-position: 0 -66px;
 }
 a[href="#lithuania"]:after {
-  background-position: 0 -427px;
+  background-position: 0 -77px;
 }
 a[href="#netherlands"]:after {
-  background-position: 0 -488px;
+  background-position: 0 -88px;
 }
 a[href="#norway"]:after {
-  background-position: 0 -549px;
+  background-position: 0 -99px;
 }
 a[href="#poland"]:after {
-  background-position: 0 -610px;
+  background-position: 0 -110px;
 }
 a[href="#russia"]:after {
-  background-position: 0 -671px;
+  background-position: 0 -121px;
 }
 a[href="#scotland"]:after {
-  background-position: 0 -732px;
+  background-position: 0 -132px;
 }
 a[href="#spain"]:after {
-  background-position: 0 -793px;
+  background-position: 0 -143px;
 }
 a[href="#sweden"]:after {
-  background-position: 0 -854px;
+  background-position: 0 -154px;
 }
 .thing .thumbnail[href*="iem_cologne"],
 .thing .thumbnail[href*="gfinity"],
@@ -831,29 +832,29 @@ a[href="#sweden"]:after {
 }
 .thing .thumbnail[href*="iem_cologne"],
 .thing .thumbnail[href*="iem"] {
-  background-position: 0 -385px;
+  background-position: 0 -350px;
 }
 .thing .thumbnail[href*="gfinity"] {
-  background-position: 0 -275px;
+  background-position: 0 -250px;
 }
 .thing .thumbnail[href*="mobafire"] {
-  background-position: 0 -825px;
+  background-position: 0 -650px;
 }
 .thing .thumbnail[href*="gpl"] {
-  background-position: 0 -330px;
+  background-position: 0 -300px;
 }
 .thing .thumbnail[href*="lcs"] {
-  background-position: 0 -605px;
+  background-position: 0 -550px;
 }
 .thing .thumbnail[href*="mlg"] {
-  background-position: 0 -770px;
+  background-position: 0 -600px;
 }
 .thing .thumbnail[href*="starswar"] {
-  background-position: 0 -990px;
+  background-position: 0 -800px;
 }
 .thing .thumbnail[href*="ign"],
 .thing .thumbnail[href*="ipl"] {
-  background-position: 0 -440px;
+  background-position: 0 -400px;
 }
 .thing .thumbnail[href*="regionals"],
 .thing .thumbnail[href*="2_championship"],
@@ -862,50 +863,50 @@ a[href="#sweden"]:after {
 .thing .thumbnail[href*="2_european"],
 .thing .thumbnail[href*="2_south"],
 .thing .thumbnail[href*="na_regionals_com"] {
-  background-position: 0 -1100px;
+  background-position: 0 -900px;
 }
 .thing .thumbnail[href*="tales"] {
-  background-position: 0 -1045px;
+  background-position: 0 -850px;
 }
 .thing .thumbnail[href*="lone"] {
-  background-position: 0 -660px;
+  background-position: 0 -600px;
 }
 .thing .thumbnail[href*="pandoratv"],
 .thing .thumbnail[href*="ogn_champ"],
 .thing .thumbnail[href*="ogn_hot"],
 .thing .thumbnail[href*="ogn_ol"],
 .thing .thumbnail[href*="ogn_lol"] {
-  background-position: 0 -935px;
+  background-position: 0 -750px;
 }
 .thing .thumbnail[href*="shangai"] {
   background-position: 0 0;
 }
 .thing .thumbnail[href*="monster"] {
-  background-position: 0 -110px;
+  background-position: 0 -100px;
 }
 .thing .thumbnail[href*="lpl"] {
-  background-position: 0 -715px;
+  background-position: 0 -650px;
 }
 .thing .thumbnail[href*="nlb_spring"] {
-  background-position: 0 -880px;
+  background-position: 0 -700px;
 }
 .thing .thumbnail[href*="world"] {
-  background-position: 0 -1155px;
+  background-position: 0 -950px;
 }
 .thing .thumbnail[href*="android"] {
-  background-position: 0 -55px;
+  background-position: 0 -50px;
 }
 .thing .thumbnail[href*="lcs_north"] {
-  background-position: 0 -550px;
+  background-position: 0 -500px;
 }
 .thing .thumbnail[href*="lcs_europe"] {
-  background-position: 0 -495px;
+  background-position: 0 -450px;
 }
 .thing .thumbnail[href*="na_chall"] {
-  background-position: 0 -220px;
+  background-position: 0 -200px;
 }
 .thing .thumbnail[href*="eu_chall"] {
-  background-position: 0 -165px;
+  background-position: 0 -150px;
 }
 a[href="#aaa"]:after,
 a[href="#all"]:after,
@@ -1490,6 +1491,92 @@ html[lang="dd"] .RES-keyNav-activeElement .tagline a,
 html[lang="dd"] .RES-keyNav-activeElement .parent-link {
   color: #8ad;
 }
+html[lang="dd"] .entry .buttons li a,
+html[lang="dd"] .entry .morecomments .gray,
+html[lang="dd"] .markdownEditor .RESCharCounter {
+  color: #aaa;
+}
+html[lang="dd"] .side .spacer,
+html[lang="dd"] .content,
+html[lang="dd"] .traffic-tables .traffic-table tr,
+html[lang="dd"] .sitetable .thing .md,
+html[lang="dd"] .parentComment .md,
+html[lang="dd"] .post-body.entry-content,
+html[lang="dd"] .dsq-auth-header,
+html[lang="dd"] .instructions .preftable th,
+html[lang="dd"] #BigEditor .markdownEditor a,
+html[lang="dd"] #BigEditor .markdownEditor .RESMacroDropdownTitle {
+  color: #ccc;
+}
+html[lang="dd"] > .content > .spacer > .sitetable::before,
+html[lang="dd"] > .content > .sharelink ~ .sitetable::before,
+html[lang="dd"] .side .age,
+html[lang="dd"] .trophy-info *,
+html[lang="dd"] .golddvertisement,
+html[lang="dd"] .flair-jump .title,
+html[lang="dd"] #siteTable .thing .title.loggedin,
+html[lang="dd"] #siteTable .thing .title,
+html[lang="dd"] .NERdupe p.title::after,
+html[lang="dd"] .savedComment,
+html[lang="dd"] .organic-listing .thing .title,
+html[lang="dd"] .side .titlebox form.flairtoggle,
+html[lang="dd"] .NERPageMarker {
+  color: #ddd;
+}
+html[lang="dd"] .side .usertext-body .md em,
+html[lang="dd"] .side .usertext-body .md p {
+  color: #eee;
+}
+html[lang="dd"] #commentNavButtons *,
+html[lang="dd"] .updateTime,
+html[lang="dd"] .toggle .option {
+  color: #fff;
+}
+html[lang="dd"] .linkcompressed .entry .buttons li a,
+html[lang="dd"] .link .usertext .md,
+html[lang="dd"] .thing .compressed,
+html[lang="dd"] .organic-listing .link,
+html[lang="dd"] .link.promotedlink,
+html[lang="dd"] .link.promotedlink.promoted,
+html[lang="dd"] .commentreply .help tr,
+html[lang="dd"] .organic-listing .linkcompressed,
+html[lang="dd"] .sr-interest-bar .bubble {
+  background: none;
+}
+html[lang="dd"] .comment {
+  border-radius: 3px;
+  border: none!important;
+}
+html[lang="dd"] .comments-page .comment,
+html[lang="dd"] .comments-page .comment .comment .comment,
+html[lang="dd"] .comments-page .comment .comment .comment .comment .comment,
+html[lang="dd"] .comments-page .comment .comment .comment .comment .comment .comment .comment,
+html[lang="dd"] .comments-page .comment .comment .comment .comment .comment .comment .comment .comment .comment,
+html[lang="dd"] .res-commentBoxes .comments-page .comment,
+html[lang="dd"] .res-commentBoxes .comments-page .comment .comment .comment,
+html[lang="dd"] .res-commentBoxes .comments-page .comment .comment .comment .comment .comment,
+html[lang="dd"] .res-commentBoxes .comments-page .comment .comment .comment .comment .comment .comment .comment,
+html[lang="dd"] .res-commentBoxes .comments-page .comment .comment .comment .comment .comment .comment .comment .comment .comment {
+  background-color: #181818!important;
+}
+html[lang="dd"] .comments-page .comment .comment,
+html[lang="dd"] .comments-page .comment .comment .comment .comment,
+html[lang="dd"] .comments-page .comment .comment .comment .comment .comment .comment,
+html[lang="dd"] .comments-page .comment .comment .comment .comment .comment .comment .comment .comment,
+html[lang="dd"] .comments-page .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment,
+html[lang="dd"] .res-commentBoxes .comments-page .comment .comment,
+html[lang="dd"] .res-commentBoxes .comments-page .comment .comment .comment .comment,
+html[lang="dd"] .res-commentBoxes .comments-page .comment .comment .comment .comment .comment .comment,
+html[lang="dd"] .res-commentBoxes .comments-page .comment .comment .comment .comment .comment .comment .comment .comment,
+html[lang="dd"] .res-commentBoxes .comments-page .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment {
+  margin-right: 0px;
+  background-color: #222!important;
+}
+html[lang="dd"] .RES-keyNav-activeElement,
+html[lang="dd"] .commentarea .RES-keyNav-activeElement .md,
+html[lang="dd"] .commentarea .RES-keyNav-activeElement.entry .noncollapsed {
+  background-color: transparent !important;
+}
 .res-nightmode .entry a:visited,
 html[lang="dd"] .entry a:visited {
   color: #007dc3;
@@ -1504,6 +1591,7 @@ html[lang="dd"] .RES-keyNav-activeElement .entry a:visited[href*="lol.eventvods.
 }
 .res-nightmode #header-img-a,
 html[lang="dd"] #header-img-a {
+  border-right: 1px solid #222;
   background-position: 0 -68px;
 }
 .res-nightmode #header-img-a:hover,
@@ -1539,7 +1627,7 @@ html[lang="dd"] .separator {
 html[lang="dd"] #header-bottom-right.res-navTop {
   top: 145px;
   bottom: -34px;
-  line-height: 23px;
+  line-height: 22px;
   padding-left: 5px;
   background: url(%%gray%%) 0px -68px;
   border-radius: 0;
@@ -1554,34 +1642,13 @@ html[lang="dd"] #header-bottom-right.res-navTop #userbarToggle {
   line-height: 28px;
   color: #222;
 }
-.res-nightmode #header .tabmenu,
-html[lang="dd"] #header .tabmenu,
-.res-nightmode #viewImagesButton,
-html[lang="dd"] #viewImagesButton,
-.res-nightmode .domain,
-html[lang="dd"] .domain,
-.res-nightmode .side .leavecontributor-button,
-html[lang="dd"] .side .leavecontributor-button,
-.res-nightmode table .keyNavAnnotation,
-html[lang="dd"] table .keyNavAnnotation,
-.res-nightmode a[href^="#"] + .keyNavAnnotation,
-html[lang="dd"] a[href^="#"] + .keyNavAnnotation,
-.res-nightmode #siteTable .keyNavAnnotation,
-html[lang="dd"] #siteTable .keyNavAnnotation {
-  display: none;
-}
 .res-nightmode .link.last-clicked,
 html[lang="dd"] .link.last-clicked {
   overflow: hidden;
 }
-.res-nightmode .thumbnail.self,
-html[lang="dd"] .thumbnail.self {
-  background: url(%%nightmode-sprites%%) #222222 !important;
-}
-.res-nightmode .edited-timestamp::after,
-html[lang="dd"] .edited-timestamp::after {
-  content: " (" attr(title) ")";
-  font-size: 90%;
+.res-nightmode .thumbnail,
+html[lang="dd"] .thumbnail {
+  background: url(%%nightmode-sprites%%) 0px 1px no-repeat #222222;
 }
 .res-nightmode .entry .tagline:first-of-type,
 html[lang="dd"] .entry .tagline:first-of-type,
@@ -1597,6 +1664,12 @@ html[lang="dd"] .entry .md h3 {
 html[lang="dd"] .usertext-body h4 {
   color: #f00;
   font-weight: bold;
+}
+.res-nightmode .link .usertext-body .md,
+html[lang="dd"] .link .usertext-body .md,
+.res-nightmode .side .linkinfo,
+html[lang="dd"] .side .linkinfo {
+  border-color: #88f;
 }
 .res-nightmode .md table *,
 html[lang="dd"] .md table * {
@@ -1639,30 +1712,43 @@ html[lang="dd"] .md tr:nth-of-type(even) {
 .res-nightmode .md table tr:hover,
 html[lang="dd"] .md table tr:hover {
   background-color: #7d7;
-  color: #fff;
+  color: #222;
 }
 .res-nightmode .md table tr:hover a,
 html[lang="dd"] .md table tr:hover a {
   color: #55c!important;
 }
 .res-nightmode .arrow,
-html[lang="dd"] .arrow {
+html[lang="dd"] .arrow,
+.res-nightmode .arrow.up,
+html[lang="dd"] .arrow.up,
+.res-nightmode .arrow.up:hover,
+html[lang="dd"] .arrow.up:hover,
+.res-nightmode .arrow.upmod,
+html[lang="dd"] .arrow.upmod,
+.res-nightmode .arrow.down,
+html[lang="dd"] .arrow.down,
+.res-nightmode .arrow.down:hover,
+html[lang="dd"] .arrow.down:hover,
+.res-nightmode .arrow.downmod,
+html[lang="dd"] .arrow.downmod {
   background: url(%%nightmode-sprites%%) !important;
 }
 .res-nightmode .arrow.up,
 html[lang="dd"] .arrow.up,
 .res-nightmode .arrow.up:hover,
 html[lang="dd"] .arrow.up:hover {
-  background-position: -30px -50px;
+  background-position: -30px -52px !important;
 }
 .res-nightmode .arrow.upmod,
 html[lang="dd"] .arrow.upmod {
-  background-position: -45px -50px;
+  background-position: -45px -52px !important;
 }
 .res-nightmode .arrow.down,
 html[lang="dd"] .arrow.down {
   visibility: hidden;
   display: none;
+  margin-top: 5px;
 }
 .res-nightmode .comment .arrow.down,
 html[lang="dd"] .comment .arrow.down,
@@ -1670,39 +1756,11 @@ html[lang="dd"] .comment .arrow.down,
 html[lang="dd"] .comment .arrow.down:hover {
   visibility: visible;
   display: block;
-  background-position: 0px -50px;
+  background-position: 0px -52px !important;
 }
 .res-nightmode .comment .arrow.downmod,
 html[lang="dd"] .comment .arrow.downmod {
-  background-position: -15px -50px;
-}
-.res-nightmode form.grayed,
-html[lang="dd"] form.grayed,
-.res-nightmode form.grayed ~ ul.flat-list.buttons,
-html[lang="dd"] form.grayed ~ ul.flat-list.buttons {
-  display: none;
-}
-.res-nightmode p.tagline > a.expand:first-child + em,
-html[lang="dd"] p.tagline > a.expand:first-child + em,
-.res-nightmode div.collapsed > a.expand:first-child + em,
-html[lang="dd"] div.collapsed > a.expand:first-child + em {
-  visibility: hidden;
-  font-size: 0;
-}
-.res-nightmode p.tagline > a.expand:first-child + em:after,
-html[lang="dd"] p.tagline > a.expand:first-child + em:after,
-.res-nightmode div.collapsed > a.expand:first-child + em:after,
-html[lang="dd"] div.collapsed > a.expand:first-child + em:after {
-  visibility: visible;
-  font-size: x-small;
-  font-weight: bold;
-  content: "Comment removed by user";
-}
-.res-nightmode div.collapsed > a.expand:first-child + em + time + a.expand,
-html[lang="dd"] div.collapsed > a.expand:first-child + em + time + a.expand,
-.res-nightmode div.collapsed > a.expand:first-child + em + time + em + a.expand,
-html[lang="dd"] div.collapsed > a.expand:first-child + em + time + em + a.expand {
-  display: none;
+  background-position: -15px -52px !important;
 }
 .res-nightmode .RES-keyNav-activeElement,
 html[lang="dd"] .RES-keyNav-activeElement,
@@ -1723,6 +1781,7 @@ html[lang="dd"] .RES-keyNav-activeElement .noncollapsed .md p {
 .res-nightmode .commentarea .usertext .usertext-edit:after,
 html[lang="dd"] .commentarea .usertext .usertext-edit:after {
   background-color: inherit;
+  color: #ccc;
 }
 .res-nightmode .side a[href="/r/LoLeventVoDs/comments/1v6w31/s4_lcs_europe_spring_season/"],
 html[lang="dd"] .side a[href="/r/LoLeventVoDs/comments/1v6w31/s4_lcs_europe_spring_season/"],
@@ -1782,4 +1841,373 @@ html[lang="dd"] .side a[href="/r/LoLeventVoDs/comments/1tn6v4/pandoratv_201314_o
 html[lang="dd"] .side a[href="/r/LoLeventVoDs/comments/1tn6v4/pandoratv_201314_ogn_winter_playoffs/"]:hover {
   background-position: -1348px 0;
   width: 255px;
+}
+.res-nightmode .titlebox .usertext-body .md h6,
+html[lang="dd"] .titlebox .usertext-body .md h6 {
+  background-position: 0px -68px;
+  color: #222;
+}
+.res-nightmode .titlebox .usertext-body .md h6 a,
+html[lang="dd"] .titlebox .usertext-body .md h6 a {
+  color: #F2E972!important;
+}
+.res-nightmode .listing-page .sitetable .flair,
+html[lang="dd"] .listing-page .sitetable .flair {
+  display: none;
+}
+.res-nightmode .RES-keyNav-activeElement .tagline .stickied-tagline,
+html[lang="dd"] .RES-keyNav-activeElement .tagline .stickied-tagline {
+  color: #7c7;
+}
+.res-nightmode .listing-page .sitetable > div:nth-of-type(4n+1) {
+  background-color: #222;
+}
+.res-nightmode h1 {
+  border-bottom: none !important;
+}
+.res-nightmode .sidebox {
+  background-color: transparent!important;
+  border: none!important;
+  color: #222!important;
+  border-radius: 5px!important;
+}
+.res-nightmode .side .spacer > #search input,
+html[lang="dd"] .side .spacer > #search input {
+  background-color: #444;
+  color: #ccc;
+}
+.res-nightmode .side .titlebox,
+html[lang="dd"] .side .titlebox {
+  color: #ddd;
+}
+.res-nightmode .infobar,
+html[lang="dd"] .infobar {
+  background-color: transparent!important;
+}
+.res-nightmode .sidebox .morelink,
+html[lang="dd"] .sidebox .morelink,
+.res-nightmode .submit .morelink,
+html[lang="dd"] .submit .morelink {
+  background: url(%%gray%%);
+  background-position: 0px -68px;
+}
+.res-nightmode .sidebox .morelink:hover,
+html[lang="dd"] .sidebox .morelink:hover,
+.res-nightmode .submit .morelink:hover,
+html[lang="dd"] .submit .morelink:hover {
+  background-position: 0px -34px;
+}
+.res-nightmode .sidebox .morelink a:before,
+html[lang="dd"] .sidebox .morelink a:before,
+.res-nightmode .submit .morelink a:before,
+html[lang="dd"] .submit .morelink a:before {
+  color: #000;
+}
+.res-nightmode .sidebox .morelink a:hover:before,
+html[lang="dd"] .sidebox .morelink a:hover:before,
+.res-nightmode .submit .morelink a:hover:before,
+html[lang="dd"] .submit .morelink a:hover:before {
+  color: #fff;
+}
+.res-nightmode .titlebox .usertext .md > h1,
+html[lang="dd"] .titlebox .usertext .md > h1 {
+  background-position: 0px -68px;
+  color: #000 !important;
+}
+.res-nightmode .titlebox .usertext .md > h1:after,
+html[lang="dd"] .titlebox .usertext .md > h1:after {
+  border-color: transparent #ccc transparent transparent !important;
+}
+.res-nightmode .thing .thumbnail[href*="iem_cologne"],
+html[lang="dd"] .thing .thumbnail[href*="iem_cologne"],
+.res-nightmode .thing .thumbnail[href*="gfinity"],
+html[lang="dd"] .thing .thumbnail[href*="gfinity"],
+.res-nightmode .thing .thumbnail[href*="mobafire"],
+html[lang="dd"] .thing .thumbnail[href*="mobafire"],
+.res-nightmode .thing .thumbnail[href*="gpl"],
+html[lang="dd"] .thing .thumbnail[href*="gpl"],
+.res-nightmode .thing .thumbnail[href*="lcs"],
+html[lang="dd"] .thing .thumbnail[href*="lcs"],
+.res-nightmode .thing .thumbnail[href*="iem"],
+html[lang="dd"] .thing .thumbnail[href*="iem"],
+.res-nightmode .thing .thumbnail[href*="mlg"],
+html[lang="dd"] .thing .thumbnail[href*="mlg"],
+.res-nightmode .thing .thumbnail[href*="starswar"],
+html[lang="dd"] .thing .thumbnail[href*="starswar"],
+.res-nightmode .thing .thumbnail[href*="ign"],
+html[lang="dd"] .thing .thumbnail[href*="ign"],
+.res-nightmode .thing .thumbnail[href*="ipl"],
+html[lang="dd"] .thing .thumbnail[href*="ipl"],
+.res-nightmode .thing .thumbnail[href*="regionals"],
+html[lang="dd"] .thing .thumbnail[href*="regionals"],
+.res-nightmode .thing .thumbnail[href*="dreamhack"],
+html[lang="dd"] .thing .thumbnail[href*="dreamhack"],
+.res-nightmode .thing .thumbnail[href*="tales"],
+html[lang="dd"] .thing .thumbnail[href*="tales"],
+.res-nightmode .thing .thumbnail[href*="lone"],
+html[lang="dd"] .thing .thumbnail[href*="lone"],
+.res-nightmode .thing .thumbnail[href*="2_championship"],
+html[lang="dd"] .thing .thumbnail[href*="2_championship"],
+.res-nightmode .thing .thumbnail[href*="world_championships"],
+html[lang="dd"] .thing .thumbnail[href*="world_championships"],
+.res-nightmode .thing .thumbnail[href*="2_korean"],
+html[lang="dd"] .thing .thumbnail[href*="2_korean"],
+.res-nightmode .thing .thumbnail[href*="2_european"],
+html[lang="dd"] .thing .thumbnail[href*="2_european"],
+.res-nightmode .thing .thumbnail[href*="2_south"],
+html[lang="dd"] .thing .thumbnail[href*="2_south"],
+.res-nightmode .thing .thumbnail[href*="na_regionals_com"],
+html[lang="dd"] .thing .thumbnail[href*="na_regionals_com"],
+.res-nightmode .thing .thumbnail[href*="pandoratv"],
+html[lang="dd"] .thing .thumbnail[href*="pandoratv"],
+.res-nightmode .thing .thumbnail[href*="ogn_champ"],
+html[lang="dd"] .thing .thumbnail[href*="ogn_champ"],
+.res-nightmode .thing .thumbnail[href*="ogn_hot"],
+html[lang="dd"] .thing .thumbnail[href*="ogn_hot"],
+.res-nightmode .thing .thumbnail[href*="ogn_ol"],
+html[lang="dd"] .thing .thumbnail[href*="ogn_ol"],
+.res-nightmode .thing .thumbnail[href*="ogn_lol"],
+html[lang="dd"] .thing .thumbnail[href*="ogn_lol"],
+.res-nightmode .thing .thumbnail[href*="shangai"],
+html[lang="dd"] .thing .thumbnail[href*="shangai"],
+.res-nightmode .thing .thumbnail[href*="monster"],
+html[lang="dd"] .thing .thumbnail[href*="monster"],
+.res-nightmode .thing .thumbnail[href*="lpl"],
+html[lang="dd"] .thing .thumbnail[href*="lpl"],
+.res-nightmode .thing .thumbnail[href*="nlb_spring"],
+html[lang="dd"] .thing .thumbnail[href*="nlb_spring"],
+.res-nightmode .thing .thumbnail[href*="world"],
+html[lang="dd"] .thing .thumbnail[href*="world"],
+.res-nightmode .thing .thumbnail[href*="android"],
+html[lang="dd"] .thing .thumbnail[href*="android"],
+.res-nightmode .thing .thumbnail[href*="lcs_north"],
+html[lang="dd"] .thing .thumbnail[href*="lcs_north"],
+.res-nightmode .thing .thumbnail[href*="lcs_europe"],
+html[lang="dd"] .thing .thumbnail[href*="lcs_europe"],
+.res-nightmode .thing .thumbnail[href*="na_chall"],
+html[lang="dd"] .thing .thumbnail[href*="na_chall"],
+.res-nightmode .thing .thumbnail[href*="eu_chall"],
+html[lang="dd"] .thing .thumbnail[href*="eu_chall"] {
+  background-image: url(%%nightmode-thumbs%%);
+}
+.res-nightmode a[href="#aaa"]:after,
+html[lang="dd"] a[href="#aaa"]:after,
+.res-nightmode a[href="#all"]:after,
+html[lang="dd"] a[href="#all"]:after,
+.res-nightmode a[href="#anexis"]:after,
+html[lang="dd"] a[href="#anexis"]:after,
+.res-nightmode a[href="#atn"]:after,
+html[lang="dd"] a[href="#atn"]:after,
+.res-nightmode a[href="#aware"]:after,
+html[lang="dd"] a[href="#aware"]:after,
+.res-nightmode a[href="#awg"]:after,
+html[lang="dd"] a[href="#awg"]:after,
+.res-nightmode a[href="#azure"]:after,
+html[lang="dd"] a[href="#azure"]:after,
+.res-nightmode a[href="#bears"]:after,
+html[lang="dd"] a[href="#bears"]:after,
+.res-nightmode a[href="#gam"]:after,
+html[lang="dd"] a[href="#gam"]:after,
+.res-nightmode a[href="#c9"]:after,
+html[lang="dd"] a[href="#c9"]:after,
+.res-nightmode a[href$="/wiki/c9"]:before,
+html[lang="dd"] a[href$="/wiki/c9"]:before,
+.res-nightmode a[href="#cjb"]:after,
+html[lang="dd"] a[href="#cjb"]:after,
+.res-nightmode a[href="#clg"]:after,
+html[lang="dd"] a[href="#clg"]:after,
+.res-nightmode a[href$="/wiki/clg"]:before,
+html[lang="dd"] a[href$="/wiki/clg"]:before,
+.res-nightmode a[href="#coast"]:after,
+html[lang="dd"] a[href="#coast"]:after,
+.res-nightmode a[href="#cst"]:after,
+html[lang="dd"] a[href="#cst"]:after,
+.res-nightmode a[href$="/wiki/coast"]:before,
+html[lang="dd"] a[href$="/wiki/coast"]:before,
+.res-nightmode a[href="#cog"]:after,
+html[lang="dd"] a[href="#cog"]:after,
+.res-nightmode a[href="#col"]:after,
+html[lang="dd"] a[href="#col"]:after,
+.res-nightmode a[href="#colA"]:after,
+html[lang="dd"] a[href="#colA"]:after,
+.res-nightmode a[href="#crs"]:after,
+html[lang="dd"] a[href="#crs"]:after,
+.res-nightmode a[href="#crsA"]:after,
+html[lang="dd"] a[href="#crsA"]:after,
+.res-nightmode a[href$="/wiki/crs"]:before,
+html[lang="dd"] a[href$="/wiki/crs"]:before,
+.res-nightmode a[href="#cw"]:after,
+html[lang="dd"] a[href="#cw"]:after,
+.res-nightmode a[href="#db"]:after,
+html[lang="dd"] a[href="#db"]:after,
+.res-nightmode a[href="#dbl"]:after,
+html[lang="dd"] a[href="#dbl"]:after,
+.res-nightmode a[href="#dig"]:after,
+html[lang="dd"] a[href="#dig"]:after,
+.res-nightmode a[href$="/wiki/dig"]:before,
+html[lang="dd"] a[href$="/wiki/dig"]:before,
+.res-nightmode a[href="#dnl"]:after,
+html[lang="dd"] a[href="#dnl"]:after,
+.res-nightmode a[href="#dp"]:after,
+html[lang="dd"] a[href="#dp"]:after,
+.res-nightmode a[href="#dru"]:after,
+html[lang="dd"] a[href="#dru"]:after,
+.res-nightmode a[href="#eg"]:after,
+html[lang="dd"] a[href="#eg"]:after,
+.res-nightmode a[href$="/wiki/eg"]:before,
+html[lang="dd"] a[href$="/wiki/eg"]:before,
+.res-nightmode a[href="#esuba"]:after,
+html[lang="dd"] a[href="#esuba"]:after,
+.res-nightmode a[href="#ete"]:after,
+html[lang="dd"] a[href="#ete"]:after,
+.res-nightmode a[href="#eternity"]:after,
+html[lang="dd"] a[href="#eternity"]:after,
+.res-nightmode a[href="#fid"]:after,
+html[lang="dd"] a[href="#fid"]:after,
+.res-nightmode a[href="#fnatic"]:after,
+html[lang="dd"] a[href="#fnatic"]:after,
+.res-nightmode a[href="#fnc"]:after,
+html[lang="dd"] a[href="#fnc"]:after,
+.res-nightmode a[href="#fxo"]:after,
+html[lang="dd"] a[href="#fxo"]:after,
+.res-nightmode a[href="#gambit"]:after,
+html[lang="dd"] a[href="#gambit"]:after,
+.res-nightmode a[href="#gmb"]:after,
+html[lang="dd"] a[href="#gmb"]:after,
+.res-nightmode a[href="#gaming"]:after,
+html[lang="dd"] a[href="#gaming"]:after,
+.res-nightmode a[href="#gg"]:after,
+html[lang="dd"] a[href="#gg"]:after,
+.res-nightmode a[href="#ggLA"]:after,
+html[lang="dd"] a[href="#ggLA"]:after,
+.res-nightmode a[href="#ggu"]:after,
+html[lang="dd"] a[href="#ggu"]:after,
+.res-nightmode a[href="#gia"]:after,
+html[lang="dd"] a[href="#gia"]:after,
+.res-nightmode a[href="#hc"]:after,
+html[lang="dd"] a[href="#hc"]:after,
+.res-nightmode a[href="#ig"]:after,
+html[lang="dd"] a[href="#ig"]:after,
+.res-nightmode a[href="#im"]:after,
+html[lang="dd"] a[href="#im"]:after,
+.res-nightmode a[href="#iodd"]:after,
+html[lang="dd"] a[href="#iodd"]:after,
+.res-nightmode a[href="#jas"]:after,
+html[lang="dd"] a[href="#jas"]:after,
+.res-nightmode a[href="#ld"]:after,
+html[lang="dd"] a[href="#ld"]:after,
+.res-nightmode a[href="#marn"]:after,
+html[lang="dd"] a[href="#marn"]:after,
+.res-nightmode a[href="#mrn"]:after,
+html[lang="dd"] a[href="#mrn"]:after,
+.res-nightmode a[href="#millenium"]:after,
+html[lang="dd"] a[href="#millenium"]:after,
+.res-nightmode a[href="#mil"]:after,
+html[lang="dd"] a[href="#mil"]:after,
+.res-nightmode a[href="#min"]:after,
+html[lang="dd"] a[href="#min"]:after,
+.res-nightmode a[href="#msk"]:after,
+html[lang="dd"] a[href="#msk"]:after,
+.res-nightmode a[href="#mouz"]:after,
+html[lang="dd"] a[href="#mouz"]:after,
+.res-nightmode a[href="#mym"]:after,
+html[lang="dd"] a[href="#mym"]:after,
+.res-nightmode a[href="#nid"]:after,
+html[lang="dd"] a[href="#nid"]:after,
+.res-nightmode a[href="#nip"]:after,
+html[lang="dd"] a[href="#nip"]:after,
+.res-nightmode a[href="#nip2"]:after,
+html[lang="dd"] a[href="#nip2"]:after,
+.res-nightmode a[href="#nsh"]:after,
+html[lang="dd"] a[href="#nsh"]:after,
+.res-nightmode a[href="#nsw"]:after,
+html[lang="dd"] a[href="#nsw"]:after,
+.res-nightmode a[href="#nwe"]:after,
+html[lang="dd"] a[href="#nwe"]:after,
+.res-nightmode a[href="#omg"]:after,
+html[lang="dd"] a[href="#omg"]:after,
+.res-nightmode a[href="#ozone"]:after,
+html[lang="dd"] a[href="#ozone"]:after,
+.res-nightmode a[href="#sso"]:after,
+html[lang="dd"] a[href="#sso"]:after,
+.res-nightmode a[href="#pain"]:after,
+html[lang="dd"] a[href="#pain"]:after,
+.res-nightmode a[href="#pe"]:after,
+html[lang="dd"] a[href="#pe"]:after,
+.res-nightmode a[href="#qg"]:after,
+html[lang="dd"] a[href="#qg"]:after,
+.res-nightmode a[href="#qtc"]:after,
+html[lang="dd"] a[href="#qtc"]:after,
+.res-nightmode a[href="#rg"]:after,
+html[lang="dd"] a[href="#rg"]:after,
+.res-nightmode a[href="#roc"]:after,
+html[lang="dd"] a[href="#roc"]:after,
+.res-nightmode a[href="#roughnex"]:after,
+html[lang="dd"] a[href="#roughnex"]:after,
+.res-nightmode a[href="#royal"]:after,
+html[lang="dd"] a[href="#royal"]:after,
+.res-nightmode a[href="#ryl"]:after,
+html[lang="dd"] a[href="#ryl"]:after,
+.res-nightmode a[href="#rxg"]:after,
+html[lang="dd"] a[href="#rxg"]:after,
+.res-nightmode a[href="#shc"]:after,
+html[lang="dd"] a[href="#shc"]:after,
+.res-nightmode a[href="#sk"]:after,
+html[lang="dd"] a[href="#sk"]:after,
+.res-nightmode a[href="#skt"]:after,
+html[lang="dd"] a[href="#skt"]:after,
+.res-nightmode a[href="#sns"]:after,
+html[lang="dd"] a[href="#sns"]:after,
+.res-nightmode a[href="#sword"]:after,
+html[lang="dd"] a[href="#sword"]:after,
+.res-nightmode a[href="#tap"]:after,
+html[lang="dd"] a[href="#tap"]:after,
+.res-nightmode a[href="#tbd"]:after,
+html[lang="dd"] a[href="#tbd"]:after,
+.res-nightmode a[href="#tcm"]:after,
+html[lang="dd"] a[href="#tcm"]:after,
+.res-nightmode a[href="#ts"]:after,
+html[lang="dd"] a[href="#ts"]:after,
+.res-nightmode a[href="#tsb"]:after,
+html[lang="dd"] a[href="#tsb"]:after,
+.res-nightmode a[href="#tsm"]:after,
+html[lang="dd"] a[href="#tsm"]:after,
+.res-nightmode a[href$="/wiki/tsm"]:before,
+html[lang="dd"] a[href$="/wiki/tsm"]:before,
+.res-nightmode a[href="#tt"]:after,
+html[lang="dd"] a[href="#tt"]:after,
+.res-nightmode a[href="#ttd"]:after,
+html[lang="dd"] a[href="#ttd"]:after,
+.res-nightmode a[href="#ves"]:after,
+html[lang="dd"] a[href="#ves"]:after,
+.res-nightmode a[href="#vul"]:after,
+html[lang="dd"] a[href="#vul"]:after,
+.res-nightmode a[href="#xdg"]:after,
+html[lang="dd"] a[href="#xdg"]:after,
+.res-nightmode a[href$="/wiki/vul"]:before,
+html[lang="dd"] a[href$="/wiki/vul"]:before,
+.res-nightmode a[href="#we"]:after,
+html[lang="dd"] a[href="#we"]:after,
+.res-nightmode a[href="#wizards"]:after,
+html[lang="dd"] a[href="#wizards"]:after,
+.res-nightmode a[href="#wzb"]:after,
+html[lang="dd"] a[href="#wzb"]:after,
+.res-nightmode a[href="#xts"]:after,
+html[lang="dd"] a[href="#xts"]:after {
+  content: "";
+  background-image: url(%%nightmode-teams%%);
+}
+.res-nightmode .drop-choices,
+html[lang="dd"] .drop-choices {
+  background-color: #fff;
+}
+.res-nightmode .RES-keyNav-activeElement .drop-choices a.title:first-of-type,
+html[lang="dd"] .RES-keyNav-activeElement .drop-choices a.title:first-of-type {
+  color: #222!important;
+}
+.res-nightmode .linkflair-red .RES-keyNav-activeElement a.title:first-of-type,
+.res-nightmode .linkflair-featured .RES-keyNav-activeElement a.title:first-of-type,
+.res-nightmode .linkflair-finishedfeatured .RES-keyNav-activeElement a.title:first-of-type,
+.res-nightmode .linkflair-twitchfeatured .RES-keyNav-activeElement a.title:first-of-type {
+  color: red !important;
 }
