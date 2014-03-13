@@ -1461,7 +1461,7 @@ html[lang="dd"] .side .usertext-body .md ol ol,
 html[lang="dd"] .side .usertext-body .md ol ol li,
 html[lang="dd"] .side blockquote,
 html[lang="dd"] .modactionlisting table * {
-  background-color: #222;
+  background-color: #080808;
 }
 html[lang="dd"] .share-button .option,
 html[lang="dd"] .share .option,
@@ -1557,7 +1557,7 @@ html[lang="dd"] .res-commentBoxes .comments-page .comment .comment .comment,
 html[lang="dd"] .res-commentBoxes .comments-page .comment .comment .comment .comment .comment,
 html[lang="dd"] .res-commentBoxes .comments-page .comment .comment .comment .comment .comment .comment .comment,
 html[lang="dd"] .res-commentBoxes .comments-page .comment .comment .comment .comment .comment .comment .comment .comment .comment {
-  background-color: #181818!important;
+  background-color: #1a1a1a!important;
 }
 html[lang="dd"] .comments-page .comment .comment,
 html[lang="dd"] .comments-page .comment .comment .comment .comment,
@@ -1570,12 +1570,46 @@ html[lang="dd"] .res-commentBoxes .comments-page .comment .comment .comment .com
 html[lang="dd"] .res-commentBoxes .comments-page .comment .comment .comment .comment .comment .comment .comment .comment,
 html[lang="dd"] .res-commentBoxes .comments-page .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment {
   margin-right: 0px;
-  background-color: #222!important;
+  background-color: #080808!important;
 }
 html[lang="dd"] .RES-keyNav-activeElement,
 html[lang="dd"] .commentarea .RES-keyNav-activeElement .md,
 html[lang="dd"] .commentarea .RES-keyNav-activeElement.entry .noncollapsed {
   background-color: transparent !important;
+}
+.res-nightmode body,
+html[lang="dd"] body,
+.res-nightmode body .content,
+html[lang="dd"] body .content,
+.res-nightmode .side,
+html[lang="dd"] .side,
+.res-nightmode .flairselector,
+html[lang="dd"] .flairselector,
+.res-nightmode .linefield,
+html[lang="dd"] .linefield,
+.res-nightmode .icon-menu a,
+html[lang="dd"] .icon-menu a,
+.res-nightmode .side .leavemoderator,
+html[lang="dd"] .side .leavemoderator,
+.res-nightmode .side .leavecontributor-button,
+html[lang="dd"] .side .leavecontributor-button,
+.res-nightmode .side .titlebox,
+html[lang="dd"] .side .titlebox,
+.res-nightmode .side .spacer .titlebox .redditname,
+html[lang="dd"] .side .spacer .titlebox .redditname,
+.res-nightmode .side .titlebox .flairtoggle,
+html[lang="dd"] .side .titlebox .flairtoggle,
+.res-nightmode .side .usertext-body .md ol,
+html[lang="dd"] .side .usertext-body .md ol,
+.res-nightmode .side .usertext-body .md ol ol,
+html[lang="dd"] .side .usertext-body .md ol ol,
+.res-nightmode .side .usertext-body .md ol ol li,
+html[lang="dd"] .side .usertext-body .md ol ol li,
+.res-nightmode .side blockquote,
+html[lang="dd"] .side blockquote,
+.res-nightmode .modactionlisting table *,
+html[lang="dd"] .modactionlisting table * {
+  background-color: #080808;
 }
 .res-nightmode .entry a:visited,
 html[lang="dd"] .entry a:visited {
@@ -1591,7 +1625,7 @@ html[lang="dd"] .RES-keyNav-activeElement .entry a:visited[href*="lol.eventvods.
 }
 .res-nightmode #header-img-a,
 html[lang="dd"] #header-img-a {
-  border-right: 1px solid #222;
+  border-right: 1px solid #080808;
   background-position: 0 -68px;
 }
 .res-nightmode #header-img-a:hover,
@@ -1609,15 +1643,15 @@ html[lang="dd"] #header-bottom-right {
 }
 .res-nightmode #header-bottom-right a,
 html[lang="dd"] #header-bottom-right a {
-  color: #222;
+  color: #080808;
 }
 .res-nightmode .user,
 html[lang="dd"] .user {
-  color: #222;
+  color: #080808;
 }
 .res-nightmode .user .userkarma,
 html[lang="dd"] .user .userkarma {
-  border-color: #222;
+  border-color: #080808;
 }
 .res-nightmode .separator,
 html[lang="dd"] .separator {
@@ -1631,7 +1665,7 @@ html[lang="dd"] #header-bottom-right.res-navTop {
   padding-left: 5px;
   background: url(%%gray%%) 0px -68px;
   border-radius: 0;
-  border-left: 1px solid #222;
+  border-left: 1px solid #080808;
 }
 .res-nightmode #header-bottom-right.res-navTop #userbarToggle,
 html[lang="dd"] #header-bottom-right.res-navTop #userbarToggle {
@@ -1640,7 +1674,7 @@ html[lang="dd"] #header-bottom-right.res-navTop #userbarToggle {
   border-right: 1px dotted #444;
   border-left: 1px solid #444;
   line-height: 28px;
-  color: #222;
+  color: #080808;
 }
 .res-nightmode .link.last-clicked,
 html[lang="dd"] .link.last-clicked {
@@ -1648,7 +1682,7 @@ html[lang="dd"] .link.last-clicked {
 }
 .res-nightmode .thumbnail,
 html[lang="dd"] .thumbnail {
-  background: url(%%nightmode-sprites%%) 0px 1px no-repeat #222222;
+  background: url(%%nightmode-sprites%%) 0px 1px no-repeat #080808;
 }
 .res-nightmode .entry .tagline:first-of-type,
 html[lang="dd"] .entry .tagline:first-of-type,
@@ -1662,7 +1696,7 @@ html[lang="dd"] .entry .md h3 {
 }
 .res-nightmode .usertext-body h4,
 html[lang="dd"] .usertext-body h4 {
-  color: #f00;
+  color: #f23;
   font-weight: bold;
 }
 .res-nightmode .link .usertext-body .md,
@@ -1701,18 +1735,18 @@ html[lang="dd"] .md th {
 }
 .res-nightmode .md tr:nth-of-type(odd),
 html[lang="dd"] .md tr:nth-of-type(odd) {
-  background: #222;
+  background: #181818;
   color: #dcdcdc;
 }
 .res-nightmode .md tr:nth-of-type(even),
 html[lang="dd"] .md tr:nth-of-type(even) {
-  background: #333;
+  background: #222;
   color: #dcdcdc;
 }
 .res-nightmode .md table tr:hover,
 html[lang="dd"] .md table tr:hover {
   background-color: #7d7;
-  color: #222;
+  color: #080808;
 }
 .res-nightmode .md table tr:hover a,
 html[lang="dd"] .md table tr:hover a {
@@ -1748,7 +1782,6 @@ html[lang="dd"] .arrow.upmod {
 html[lang="dd"] .arrow.down {
   visibility: hidden;
   display: none;
-  margin-top: 5px;
 }
 .res-nightmode .comment .arrow.down,
 html[lang="dd"] .comment .arrow.down,
@@ -1757,10 +1790,12 @@ html[lang="dd"] .comment .arrow.down:hover {
   visibility: visible;
   display: block;
   background-position: 0px -52px !important;
+  margin-top: 5px;
 }
 .res-nightmode .comment .arrow.downmod,
 html[lang="dd"] .comment .arrow.downmod {
   background-position: -15px -52px !important;
+  margin-top: 5px;
 }
 .res-nightmode .RES-keyNav-activeElement,
 html[lang="dd"] .RES-keyNav-activeElement,
@@ -1776,7 +1811,7 @@ html[lang="dd"] .RES-keyNav-activeElement .usertext-body .md p,
 html[lang="dd"] .RES-keyNav-activeElement .noncollapsed .md,
 .res-nightmode .RES-keyNav-activeElement .noncollapsed .md p,
 html[lang="dd"] .RES-keyNav-activeElement .noncollapsed .md p {
-  background-color: #444 !important;
+  background-color: #333 !important;
 }
 .res-nightmode .commentarea .usertext .usertext-edit:after,
 html[lang="dd"] .commentarea .usertext .usertext-edit:after {
@@ -1845,11 +1880,37 @@ html[lang="dd"] .side a[href="/r/LoLeventVoDs/comments/1tn6v4/pandoratv_201314_o
 .res-nightmode .titlebox .usertext-body .md h6,
 html[lang="dd"] .titlebox .usertext-body .md h6 {
   background-position: 0px -68px;
-  color: #222;
+  color: #000;
 }
 .res-nightmode .titlebox .usertext-body .md h6 a,
 html[lang="dd"] .titlebox .usertext-body .md h6 a {
   color: #F2E972!important;
+}
+.res-nightmode .expando-button.selftext.collapsed,
+html[lang="dd"] .expando-button.selftext.collapsed,
+.res-nightmode .expando-button.selftext.collapsed:hover,
+html[lang="dd"] .expando-button.selftext.collapsed:hover,
+.res-nightmode .expando-button.selftext.expanded,
+html[lang="dd"] .expando-button.selftext.expanded,
+.res-nightmode .expando-button.selftext.expanded:hover,
+html[lang="dd"] .expando-button.selftext.expanded:hover {
+  background: url(%%nightmode-sprites%%);
+}
+.res-nightmode .expando-button.selftext.collapsed,
+html[lang="dd"] .expando-button.selftext.collapsed {
+  background-position: 0px -80px;
+}
+.res-nightmode .expando-button.selftext.collapsed:hover,
+html[lang="dd"] .expando-button.selftext.collapsed:hover {
+  background-position: -25px -80px;
+}
+.res-nightmode .expando-button.selftext.expanded,
+html[lang="dd"] .expando-button.selftext.expanded {
+  background-position: 0px -105px;
+}
+.res-nightmode .expando-button.selftext.expanded:hover,
+html[lang="dd"] .expando-button.selftext.expanded:hover {
+  background-position: -25px -105px;
 }
 .res-nightmode .listing-page .sitetable .flair,
 html[lang="dd"] .listing-page .sitetable .flair {
@@ -1860,7 +1921,7 @@ html[lang="dd"] .RES-keyNav-activeElement .tagline .stickied-tagline {
   color: #7c7;
 }
 .res-nightmode .listing-page .sitetable > div:nth-of-type(4n+1) {
-  background-color: #222;
+  background-color: #111;
 }
 .res-nightmode h1 {
   border-bottom: none !important;
@@ -1868,7 +1929,7 @@ html[lang="dd"] .RES-keyNav-activeElement .tagline .stickied-tagline {
 .res-nightmode .sidebox {
   background-color: transparent!important;
   border: none!important;
-  color: #222!important;
+  color: #000!important;
   border-radius: 5px!important;
 }
 .res-nightmode .side .spacer > #search input,
@@ -2205,9 +2266,23 @@ html[lang="dd"] .drop-choices {
 html[lang="dd"] .RES-keyNav-activeElement .drop-choices a.title:first-of-type {
   color: #222!important;
 }
+.res-nightmode .linkflair-red a.title,
+.res-nightmode .linkflair-featured a.title,
+.res-nightmode .linkflair-finishedfeatured a.title,
+.res-nightmode .linkflair-twitchfeatured a.title,
 .res-nightmode .linkflair-red .RES-keyNav-activeElement a.title:first-of-type,
 .res-nightmode .linkflair-featured .RES-keyNav-activeElement a.title:first-of-type,
 .res-nightmode .linkflair-finishedfeatured .RES-keyNav-activeElement a.title:first-of-type,
 .res-nightmode .linkflair-twitchfeatured .RES-keyNav-activeElement a.title:first-of-type {
-  color: red !important;
+  color: #f23 !important;
+  font-weight: bold;
+}
+.res-nightmode a[href="/spoiler"],
+html[lang="dd"] a[href="/spoiler"] {
+  background: none repeat scroll 0 0 #888 !important;
+  color: #888 !important;
+}
+.res-nightmode a[href="/spoiler"]:hover,
+html[lang="dd"] a[href="/spoiler"]:hover {
+  color: #080808 !important;
 }

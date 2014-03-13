@@ -5,16 +5,28 @@
 
   .titlebox .usertext-body .md h6 {
     background-position: 0px -68px;
-    color: #222;
+    color: #000;
     a { color: #F2E972!important; }
   }
+  
+  .expando-button.selftext.collapsed,
+  .expando-button.selftext.collapsed:hover,
+  .expando-button.selftext.expanded,
+  .expando-button.selftext.expanded:hover {
+    background: url(%%nightmode-sprites%%);
+  }
+  
+  .expando-button.selftext.collapsed { background-position: 0px -80px; }
+  .expando-button.selftext.collapsed:hover { background-position: -25px -80px; }
+  .expando-button.selftext.expanded { background-position: 0px -105px; }
+  .expando-button.selftext.expanded:hover { background-position: -25px -105px; }
 
   // No flairs on front page
   .listing-page .sitetable .flair { display: none; }
   
-  // Changes stickied post coloring to make it visible for RES key nav highlighting
+  // Changes "stickied post" text color to make it visible for RES key nav highlighting
   .RES-keyNav-activeElement .tagline .stickied-tagline { color: #7c7; }
 }
 .res-nightmode {
-  .listing-page .sitetable > div:nth-of-type(4n+1) { background-color: #222; }
+  .listing-page .sitetable > div:nth-of-type(4n+1) { background-color: #111; }
 }

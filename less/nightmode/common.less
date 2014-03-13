@@ -1,6 +1,15 @@
 @header-spacing: -34px;
 
 .res-nightmode, html[lang="dd"] {
+  // Changes background color for everything
+  body, body .content, .side, .flairselector, .linefield, 
+  .icon-menu a, .side .leavemoderator, .side .leavecontributor-button, 
+  .side .titlebox, .side .spacer .titlebox .redditname, .side .titlebox .flairtoggle, 
+  .side .usertext-body .md ol, .side .usertext-body .md ol ol,
+  .side .usertext-body .md ol ol li, .side blockquote, .modactionlisting table * {
+    background-color: #080808;
+  }
+  
   // Visited links color change
   .entry a:visited { color: #007dc3; }
   .entry a:visited[href*="lol.eventvods.com"] { color: #007dc3; }
@@ -8,7 +17,7 @@
 
   // alien
   #header-img-a {
-    border-right: 1px solid #222;
+    border-right: 1px solid #080808;
     .bg-pos(0, @header-spacing * 2);
     &:hover { .bg-pos(0, @header-spacing * 3); }
   }
@@ -22,12 +31,12 @@
   #header-bottom-right {
     background: url(%%gray%%);
     .bg-pos(0, @header-spacing * 2);
-    a { color: #222; }
+    a { color: #080808; }
   }
 
   .user {
-    color: #222;
-    .userkarma { border-color: #222; }
+    color: #080808;
+    .userkarma { border-color: #080808; }
   }
 
   .separator { color: #ccc; }
@@ -40,21 +49,21 @@
     padding-left: 5px;
     background: url(%%gray%%) 0px (@header-spacing * 2);
     border-radius: 0;
-    border-left: 1px solid #222;
+    border-left: 1px solid #080808;
     #userbarToggle {
       border-radius: 0;
       background: url(%%gray%%) 0px (@header-spacing * 2);
       border-right: 1px dotted #444;
       border-left: 1px solid #444;
       line-height: 28px;
-      color: #222;
+      color: #080808;
     }
   }
 
   .link.last-clicked { overflow: hidden; }
   
   // Switches out default thumb for nightmode-friendly version
-  .thumbnail { background: url(%%nightmode-sprites%%) 0px 1px no-repeat #222; }
+  .thumbnail { background: url(%%nightmode-sprites%%) 0px 1px no-repeat #080808; }
 
   // Collapsable in entries
   .entry {
@@ -63,7 +72,7 @@
   }
 
   // Red text in posts
-  .usertext-body h4 { color: #f00; font-weight: bold; }
+  .usertext-body h4 { color: #f23; font-weight: bold; }
   
   // Changes post border color to be visible
   .link .usertext-body .md, .side .linkinfo { border-color: #88f; }
@@ -80,13 +89,13 @@
   .md th { background-color: #101010; border-color: #101010; }
   
   // ALTERNATE ROW COLORS
-  .md tr:nth-of-type(odd) { background: #222; color: #dcdcdc; }
-  .md tr:nth-of-type(even) { background: #333; color: #dcdcdc; }
+  .md tr:nth-of-type(odd) { background: #181818; color: #dcdcdc; }
+  .md tr:nth-of-type(even) { background: #222; color: #dcdcdc; }
 
   // ROW HOVER COLOR
   .md table tr:hover { 
     background-color: #7d7; 
-    color: #222;
+    color: #080808;
     a { color: #55c!important; }
   }
 
@@ -97,15 +106,15 @@
   
   .arrow.up, .arrow.up:hover { background-position: -30px -52px!important; }
   .arrow.upmod { background-position: -45px -52px!important; }
-  .arrow.down { visibility: hidden; display: none; margin-top: 5px; }
-  .comment .arrow.down, .comment .arrow.down:hover { visibility: visible; display: block; background-position: 0px -52px!important; }
-  .comment .arrow.downmod { background-position: -15px -52px!important; }
+  .arrow.down { visibility: hidden; display: none; }
+  .comment .arrow.down, .comment .arrow.down:hover { visibility: visible; display: block; background-position: 0px -52px!important; margin-top: 5px; }
+  .comment .arrow.downmod { background-position: -15px -52px!important; margin-top: 5px; }
 
   // Change active keynav bg-color
   .RES-keyNav-activeElement {
     &, .usertext-body, .usertext-body .md, .usertext-body .md p,
     .commentarea & .noncollapsed, .noncollapsed .md, .noncollapsed .md p {
-      background-color: #444 !important;
+      background-color: #333 !important;
     }
   }
   
