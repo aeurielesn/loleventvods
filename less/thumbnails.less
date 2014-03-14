@@ -1,10 +1,3 @@
-.calculate-width-and-margins(@thumbnail-width: 70px) {
-  @margin: floor((@thumbnail-width - @width) / 2);
-  width: @width;
-  margin-left: @margin;
-  margin-right: @thumbnail-width - @margin - @width;
-}
-
 .thing .thumbnail {
   &[href*="2_championship"],
   &[href*="2_korean"],
@@ -13,6 +6,8 @@
   &[href*="android"],
   &[href*="dreamhack"],
   &[href*="eu_chall"],
+  &[href*="esl"],
+  &[href*="faceit"],
   &[href*="gfinity"],
   &[href*="gpl"],
   &[href*="iem"],
@@ -37,6 +32,7 @@
   &[href*="ogn_ol"],
   &[href*="ogn_lol"],
   &[href*="pandoratv"],
+  &[href*="pgs"],
   &[href*="regionals"],
   &[href*="scan"],
   &[href*="shangai"],
@@ -45,43 +41,46 @@
   &[href*="world"],
   &[href*="world_championships"] {
     .thumbnails;
-    padding: 0;
   }
 
+  &[href*="shangai"]      { .thumbnails-allstar; }
+  &[href*="android"]      { .thumbnails-android; }
+  &[href*="monster"]      { .thumbnails-black-monster-cup; }
+  &[href*="eu_chall"]     { .thumbnails-cs-eu; }
+  &[href*="na_chall"]     { .thumbnails-cs-na; }
+  &[href*="esl"]          { .thumbnails-esl; }
+  &[href*="faceit"]       { .thumbnails-faceit; }
+  &[href*="gfinity"]      { .thumbnails-gfinity; }
+  &[href*="gpl"]          { .thumbnails-gpl; }
   &[href*="iem_cologne"],
   &[href*="iem"] {
     .thumbnails-iem;
   }
-
-  &[href*="gfinity"] {
-    .thumbnails-gfinity;
-  }
-
-  &[href*="mobafire"] {
-    .thumbnails-mobafire;
-  }
-
-  &[href*="gpl"] {
-    .thumbnails-gpl;
-  }
-
-  &[href*="lcs"] {
-    .thumbnails-lcs;
-  }
-
-  &[href*="mlg"] {
-    .thumbnails-mlg;
-  }
-
-  &[href*="starswar"] {
-    .thumbnails-starswar;
-  }
-
   &[href*="ign"],
   &[href*="ipl"] {
     .thumbnails-ign;
   }
-
+  &[href*="lcs"]        { .thumbnails-lcs; }
+  &[href*="lcs_europe"] { .thumbnails-lcs-eu; }
+  &[href*="lcs_north"]  { .thumbnails-lcs-na; }
+  &[href*="lone"]       { .thumbnails-lone-star-clash; }
+  &[href*="lpl"]        { .thumbnails-lpl; }
+  &[href*="mlg"]        { .thumbnails-mlg; }
+  &[href*="mobafire"]   { .thumbnails-mobafire; }
+  &[href*="nacl"]       { .thumbnails-nacl; }
+  &[href*="nlb_spring"] { .thumbnails-nlb; }
+  &[href*="pandoratv"],
+  &[href*="ogn_champ"],
+  &[href*="ogn_hot"],
+  &[href*="ogn_ol"],
+  &[href*="ogn_lol"] {
+    .thumbnails-ogn;
+  }
+  &[href*="masters"]    { .thumbnails-ogn-masters; }
+  &[href*="pgs"]        { .thumbnails-pgs; }
+  &[href*="scan"]       { .thumbnails-scan; }
+  &[href*="starswar"]   { .thumbnails-starswar; }
+  &[href*="tales"]      { .thumbnails-tales; }
   &[href*="regionals"],
   &[href*="2_championship"],
   &[href*="world_championships"],
@@ -91,61 +90,5 @@
   &[href*="na_regionals_com"] {
     .thumbnails-wcs2;
   }
-
-  &[href*="tales"] {
-    .thumbnails-tales;
-  }
-
-  &[href*="lone"] {
-    .thumbnails-lone-star-clash;
-  }
-
-  &[href*="pandoratv"],
-  &[href*="ogn_champ"],
-  &[href*="ogn_hot"],
-  &[href*="ogn_ol"],
-  &[href*="ogn_lol"] {
-    .thumbnails-ogn;
-    
-  }
-
-  &[href*="shangai"] {
-    .thumbnails-allstar;
-  }
-
-  &[href*="monster"] {
-    .thumbnails-black-monster-cup;
-  }
-
-  &[href*="lpl"] {
-    .thumbnails-lpl;
-  }
-
-  &[href*="nlb_spring"] {
-    .thumbnails-nlb;
-  }
-
-  &[href*="world"] {
-    .thumbnails-wcs3;
-  }
-
-  &[href*="android"] {
-    .thumbnails-android;
-  }
-
-  &[href*="lcs_north"] {
-    .thumbnails-lcs-na;
-  }
-
-  &[href*="lcs_europe"] {
-    .thumbnails-lcs-eu;
-  }
-
-  &[href*="na_chall"] {
-    .thumbnails-cs-na;
-  }
-
-  &[href*="eu_chall"] {
-    .thumbnails-cs-eu;
-  }
+  &[href*="world"] { .thumbnails-wcs3; }
 }

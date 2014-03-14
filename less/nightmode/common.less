@@ -114,12 +114,44 @@
   .RES-keyNav-activeElement {
     &, .usertext-body, .usertext-body .md, .usertext-body .md p,
     .commentarea & .noncollapsed, .noncollapsed .md, .noncollapsed .md p {
-      background-color: #333 !important;
+      background-color: #3a3a3a !important;
     }
   }
   
   // notice below comments
   .commentarea .usertext .usertext-edit:after { background-color: inherit; color: #ccc; }
+  
+  // Comments coloring
+  .comment { border-radius: 3px; border: none!important; }
+  .comments-page .comment,
+  .comments-page .comment .comment .comment, 
+  .comments-page .comment .comment .comment .comment .comment, 
+  .comments-page .comment .comment .comment .comment .comment .comment .comment, 
+  .comments-page .comment .comment .comment .comment .comment .comment .comment .comment .comment,
+  .res-commentBoxes .comments-page .comment,
+  .res-commentBoxes .comments-page .comment .comment .comment, 
+  .res-commentBoxes .comments-page .comment .comment .comment .comment .comment, 
+  .res-commentBoxes .comments-page .comment .comment .comment .comment .comment .comment .comment, 
+  .res-commentBoxes .comments-page .comment .comment .comment .comment .comment .comment .comment .comment .comment {
+    background-color: #1a1a1a!important;
+    .arrow.up, .arrow.up:hover { background-position: -30px -67px !important; }
+    .arrow.upmod { background-position: -45px -67px !important; }
+    .arrow.down, .arrow.down:hover { background-position: 0px -67px!important;}
+    .arrow.downmod { background-position: -15px -67px!important; }
+  }
+  .comments-page .comment .comment,
+  .comments-page .comment .comment .comment .comment, 
+  .comments-page .comment .comment .comment .comment .comment .comment, 
+  .comments-page .comment .comment .comment .comment .comment .comment .comment .comment,
+  .comments-page .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment,
+  .res-commentBoxes .comments-page .comment .comment,
+  .res-commentBoxes .comments-page .comment .comment .comment .comment, 
+  .res-commentBoxes .comments-page .comment .comment .comment .comment .comment .comment, 
+  .res-commentBoxes .comments-page .comment .comment .comment .comment .comment .comment .comment .comment,
+  .res-commentBoxes .comments-page .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment {
+    margin-right: 0px;
+    background-color: #080808!important;
+  }
 
   // Tournament icons in header
   .side {
