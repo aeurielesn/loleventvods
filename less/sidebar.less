@@ -1,19 +1,39 @@
 @icon-spacing: -19px;
 
-.side { margin: 36px 5px 0 5px; }
-
-.side .md p > em {
-  display: inline-block;
-  padding: 5px;
-  background: #F6E69F;
-  border: 1px solid orange;
-  > strong { font-style: italic; }
-}
-
-/* Changes */
-.side h4,
-.side h5 {
-  height:0;
+.side { 
+  margin: 36px 5px 0 5px;
+  .md p > em {
+    display: inline-block;
+    padding: 5px;
+    background: #F6E69F;
+    border: 1px solid orange;
+    > strong { font-style: italic; }
+  }
+  h4, h5 { height: 0; }
+  a[href="http://www.reddit.com/r/loleventvods/"],
+  a[href="#2themes"],
+  a[href="http://dd.reddit.com/r/loleventvods/"] {
+    margin: 0;
+    height: 50px;
+    display: inline-block;
+    background: url(%%theme-selector%%) no-repeat;
+  }
+  a[href="http://www.reddit.com/r/loleventvods/"] {
+    width: 75px;
+    &:hover { background-position: 0px -50px; }
+  }
+  a[href="#2themes"] {
+    margin-left: -5px;
+    width: 130px;
+    background-position: -85px 0px;
+    cursor: default;
+  }
+  a[href="http://dd.reddit.com/r/loleventvods/"] {
+    margin-left: -5px;
+    width: 75px;
+    background-position: -213px 0px;
+    &:hover { background-position: -213px -50px; }
+  }
 }
 
 /* Modify submit a new post */
@@ -97,7 +117,7 @@
         &:after {
           display: block;
           content: "";
-          border-color: transparent #003018 transparent transparent !important;
+          border-color: transparent #193064 transparent transparent !important;
           border-style: solid;
           border-width: 15px;
           height: 0;

@@ -2,13 +2,15 @@
 
 .res-nightmode, html[lang="dd"] {
   // Changes background color for everything
-  body, body .content, .side, .flairselector, .linefield, 
+  body, .side, .flairselector, .linefield, 
   .icon-menu a, .side .leavemoderator, .side .leavecontributor-button, 
   .side .titlebox, .side .spacer .titlebox .redditname, .side .titlebox .flairtoggle, 
   .side .usertext-body .md ol, .side .usertext-body .md ol ol,
   .side .usertext-body .md ol ol li, .side blockquote, .modactionlisting table * {
     background-color: #080808;
   }
+  // Shows/unhides sidebar header nubs
+  body > .content { background-color: transparent !important; }
   
   // Visited links color change
   .entry a:visited { color: #007dc3; }
@@ -134,10 +136,10 @@
   .res-commentBoxes .comments-page .comment .comment .comment .comment .comment .comment .comment, 
   .res-commentBoxes .comments-page .comment .comment .comment .comment .comment .comment .comment .comment .comment {
     background-color: #1a1a1a!important;
-    .arrow.up, .arrow.up:hover { background-position: -30px -67px !important; }
-    .arrow.upmod { background-position: -45px -67px !important; }
-    .arrow.down, .arrow.down:hover { background-position: 0px -67px!important;}
-    .arrow.downmod { background-position: -15px -67px!important; }
+    .arrow.up, .arrow.up:hover { background-position: -30px -66px !important; }
+    .arrow.upmod { background-position: -45px -66px !important; }
+    .arrow.down, .arrow.down:hover { background-position: 0px -66px!important;}
+    .arrow.downmod { background-position: -15px -66px!important; }
   }
   .comments-page .comment .comment,
   .comments-page .comment .comment .comment .comment, 

@@ -243,10 +243,10 @@ div.collapsed > a.expand:first-child + em + time + em + a.expand {
   min-width: 70px;
 }
 /* Tournament icons in header */
-.side a[href="/r/LoLeventVoDs/comments/1v6w31/s4_lcs_europe_spring_season/"],
-.side a[href="/r/LoLeventVoDs/comments/1vgje3/s4_lcs_north_america_spring_season/"],
-.side a[href="/r/LoLeventVoDs/comments/1wd6yu/iem_sao_paulo_2014/"],
-.side a[href="/r/LoLeventVoDs/comments/1tn6v4/pandoratv_201314_ogn_winter_playoffs/"] {
+.side a[href="/r/LoLeventVoDs/comments/1z3oki/"],
+.side a[href="/r/LoLeventVoDs/comments/1z9uoh/"],
+.side a[href="/r/LoLeventVoDs/comments/20e96p/"],
+.side a[href="/r/LoLeventVoDs/comments/207wud/"] {
   background: url(%%headers%%) no-repeat top left;
   height: 125px;
   display: block;
@@ -254,39 +254,39 @@ div.collapsed > a.expand:first-child + em + time + em + a.expand {
   top: 19px;
   z-index: 9999;
 }
-.side a[href="/r/LoLeventVoDs/comments/1v6w31/s4_lcs_europe_spring_season/"] {
+.side a[href="/r/LoLeventVoDs/comments/1z3oki/"] {
   right: 640px;
   background-position: 0 0;
   width: 150px;
 }
-.side a[href="/r/LoLeventVoDs/comments/1v6w31/s4_lcs_europe_spring_season/"]:hover {
+.side a[href="/r/LoLeventVoDs/comments/1z3oki/"]:hover {
   background-position: 0 -125px;
   width: 150px;
 }
-.side a[href="/r/LoLeventVoDs/comments/1vgje3/s4_lcs_north_america_spring_season/"] {
+.side a[href="/r/LoLeventVoDs/comments/1z9uoh/"] {
   right: 0;
   background-position: -380px 0;
   width: 150px;
 }
-.side a[href="/r/LoLeventVoDs/comments/1vgje3/s4_lcs_north_america_spring_season/"]:hover {
+.side a[href="/r/LoLeventVoDs/comments/1z9uoh/"]:hover {
   background-position: -380px -125px;
   width: 150px;
 }
-.side a[href="/r/LoLeventVoDs/comments/1wd6yu/iem_sao_paulo_2014/"] {
+.side a[href="/r/LoLeventVoDs/comments/20e96p/"] {
   right: 400px;
   background-position: -150px 0;
   width: 230px;
 }
-.side a[href="/r/LoLeventVoDs/comments/1wd6yu/iem_sao_paulo_2014/"]:hover {
+.side a[href="/r/LoLeventVoDs/comments/20e96p/"]:hover {
   background-position: -150px -125px;
   width: 230px;
 }
-.side a[href="/r/LoLeventVoDs/comments/1tn6v4/pandoratv_201314_ogn_winter_playoffs/"] {
+.side a[href="/r/LoLeventVoDs/comments/207wud/"] {
   right: 145px;
   background-position: -530px 0;
   width: 255px;
 }
-.side a[href="/r/LoLeventVoDs/comments/1tn6v4/pandoratv_201314_ogn_winter_playoffs/"]:hover {
+.side a[href="/r/LoLeventVoDs/comments/207wud/"]:hover {
   background-position: -530px -125px;
   width: 255px;
 }
@@ -366,10 +366,37 @@ h6 a {
 .side .md p > em > strong {
   font-style: italic;
 }
-/* Changes */
 .side h4,
 .side h5 {
   height: 0;
+}
+.side a[href="http://www.reddit.com/r/loleventvods/"],
+.side a[href="#2themes"],
+.side a[href="http://dd.reddit.com/r/loleventvods/"] {
+  margin: 0;
+  height: 50px;
+  display: inline-block;
+  background: url(%%theme-selector%%) no-repeat;
+}
+.side a[href="http://www.reddit.com/r/loleventvods/"] {
+  width: 75px;
+}
+.side a[href="http://www.reddit.com/r/loleventvods/"]:hover {
+  background-position: 0px -50px;
+}
+.side a[href="#2themes"] {
+  margin-left: -5px;
+  width: 130px;
+  background-position: -85px 0px;
+  cursor: default;
+}
+.side a[href="http://dd.reddit.com/r/loleventvods/"] {
+  margin-left: -5px;
+  width: 75px;
+  background-position: -213px 0px;
+}
+.side a[href="http://dd.reddit.com/r/loleventvods/"]:hover {
+  background-position: -213px -50px;
 }
 /* Modify submit a new post */
 .submit .morelink {
@@ -479,7 +506,7 @@ h6 a {
 .titlebox .usertext .md > h1:after {
   display: block;
   content: "";
-  border-color: transparent #003018 transparent transparent !important;
+  border-color: transparent #193064 transparent transparent !important;
   border-style: solid;
   border-width: 15px;
   height: 0;
@@ -863,10 +890,6 @@ a[href="#sweden"]:after {
 .thing .thumbnail[href*="gpl"] {
   background-position: 0 -400px;
 }
-.thing .thumbnail[href*="iem_cologne"],
-.thing .thumbnail[href*="iem"] {
-  background-position: 0 -450px;
-}
 .thing .thumbnail[href*="ign"],
 .thing .thumbnail[href*="ipl"] {
   background-position: 0 -500px;
@@ -931,6 +954,10 @@ a[href="#sweden"]:after {
 }
 .thing .thumbnail[href*="world"] {
   background-position: 0 -1350px;
+}
+.thing .thumbnail[href*="iem_cologne"],
+.thing .thumbnail[href*="iem"] {
+  background-position: 0 -450px;
 }
 a[href^="#a"]:after,
 a[href^="#b"]:after,
@@ -1011,6 +1038,7 @@ a[href="#millenium"]:after,
 a[href="#mil"]:after {
   background-position: 0 -200px;
 }
+a[href="#nip"]:after,
 a[href="#nip2"]:after {
   background-position: 0 -220px;
 }
@@ -1110,53 +1138,67 @@ a[href="#tsb"]:after {
   background-position: -108px -140px;
 }
 /* OGN */
-a[href="#cjb"]:after {
+a[href="#cj"]:after {
   background-position: -144px 0;
 }
-a[href="#cjf"]:after {
+a[href="#cjb"]:after {
   background-position: -144px -20px;
 }
-a[href="#im"]:after {
+a[href="#cjf"]:after {
   background-position: -144px -40px;
+}
+a[href="#im"]:after {
+  background-position: -144px -60px;
 }
 a[href="#jas"]:after,
 a[href="#jaf"]:after,
 a[href="#jinair"]:after {
-  background-position: -144px -60px;
+  background-position: -144px -80px;
 }
 a[href="#kta"]:after,
 a[href="#ktb"]:after,
 a[href="#kt"]:after {
-  background-position: -144px -80px;
+  background-position: -144px -100px;
 }
 a[href="#midas"]:after {
-  background-position: -144px -100px;
+  background-position: -144px -120px;
+}
+a[href="#najin"]:after {
+  background-position: -144px -140px;
 }
 a[href="#nsw"]:after,
 a[href="#njbs"]:after {
-  background-position: -144px -120px;
+  background-position: -144px -160px;
 }
 a[href="#nsh"]:after,
 a[href="#njws"]:after {
-  background-position: -144px -140px;
+  background-position: -144px -180px;
 }
 a[href="#prime"]:after {
-  background-position: -144px -160px;
+  background-position: -144px -200px;
 }
 a[href="#ozone"]:after,
 a[href="#sso"]:after,
 a[href="#ssb"]:after,
 a[href="#ssg"]:after {
-  background-position: -144px -180px;
+  background-position: -144px -220px;
 }
 a[href="#skt"]:after {
-  background-position: -144px -200px;
+  background-position: -144px -240px;
+}
+a[href="#xb"]:after,
+a[href="#blast"]:after {
+  background-position: -144px -260px;
+}
+a[href="#xs"]:after,
+a[href="#storm"]:after {
+  background-position: -144px -280px;
 }
 /* LPL */
 a[href="#edg"]:after {
   background-position: -180px 0;
 }
-a[href="#ep"]:after {
+a[href="#ephk"]:after {
   background-position: -180px -20px;
 }
 a[href="#ig"]:after {
@@ -1300,9 +1342,6 @@ a[href="#dru"]:after {
 a[href="#sns"]:after {
   background-position: -360px -20px;
 }
-a[href="#nip"]:after {
-  background-position: -360px -60px;
-}
 a[href="#sword"]:after {
   background-position: -360px -80px;
 }
@@ -1344,6 +1383,34 @@ a[href="#korea"]:after {
 }
 a[href="#sea"]:after {
   background-position: -432px -44px;
+}
+.flat-list a[href^="#a"]:after,
+.flat-list a[href^="#b"]:after,
+.flat-list a[href^="#c"]:after,
+.flat-list a[href^="#d"]:after,
+.flat-list a[href^="#e"]:after,
+.flat-list a[href^="#f"]:after,
+.flat-list a[href^="#g"]:after,
+.flat-list a[href^="#h"]:after,
+.flat-list a[href^="#i"]:after,
+.flat-list a[href^="#j"]:after,
+.flat-list a[href^="#k"]:after,
+.flat-list a[href^="#l"]:after,
+.flat-list a[href^="#m"]:after,
+.flat-list a[href^="#n"]:after,
+.flat-list a[href^="#o"]:after,
+.flat-list a[href^="#p"]:after,
+.flat-list a[href^="#q"]:after,
+.flat-list a[href^="#r"]:after,
+.flat-list a[href^="#s"]:after,
+.flat-list a[href^="#t"]:after,
+.flat-list a[href^="#u"]:after,
+.flat-list a[href^="#v"]:after,
+.flat-list a[href^="#w"]:after,
+.flat-list a[href^="#x"]:after,
+.flat-list a[href^="#y"]:after,
+.flat-list a[href^="#z"]:after {
+  width: 0px;
 }
 /* Users */
 .flair {
@@ -1540,6 +1607,13 @@ html[lang="dd"] .side .usertext-body .md em,
 html[lang="dd"] .side .usertext-body .md p {
   color: #eee;
 }
+html[lang="dd"] .usertext-edit textarea {
+  color: #ccc;
+  background-color: #666;
+}
+html[lang="dd"] input[type="text"] {
+  background-color: #aaa;
+}
 html[lang="dd"] #commentNavButtons *,
 html[lang="dd"] .updateTime,
 html[lang="dd"] .toggle .option {
@@ -1563,8 +1637,6 @@ html[lang="dd"] .commentarea .RES-keyNav-activeElement.entry .noncollapsed {
 }
 .res-nightmode body,
 html[lang="dd"] body,
-.res-nightmode body .content,
-html[lang="dd"] body .content,
 .res-nightmode .side,
 html[lang="dd"] .side,
 .res-nightmode .flairselector,
@@ -1594,6 +1666,10 @@ html[lang="dd"] .side blockquote,
 .res-nightmode .modactionlisting table *,
 html[lang="dd"] .modactionlisting table * {
   background-color: #080808;
+}
+.res-nightmode body > .content,
+html[lang="dd"] body > .content {
+  background-color: transparent !important;
 }
 .res-nightmode .entry a:visited,
 html[lang="dd"] .entry a:visited {
@@ -1869,7 +1945,7 @@ html[lang="dd"] .res-commentBoxes .comments-page .comment .comment .comment .com
 html[lang="dd"] .res-commentBoxes .comments-page .comment .comment .comment .comment .comment .comment .comment .arrow.up:hover,
 .res-nightmode .res-commentBoxes .comments-page .comment .comment .comment .comment .comment .comment .comment .comment .comment .arrow.up:hover,
 html[lang="dd"] .res-commentBoxes .comments-page .comment .comment .comment .comment .comment .comment .comment .comment .comment .arrow.up:hover {
-  background-position: -30px -67px !important;
+  background-position: -30px -66px !important;
 }
 .res-nightmode .comments-page .comment .arrow.upmod,
 html[lang="dd"] .comments-page .comment .arrow.upmod,
@@ -1891,7 +1967,7 @@ html[lang="dd"] .res-commentBoxes .comments-page .comment .comment .comment .com
 html[lang="dd"] .res-commentBoxes .comments-page .comment .comment .comment .comment .comment .comment .comment .arrow.upmod,
 .res-nightmode .res-commentBoxes .comments-page .comment .comment .comment .comment .comment .comment .comment .comment .comment .arrow.upmod,
 html[lang="dd"] .res-commentBoxes .comments-page .comment .comment .comment .comment .comment .comment .comment .comment .comment .arrow.upmod {
-  background-position: -45px -67px !important;
+  background-position: -45px -66px !important;
 }
 .res-nightmode .comments-page .comment .arrow.down,
 html[lang="dd"] .comments-page .comment .arrow.down,
@@ -1933,7 +2009,7 @@ html[lang="dd"] .res-commentBoxes .comments-page .comment .comment .comment .com
 html[lang="dd"] .res-commentBoxes .comments-page .comment .comment .comment .comment .comment .comment .comment .arrow.down:hover,
 .res-nightmode .res-commentBoxes .comments-page .comment .comment .comment .comment .comment .comment .comment .comment .comment .arrow.down:hover,
 html[lang="dd"] .res-commentBoxes .comments-page .comment .comment .comment .comment .comment .comment .comment .comment .comment .arrow.down:hover {
-  background-position: 0px -67px !important;
+  background-position: 0px -66px !important;
 }
 .res-nightmode .comments-page .comment .arrow.downmod,
 html[lang="dd"] .comments-page .comment .arrow.downmod,
@@ -1955,7 +2031,7 @@ html[lang="dd"] .res-commentBoxes .comments-page .comment .comment .comment .com
 html[lang="dd"] .res-commentBoxes .comments-page .comment .comment .comment .comment .comment .comment .comment .arrow.downmod,
 .res-nightmode .res-commentBoxes .comments-page .comment .comment .comment .comment .comment .comment .comment .comment .comment .arrow.downmod,
 html[lang="dd"] .res-commentBoxes .comments-page .comment .comment .comment .comment .comment .comment .comment .comment .comment .arrow.downmod {
-  background-position: -15px -67px !important;
+  background-position: -15px -66px !important;
 }
 .res-nightmode .comments-page .comment .comment,
 html[lang="dd"] .comments-page .comment .comment,
@@ -2050,29 +2126,85 @@ html[lang="dd"] .titlebox .usertext-body .md h6 a {
 }
 .res-nightmode .expando-button.selftext.collapsed,
 html[lang="dd"] .expando-button.selftext.collapsed,
+.res-nightmode .expando-button.video.collapsed,
+html[lang="dd"] .expando-button.video.collapsed,
+.res-nightmode .expando-button.image.collapsed,
+html[lang="dd"] .expando-button.image.collapsed,
+.res-nightmode .expando-button.selftext.collapsed,
+html[lang="dd"] .expando-button.selftext.collapsed,
 .res-nightmode .expando-button.selftext.collapsed:hover,
 html[lang="dd"] .expando-button.selftext.collapsed:hover,
-.res-nightmode .expando-button.selftext.expanded,
-html[lang="dd"] .expando-button.selftext.expanded,
-.res-nightmode .expando-button.selftext.expanded:hover,
-html[lang="dd"] .expando-button.selftext.expanded:hover {
-  background: url(%%nightmode-sprites%%);
+.res-nightmode .expando-button.video.collapsed:hover,
+html[lang="dd"] .expando-button.video.collapsed:hover,
+.res-nightmode .expando-button.image.collapsed:hover,
+html[lang="dd"] .expando-button.image.collapsed:hover,
+.res-nightmode .expando-button.selftext.collapsed:hover,
+html[lang="dd"] .expando-button.selftext.collapsed:hover {
+  background: url(%%nightmode-sprites%%) !important;
 }
 .res-nightmode .expando-button.selftext.collapsed,
 html[lang="dd"] .expando-button.selftext.collapsed {
-  background-position: 0px -80px;
-}
-.res-nightmode .expando-button.selftext.collapsed:hover,
-html[lang="dd"] .expando-button.selftext.collapsed:hover {
-  background-position: -25px -80px;
+  background-position: 0px -80px !important;
 }
 .res-nightmode .expando-button.selftext.expanded,
 html[lang="dd"] .expando-button.selftext.expanded {
-  background-position: 0px -105px;
+  background-position: 0px -105px !important;
+}
+.res-nightmode .expando-button.selftext.collapsed:hover,
+html[lang="dd"] .expando-button.selftext.collapsed:hover {
+  background-position: -25px -80px !important;
 }
 .res-nightmode .expando-button.selftext.expanded:hover,
 html[lang="dd"] .expando-button.selftext.expanded:hover {
-  background-position: -25px -105px;
+  background-position: -25px -105px !important;
+}
+.res-nightmode .expando-button.video.collapsed,
+html[lang="dd"] .expando-button.video.collapsed {
+  background-position: 0px -130px !important;
+}
+.res-nightmode .expando-button.video.expanded,
+html[lang="dd"] .expando-button.video.expanded {
+  background-position: 0px -155px !important;
+}
+.res-nightmode .expando-button.video.collapsed:hover,
+html[lang="dd"] .expando-button.video.collapsed:hover {
+  background-position: -25px -130px !important;
+}
+.res-nightmode .expando-button.video.expanded:hover,
+html[lang="dd"] .expando-button.video.expanded:hover {
+  background-position: -25px -155px !important;
+}
+.res-nightmode .expando-button.image.collapsed,
+html[lang="dd"] .expando-button.image.collapsed {
+  background-position: 0px -180px !important;
+}
+.res-nightmode .expando-button.image.expanded,
+html[lang="dd"] .expando-button.image.expanded {
+  background-position: 0px -205px !important;
+}
+.res-nightmode .expando-button.image.collapsed:hover,
+html[lang="dd"] .expando-button.image.collapsed:hover {
+  background-position: -25px -180px !important;
+}
+.res-nightmode .expando-button.image.expanded:hover,
+html[lang="dd"] .expando-button.image.expanded:hover {
+  background-position: -25px -205px !important;
+}
+.res-nightmode .expando-button.image.gallery.collapsed,
+html[lang="dd"] .expando-button.image.gallery.collapsed {
+  background-position: 0px -230px !important;
+}
+.res-nightmode .expando-button.image.gallery.expanded,
+html[lang="dd"] .expando-button.image.gallery.expanded {
+  background-position: 0px -255px !important;
+}
+.res-nightmode .expando-button.image.gallery.collapsed:hover,
+html[lang="dd"] .expando-button.image.gallery.collapsed:hover {
+  background-position: -25px -230px !important;
+}
+.res-nightmode .expando-button.image.gallery.expanded:hover,
+html[lang="dd"] .expando-button.image.gallery.expanded:hover {
+  background-position: -25px -255px !important;
 }
 .res-nightmode .listing-page .sitetable .flair,
 html[lang="dd"] .listing-page .sitetable .flair {
@@ -2083,7 +2215,7 @@ html[lang="dd"] .RES-keyNav-activeElement .tagline .stickied-tagline {
   color: #7c7;
 }
 .res-nightmode .listing-page .sitetable > div:nth-of-type(4n+1) {
-  background-color: #111;
+  background-color: #080808;
 }
 .res-nightmode h1 {
   border-bottom: none !important;
@@ -2093,6 +2225,9 @@ html[lang="dd"] .RES-keyNav-activeElement .tagline .stickied-tagline {
   border: none!important;
   color: #000!important;
   border-radius: 5px!important;
+}
+.res-nightmode .side .titlebox .usertext-body ul {
+  background-color: #080808!important;
 }
 .res-nightmode .side .spacer > #search input,
 html[lang="dd"] .side .spacer > #search input {
