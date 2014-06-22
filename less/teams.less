@@ -1,8 +1,12 @@
 @teams-width: -36px;
 @teams-height: -20px;
 
+
+
+
 //a[href="#aaa"]:after,
 //a[href="#ahq"]:after,
+//a[href="#ahqF"]:after,
 //a[href="#all"]:after,
 //a[href="#anexis"]:after,
 //a[href="#atn"]:after,
@@ -10,6 +14,7 @@
 //a[href="#azure"]:after,
 //a[href="#bears"]:after, a[href="#gam"]:after,
 //a[href="#bkt"]:after,
+//a[href="#blc"]:after,
 //a[href="#c9"]:after, a[href$="/wiki/c9"]:before,
 //a[href="#cj"]:after,
 //a[href="#cjb"]:after,
@@ -47,16 +52,19 @@
 //a[href="#im"]:after,
 //a[href="#iodd"]:after,
 //a[href="#ipt"]:after,
-//a[href="#is"]:after,
+//a[href="#is"]:after, a[href="#isl"]:after,
+//a[href="#isr"]:after,
 //a[href="#jinair"]:after, a[href="#jaf"]:after, a[href="#jas"]:after,
 //a[href="#klh"]:after,
 //a[href="#kt"]:after, a[href="#kta"]:after, a[href="#ktb"]:after,
 //a[href="#ld"]:after,
 //a[href="#lgd"]:after,
+//a[href="#machi"]:after,
 //a[href="#marn"]:after, a[href="#mrn"]:after,
 //a[href="#midas"]:after,
 //a[href="#millenium"]:after, a[href="#mil"]:after,
 //a[href="#min"]:after, a[href="#msk"]:after,
+//a[href="#mkz"]:after,
 //a[href="#mle"]:after,
 //a[href="#mouz"]:after,
 //a[href="#mym"]:after,
@@ -88,7 +96,6 @@
 //a[href="#tap"]:after,
 //a[href="#tbd"]:after,
 //a[href="#tcm"]:after,
-//a[href="#tinf"]:after,
 //a[href="#tpa"]:after,
 //a[href="#tps"]:after,
 //a[href="#ts"]:after,
@@ -98,6 +105,7 @@
 //a[href="#ttd"]:after,
 //a[href="#ves"]:after,
 //a[href="#vul"]:after, a[href="#xdg"]:after, a[href$="/wiki/vul"]:before,
+//a[href="#war"]:after,
 //a[href="#we"]:after,
 //a[href="#wizards"]:after,
 //a[href="#wzb"]:after,
@@ -177,10 +185,11 @@ a[href="#coast"]:after, a[href="#cst"]:after, a[href$="/wiki/coast"]:before { .b
 a[href="#dig"]:after, a[href$="/wiki/dig"]:before                           { .bg-pos(@teams-width, @teams-height * 5); }
 a[href="#eg"]:after, a[href$="/wiki/eg"]:before                             { .bg-pos(@teams-width, @teams-height * 6); }
 a[href="#ggu"]:after                                                        { .bg-pos(@teams-width, @teams-height * 7); }
-a[href="#marn"]:after, a[href="#mrn"]:after                                 { .bg-pos(@teams-width, @teams-height * 8); }
-a[href="#tsm"]:after, a[href$="/wiki/tsm"]:before                           { .bg-pos(@teams-width, @teams-height * 9); }
-a[href="#ves"]:after                                                        { .bg-pos(@teams-width, @teams-height * 10); }
-a[href="#vul"]:after, a[href="#xdg"]:after, a[href$="/wiki/vul"]:before     { .bg-pos(@teams-width, @teams-height * 11); }
+a[href="#lmq"]:after                                                        { .bg-pos(@teams-width, @teams-height * 8); }
+a[href="#marn"]:after, a[href="#mrn"]:after                                 { .bg-pos(@teams-width, @teams-height * 9); }
+a[href="#tsm"]:after, a[href$="/wiki/tsm"]:before                           { .bg-pos(@teams-width, @teams-height * 10); }
+a[href="#ves"]:after                                                        { .bg-pos(@teams-width, @teams-height * 11); }
+a[href="#vul"]:after, a[href="#xdg"]:after, a[href$="/wiki/vul"]:before     { .bg-pos(@teams-width, @teams-height * 12); }
 
 
 /* LCS Promos EU */ 
@@ -190,62 +199,78 @@ a[href="#wizards"]:after { .bg-pos(@teams-width * 2, @teams-height * 2); }
 
 
 /* LCS Promos NA */
-a[href="#azure"]:after                    { .bg-pos(@teams-width * 3, 0); }
-a[href="#cog"]:after                      { .bg-pos(@teams-width * 3, @teams-height); }
-a[href="#dbl"]:after                      { .bg-pos(@teams-width * 3, @teams-height * 2); }
-a[href="#fid"]:after                      { .bg-pos(@teams-width * 3, @teams-height * 3); }
-a[href="#qg"]:after, a[href="#qtc"]:after { .bg-pos(@teams-width * 3, @teams-height * 4); }
-a[href="#tap"]:after                      { .bg-pos(@teams-width * 3, @teams-height * 5); }
-a[href="#ts"]:after                       { .bg-pos(@teams-width * 3, @teams-height * 6); }
-a[href="#tsb"]:after                      { .bg-pos(@teams-width * 3, @teams-height * 7); }
+a[href="#azure"]:after                    { .bg-pos(@teams-width * 2, @teams-height * 3); }
+a[href="#cog"]:after                      { .bg-pos(@teams-width * 2, @teams-height * 4); }
+a[href="#dbl"]:after                      { .bg-pos(@teams-width * 2, @teams-height * 5); }
+a[href="#fid"]:after                      { .bg-pos(@teams-width * 2, @teams-height * 6); }
+a[href="#qg"]:after, a[href="#qtc"]:after { .bg-pos(@teams-width * 2, @teams-height * 7); }
+a[href="#tap"]:after                      { .bg-pos(@teams-width * 2, @teams-height * 8); }
+a[href="#ts"]:after                       { .bg-pos(@teams-width * 2, @teams-height * 9); }
+a[href="#tsb"]:after                      { .bg-pos(@teams-width * 2, @teams-height * 10); }
 
 
 /* OGN */
-a[href="#cj"]:after                           { .bg-pos(@teams-width * 4, 0); }
-a[href="#cjb"]:after                          { .bg-pos(@teams-width * 4, @teams-height); }
-a[href="#cjf"]:after                          { .bg-pos(@teams-width * 4, @teams-height * 2); }
-a[href="#im"]:after                           { .bg-pos(@teams-width * 4, @teams-height * 3); }
-a[href="#jas"]:after, a[href="#jaf"]:after,
-a[href="#jinair"]:after                       { .bg-pos(@teams-width * 4, @teams-height * 4); }
-a[href="#kta"]:after, a[href="#ktb"]:after,
-a[href="#kt"]:after                           { .bg-pos(@teams-width * 4, @teams-height * 5); }
-a[href="#midas"]:after                        { .bg-pos(@teams-width * 4, @teams-height * 6); }
-a[href="#najin"]:after                        { .bg-pos(@teams-width * 4, @teams-height * 7); }
-a[href="#nsw"]:after, a[href="#njbs"]:after   { .bg-pos(@teams-width * 4, @teams-height * 8); }
-a[href="#nsh"]:after, a[href="#njws"]:after   { .bg-pos(@teams-width * 4, @teams-height * 9); }
-a[href="#prime"]:after                        { .bg-pos(@teams-width * 4, @teams-height * 10); }
-a[href="#ozone"]:after, a[href="#sso"]:after, 
-a[href="#ssb"]:after, a[href="#ssg"]:after    { .bg-pos(@teams-width * 4, @teams-height * 11); }
-a[href="#skt"]:after                          { .bg-pos(@teams-width * 4, @teams-height * 12); }
-a[href="#xb"]:after, a[href="#blast"]:after   { .bg-pos(@teams-width * 4, @teams-height * 13); }
-a[href="#xs"]:after, a[href="#storm"]:after   { .bg-pos(@teams-width * 4, @teams-height * 14); }
+a[href="#blc"]:after, a[href="#bm"]:after     { .bg-pos(@teams-width * 3, 0); }
+a[href="#cj"]:after                           { .bg-pos(@teams-width * 3, @teams-height); }
+a[href="#cjb"]:after                          { .bg-pos(@teams-width * 3, @teams-height * 2); }
+a[href="#cjf"]:after                          { .bg-pos(@teams-width * 3, @teams-height * 3); }
+a[href="#im"]:after                           { .bg-pos(@teams-width * 3, @teams-height * 4); }
+a[href="#jinair"]:after,
+a[href="#jas"]:after, a[href="#jaf"]:after    { .bg-pos(@teams-width * 3, @teams-height * 5); }
+a[href="#kt"]:after,
+a[href="#kta"]:after, a[href="#ktb"]:after    { .bg-pos(@teams-width * 3, @teams-height * 6); }
+a[href="#midas"]:after                        { .bg-pos(@teams-width * 3, @teams-height * 7); }
+a[href="#mkz"]:after                          { .bg-pos(@teams-width * 3, @teams-height * 8); }
+a[href="#najin"]:after                        { .bg-pos(@teams-width * 3, @teams-height * 9); }
+a[href="#nsw"]:after, a[href="#njbs"]:after   { .bg-pos(@teams-width * 3, @teams-height * 10); }
+a[href="#nsh"]:after, a[href="#njws"]:after   { .bg-pos(@teams-width * 3, @teams-height * 11); }
+a[href="#prime"]:after                        { .bg-pos(@teams-width * 3, @teams-height * 12); }
+a[href="#ozone"]:after, 
+a[href="#sso"]:after, a[href="#ssw"]:after,
+a[href="#ssb"]:after, a[href="#ssg"]:after    { .bg-pos(@teams-width * 3, @teams-height * 13); }
+a[href="#skt"]:after                          { .bg-pos(@teams-width * 3, @teams-height * 14); }
+a[href="#xb"]:after, a[href="#blast"]:after   { .bg-pos(@teams-width * 3, @teams-height * 15); }
+a[href="#xs"]:after, a[href="#storm"]:after   { .bg-pos(@teams-width * 3, @teams-height * 16); }
 
 
 /* LPL */
-a[href="#edg"]:after  { .bg-pos(@teams-width * 5, 0); }
-a[href="#ephk"]:after { .bg-pos(@teams-width * 5, @teams-height); }
-a[href="#ig"]:after   { .bg-pos(@teams-width * 5, @teams-height * 2); }
-a[href="#lgd"]:after  { .bg-pos(@teams-width * 5, @teams-height * 3); }
-a[href="#omg"]:after  { .bg-pos(@teams-width * 5, @teams-height * 4); }
-a[href="#pe"]:after   { .bg-pos(@teams-width * 5, @teams-height * 5); }
-a[href="#we"]:after   { .bg-pos(@teams-width * 5, @teams-height * 6); }
+a[href="#edg"]:after  { .bg-pos(@teams-width * 4, 0); }
+a[href="#ephk"]:after { .bg-pos(@teams-width * 4, @teams-height); }
+a[href="#ig"]:after   { .bg-pos(@teams-width * 4, @teams-height * 2); }
+a[href="#lgd"]:after  { .bg-pos(@teams-width * 4, @teams-height * 3); }
+a[href="#omg"]:after  { .bg-pos(@teams-width * 4, @teams-height * 4); }
+a[href="#pe"]:after   { .bg-pos(@teams-width * 4, @teams-height * 5); }
+a[href="#we"]:after   { .bg-pos(@teams-width * 4, @teams-height * 6); }
 
 /* GPL */
-a[href="#ahq"]:after    { .bg-pos(@teams-width * 6, 0); }
-a[href="#bkt"]:after    { .bg-pos(@teams-width * 6, @teams-height); }
-a[href="#fl"]:after     { .bg-pos(@teams-width * 6, @teams-height * 2); }
-a[href="#hka"]:after    { .bg-pos(@teams-width * 6, @teams-height * 3); }
-a[href="#ipt"]:after    { .bg-pos(@teams-width * 6, @teams-height * 4); }
-a[href="#is"]:after     { .bg-pos(@teams-width * 6, @teams-height * 5); }
-a[href="#klh"]:after    { .bg-pos(@teams-width * 6, @teams-height * 6); }
-a[href="#mle"]:after    { .bg-pos(@teams-width * 6, @teams-height * 7); }
-a[href="#saj"]:after    { .bg-pos(@teams-width * 6, @teams-height * 8); }
-a[href="#sf5"]:after    { .bg-pos(@teams-width * 6, @teams-height * 9); }
-a[href="#sgs"]:after    { .bg-pos(@teams-width * 6, @teams-height * 10); }
-a[href="#tinf"]:after   { .bg-pos(@teams-width * 6, @teams-height * 11); }
-a[href="#tpa"]:after    { .bg-pos(@teams-width * 6, @teams-height * 12); }
-a[href="#tps"]:after    { .bg-pos(@teams-width * 6, @teams-height * 13); }  
-a[href="#yoefw"]:after  { .bg-pos(@teams-width * 6, @teams-height * 14); }
+a[href="#ahq"]:after    { .bg-pos(@teams-width * 5, 0); }
+a[href="#ahqF"]:after   { .bg-pos(@teams-width * 5, @teams-height); }
+a[href="#bkt"]:after    { .bg-pos(@teams-width * 5, @teams-height * 2); }
+a[href="#fl"]:after     { .bg-pos(@teams-width * 5, @teams-height * 3); }
+a[href="#hka"]:after    { .bg-pos(@teams-width * 5, @teams-height * 4); }
+a[href="#ipt"]:after    { .bg-pos(@teams-width * 5, @teams-height * 5); }
+a[href="#is"]:after,
+a[href="#isl"]:after    { .bg-pos(@teams-width * 5, @teams-height * 6); }
+a[href="#isr"]:after    { .bg-pos(@teams-width * 5, @teams-height * 7); }
+a[href="#klh"]:after    { .bg-pos(@teams-width * 5, @teams-height * 8); }
+a[href="#machi"]:after  { .bg-pos(@teams-width * 5, @teams-height * 9); }
+a[href="#mle"]:after    { .bg-pos(@teams-width * 5, @teams-height * 10); }
+a[href="#saj"]:after    { .bg-pos(@teams-width * 5, @teams-height * 11); }
+a[href="#sf5"]:after    { .bg-pos(@teams-width * 5, @teams-height * 12); }
+a[href="#sgs"]:after    { .bg-pos(@teams-width * 5, @teams-height * 13); }
+a[href="#tpa"]:after    { .bg-pos(@teams-width * 5, @teams-height * 14); }
+a[href="#tps"]:after    { .bg-pos(@teams-width * 5, @teams-height * 15); }  
+a[href="#war"]:after    { .bg-pos(@teams-width * 5, @teams-height * 16); }
+a[href="#yoefw"]:after  { .bg-pos(@teams-width * 5, @teams-height * 17); }
+
+
+/* CBLOL (Brazil) */
+a[href="#awp"]:after                        { .bg-pos(@teams-width * 6, 0); }
+a[href="#cnb"]:after                        { .bg-pos(@teams-width * 6, @teams-height); }
+a[href="#kbm"]:after                        { .bg-pos(@teams-width * 6, @teams-height * 2); }
+a[href="#kst"]:after                        { .bg-pos(@teams-width * 6, @teams-height * 3); }
+a[href="#pain"]:after, a[href="#png"]:after { .bg-pos(@teams-width * 6, @teams-height * 4); }
+a[href="#unt"]:after                        { .bg-pos(@teams-width * 6, @teams-height * 5); }
 
 
 /* MCS */
@@ -286,8 +311,7 @@ a[href="#sword"]:after { .bg-pos(@teams-width * 10, @teams-height * 4); }
 
 /* Unsorted */
 a[href="#esuba"]:after    { .bg-pos(@teams-width * 11, 0); }
-a[href="#pain"]:after     { .bg-pos(@teams-width * 11, @teams-height); }
-a[href="#roughnex"]:after { .bg-pos(@teams-width * 11, @teams-height * 3); }
+a[href="#roughnex"]:after { .bg-pos(@teams-width * 11, @teams-height * 2); }
 
 
 /* Allstars */

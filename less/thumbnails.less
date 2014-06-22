@@ -3,6 +3,8 @@
   &[href*="2_korean"],
   &[href*="2_european"],
   &[href*="2_south"],
+  &[href*="allstar_shangai"],
+  &[href*="allstar_paris"],
   &[href*="android"],
   &[href*="dreamhack"],
   &[href*="eu_chall"],
@@ -11,7 +13,6 @@
   &[href*="gfinity"],
   &[href*="gpl"],
   &[href*="iem"],
-  &[href*="iem_cologne"],
   &[href*="ign"],
   &[href*="ipl"],
   &[href*="lcs"],
@@ -35,7 +36,6 @@
   &[href*="pgs"],
   &[href*="regionals"],
   &[href*="scan"],
-  &[href*="shangai"],
   &[href*="starswar"],
   &[href*="tales"],
   &[href*="world"],
@@ -43,36 +43,37 @@
     .thumbnails;
   }
 
-  &[href*="shangai"]      { .thumbnails-allstar; }
-  &[href*="android"]      { .thumbnails-android; }
-  &[href*="monster"]      { .thumbnails-black-monster-cup; }
-  &[href*="eu_chall"]     { .thumbnails-cs-eu; }
-  &[href*="na_chall"]     { .thumbnails-cs-na; }
-  &[href*="esl"]          { .thumbnails-esl; }
-  &[href*="faceit"]       { .thumbnails-faceit; }
-  &[href*="gfinity"]      { .thumbnails-gfinity; }
-  &[href*="gpl"]          { .thumbnails-gpl; }
+  &[href*="allstar_shangai"] { .thumbnails-allstar-shanghai; }
+  &[href*="allstar_paris"]   { .thumbnails-allstar-paris; }
+  &[href*="android"]         { .thumbnails-android; }
+  &[href*="ios"]         { .thumbnails-apple; }
+  &[href*="monster"]         { .thumbnails-black-monster-cup; }
+  &[href*="eu_chall"]        { .thumbnails-cs-eu; }
+  &[href*="na_chall"]        { .thumbnails-cs-na; }
+  &[href*="dreamhack"]       { .thumbnails-dreamhack; }
+  &[href*="esl"]             { .thumbnails-esl; }
+  &[href*="faceit"]          { .thumbnails-faceit; }
+  &[href*="gfinity"]         { .thumbnails-gfinity; }
+  &[href*="gpl"]             { .thumbnails-gpl; }
   
   &[href*="ign"],
   &[href*="ipl"] {
     .thumbnails-ign;
   }
-  &[href*="lcs"]        { .thumbnails-lcs; }
-  &[href*="lcs_europe"] { .thumbnails-lcs-eu; }
-  &[href*="lcs_north"]  { .thumbnails-lcs-na; }
-  &[href*="lone"]       { .thumbnails-lone-star-clash; }
-  &[href*="lpl"]        { .thumbnails-lpl; }
-  &[href*="mlg"]        { .thumbnails-mlg; }
-  &[href*="mobafire"]   { .thumbnails-mobafire; }
-  &[href*="nacl"]       { .thumbnails-nacl; }
-  &[href*="nlb_spring"] { .thumbnails-nlb; }
+  
+  &[href*="lcs"]               { .thumbnails-lcs; }
+  &[href*="lcs_eu"]            { .thumbnails-lcs-eu; }
+  &[href*="lcs_na"],
+  &[href*="lcs_north"]         { .thumbnails-lcs-na; }
+  &[href*="lone_star_clash_2"] { .thumbnails-lone-star-clash-2; }
+  &[href*="lone_star_clash_3"] { .thumbnails-lone-star-clash-3; }
+  &[href*="lpl"]               { .thumbnails-lpl; }
+  &[href*="mlg"]               { .thumbnails-mlg; }
+  &[href*="mobafire"]          { .thumbnails-mobafire; }
+  &[href*="nacl"]              { .thumbnails-nacl; }
+  &[href*="nlb_spring"]        { .thumbnails-nlb; }
   &[href*="pandoratv"],
-  &[href*="ogn_champ"],
-  &[href*="ogn_hot"],
-  &[href*="ogn_ol"],
-  &[href*="ogn_lol"] {
-    .thumbnails-ogn;
-  }
+  &[href*="ogn"]        { .thumbnails-ogn; }
   &[href*="masters"]    { .thumbnails-ogn-masters; }
   &[href*="pgs"]        { .thumbnails-pgs; }
   &[href*="scan"]       { .thumbnails-scan; }

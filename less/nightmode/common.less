@@ -100,6 +100,15 @@
     color: #080808;
     a { color: #55c!important; }
   }
+  
+  // Hides video expandos in posts
+  .usertext-body .md {
+    .RESdupeimg, .expando-button.video, 
+    .expando-button.video.collapsed,
+    .expando-button.video.expanded {
+      display: none!important;
+    }
+  }
 
   // Hides downvote arrow on posts only; still accessible on comments
   // Also replaces default RES nightmode arrow sprites

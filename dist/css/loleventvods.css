@@ -190,6 +190,13 @@ a[href^="#"] + .keyNavAnnotation,
 .md table tr:hover {
   background-color: #bdff8b;
 }
+/* Hides video expandos in posts */
+.usertext-body .md .RESdupeimg,
+.usertext-body .md .expando-button.video,
+.usertext-body .md .expando-button.video.collapsed,
+.usertext-body .md .expando-button.video.expanded {
+  display: none!important;
+}
 /* Hides downvote arrow on posts only; still accessible on comments*/
 .arrow.down {
   visibility: hidden;
@@ -243,10 +250,10 @@ div.collapsed > a.expand:first-child + em + time + em + a.expand {
   min-width: 70px;
 }
 /* Tournament icons in header */
-.side a[href="/r/LoLeventVoDs/comments/1z3oki/"],
-.side a[href="/r/LoLeventVoDs/comments/1z9uoh/"],
+.side a[href="/r/LoLeventVoDs/comments/261b2g/"],
+.side a[href="/r/LoLeventVoDs/comments/26bj3k/"],
 .side a[href="/r/LoLeventVoDs/comments/20e96p/"],
-.side a[href="/r/LoLeventVoDs/comments/207wud/"] {
+.side a[href="/r/LoLeventVoDs/comments/28l2r3/"] {
   background: url(%%headers%%) no-repeat top left;
   height: 125px;
   display: block;
@@ -254,21 +261,21 @@ div.collapsed > a.expand:first-child + em + time + em + a.expand {
   top: 19px;
   z-index: 9999;
 }
-.side a[href="/r/LoLeventVoDs/comments/1z3oki/"] {
+.side a[href="/r/LoLeventVoDs/comments/261b2g/"] {
   right: 640px;
   background-position: 0 0;
   width: 150px;
 }
-.side a[href="/r/LoLeventVoDs/comments/1z3oki/"]:hover {
+.side a[href="/r/LoLeventVoDs/comments/261b2g/"]:hover {
   background-position: 0 -125px;
   width: 150px;
 }
-.side a[href="/r/LoLeventVoDs/comments/1z9uoh/"] {
+.side a[href="/r/LoLeventVoDs/comments/26bj3k/"] {
   right: 0;
   background-position: -380px 0;
   width: 150px;
 }
-.side a[href="/r/LoLeventVoDs/comments/1z9uoh/"]:hover {
+.side a[href="/r/LoLeventVoDs/comments/26bj3k/"]:hover {
   background-position: -380px -125px;
   width: 150px;
 }
@@ -281,12 +288,12 @@ div.collapsed > a.expand:first-child + em + time + em + a.expand {
   background-position: -150px -125px;
   width: 230px;
 }
-.side a[href="/r/LoLeventVoDs/comments/207wud/"] {
+.side a[href="/r/LoLeventVoDs/comments/28l2r3/"] {
   right: 145px;
   background-position: -530px 0;
   width: 255px;
 }
-.side a[href="/r/LoLeventVoDs/comments/207wud/"]:hover {
+.side a[href="/r/LoLeventVoDs/comments/28l2r3/"]:hover {
   background-position: -530px -125px;
   width: 255px;
 }
@@ -821,6 +828,8 @@ a[href="#sweden"]:after {
 .thing .thumbnail[href*="2_korean"],
 .thing .thumbnail[href*="2_european"],
 .thing .thumbnail[href*="2_south"],
+.thing .thumbnail[href*="allstar_shangai"],
+.thing .thumbnail[href*="allstar_paris"],
 .thing .thumbnail[href*="android"],
 .thing .thumbnail[href*="dreamhack"],
 .thing .thumbnail[href*="eu_chall"],
@@ -829,7 +838,6 @@ a[href="#sweden"]:after {
 .thing .thumbnail[href*="gfinity"],
 .thing .thumbnail[href*="gpl"],
 .thing .thumbnail[href*="iem"],
-.thing .thumbnail[href*="iem_cologne"],
 .thing .thumbnail[href*="ign"],
 .thing .thumbnail[href*="ipl"],
 .thing .thumbnail[href*="lcs"],
@@ -853,7 +861,6 @@ a[href="#sweden"]:after {
 .thing .thumbnail[href*="pgs"],
 .thing .thumbnail[href*="regionals"],
 .thing .thumbnail[href*="scan"],
-.thing .thumbnail[href*="shangai"],
 .thing .thumbnail[href*="starswar"],
 .thing .thumbnail[href*="tales"],
 .thing .thumbnail[href*="world"],
@@ -863,85 +870,95 @@ a[href="#sweden"]:after {
   height: 50px;
   padding: 0;
 }
-.thing .thumbnail[href*="shangai"] {
+.thing .thumbnail[href*="allstar_shangai"] {
   background-position: 0 0;
 }
-.thing .thumbnail[href*="android"] {
+.thing .thumbnail[href*="allstar_paris"] {
   background-position: 0 -50px;
 }
-.thing .thumbnail[href*="monster"] {
+.thing .thumbnail[href*="android"] {
   background-position: 0 -100px;
 }
-.thing .thumbnail[href*="eu_chall"] {
+.thing .thumbnail[href*="ios"] {
   background-position: 0 -150px;
 }
-.thing .thumbnail[href*="na_chall"] {
+.thing .thumbnail[href*="monster"] {
   background-position: 0 -200px;
 }
-.thing .thumbnail[href*="esl"] {
+.thing .thumbnail[href*="eu_chall"] {
   background-position: 0 -250px;
 }
-.thing .thumbnail[href*="faceit"] {
+.thing .thumbnail[href*="na_chall"] {
   background-position: 0 -300px;
 }
-.thing .thumbnail[href*="gfinity"] {
+.thing .thumbnail[href*="dreamhack"] {
   background-position: 0 -350px;
 }
-.thing .thumbnail[href*="gpl"] {
+.thing .thumbnail[href*="esl"] {
   background-position: 0 -400px;
+}
+.thing .thumbnail[href*="faceit"] {
+  background-position: 0 -450px;
+}
+.thing .thumbnail[href*="gfinity"] {
+  background-position: 0 -500px;
+}
+.thing .thumbnail[href*="gpl"] {
+  background-position: 0 -550px;
 }
 .thing .thumbnail[href*="ign"],
 .thing .thumbnail[href*="ipl"] {
-  background-position: 0 -500px;
-}
-.thing .thumbnail[href*="lcs"] {
   background-position: 0 -650px;
 }
-.thing .thumbnail[href*="lcs_europe"] {
-  background-position: 0 -550px;
-}
-.thing .thumbnail[href*="lcs_north"] {
-  background-position: 0 -600px;
-}
-.thing .thumbnail[href*="lone"] {
-  background-position: 0 -700px;
-}
-.thing .thumbnail[href*="lpl"] {
-  background-position: 0 -750px;
-}
-.thing .thumbnail[href*="mlg"] {
+.thing .thumbnail[href*="lcs"] {
   background-position: 0 -800px;
 }
-.thing .thumbnail[href*="mobafire"] {
+.thing .thumbnail[href*="lcs_eu"] {
+  background-position: 0 -700px;
+}
+.thing .thumbnail[href*="lcs_na"],
+.thing .thumbnail[href*="lcs_north"] {
+  background-position: 0 -750px;
+}
+.thing .thumbnail[href*="lone_star_clash_2"] {
   background-position: 0 -850px;
 }
-.thing .thumbnail[href*="nacl"] {
+.thing .thumbnail[href*="lone_star_clash_3"] {
   background-position: 0 -900px;
 }
-.thing .thumbnail[href*="nlb_spring"] {
+.thing .thumbnail[href*="lpl"] {
   background-position: 0 -950px;
 }
-.thing .thumbnail[href*="pandoratv"],
-.thing .thumbnail[href*="ogn_champ"],
-.thing .thumbnail[href*="ogn_hot"],
-.thing .thumbnail[href*="ogn_ol"],
-.thing .thumbnail[href*="ogn_lol"] {
+.thing .thumbnail[href*="mlg"] {
   background-position: 0 -1000px;
 }
-.thing .thumbnail[href*="masters"] {
+.thing .thumbnail[href*="mobafire"] {
   background-position: 0 -1050px;
 }
-.thing .thumbnail[href*="pgs"] {
+.thing .thumbnail[href*="nacl"] {
   background-position: 0 -1100px;
 }
-.thing .thumbnail[href*="scan"] {
+.thing .thumbnail[href*="nlb_spring"] {
   background-position: 0 -1150px;
 }
-.thing .thumbnail[href*="starswar"] {
+.thing .thumbnail[href*="pandoratv"],
+.thing .thumbnail[href*="ogn"] {
   background-position: 0 -1200px;
 }
-.thing .thumbnail[href*="tales"] {
+.thing .thumbnail[href*="masters"] {
   background-position: 0 -1250px;
+}
+.thing .thumbnail[href*="pgs"] {
+  background-position: 0 -1300px;
+}
+.thing .thumbnail[href*="scan"] {
+  background-position: 0 -1350px;
+}
+.thing .thumbnail[href*="starswar"] {
+  background-position: 0 -1400px;
+}
+.thing .thumbnail[href*="tales"] {
+  background-position: 0 -1450px;
 }
 .thing .thumbnail[href*="regionals"],
 .thing .thumbnail[href*="2_championship"],
@@ -950,14 +967,14 @@ a[href="#sweden"]:after {
 .thing .thumbnail[href*="2_european"],
 .thing .thumbnail[href*="2_south"],
 .thing .thumbnail[href*="na_regionals_com"] {
-  background-position: 0 -1300px;
+  background-position: 0 -1500px;
 }
 .thing .thumbnail[href*="world"] {
-  background-position: 0 -1350px;
+  background-position: 0 -1550px;
 }
 .thing .thumbnail[href*="iem_cologne"],
 .thing .thumbnail[href*="iem"] {
-  background-position: 0 -450px;
+  background-position: 0 -600px;
 }
 a[href^="#a"]:after,
 a[href^="#b"]:after,
@@ -1085,21 +1102,24 @@ a[href$="/wiki/eg"]:before {
 a[href="#ggu"]:after {
   background-position: -36px -140px;
 }
+a[href="#lmq"]:after {
+  background-position: -36px -160px;
+}
 a[href="#marn"]:after,
 a[href="#mrn"]:after {
-  background-position: -36px -160px;
+  background-position: -36px -180px;
 }
 a[href="#tsm"]:after,
 a[href$="/wiki/tsm"]:before {
-  background-position: -36px -180px;
+  background-position: -36px -200px;
 }
 a[href="#ves"]:after {
-  background-position: -36px -200px;
+  background-position: -36px -220px;
 }
 a[href="#vul"]:after,
 a[href="#xdg"]:after,
 a[href$="/wiki/vul"]:before {
-  background-position: -36px -220px;
+  background-position: -36px -240px;
 }
 /* LCS Promos EU */
 a[href="#mouz"]:after {
@@ -1113,154 +1133,192 @@ a[href="#wizards"]:after {
 }
 /* LCS Promos NA */
 a[href="#azure"]:after {
-  background-position: -108px 0;
+  background-position: -72px -60px;
 }
 a[href="#cog"]:after {
-  background-position: -108px -20px;
+  background-position: -72px -80px;
 }
 a[href="#dbl"]:after {
-  background-position: -108px -40px;
+  background-position: -72px -100px;
 }
 a[href="#fid"]:after {
-  background-position: -108px -60px;
+  background-position: -72px -120px;
 }
 a[href="#qg"]:after,
 a[href="#qtc"]:after {
-  background-position: -108px -80px;
+  background-position: -72px -140px;
 }
 a[href="#tap"]:after {
-  background-position: -108px -100px;
+  background-position: -72px -160px;
 }
 a[href="#ts"]:after {
-  background-position: -108px -120px;
+  background-position: -72px -180px;
 }
 a[href="#tsb"]:after {
-  background-position: -108px -140px;
+  background-position: -72px -200px;
 }
 /* OGN */
+a[href="#blc"]:after,
+a[href="#bm"]:after {
+  background-position: -108px 0;
+}
 a[href="#cj"]:after {
-  background-position: -144px 0;
+  background-position: -108px -20px;
 }
 a[href="#cjb"]:after {
-  background-position: -144px -20px;
+  background-position: -108px -40px;
 }
 a[href="#cjf"]:after {
-  background-position: -144px -40px;
+  background-position: -108px -60px;
 }
 a[href="#im"]:after {
-  background-position: -144px -60px;
+  background-position: -108px -80px;
 }
+a[href="#jinair"]:after,
 a[href="#jas"]:after,
-a[href="#jaf"]:after,
-a[href="#jinair"]:after {
-  background-position: -144px -80px;
+a[href="#jaf"]:after {
+  background-position: -108px -100px;
 }
+a[href="#kt"]:after,
 a[href="#kta"]:after,
-a[href="#ktb"]:after,
-a[href="#kt"]:after {
-  background-position: -144px -100px;
+a[href="#ktb"]:after {
+  background-position: -108px -120px;
 }
 a[href="#midas"]:after {
-  background-position: -144px -120px;
+  background-position: -108px -140px;
+}
+a[href="#mkz"]:after {
+  background-position: -108px -160px;
 }
 a[href="#najin"]:after {
-  background-position: -144px -140px;
+  background-position: -108px -180px;
 }
 a[href="#nsw"]:after,
 a[href="#njbs"]:after {
-  background-position: -144px -160px;
+  background-position: -108px -200px;
 }
 a[href="#nsh"]:after,
 a[href="#njws"]:after {
-  background-position: -144px -180px;
+  background-position: -108px -220px;
 }
 a[href="#prime"]:after {
-  background-position: -144px -200px;
+  background-position: -108px -240px;
 }
 a[href="#ozone"]:after,
 a[href="#sso"]:after,
+a[href="#ssw"]:after,
 a[href="#ssb"]:after,
 a[href="#ssg"]:after {
-  background-position: -144px -220px;
+  background-position: -108px -260px;
 }
 a[href="#skt"]:after {
-  background-position: -144px -240px;
+  background-position: -108px -280px;
 }
 a[href="#xb"]:after,
 a[href="#blast"]:after {
-  background-position: -144px -260px;
+  background-position: -108px -300px;
 }
 a[href="#xs"]:after,
 a[href="#storm"]:after {
-  background-position: -144px -280px;
+  background-position: -108px -320px;
 }
 /* LPL */
 a[href="#edg"]:after {
-  background-position: -180px 0;
+  background-position: -144px 0;
 }
 a[href="#ephk"]:after {
-  background-position: -180px -20px;
+  background-position: -144px -20px;
 }
 a[href="#ig"]:after {
-  background-position: -180px -40px;
+  background-position: -144px -40px;
 }
 a[href="#lgd"]:after {
-  background-position: -180px -60px;
+  background-position: -144px -60px;
 }
 a[href="#omg"]:after {
-  background-position: -180px -80px;
+  background-position: -144px -80px;
 }
 a[href="#pe"]:after {
-  background-position: -180px -100px;
+  background-position: -144px -100px;
 }
 a[href="#we"]:after {
-  background-position: -180px -120px;
+  background-position: -144px -120px;
 }
 /* GPL */
 a[href="#ahq"]:after {
-  background-position: -216px 0;
+  background-position: -180px 0;
+}
+a[href="#ahqF"]:after {
+  background-position: -180px -20px;
 }
 a[href="#bkt"]:after {
-  background-position: -216px -20px;
+  background-position: -180px -40px;
 }
 a[href="#fl"]:after {
-  background-position: -216px -40px;
+  background-position: -180px -60px;
 }
 a[href="#hka"]:after {
-  background-position: -216px -60px;
+  background-position: -180px -80px;
 }
 a[href="#ipt"]:after {
-  background-position: -216px -80px;
+  background-position: -180px -100px;
 }
-a[href="#is"]:after {
-  background-position: -216px -100px;
+a[href="#is"]:after,
+a[href="#isl"]:after {
+  background-position: -180px -120px;
+}
+a[href="#isr"]:after {
+  background-position: -180px -140px;
 }
 a[href="#klh"]:after {
-  background-position: -216px -120px;
+  background-position: -180px -160px;
+}
+a[href="#machi"]:after {
+  background-position: -180px -180px;
 }
 a[href="#mle"]:after {
-  background-position: -216px -140px;
+  background-position: -180px -200px;
 }
 a[href="#saj"]:after {
-  background-position: -216px -160px;
+  background-position: -180px -220px;
 }
 a[href="#sf5"]:after {
-  background-position: -216px -180px;
+  background-position: -180px -240px;
 }
 a[href="#sgs"]:after {
-  background-position: -216px -200px;
-}
-a[href="#tinf"]:after {
-  background-position: -216px -220px;
+  background-position: -180px -260px;
 }
 a[href="#tpa"]:after {
-  background-position: -216px -240px;
+  background-position: -180px -280px;
 }
 a[href="#tps"]:after {
-  background-position: -216px -260px;
+  background-position: -180px -300px;
+}
+a[href="#war"]:after {
+  background-position: -180px -320px;
 }
 a[href="#yoefw"]:after {
-  background-position: -216px -280px;
+  background-position: -180px -340px;
+}
+/* CBLOL (Brazil) */
+a[href="#awp"]:after {
+  background-position: -216px 0;
+}
+a[href="#cnb"]:after {
+  background-position: -216px -20px;
+}
+a[href="#kbm"]:after {
+  background-position: -216px -40px;
+}
+a[href="#kst"]:after {
+  background-position: -216px -60px;
+}
+a[href="#pain"]:after,
+a[href="#png"]:after {
+  background-position: -216px -80px;
+}
+a[href="#unt"]:after {
+  background-position: -216px -100px;
 }
 /* MCS */
 a[href="#aware"]:after,
@@ -1349,11 +1407,8 @@ a[href="#sword"]:after {
 a[href="#esuba"]:after {
   background-position: -396px 0;
 }
-a[href="#pain"]:after {
-  background-position: -396px -20px;
-}
 a[href="#roughnex"]:after {
-  background-position: -396px -60px;
+  background-position: -396px -40px;
 }
 /* Allstars */
 a[href="#america"]:after,
@@ -1812,6 +1867,16 @@ html[lang="dd"] .md table tr:hover {
 html[lang="dd"] .md table tr:hover a {
   color: #55c!important;
 }
+.res-nightmode .usertext-body .md .RESdupeimg,
+html[lang="dd"] .usertext-body .md .RESdupeimg,
+.res-nightmode .usertext-body .md .expando-button.video,
+html[lang="dd"] .usertext-body .md .expando-button.video,
+.res-nightmode .usertext-body .md .expando-button.video.collapsed,
+html[lang="dd"] .usertext-body .md .expando-button.video.collapsed,
+.res-nightmode .usertext-body .md .expando-button.video.expanded,
+html[lang="dd"] .usertext-body .md .expando-button.video.expanded {
+  display: none!important;
+}
 .res-nightmode .arrow,
 html[lang="dd"] .arrow,
 .res-nightmode .arrow.up,
@@ -2229,6 +2294,9 @@ html[lang="dd"] .RES-keyNav-activeElement .tagline .stickied-tagline {
 .res-nightmode .side .titlebox .usertext-body ul {
   background-color: #080808!important;
 }
+.res-nightmode .RES-keyNav-activeElement .usertext .md a:visited[href*="lol.eventvods.com"] {
+  color: #8ad;
+}
 .res-nightmode .side .spacer > #search input,
 html[lang="dd"] .side .spacer > #search input {
   background-color: #444;
@@ -2267,14 +2335,20 @@ html[lang="dd"] .sidebox .morelink a:hover:before,
 html[lang="dd"] .submit .morelink a:hover:before {
   color: #fff;
 }
+.res-nightmode .sidebox .spacer,
+html[lang="dd"] .sidebox .spacer {
+  background-color: #080808;
+  color: #ccc!important;
+}
 .res-nightmode .titlebox .usertext .md > h1,
 html[lang="dd"] .titlebox .usertext .md > h1 {
   background-position: 0px -68px;
   color: #000 !important;
+  border-color: #37e !important;
 }
 .res-nightmode .titlebox .usertext .md > h1:after,
 html[lang="dd"] .titlebox .usertext .md > h1:after {
-  border-color: transparent #ccc transparent transparent !important;
+  border-color: transparent #37e transparent transparent !important;
 }
 .res-nightmode .thing .thumbnail[href*="2_championship"],
 html[lang="dd"] .thing .thumbnail[href*="2_championship"],
@@ -2284,6 +2358,10 @@ html[lang="dd"] .thing .thumbnail[href*="2_korean"],
 html[lang="dd"] .thing .thumbnail[href*="2_european"],
 .res-nightmode .thing .thumbnail[href*="2_south"],
 html[lang="dd"] .thing .thumbnail[href*="2_south"],
+.res-nightmode .thing .thumbnail[href*="allstar_paris"],
+html[lang="dd"] .thing .thumbnail[href*="allstar_paris"],
+.res-nightmode .thing .thumbnail[href*="allstar_shangai"],
+html[lang="dd"] .thing .thumbnail[href*="allstar_shangai"],
 .res-nightmode .thing .thumbnail[href*="android"],
 html[lang="dd"] .thing .thumbnail[href*="android"],
 .res-nightmode .thing .thumbnail[href*="dreamhack"],
@@ -2348,8 +2426,6 @@ html[lang="dd"] .thing .thumbnail[href*="pgs"],
 html[lang="dd"] .thing .thumbnail[href*="regionals"],
 .res-nightmode .thing .thumbnail[href*="scan"],
 html[lang="dd"] .thing .thumbnail[href*="scan"],
-.res-nightmode .thing .thumbnail[href*="shangai"],
-html[lang="dd"] .thing .thumbnail[href*="shangai"],
 .res-nightmode .thing .thumbnail[href*="starswar"],
 html[lang="dd"] .thing .thumbnail[href*="starswar"],
 .res-nightmode .thing .thumbnail[href*="tales"],

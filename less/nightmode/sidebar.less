@@ -10,6 +10,9 @@
     border-radius: 5px!important;
   }
   .side .titlebox .usertext-body ul { background-color: #080808!important; }
+  .RES-keyNav-activeElement .usertext .md a:visited[href*="lol.eventvods.com"] {
+    color: #8ad;
+  }
 }
 
 .res-nightmode, html[lang="dd"] {
@@ -35,11 +38,18 @@
       &:hover:before { color: #fff; }
     }
   }
+  
+  // Change non-approved submitter message coloring
+  .sidebox .spacer {
+    background-color: #080808;
+    color: #ccc!important;
+  }
 
   // Sidebar headings
   .titlebox .usertext .md > h1 {
     background-position: 0px -68px;
     color: #000 !important;
-    &:after { border-color: transparent #ccc transparent transparent !important; }
+    border-color: #37e !important;
+    &:after { border-color: transparent #37e transparent transparent !important; }
   }
 }

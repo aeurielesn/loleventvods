@@ -176,6 +176,16 @@ a[href^="#"] + .keyNavAnnotation,
 /* ROW HOVER COLOR */
 .md table tr:hover { background-color: #bdff8b; }
 
+
+/* Hides video expandos in posts */
+.usertext-body .md {
+  .RESdupeimg, .expando-button.video, 
+  .expando-button.video.collapsed,
+  .expando-button.video.expanded {
+    display: none!important;
+  }
+}
+
 /* Hides downvote arrow on posts only; still accessible on comments*/
 .arrow.down { visibility: hidden; display: none; }
 .comment .arrow.down { visibility: visible; display: block; }
@@ -224,11 +234,14 @@ div.collapsed > a.expand:first-child + em + time {
 
 /* Tournament icons in header */
 
+
+
+
 .side {
-  a[href="/r/LoLeventVoDs/comments/1z3oki/"],
-  a[href="/r/LoLeventVoDs/comments/1z9uoh/"],
+  a[href="/r/LoLeventVoDs/comments/261b2g/"],
+  a[href="/r/LoLeventVoDs/comments/26bj3k/"],
   a[href="/r/LoLeventVoDs/comments/20e96p/"],
-  a[href="/r/LoLeventVoDs/comments/207wud/"] {
+  a[href="/r/LoLeventVoDs/comments/28l2r3/"] {
     .headers();
     display: block;
     position: absolute;
@@ -236,12 +249,12 @@ div.collapsed > a.expand:first-child + em + time {
     z-index: 9999;
   }
 
-  a[href="/r/LoLeventVoDs/comments/1z3oki/"] {
+  a[href="/r/LoLeventVoDs/comments/261b2g/"] {
     right: 640px;
     .headers-eu-off();
     &:hover { .headers-eu-on(); }
   }
-  a[href="/r/LoLeventVoDs/comments/1z9uoh/"] {
+  a[href="/r/LoLeventVoDs/comments/26bj3k/"] {
     right: 0;
     .headers-na-off();
     &:hover { .headers-na-on(); }
@@ -251,7 +264,7 @@ div.collapsed > a.expand:first-child + em + time {
     .headers-iem-off();
     &:hover { .headers-iem-on(); }
   }
-  a[href="/r/LoLeventVoDs/comments/207wud/"] {
+  a[href="/r/LoLeventVoDs/comments/28l2r3/"] {
     right: 145px;
     .headers-ogn-off();
     &:hover { .headers-ogn-on(); }
