@@ -250,7 +250,7 @@ div.collapsed > a.expand:first-child + em + time + em + a.expand {
   min-width: 70px;
 }
 /* Tournament icons in header */
-.side a[href="/r/LoLeventVoDs/comments/261b2g/"],
+.side a[href="/r/LoLeventVoDs/comments/29klwc/"],
 .side a[href="/r/LoLeventVoDs/comments/26bj3k/"],
 .side a[href="/r/LoLeventVoDs/comments/20e96p/"],
 .side a[href="/r/LoLeventVoDs/comments/28l2r3/"] {
@@ -261,12 +261,12 @@ div.collapsed > a.expand:first-child + em + time + em + a.expand {
   top: 19px;
   z-index: 9999;
 }
-.side a[href="/r/LoLeventVoDs/comments/261b2g/"] {
+.side a[href="/r/LoLeventVoDs/comments/29klwc/"] {
   right: 640px;
   background-position: 0 0;
   width: 150px;
 }
-.side a[href="/r/LoLeventVoDs/comments/261b2g/"]:hover {
+.side a[href="/r/LoLeventVoDs/comments/29klwc/"]:hover {
   background-position: 0 -125px;
   width: 150px;
 }
@@ -1241,8 +1241,17 @@ a[href="#omg"]:after {
 a[href="#pe"]:after {
   background-position: -144px -100px;
 }
-a[href="#we"]:after {
+a[href="#sh"]:after {
   background-position: -144px -120px;
+}
+a[href="#we"]:after {
+  background-position: -144px -140px;
+}
+a[href="#wea"]:after {
+  background-position: -144px -160px;
+}
+a[href="#yg"]:after {
+  background-position: -144px -180px;
 }
 /* GPL */
 a[href="#ahq"]:after {
@@ -1264,10 +1273,12 @@ a[href="#ipt"]:after {
   background-position: -180px -100px;
 }
 a[href="#is"]:after,
-a[href="#isl"]:after {
+a[href="#isl"]:after,
+a[href="#igl"]:after {
   background-position: -180px -120px;
 }
-a[href="#isr"]:after {
+a[href="#isr"]:after,
+a[href="#igr"]:after {
   background-position: -180px -140px;
 }
 a[href="#klh"]:after {
