@@ -246,6 +246,14 @@ div.collapsed > a.expand:first-child + em + time + em + a.expand {
   font-size: 11px;
   font-weight: bold;
 }
+.commentarea .usertext textarea {
+  background-image: url(%%commentrules%%);
+  background-repeat: no-repeat;
+  border: 1px solid #ccc;
+}
+.commentarea .usertext textarea:focus {
+  background-position: -504px -104px;
+}
 /* This consider that the Team X columns in
  * the matches description are left and right aligned
  */
@@ -321,7 +329,8 @@ div.collapsed > a.expand:first-child + em + time + em + a.expand {
   padding: 4px 13px 4px 4px;
   line-height: 26px;
   margin-left: 35px;
-  margin-top: 0!important;
+  margin-top: 0px!important;
+  text-decoration: none;
 }
 h6 a {
   color: #F2E972!important;
@@ -369,6 +378,32 @@ h6 a {
 }
 .side {
   margin: 36px 5px 0 5px;
+  width: 327px;
+  z-index: -100;
+}
+.side .md a[href$="#sidebar_img"] {
+  background-image: url(%%sidebar-promoimg%%);
+  display: inline-block;
+  height: 200px;
+  width: 325px;
+  text-indent: -9999px;
+  margin-left: -10px;
+}
+.side .md table {
+  width: 325px!important;
+  margin-left: -10px;
+  margin-right: 10px;
+}
+.side .md table td {
+  min-width: 30px!important;
+  text-align: center;
+}
+.side .md table td[align="right"] {
+  min-width: 80px!important;
+  text-align: right;
+}
+.side .md table td[align="center"] {
+  width: 95px;
 }
 .side .md p > em {
   display: inline-block;
@@ -395,21 +430,108 @@ h6 a {
   width: 75px;
 }
 .side a[href="http://www.reddit.com/r/loleventvods/"]:hover {
-  background-position: 0px -50px;
+  background-position: 0px -50px 0;
 }
 .side a[href="#2themes"] {
   margin-left: -5px;
   width: 130px;
-  background-position: -85px 0px;
+  background-position: -85px 0px 0;
   cursor: default;
 }
 .side a[href="http://dd.reddit.com/r/loleventvods/"] {
   margin-left: -5px;
   width: 75px;
-  background-position: -213px 0px;
+  background-position: -213px 0px 0;
 }
 .side a[href="http://dd.reddit.com/r/loleventvods/"]:hover {
-  background-position: -213px -50px;
+  background-position: -213px -50px 0;
+}
+.side .md h3 {
+  margin-bottom: 8px;
+}
+.side .md h3 + p + table {
+  display: none;
+}
+.side .md h3 + p:hover + table,
+.side .md h3 + p + table:hover {
+  display: table;
+}
+.side .md h3 + p {
+  position: absolute;
+  margin-top: -25px;
+  height: 30px;
+  width: 294px;
+}
+.side .md h3 + ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 3px;
+}
+.side .md table th {
+  background: #193064;
+  border: none;
+  border-right: 1px solid #193064;
+  padding: .2em;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  text-shadow: 1px 1px 0 #000;
+  font-size: 11px;
+}
+.side .usertext table {
+  width: 280px;
+  color: #0a5a36!important;
+  font-size: 11px;
+  -webkit-box-shadow: 1px 1px 1px #193064;
+  -moz-box-shadow: 1px 1px 1px #193064;
+  box-shadow: 1px 1px 1px #193064;
+  margin-top: 0;
+}
+.side .usertext table a {
+  color: #0a5a36;
+}
+.side .usertext table a:hover {
+  text-decoration: underline;
+}
+.side a[href="https://www.facebook.com/loleventvods"],
+.side a[href="https://www.twitter.com/loleventvods"],
+.side a[href="http://www.youtube.com/loleventvods"],
+.side a[href="https://play.google.com/store/apps/details?id=com.kox.zzreal"] {
+  display: inline-block;
+  background: url(%%sidebar%%) no-repeat;
+  width: 147px;
+  height: 49px;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.side a[href="https://www.facebook.com/loleventvods"]:hover,
+.side a[href="https://www.twitter.com/loleventvods"]:hover,
+.side a[href="http://www.youtube.com/loleventvods"]:hover,
+.side a[href="https://play.google.com/store/apps/details?id=com.kox.zzreal"]:hover {
+  opacity: 0.6;
+}
+.side a[href="https://www.facebook.com/loleventvods"] {
+  background-position: 0 0;
+  margin-left: 0px;
+  margin-top: 6px;
+}
+.side a[href="https://www.twitter.com/loleventvods"] {
+  background-position: 0 -49px;
+  margin-left: 6px;
+  margin-right: 0px;
+  margin-top: 6px;
+}
+.side a[href="http://www.youtube.com/loleventvods"] {
+  background-position: 0 -98px;
+  margin-left: 0px;
+  margin-top: 4px;
+}
+.side a[href="https://play.google.com/store/apps/details?id=com.kox.zzreal"] {
+  background-position: 0 -147px;
+  margin-left: 6px;
+  margin-right: 0px;
+  margin-top: 4px;
 }
 /* Modify submit a new post */
 .submit .morelink {
@@ -420,7 +542,7 @@ h6 a {
   border-radius: 5px;
 }
 .submit .morelink:hover {
-  background-position: 0px -36px;
+  background-position: 0px -36px 0;
 }
 .submit .morelink a {
   content: '';
@@ -509,7 +631,7 @@ h6 a {
   line-height: 26px;
   border: none;
   background: url(%%gray%%);
-  width: 287px;
+  width: 313px;
   color: #fff !important;
   padding: 4px 0 4px 20px;
   margin: 10px 13px 5px -18px;
@@ -529,50 +651,6 @@ h6 a {
   margin-left: -35px;
   margin-top: -10px;
 }
-/* drop down */
-.side {
-  z-index: -100;
-}
-.side .md h3 {
-  margin-bottom: 8px;
-}
-.side .md h3 + p + table {
-  display: none;
-}
-.side .md h3 + p:hover + table,
-.side .md h3 + p + table:hover {
-  display: table;
-}
-.side .md h3 + p {
-  position: absolute;
-  margin-top: -25px;
-  height: 30px;
-  width: 294px;
-}
-.side .md h3 + ul {
-  margin-top: 0;
-  margin-bottom: 0;
-  padding: 3px;
-}
-.md {
-  overflow: visible;
-}
-.titlebox h1,
-.titlebox .md h2,
-.titlebox .md h3,
-.titlebox .md h4,
-.titlebox h1 a,
-.titlebox .md h2 a,
-.titlebox .md h3 a,
-.titlebox .md h4 a {
-  color: #000;
-}
-.sidecontentbox a.helplink {
-  margin-right: 5px;
-}
-.icon-menu a {
-  background: transparent;
-}
 .titlebox .md h3 + ul {
   display: none;
 }
@@ -584,7 +662,7 @@ h6 a {
 .titlebox .md h3,
 .titlebox .md h4 {
   background-color: #ccc!important;
-  width: 280px;
+  width: 306px;
   line-height: 26px;
   font-weight: normal;
   font-size: 12px;
@@ -606,73 +684,28 @@ h6 a {
   content: "–";
   padding-right: 6px;
 }
-/* Table in sidebar */
-.side .md table th {
-  background: #193064;
-  border: none;
-  border-right: 1px solid #193064;
-  padding: .2em;
-  color: #fff;
-  font-weight: bold;
-  text-align: center;
-  text-shadow: 1px 1px 0 #000;
-  font-size: 11px;
+.md {
+  overflow: visible;
 }
-.side .usertext table {
-  width: 280px;
-  color: #0a5a36!important;
-  font-size: 11px;
-  -webkit-box-shadow: 1px 1px 1px #193064;
-  -moz-box-shadow: 1px 1px 1px #193064;
-  box-shadow: 1px 1px 1px #193064;
-  margin-top: 0;
+.titlebox h1,
+.titlebox .md h2,
+.titlebox .md h3,
+.titlebox .md h4,
+.titlebox h1 a,
+.titlebox .md h2 a,
+.titlebox .md h3 a,
+.titlebox .md h4 a {
+  color: #000;
 }
-.side .usertext table a {
-  color: #0a5a36;
+.sidecontentbox a.helplink {
+  margin-right: 5px;
 }
-.side .usertext table a:hover {
-  text-decoration: underline;
+.icon-menu a {
+  background: transparent;
 }
 /* hide "Create your own subreddit" button */
 div.sidebox.create {
   display: none;
-}
-/* sidebar social media icons */
-.side a[href="https://www.facebook.com/loleventvods"],
-.side a[href="https://www.twitter.com/loleventvods"],
-.side a[href="http://www.youtube.com/loleventvods"],
-.side a[href="https://play.google.com/store/apps/details?id=com.kox.zzreal"] {
-  display: inline-block;
-  background: url(%%sidebar%%) no-repeat;
-  width: 147px;
-  height: 49px;
-  text-indent: 100%;
-  white-space: nowrap;
-  overflow: hidden;
-}
-.side a[href="https://www.facebook.com/loleventvods"]:hover,
-.side a[href="https://www.twitter.com/loleventvods"]:hover,
-.side a[href="http://www.youtube.com/loleventvods"]:hover,
-.side a[href="https://play.google.com/store/apps/details?id=com.kox.zzreal"]:hover {
-  opacity: 0.6;
-}
-.side a[href="https://www.facebook.com/loleventvods"] {
-  background-position: 0 0;
-  margin-left: -10px;
-}
-.side a[href="https://www.twitter.com/loleventvods"] {
-  background-position: 0 -49px;
-  margin-left: 1px;
-  margin-right: -20px;
-}
-.side a[href="http://www.youtube.com/loleventvods"] {
-  background-position: 0 -98px;
-  margin-left: -10px;
-}
-.side a[href="https://play.google.com/store/apps/details?id=com.kox.zzreal"] {
-  background-position: 0 -147px;
-  margin-left: 1px;
-  margin-right: -20px;
 }
 a[href="/spoiler"] {
   background: none repeat scroll 0 0 #000 !important;
@@ -683,6 +716,10 @@ a[href="/spoiler"] {
 }
 a[href="/spoiler"]:hover {
   color: #fff !important;
+}
+.side a[href="/spoiler"] {
+  display: block;
+  min-width: 30px;
 }
 a[href="/hidden"] {
   display: block;
@@ -1320,111 +1357,53 @@ a[href="#sea"]:after {
 }
 /* Links */
 .linkflairlabel {
-  display: none;
-}
-.linkflair-ongoing .thumbnail:before,
-.linkflair-finished .thumbnail:before,
-.linkflair-featured .thumbnail:before,
-.linkflair-incomplete .thumbnail:before,
-.linkflair-upcoming .thumbnail:before,
-.linkflair-finishedfeatured .thumbnail:before,
-.linkflair-twitchongoing .thumbnail:before,
-.linkflair-twitchfinished .thumbnail:before,
-.linkflair-twitchfeatured .thumbnail:before,
-.linkflair-twitchincomplete .thumbnail:before,
-.linkflair-twitchupcoming .thumbnail:before,
-.flairselector .linkflair-ongoing .linkflairlabel,
-.flairselector .linkflair-finished .linkflairlabel,
-.flairselector .linkflair-featured .linkflairlabel,
-.flairselector .linkflair-incomplete .linkflairlabel,
-.flairselector .linkflair-upcoming .linkflairlabel,
-.flairselector .linkflair-finishedfeatured .linkflairlabel,
-.flairselector .linkflair-twitchongoing .linkflairlabel,
-.flairselector .linkflair-twitchfinished .linkflairlabel,
-.flairselector .linkflair-twitchfeatured .linkflairlabel,
-.flairselector .linkflair-twitchincomplete .linkflairlabel,
-.flairselector .linkflair-twitchupcoming .linkflairlabel,
-.flairtemplate .linkflair-ongoing .linkflairlabel,
-.flairtemplate .linkflair-finished .linkflairlabel,
-.flairtemplate .linkflair-featured .linkflairlabel,
-.flairtemplate .linkflair-incomplete .linkflairlabel,
-.flairtemplate .linkflair-upcoming .linkflairlabel,
-.flairtemplate .linkflair-finishedfeatured .linkflairlabel,
-.flairtemplate .linkflair-twitchongoing .linkflairlabel,
-.flairtemplate .linkflair-twitchfinished .linkflairlabel,
-.flairtemplate .linkflair-twitchfeatured .linkflairlabel,
-.flairtemplate .linkflair-twitchincomplete .linkflairlabel,
-.flairtemplate .linkflair-twitchupcoming .linkflairlabel {
-  background: url(%%flairs%%) no-repeat top left;
-  content: "";
   display: inline-block;
-  margin: 0;
-  padding: 0;
-  border: 0;
+  margin-right: .5em;
+  padding: 2px 2px 2px 2px;
+  background: #f5f5f5;
+  color: #555;
+  border: 1px solid #ddd;
+  border-radius: 2px;
+  height: 13px;
+  overflow: hidden;
+  vertical-align: -3px;
 }
-.linkflair-ongoing .thumbnail:before,
-.linkflair-finished .thumbnail:before,
-.linkflair-featured .thumbnail:before,
-.linkflair-incomplete .thumbnail:before,
-.linkflair-upcoming .thumbnail:before,
-.linkflair-finishedfeatured .thumbnail:before,
-.linkflair-twitchongoing .thumbnail:before,
-.linkflair-twitchfinished .thumbnail:before,
-.linkflair-twitchfeatured .thumbnail:before,
-.linkflair-twitchincomplete .thumbnail:before,
-.linkflair-twitchupcoming .thumbnail:before {
-  position: relative;
-  top: 25px;
-  left: 45px;
+.linkflair-ongoing .linkflairlabel,
+.linkflair-finished .linkflairlabel,
+.linkflair-featured .linkflairlabel,
+.linkflair-upcoming .linkflairlabel,
+.linkflair-twitchongoing .linkflairlabel,
+.linkflair-twitchfinished .linkflairlabel,
+.linkflair-twitchfeatured .linkflairlabel,
+.linkflair-twitchupcoming .linkflairlabel {
+  background: url(%%flairs-sprites%%) no-repeat top left;
+  padding: 2px 2px 2px 17px;
 }
-.linkflair-ongoing .thumbnail:before,
-.linkflair-twitchongoing .thumbnail:before,
-.linkflair-featured .thumbnail:before,
-.linkflair-twitchfeatured .thumbnail:before,
-.flairselector .linkflair-ongoing .linkflairlabel,
-.flairselector .linkflair-twitchongoing .linkflairlabel,
-.flairselector .linkflair-featured .linkflairlabel,
-.flairselector .linkflair-twitchfeatured .linkflairlabel,
-.flairtemplate .linkflair-ongoing .linkflairlabel,
-.flairtemplate .linkflair-twitchongoing .linkflairlabel,
-.flairtemplate .linkflair-featured .linkflairlabel,
-.flairtemplate .linkflair-twitchfeatured .linkflairlabel {
-  background-position: 0 -50px;
-  width: 20px;
-  height: 20px;
+.linkflair-ongoing .linkflairlabel,
+.linkflair-twitchongoing .linkflairlabel,
+.flairoptionpane .linkflair-ongoing .linkflairlabel,
+.flairoptionpane .linkflair-twitchongoing .linkflairlabel {
+  background-position: -9px -80px;
+  padding: 2px 2px 2px 16px;
 }
-.linkflair-incomplete .thumbnail:before,
-.linkflair-twitchincomplete .thumbnail:before,
-.flairselector .linkflair-incomplete .linkflairlabel,
-.flairselector .linkflair-twitchincomplete .linkflairlabel,
-.flairtemplate .linkflair-incomplete .linkflairlabel,
-.flairtemplate .linkflair-twitchincomplete .linkflairlabel {
-  background-position: 0 -25px;
-  width: 20px;
-  height: 20px;
+.linkflair-finished .linkflairlabel,
+.linkflair-twitchfinished .linkflairlabel,
+.flairoptionpane .linkflair-finished .linkflairlabel,
+.flairoptionpane .linkflair-twitchfinished .linkflairlabel {
+  background-position: -9px -45px;
 }
-.linkflair-upcoming .thumbnail:before,
-.linkflair-twitchupcoming .thumbnail:before,
-.flairselector .linkflair-upcoming .linkflairlabel,
-.flairselector .linkflair-twitchupcoming .linkflairlabel,
-.flairtemplate .linkflair-upcoming .linkflairlabel,
-.flairtemplate .linkflair-twitchupcoming .linkflairlabel {
-  background-position: 0 -95px;
-  width: 20px;
-  height: 20px;
+.linkflair-featured .linkflairlabel,
+.linkflair-twitchfeatured .linkflairlabel,
+.flairoptionpane .linkflair-featured .linkflairlabel,
+.flairoptionpane .linkflair-twitchfeatured .linkflairlabel {
+  background-position: -9px -10px;
+  padding: 2px 2px 2px 19px;
 }
-.linkflair-finished .thumbnail:before,
-.linkflair-twitchfinished .thumbnail:before,
-.linkflair-finishedfeatured .thumbnail:before,
-.flairselector .linkflair-finished .linkflairlabel,
-.flairselector .linkflair-twitchfinished .linkflairlabel,
-.flairselector .linkflair-finishedfeatured .linkflairlabel,
-.flairtemplate .linkflair-finished .linkflairlabel,
-.flairtemplate .linkflair-twitchfinished .linkflairlabel,
-.flairtemplate .linkflair-finishedfeatured .linkflairlabel {
-  background-position: 0 0;
-  width: 20px;
-  height: 20px;
+.linkflair-upcoming .linkflairlabel,
+.linkflair-twitchupcoming .linkflairlabel,
+.flairoptionpane .linkflair-upcoming .linkflairlabel,
+.flairoptionpane .linkflair-twitchupcoming .linkflairlabel {
+  background-position: -9px -150px;
 }
 .linkflair-red a.title,
 .linkflair-featured a.title,

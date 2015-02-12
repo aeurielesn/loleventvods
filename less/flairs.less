@@ -9,58 +9,51 @@
 .flair-yellow { .flairs-yellow; } 
 
 /* Links */
-.linkflairlabel { display: none; }
+.linkflairlabel {
+  display:inline-block;
+  margin-right:.5em;
+  padding: 2px 2px 2px 2px;
+  background:#f5f5f5;
+  color:#555;
+  border:1px solid #ddd;
+  border-radius:2px;
+  height: 13px;
+  overflow: hidden;
+  vertical-align: -3px;
+ }
 
-ongoing, finished, featured, incomplete, upcoming, finishedfeatured,
-twitchongoing, twitchfinished, twitchfeatured, twitchincomplete, twitchupcoming {
-  .linkflair-& { 
-    .thumbnail:before, .flairselector & .linkflairlabel, .flairtemplate & .linkflairlabel {
-      .flairs;
-      content: "";
-      display: inline-block;
-      margin: 0;
-      padding: 0;
-      border: 0;
-    }
-    .thumbnail:before {
-      position: relative;
-      top: 25px;
-      left: 45px;
-    }
+ongoing, finished, featured, upcoming, 
+twitchongoing, twitchfinished, twitchfeatured, twitchupcoming {
+  .linkflair-& .linkflairlabel { 
+    background: url(%%flairs-sprites%%) no-repeat top left;
+    padding: 2px 2px 2px 17px;
   }
 }
 
-ongoing, twitchongoing, featured, twitchfeatured {
-  .linkflair-& {
-    .thumbnail:before, .flairselector & .linkflairlabel, .flairtemplate & .linkflairlabel {
-      .flairs-ongoing;
-    }
-  }
+ongoing, twitchongoing {
+	.linkflair-& .linkflairlabel, .flairoptionpane .linkflair-& .linkflairlabel {
+		.flairs-ongoing();
+	}
 }
 
-incomplete, twitchincomplete {
-  .linkflair-& {
-    .thumbnail:before, .flairselector & .linkflairlabel, .flairtemplate & .linkflairlabel {
-      .flairs-incomplete;
-    }
-  }
+finished, twitchfinished {
+	.linkflair-& .linkflairlabel, .flairoptionpane .linkflair-& .linkflairlabel {
+		.flairs-finished();
+	}
+}
+
+featured, twitchfeatured {
+	.linkflair-& .linkflairlabel, .flairoptionpane .linkflair-& .linkflairlabel {
+		.flairs-featured();
+	}
 }
 
 upcoming, twitchupcoming {
-  .linkflair-& {
-    .thumbnail:before, .flairselector & .linkflairlabel, .flairtemplate & .linkflairlabel {
-      .flairs-upcoming;
-    }
-  }
+	.linkflair-& .linkflairlabel, .flairoptionpane .linkflair-& .linkflairlabel {
+		.flairs-upcoming();
+	}
 }
 
-finished, twitchfinished, finishedfeatured {
-  .linkflair-& {
-    .thumbnail:before, .flairselector & .linkflairlabel, .flairtemplate & .linkflairlabel {
-      .flairs-finished;
-    }
-  }
-}
 
 red, featured, finishedfeatured, twitchfeatured {
   .linkflair-& a.title { 

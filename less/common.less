@@ -215,17 +215,25 @@ div.collapsed > a.expand:first-child + em + time {
 /* notice below comments */
 .commentarea {
   position: static;
-  .usertext .usertext-edit:after {
-    content: "Note: Please use the spoiler tag if you want to discuss/suggest recommended games, picks & bans or something else related.";
-    display: block;
-    text-align: center;
-    margin-top: -5px;
-    padding: 4px;
-    background-color: #def;
-    border: 1px solid #59c;
-    font-size: 11px;
-    font-weight: bold;
-  }
+  .usertext {
+	  .usertext-edit:after {
+		content: "Note: Please use the spoiler tag if you want to discuss/suggest recommended games, picks & bans or something else related.";
+		display: block;
+		text-align: center;
+		margin-top: -5px;
+		padding: 4px;
+		background-color: #def;
+		border: 1px solid #59c;
+		font-size: 11px;
+		font-weight: bold;
+	  }
+	  textarea {
+		background-image: url(%%commentrules%%);
+		background-repeat: no-repeat;
+		border: 1px solid #ccc;
+		&:focus {background-position:-504px -104px }
+	  }
+  }		
 }
 
 /* This consider that the Team X columns in
@@ -248,7 +256,6 @@ div.collapsed > a.expand:first-child + em + time {
     top: 19px;
     z-index: 9999;
   }
-
   a[href="/r/LoLeventVoDs/comments/2taw1o/"] {
     right: 640px;
     .headers-eu-off();
