@@ -1,7 +1,7 @@
 @icon-spacing: -19px;
 
 .side { 
-  margin: 36px 5px 0 5px;
+  margin: 36px 5px 0px 5px;
   width: 327px;
   .md {
 	  a[href$="#sidebar_img"]{
@@ -48,19 +48,19 @@
   }
   a[href="http://www.reddit.com/r/loleventvods/"] {
     width: 75px;
-    &:hover { .bg-pos(0px -50px); }
+    &:hover { .bg-pos(0px, -50px); }
   }
   a[href="#2themes"] {
     margin-left: -5px;
     width: 130px;
-    .bg-pos(-85px 0px);
+    .bg-pos(-85px, 0px);
     cursor: default;
   }
   a[href="http://dd.reddit.com/r/loleventvods/"] {
     margin-left: -5px;
     width: 75px;
-    .bg-pos(-213px 0px);
-    &:hover { .bg-pos(-213px -50px); }
+    .bg-pos(-213px, 0px);
+    &:hover { .bg-pos(-213px, -50px); }
   }
   z-index: -100;
   .md h3 {
@@ -135,7 +135,7 @@
   border: none;
   .border-radius(5px);
   &:hover {
-    .bg-pos(0px -36px);
+    .bg-pos(0px, -36px);
   }
   a {
     content: '';
