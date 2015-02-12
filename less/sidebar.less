@@ -2,6 +2,34 @@
 
 .side { 
   margin: 36px 5px 0 5px;
+  width: 327px;
+  .md {
+	  a[href$="#sidebar_img"]{
+		  background-image:url(%%sidebar-promoimg%%);
+		  display:inline-block;
+		  height:200px;
+		  width:325px;
+		  text-indent:-9999px;
+		  margin-left: -10px;
+      }
+	  table {
+		  width: 325px!important;
+		  margin-left: -10px;
+		  margin-right: 10px;
+		  td {
+			min-width: 30px!important;
+			text-align: center;
+			&[align="right"]{
+				 min-width: 80px!important;
+				 text-align: right;
+		    }
+			&[align="center"]{
+				width: 95px;
+		    }
+		  }
+	  }
+	  
+  }
   .md p > em {
     display: inline-block;
     padding: 5px;
@@ -20,19 +48,84 @@
   }
   a[href="http://www.reddit.com/r/loleventvods/"] {
     width: 75px;
-    &:hover { background-position: 0px -50px; }
+    &:hover { .bg-pos(0px -50px); }
   }
   a[href="#2themes"] {
     margin-left: -5px;
     width: 130px;
-    background-position: -85px 0px;
+    .bg-pos(-85px 0px);
     cursor: default;
   }
   a[href="http://dd.reddit.com/r/loleventvods/"] {
     margin-left: -5px;
     width: 75px;
-    background-position: -213px 0px;
-    &:hover { background-position: -213px -50px; }
+    .bg-pos(-213px 0px);
+    &:hover { .bg-pos(-213px -50px); }
+  }
+  z-index: -100;
+  .md h3 {
+    margin-bottom: 8px;
+    + p + table { display: none; }
+    + p:hover + table, + p + table:hover { display: table; }
+    + p { position: absolute; margin-top: -25px; height: 30px; width: 294px }
+    + ul {
+      margin-top: 0;
+      margin-bottom: 0;
+      padding: 3px;
+    }
+  }
+  .md table th {
+    background: #193064;
+    border: none;
+    border-right: 1px solid #193064;
+    padding: .2em;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 1px 1px 0 #000;
+    font-size: 11px
+  }
+
+  .usertext table {
+    width: 280px;
+    color: #0a5a36!important;
+    font-size:11px;
+    .box-shadow(1px 1px 1px #193064);
+    margin-top: 0;
+    a {
+      color: #0a5a36;
+      &:hover { text-decoration: underline; }
+    }
+  }
+  a[href="https://www.facebook.com/loleventvods"],
+  a[href="https://www.twitter.com/loleventvods"],
+  a[href="http://www.youtube.com/loleventvods"],
+  a[href="https://play.google.com/store/apps/details?id=com.kox.zzreal"] {
+    .social();
+    &:hover {
+      opacity: 0.6
+    }
+  }
+
+  a[href="https://www.facebook.com/loleventvods"] {
+    background-position: 0 0;
+    .social-left-col();
+	.social-top-row();
+  }
+  a[href="https://www.twitter.com/loleventvods"] {
+    background-position: 0 @social-spacing;
+    .social-right-col();
+	.social-top-row();
+  }
+  a[href="http://www.youtube.com/loleventvods"] {
+    background-position: 0 (@social-spacing * 2);
+    .social-left-col();
+	.social-bottom-row();
+  }
+  a[href="https://play.google.com/store/apps/details?id=com.kox.zzreal"] {
+    background-position: 0 (@social-spacing * 3);
+    .social-right-col();
+	.social-bottom-row();
   }
 }
 
@@ -42,7 +135,7 @@
   border: none;
   .border-radius(5px);
   &:hover {
-    background-position: 0px -36px;
+    .bg-pos(0px -36px);
   }
   a {
     content: '';
@@ -108,7 +201,7 @@
         line-height: 26px;
         border: none;
         background: url(%%gray%%);
-        width: 287px;
+        width: 313px;
         color: #fff !important;
         padding: 4px 0 4px 20px;
         margin: 10px 13px 5px -18px;
@@ -130,41 +223,12 @@
       }
     }
   }
-}
-
-/* drop down */
-.side {
-  z-index: -100;
-  .md h3 {
-    margin-bottom: 8px;
-    + p + table { display: none; }
-    + p:hover + table, + p + table:hover { display: table; }
-    + p { position: absolute; margin-top: -25px; height: 30px; width: 294px }
-    + ul {
-      margin-top: 0;
-      margin-bottom: 0;
-      padding: 3px;
-    }
-  }
-}
-.md { overflow: visible; }
-
-.titlebox h1,
-.titlebox .md h2,
-.titlebox .md h3,
-.titlebox .md h4 {
-  &, a { color: #000; }
-}
-.sidecontentbox a.helplink { margin-right: 5px; }
-.icon-menu a { background: transparent; }
-
-.titlebox .md {
+  .md {
   h3 + ul { display: none; }
   h3:hover + ul, ul:hover { display: block; }
   h2, h3, h4  {
     background-color: #ccc!important;
-    width: 280px;
-    // height: 26px;
+    width: 306px;
     line-height: 26px;
     font-weight: normal;
     font-size: 12px;
@@ -183,63 +247,20 @@
     padding-right: 6px;
   }
 }
-
-/* Table in sidebar */
-.side {
-  .md table th {
-    background: #193064;
-    border: none;
-    border-right: 1px solid #193064;
-    padding: .2em;
-    color: #fff;
-    font-weight: bold;
-    text-align: center;
-    text-shadow: 1px 1px 0 #000;
-    font-size: 11px
-  }
-
-  .usertext table {
-    width: 280px;
-    color: #0a5a36!important;
-    font-size:11px;
-    .box-shadow(1px 1px 1px #193064);
-    margin-top: 0;
-    a {
-      color: #0a5a36;
-      &:hover { text-decoration: underline; }
-    }
-  }
 }
+
+.md { overflow: visible; }
+
+.titlebox h1,
+.titlebox .md h2,
+.titlebox .md h3,
+.titlebox .md h4 {
+  &, a { color: #000; }
+}
+.sidecontentbox a.helplink { margin-right: 5px; }
+.icon-menu a { background: transparent; }
+
+
 
 /* hide "Create your own subreddit" button */
 div.sidebox.create{display: none;}
-
-/* sidebar social media icons */
-.side {
-  a[href="https://www.facebook.com/loleventvods"],
-  a[href="https://www.twitter.com/loleventvods"],
-  a[href="http://www.youtube.com/loleventvods"],
-  a[href="https://play.google.com/store/apps/details?id=com.kox.zzreal"] {
-    .social();
-    &:hover {
-      opacity: 0.6
-    }
-  }
-
-  a[href="https://www.facebook.com/loleventvods"] {
-    background-position: 0 0;
-    .social-left-col();
-  }
-  a[href="https://www.twitter.com/loleventvods"] {
-    background-position: 0 @social-spacing;
-    .social-right-col();
-  }
-  a[href="http://www.youtube.com/loleventvods"] {
-    background-position: 0 (@social-spacing * 2);
-    .social-left-col();
-  }
-  a[href="https://play.google.com/store/apps/details?id=com.kox.zzreal"] {
-    background-position: 0 (@social-spacing * 3);
-    .social-right-col();
-  }
-}

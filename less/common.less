@@ -211,17 +211,25 @@ div.collapsed > a.expand:first-child + em + time {
 /* notice below comments */
 .commentarea {
   position: static;
-  .usertext .usertext-edit:after {
-    content: "Note: Please use the spoiler tag if you want to discuss/suggest recommended games, picks & bans or something else related.";
-    display: block;
-    text-align: center;
-    margin-top: -5px;
-    padding: 4px;
-    background-color: #def;
-    border: 1px solid #59c;
-    font-size: 11px;
-    font-weight: bold;
-  }
+  .usertext {
+	  .usertext-edit:after {
+		content: "Note: Please use the spoiler tag if you want to discuss/suggest recommended games, picks & bans or something else related.";
+		display: block;
+		text-align: center;
+		margin-top: -5px;
+		padding: 4px;
+		background-color: #def;
+		border: 1px solid #59c;
+		font-size: 11px;
+		font-weight: bold;
+	  }
+	  textarea {
+		background-image: url(%%commentrules%%);
+		background-repeat: no-repeat;
+		border: 1px solid #ccc;
+		&:focus {background-position:-504px -104px }
+	  }
+  }		
 }
 
 /* This consider that the Team X columns in
@@ -238,10 +246,10 @@ div.collapsed > a.expand:first-child + em + time {
 
 
 .side {
-  a[href="/r/LoLeventVoDs/comments/29klwc/"],
-  a[href="/r/LoLeventVoDs/comments/29ugl3/"],
-  a[href="/r/LoLeventVoDs/comments/20e96p/"],
-  a[href="/r/LoLeventVoDs/comments/28l2r3/"] {
+  a[href="/r/LoLeventVoDs/comments/2cw5e9/"],
+  a[href="/r/LoLeventVoDs/comments/2edy7a/"],
+  a[href="/r/LoLeventVoDs/comments/2psl4t/"],
+  a[href="/r/LoLeventVoDs/comments/2auwdm/"] {
     .headers();
     display: block;
     position: absolute;
@@ -249,22 +257,22 @@ div.collapsed > a.expand:first-child + em + time {
     z-index: 9999;
   }
 
-  a[href="/r/LoLeventVoDs/comments/29klwc/"] {
+  a[href="/r/LoLeventVoDs/comments/2cw5e9/"] {
     right: 640px;
     .headers-eu-off();
     &:hover { .headers-eu-on(); }
   }
-  a[href="/r/LoLeventVoDs/comments/29ugl3/"] {
+  a[href="/r/LoLeventVoDs/comments/2edy7a/"] {
     right: 0;
     .headers-na-off();
     &:hover { .headers-na-on(); }
   }
-  a[href="/r/LoLeventVoDs/comments/20e96p/"] {
+  a[href="/r/LoLeventVoDs/comments/2psl4t/"] {
     right: 400px;
     .headers-iem-off();
     &:hover { .headers-iem-on(); }
   }
-  a[href="/r/LoLeventVoDs/comments/28l2r3/"] {
+  a[href="/r/LoLeventVoDs/comments/2auwdm/"] {
     right: 145px;
     .headers-ogn-off();
     &:hover { .headers-ogn-on(); }
