@@ -2,7 +2,7 @@
 .entry {
   a:visited { 
     color: #551a8b;
-    &[href*="lol.eventvods.com"] { color: #369; }
+    &[href*="lol.eventvods.com"] { color: #0079d3!important; }
   }
 }
   
@@ -76,6 +76,7 @@
   padding-left: 15px;
   background: url(%%gray%%);
   border-radius: 0;
+  z-index: 20;
   a {
     color: #fff;
   }
@@ -143,10 +144,13 @@ a[href^="#"] + .keyNavAnnotation,
   + p:hover + *, + p + *:hover, &:hover + p + * { display: table; }
 }
 
-/* Red text in posts */
-.usertext-body h4 {
-  color: #f00;
-  font-weight: bold;
+/* Red text in posts & disabled stylesheet warning */
+.usertext-body  {
+  h4 {
+    color: #f00;
+    font-weight: bold;
+  }
+  blockquote a[href="#no_stylesheet"] { display: none; }
 }
 
 /* tables */
@@ -233,15 +237,11 @@ div.collapsed > a.expand:first-child + em + time {
 }
 
 /* Tournament icons in header */
-
-
-
-
 .side {
-  a[href="/r/LoLeventVoDs/comments/29klwc/"],
-  a[href="/r/LoLeventVoDs/comments/29ugl3/"],
-  a[href="/r/LoLeventVoDs/comments/20e96p/"],
-  a[href="/r/LoLeventVoDs/comments/28l2r3/"] {
+  a[href="/r/LoLeventVoDs/comments/2taw1o/"],
+  a[href="/r/LoLeventVoDs/comments/2tjhh4/"],
+  a[href="/r/LoLeventVoDs/comments/2tx8ou/"],
+  a[href="/r/LoLeventVoDs/comments/2rm5z6/"] {
     .headers();
     display: block;
     position: absolute;
@@ -249,22 +249,22 @@ div.collapsed > a.expand:first-child + em + time {
     z-index: 9999;
   }
 
-  a[href="/r/LoLeventVoDs/comments/29klwc/"] {
+  a[href="/r/LoLeventVoDs/comments/2taw1o/"] {
     right: 640px;
     .headers-eu-off();
     &:hover { .headers-eu-on(); }
   }
-  a[href="/r/LoLeventVoDs/comments/29ugl3/"] {
+  a[href="/r/LoLeventVoDs/comments/2tjhh4/"] {
     right: 0;
     .headers-na-off();
     &:hover { .headers-na-on(); }
   }
-  a[href="/r/LoLeventVoDs/comments/20e96p/"] {
+  a[href="/r/LoLeventVoDs/comments/2tx8ou/"] {
     right: 400px;
     .headers-iem-off();
     &:hover { .headers-iem-on(); }
   }
-  a[href="/r/LoLeventVoDs/comments/28l2r3/"] {
+  a[href="/r/LoLeventVoDs/comments/2rm5z6/"] {
     right: 145px;
     .headers-ogn-off();
     &:hover { .headers-ogn-on(); }

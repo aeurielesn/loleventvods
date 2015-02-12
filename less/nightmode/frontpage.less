@@ -1,4 +1,4 @@
-.res-nightmode, html[lang="dd"] {
+.res-nightmode, html:lang(dd) {
   // Top announcement.
   // It works by enabling <h6/> in the sidebar as a announcement banner on top
   // of the main subreddit content.
@@ -66,6 +66,9 @@
   
   // Changes "stickied post" text color to make it visible for RES key nav highlighting
   .RES-keyNav-activeElement .tagline .stickied-tagline { color: #7c7; }
+  
+  // Changes background of the progress indicator (the "click here to load next page" at the end of the frontpage)
+  #progressIndicator { background-color: #26293c!important; }
 }
 .res-nightmode {
   .listing-page .sitetable > div:nth-of-type(4n+1) { background-color: #080808; }

@@ -1,6 +1,6 @@
 @header-spacing: -34px;
 
-.res-nightmode, html[lang="dd"] {
+.res-nightmode, html:lang(dd) {
   // Changes background color for everything
   body, .side, .flairselector, .linefield, 
   .icon-menu a, .side .leavemoderator, .side .leavecontributor-button, 
@@ -13,9 +13,9 @@
   body > .content { background-color: transparent !important; }
   
   // Visited links color change
-  .entry a:visited { color: #007dc3; }
+  .entry a { color: #007dc3; }
   .entry a:visited[href*="lol.eventvods.com"] { color: #007dc3; }
-  .RES-keyNav-activeElement .entry a:visited[href*="lol.eventvods.com"] { color: #8ad; }
+  .RES-keyNav-activeElement .entry a:visited[href*="lol.eventvods.com"] { color: #8ad!important; }
 
   // alien
   #header-img-a {
@@ -98,7 +98,7 @@
   .md table tr:hover { 
     background-color: #7d7; 
     color: #080808;
-    a { color: #55c!important; }
+    a, a[href*="lol.eventvods.com"] { color: #55c!important; }
   }
   
   // Hides video expandos in posts

@@ -3,7 +3,7 @@
   color: #551a8b;
 }
 .entry a:visited[href*="lol.eventvods.com"] {
-  color: #369;
+  color: #0079d3!important;
 }
 /* change width */
 .md {
@@ -71,6 +71,7 @@
   padding-left: 15px;
   background: url(%%gray%%);
   border-radius: 0;
+  z-index: 20;
 }
 #header-bottom-right a {
   color: #fff;
@@ -141,10 +142,13 @@ a[href^="#"] + .keyNavAnnotation,
 .entry .md h3:hover + p + * {
   display: table;
 }
-/* Red text in posts */
+/* Red text in posts & disabled stylesheet warning */
 .usertext-body h4 {
   color: #f00;
   font-weight: bold;
+}
+.usertext-body blockquote a[href="#no_stylesheet"] {
+  display: none;
 }
 /* tables */
 .md table {
@@ -250,10 +254,10 @@ div.collapsed > a.expand:first-child + em + time + em + a.expand {
   min-width: 70px;
 }
 /* Tournament icons in header */
-.side a[href="/r/LoLeventVoDs/comments/29klwc/"],
-.side a[href="/r/LoLeventVoDs/comments/26bj3k/"],
-.side a[href="/r/LoLeventVoDs/comments/20e96p/"],
-.side a[href="/r/LoLeventVoDs/comments/28l2r3/"] {
+.side a[href="/r/LoLeventVoDs/comments/2taw1o/"],
+.side a[href="/r/LoLeventVoDs/comments/2tjhh4/"],
+.side a[href="/r/LoLeventVoDs/comments/2tx8ou/"],
+.side a[href="/r/LoLeventVoDs/comments/2rm5z6/"] {
   background: url(%%headers%%) no-repeat top left;
   height: 125px;
   display: block;
@@ -261,39 +265,39 @@ div.collapsed > a.expand:first-child + em + time + em + a.expand {
   top: 19px;
   z-index: 9999;
 }
-.side a[href="/r/LoLeventVoDs/comments/29klwc/"] {
+.side a[href="/r/LoLeventVoDs/comments/2taw1o/"] {
   right: 640px;
   background-position: 0 0;
   width: 150px;
 }
-.side a[href="/r/LoLeventVoDs/comments/29klwc/"]:hover {
+.side a[href="/r/LoLeventVoDs/comments/2taw1o/"]:hover {
   background-position: 0 -125px;
   width: 150px;
 }
-.side a[href="/r/LoLeventVoDs/comments/26bj3k/"] {
+.side a[href="/r/LoLeventVoDs/comments/2tjhh4/"] {
   right: 0;
   background-position: -380px 0;
   width: 150px;
 }
-.side a[href="/r/LoLeventVoDs/comments/26bj3k/"]:hover {
+.side a[href="/r/LoLeventVoDs/comments/2tjhh4/"]:hover {
   background-position: -380px -125px;
   width: 150px;
 }
-.side a[href="/r/LoLeventVoDs/comments/20e96p/"] {
+.side a[href="/r/LoLeventVoDs/comments/2tx8ou/"] {
   right: 400px;
   background-position: -150px 0;
   width: 230px;
 }
-.side a[href="/r/LoLeventVoDs/comments/20e96p/"]:hover {
+.side a[href="/r/LoLeventVoDs/comments/2tx8ou/"]:hover {
   background-position: -150px -125px;
   width: 230px;
 }
-.side a[href="/r/LoLeventVoDs/comments/28l2r3/"] {
+.side a[href="/r/LoLeventVoDs/comments/2rm5z6/"] {
   right: 145px;
   background-position: -530px 0;
   width: 255px;
 }
-.side a[href="/r/LoLeventVoDs/comments/28l2r3/"]:hover {
+.side a[href="/r/LoLeventVoDs/comments/2rm5z6/"]:hover {
   background-position: -530px -125px;
   width: 255px;
 }
@@ -313,12 +317,14 @@ div.collapsed > a.expand:first-child + em + time + em + a.expand {
   font-weight: bold;
   color: white;
   text-align: left;
+  text-decoration: none!important;
   padding: 4px 13px 4px 4px;
   line-height: 26px;
   margin-left: 35px;
+  margin-top: 0!important;
 }
 h6 a {
-  color: #F2E972;
+  color: #F2E972!important;
 }
 /* No flairs on front page */
 .listing-page #siteTable .flair {
@@ -668,10 +674,6 @@ div.sidebox.create {
   margin-left: 1px;
   margin-right: -20px;
 }
-/* hide "Create your own subreddit" button */
-div.sidebox.create {
-  display: none;
-}
 a[href="/spoiler"] {
   background: none repeat scroll 0 0 #000 !important;
   color: #000 !important;
@@ -693,179 +695,48 @@ a[href="/hidden"] {
 a[href="/hidden"]:hover {
   color: #fff !important;
 }
-.flags-belgium,
-.flags-czechrepublic,
-.flags-denmark,
-.flags-estonia,
-.flags-finland,
-.flags-france,
-.flags-germany,
-.flags-lithuania,
-.flags-netherlands,
-.flags-norway,
-.flags-poland,
-.flags-russia,
-.flags-scotland,
-.flags-spain,
-.flags-sweden {
-  width: 16px;
-  height: 11px;
-}
-.flags-belgium {
-  background-position: 0 0;
-}
-.flags-czechrepublic {
-  background-position: 0 -11px;
-}
-.flags-denmark {
-  background-position: 0 -22px;
-}
-.flags-estonia {
-  background-position: 0 -33px;
-}
-.flags-finland {
-  background-position: 0 -44px;
-}
-.flags-france {
-  background-position: 0 -55px;
-}
-.flags-germany {
-  background-position: 0 -66px;
-}
-.flags-lithuania {
-  background-position: 0 -77px;
-}
-.flags-netherlands {
-  background-position: 0 -88px;
-}
-.flags-norway {
-  background-position: 0 -99px;
-}
-.flags-poland {
-  background-position: 0 -110px;
-}
-.flags-russia {
-  background-position: 0 -121px;
-}
-.flags-scotland {
-  background-position: 0 -132px;
-}
-.flags-spain {
-  background-position: 0 -143px;
-}
-.flags-sweden {
-  background-position: 0 -154px;
-}
-a[href="#belgium"]:after,
-a[href="#czechrepublic"]:after,
-a[href="#denmark"]:after,
-a[href="#estonia"]:after,
-a[href="#finland"]:after,
-a[href="#france"]:after,
-a[href="#germany"]:after,
-a[href="#lithuania"]:after,
-a[href="#netherlands"]:after,
-a[href="#norway"]:after,
-a[href="#poland"]:after,
-a[href="#russia"]:after,
-a[href="#scotland"]:after,
-a[href="#spain"]:after,
-a[href="#sweden"]:after {
-  content: "";
-  width: 16px;
-  height: 11px;
-  background: url(%%flags%%) no-repeat scroll 16px 11px transparent;
-  display: inline-block;
-  vertical-align: middle;
-  cursor: default !important;
-}
-a[href="#belgium"]:after {
-  background-position: 0 0;
-}
-a[href="#czechrepublic"]:after {
-  background-position: 0 -11px;
-}
-a[href="#denmark"]:after {
-  background-position: 0 -22px;
-}
-a[href="#estonia"]:after {
-  background-position: 0 -33px;
-}
-a[href="#finland"]:after {
-  background-position: 0 -44px;
-}
-a[href="#france"]:after {
-  background-position: 0 -55px;
-}
-a[href="#germany"]:after {
-  background-position: 0 -66px;
-}
-a[href="#lithuania"]:after {
-  background-position: 0 -77px;
-}
-a[href="#netherlands"]:after {
-  background-position: 0 -88px;
-}
-a[href="#norway"]:after {
-  background-position: 0 -99px;
-}
-a[href="#poland"]:after {
-  background-position: 0 -110px;
-}
-a[href="#russia"]:after {
-  background-position: 0 -121px;
-}
-a[href="#scotland"]:after {
-  background-position: 0 -132px;
-}
-a[href="#spain"]:after {
-  background-position: 0 -143px;
-}
-a[href="#sweden"]:after {
-  background-position: 0 -154px;
-}
-.thing .thumbnail[href*="2_championship"],
-.thing .thumbnail[href*="2_korean"],
-.thing .thumbnail[href*="2_european"],
-.thing .thumbnail[href*="2_south"],
-.thing .thumbnail[href*="allstar_shangai"],
-.thing .thumbnail[href*="allstar_paris"],
+.thing .thumbnail[href*="allstar"],
 .thing .thumbnail[href*="android"],
+.thing .thumbnail[href*="best_zed"],
+.thing .thumbnail[href*="brazilian_cir"],
+.thing .thumbnail[href*="the_champions"],
+.thing .thumbnail[href*="champions_k"],
 .thing .thumbnail[href*="dreamhack"],
+.thing .thumbnail[href*="eu_lcs"],
 .thing .thumbnail[href*="eu_chall"],
 .thing .thumbnail[href*="esl"],
+.thing .thumbnail[href*="esportspedia"],
 .thing .thumbnail[href*="faceit"],
-.thing .thumbnail[href*="gfinity"],
+.thing .thumbnail[href*="giveaway"],
 .thing .thumbnail[href*="gpl"],
+.thing .thumbnail[href*="hitbox"],
 .thing .thumbnail[href*="iem"],
-.thing .thumbnail[href*="ign"],
-.thing .thumbnail[href*="ipl"],
-.thing .thumbnail[href*="lcs"],
-.thing .thumbnail[href*="lcs_europe"],
+.thing .thumbnail[href*="intel_extreme"],
+.thing .thumbnail[href*="ios"],
+.thing .thumbnail[href*="lcs_eu"],
+.thing .thumbnail[href*="lcs_na"],
 .thing .thumbnail[href*="lcs_north"],
-.thing .thumbnail[href*="lone"],
+.thing .thumbnail[href*="lone_star"],
+.thing .thumbnail[href*="lms"],
 .thing .thumbnail[href*="lpl"],
 .thing .thumbnail[href*="masters"],
 .thing .thumbnail[href*="mlg"],
-.thing .thumbnail[href*="mobafire"],
 .thing .thumbnail[href*="monster"],
-.thing .thumbnail[href*="nacl"],
+.thing .thumbnail[href*="na_lcs"],
 .thing .thumbnail[href*="na_chall"],
-.thing .thumbnail[href*="na_regionals_com"],
-.thing .thumbnail[href*="nlb_spring"],
-.thing .thumbnail[href*="ogn_champ"],
-.thing .thumbnail[href*="ogn_hot"],
-.thing .thumbnail[href*="ogn_ol"],
-.thing .thumbnail[href*="ogn_lol"],
+.thing .thumbnail[href*="new_year"],
+.thing .thumbnail[href*="nlb_"],
+.thing .thumbnail[href*="ogn"],
+.thing .thumbnail[href*="poro"],
 .thing .thumbnail[href*="pandoratv"],
-.thing .thumbnail[href*="pgs"],
-.thing .thumbnail[href*="regionals"],
+.thing .thumbnail[href*="regional_qual"],
 .thing .thumbnail[href*="scan"],
-.thing .thumbnail[href*="starswar"],
-.thing .thumbnail[href*="tales"],
-.thing .thumbnail[href*="world"],
-.thing .thumbnail[href*="world_championships"] {
-  background: url(%%thumbnails%%) no-repeat top left;
+.thing .thumbnail[href*="solo_king"],
+.thing .thumbnail[href*="trending"],
+.thing .thumbnail[href*="wildcard"],
+.thing .thumbnail[href*="world"] {
+  background-image: url(%%thumbnails%%) !important;
+  background-repeat: no-repeat !important;
   width: 70px;
   height: 50px;
   padding: 0;
@@ -882,100 +753,106 @@ a[href="#sweden"]:after {
 .thing .thumbnail[href*="ios"] {
   background-position: 0 -150px;
 }
-.thing .thumbnail[href*="monster"] {
+.thing .thumbnail[href*="best_zed"] {
   background-position: 0 -200px;
 }
-.thing .thumbnail[href*="eu_chall"] {
+.thing .thumbnail[href*="monster"] {
   background-position: 0 -250px;
 }
-.thing .thumbnail[href*="na_chall"] {
+.thing .thumbnail[href*="brazilian_cir"] {
   background-position: 0 -300px;
 }
-.thing .thumbnail[href*="dreamhack"] {
+.thing .thumbnail[href*="eu_chall"] {
   background-position: 0 -350px;
 }
-.thing .thumbnail[href*="esl"] {
+.thing .thumbnail[href*="na_chall"] {
   background-position: 0 -400px;
 }
-.thing .thumbnail[href*="faceit"] {
+.thing .thumbnail[href*="champions_k"] {
   background-position: 0 -450px;
 }
-.thing .thumbnail[href*="gfinity"] {
+.thing .thumbnail[href*="dreamhack"] {
   background-position: 0 -500px;
 }
-.thing .thumbnail[href*="gpl"] {
+.thing .thumbnail[href*="esl"] {
   background-position: 0 -550px;
 }
-.thing .thumbnail[href*="ign"],
-.thing .thumbnail[href*="ipl"] {
-  background-position: 0 -650px;
-}
-.thing .thumbnail[href*="lcs"] {
-  background-position: 0 -800px;
-}
-.thing .thumbnail[href*="lcs_eu"] {
-  background-position: 0 -700px;
-}
-.thing .thumbnail[href*="lcs_na"],
-.thing .thumbnail[href*="lcs_north"] {
-  background-position: 0 -750px;
-}
-.thing .thumbnail[href*="lone_star_clash_2"] {
-  background-position: 0 -850px;
-}
-.thing .thumbnail[href*="lone_star_clash_3"] {
-  background-position: 0 -900px;
-}
-.thing .thumbnail[href*="lpl"] {
-  background-position: 0 -950px;
-}
-.thing .thumbnail[href*="mlg"] {
-  background-position: 0 -1000px;
-}
-.thing .thumbnail[href*="mobafire"] {
-  background-position: 0 -1050px;
-}
-.thing .thumbnail[href*="nacl"] {
-  background-position: 0 -1100px;
-}
-.thing .thumbnail[href*="nlb_spring"] {
-  background-position: 0 -1150px;
-}
-.thing .thumbnail[href*="pandoratv"],
-.thing .thumbnail[href*="ogn"] {
-  background-position: 0 -1200px;
-}
-.thing .thumbnail[href*="masters"] {
-  background-position: 0 -1250px;
-}
-.thing .thumbnail[href*="pgs"] {
-  background-position: 0 -1300px;
-}
-.thing .thumbnail[href*="scan"] {
-  background-position: 0 -1350px;
-}
-.thing .thumbnail[href*="starswar"] {
-  background-position: 0 -1400px;
-}
-.thing .thumbnail[href*="tales"] {
-  background-position: 0 -1450px;
-}
-.thing .thumbnail[href*="regionals"],
-.thing .thumbnail[href*="2_championship"],
-.thing .thumbnail[href*="world_championships"],
-.thing .thumbnail[href*="2_korean"],
-.thing .thumbnail[href*="2_european"],
-.thing .thumbnail[href*="2_south"],
-.thing .thumbnail[href*="na_regionals_com"] {
-  background-position: 0 -1500px;
-}
-.thing .thumbnail[href*="world"] {
-  background-position: 0 -1550px;
-}
-.thing .thumbnail[href*="iem_cologne"],
-.thing .thumbnail[href*="iem"] {
+.thing .thumbnail[href*="esportspedia"] {
   background-position: 0 -600px;
 }
+.thing .thumbnail[href*="faceit"] {
+  background-position: 0 -650px;
+}
+.thing .thumbnail[href*="giveaway"] {
+  background-position: 0 -700px;
+}
+.thing .thumbnail[href*="gpl"] {
+  background-position: 0 -750px;
+}
+.thing .thumbnail[href*="hitbox"] {
+  background-position: 0 -800px;
+}
+.thing .thumbnail[href*="iem"],
+.thing .thumbnail[href*="intel_extreme_masters"] {
+  background-position: 0 -850px;
+}
+.thing .thumbnail[href*="eu_lcs"],
+.thing .thumbnail[href*="lcs_eu"] {
+  background-position: 0 -900px;
+}
+.thing .thumbnail[href*="na_lcs"],
+.thing .thumbnail[href*="lcs_na"],
+.thing .thumbnail[href*="lcs_north"] {
+  background-position: 0 -950px;
+}
+.thing .thumbnail[href*="trending"] {
+  background-position: 0 -1000px;
+}
+.thing .thumbnail[href*="lone_star"] {
+  background-position: 0 -1050px;
+}
+.thing .thumbnail[href*="lms"] {
+  background-position: 0 -1100px;
+}
+.thing .thumbnail[href*="lpl"] {
+  background-position: 0 -1150px;
+}
+.thing .thumbnail[href*="mlg"] {
+  background-position: 0 -1200px;
+}
+.thing .thumbnail[href*="new_year"] {
+  background-position: 0 -1250px;
+}
+.thing .thumbnail[href*="nlb_"] {
+  background-position: 0 -1300px;
+}
+.thing .thumbnail[href*="pandoratv"],
+.thing .thumbnail[href*="ogn_"] {
+  background-position: 0 -1350px;
+}
+.thing .thumbnail[href*="lol_masters"] {
+  background-position: 0 -1400px;
+}
+.thing .thumbnail[href*="poro"] {
+  background-position: 0 -1450px;
+}
+.thing .thumbnail[href*="scan"] {
+  background-position: 0 -1500px;
+}
+.thing .thumbnail[href*="solo_king"] {
+  background-position: 0 -1550px;
+}
+.thing .thumbnail[href*="3_world"] {
+  background-position: 0 -1600px;
+}
+.thing .thumbnail[href*="wildcard"] {
+  background-position: 0 -1650px;
+}
+.thing .thumbnail[href*="4_world"],
+.thing .thumbnail[href*="regional_qual"] {
+  background-position: 0 -1700px;
+}
+a[href="#269"]:after,
 a[href^="#a"]:after,
 a[href^="#b"]:after,
 a[href^="#c"]:after,
@@ -1001,15 +878,7 @@ a[href^="#v"]:after,
 a[href^="#w"]:after,
 a[href^="#x"]:after,
 a[href^="#y"]:after,
-a[href^="#z"]:after,
-a[href$="/wiki/c9"]:before,
-a[href$="/wiki/clg"]:before,
-a[href$="/wiki/crs"]:before,
-a[href$="/wiki/coast"]:before,
-a[href$="/wiki/dig"]:before,
-a[href$="/wiki/eg"]:before,
-a[href$="/wiki/tsm"]:before,
-a[href$="/wiki/vul"]:before {
+a[href^="#z"]:after {
   content: "";
   width: 36px;
   height: 20px;
@@ -1019,297 +888,218 @@ a[href$="/wiki/vul"]:before {
   cursor: default !important;
 }
 /* LCS EU */
-a[href="#aaa"]:after {
+a[href="#cw"]:after {
   background-position: 0 0;
 }
-a[href="#all"]:after {
+a[href="#el"]:after {
   background-position: 0 -20px;
-}
-a[href="#atn"]:after {
-  background-position: 0 -40px;
-}
-a[href="#cw"]:after {
-  background-position: 0 -60px;
-}
-a[href="#db"]:after {
-  background-position: 0 -80px;
 }
 a[href="#fnatic"]:after,
 a[href="#fnc"]:after {
-  background-position: 0 -100px;
+  background-position: 0 -40px;
 }
 a[href="#gia"]:after {
-  background-position: 0 -120px;
+  background-position: 0 -60px;
 }
 a[href="#gambit"]:after,
 a[href="#gmb"]:after {
-  background-position: 0 -140px;
+  background-position: 0 -80px;
 }
-a[href="#ld"]:after {
-  background-position: 0 -160px;
+a[href="#h2k"]:after {
+  background-position: 0 -100px;
 }
 a[href="#mym"]:after {
-  background-position: 0 -180px;
-}
-a[href="#millenium"]:after,
-a[href="#mil"]:after {
-  background-position: 0 -200px;
-}
-a[href="#nip"]:after,
-a[href="#nip2"]:after {
-  background-position: 0 -220px;
+  background-position: 0 -120px;
 }
 a[href="#roc"]:after {
-  background-position: 0 -240px;
-}
-a[href="#shc"]:after {
-  background-position: 0 -260px;
+  background-position: 0 -140px;
 }
 a[href="#sk"]:after {
-  background-position: 0 -280px;
+  background-position: 0 -160px;
+}
+a[href="#uol"]:after {
+  background-position: 0 -180px;
 }
 /* LCS NA */
-a[href="#c9"]:after,
-a[href$="/wiki/c9"]:before {
+a[href="#c9"]:after {
   background-position: -36px 0;
 }
-a[href="#clg"]:after,
-a[href$="/wiki/clg"]:before {
+a[href="#clg"]:after {
   background-position: -36px -20px;
 }
-a[href="#col"]:after,
-a[href="#colA"]:after {
+a[href="#coast"]:after,
+a[href="#cst"]:after {
   background-position: -36px -40px;
 }
-a[href="#crs"]:after,
-a[href="#crsA"]:after,
-a[href$="/wiki/crs"]:before {
+a[href="#dig"]:after {
   background-position: -36px -60px;
 }
-a[href="#coast"]:after,
-a[href="#cst"]:after,
-a[href$="/wiki/coast"]:before {
+a[href="#gv"]:after {
   background-position: -36px -80px;
 }
-a[href="#dig"]:after,
-a[href$="/wiki/dig"]:before {
+a[href="#tl"]:after {
   background-position: -36px -100px;
 }
-a[href="#eg"]:after,
-a[href$="/wiki/eg"]:before {
+a[href="#t8"]:after {
   background-position: -36px -120px;
 }
-a[href="#ggu"]:after {
+a[href="#tip"]:after {
   background-position: -36px -140px;
 }
-a[href="#lmq"]:after {
+a[href="#tsm"]:after {
   background-position: -36px -160px;
 }
-a[href="#marn"]:after,
-a[href="#mrn"]:after {
+a[href="#wfx"]:after {
   background-position: -36px -180px;
 }
-a[href="#tsm"]:after,
-a[href$="/wiki/tsm"]:before {
-  background-position: -36px -200px;
-}
-a[href="#ves"]:after {
-  background-position: -36px -220px;
-}
-a[href="#vul"]:after,
-a[href="#xdg"]:after,
-a[href$="/wiki/vul"]:before {
-  background-position: -36px -240px;
-}
-/* LCS Promos EU */
-a[href="#mouz"]:after {
+/* OGN */
+a[href="#cj"]:after {
   background-position: -72px 0;
 }
-a[href="#tcm"]:after {
+a[href="#get"]:after {
   background-position: -72px -20px;
 }
-a[href="#wizards"]:after {
-  background-position: -72px -40px;
-}
-/* LCS Promos NA */
-a[href="#azure"]:after {
-  background-position: -72px -60px;
-}
-a[href="#cog"]:after {
-  background-position: -72px -80px;
-}
-a[href="#dbl"]:after {
-  background-position: -72px -100px;
-}
-a[href="#fid"]:after {
-  background-position: -72px -120px;
-}
-a[href="#qg"]:after,
-a[href="#qtc"]:after {
-  background-position: -72px -140px;
-}
-a[href="#tap"]:after {
-  background-position: -72px -160px;
-}
-a[href="#ts"]:after {
-  background-position: -72px -180px;
-}
-a[href="#tsb"]:after {
-  background-position: -72px -200px;
-}
-/* OGN */
-a[href="#blc"]:after,
-a[href="#bm"]:after {
-  background-position: -108px 0;
-}
-a[href="#cj"]:after {
-  background-position: -108px -20px;
-}
-a[href="#cjb"]:after {
-  background-position: -108px -40px;
-}
-a[href="#cjf"]:after {
-  background-position: -108px -60px;
-}
 a[href="#im"]:after {
-  background-position: -108px -80px;
+  background-position: -72px -40px;
 }
 a[href="#jinair"]:after,
 a[href="#jas"]:after,
 a[href="#jaf"]:after {
-  background-position: -108px -100px;
+  background-position: -72px -60px;
 }
 a[href="#kt"]:after,
 a[href="#kta"]:after,
 a[href="#ktb"]:after {
-  background-position: -108px -120px;
-}
-a[href="#midas"]:after {
-  background-position: -108px -140px;
-}
-a[href="#mkz"]:after {
-  background-position: -108px -160px;
+  background-position: -72px -80px;
 }
 a[href="#najin"]:after {
-  background-position: -108px -180px;
-}
-a[href="#nsw"]:after,
-a[href="#njbs"]:after {
-  background-position: -108px -200px;
-}
-a[href="#nsh"]:after,
-a[href="#njws"]:after {
-  background-position: -108px -220px;
-}
-a[href="#prime"]:after {
-  background-position: -108px -240px;
+  background-position: -72px -100px;
 }
 a[href="#ozone"]:after,
 a[href="#sso"]:after,
 a[href="#ssw"]:after,
 a[href="#ssb"]:after,
 a[href="#ssg"]:after {
-  background-position: -108px -260px;
+  background-position: -72px -120px;
 }
 a[href="#skt"]:after {
-  background-position: -108px -280px;
-}
-a[href="#xb"]:after,
-a[href="#blast"]:after {
-  background-position: -108px -300px;
-}
-a[href="#xs"]:after,
-a[href="#storm"]:after {
-  background-position: -108px -320px;
+  background-position: -72px -140px;
 }
 /* LPL */
 a[href="#edg"]:after {
-  background-position: -144px 0;
+  background-position: -108px 0;
 }
+a[href="#ep"]:after,
 a[href="#ephk"]:after {
-  background-position: -144px -20px;
+  background-position: -108px -20px;
+}
+a[href="#gtf"]:after {
+  background-position: -108px -40px;
 }
 a[href="#ig"]:after {
-  background-position: -144px -40px;
+  background-position: -108px -60px;
 }
 a[href="#lgd"]:after {
-  background-position: -144px -60px;
+  background-position: -108px -80px;
+}
+a[href="#m3"]:after {
+  background-position: -108px -100px;
 }
 a[href="#omg"]:after {
-  background-position: -144px -80px;
+  background-position: -108px -120px;
 }
-a[href="#pe"]:after {
-  background-position: -144px -100px;
+a[href="#sh"]:after,
+a[href="#shr"]:after {
+  background-position: -108px -140px;
 }
-a[href="#sh"]:after {
-  background-position: -144px -120px;
+a[href="#tk"]:after {
+  background-position: -108px -160px;
+}
+a[href="#ts"]:after {
+  background-position: -108px -180px;
+}
+a[href="#vg"]:after {
+  background-position: -108px -200px;
 }
 a[href="#we"]:after {
-  background-position: -144px -140px;
-}
-a[href="#wea"]:after {
-  background-position: -144px -160px;
-}
-a[href="#yg"]:after {
-  background-position: -144px -180px;
+  background-position: -108px -220px;
 }
 /* GPL */
-a[href="#ahq"]:after {
-  background-position: -180px 0;
+a[href="#269"]:after {
+  background-position: -144px 0;
 }
-a[href="#ahqF"]:after {
-  background-position: -180px -20px;
+a[href="#apu"]:after {
+  background-position: -144px -20px;
+}
+a[href="#asf"]:after {
+  background-position: -144px -40px;
 }
 a[href="#bkt"]:after {
-  background-position: -180px -40px;
+  background-position: -144px -60px;
 }
 a[href="#fl"]:after {
-  background-position: -180px -60px;
+  background-position: -144px -80px;
 }
-a[href="#hka"]:after {
-  background-position: -180px -80px;
-}
-a[href="#ipt"]:after {
-  background-position: -180px -100px;
+a[href="#ifin"]:after {
+  background-position: -144px -100px;
 }
 a[href="#is"]:after,
 a[href="#isl"]:after,
 a[href="#igl"]:after {
-  background-position: -180px -120px;
+  background-position: -144px -120px;
 }
-a[href="#isr"]:after,
-a[href="#igr"]:after {
-  background-position: -180px -140px;
+a[href="#j2g"]:after {
+  background-position: -144px -140px;
 }
 a[href="#klh"]:after {
-  background-position: -180px -160px;
+  background-position: -144px -160px;
 }
-a[href="#machi"]:after {
-  background-position: -180px -180px;
+a[href="#kth"]:after {
+  background-position: -144px -180px;
 }
-a[href="#mle"]:after {
-  background-position: -180px -200px;
+a[href="#min"]:after,
+a[href="#msk"]:after {
+  background-position: -144px -200px;
 }
 a[href="#saj"]:after {
-  background-position: -180px -220px;
+  background-position: -144px -220px;
 }
 a[href="#sf5"]:after {
-  background-position: -180px -240px;
+  background-position: -144px -240px;
 }
-a[href="#sgs"]:after {
-  background-position: -180px -260px;
-}
-a[href="#tpa"]:after {
-  background-position: -180px -280px;
-}
-a[href="#tps"]:after {
-  background-position: -180px -300px;
+a[href="#tfr"]:after {
+  background-position: -144px -260px;
 }
 a[href="#war"]:after {
-  background-position: -180px -320px;
+  background-position: -144px -280px;
+}
+a[href="#wgd"]:after {
+  background-position: -144px -300px;
+}
+/* LMS */
+a[href="#ahq"]:after {
+  background-position: -180px 0;
+}
+a[href="#dly"]:after {
+  background-position: -180px -20px;
+}
+a[href="#hkes"]:after {
+  background-position: -180px -40px;
+}
+a[href="#logs"]:after {
+  background-position: -180px -60px;
+}
+a[href="#mc"]:after {
+  background-position: -180px -80px;
+}
+a[href="#mse"]:after {
+  background-position: -180px -100px;
+}
+a[href="#tpa"]:after {
+  background-position: -180px -120px;
 }
 a[href="#yoefw"]:after {
-  background-position: -180px -340px;
+  background-position: -180px -140px;
 }
 /* CBLOL (Brazil) */
 a[href="#awp"]:after {
@@ -1331,95 +1121,128 @@ a[href="#png"]:after {
 a[href="#unt"]:after {
   background-position: -216px -100px;
 }
-/* MCS */
-a[href="#aware"]:after,
-a[href="#awg"]:after {
-  background-position: -252px 0;
-}
-a[href="#dnl"]:after,
-a[href="#nid"]:after {
-  background-position: -252px -20px;
-}
-a[href="#xts"]:after {
-  background-position: -252px -40px;
-}
-a[href="#fxo"]:after {
-  background-position: -252px -60px;
-}
-a[href="#ggLA"]:after {
-  background-position: -252px -80px;
-}
-a[href="#iodd"]:after {
-  background-position: -252px -100px;
-}
-a[href="#nwe"]:after {
-  background-position: -252px -120px;
-}
-a[href="#rxg"]:after {
-  background-position: -252px -140px;
-}
-a[href="#tbd"]:after {
-  background-position: -252px -160px;
-}
-a[href="#ttd"]:after {
-  background-position: -252px -180px;
-}
-a[href="#tt"]:after {
-  background-position: -252px -200px;
-}
-a[href="#wzb"]:after {
-  background-position: -252px -220px;
-}
 /* Worlds */
 a[href="#dp"]:after {
-  background-position: -288px 0;
+  background-position: -252px 0;
 }
 a[href="#bears"]:after,
 a[href="#gam"]:after {
+  background-position: -252px -20px;
+}
+a[href="#gg"]:after,
+a[href="#gaming"]:after {
+  background-position: -252px -40px;
+}
+a[href="#ryl"]:after,
+a[href="#royal"]:after {
+  background-position: -252px -60px;
+}
+/* Old */
+a[href="#ahqF"]:after {
+  background-position: -288px 0;
+}
+a[href="#all"]:after {
   background-position: -288px -20px;
 }
-a[href="#gaming"]:after,
-a[href="#gg"]:after {
+a[href="#atn"]:after {
   background-position: -288px -40px;
 }
-a[href="#min"]:after,
-a[href="#msk"]:after {
+a[href="#blc"]:after,
+a[href="#bm"]:after {
   background-position: -288px -60px;
 }
-a[href="#royal"]:after,
-a[href="#ryl"]:after {
+a[href="#cjb"]:after {
   background-position: -288px -80px;
 }
-/* SCAN EUW */
-a[href="#anexis"]:after {
+a[href="#cjf"]:after {
+  background-position: -288px -100px;
+}
+a[href="#col"]:after,
+a[href="#colA"]:after {
+  background-position: -288px -120px;
+}
+a[href="#crs"]:after,
+a[href="#crsA"]:after {
+  background-position: -288px -140px;
+}
+a[href="#eg"]:after {
+  background-position: -288px -160px;
+}
+a[href="#hka"]:after {
+  background-position: -288px -180px;
+}
+a[href="#ipt"]:after {
+  background-position: -288px -200px;
+}
+a[href="#isr"]:after,
+a[href="#igr"]:after {
+  background-position: -288px -220px;
+}
+a[href="#ld"]:after {
+  background-position: -288px -240px;
+}
+a[href="#lmq"]:after {
+  background-position: -288px -260px;
+}
+a[href="#machi"]:after {
+  background-position: -288px -280px;
+}
+a[href="#midas"]:after {
+  background-position: -288px -300px;
+}
+a[href="#millenium"]:after,
+a[href="#mil"]:after {
   background-position: -324px 0;
 }
-a[href="#ete"]:after,
-a[href="#eternity"]:after {
+a[href="#mkz"]:after {
   background-position: -324px -20px;
 }
-a[href="#hc"]:after {
+a[href="#mle"]:after {
   background-position: -324px -40px;
 }
-a[href="#rg"]:after {
+a[href="#nip"]:after,
+a[href="#nip2"]:after {
   background-position: -324px -60px;
 }
-/* Disbanded/old */
-a[href="#dru"]:after {
-  background-position: -360px 0;
+a[href="#nsw"]:after,
+a[href="#njbs"]:after {
+  background-position: -324px -80px;
 }
-a[href="#sns"]:after {
-  background-position: -360px -20px;
+a[href="#nsh"]:after,
+a[href="#njws"]:after {
+  background-position: -324px -100px;
 }
-a[href="#sword"]:after {
-  background-position: -360px -80px;
+a[href="#pe"]:after {
+  background-position: -324px -120px;
 }
-/* Unsorted */
-a[href="#esuba"]:after {
-  background-position: -396px 0;
+a[href="#prime"]:after {
+  background-position: -324px -140px;
 }
-a[href="#roughnex"]:after {
-  background-position: -396px -40px;
+a[href="#sgs"]:after {
+  background-position: -324px -160px;
+}
+a[href="#shc"]:after {
+  background-position: -324px -180px;
+}
+a[href="#tps"]:after {
+  background-position: -324px -200px;
+}
+a[href="#ves"]:after {
+  background-position: -324px -220px;
+}
+a[href="#vul"]:after,
+a[href="#xdg"]:after {
+  background-position: -324px -240px;
+}
+a[href="#wea"]:after {
+  background-position: -324px -260px;
+}
+a[href="#xs"]:after,
+a[href="#storm"]:after {
+  background-position: -324px -280px;
+}
+a[href="#yg"]:after {
+  background-position: -324px -300px;
 }
 /* Allstars */
 a[href="#america"]:after,
@@ -1436,19 +1259,19 @@ a[href="#sea"]:after {
   cursor: default !important;
 }
 a[href="#america"]:after {
-  background-position: -432px 0px;
+  background-position: -360px 0px;
 }
 a[href="#china"]:after {
-  background-position: -432px -11px;
+  background-position: -360px -11px;
 }
 a[href="#europe"]:after {
-  background-position: -432px -22px;
+  background-position: -360px -22px;
 }
 a[href="#korea"]:after {
-  background-position: -432px -33px;
+  background-position: -360px -33px;
 }
 a[href="#sea"]:after {
-  background-position: -432px -44px;
+  background-position: -360px -44px;
 }
 .flat-list a[href^="#a"]:after,
 .flat-list a[href^="#b"]:after,
@@ -1609,182 +1432,182 @@ a[href="#sea"]:after {
 .linkflair-twitchfeatured a.title {
   color: red !important;
 }
-html[lang="dd"] .share-button .option,
-html[lang="dd"] .share .option,
-html[lang="dd"] .help-toggle .option,
-html[lang="dd"] .tagline .head .author,
-html[lang="dd"] .parent .author,
-html[lang="dd"] .parent .subreddit,
-html[lang="dd"] .link .score.dislikes,
-html[lang="dd"] .linkcompressed .score.dislikes,
-html[lang="dd"] .dsq-help,
-html[lang="dd"] .reddiquette,
-html[lang="dd"] .RES-keyNav-activeElement .md,
-html[lang="dd"] a[rel="tag"],
-html[lang="dd"] #subscribe a,
-html[lang="dd"] .tagline a,
-html[lang="dd"] .footer a,
-html[lang="dd"] .wired a,
-html[lang="dd"] .side a,
-html[lang="dd"] .subredditbox li a,
-html[lang="dd"] #authorInfoToolTip h3 a,
-html[lang="dd"] .morecomments a,
-html[lang="dd"] .comment .md p a {
+html:lang(dd) .share-button .option,
+html:lang(dd) .share .option,
+html:lang(dd) .help-toggle .option,
+html:lang(dd) .tagline .head .author,
+html:lang(dd) .parent .author,
+html:lang(dd) .parent .subreddit,
+html:lang(dd) .link .score.dislikes,
+html:lang(dd) .linkcompressed .score.dislikes,
+html:lang(dd) .dsq-help,
+html:lang(dd) .reddiquette,
+html:lang(dd) .RES-keyNav-activeElement .md,
+html:lang(dd) a[rel="tag"],
+html:lang(dd) #subscribe a,
+html:lang(dd) .tagline a,
+html:lang(dd) .footer a,
+html:lang(dd) .wired a,
+html:lang(dd) .side a,
+html:lang(dd) .subredditbox li a,
+html:lang(dd) #authorInfoToolTip h3 a,
+html:lang(dd) .morecomments a,
+html:lang(dd) .comment .md p a {
   color: #007dc3;
 }
-html[lang="dd"] .RES-keyNav-activeElement .usertext .md a,
-html[lang="dd"] .RES-keyNav-activeElement .tagline a,
-html[lang="dd"] .RES-keyNav-activeElement .parent-link {
+html:lang(dd) .RES-keyNav-activeElement .usertext .md a,
+html:lang(dd) .RES-keyNav-activeElement .tagline a,
+html:lang(dd) .RES-keyNav-activeElement .parent-link {
   color: #8ad;
 }
-html[lang="dd"] .entry .buttons li a,
-html[lang="dd"] .entry .morecomments .gray,
-html[lang="dd"] .markdownEditor .RESCharCounter {
+html:lang(dd) .entry .buttons li a,
+html:lang(dd) .entry .morecomments .gray,
+html:lang(dd) .markdownEditor .RESCharCounter {
   color: #aaa;
 }
-html[lang="dd"] .side .spacer,
-html[lang="dd"] .content,
-html[lang="dd"] .traffic-tables .traffic-table tr,
-html[lang="dd"] .sitetable .thing .md,
-html[lang="dd"] .parentComment .md,
-html[lang="dd"] .post-body.entry-content,
-html[lang="dd"] .dsq-auth-header,
-html[lang="dd"] .instructions .preftable th,
-html[lang="dd"] #BigEditor .markdownEditor a,
-html[lang="dd"] #BigEditor .markdownEditor .RESMacroDropdownTitle {
+html:lang(dd) .side .spacer,
+html:lang(dd) .content,
+html:lang(dd) .traffic-tables .traffic-table tr,
+html:lang(dd) .sitetable .thing .md,
+html:lang(dd) .parentComment .md,
+html:lang(dd) .post-body.entry-content,
+html:lang(dd) .dsq-auth-header,
+html:lang(dd) .instructions .preftable th,
+html:lang(dd) #BigEditor .markdownEditor a,
+html:lang(dd) #BigEditor .markdownEditor .RESMacroDropdownTitle {
   color: #ccc;
 }
-html[lang="dd"] > .content > .spacer > .sitetable::before,
-html[lang="dd"] > .content > .sharelink ~ .sitetable::before,
-html[lang="dd"] .side .age,
-html[lang="dd"] .trophy-info *,
-html[lang="dd"] .golddvertisement,
-html[lang="dd"] .flair-jump .title,
-html[lang="dd"] #siteTable .thing .title.loggedin,
-html[lang="dd"] #siteTable .thing .title,
-html[lang="dd"] .NERdupe p.title::after,
-html[lang="dd"] .savedComment,
-html[lang="dd"] .organic-listing .thing .title,
-html[lang="dd"] .side .titlebox form.flairtoggle,
-html[lang="dd"] .NERPageMarker {
+html:lang(dd) > .content > .spacer > .sitetable::before,
+html:lang(dd) > .content > .sharelink ~ .sitetable::before,
+html:lang(dd) .side .age,
+html:lang(dd) .trophy-info *,
+html:lang(dd) .golddvertisement,
+html:lang(dd) .flair-jump .title,
+html:lang(dd) #siteTable .thing .title.loggedin,
+html:lang(dd) #siteTable .thing .title,
+html:lang(dd) .NERdupe p.title::after,
+html:lang(dd) .savedComment,
+html:lang(dd) .organic-listing .thing .title,
+html:lang(dd) .side .titlebox form.flairtoggle,
+html:lang(dd) .NERPageMarker {
   color: #ddd;
 }
-html[lang="dd"] .side .usertext-body .md em,
-html[lang="dd"] .side .usertext-body .md p {
+html:lang(dd) .side .usertext-body .md em,
+html:lang(dd) .side .usertext-body .md p {
   color: #eee;
 }
-html[lang="dd"] .usertext-edit textarea {
+html:lang(dd) .usertext-edit textarea {
   color: #ccc;
   background-color: #666;
 }
-html[lang="dd"] input[type="text"] {
+html:lang(dd) input[type="text"] {
   background-color: #aaa;
 }
-html[lang="dd"] #commentNavButtons *,
-html[lang="dd"] .updateTime,
-html[lang="dd"] .toggle .option {
+html:lang(dd) #commentNavButtons *,
+html:lang(dd) .updateTime,
+html:lang(dd) .toggle .option {
   color: #fff;
 }
-html[lang="dd"] .linkcompressed .entry .buttons li a,
-html[lang="dd"] .link .usertext .md,
-html[lang="dd"] .thing .compressed,
-html[lang="dd"] .organic-listing .link,
-html[lang="dd"] .link.promotedlink,
-html[lang="dd"] .link.promotedlink.promoted,
-html[lang="dd"] .commentreply .help tr,
-html[lang="dd"] .organic-listing .linkcompressed,
-html[lang="dd"] .sr-interest-bar .bubble {
+html:lang(dd) .linkcompressed .entry .buttons li a,
+html:lang(dd) .link .usertext .md,
+html:lang(dd) .thing .compressed,
+html:lang(dd) .organic-listing .link,
+html:lang(dd) .link.promotedlink,
+html:lang(dd) .link.promotedlink.promoted,
+html:lang(dd) .commentreply .help tr,
+html:lang(dd) .organic-listing .linkcompressed,
+html:lang(dd) .sr-interest-bar .bubble {
   background: none;
 }
-html[lang="dd"] .RES-keyNav-activeElement,
-html[lang="dd"] .commentarea .RES-keyNav-activeElement .md,
-html[lang="dd"] .commentarea .RES-keyNav-activeElement.entry .noncollapsed {
+html:lang(dd) .RES-keyNav-activeElement,
+html:lang(dd) .commentarea .RES-keyNav-activeElement .md,
+html:lang(dd) .commentarea .RES-keyNav-activeElement.entry .noncollapsed {
   background-color: transparent !important;
 }
 .res-nightmode body,
-html[lang="dd"] body,
+html:lang(dd) body,
 .res-nightmode .side,
-html[lang="dd"] .side,
+html:lang(dd) .side,
 .res-nightmode .flairselector,
-html[lang="dd"] .flairselector,
+html:lang(dd) .flairselector,
 .res-nightmode .linefield,
-html[lang="dd"] .linefield,
+html:lang(dd) .linefield,
 .res-nightmode .icon-menu a,
-html[lang="dd"] .icon-menu a,
+html:lang(dd) .icon-menu a,
 .res-nightmode .side .leavemoderator,
-html[lang="dd"] .side .leavemoderator,
+html:lang(dd) .side .leavemoderator,
 .res-nightmode .side .leavecontributor-button,
-html[lang="dd"] .side .leavecontributor-button,
+html:lang(dd) .side .leavecontributor-button,
 .res-nightmode .side .titlebox,
-html[lang="dd"] .side .titlebox,
+html:lang(dd) .side .titlebox,
 .res-nightmode .side .spacer .titlebox .redditname,
-html[lang="dd"] .side .spacer .titlebox .redditname,
+html:lang(dd) .side .spacer .titlebox .redditname,
 .res-nightmode .side .titlebox .flairtoggle,
-html[lang="dd"] .side .titlebox .flairtoggle,
+html:lang(dd) .side .titlebox .flairtoggle,
 .res-nightmode .side .usertext-body .md ol,
-html[lang="dd"] .side .usertext-body .md ol,
+html:lang(dd) .side .usertext-body .md ol,
 .res-nightmode .side .usertext-body .md ol ol,
-html[lang="dd"] .side .usertext-body .md ol ol,
+html:lang(dd) .side .usertext-body .md ol ol,
 .res-nightmode .side .usertext-body .md ol ol li,
-html[lang="dd"] .side .usertext-body .md ol ol li,
+html:lang(dd) .side .usertext-body .md ol ol li,
 .res-nightmode .side blockquote,
-html[lang="dd"] .side blockquote,
+html:lang(dd) .side blockquote,
 .res-nightmode .modactionlisting table *,
-html[lang="dd"] .modactionlisting table * {
+html:lang(dd) .modactionlisting table * {
   background-color: #080808;
 }
 .res-nightmode body > .content,
-html[lang="dd"] body > .content {
+html:lang(dd) body > .content {
   background-color: transparent !important;
 }
-.res-nightmode .entry a:visited,
-html[lang="dd"] .entry a:visited {
+.res-nightmode .entry a,
+html:lang(dd) .entry a {
   color: #007dc3;
 }
 .res-nightmode .entry a:visited[href*="lol.eventvods.com"],
-html[lang="dd"] .entry a:visited[href*="lol.eventvods.com"] {
+html:lang(dd) .entry a:visited[href*="lol.eventvods.com"] {
   color: #007dc3;
 }
 .res-nightmode .RES-keyNav-activeElement .entry a:visited[href*="lol.eventvods.com"],
-html[lang="dd"] .RES-keyNav-activeElement .entry a:visited[href*="lol.eventvods.com"] {
-  color: #8ad;
+html:lang(dd) .RES-keyNav-activeElement .entry a:visited[href*="lol.eventvods.com"] {
+  color: #8ad!important;
 }
 .res-nightmode #header-img-a,
-html[lang="dd"] #header-img-a {
+html:lang(dd) #header-img-a {
   border-right: 1px solid #080808;
   background-position: 0 -68px;
 }
 .res-nightmode #header-img-a:hover,
-html[lang="dd"] #header-img-a:hover {
+html:lang(dd) #header-img-a:hover {
   background-position: 0 -102px;
 }
 .res-nightmode #header-bottom-left,
-html[lang="dd"] #header-bottom-left {
+html:lang(dd) #header-bottom-left {
   background: #02021a url(%%header%%) no-repeat right top !important;
 }
 .res-nightmode #header-bottom-right,
-html[lang="dd"] #header-bottom-right {
+html:lang(dd) #header-bottom-right {
   background: url(%%gray%%);
   background-position: 0 -68px;
 }
 .res-nightmode #header-bottom-right a,
-html[lang="dd"] #header-bottom-right a {
+html:lang(dd) #header-bottom-right a {
   color: #080808;
 }
 .res-nightmode .user,
-html[lang="dd"] .user {
+html:lang(dd) .user {
   color: #080808;
 }
 .res-nightmode .user .userkarma,
-html[lang="dd"] .user .userkarma {
+html:lang(dd) .user .userkarma {
   border-color: #080808;
 }
 .res-nightmode .separator,
-html[lang="dd"] .separator {
+html:lang(dd) .separator {
   color: #ccc;
 }
 .res-nightmode #header-bottom-right.res-navTop,
-html[lang="dd"] #header-bottom-right.res-navTop {
+html:lang(dd) #header-bottom-right.res-navTop {
   top: 145px;
   bottom: -34px;
   line-height: 22px;
@@ -1794,7 +1617,7 @@ html[lang="dd"] #header-bottom-right.res-navTop {
   border-left: 1px solid #080808;
 }
 .res-nightmode #header-bottom-right.res-navTop #userbarToggle,
-html[lang="dd"] #header-bottom-right.res-navTop #userbarToggle {
+html:lang(dd) #header-bottom-right.res-navTop #userbarToggle {
   border-radius: 0;
   background: url(%%gray%%) 0px -68px;
   border-right: 1px dotted #444;
@@ -1803,343 +1626,345 @@ html[lang="dd"] #header-bottom-right.res-navTop #userbarToggle {
   color: #080808;
 }
 .res-nightmode .link.last-clicked,
-html[lang="dd"] .link.last-clicked {
+html:lang(dd) .link.last-clicked {
   overflow: hidden;
 }
 .res-nightmode .thumbnail,
-html[lang="dd"] .thumbnail {
+html:lang(dd) .thumbnail {
   background: url(%%nightmode-sprites%%) 0px 1px no-repeat #080808;
 }
 .res-nightmode .entry .tagline:first-of-type,
-html[lang="dd"] .entry .tagline:first-of-type,
+html:lang(dd) .entry .tagline:first-of-type,
 .res-nightmode .entry time,
-html[lang="dd"] .entry time {
+html:lang(dd) .entry time {
   color: #b4b47d!important;
 }
 .res-nightmode .entry .md h3,
-html[lang="dd"] .entry .md h3 {
+html:lang(dd) .entry .md h3 {
   margin-bottom: 8px;
 }
 .res-nightmode .usertext-body h4,
-html[lang="dd"] .usertext-body h4 {
+html:lang(dd) .usertext-body h4 {
   color: #f23;
   font-weight: bold;
 }
 .res-nightmode .link .usertext-body .md,
-html[lang="dd"] .link .usertext-body .md,
+html:lang(dd) .link .usertext-body .md,
 .res-nightmode .side .linkinfo,
-html[lang="dd"] .side .linkinfo {
+html:lang(dd) .side .linkinfo {
   border-color: #88f;
 }
 .res-nightmode .md table *,
-html[lang="dd"] .md table * {
+html:lang(dd) .md table * {
   border: 10px;
 }
 .res-nightmode .md table th,
-html[lang="dd"] .md table th {
+html:lang(dd) .md table th {
   text-align: center;
 }
 .res-nightmode .md table thead,
-html[lang="dd"] .md table thead {
+html:lang(dd) .md table thead {
   background-color: #333;
 }
 .res-nightmode .md table td,
-html[lang="dd"] .md table td,
+html:lang(dd) .md table td,
 .res-nightmode .md table th,
-html[lang="dd"] .md table th {
+html:lang(dd) .md table th {
   border-right: 1px solid #888;
   padding: 4px 8px;
 }
 .res-nightmode .side .md table,
-html[lang="dd"] .side .md table {
+html:lang(dd) .side .md table {
   width: 100%;
 }
 .res-nightmode .md th,
-html[lang="dd"] .md th {
+html:lang(dd) .md th {
   background-color: #101010;
   border-color: #101010;
 }
 .res-nightmode .md tr:nth-of-type(odd),
-html[lang="dd"] .md tr:nth-of-type(odd) {
+html:lang(dd) .md tr:nth-of-type(odd) {
   background: #181818;
   color: #dcdcdc;
 }
 .res-nightmode .md tr:nth-of-type(even),
-html[lang="dd"] .md tr:nth-of-type(even) {
+html:lang(dd) .md tr:nth-of-type(even) {
   background: #222;
   color: #dcdcdc;
 }
 .res-nightmode .md table tr:hover,
-html[lang="dd"] .md table tr:hover {
+html:lang(dd) .md table tr:hover {
   background-color: #7d7;
   color: #080808;
 }
 .res-nightmode .md table tr:hover a,
-html[lang="dd"] .md table tr:hover a {
+html:lang(dd) .md table tr:hover a,
+.res-nightmode .md table tr:hover a[href*="lol.eventvods.com"],
+html:lang(dd) .md table tr:hover a[href*="lol.eventvods.com"] {
   color: #55c!important;
 }
 .res-nightmode .usertext-body .md .RESdupeimg,
-html[lang="dd"] .usertext-body .md .RESdupeimg,
+html:lang(dd) .usertext-body .md .RESdupeimg,
 .res-nightmode .usertext-body .md .expando-button.video,
-html[lang="dd"] .usertext-body .md .expando-button.video,
+html:lang(dd) .usertext-body .md .expando-button.video,
 .res-nightmode .usertext-body .md .expando-button.video.collapsed,
-html[lang="dd"] .usertext-body .md .expando-button.video.collapsed,
+html:lang(dd) .usertext-body .md .expando-button.video.collapsed,
 .res-nightmode .usertext-body .md .expando-button.video.expanded,
-html[lang="dd"] .usertext-body .md .expando-button.video.expanded {
+html:lang(dd) .usertext-body .md .expando-button.video.expanded {
   display: none!important;
 }
 .res-nightmode .arrow,
-html[lang="dd"] .arrow,
+html:lang(dd) .arrow,
 .res-nightmode .arrow.up,
-html[lang="dd"] .arrow.up,
+html:lang(dd) .arrow.up,
 .res-nightmode .arrow.up:hover,
-html[lang="dd"] .arrow.up:hover,
+html:lang(dd) .arrow.up:hover,
 .res-nightmode .arrow.upmod,
-html[lang="dd"] .arrow.upmod,
+html:lang(dd) .arrow.upmod,
 .res-nightmode .arrow.down,
-html[lang="dd"] .arrow.down,
+html:lang(dd) .arrow.down,
 .res-nightmode .arrow.down:hover,
-html[lang="dd"] .arrow.down:hover,
+html:lang(dd) .arrow.down:hover,
 .res-nightmode .arrow.downmod,
-html[lang="dd"] .arrow.downmod {
+html:lang(dd) .arrow.downmod {
   background: url(%%nightmode-sprites%%) !important;
 }
 .res-nightmode .arrow.up,
-html[lang="dd"] .arrow.up,
+html:lang(dd) .arrow.up,
 .res-nightmode .arrow.up:hover,
-html[lang="dd"] .arrow.up:hover {
+html:lang(dd) .arrow.up:hover {
   background-position: -30px -52px !important;
 }
 .res-nightmode .arrow.upmod,
-html[lang="dd"] .arrow.upmod {
+html:lang(dd) .arrow.upmod {
   background-position: -45px -52px !important;
 }
 .res-nightmode .arrow.down,
-html[lang="dd"] .arrow.down {
+html:lang(dd) .arrow.down {
   visibility: hidden;
   display: none;
 }
 .res-nightmode .comment .arrow.down,
-html[lang="dd"] .comment .arrow.down,
+html:lang(dd) .comment .arrow.down,
 .res-nightmode .comment .arrow.down:hover,
-html[lang="dd"] .comment .arrow.down:hover {
+html:lang(dd) .comment .arrow.down:hover {
   visibility: visible;
   display: block;
   background-position: 0px -52px !important;
   margin-top: 5px;
 }
 .res-nightmode .comment .arrow.downmod,
-html[lang="dd"] .comment .arrow.downmod {
+html:lang(dd) .comment .arrow.downmod {
   background-position: -15px -52px !important;
   margin-top: 5px;
 }
 .res-nightmode .RES-keyNav-activeElement,
-html[lang="dd"] .RES-keyNav-activeElement,
+html:lang(dd) .RES-keyNav-activeElement,
 .res-nightmode .RES-keyNav-activeElement .usertext-body,
-html[lang="dd"] .RES-keyNav-activeElement .usertext-body,
+html:lang(dd) .RES-keyNav-activeElement .usertext-body,
 .res-nightmode .RES-keyNav-activeElement .usertext-body .md,
-html[lang="dd"] .RES-keyNav-activeElement .usertext-body .md,
+html:lang(dd) .RES-keyNav-activeElement .usertext-body .md,
 .res-nightmode .RES-keyNav-activeElement .usertext-body .md p,
-html[lang="dd"] .RES-keyNav-activeElement .usertext-body .md p,
+html:lang(dd) .RES-keyNav-activeElement .usertext-body .md p,
 .commentarea .res-nightmode .RES-keyNav-activeElement .noncollapsed,
-.commentarea html[lang="dd"] .RES-keyNav-activeElement .noncollapsed,
+.commentarea html:lang(dd) .RES-keyNav-activeElement .noncollapsed,
 .res-nightmode .RES-keyNav-activeElement .noncollapsed .md,
-html[lang="dd"] .RES-keyNav-activeElement .noncollapsed .md,
+html:lang(dd) .RES-keyNav-activeElement .noncollapsed .md,
 .res-nightmode .RES-keyNav-activeElement .noncollapsed .md p,
-html[lang="dd"] .RES-keyNav-activeElement .noncollapsed .md p {
+html:lang(dd) .RES-keyNav-activeElement .noncollapsed .md p {
   background-color: #3a3a3a !important;
 }
 .res-nightmode .commentarea .usertext .usertext-edit:after,
-html[lang="dd"] .commentarea .usertext .usertext-edit:after {
+html:lang(dd) .commentarea .usertext .usertext-edit:after {
   background-color: inherit;
   color: #ccc;
 }
 .res-nightmode .comment,
-html[lang="dd"] .comment {
+html:lang(dd) .comment {
   border-radius: 3px;
   border: none!important;
 }
 .res-nightmode .comments-page .comment,
-html[lang="dd"] .comments-page .comment,
+html:lang(dd) .comments-page .comment,
 .res-nightmode .comments-page .comment .comment .comment,
-html[lang="dd"] .comments-page .comment .comment .comment,
+html:lang(dd) .comments-page .comment .comment .comment,
 .res-nightmode .comments-page .comment .comment .comment .comment .comment,
-html[lang="dd"] .comments-page .comment .comment .comment .comment .comment,
+html:lang(dd) .comments-page .comment .comment .comment .comment .comment,
 .res-nightmode .comments-page .comment .comment .comment .comment .comment .comment .comment,
-html[lang="dd"] .comments-page .comment .comment .comment .comment .comment .comment .comment,
+html:lang(dd) .comments-page .comment .comment .comment .comment .comment .comment .comment,
 .res-nightmode .comments-page .comment .comment .comment .comment .comment .comment .comment .comment .comment,
-html[lang="dd"] .comments-page .comment .comment .comment .comment .comment .comment .comment .comment .comment,
+html:lang(dd) .comments-page .comment .comment .comment .comment .comment .comment .comment .comment .comment,
 .res-nightmode .res-commentBoxes .comments-page .comment,
-html[lang="dd"] .res-commentBoxes .comments-page .comment,
+html:lang(dd) .res-commentBoxes .comments-page .comment,
 .res-nightmode .res-commentBoxes .comments-page .comment .comment .comment,
-html[lang="dd"] .res-commentBoxes .comments-page .comment .comment .comment,
+html:lang(dd) .res-commentBoxes .comments-page .comment .comment .comment,
 .res-nightmode .res-commentBoxes .comments-page .comment .comment .comment .comment .comment,
-html[lang="dd"] .res-commentBoxes .comments-page .comment .comment .comment .comment .comment,
+html:lang(dd) .res-commentBoxes .comments-page .comment .comment .comment .comment .comment,
 .res-nightmode .res-commentBoxes .comments-page .comment .comment .comment .comment .comment .comment .comment,
-html[lang="dd"] .res-commentBoxes .comments-page .comment .comment .comment .comment .comment .comment .comment,
+html:lang(dd) .res-commentBoxes .comments-page .comment .comment .comment .comment .comment .comment .comment,
 .res-nightmode .res-commentBoxes .comments-page .comment .comment .comment .comment .comment .comment .comment .comment .comment,
-html[lang="dd"] .res-commentBoxes .comments-page .comment .comment .comment .comment .comment .comment .comment .comment .comment {
+html:lang(dd) .res-commentBoxes .comments-page .comment .comment .comment .comment .comment .comment .comment .comment .comment {
   background-color: #1a1a1a!important;
 }
 .res-nightmode .comments-page .comment .arrow.up,
-html[lang="dd"] .comments-page .comment .arrow.up,
+html:lang(dd) .comments-page .comment .arrow.up,
 .res-nightmode .comments-page .comment .comment .comment .arrow.up,
-html[lang="dd"] .comments-page .comment .comment .comment .arrow.up,
+html:lang(dd) .comments-page .comment .comment .comment .arrow.up,
 .res-nightmode .comments-page .comment .comment .comment .comment .comment .arrow.up,
-html[lang="dd"] .comments-page .comment .comment .comment .comment .comment .arrow.up,
+html:lang(dd) .comments-page .comment .comment .comment .comment .comment .arrow.up,
 .res-nightmode .comments-page .comment .comment .comment .comment .comment .comment .comment .arrow.up,
-html[lang="dd"] .comments-page .comment .comment .comment .comment .comment .comment .comment .arrow.up,
+html:lang(dd) .comments-page .comment .comment .comment .comment .comment .comment .comment .arrow.up,
 .res-nightmode .comments-page .comment .comment .comment .comment .comment .comment .comment .comment .comment .arrow.up,
-html[lang="dd"] .comments-page .comment .comment .comment .comment .comment .comment .comment .comment .comment .arrow.up,
+html:lang(dd) .comments-page .comment .comment .comment .comment .comment .comment .comment .comment .comment .arrow.up,
 .res-nightmode .res-commentBoxes .comments-page .comment .arrow.up,
-html[lang="dd"] .res-commentBoxes .comments-page .comment .arrow.up,
+html:lang(dd) .res-commentBoxes .comments-page .comment .arrow.up,
 .res-nightmode .res-commentBoxes .comments-page .comment .comment .comment .arrow.up,
-html[lang="dd"] .res-commentBoxes .comments-page .comment .comment .comment .arrow.up,
+html:lang(dd) .res-commentBoxes .comments-page .comment .comment .comment .arrow.up,
 .res-nightmode .res-commentBoxes .comments-page .comment .comment .comment .comment .comment .arrow.up,
-html[lang="dd"] .res-commentBoxes .comments-page .comment .comment .comment .comment .comment .arrow.up,
+html:lang(dd) .res-commentBoxes .comments-page .comment .comment .comment .comment .comment .arrow.up,
 .res-nightmode .res-commentBoxes .comments-page .comment .comment .comment .comment .comment .comment .comment .arrow.up,
-html[lang="dd"] .res-commentBoxes .comments-page .comment .comment .comment .comment .comment .comment .comment .arrow.up,
+html:lang(dd) .res-commentBoxes .comments-page .comment .comment .comment .comment .comment .comment .comment .arrow.up,
 .res-nightmode .res-commentBoxes .comments-page .comment .comment .comment .comment .comment .comment .comment .comment .comment .arrow.up,
-html[lang="dd"] .res-commentBoxes .comments-page .comment .comment .comment .comment .comment .comment .comment .comment .comment .arrow.up,
+html:lang(dd) .res-commentBoxes .comments-page .comment .comment .comment .comment .comment .comment .comment .comment .comment .arrow.up,
 .res-nightmode .comments-page .comment .arrow.up:hover,
-html[lang="dd"] .comments-page .comment .arrow.up:hover,
+html:lang(dd) .comments-page .comment .arrow.up:hover,
 .res-nightmode .comments-page .comment .comment .comment .arrow.up:hover,
-html[lang="dd"] .comments-page .comment .comment .comment .arrow.up:hover,
+html:lang(dd) .comments-page .comment .comment .comment .arrow.up:hover,
 .res-nightmode .comments-page .comment .comment .comment .comment .comment .arrow.up:hover,
-html[lang="dd"] .comments-page .comment .comment .comment .comment .comment .arrow.up:hover,
+html:lang(dd) .comments-page .comment .comment .comment .comment .comment .arrow.up:hover,
 .res-nightmode .comments-page .comment .comment .comment .comment .comment .comment .comment .arrow.up:hover,
-html[lang="dd"] .comments-page .comment .comment .comment .comment .comment .comment .comment .arrow.up:hover,
+html:lang(dd) .comments-page .comment .comment .comment .comment .comment .comment .comment .arrow.up:hover,
 .res-nightmode .comments-page .comment .comment .comment .comment .comment .comment .comment .comment .comment .arrow.up:hover,
-html[lang="dd"] .comments-page .comment .comment .comment .comment .comment .comment .comment .comment .comment .arrow.up:hover,
+html:lang(dd) .comments-page .comment .comment .comment .comment .comment .comment .comment .comment .comment .arrow.up:hover,
 .res-nightmode .res-commentBoxes .comments-page .comment .arrow.up:hover,
-html[lang="dd"] .res-commentBoxes .comments-page .comment .arrow.up:hover,
+html:lang(dd) .res-commentBoxes .comments-page .comment .arrow.up:hover,
 .res-nightmode .res-commentBoxes .comments-page .comment .comment .comment .arrow.up:hover,
-html[lang="dd"] .res-commentBoxes .comments-page .comment .comment .comment .arrow.up:hover,
+html:lang(dd) .res-commentBoxes .comments-page .comment .comment .comment .arrow.up:hover,
 .res-nightmode .res-commentBoxes .comments-page .comment .comment .comment .comment .comment .arrow.up:hover,
-html[lang="dd"] .res-commentBoxes .comments-page .comment .comment .comment .comment .comment .arrow.up:hover,
+html:lang(dd) .res-commentBoxes .comments-page .comment .comment .comment .comment .comment .arrow.up:hover,
 .res-nightmode .res-commentBoxes .comments-page .comment .comment .comment .comment .comment .comment .comment .arrow.up:hover,
-html[lang="dd"] .res-commentBoxes .comments-page .comment .comment .comment .comment .comment .comment .comment .arrow.up:hover,
+html:lang(dd) .res-commentBoxes .comments-page .comment .comment .comment .comment .comment .comment .comment .arrow.up:hover,
 .res-nightmode .res-commentBoxes .comments-page .comment .comment .comment .comment .comment .comment .comment .comment .comment .arrow.up:hover,
-html[lang="dd"] .res-commentBoxes .comments-page .comment .comment .comment .comment .comment .comment .comment .comment .comment .arrow.up:hover {
+html:lang(dd) .res-commentBoxes .comments-page .comment .comment .comment .comment .comment .comment .comment .comment .comment .arrow.up:hover {
   background-position: -30px -66px !important;
 }
 .res-nightmode .comments-page .comment .arrow.upmod,
-html[lang="dd"] .comments-page .comment .arrow.upmod,
+html:lang(dd) .comments-page .comment .arrow.upmod,
 .res-nightmode .comments-page .comment .comment .comment .arrow.upmod,
-html[lang="dd"] .comments-page .comment .comment .comment .arrow.upmod,
+html:lang(dd) .comments-page .comment .comment .comment .arrow.upmod,
 .res-nightmode .comments-page .comment .comment .comment .comment .comment .arrow.upmod,
-html[lang="dd"] .comments-page .comment .comment .comment .comment .comment .arrow.upmod,
+html:lang(dd) .comments-page .comment .comment .comment .comment .comment .arrow.upmod,
 .res-nightmode .comments-page .comment .comment .comment .comment .comment .comment .comment .arrow.upmod,
-html[lang="dd"] .comments-page .comment .comment .comment .comment .comment .comment .comment .arrow.upmod,
+html:lang(dd) .comments-page .comment .comment .comment .comment .comment .comment .comment .arrow.upmod,
 .res-nightmode .comments-page .comment .comment .comment .comment .comment .comment .comment .comment .comment .arrow.upmod,
-html[lang="dd"] .comments-page .comment .comment .comment .comment .comment .comment .comment .comment .comment .arrow.upmod,
+html:lang(dd) .comments-page .comment .comment .comment .comment .comment .comment .comment .comment .comment .arrow.upmod,
 .res-nightmode .res-commentBoxes .comments-page .comment .arrow.upmod,
-html[lang="dd"] .res-commentBoxes .comments-page .comment .arrow.upmod,
+html:lang(dd) .res-commentBoxes .comments-page .comment .arrow.upmod,
 .res-nightmode .res-commentBoxes .comments-page .comment .comment .comment .arrow.upmod,
-html[lang="dd"] .res-commentBoxes .comments-page .comment .comment .comment .arrow.upmod,
+html:lang(dd) .res-commentBoxes .comments-page .comment .comment .comment .arrow.upmod,
 .res-nightmode .res-commentBoxes .comments-page .comment .comment .comment .comment .comment .arrow.upmod,
-html[lang="dd"] .res-commentBoxes .comments-page .comment .comment .comment .comment .comment .arrow.upmod,
+html:lang(dd) .res-commentBoxes .comments-page .comment .comment .comment .comment .comment .arrow.upmod,
 .res-nightmode .res-commentBoxes .comments-page .comment .comment .comment .comment .comment .comment .comment .arrow.upmod,
-html[lang="dd"] .res-commentBoxes .comments-page .comment .comment .comment .comment .comment .comment .comment .arrow.upmod,
+html:lang(dd) .res-commentBoxes .comments-page .comment .comment .comment .comment .comment .comment .comment .arrow.upmod,
 .res-nightmode .res-commentBoxes .comments-page .comment .comment .comment .comment .comment .comment .comment .comment .comment .arrow.upmod,
-html[lang="dd"] .res-commentBoxes .comments-page .comment .comment .comment .comment .comment .comment .comment .comment .comment .arrow.upmod {
+html:lang(dd) .res-commentBoxes .comments-page .comment .comment .comment .comment .comment .comment .comment .comment .comment .arrow.upmod {
   background-position: -45px -66px !important;
 }
 .res-nightmode .comments-page .comment .arrow.down,
-html[lang="dd"] .comments-page .comment .arrow.down,
+html:lang(dd) .comments-page .comment .arrow.down,
 .res-nightmode .comments-page .comment .comment .comment .arrow.down,
-html[lang="dd"] .comments-page .comment .comment .comment .arrow.down,
+html:lang(dd) .comments-page .comment .comment .comment .arrow.down,
 .res-nightmode .comments-page .comment .comment .comment .comment .comment .arrow.down,
-html[lang="dd"] .comments-page .comment .comment .comment .comment .comment .arrow.down,
+html:lang(dd) .comments-page .comment .comment .comment .comment .comment .arrow.down,
 .res-nightmode .comments-page .comment .comment .comment .comment .comment .comment .comment .arrow.down,
-html[lang="dd"] .comments-page .comment .comment .comment .comment .comment .comment .comment .arrow.down,
+html:lang(dd) .comments-page .comment .comment .comment .comment .comment .comment .comment .arrow.down,
 .res-nightmode .comments-page .comment .comment .comment .comment .comment .comment .comment .comment .comment .arrow.down,
-html[lang="dd"] .comments-page .comment .comment .comment .comment .comment .comment .comment .comment .comment .arrow.down,
+html:lang(dd) .comments-page .comment .comment .comment .comment .comment .comment .comment .comment .comment .arrow.down,
 .res-nightmode .res-commentBoxes .comments-page .comment .arrow.down,
-html[lang="dd"] .res-commentBoxes .comments-page .comment .arrow.down,
+html:lang(dd) .res-commentBoxes .comments-page .comment .arrow.down,
 .res-nightmode .res-commentBoxes .comments-page .comment .comment .comment .arrow.down,
-html[lang="dd"] .res-commentBoxes .comments-page .comment .comment .comment .arrow.down,
+html:lang(dd) .res-commentBoxes .comments-page .comment .comment .comment .arrow.down,
 .res-nightmode .res-commentBoxes .comments-page .comment .comment .comment .comment .comment .arrow.down,
-html[lang="dd"] .res-commentBoxes .comments-page .comment .comment .comment .comment .comment .arrow.down,
+html:lang(dd) .res-commentBoxes .comments-page .comment .comment .comment .comment .comment .arrow.down,
 .res-nightmode .res-commentBoxes .comments-page .comment .comment .comment .comment .comment .comment .comment .arrow.down,
-html[lang="dd"] .res-commentBoxes .comments-page .comment .comment .comment .comment .comment .comment .comment .arrow.down,
+html:lang(dd) .res-commentBoxes .comments-page .comment .comment .comment .comment .comment .comment .comment .arrow.down,
 .res-nightmode .res-commentBoxes .comments-page .comment .comment .comment .comment .comment .comment .comment .comment .comment .arrow.down,
-html[lang="dd"] .res-commentBoxes .comments-page .comment .comment .comment .comment .comment .comment .comment .comment .comment .arrow.down,
+html:lang(dd) .res-commentBoxes .comments-page .comment .comment .comment .comment .comment .comment .comment .comment .comment .arrow.down,
 .res-nightmode .comments-page .comment .arrow.down:hover,
-html[lang="dd"] .comments-page .comment .arrow.down:hover,
+html:lang(dd) .comments-page .comment .arrow.down:hover,
 .res-nightmode .comments-page .comment .comment .comment .arrow.down:hover,
-html[lang="dd"] .comments-page .comment .comment .comment .arrow.down:hover,
+html:lang(dd) .comments-page .comment .comment .comment .arrow.down:hover,
 .res-nightmode .comments-page .comment .comment .comment .comment .comment .arrow.down:hover,
-html[lang="dd"] .comments-page .comment .comment .comment .comment .comment .arrow.down:hover,
+html:lang(dd) .comments-page .comment .comment .comment .comment .comment .arrow.down:hover,
 .res-nightmode .comments-page .comment .comment .comment .comment .comment .comment .comment .arrow.down:hover,
-html[lang="dd"] .comments-page .comment .comment .comment .comment .comment .comment .comment .arrow.down:hover,
+html:lang(dd) .comments-page .comment .comment .comment .comment .comment .comment .comment .arrow.down:hover,
 .res-nightmode .comments-page .comment .comment .comment .comment .comment .comment .comment .comment .comment .arrow.down:hover,
-html[lang="dd"] .comments-page .comment .comment .comment .comment .comment .comment .comment .comment .comment .arrow.down:hover,
+html:lang(dd) .comments-page .comment .comment .comment .comment .comment .comment .comment .comment .comment .arrow.down:hover,
 .res-nightmode .res-commentBoxes .comments-page .comment .arrow.down:hover,
-html[lang="dd"] .res-commentBoxes .comments-page .comment .arrow.down:hover,
+html:lang(dd) .res-commentBoxes .comments-page .comment .arrow.down:hover,
 .res-nightmode .res-commentBoxes .comments-page .comment .comment .comment .arrow.down:hover,
-html[lang="dd"] .res-commentBoxes .comments-page .comment .comment .comment .arrow.down:hover,
+html:lang(dd) .res-commentBoxes .comments-page .comment .comment .comment .arrow.down:hover,
 .res-nightmode .res-commentBoxes .comments-page .comment .comment .comment .comment .comment .arrow.down:hover,
-html[lang="dd"] .res-commentBoxes .comments-page .comment .comment .comment .comment .comment .arrow.down:hover,
+html:lang(dd) .res-commentBoxes .comments-page .comment .comment .comment .comment .comment .arrow.down:hover,
 .res-nightmode .res-commentBoxes .comments-page .comment .comment .comment .comment .comment .comment .comment .arrow.down:hover,
-html[lang="dd"] .res-commentBoxes .comments-page .comment .comment .comment .comment .comment .comment .comment .arrow.down:hover,
+html:lang(dd) .res-commentBoxes .comments-page .comment .comment .comment .comment .comment .comment .comment .arrow.down:hover,
 .res-nightmode .res-commentBoxes .comments-page .comment .comment .comment .comment .comment .comment .comment .comment .comment .arrow.down:hover,
-html[lang="dd"] .res-commentBoxes .comments-page .comment .comment .comment .comment .comment .comment .comment .comment .comment .arrow.down:hover {
+html:lang(dd) .res-commentBoxes .comments-page .comment .comment .comment .comment .comment .comment .comment .comment .comment .arrow.down:hover {
   background-position: 0px -66px !important;
 }
 .res-nightmode .comments-page .comment .arrow.downmod,
-html[lang="dd"] .comments-page .comment .arrow.downmod,
+html:lang(dd) .comments-page .comment .arrow.downmod,
 .res-nightmode .comments-page .comment .comment .comment .arrow.downmod,
-html[lang="dd"] .comments-page .comment .comment .comment .arrow.downmod,
+html:lang(dd) .comments-page .comment .comment .comment .arrow.downmod,
 .res-nightmode .comments-page .comment .comment .comment .comment .comment .arrow.downmod,
-html[lang="dd"] .comments-page .comment .comment .comment .comment .comment .arrow.downmod,
+html:lang(dd) .comments-page .comment .comment .comment .comment .comment .arrow.downmod,
 .res-nightmode .comments-page .comment .comment .comment .comment .comment .comment .comment .arrow.downmod,
-html[lang="dd"] .comments-page .comment .comment .comment .comment .comment .comment .comment .arrow.downmod,
+html:lang(dd) .comments-page .comment .comment .comment .comment .comment .comment .comment .arrow.downmod,
 .res-nightmode .comments-page .comment .comment .comment .comment .comment .comment .comment .comment .comment .arrow.downmod,
-html[lang="dd"] .comments-page .comment .comment .comment .comment .comment .comment .comment .comment .comment .arrow.downmod,
+html:lang(dd) .comments-page .comment .comment .comment .comment .comment .comment .comment .comment .comment .arrow.downmod,
 .res-nightmode .res-commentBoxes .comments-page .comment .arrow.downmod,
-html[lang="dd"] .res-commentBoxes .comments-page .comment .arrow.downmod,
+html:lang(dd) .res-commentBoxes .comments-page .comment .arrow.downmod,
 .res-nightmode .res-commentBoxes .comments-page .comment .comment .comment .arrow.downmod,
-html[lang="dd"] .res-commentBoxes .comments-page .comment .comment .comment .arrow.downmod,
+html:lang(dd) .res-commentBoxes .comments-page .comment .comment .comment .arrow.downmod,
 .res-nightmode .res-commentBoxes .comments-page .comment .comment .comment .comment .comment .arrow.downmod,
-html[lang="dd"] .res-commentBoxes .comments-page .comment .comment .comment .comment .comment .arrow.downmod,
+html:lang(dd) .res-commentBoxes .comments-page .comment .comment .comment .comment .comment .arrow.downmod,
 .res-nightmode .res-commentBoxes .comments-page .comment .comment .comment .comment .comment .comment .comment .arrow.downmod,
-html[lang="dd"] .res-commentBoxes .comments-page .comment .comment .comment .comment .comment .comment .comment .arrow.downmod,
+html:lang(dd) .res-commentBoxes .comments-page .comment .comment .comment .comment .comment .comment .comment .arrow.downmod,
 .res-nightmode .res-commentBoxes .comments-page .comment .comment .comment .comment .comment .comment .comment .comment .comment .arrow.downmod,
-html[lang="dd"] .res-commentBoxes .comments-page .comment .comment .comment .comment .comment .comment .comment .comment .comment .arrow.downmod {
+html:lang(dd) .res-commentBoxes .comments-page .comment .comment .comment .comment .comment .comment .comment .comment .comment .arrow.downmod {
   background-position: -15px -66px !important;
 }
 .res-nightmode .comments-page .comment .comment,
-html[lang="dd"] .comments-page .comment .comment,
+html:lang(dd) .comments-page .comment .comment,
 .res-nightmode .comments-page .comment .comment .comment .comment,
-html[lang="dd"] .comments-page .comment .comment .comment .comment,
+html:lang(dd) .comments-page .comment .comment .comment .comment,
 .res-nightmode .comments-page .comment .comment .comment .comment .comment .comment,
-html[lang="dd"] .comments-page .comment .comment .comment .comment .comment .comment,
+html:lang(dd) .comments-page .comment .comment .comment .comment .comment .comment,
 .res-nightmode .comments-page .comment .comment .comment .comment .comment .comment .comment .comment,
-html[lang="dd"] .comments-page .comment .comment .comment .comment .comment .comment .comment .comment,
+html:lang(dd) .comments-page .comment .comment .comment .comment .comment .comment .comment .comment,
 .res-nightmode .comments-page .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment,
-html[lang="dd"] .comments-page .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment,
+html:lang(dd) .comments-page .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment,
 .res-nightmode .res-commentBoxes .comments-page .comment .comment,
-html[lang="dd"] .res-commentBoxes .comments-page .comment .comment,
+html:lang(dd) .res-commentBoxes .comments-page .comment .comment,
 .res-nightmode .res-commentBoxes .comments-page .comment .comment .comment .comment,
-html[lang="dd"] .res-commentBoxes .comments-page .comment .comment .comment .comment,
+html:lang(dd) .res-commentBoxes .comments-page .comment .comment .comment .comment,
 .res-nightmode .res-commentBoxes .comments-page .comment .comment .comment .comment .comment .comment,
-html[lang="dd"] .res-commentBoxes .comments-page .comment .comment .comment .comment .comment .comment,
+html:lang(dd) .res-commentBoxes .comments-page .comment .comment .comment .comment .comment .comment,
 .res-nightmode .res-commentBoxes .comments-page .comment .comment .comment .comment .comment .comment .comment .comment,
-html[lang="dd"] .res-commentBoxes .comments-page .comment .comment .comment .comment .comment .comment .comment .comment,
+html:lang(dd) .res-commentBoxes .comments-page .comment .comment .comment .comment .comment .comment .comment .comment,
 .res-nightmode .res-commentBoxes .comments-page .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment,
-html[lang="dd"] .res-commentBoxes .comments-page .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment {
+html:lang(dd) .res-commentBoxes .comments-page .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment {
   margin-right: 0px;
   background-color: #080808!important;
 }
 .res-nightmode .side a[href="/r/LoLeventVoDs/comments/1v6w31/s4_lcs_europe_spring_season/"],
-html[lang="dd"] .side a[href="/r/LoLeventVoDs/comments/1v6w31/s4_lcs_europe_spring_season/"],
+html:lang(dd) .side a[href="/r/LoLeventVoDs/comments/1v6w31/s4_lcs_europe_spring_season/"],
 .res-nightmode .side a[href="/r/LoLeventVoDs/comments/1vgje3/s4_lcs_north_america_spring_season/"],
-html[lang="dd"] .side a[href="/r/LoLeventVoDs/comments/1vgje3/s4_lcs_north_america_spring_season/"],
+html:lang(dd) .side a[href="/r/LoLeventVoDs/comments/1vgje3/s4_lcs_north_america_spring_season/"],
 .res-nightmode .side a[href="/r/LoLeventVoDs/comments/1wd6yu/iem_sao_paulo_2014/"],
-html[lang="dd"] .side a[href="/r/LoLeventVoDs/comments/1wd6yu/iem_sao_paulo_2014/"],
+html:lang(dd) .side a[href="/r/LoLeventVoDs/comments/1wd6yu/iem_sao_paulo_2014/"],
 .res-nightmode .side a[href="/r/LoLeventVoDs/comments/1tn6v4/pandoratv_201314_ogn_winter_playoffs/"],
-html[lang="dd"] .side a[href="/r/LoLeventVoDs/comments/1tn6v4/pandoratv_201314_ogn_winter_playoffs/"] {
+html:lang(dd) .side a[href="/r/LoLeventVoDs/comments/1tn6v4/pandoratv_201314_ogn_winter_playoffs/"] {
   background: url(%%headers%%) no-repeat top left;
   height: 125px;
   display: block;
@@ -2148,147 +1973,151 @@ html[lang="dd"] .side a[href="/r/LoLeventVoDs/comments/1tn6v4/pandoratv_201314_o
   z-index: 9999;
 }
 .res-nightmode .side a[href="/r/LoLeventVoDs/comments/1v6w31/s4_lcs_europe_spring_season/"],
-html[lang="dd"] .side a[href="/r/LoLeventVoDs/comments/1v6w31/s4_lcs_europe_spring_season/"] {
+html:lang(dd) .side a[href="/r/LoLeventVoDs/comments/1v6w31/s4_lcs_europe_spring_season/"] {
   right: 640px;
   background-position: 0 0;
   width: 150px;
 }
 .res-nightmode .side a[href="/r/LoLeventVoDs/comments/1v6w31/s4_lcs_europe_spring_season/"]:hover,
-html[lang="dd"] .side a[href="/r/LoLeventVoDs/comments/1v6w31/s4_lcs_europe_spring_season/"]:hover {
+html:lang(dd) .side a[href="/r/LoLeventVoDs/comments/1v6w31/s4_lcs_europe_spring_season/"]:hover {
   background-position: 0 -125px;
   width: 150px;
 }
 .res-nightmode .side a[href="/r/LoLeventVoDs/comments/1vgje3/s4_lcs_north_america_spring_season/"],
-html[lang="dd"] .side a[href="/r/LoLeventVoDs/comments/1vgje3/s4_lcs_north_america_spring_season/"] {
+html:lang(dd) .side a[href="/r/LoLeventVoDs/comments/1vgje3/s4_lcs_north_america_spring_season/"] {
   right: 0;
   background-position: -380px 0;
   width: 150px;
 }
 .res-nightmode .side a[href="/r/LoLeventVoDs/comments/1vgje3/s4_lcs_north_america_spring_season/"]:hover,
-html[lang="dd"] .side a[href="/r/LoLeventVoDs/comments/1vgje3/s4_lcs_north_america_spring_season/"]:hover {
+html:lang(dd) .side a[href="/r/LoLeventVoDs/comments/1vgje3/s4_lcs_north_america_spring_season/"]:hover {
   background-position: -380px -125px;
   width: 150px;
 }
 .res-nightmode .side a[href="/r/LoLeventVoDs/comments/1wd6yu/iem_sao_paulo_2014/"],
-html[lang="dd"] .side a[href="/r/LoLeventVoDs/comments/1wd6yu/iem_sao_paulo_2014/"] {
+html:lang(dd) .side a[href="/r/LoLeventVoDs/comments/1wd6yu/iem_sao_paulo_2014/"] {
   right: 400px;
   background-position: -150px 0;
   width: 230px;
 }
 .res-nightmode .side a[href="/r/LoLeventVoDs/comments/1wd6yu/iem_sao_paulo_2014/"]:hover,
-html[lang="dd"] .side a[href="/r/LoLeventVoDs/comments/1wd6yu/iem_sao_paulo_2014/"]:hover {
+html:lang(dd) .side a[href="/r/LoLeventVoDs/comments/1wd6yu/iem_sao_paulo_2014/"]:hover {
   background-position: -150px -125px;
   width: 230px;
 }
 .res-nightmode .side a[href="/r/LoLeventVoDs/comments/1tn6v4/pandoratv_201314_ogn_winter_playoffs/"],
-html[lang="dd"] .side a[href="/r/LoLeventVoDs/comments/1tn6v4/pandoratv_201314_ogn_winter_playoffs/"] {
+html:lang(dd) .side a[href="/r/LoLeventVoDs/comments/1tn6v4/pandoratv_201314_ogn_winter_playoffs/"] {
   right: 145px;
   background-position: -530px 0;
   width: 255px;
 }
 .res-nightmode .side a[href="/r/LoLeventVoDs/comments/1tn6v4/pandoratv_201314_ogn_winter_playoffs/"]:hover,
-html[lang="dd"] .side a[href="/r/LoLeventVoDs/comments/1tn6v4/pandoratv_201314_ogn_winter_playoffs/"]:hover {
+html:lang(dd) .side a[href="/r/LoLeventVoDs/comments/1tn6v4/pandoratv_201314_ogn_winter_playoffs/"]:hover {
   background-position: -530px -125px;
   width: 255px;
 }
 .res-nightmode .titlebox .usertext-body .md h6,
-html[lang="dd"] .titlebox .usertext-body .md h6 {
+html:lang(dd) .titlebox .usertext-body .md h6 {
   background-position: 0px -68px;
   color: #000;
 }
 .res-nightmode .titlebox .usertext-body .md h6 a,
-html[lang="dd"] .titlebox .usertext-body .md h6 a {
+html:lang(dd) .titlebox .usertext-body .md h6 a {
   color: #F2E972!important;
 }
 .res-nightmode .expando-button.selftext.collapsed,
-html[lang="dd"] .expando-button.selftext.collapsed,
+html:lang(dd) .expando-button.selftext.collapsed,
 .res-nightmode .expando-button.video.collapsed,
-html[lang="dd"] .expando-button.video.collapsed,
+html:lang(dd) .expando-button.video.collapsed,
 .res-nightmode .expando-button.image.collapsed,
-html[lang="dd"] .expando-button.image.collapsed,
+html:lang(dd) .expando-button.image.collapsed,
 .res-nightmode .expando-button.selftext.collapsed,
-html[lang="dd"] .expando-button.selftext.collapsed,
+html:lang(dd) .expando-button.selftext.collapsed,
 .res-nightmode .expando-button.selftext.collapsed:hover,
-html[lang="dd"] .expando-button.selftext.collapsed:hover,
+html:lang(dd) .expando-button.selftext.collapsed:hover,
 .res-nightmode .expando-button.video.collapsed:hover,
-html[lang="dd"] .expando-button.video.collapsed:hover,
+html:lang(dd) .expando-button.video.collapsed:hover,
 .res-nightmode .expando-button.image.collapsed:hover,
-html[lang="dd"] .expando-button.image.collapsed:hover,
+html:lang(dd) .expando-button.image.collapsed:hover,
 .res-nightmode .expando-button.selftext.collapsed:hover,
-html[lang="dd"] .expando-button.selftext.collapsed:hover {
+html:lang(dd) .expando-button.selftext.collapsed:hover {
   background: url(%%nightmode-sprites%%) !important;
 }
 .res-nightmode .expando-button.selftext.collapsed,
-html[lang="dd"] .expando-button.selftext.collapsed {
+html:lang(dd) .expando-button.selftext.collapsed {
   background-position: 0px -80px !important;
 }
 .res-nightmode .expando-button.selftext.expanded,
-html[lang="dd"] .expando-button.selftext.expanded {
+html:lang(dd) .expando-button.selftext.expanded {
   background-position: 0px -105px !important;
 }
 .res-nightmode .expando-button.selftext.collapsed:hover,
-html[lang="dd"] .expando-button.selftext.collapsed:hover {
+html:lang(dd) .expando-button.selftext.collapsed:hover {
   background-position: -25px -80px !important;
 }
 .res-nightmode .expando-button.selftext.expanded:hover,
-html[lang="dd"] .expando-button.selftext.expanded:hover {
+html:lang(dd) .expando-button.selftext.expanded:hover {
   background-position: -25px -105px !important;
 }
 .res-nightmode .expando-button.video.collapsed,
-html[lang="dd"] .expando-button.video.collapsed {
+html:lang(dd) .expando-button.video.collapsed {
   background-position: 0px -130px !important;
 }
 .res-nightmode .expando-button.video.expanded,
-html[lang="dd"] .expando-button.video.expanded {
+html:lang(dd) .expando-button.video.expanded {
   background-position: 0px -155px !important;
 }
 .res-nightmode .expando-button.video.collapsed:hover,
-html[lang="dd"] .expando-button.video.collapsed:hover {
+html:lang(dd) .expando-button.video.collapsed:hover {
   background-position: -25px -130px !important;
 }
 .res-nightmode .expando-button.video.expanded:hover,
-html[lang="dd"] .expando-button.video.expanded:hover {
+html:lang(dd) .expando-button.video.expanded:hover {
   background-position: -25px -155px !important;
 }
 .res-nightmode .expando-button.image.collapsed,
-html[lang="dd"] .expando-button.image.collapsed {
+html:lang(dd) .expando-button.image.collapsed {
   background-position: 0px -180px !important;
 }
 .res-nightmode .expando-button.image.expanded,
-html[lang="dd"] .expando-button.image.expanded {
+html:lang(dd) .expando-button.image.expanded {
   background-position: 0px -205px !important;
 }
 .res-nightmode .expando-button.image.collapsed:hover,
-html[lang="dd"] .expando-button.image.collapsed:hover {
+html:lang(dd) .expando-button.image.collapsed:hover {
   background-position: -25px -180px !important;
 }
 .res-nightmode .expando-button.image.expanded:hover,
-html[lang="dd"] .expando-button.image.expanded:hover {
+html:lang(dd) .expando-button.image.expanded:hover {
   background-position: -25px -205px !important;
 }
 .res-nightmode .expando-button.image.gallery.collapsed,
-html[lang="dd"] .expando-button.image.gallery.collapsed {
+html:lang(dd) .expando-button.image.gallery.collapsed {
   background-position: 0px -230px !important;
 }
 .res-nightmode .expando-button.image.gallery.expanded,
-html[lang="dd"] .expando-button.image.gallery.expanded {
+html:lang(dd) .expando-button.image.gallery.expanded {
   background-position: 0px -255px !important;
 }
 .res-nightmode .expando-button.image.gallery.collapsed:hover,
-html[lang="dd"] .expando-button.image.gallery.collapsed:hover {
+html:lang(dd) .expando-button.image.gallery.collapsed:hover {
   background-position: -25px -230px !important;
 }
 .res-nightmode .expando-button.image.gallery.expanded:hover,
-html[lang="dd"] .expando-button.image.gallery.expanded:hover {
+html:lang(dd) .expando-button.image.gallery.expanded:hover {
   background-position: -25px -255px !important;
 }
 .res-nightmode .listing-page .sitetable .flair,
-html[lang="dd"] .listing-page .sitetable .flair {
+html:lang(dd) .listing-page .sitetable .flair {
   display: none;
 }
 .res-nightmode .RES-keyNav-activeElement .tagline .stickied-tagline,
-html[lang="dd"] .RES-keyNav-activeElement .tagline .stickied-tagline {
+html:lang(dd) .RES-keyNav-activeElement .tagline .stickied-tagline {
   color: #7c7;
+}
+.res-nightmode #progressIndicator,
+html:lang(dd) #progressIndicator {
+  background-color: #26293c!important;
 }
 .res-nightmode .listing-page .sitetable > div:nth-of-type(4n+1) {
   background-color: #080808;
@@ -2309,493 +2138,417 @@ html[lang="dd"] .RES-keyNav-activeElement .tagline .stickied-tagline {
   color: #8ad;
 }
 .res-nightmode .side .spacer > #search input,
-html[lang="dd"] .side .spacer > #search input {
+html:lang(dd) .side .spacer > #search input {
   background-color: #444;
   color: #ccc;
 }
 .res-nightmode .side .titlebox,
-html[lang="dd"] .side .titlebox {
+html:lang(dd) .side .titlebox {
   color: #ddd;
 }
 .res-nightmode .infobar,
-html[lang="dd"] .infobar {
+html:lang(dd) .infobar {
   background-color: transparent!important;
 }
 .res-nightmode .sidebox .morelink,
-html[lang="dd"] .sidebox .morelink,
+html:lang(dd) .sidebox .morelink,
 .res-nightmode .submit .morelink,
-html[lang="dd"] .submit .morelink {
+html:lang(dd) .submit .morelink {
   background: url(%%gray%%);
   background-position: 0px -68px;
 }
 .res-nightmode .sidebox .morelink:hover,
-html[lang="dd"] .sidebox .morelink:hover,
+html:lang(dd) .sidebox .morelink:hover,
 .res-nightmode .submit .morelink:hover,
-html[lang="dd"] .submit .morelink:hover {
+html:lang(dd) .submit .morelink:hover {
   background-position: 0px -34px;
 }
 .res-nightmode .sidebox .morelink a:before,
-html[lang="dd"] .sidebox .morelink a:before,
+html:lang(dd) .sidebox .morelink a:before,
 .res-nightmode .submit .morelink a:before,
-html[lang="dd"] .submit .morelink a:before {
+html:lang(dd) .submit .morelink a:before {
   color: #000;
 }
 .res-nightmode .sidebox .morelink a:hover:before,
-html[lang="dd"] .sidebox .morelink a:hover:before,
+html:lang(dd) .sidebox .morelink a:hover:before,
 .res-nightmode .submit .morelink a:hover:before,
-html[lang="dd"] .submit .morelink a:hover:before {
+html:lang(dd) .submit .morelink a:hover:before {
   color: #fff;
 }
 .res-nightmode .sidebox .spacer,
-html[lang="dd"] .sidebox .spacer {
+html:lang(dd) .sidebox .spacer {
   background-color: #080808;
   color: #ccc!important;
 }
 .res-nightmode .titlebox .usertext .md > h1,
-html[lang="dd"] .titlebox .usertext .md > h1 {
+html:lang(dd) .titlebox .usertext .md > h1 {
   background-position: 0px -68px;
   color: #000 !important;
   border-color: #37e !important;
 }
 .res-nightmode .titlebox .usertext .md > h1:after,
-html[lang="dd"] .titlebox .usertext .md > h1:after {
+html:lang(dd) .titlebox .usertext .md > h1:after {
   border-color: transparent #37e transparent transparent !important;
 }
-.res-nightmode .thing .thumbnail[href*="2_championship"],
-html[lang="dd"] .thing .thumbnail[href*="2_championship"],
-.res-nightmode .thing .thumbnail[href*="2_korean"],
-html[lang="dd"] .thing .thumbnail[href*="2_korean"],
-.res-nightmode .thing .thumbnail[href*="2_european"],
-html[lang="dd"] .thing .thumbnail[href*="2_european"],
-.res-nightmode .thing .thumbnail[href*="2_south"],
-html[lang="dd"] .thing .thumbnail[href*="2_south"],
-.res-nightmode .thing .thumbnail[href*="allstar_paris"],
-html[lang="dd"] .thing .thumbnail[href*="allstar_paris"],
-.res-nightmode .thing .thumbnail[href*="allstar_shangai"],
-html[lang="dd"] .thing .thumbnail[href*="allstar_shangai"],
+.res-nightmode .thing .thumbnail[href*="allstar"],
+html:lang(dd) .thing .thumbnail[href*="allstar"],
 .res-nightmode .thing .thumbnail[href*="android"],
-html[lang="dd"] .thing .thumbnail[href*="android"],
+html:lang(dd) .thing .thumbnail[href*="android"],
+.res-nightmode .thing .thumbnail[href*="best_zed"],
+html:lang(dd) .thing .thumbnail[href*="best_zed"],
+.res-nightmode .thing .thumbnail[href*="brazilian_cir"],
+html:lang(dd) .thing .thumbnail[href*="brazilian_cir"],
+.res-nightmode .thing .thumbnail[href*="the_champions"],
+html:lang(dd) .thing .thumbnail[href*="the_champions"],
+.res-nightmode .thing .thumbnail[href*="champions_k"],
+html:lang(dd) .thing .thumbnail[href*="champions_k"],
 .res-nightmode .thing .thumbnail[href*="dreamhack"],
-html[lang="dd"] .thing .thumbnail[href*="dreamhack"],
+html:lang(dd) .thing .thumbnail[href*="dreamhack"],
+.res-nightmode .thing .thumbnail[href*="eu_lcs"],
+html:lang(dd) .thing .thumbnail[href*="eu_lcs"],
 .res-nightmode .thing .thumbnail[href*="eu_chall"],
-html[lang="dd"] .thing .thumbnail[href*="eu_chall"],
+html:lang(dd) .thing .thumbnail[href*="eu_chall"],
 .res-nightmode .thing .thumbnail[href*="esl"],
-html[lang="dd"] .thing .thumbnail[href*="esl"],
+html:lang(dd) .thing .thumbnail[href*="esl"],
+.res-nightmode .thing .thumbnail[href*="esportspedia"],
+html:lang(dd) .thing .thumbnail[href*="esportspedia"],
 .res-nightmode .thing .thumbnail[href*="faceit"],
-html[lang="dd"] .thing .thumbnail[href*="faceit"],
-.res-nightmode .thing .thumbnail[href*="gfinity"],
-html[lang="dd"] .thing .thumbnail[href*="gfinity"],
+html:lang(dd) .thing .thumbnail[href*="faceit"],
+.res-nightmode .thing .thumbnail[href*="giveaway"],
+html:lang(dd) .thing .thumbnail[href*="giveaway"],
 .res-nightmode .thing .thumbnail[href*="gpl"],
-html[lang="dd"] .thing .thumbnail[href*="gpl"],
+html:lang(dd) .thing .thumbnail[href*="gpl"],
+.res-nightmode .thing .thumbnail[href*="hitbox"],
+html:lang(dd) .thing .thumbnail[href*="hitbox"],
 .res-nightmode .thing .thumbnail[href*="iem"],
-html[lang="dd"] .thing .thumbnail[href*="iem"],
-.res-nightmode .thing .thumbnail[href*="iem_cologne"],
-html[lang="dd"] .thing .thumbnail[href*="iem_cologne"],
-.res-nightmode .thing .thumbnail[href*="ign"],
-html[lang="dd"] .thing .thumbnail[href*="ign"],
-.res-nightmode .thing .thumbnail[href*="ipl"],
-html[lang="dd"] .thing .thumbnail[href*="ipl"],
-.res-nightmode .thing .thumbnail[href*="lcs"],
-html[lang="dd"] .thing .thumbnail[href*="lcs"],
-.res-nightmode .thing .thumbnail[href*="lcs_europe"],
-html[lang="dd"] .thing .thumbnail[href*="lcs_europe"],
+html:lang(dd) .thing .thumbnail[href*="iem"],
+.res-nightmode .thing .thumbnail[href*="intel_extreme"],
+html:lang(dd) .thing .thumbnail[href*="intel_extreme"],
+.res-nightmode .thing .thumbnail[href*="ios"],
+html:lang(dd) .thing .thumbnail[href*="ios"],
+.res-nightmode .thing .thumbnail[href*="lcs_eu"],
+html:lang(dd) .thing .thumbnail[href*="lcs_eu"],
+.res-nightmode .thing .thumbnail[href*="lcs_na"],
+html:lang(dd) .thing .thumbnail[href*="lcs_na"],
 .res-nightmode .thing .thumbnail[href*="lcs_north"],
-html[lang="dd"] .thing .thumbnail[href*="lcs_north"],
-.res-nightmode .thing .thumbnail[href*="lone"],
-html[lang="dd"] .thing .thumbnail[href*="lone"],
+html:lang(dd) .thing .thumbnail[href*="lcs_north"],
+.res-nightmode .thing .thumbnail[href*="lone_star"],
+html:lang(dd) .thing .thumbnail[href*="lone_star"],
+.res-nightmode .thing .thumbnail[href*="lms"],
+html:lang(dd) .thing .thumbnail[href*="lms"],
 .res-nightmode .thing .thumbnail[href*="lpl"],
-html[lang="dd"] .thing .thumbnail[href*="lpl"],
+html:lang(dd) .thing .thumbnail[href*="lpl"],
 .res-nightmode .thing .thumbnail[href*="masters"],
-html[lang="dd"] .thing .thumbnail[href*="masters"],
+html:lang(dd) .thing .thumbnail[href*="masters"],
 .res-nightmode .thing .thumbnail[href*="mlg"],
-html[lang="dd"] .thing .thumbnail[href*="mlg"],
-.res-nightmode .thing .thumbnail[href*="mobafire"],
-html[lang="dd"] .thing .thumbnail[href*="mobafire"],
+html:lang(dd) .thing .thumbnail[href*="mlg"],
 .res-nightmode .thing .thumbnail[href*="monster"],
-html[lang="dd"] .thing .thumbnail[href*="monster"],
-.res-nightmode .thing .thumbnail[href*="nacl"],
-html[lang="dd"] .thing .thumbnail[href*="nacl"],
+html:lang(dd) .thing .thumbnail[href*="monster"],
+.res-nightmode .thing .thumbnail[href*="na_lcs"],
+html:lang(dd) .thing .thumbnail[href*="na_lcs"],
 .res-nightmode .thing .thumbnail[href*="na_chall"],
-html[lang="dd"] .thing .thumbnail[href*="na_chall"],
-.res-nightmode .thing .thumbnail[href*="na_regionals_com"],
-html[lang="dd"] .thing .thumbnail[href*="na_regionals_com"],
-.res-nightmode .thing .thumbnail[href*="nlb_spring"],
-html[lang="dd"] .thing .thumbnail[href*="nlb_spring"],
-.res-nightmode .thing .thumbnail[href*="ogn_champ"],
-html[lang="dd"] .thing .thumbnail[href*="ogn_champ"],
-.res-nightmode .thing .thumbnail[href*="ogn_hot"],
-html[lang="dd"] .thing .thumbnail[href*="ogn_hot"],
-.res-nightmode .thing .thumbnail[href*="ogn_ol"],
-html[lang="dd"] .thing .thumbnail[href*="ogn_ol"],
-.res-nightmode .thing .thumbnail[href*="ogn_lol"],
-html[lang="dd"] .thing .thumbnail[href*="ogn_lol"],
+html:lang(dd) .thing .thumbnail[href*="na_chall"],
+.res-nightmode .thing .thumbnail[href*="new_year"],
+html:lang(dd) .thing .thumbnail[href*="new_year"],
+.res-nightmode .thing .thumbnail[href*="nlb_"],
+html:lang(dd) .thing .thumbnail[href*="nlb_"],
+.res-nightmode .thing .thumbnail[href*="ogn"],
+html:lang(dd) .thing .thumbnail[href*="ogn"],
+.res-nightmode .thing .thumbnail[href*="poro"],
+html:lang(dd) .thing .thumbnail[href*="poro"],
 .res-nightmode .thing .thumbnail[href*="pandoratv"],
-html[lang="dd"] .thing .thumbnail[href*="pandoratv"],
-.res-nightmode .thing .thumbnail[href*="pgs"],
-html[lang="dd"] .thing .thumbnail[href*="pgs"],
-.res-nightmode .thing .thumbnail[href*="regionals"],
-html[lang="dd"] .thing .thumbnail[href*="regionals"],
+html:lang(dd) .thing .thumbnail[href*="pandoratv"],
+.res-nightmode .thing .thumbnail[href*="regional_qual"],
+html:lang(dd) .thing .thumbnail[href*="regional_qual"],
 .res-nightmode .thing .thumbnail[href*="scan"],
-html[lang="dd"] .thing .thumbnail[href*="scan"],
-.res-nightmode .thing .thumbnail[href*="starswar"],
-html[lang="dd"] .thing .thumbnail[href*="starswar"],
-.res-nightmode .thing .thumbnail[href*="tales"],
-html[lang="dd"] .thing .thumbnail[href*="tales"],
+html:lang(dd) .thing .thumbnail[href*="scan"],
+.res-nightmode .thing .thumbnail[href*="trending"],
+html:lang(dd) .thing .thumbnail[href*="trending"],
+.res-nightmode .thing .thumbnail[href*="wildcard"],
+html:lang(dd) .thing .thumbnail[href*="wildcard"],
 .res-nightmode .thing .thumbnail[href*="world"],
-html[lang="dd"] .thing .thumbnail[href*="world"],
-.res-nightmode .thing .thumbnail[href*="world_championships"],
-html[lang="dd"] .thing .thumbnail[href*="world_championships"] {
-  background-image: url(%%nightmode-thumbs%%);
+html:lang(dd) .thing .thumbnail[href*="world"] {
+  background-image: url(%%nightmode-thumbs%%) !important;
 }
+.res-nightmode a[href="#269"]:after,
+html:lang(dd) a[href="#269"]:after,
 .res-nightmode a[href^="#a"]:after,
-html[lang="dd"] a[href^="#a"]:after,
+html:lang(dd) a[href^="#a"]:after,
 .res-nightmode a[href^="#b"]:after,
-html[lang="dd"] a[href^="#b"]:after,
+html:lang(dd) a[href^="#b"]:after,
 .res-nightmode a[href^="#c"]:after,
-html[lang="dd"] a[href^="#c"]:after,
+html:lang(dd) a[href^="#c"]:after,
 .res-nightmode a[href^="#d"]:after,
-html[lang="dd"] a[href^="#d"]:after,
+html:lang(dd) a[href^="#d"]:after,
 .res-nightmode a[href^="#e"]:after,
-html[lang="dd"] a[href^="#e"]:after,
+html:lang(dd) a[href^="#e"]:after,
 .res-nightmode a[href^="#f"]:after,
-html[lang="dd"] a[href^="#f"]:after,
+html:lang(dd) a[href^="#f"]:after,
 .res-nightmode a[href^="#g"]:after,
-html[lang="dd"] a[href^="#g"]:after,
+html:lang(dd) a[href^="#g"]:after,
 .res-nightmode a[href^="#h"]:after,
-html[lang="dd"] a[href^="#h"]:after,
+html:lang(dd) a[href^="#h"]:after,
 .res-nightmode a[href^="#i"]:after,
-html[lang="dd"] a[href^="#i"]:after,
+html:lang(dd) a[href^="#i"]:after,
 .res-nightmode a[href^="#j"]:after,
-html[lang="dd"] a[href^="#j"]:after,
+html:lang(dd) a[href^="#j"]:after,
 .res-nightmode a[href^="#k"]:after,
-html[lang="dd"] a[href^="#k"]:after,
+html:lang(dd) a[href^="#k"]:after,
 .res-nightmode a[href^="#l"]:after,
-html[lang="dd"] a[href^="#l"]:after,
+html:lang(dd) a[href^="#l"]:after,
 .res-nightmode a[href^="#m"]:after,
-html[lang="dd"] a[href^="#m"]:after,
+html:lang(dd) a[href^="#m"]:after,
 .res-nightmode a[href^="#n"]:after,
-html[lang="dd"] a[href^="#n"]:after,
+html:lang(dd) a[href^="#n"]:after,
 .res-nightmode a[href^="#o"]:after,
-html[lang="dd"] a[href^="#o"]:after,
+html:lang(dd) a[href^="#o"]:after,
 .res-nightmode a[href^="#p"]:after,
-html[lang="dd"] a[href^="#p"]:after,
+html:lang(dd) a[href^="#p"]:after,
 .res-nightmode a[href^="#q"]:after,
-html[lang="dd"] a[href^="#q"]:after,
+html:lang(dd) a[href^="#q"]:after,
 .res-nightmode a[href^="#r"]:after,
-html[lang="dd"] a[href^="#r"]:after,
+html:lang(dd) a[href^="#r"]:after,
 .res-nightmode a[href^="#s"]:after,
-html[lang="dd"] a[href^="#s"]:after,
+html:lang(dd) a[href^="#s"]:after,
 .res-nightmode a[href^="#t"]:after,
-html[lang="dd"] a[href^="#t"]:after,
+html:lang(dd) a[href^="#t"]:after,
 .res-nightmode a[href^="#u"]:after,
-html[lang="dd"] a[href^="#u"]:after,
+html:lang(dd) a[href^="#u"]:after,
 .res-nightmode a[href^="#v"]:after,
-html[lang="dd"] a[href^="#v"]:after,
+html:lang(dd) a[href^="#v"]:after,
 .res-nightmode a[href^="#w"]:after,
-html[lang="dd"] a[href^="#w"]:after,
+html:lang(dd) a[href^="#w"]:after,
 .res-nightmode a[href^="#x"]:after,
-html[lang="dd"] a[href^="#x"]:after,
+html:lang(dd) a[href^="#x"]:after,
 .res-nightmode a[href^="#y"]:after,
-html[lang="dd"] a[href^="#y"]:after,
+html:lang(dd) a[href^="#y"]:after,
 .res-nightmode a[href^="#z"]:after,
-html[lang="dd"] a[href^="#z"]:after,
-.res-nightmode a[href$="/wiki/c9"]:before,
-html[lang="dd"] a[href$="/wiki/c9"]:before,
-.res-nightmode a[href$="/wiki/clg"]:before,
-html[lang="dd"] a[href$="/wiki/clg"]:before,
-.res-nightmode a[href$="/wiki/crs"]:before,
-html[lang="dd"] a[href$="/wiki/crs"]:before,
-.res-nightmode a[href$="/wiki/coast"]:before,
-html[lang="dd"] a[href$="/wiki/coast"]:before,
-.res-nightmode a[href$="/wiki/dig"]:before,
-html[lang="dd"] a[href$="/wiki/dig"]:before,
-.res-nightmode a[href$="/wiki/eg"]:before,
-html[lang="dd"] a[href$="/wiki/eg"]:before,
-.res-nightmode a[href$="/wiki/tsm"]:before,
-html[lang="dd"] a[href$="/wiki/tsm"]:before,
-.res-nightmode a[href$="/wiki/vul"]:before,
-html[lang="dd"] a[href$="/wiki/vul"]:before {
+html:lang(dd) a[href^="#z"]:after {
   content: "";
   background-image: url(%%nightmode-teams%%);
 }
+.res-nightmode .md table tr:hover a[href="#269"]:after,
+html:lang(dd) .md table tr:hover a[href="#269"]:after,
 .res-nightmode .md table tr:hover a[href^="#a"]:after,
-html[lang="dd"] .md table tr:hover a[href^="#a"]:after,
+html:lang(dd) .md table tr:hover a[href^="#a"]:after,
 .res-nightmode .md table tr:hover a[href^="#b"]:after,
-html[lang="dd"] .md table tr:hover a[href^="#b"]:after,
+html:lang(dd) .md table tr:hover a[href^="#b"]:after,
 .res-nightmode .md table tr:hover a[href^="#c"]:after,
-html[lang="dd"] .md table tr:hover a[href^="#c"]:after,
+html:lang(dd) .md table tr:hover a[href^="#c"]:after,
 .res-nightmode .md table tr:hover a[href^="#d"]:after,
-html[lang="dd"] .md table tr:hover a[href^="#d"]:after,
+html:lang(dd) .md table tr:hover a[href^="#d"]:after,
 .res-nightmode .md table tr:hover a[href^="#e"]:after,
-html[lang="dd"] .md table tr:hover a[href^="#e"]:after,
+html:lang(dd) .md table tr:hover a[href^="#e"]:after,
 .res-nightmode .md table tr:hover a[href^="#f"]:after,
-html[lang="dd"] .md table tr:hover a[href^="#f"]:after,
+html:lang(dd) .md table tr:hover a[href^="#f"]:after,
 .res-nightmode .md table tr:hover a[href^="#g"]:after,
-html[lang="dd"] .md table tr:hover a[href^="#g"]:after,
+html:lang(dd) .md table tr:hover a[href^="#g"]:after,
 .res-nightmode .md table tr:hover a[href^="#h"]:after,
-html[lang="dd"] .md table tr:hover a[href^="#h"]:after,
+html:lang(dd) .md table tr:hover a[href^="#h"]:after,
 .res-nightmode .md table tr:hover a[href^="#i"]:after,
-html[lang="dd"] .md table tr:hover a[href^="#i"]:after,
+html:lang(dd) .md table tr:hover a[href^="#i"]:after,
 .res-nightmode .md table tr:hover a[href^="#j"]:after,
-html[lang="dd"] .md table tr:hover a[href^="#j"]:after,
+html:lang(dd) .md table tr:hover a[href^="#j"]:after,
 .res-nightmode .md table tr:hover a[href^="#k"]:after,
-html[lang="dd"] .md table tr:hover a[href^="#k"]:after,
+html:lang(dd) .md table tr:hover a[href^="#k"]:after,
 .res-nightmode .md table tr:hover a[href^="#l"]:after,
-html[lang="dd"] .md table tr:hover a[href^="#l"]:after,
+html:lang(dd) .md table tr:hover a[href^="#l"]:after,
 .res-nightmode .md table tr:hover a[href^="#m"]:after,
-html[lang="dd"] .md table tr:hover a[href^="#m"]:after,
+html:lang(dd) .md table tr:hover a[href^="#m"]:after,
 .res-nightmode .md table tr:hover a[href^="#n"]:after,
-html[lang="dd"] .md table tr:hover a[href^="#n"]:after,
+html:lang(dd) .md table tr:hover a[href^="#n"]:after,
 .res-nightmode .md table tr:hover a[href^="#o"]:after,
-html[lang="dd"] .md table tr:hover a[href^="#o"]:after,
+html:lang(dd) .md table tr:hover a[href^="#o"]:after,
 .res-nightmode .md table tr:hover a[href^="#p"]:after,
-html[lang="dd"] .md table tr:hover a[href^="#p"]:after,
+html:lang(dd) .md table tr:hover a[href^="#p"]:after,
 .res-nightmode .md table tr:hover a[href^="#q"]:after,
-html[lang="dd"] .md table tr:hover a[href^="#q"]:after,
+html:lang(dd) .md table tr:hover a[href^="#q"]:after,
 .res-nightmode .md table tr:hover a[href^="#r"]:after,
-html[lang="dd"] .md table tr:hover a[href^="#r"]:after,
+html:lang(dd) .md table tr:hover a[href^="#r"]:after,
 .res-nightmode .md table tr:hover a[href^="#s"]:after,
-html[lang="dd"] .md table tr:hover a[href^="#s"]:after,
+html:lang(dd) .md table tr:hover a[href^="#s"]:after,
 .res-nightmode .md table tr:hover a[href^="#t"]:after,
-html[lang="dd"] .md table tr:hover a[href^="#t"]:after,
+html:lang(dd) .md table tr:hover a[href^="#t"]:after,
 .res-nightmode .md table tr:hover a[href^="#u"]:after,
-html[lang="dd"] .md table tr:hover a[href^="#u"]:after,
+html:lang(dd) .md table tr:hover a[href^="#u"]:after,
 .res-nightmode .md table tr:hover a[href^="#v"]:after,
-html[lang="dd"] .md table tr:hover a[href^="#v"]:after,
+html:lang(dd) .md table tr:hover a[href^="#v"]:after,
 .res-nightmode .md table tr:hover a[href^="#w"]:after,
-html[lang="dd"] .md table tr:hover a[href^="#w"]:after,
+html:lang(dd) .md table tr:hover a[href^="#w"]:after,
 .res-nightmode .md table tr:hover a[href^="#x"]:after,
-html[lang="dd"] .md table tr:hover a[href^="#x"]:after,
+html:lang(dd) .md table tr:hover a[href^="#x"]:after,
 .res-nightmode .md table tr:hover a[href^="#y"]:after,
-html[lang="dd"] .md table tr:hover a[href^="#y"]:after,
+html:lang(dd) .md table tr:hover a[href^="#y"]:after,
 .res-nightmode .md table tr:hover a[href^="#z"]:after,
-html[lang="dd"] .md table tr:hover a[href^="#z"]:after,
-.res-nightmode .md table tr:hover a[href$="/wiki/c9"]:before,
-html[lang="dd"] .md table tr:hover a[href$="/wiki/c9"]:before,
-.res-nightmode .md table tr:hover a[href$="/wiki/clg"]:before,
-html[lang="dd"] .md table tr:hover a[href$="/wiki/clg"]:before,
-.res-nightmode .md table tr:hover a[href$="/wiki/crs"]:before,
-html[lang="dd"] .md table tr:hover a[href$="/wiki/crs"]:before,
-.res-nightmode .md table tr:hover a[href$="/wiki/coast"]:before,
-html[lang="dd"] .md table tr:hover a[href$="/wiki/coast"]:before,
-.res-nightmode .md table tr:hover a[href$="/wiki/dig"]:before,
-html[lang="dd"] .md table tr:hover a[href$="/wiki/dig"]:before,
-.res-nightmode .md table tr:hover a[href$="/wiki/eg"]:before,
-html[lang="dd"] .md table tr:hover a[href$="/wiki/eg"]:before,
-.res-nightmode .md table tr:hover a[href$="/wiki/tsm"]:before,
-html[lang="dd"] .md table tr:hover a[href$="/wiki/tsm"]:before,
-.res-nightmode .md table tr:hover a[href$="/wiki/vul"]:before,
-html[lang="dd"] .md table tr:hover a[href$="/wiki/vul"]:before {
+html:lang(dd) .md table tr:hover a[href^="#z"]:after {
   background-image: url(%%teams%%);
 }
+.res-nightmode .md table tr:nth-of-type(odd) a[href="#269"]:after,
+html:lang(dd) .md table tr:nth-of-type(odd) a[href="#269"]:after,
 .res-nightmode .md table tr:nth-of-type(odd) a[href^="#a"]:after,
-html[lang="dd"] .md table tr:nth-of-type(odd) a[href^="#a"]:after,
+html:lang(dd) .md table tr:nth-of-type(odd) a[href^="#a"]:after,
 .res-nightmode .md table tr:nth-of-type(odd) a[href^="#b"]:after,
-html[lang="dd"] .md table tr:nth-of-type(odd) a[href^="#b"]:after,
+html:lang(dd) .md table tr:nth-of-type(odd) a[href^="#b"]:after,
 .res-nightmode .md table tr:nth-of-type(odd) a[href^="#c"]:after,
-html[lang="dd"] .md table tr:nth-of-type(odd) a[href^="#c"]:after,
+html:lang(dd) .md table tr:nth-of-type(odd) a[href^="#c"]:after,
 .res-nightmode .md table tr:nth-of-type(odd) a[href^="#d"]:after,
-html[lang="dd"] .md table tr:nth-of-type(odd) a[href^="#d"]:after,
+html:lang(dd) .md table tr:nth-of-type(odd) a[href^="#d"]:after,
 .res-nightmode .md table tr:nth-of-type(odd) a[href^="#e"]:after,
-html[lang="dd"] .md table tr:nth-of-type(odd) a[href^="#e"]:after,
+html:lang(dd) .md table tr:nth-of-type(odd) a[href^="#e"]:after,
 .res-nightmode .md table tr:nth-of-type(odd) a[href^="#f"]:after,
-html[lang="dd"] .md table tr:nth-of-type(odd) a[href^="#f"]:after,
+html:lang(dd) .md table tr:nth-of-type(odd) a[href^="#f"]:after,
 .res-nightmode .md table tr:nth-of-type(odd) a[href^="#g"]:after,
-html[lang="dd"] .md table tr:nth-of-type(odd) a[href^="#g"]:after,
+html:lang(dd) .md table tr:nth-of-type(odd) a[href^="#g"]:after,
 .res-nightmode .md table tr:nth-of-type(odd) a[href^="#h"]:after,
-html[lang="dd"] .md table tr:nth-of-type(odd) a[href^="#h"]:after,
+html:lang(dd) .md table tr:nth-of-type(odd) a[href^="#h"]:after,
 .res-nightmode .md table tr:nth-of-type(odd) a[href^="#i"]:after,
-html[lang="dd"] .md table tr:nth-of-type(odd) a[href^="#i"]:after,
+html:lang(dd) .md table tr:nth-of-type(odd) a[href^="#i"]:after,
 .res-nightmode .md table tr:nth-of-type(odd) a[href^="#j"]:after,
-html[lang="dd"] .md table tr:nth-of-type(odd) a[href^="#j"]:after,
+html:lang(dd) .md table tr:nth-of-type(odd) a[href^="#j"]:after,
 .res-nightmode .md table tr:nth-of-type(odd) a[href^="#k"]:after,
-html[lang="dd"] .md table tr:nth-of-type(odd) a[href^="#k"]:after,
+html:lang(dd) .md table tr:nth-of-type(odd) a[href^="#k"]:after,
 .res-nightmode .md table tr:nth-of-type(odd) a[href^="#l"]:after,
-html[lang="dd"] .md table tr:nth-of-type(odd) a[href^="#l"]:after,
+html:lang(dd) .md table tr:nth-of-type(odd) a[href^="#l"]:after,
 .res-nightmode .md table tr:nth-of-type(odd) a[href^="#m"]:after,
-html[lang="dd"] .md table tr:nth-of-type(odd) a[href^="#m"]:after,
+html:lang(dd) .md table tr:nth-of-type(odd) a[href^="#m"]:after,
 .res-nightmode .md table tr:nth-of-type(odd) a[href^="#n"]:after,
-html[lang="dd"] .md table tr:nth-of-type(odd) a[href^="#n"]:after,
+html:lang(dd) .md table tr:nth-of-type(odd) a[href^="#n"]:after,
 .res-nightmode .md table tr:nth-of-type(odd) a[href^="#o"]:after,
-html[lang="dd"] .md table tr:nth-of-type(odd) a[href^="#o"]:after,
+html:lang(dd) .md table tr:nth-of-type(odd) a[href^="#o"]:after,
 .res-nightmode .md table tr:nth-of-type(odd) a[href^="#p"]:after,
-html[lang="dd"] .md table tr:nth-of-type(odd) a[href^="#p"]:after,
+html:lang(dd) .md table tr:nth-of-type(odd) a[href^="#p"]:after,
 .res-nightmode .md table tr:nth-of-type(odd) a[href^="#q"]:after,
-html[lang="dd"] .md table tr:nth-of-type(odd) a[href^="#q"]:after,
+html:lang(dd) .md table tr:nth-of-type(odd) a[href^="#q"]:after,
 .res-nightmode .md table tr:nth-of-type(odd) a[href^="#r"]:after,
-html[lang="dd"] .md table tr:nth-of-type(odd) a[href^="#r"]:after,
+html:lang(dd) .md table tr:nth-of-type(odd) a[href^="#r"]:after,
 .res-nightmode .md table tr:nth-of-type(odd) a[href^="#s"]:after,
-html[lang="dd"] .md table tr:nth-of-type(odd) a[href^="#s"]:after,
+html:lang(dd) .md table tr:nth-of-type(odd) a[href^="#s"]:after,
 .res-nightmode .md table tr:nth-of-type(odd) a[href^="#t"]:after,
-html[lang="dd"] .md table tr:nth-of-type(odd) a[href^="#t"]:after,
+html:lang(dd) .md table tr:nth-of-type(odd) a[href^="#t"]:after,
 .res-nightmode .md table tr:nth-of-type(odd) a[href^="#u"]:after,
-html[lang="dd"] .md table tr:nth-of-type(odd) a[href^="#u"]:after,
+html:lang(dd) .md table tr:nth-of-type(odd) a[href^="#u"]:after,
 .res-nightmode .md table tr:nth-of-type(odd) a[href^="#v"]:after,
-html[lang="dd"] .md table tr:nth-of-type(odd) a[href^="#v"]:after,
+html:lang(dd) .md table tr:nth-of-type(odd) a[href^="#v"]:after,
 .res-nightmode .md table tr:nth-of-type(odd) a[href^="#w"]:after,
-html[lang="dd"] .md table tr:nth-of-type(odd) a[href^="#w"]:after,
+html:lang(dd) .md table tr:nth-of-type(odd) a[href^="#w"]:after,
 .res-nightmode .md table tr:nth-of-type(odd) a[href^="#x"]:after,
-html[lang="dd"] .md table tr:nth-of-type(odd) a[href^="#x"]:after,
+html:lang(dd) .md table tr:nth-of-type(odd) a[href^="#x"]:after,
 .res-nightmode .md table tr:nth-of-type(odd) a[href^="#y"]:after,
-html[lang="dd"] .md table tr:nth-of-type(odd) a[href^="#y"]:after,
+html:lang(dd) .md table tr:nth-of-type(odd) a[href^="#y"]:after,
 .res-nightmode .md table tr:nth-of-type(odd) a[href^="#z"]:after,
-html[lang="dd"] .md table tr:nth-of-type(odd) a[href^="#z"]:after,
-.res-nightmode .md table tr:nth-of-type(odd) a[href$="/wiki/c9"]:before,
-html[lang="dd"] .md table tr:nth-of-type(odd) a[href$="/wiki/c9"]:before,
-.res-nightmode .md table tr:nth-of-type(odd) a[href$="/wiki/clg"]:before,
-html[lang="dd"] .md table tr:nth-of-type(odd) a[href$="/wiki/clg"]:before,
-.res-nightmode .md table tr:nth-of-type(odd) a[href$="/wiki/crs"]:before,
-html[lang="dd"] .md table tr:nth-of-type(odd) a[href$="/wiki/crs"]:before,
-.res-nightmode .md table tr:nth-of-type(odd) a[href$="/wiki/coast"]:before,
-html[lang="dd"] .md table tr:nth-of-type(odd) a[href$="/wiki/coast"]:before,
-.res-nightmode .md table tr:nth-of-type(odd) a[href$="/wiki/dig"]:before,
-html[lang="dd"] .md table tr:nth-of-type(odd) a[href$="/wiki/dig"]:before,
-.res-nightmode .md table tr:nth-of-type(odd) a[href$="/wiki/eg"]:before,
-html[lang="dd"] .md table tr:nth-of-type(odd) a[href$="/wiki/eg"]:before,
-.res-nightmode .md table tr:nth-of-type(odd) a[href$="/wiki/tsm"]:before,
-html[lang="dd"] .md table tr:nth-of-type(odd) a[href$="/wiki/tsm"]:before,
-.res-nightmode .md table tr:nth-of-type(odd) a[href$="/wiki/vul"]:before,
-html[lang="dd"] .md table tr:nth-of-type(odd) a[href$="/wiki/vul"]:before {
+html:lang(dd) .md table tr:nth-of-type(odd) a[href^="#z"]:after {
   background-image: url(%%dark-teams-odd%%);
 }
+.res-nightmode .md table tr:nth-of-type(even) a[href="#269"]:after,
+html:lang(dd) .md table tr:nth-of-type(even) a[href="#269"]:after,
 .res-nightmode .md table tr:nth-of-type(even) a[href^="#a"]:after,
-html[lang="dd"] .md table tr:nth-of-type(even) a[href^="#a"]:after,
+html:lang(dd) .md table tr:nth-of-type(even) a[href^="#a"]:after,
 .res-nightmode .md table tr:nth-of-type(even) a[href^="#b"]:after,
-html[lang="dd"] .md table tr:nth-of-type(even) a[href^="#b"]:after,
+html:lang(dd) .md table tr:nth-of-type(even) a[href^="#b"]:after,
 .res-nightmode .md table tr:nth-of-type(even) a[href^="#c"]:after,
-html[lang="dd"] .md table tr:nth-of-type(even) a[href^="#c"]:after,
+html:lang(dd) .md table tr:nth-of-type(even) a[href^="#c"]:after,
 .res-nightmode .md table tr:nth-of-type(even) a[href^="#d"]:after,
-html[lang="dd"] .md table tr:nth-of-type(even) a[href^="#d"]:after,
+html:lang(dd) .md table tr:nth-of-type(even) a[href^="#d"]:after,
 .res-nightmode .md table tr:nth-of-type(even) a[href^="#e"]:after,
-html[lang="dd"] .md table tr:nth-of-type(even) a[href^="#e"]:after,
+html:lang(dd) .md table tr:nth-of-type(even) a[href^="#e"]:after,
 .res-nightmode .md table tr:nth-of-type(even) a[href^="#f"]:after,
-html[lang="dd"] .md table tr:nth-of-type(even) a[href^="#f"]:after,
+html:lang(dd) .md table tr:nth-of-type(even) a[href^="#f"]:after,
 .res-nightmode .md table tr:nth-of-type(even) a[href^="#g"]:after,
-html[lang="dd"] .md table tr:nth-of-type(even) a[href^="#g"]:after,
+html:lang(dd) .md table tr:nth-of-type(even) a[href^="#g"]:after,
 .res-nightmode .md table tr:nth-of-type(even) a[href^="#h"]:after,
-html[lang="dd"] .md table tr:nth-of-type(even) a[href^="#h"]:after,
+html:lang(dd) .md table tr:nth-of-type(even) a[href^="#h"]:after,
 .res-nightmode .md table tr:nth-of-type(even) a[href^="#i"]:after,
-html[lang="dd"] .md table tr:nth-of-type(even) a[href^="#i"]:after,
+html:lang(dd) .md table tr:nth-of-type(even) a[href^="#i"]:after,
 .res-nightmode .md table tr:nth-of-type(even) a[href^="#j"]:after,
-html[lang="dd"] .md table tr:nth-of-type(even) a[href^="#j"]:after,
+html:lang(dd) .md table tr:nth-of-type(even) a[href^="#j"]:after,
 .res-nightmode .md table tr:nth-of-type(even) a[href^="#k"]:after,
-html[lang="dd"] .md table tr:nth-of-type(even) a[href^="#k"]:after,
+html:lang(dd) .md table tr:nth-of-type(even) a[href^="#k"]:after,
 .res-nightmode .md table tr:nth-of-type(even) a[href^="#l"]:after,
-html[lang="dd"] .md table tr:nth-of-type(even) a[href^="#l"]:after,
+html:lang(dd) .md table tr:nth-of-type(even) a[href^="#l"]:after,
 .res-nightmode .md table tr:nth-of-type(even) a[href^="#m"]:after,
-html[lang="dd"] .md table tr:nth-of-type(even) a[href^="#m"]:after,
+html:lang(dd) .md table tr:nth-of-type(even) a[href^="#m"]:after,
 .res-nightmode .md table tr:nth-of-type(even) a[href^="#n"]:after,
-html[lang="dd"] .md table tr:nth-of-type(even) a[href^="#n"]:after,
+html:lang(dd) .md table tr:nth-of-type(even) a[href^="#n"]:after,
 .res-nightmode .md table tr:nth-of-type(even) a[href^="#o"]:after,
-html[lang="dd"] .md table tr:nth-of-type(even) a[href^="#o"]:after,
+html:lang(dd) .md table tr:nth-of-type(even) a[href^="#o"]:after,
 .res-nightmode .md table tr:nth-of-type(even) a[href^="#p"]:after,
-html[lang="dd"] .md table tr:nth-of-type(even) a[href^="#p"]:after,
+html:lang(dd) .md table tr:nth-of-type(even) a[href^="#p"]:after,
 .res-nightmode .md table tr:nth-of-type(even) a[href^="#q"]:after,
-html[lang="dd"] .md table tr:nth-of-type(even) a[href^="#q"]:after,
+html:lang(dd) .md table tr:nth-of-type(even) a[href^="#q"]:after,
 .res-nightmode .md table tr:nth-of-type(even) a[href^="#r"]:after,
-html[lang="dd"] .md table tr:nth-of-type(even) a[href^="#r"]:after,
+html:lang(dd) .md table tr:nth-of-type(even) a[href^="#r"]:after,
 .res-nightmode .md table tr:nth-of-type(even) a[href^="#s"]:after,
-html[lang="dd"] .md table tr:nth-of-type(even) a[href^="#s"]:after,
+html:lang(dd) .md table tr:nth-of-type(even) a[href^="#s"]:after,
 .res-nightmode .md table tr:nth-of-type(even) a[href^="#t"]:after,
-html[lang="dd"] .md table tr:nth-of-type(even) a[href^="#t"]:after,
+html:lang(dd) .md table tr:nth-of-type(even) a[href^="#t"]:after,
 .res-nightmode .md table tr:nth-of-type(even) a[href^="#u"]:after,
-html[lang="dd"] .md table tr:nth-of-type(even) a[href^="#u"]:after,
+html:lang(dd) .md table tr:nth-of-type(even) a[href^="#u"]:after,
 .res-nightmode .md table tr:nth-of-type(even) a[href^="#v"]:after,
-html[lang="dd"] .md table tr:nth-of-type(even) a[href^="#v"]:after,
+html:lang(dd) .md table tr:nth-of-type(even) a[href^="#v"]:after,
 .res-nightmode .md table tr:nth-of-type(even) a[href^="#w"]:after,
-html[lang="dd"] .md table tr:nth-of-type(even) a[href^="#w"]:after,
+html:lang(dd) .md table tr:nth-of-type(even) a[href^="#w"]:after,
 .res-nightmode .md table tr:nth-of-type(even) a[href^="#x"]:after,
-html[lang="dd"] .md table tr:nth-of-type(even) a[href^="#x"]:after,
+html:lang(dd) .md table tr:nth-of-type(even) a[href^="#x"]:after,
 .res-nightmode .md table tr:nth-of-type(even) a[href^="#y"]:after,
-html[lang="dd"] .md table tr:nth-of-type(even) a[href^="#y"]:after,
+html:lang(dd) .md table tr:nth-of-type(even) a[href^="#y"]:after,
 .res-nightmode .md table tr:nth-of-type(even) a[href^="#z"]:after,
-html[lang="dd"] .md table tr:nth-of-type(even) a[href^="#z"]:after,
-.res-nightmode .md table tr:nth-of-type(even) a[href$="/wiki/c9"]:before,
-html[lang="dd"] .md table tr:nth-of-type(even) a[href$="/wiki/c9"]:before,
-.res-nightmode .md table tr:nth-of-type(even) a[href$="/wiki/clg"]:before,
-html[lang="dd"] .md table tr:nth-of-type(even) a[href$="/wiki/clg"]:before,
-.res-nightmode .md table tr:nth-of-type(even) a[href$="/wiki/crs"]:before,
-html[lang="dd"] .md table tr:nth-of-type(even) a[href$="/wiki/crs"]:before,
-.res-nightmode .md table tr:nth-of-type(even) a[href$="/wiki/coast"]:before,
-html[lang="dd"] .md table tr:nth-of-type(even) a[href$="/wiki/coast"]:before,
-.res-nightmode .md table tr:nth-of-type(even) a[href$="/wiki/dig"]:before,
-html[lang="dd"] .md table tr:nth-of-type(even) a[href$="/wiki/dig"]:before,
-.res-nightmode .md table tr:nth-of-type(even) a[href$="/wiki/eg"]:before,
-html[lang="dd"] .md table tr:nth-of-type(even) a[href$="/wiki/eg"]:before,
-.res-nightmode .md table tr:nth-of-type(even) a[href$="/wiki/tsm"]:before,
-html[lang="dd"] .md table tr:nth-of-type(even) a[href$="/wiki/tsm"]:before,
-.res-nightmode .md table tr:nth-of-type(even) a[href$="/wiki/vul"]:before,
-html[lang="dd"] .md table tr:nth-of-type(even) a[href$="/wiki/vul"]:before {
+html:lang(dd) .md table tr:nth-of-type(even) a[href^="#z"]:after {
   background-image: url(%%dark-teams-even%%);
 }
+.res-nightmode .RES-keyNav-activeElement a[href="#269"]:after,
+html:lang(dd) .RES-keyNav-activeElement a[href="#269"]:after,
 .res-nightmode .RES-keyNav-activeElement a[href^="#a"]:after,
-html[lang="dd"] .RES-keyNav-activeElement a[href^="#a"]:after,
+html:lang(dd) .RES-keyNav-activeElement a[href^="#a"]:after,
 .res-nightmode .RES-keyNav-activeElement a[href^="#b"]:after,
-html[lang="dd"] .RES-keyNav-activeElement a[href^="#b"]:after,
+html:lang(dd) .RES-keyNav-activeElement a[href^="#b"]:after,
 .res-nightmode .RES-keyNav-activeElement a[href^="#c"]:after,
-html[lang="dd"] .RES-keyNav-activeElement a[href^="#c"]:after,
+html:lang(dd) .RES-keyNav-activeElement a[href^="#c"]:after,
 .res-nightmode .RES-keyNav-activeElement a[href^="#d"]:after,
-html[lang="dd"] .RES-keyNav-activeElement a[href^="#d"]:after,
+html:lang(dd) .RES-keyNav-activeElement a[href^="#d"]:after,
 .res-nightmode .RES-keyNav-activeElement a[href^="#e"]:after,
-html[lang="dd"] .RES-keyNav-activeElement a[href^="#e"]:after,
+html:lang(dd) .RES-keyNav-activeElement a[href^="#e"]:after,
 .res-nightmode .RES-keyNav-activeElement a[href^="#f"]:after,
-html[lang="dd"] .RES-keyNav-activeElement a[href^="#f"]:after,
+html:lang(dd) .RES-keyNav-activeElement a[href^="#f"]:after,
 .res-nightmode .RES-keyNav-activeElement a[href^="#g"]:after,
-html[lang="dd"] .RES-keyNav-activeElement a[href^="#g"]:after,
+html:lang(dd) .RES-keyNav-activeElement a[href^="#g"]:after,
 .res-nightmode .RES-keyNav-activeElement a[href^="#h"]:after,
-html[lang="dd"] .RES-keyNav-activeElement a[href^="#h"]:after,
+html:lang(dd) .RES-keyNav-activeElement a[href^="#h"]:after,
 .res-nightmode .RES-keyNav-activeElement a[href^="#i"]:after,
-html[lang="dd"] .RES-keyNav-activeElement a[href^="#i"]:after,
+html:lang(dd) .RES-keyNav-activeElement a[href^="#i"]:after,
 .res-nightmode .RES-keyNav-activeElement a[href^="#j"]:after,
-html[lang="dd"] .RES-keyNav-activeElement a[href^="#j"]:after,
+html:lang(dd) .RES-keyNav-activeElement a[href^="#j"]:after,
 .res-nightmode .RES-keyNav-activeElement a[href^="#k"]:after,
-html[lang="dd"] .RES-keyNav-activeElement a[href^="#k"]:after,
+html:lang(dd) .RES-keyNav-activeElement a[href^="#k"]:after,
 .res-nightmode .RES-keyNav-activeElement a[href^="#l"]:after,
-html[lang="dd"] .RES-keyNav-activeElement a[href^="#l"]:after,
+html:lang(dd) .RES-keyNav-activeElement a[href^="#l"]:after,
 .res-nightmode .RES-keyNav-activeElement a[href^="#m"]:after,
-html[lang="dd"] .RES-keyNav-activeElement a[href^="#m"]:after,
+html:lang(dd) .RES-keyNav-activeElement a[href^="#m"]:after,
 .res-nightmode .RES-keyNav-activeElement a[href^="#n"]:after,
-html[lang="dd"] .RES-keyNav-activeElement a[href^="#n"]:after,
+html:lang(dd) .RES-keyNav-activeElement a[href^="#n"]:after,
 .res-nightmode .RES-keyNav-activeElement a[href^="#o"]:after,
-html[lang="dd"] .RES-keyNav-activeElement a[href^="#o"]:after,
+html:lang(dd) .RES-keyNav-activeElement a[href^="#o"]:after,
 .res-nightmode .RES-keyNav-activeElement a[href^="#p"]:after,
-html[lang="dd"] .RES-keyNav-activeElement a[href^="#p"]:after,
+html:lang(dd) .RES-keyNav-activeElement a[href^="#p"]:after,
 .res-nightmode .RES-keyNav-activeElement a[href^="#q"]:after,
-html[lang="dd"] .RES-keyNav-activeElement a[href^="#q"]:after,
+html:lang(dd) .RES-keyNav-activeElement a[href^="#q"]:after,
 .res-nightmode .RES-keyNav-activeElement a[href^="#r"]:after,
-html[lang="dd"] .RES-keyNav-activeElement a[href^="#r"]:after,
+html:lang(dd) .RES-keyNav-activeElement a[href^="#r"]:after,
 .res-nightmode .RES-keyNav-activeElement a[href^="#s"]:after,
-html[lang="dd"] .RES-keyNav-activeElement a[href^="#s"]:after,
+html:lang(dd) .RES-keyNav-activeElement a[href^="#s"]:after,
 .res-nightmode .RES-keyNav-activeElement a[href^="#t"]:after,
-html[lang="dd"] .RES-keyNav-activeElement a[href^="#t"]:after,
+html:lang(dd) .RES-keyNav-activeElement a[href^="#t"]:after,
 .res-nightmode .RES-keyNav-activeElement a[href^="#u"]:after,
-html[lang="dd"] .RES-keyNav-activeElement a[href^="#u"]:after,
+html:lang(dd) .RES-keyNav-activeElement a[href^="#u"]:after,
 .res-nightmode .RES-keyNav-activeElement a[href^="#v"]:after,
-html[lang="dd"] .RES-keyNav-activeElement a[href^="#v"]:after,
+html:lang(dd) .RES-keyNav-activeElement a[href^="#v"]:after,
 .res-nightmode .RES-keyNav-activeElement a[href^="#w"]:after,
-html[lang="dd"] .RES-keyNav-activeElement a[href^="#w"]:after,
+html:lang(dd) .RES-keyNav-activeElement a[href^="#w"]:after,
 .res-nightmode .RES-keyNav-activeElement a[href^="#x"]:after,
-html[lang="dd"] .RES-keyNav-activeElement a[href^="#x"]:after,
+html:lang(dd) .RES-keyNav-activeElement a[href^="#x"]:after,
 .res-nightmode .RES-keyNav-activeElement a[href^="#y"]:after,
-html[lang="dd"] .RES-keyNav-activeElement a[href^="#y"]:after,
+html:lang(dd) .RES-keyNav-activeElement a[href^="#y"]:after,
 .res-nightmode .RES-keyNav-activeElement a[href^="#z"]:after,
-html[lang="dd"] .RES-keyNav-activeElement a[href^="#z"]:after,
-.res-nightmode .RES-keyNav-activeElement a[href$="/wiki/c9"]:before,
-html[lang="dd"] .RES-keyNav-activeElement a[href$="/wiki/c9"]:before,
-.res-nightmode .RES-keyNav-activeElement a[href$="/wiki/clg"]:before,
-html[lang="dd"] .RES-keyNav-activeElement a[href$="/wiki/clg"]:before,
-.res-nightmode .RES-keyNav-activeElement a[href$="/wiki/crs"]:before,
-html[lang="dd"] .RES-keyNav-activeElement a[href$="/wiki/crs"]:before,
-.res-nightmode .RES-keyNav-activeElement a[href$="/wiki/coast"]:before,
-html[lang="dd"] .RES-keyNav-activeElement a[href$="/wiki/coast"]:before,
-.res-nightmode .RES-keyNav-activeElement a[href$="/wiki/dig"]:before,
-html[lang="dd"] .RES-keyNav-activeElement a[href$="/wiki/dig"]:before,
-.res-nightmode .RES-keyNav-activeElement a[href$="/wiki/eg"]:before,
-html[lang="dd"] .RES-keyNav-activeElement a[href$="/wiki/eg"]:before,
-.res-nightmode .RES-keyNav-activeElement a[href$="/wiki/tsm"]:before,
-html[lang="dd"] .RES-keyNav-activeElement a[href$="/wiki/tsm"]:before,
-.res-nightmode .RES-keyNav-activeElement a[href$="/wiki/vul"]:before,
-html[lang="dd"] .RES-keyNav-activeElement a[href$="/wiki/vul"]:before {
+html:lang(dd) .RES-keyNav-activeElement a[href^="#z"]:after {
   background-image: url(%%dark-teams-active%%);
 }
 .res-nightmode .drop-choices,
@@ -2818,11 +2571,11 @@ html[lang="dd"] .RES-keyNav-activeElement .drop-choices a.title:first-of-type {
   font-weight: bold;
 }
 .res-nightmode a[href="/spoiler"],
-html[lang="dd"] a[href="/spoiler"] {
+html:lang(dd) a[href="/spoiler"] {
   background: none repeat scroll 0 0 #888 !important;
   color: #888 !important;
 }
 .res-nightmode a[href="/spoiler"]:hover,
-html[lang="dd"] a[href="/spoiler"]:hover {
+html:lang(dd) a[href="/spoiler"]:hover {
   color: #080808 !important;
 }
