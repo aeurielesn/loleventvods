@@ -1,96 +1,92 @@
+@thumbnail-spacing: -50px;
+
 .thing .thumbnail {
-  &[href*="2_championship"],
-  &[href*="2_korean"],
-  &[href*="2_european"],
-  &[href*="2_south"],
-  &[href*="allstar_shangai"],
-  &[href*="allstar_paris"],
+  &[href*="allstar"],
   &[href*="android"],
+  &[href*="best_zed"],
+  &[href*="brazilian_cir"],
+  &[href*="the_champions"],
+  &[href*="champions_k"],
   &[href*="dreamhack"],
+  &[href*="eu_lcs"],
   &[href*="eu_chall"],
   &[href*="esl"],
+  &[href*="esportspedia"],
   &[href*="faceit"],
-  &[href*="gfinity"],
+  &[href*="giveaway"],
   &[href*="gpl"],
+  &[href*="hitbox"],
   &[href*="iem"],
-  &[href*="ign"],
-  &[href*="ipl"],
-  &[href*="lcs"],
-  &[href*="lcs_europe"],
+  &[href*="intel_extreme"],
+  &[href*="ios"],
+  &[href*="lcs_eu"],
+  &[href*="lcs_na"],
   &[href*="lcs_north"],
-  &[href*="lone"],
+  &[href*="lone_star"],
+  &[href*="lms"],
   &[href*="lpl"],
   &[href*="masters"],
   &[href*="mlg"],
-  &[href*="mobafire"],
   &[href*="monster"],
-  &[href*="nacl"],
+  &[href*="na_lcs"],
   &[href*="na_chall"],
-  &[href*="na_regionals_com"],
-  &[href*="nlb_spring"],
-  &[href*="ogn_champ"],
-  &[href*="ogn_hot"],
-  &[href*="ogn_ol"],
-  &[href*="ogn_lol"],
+  &[href*="new_year"],
+  &[href*="nlb_"],
+  &[href*="ogn"],
+  &[href*="poro"],
   &[href*="pandoratv"],
-  &[href*="pgs"],
-  &[href*="regionals"],
+  &[href*="regional_qual"],
   &[href*="scan"],
-  &[href*="starswar"],
-  &[href*="tales"],
-  &[href*="world"],
-  &[href*="world_championships"] {
-    .thumbnails;
+  &[href*="solo_king"],
+  &[href*="trending"],
+  &[href*="wildcard"],
+  &[href*="world"] {
+    background-image: url(%%thumbnails%%)!important;
+    background-repeat: no-repeat!important;
+    width: 70px;
+    height: 50px;
+    padding: 0;
   }
 
-  &[href*="allstar_shangai"] { .thumbnails-allstar-shanghai; }
-  &[href*="allstar_paris"]   { .thumbnails-allstar-paris; }
-  &[href*="android"]         { .thumbnails-android; }
-  &[href*="ios"]         { .thumbnails-apple; }
-  &[href*="monster"]         { .thumbnails-black-monster-cup; }
-  &[href*="eu_chall"]        { .thumbnails-cs-eu; }
-  &[href*="na_chall"]        { .thumbnails-cs-na; }
-  &[href*="dreamhack"]       { .thumbnails-dreamhack; }
-  &[href*="esl"]             { .thumbnails-esl; }
-  &[href*="faceit"]          { .thumbnails-faceit; }
-  &[href*="gfinity"]         { .thumbnails-gfinity; }
-  &[href*="gpl"]             { .thumbnails-gpl; }
-  
-  &[href*="ign"],
-  &[href*="ipl"] {
-    .thumbnails-ign;
-  }
-  
-  &[href*="lcs"]               { .thumbnails-lcs; }
-  &[href*="lcs_eu"]            { .thumbnails-lcs-eu; }
-  &[href*="lcs_na"],
-  &[href*="lcs_north"]         { .thumbnails-lcs-na; }
-  &[href*="lone_star_clash_2"] { .thumbnails-lone-star-clash-2; }
-  &[href*="lone_star_clash_3"] { .thumbnails-lone-star-clash-3; }
-  &[href*="lpl"]               { .thumbnails-lpl; }
-  &[href*="mlg"]               { .thumbnails-mlg; }
-  &[href*="mobafire"]          { .thumbnails-mobafire; }
-  &[href*="nacl"]              { .thumbnails-nacl; }
-  &[href*="nlb_spring"]        { .thumbnails-nlb; }
-  &[href*="pandoratv"],
-  &[href*="ogn"]        { .thumbnails-ogn; }
-  &[href*="masters"]    { .thumbnails-ogn-masters; }
-  &[href*="pgs"]        { .thumbnails-pgs; }
-  &[href*="scan"]       { .thumbnails-scan; }
-  &[href*="starswar"]   { .thumbnails-starswar; }
-  &[href*="tales"]      { .thumbnails-tales; }
-  &[href*="regionals"],
-  &[href*="2_championship"],
-  &[href*="world_championships"],
-  &[href*="2_korean"],
-  &[href*="2_european"],
-  &[href*="2_south"],
-  &[href*="na_regionals_com"] {
-    .thumbnails-wcs2;
-  }
-  &[href*="world"] { .thumbnails-wcs3; }
-  &[href*="iem_cologne"],
-  &[href*="iem"] {
-    .thumbnails-iem;
-  }
+  &[href*="allstar_shangai"]       { .bg-pos; }
+  &[href*="allstar_paris"]         { .bg-pos(0, @thumbnail-spacing); }
+  &[href*="android"]               { .bg-pos(0, @thumbnail-spacing * 2); }
+  &[href*="ios"]                   { .bg-pos(0, @thumbnail-spacing * 3); }
+  &[href*="best_zed"]              { .bg-pos(0, @thumbnail-spacing * 4); }
+  &[href*="monster"]               { .bg-pos(0, @thumbnail-spacing * 5); }
+  &[href*="brazilian_cir"]         { .bg-pos(0, @thumbnail-spacing * 6); }
+  &[href*="eu_chall"]              { .bg-pos(0, @thumbnail-spacing * 7); }
+  &[href*="na_chall"]              { .bg-pos(0, @thumbnail-spacing * 8); }
+  &[href*="champions_k"]           { .bg-pos(0, @thumbnail-spacing * 9); }
+  &[href*="dreamhack"]             { .bg-pos(0, @thumbnail-spacing * 10); }
+  &[href*="esl"]                   { .bg-pos(0, @thumbnail-spacing * 11); }
+  &[href*="esportspedia"]          { .bg-pos(0, @thumbnail-spacing * 12); }
+  &[href*="faceit"]                { .bg-pos(0, @thumbnail-spacing * 13); }
+  &[href*="giveaway"]              { .bg-pos(0, @thumbnail-spacing * 14); }
+  &[href*="gpl"]                   { .bg-pos(0, @thumbnail-spacing * 15); }
+  &[href*="hitbox"]                { .bg-pos(0, @thumbnail-spacing * 16); }
+  &[href*="iem"],                                                    
+  &[href*="intel_extreme_masters"] { .bg-pos(0, @thumbnail-spacing * 17); }
+  &[href*="eu_lcs"],                                                 
+  &[href*="lcs_eu"]                { .bg-pos(0, @thumbnail-spacing * 18); }
+  &[href*="na_lcs"],                                                 
+  &[href*="lcs_na"],                                                 
+  &[href*="lcs_north"]             { .bg-pos(0, @thumbnail-spacing * 19); }
+  &[href*="trending"]              { .bg-pos(0, @thumbnail-spacing * 20); }
+  &[href*="lone_star"]             { .bg-pos(0, @thumbnail-spacing * 21); }
+  &[href*="lms"]                   { .bg-pos(0, @thumbnail-spacing * 22); }
+  &[href*="lpl"]                   { .bg-pos(0, @thumbnail-spacing * 23); }
+  &[href*="mlg"]                   { .bg-pos(0, @thumbnail-spacing * 24); }
+  &[href*="new_year"]              { .bg-pos(0, @thumbnail-spacing * 25); }
+  &[href*="nlb_"]                  { .bg-pos(0, @thumbnail-spacing * 26); }
+  &[href*="pandoratv"],                                              
+  &[href*="ogn_"]                  { .bg-pos(0, @thumbnail-spacing * 27); }
+  &[href*="lol_masters"]           { .bg-pos(0, @thumbnail-spacing * 28); }
+  &[href*="poro"]                  { .bg-pos(0, @thumbnail-spacing * 29); }
+  &[href*="scan"]                  { .bg-pos(0, @thumbnail-spacing * 30); }
+  &[href*="solo_king"]             { .bg-pos(0, @thumbnail-spacing * 31); }
+  &[href*="3_world"]               { .bg-pos(0, @thumbnail-spacing * 32); }
+  &[href*="wildcard"]              { .bg-pos(0, @thumbnail-spacing * 33); }
+  &[href*="4_world"],                                                
+  &[href*="regional_qual"]         { .bg-pos(0, @thumbnail-spacing * 34); }
 }
