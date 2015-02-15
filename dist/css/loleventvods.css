@@ -383,18 +383,18 @@ h6 a {
 .side h5 {
   height: 0;
 }
-.side a[href="http://www.reddit.com/r/loleventvods/"],
+.side a[href="//www.reddit.com/r/loleventvods/"],
 .side a[href="#2themes"],
-.side a[href="http://dd.reddit.com/r/loleventvods/"] {
+.side a[href="//dd.reddit.com/r/loleventvods/"] {
   margin: 0;
   height: 50px;
   display: inline-block;
   background: url(%%theme-selector%%) no-repeat;
 }
-.side a[href="http://www.reddit.com/r/loleventvods/"] {
+.side a[href="//www.reddit.com/r/loleventvods/"] {
   width: 75px;
 }
-.side a[href="http://www.reddit.com/r/loleventvods/"]:hover {
+.side a[href="//www.reddit.com/r/loleventvods/"]:hover {
   background-position: 0px -50px;
 }
 .side a[href="#2themes"] {
@@ -403,12 +403,12 @@ h6 a {
   background-position: -85px 0px;
   cursor: default;
 }
-.side a[href="http://dd.reddit.com/r/loleventvods/"] {
+.side a[href="//dd.reddit.com/r/loleventvods/"] {
   margin-left: -5px;
   width: 75px;
   background-position: -213px 0px;
 }
-.side a[href="http://dd.reddit.com/r/loleventvods/"]:hover {
+.side a[href="//dd.reddit.com/r/loleventvods/"]:hover {
   background-position: -213px -50px;
 }
 /* Modify submit a new post */
@@ -673,6 +673,10 @@ div.sidebox.create {
   background-position: 0 -147px;
   margin-left: 1px;
   margin-right: -20px;
+}
+.side a[href="http://appsto.re/us/Eh0m1.i"] {
+  background-position: 0 -196px;
+  margin-left: -10px;
 }
 a[href="/spoiler"] {
   background: none repeat scroll 0 0 #000 !important;
@@ -1083,23 +1087,29 @@ a[href="#ahq"]:after {
 a[href="#dly"]:after {
   background-position: -180px -20px;
 }
-a[href="#hkes"]:after {
+a[href="#dor"]:after {
   background-position: -180px -40px;
 }
-a[href="#logs"]:after {
+a[href="#hkes"]:after {
   background-position: -180px -60px;
 }
-a[href="#mc"]:after {
+a[href="#logs"]:after {
   background-position: -180px -80px;
 }
-a[href="#mse"]:after {
+a[href="#mc"]:after {
   background-position: -180px -100px;
 }
-a[href="#tpa"]:after {
+a[href="#mse"]:after {
   background-position: -180px -120px;
 }
-a[href="#yoefw"]:after {
+a[href="#ngu"]:after {
   background-position: -180px -140px;
+}
+a[href="#tpa"]:after {
+  background-position: -180px -160px;
+}
+a[href="#yoefw"]:after {
+  background-position: -180px -180px;
 }
 /* CBLOL (Brazil) */
 a[href="#awp"]:after {
