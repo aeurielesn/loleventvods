@@ -2,7 +2,7 @@
 @teams-height: -20px;
 
 .side, .usertext-body {
-  a[href="#"]:after {
+  a[href^="#"]:after {
     content:"";
     width: -@teams-width;
     height: -@teams-height;
@@ -190,12 +190,3 @@ a[href="#china"]:after   { .bg-pos(@teams-width * 10, -11px)!important; }
 a[href="#europe"]:after  { .bg-pos(@teams-width * 10, -22px)!important; }
 a[href="#korea"]:after   { .bg-pos(@teams-width * 10, -33px)!important; }
 a[href="#sea"]:after     { .bg-pos(@teams-width * 10, -44px)!important; }
-
-// Parent link spacing correction
-.flat-list {
-  a[href^="#"]:after {
-    width: 0px;
-  }
-}
-
-

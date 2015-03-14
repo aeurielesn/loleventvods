@@ -281,6 +281,67 @@ h6 a {
 .listing-page #siteTable .flair {
   display: none;
 }
+/* Hide rank and vertically center votes
+   Adds padding too */
+#siteTable .thing {
+  padding-left: 5px;
+}
+#siteTable .thing .rank {
+  display: none;
+}
+#siteTable .thing .midcol {
+  margin-top: 10px;
+}
+/* sidebar social media icons */
+.side a[href="https://www.facebook.com/loleventvods"],
+.side a[href="https://www.twitter.com/loleventvods"],
+.side a[href="http://www.youtube.com/loleventvods"],
+.side a[href="https://play.google.com/store/apps/details?id=com.kox.zzreal"],
+.side a[href="http://appsto.re/us/Eh0m1.i"],
+.side a[href="http://www.eventvods.com/social"] {
+  display: inline-block;
+  background: url(%%sidebar%%) no-repeat;
+  width: 147px;
+  height: 49px;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.side a[href="https://www.facebook.com/loleventvods"]:hover,
+.side a[href="https://www.twitter.com/loleventvods"]:hover,
+.side a[href="http://www.youtube.com/loleventvods"]:hover,
+.side a[href="https://play.google.com/store/apps/details?id=com.kox.zzreal"]:hover,
+.side a[href="http://appsto.re/us/Eh0m1.i"]:hover,
+.side a[href="http://www.eventvods.com/social"]:hover {
+  opacity: 0.6;
+}
+.side a[href="https://www.facebook.com/loleventvods"] {
+  background-position: 0 0;
+  margin-left: 0px;
+}
+.side a[href="https://www.twitter.com/loleventvods"] {
+  background-position: 0 -49px;
+  margin-left: 6px;
+  margin-right: 0px;
+}
+.side a[href="http://www.youtube.com/loleventvods"] {
+  background-position: 0 -98px;
+  margin-left: 0px;
+}
+.side a[href="https://play.google.com/store/apps/details?id=com.kox.zzreal"] {
+  background-position: 0 -147px;
+  margin-left: 6px;
+  margin-right: 0px;
+}
+.side a[href="http://appsto.re/us/Eh0m1.i"] {
+  background-position: 0 -196px;
+  margin-left: 0px;
+}
+.side a[href="http://www.eventvods.com/donate"] {
+  background-position: 0 -245px;
+  margin-left: 6px;
+  margin-right: 0px;
+}
 .side {
   margin: 36px 5px 0 5px;
 }
@@ -316,6 +377,9 @@ h6 a {
   width: 130px;
   background-position: -85px 0px;
   cursor: default;
+}
+.side a[href="#2themes"]:after {
+  content: none!important;
 }
 .side a[href="//dd.reddit.com/r/loleventvods/"] {
   margin-left: -5px;
@@ -551,49 +615,6 @@ h6 a {
 div.sidebox.create {
   display: none;
 }
-/* sidebar social media icons */
-.side a[href="https://www.facebook.com/loleventvods"],
-.side a[href="https://www.twitter.com/loleventvods"],
-.side a[href="http://www.youtube.com/loleventvods"],
-.side a[href="https://play.google.com/store/apps/details?id=com.kox.zzreal"],
-.side a[href="http://appsto.re/us/Eh0m1.i"] {
-  display: inline-block;
-  background: url(%%sidebar%%) no-repeat;
-  width: 147px;
-  height: 49px;
-  text-indent: 100%;
-  white-space: nowrap;
-  overflow: hidden;
-}
-.side a[href="https://www.facebook.com/loleventvods"]:hover,
-.side a[href="https://www.twitter.com/loleventvods"]:hover,
-.side a[href="http://www.youtube.com/loleventvods"]:hover,
-.side a[href="https://play.google.com/store/apps/details?id=com.kox.zzreal"]:hover,
-.side a[href="http://appsto.re/us/Eh0m1.i"]:hover {
-  opacity: 0.6;
-}
-.side a[href="https://www.facebook.com/loleventvods"] {
-  background-position: 0 0;
-  margin-left: 0px;
-}
-.side a[href="https://www.twitter.com/loleventvods"] {
-  background-position: 0 -49px;
-  margin-left: 6px;
-  margin-right: 0px;
-}
-.side a[href="http://www.youtube.com/loleventvods"] {
-  background-position: 0 -98px;
-  margin-left: 0px;
-}
-.side a[href="https://play.google.com/store/apps/details?id=com.kox.zzreal"] {
-  background-position: 0 -147px;
-  margin-left: 6px;
-  margin-right: 0px;
-}
-.side a[href="http://appsto.re/us/Eh0m1.i"] {
-  background-position: 0 -196px;
-  margin-left: 0px;
-}
 a[href="/spoiler"] {
   background: none repeat scroll 0 0 #000 !important;
   color: #000 !important;
@@ -608,164 +629,113 @@ a[href="/spoiler"]:hover {
   display: block;
   min-width: 30px;
 }
-.thing .thumbnail[href*="allstar"],
-.thing .thumbnail[href*="android"],
-.thing .thumbnail[href*="best_zed"],
-.thing .thumbnail[href*="brazilian_cir"],
-.thing .thumbnail[href*="the_champions"],
-.thing .thumbnail[href*="champions_k"],
-.thing .thumbnail[href*="dreamhack"],
-.thing .thumbnail[href*="eu_lcs"],
-.thing .thumbnail[href*="eu_chall"],
-.thing .thumbnail[href*="esl"],
-.thing .thumbnail[href*="esportspedia"],
-.thing .thumbnail[href*="faceit"],
-.thing .thumbnail[href*="giveaway"],
-.thing .thumbnail[href*="gpl"],
-.thing .thumbnail[href*="hitbox"],
-.thing .thumbnail[href*="iem"],
-.thing .thumbnail[href*="intel_extreme"],
-.thing .thumbnail[href*="ios"],
-.thing .thumbnail[href*="lcs_eu"],
-.thing .thumbnail[href*="lcs_na"],
-.thing .thumbnail[href*="lcs_north"],
-.thing .thumbnail[href*="lone_star"],
-.thing .thumbnail[href*="lms"],
-.thing .thumbnail[href*="lpl"],
-.thing .thumbnail[href*="masters"],
-.thing .thumbnail[href*="mlg"],
-.thing .thumbnail[href*="monster"],
-.thing .thumbnail[href*="na_lcs"],
-.thing .thumbnail[href*="na_chall"],
-.thing .thumbnail[href*="new_year"],
-.thing .thumbnail[href*="nlb_"],
-.thing .thumbnail[href*="ogn"],
-.thing .thumbnail[href*="poro"],
-.thing .thumbnail[href*="pandoratv"],
-.thing .thumbnail[href*="regional_qual"],
-.thing .thumbnail[href*="scan"],
-.thing .thumbnail[href*="solo_king"],
-.thing .thumbnail[href*="trending"],
-.thing .thumbnail[href*="wildcard"],
-.thing .thumbnail[href*="world"] {
-  background-image: url(%%thumbnails%%) !important;
-  background-repeat: no-repeat !important;
-  width: 70px;
-  height: 50px;
+.self .thumbnail {
+  background: url(%%thumbnails%%) no-repeat 0 -210px;
+  width: 100px;
+  height: 70px;
   padding: 0;
 }
-.thing .thumbnail[href*="allstar_shangai"] {
+.thing .thumbnail[href*="s3_china"],
+.thing .thumbnail[href*="s3_korea"],
+.thing .thumbnail[href*="s3_sea"],
+.thing .thumbnail[href*="3_world_championship"] {
   background-position: 0 0;
 }
-.thing .thumbnail[href*="allstar_paris"] {
-  background-position: 0 -50px;
-}
-.thing .thumbnail[href*="android"] {
-  background-position: 0 -100px;
-}
-.thing .thumbnail[href*="ios"] {
-  background-position: 0 -150px;
-}
-.thing .thumbnail[href*="best_zed"] {
-  background-position: 0 -200px;
-}
-.thing .thumbnail[href*="monster"] {
-  background-position: 0 -250px;
-}
-.thing .thumbnail[href*="brazilian_cir"] {
-  background-position: 0 -300px;
-}
 .thing .thumbnail[href*="eu_chall"] {
-  background-position: 0 -350px;
+  background-position: 0 -70px;
 }
-.thing .thumbnail[href*="na_chall"] {
-  background-position: 0 -400px;
-}
-.thing .thumbnail[href*="champions_k"] {
-  background-position: 0 -450px;
-}
-.thing .thumbnail[href*="dreamhack"] {
-  background-position: 0 -500px;
-}
-.thing .thumbnail[href*="esl"] {
-  background-position: 0 -550px;
-}
-.thing .thumbnail[href*="esportspedia"] {
-  background-position: 0 -600px;
-}
-.thing .thumbnail[href*="faceit"] {
-  background-position: 0 -650px;
-}
-.thing .thumbnail[href*="giveaway"] {
-  background-position: 0 -700px;
-}
-.thing .thumbnail[href*="gpl"] {
-  background-position: 0 -750px;
-}
-.thing .thumbnail[href*="hitbox"] {
-  background-position: 0 -800px;
+.thing .thumbnail[href*="solo_king"] {
+  background-position: 0 -140px;
 }
 .thing .thumbnail[href*="iem"],
 .thing .thumbnail[href*="intel_extreme_masters"] {
-  background-position: 0 -850px;
+  background-position: 0 -280px;
 }
-.thing .thumbnail[href*="eu_lcs"],
-.thing .thumbnail[href*="lcs_eu"] {
-  background-position: 0 -900px;
+.thing .thumbnail[href*="lpl"] {
+  background-position: 0 -350px;
+}
+.thing .thumbnail[href*="regional_qualifiers"],
+.thing .thumbnail[href*="4_world_championship"] {
+  background-position: -100px 0;
+}
+.thing .thumbnail[href*="ljl"] {
+  background-position: -100px -70px;
+}
+.thing .thumbnail[href*="allstar_paris"] {
+  background-position: -100px -140px;
+}
+.thing .thumbnail[href*="esportspedia"] {
+  background-position: -100px -210px;
+}
+.thing .thumbnail[href*="ios_"] {
+  background-position: -100px -280px;
+}
+.thing .thumbnail[href*="masters"] {
+  background-position: -100px -350px;
+}
+.thing .thumbnail[href*="best_zed"] {
+  background-position: -200px 0;
 }
 .thing .thumbnail[href*="na_lcs"],
 .thing .thumbnail[href*="lcs_na"],
-.thing .thumbnail[href*="lcs_north"] {
-  background-position: 0 -950px;
+.thing .thumbnail[href*="lcs_north"],
+.thing .thumbnail[href*="american_lcs"] {
+  background-position: -200px -70px;
 }
-.thing .thumbnail[href*="trending"] {
-  background-position: 0 -1000px;
-}
-.thing .thumbnail[href*="lone_star"] {
-  background-position: 0 -1050px;
-}
-.thing .thumbnail[href*="lms"] {
-  background-position: 0 -1100px;
-}
-.thing .thumbnail[href*="lpl"] {
-  background-position: 0 -1150px;
-}
-.thing .thumbnail[href*="mlg"] {
-  background-position: 0 -1200px;
-}
-.thing .thumbnail[href*="new_year"] {
-  background-position: 0 -1250px;
-}
-.thing .thumbnail[href*="nlb_"] {
-  background-position: 0 -1300px;
-}
-.thing .thumbnail[href*="pandoratv"],
-.thing .thumbnail[href*="ogn_"] {
-  background-position: 0 -1350px;
-}
-.thing .thumbnail[href*="lol_masters"] {
-  background-position: 0 -1400px;
-}
-.thing .thumbnail[href*="poro"] {
-  background-position: 0 -1450px;
-}
-.thing .thumbnail[href*="scan"] {
-  background-position: 0 -1500px;
-}
-.thing .thumbnail[href*="solo_king"] {
-  background-position: 0 -1550px;
-}
-.thing .thumbnail[href*="3_world"] {
-  background-position: 0 -1600px;
+.thing .thumbnail[href*="android"] {
+  background-position: -200px -140px;
 }
 .thing .thumbnail[href*="wildcard"] {
-  background-position: 0 -1650px;
+  background-position: -200px -210px;
 }
-.thing .thumbnail[href*="4_world"],
-.thing .thumbnail[href*="regional_qual"] {
-  background-position: 0 -1700px;
+.thing .thumbnail[href*="lms"] {
+  background-position: -200px -280px;
 }
-a[href="#"]:after {
+.thing .thumbnail[href*="ogn_"] {
+  background-position: -200px -350px;
+}
+.thing .thumbnail[href*="dreamhack"] {
+  background-position: -300px 0;
+}
+.thing .thumbnail[href*="na_chall"] {
+  background-position: -300px -70px;
+}
+.thing .thumbnail[href*="lck"],
+.thing .thumbnail[href*="champions_korea"] {
+  background-position: -300px -140px;
+}
+.thing .thumbnail[href*="gpl"] {
+  background-position: -300px -210px;
+}
+.thing .thumbnail[href*="cblol"],
+.thing .thumbnail[href*="brazilian_cir"] {
+  background-position: -300px -280px;
+}
+.thing .thumbnail[href*="oceanic_"] {
+  background-position: -300px -350px;
+}
+.thing .thumbnail[href*="lcs_eu"],
+.thing .thumbnail[href*="eu_lcs"],
+.thing .thumbnail[href*="european_lcs"] {
+  background-position: -400px 0;
+}
+.thing .thumbnail[href*="nlb"] {
+  background-position: -400px -70px;
+}
+.thing .thumbnail[href*="latin_america"] {
+  background-position: -400px -140px;
+}
+.thing .thumbnail[href*="hitboxtv"] {
+  background-position: -400px -210px;
+}
+.thing .thumbnail[href*="lone_star_clash"] {
+  background-position: -400px -280px;
+}
+.thing .thumbnail[href*="poro_king"] {
+  background-position: -400px -350px;
+}
+.side a[href^="#"]:after,
+.usertext-body a[href^="#"]:after {
   content: "";
   width: 36px;
   height: 20px;
@@ -839,10 +809,11 @@ a[href="#tsm"]:after {
 a[href="#wfx"]:after {
   background-position: -36px -180px !important;
 }
-/* OGN */
+/* OGN/LCK */
 a[href="#cj"]:after {
   background-position: -72px 0 !important;
 }
+a[href="#ge"]:after,
 a[href="#get"]:after {
   background-position: -72px -20px !important;
 }
@@ -850,6 +821,7 @@ a[href="#im"]:after {
   background-position: -72px -40px !important;
 }
 a[href="#jinair"]:after,
+a[href="#jag"]:after,
 a[href="#jas"]:after,
 a[href="#jaf"]:after {
   background-position: -72px -60px !important;
@@ -880,6 +852,7 @@ a[href="#ep"]:after,
 a[href="#ephk"]:after {
   background-position: -108px -20px !important;
 }
+a[href="#gt"]:after,
 a[href="#gtf"]:after {
   background-position: -108px -40px !important;
 }
@@ -899,13 +872,16 @@ a[href="#sh"]:after,
 a[href="#shr"]:after {
   background-position: -108px -140px !important;
 }
-a[href="#tk"]:after {
+a[href="#tk"]:after,
+a[href="#kng"]:after {
   background-position: -108px -160px !important;
 }
-a[href="#ts"]:after {
+a[href="#ts"]:after,
+a[href="#snk"]:after {
   background-position: -108px -180px !important;
 }
-a[href="#vg"]:after {
+a[href="#vg"]:after,
+a[href="#vcg"]:after {
   background-position: -108px -200px !important;
 }
 a[href="#we"]:after {
@@ -973,9 +949,11 @@ a[href="#dly"]:after {
 a[href="#dor"]:after {
   background-position: -180px -40px !important;
 }
+a[href="#hke"]:after,
 a[href="#hkes"]:after {
   background-position: -180px -60px !important;
 }
+a[href="#lgs"]:after,
 a[href="#logs"]:after {
   background-position: -180px -80px !important;
 }
@@ -991,6 +969,7 @@ a[href="#ngu"]:after {
 a[href="#tpa"]:after {
   background-position: -180px -160px !important;
 }
+a[href="#yfw"]:after,
 a[href="#yoefw"]:after {
   background-position: -180px -180px !important;
 }
@@ -1165,9 +1144,6 @@ a[href="#korea"]:after {
 }
 a[href="#sea"]:after {
   background-position: -360px -44px !important;
-}
-.flat-list a[href^="#"]:after {
-  width: 0px;
 }
 /* Users */
 .flair {

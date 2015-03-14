@@ -1,5 +1,45 @@
 @icon-spacing: -19px;
 
+/* sidebar social media icons */
+.side {
+  a[href="https://www.facebook.com/loleventvods"],
+  a[href="https://www.twitter.com/loleventvods"],
+  a[href="http://www.youtube.com/loleventvods"],
+  a[href="https://play.google.com/store/apps/details?id=com.kox.zzreal"],
+  a[href="http://appsto.re/us/Eh0m1.i"],
+  a[href="http://www.eventvods.com/social"]  {
+    .social();
+    &:hover {
+      opacity: 0.6
+    }
+  }
+
+  a[href="https://www.facebook.com/loleventvods"] {
+    .bg-pos;
+    .social-left-col();
+  }
+  a[href="https://www.twitter.com/loleventvods"] {
+    .bg-pos(0, @social-spacing);
+    .social-right-col();
+  }
+  a[href="http://www.youtube.com/loleventvods"] {
+    .bg-pos(0, @social-spacing * 2);
+    .social-left-col();
+  }
+  a[href="https://play.google.com/store/apps/details?id=com.kox.zzreal"] {
+    .bg-pos(0, @social-spacing * 3);
+    .social-right-col();
+  }
+  a[href="http://appsto.re/us/Eh0m1.i"] {
+    .bg-pos(0, @social-spacing * 4);
+    .social-left-col();
+  }
+  a[href="http://www.eventvods.com/donate"] {
+    .bg-pos(0, @social-spacing * 5);
+    .social-right-col();
+  }
+}
+
 .side { 
   margin: 36px 5px 0 5px;
   .md p > em {
@@ -218,43 +258,3 @@
 
 /* hide "Create your own subreddit" button */
 div.sidebox.create{display: none;}
-
-/* sidebar social media icons */
-.side {
-  a[href="https://www.facebook.com/loleventvods"],
-  a[href="https://www.twitter.com/loleventvods"],
-  a[href="http://www.youtube.com/loleventvods"],
-  a[href="https://play.google.com/store/apps/details?id=com.kox.zzreal"],
-  a[href="http://appsto.re/us/Eh0m1.i"],
-  a[href="http://www.eventvods.com/social"]  {
-    .social();
-    &:hover {
-      opacity: 0.6
-    }
-  }
-
-  a[href="https://www.facebook.com/loleventvods"] {
-    .bg-pos;
-    .social-left-col();
-  }
-  a[href="https://www.twitter.com/loleventvods"] {
-    .bg-pos(0, @social-spacing);
-    .social-right-col();
-  }
-  a[href="http://www.youtube.com/loleventvods"] {
-    .bg-pos(0, @social-spacing * 2);
-    .social-left-col();
-  }
-  a[href="https://play.google.com/store/apps/details?id=com.kox.zzreal"] {
-    .bg-pos(0, @social-spacing * 3);
-    .social-right-col();
-  }
-  a[href="http://appsto.re/us/Eh0m1.i"] {
-    .bg-pos(0, @social-spacing * 4);
-    .social-left-col();
-  }
-  a[href="http://www.eventvods.com/donate"] {
-    .bg-pos(0, @social-spacing * 5);
-    .social-right-col();
-  }
-}
