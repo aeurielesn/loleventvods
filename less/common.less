@@ -212,28 +212,15 @@ div.collapsed > a.expand:first-child + em + time {
    + a.expand, + em + a.expand {display: none; }
 }
 
-/* notice below comments */
+/* Notice in comment box */
 .commentarea {
   position: static;
-  .usertext {
-	  .usertext-edit:after {
-		content: "Note: Please use the spoiler tag if you want to discuss/suggest recommended games, picks & bans or something else related.";
-		display: block;
-		text-align: center;
-		margin-top: -5px;
-		padding: 4px;
-		background-color: #def;
-		border: 1px solid #59c;
-		font-size: 11px;
-		font-weight: bold;
-	  }
-	  textarea {
+  .usertext textarea {
 		background-image: url(%%commentrules%%);
 		background-repeat: no-repeat;
 		border: 1px solid #ccc;
-		&:focus {background-position:-504px -104px }
-	  }
-  }		
+		&:focus { .bg-pos(-504px, -104px); }
+  }
 }
 
 /* This consider that the Team X columns in
