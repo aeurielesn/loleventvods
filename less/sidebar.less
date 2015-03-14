@@ -10,6 +10,8 @@
     > strong { font-style: italic; }
   }
   h4, h5 { height: 0; }
+  
+  // Theme Switcher
   a[href="//www.reddit.com/r/loleventvods/"],
   a[href="#2themes"],
   a[href="//dd.reddit.com/r/loleventvods/"] {
@@ -27,6 +29,9 @@
     width: 130px;
     background-position: -85px 0px;
     cursor: default;
+    &:after {
+      content: none!important;
+    }
   }
   a[href="//dd.reddit.com/r/loleventvods/"] {
     margin-left: -5px;
@@ -220,7 +225,8 @@ div.sidebox.create{display: none;}
   a[href="https://www.twitter.com/loleventvods"],
   a[href="http://www.youtube.com/loleventvods"],
   a[href="https://play.google.com/store/apps/details?id=com.kox.zzreal"],
-  a[href="http://appsto.re/us/Eh0m1.i"]  {
+  a[href="http://appsto.re/us/Eh0m1.i"],
+  a[href="http://www.eventvods.com/social"]  {
     .social();
     &:hover {
       opacity: 0.6
@@ -228,23 +234,27 @@ div.sidebox.create{display: none;}
   }
 
   a[href="https://www.facebook.com/loleventvods"] {
-    background-position: 0 0;
+    .bg-pos;
     .social-left-col();
   }
   a[href="https://www.twitter.com/loleventvods"] {
-    background-position: 0 @social-spacing;
+    .bg-pos(0, @social-spacing);
     .social-right-col();
   }
   a[href="http://www.youtube.com/loleventvods"] {
-    background-position: 0 (@social-spacing * 2);
+    .bg-pos(0, @social-spacing * 2);
     .social-left-col();
   }
   a[href="https://play.google.com/store/apps/details?id=com.kox.zzreal"] {
-    background-position: 0 (@social-spacing * 3);
+    .bg-pos(0, @social-spacing * 3);
     .social-right-col();
   }
   a[href="http://appsto.re/us/Eh0m1.i"] {
-    background-position: 0 (@social-spacing * 4);
+    .bg-pos(0, @social-spacing * 4);
     .social-left-col();
+  }
+  a[href="http://www.eventvods.com/donate"] {
+    .bg-pos(0, @social-spacing * 5);
+    .social-right-col();
   }
 }

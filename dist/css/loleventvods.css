@@ -1,13 +1,63 @@
-/* Visited links color change */
-.entry a:visited {
-  color: #551a8b;
+/* Hides domain, leave contributor button & RES nav annotations */
+#viewImagesButton,
+.domain,
+.side .leavecontributor-button,
+table .keyNavAnnotation,
+#siteTable .keyNavAnnotation,
+a[href^="#"] + .keyNavAnnotation {
+  display: none;
 }
-.entry a:visited[href*="lol.eventvods.com"] {
-  color: #0079d3!important;
+.link.last-clicked {
+  overflow: hidden;
 }
-/* change width */
-.md {
-  max-width: 90em;
+/* Timestamps */
+.edited-timestamp::after {
+  content: " (" attr(title) ")";
+  font-size: 90%;
+}
+/* tables */
+.md table {
+  border: 1px solid #444;
+  font-family: Arial, Helvetica, Sans-serif;
+  margin: 10px 0px;
+}
+.md table * {
+  border: 10px;
+}
+.md table th {
+  text-align: center;
+}
+.md table thead,
+.md table tr:nth-child(even) {
+  background-color: #f6f6f6;
+}
+.md table td,
+.md table th {
+  border-right: 1px solid #888;
+  padding: 4px 8px;
+}
+.md th {
+  border: 1px solid #444;
+  padding: 6px 10px;
+  white-space: nowrap;
+  background-color: #444;
+  color: whitesmoke;
+}
+.side .md table {
+  width: 100%;
+}
+/* ALTERNATE ROW COLORS */
+.md tr:nth-of-type(odd) {
+  background: #fff;
+  color: #363636;
+}
+.md tr:nth-of-type(even) {
+  background: #EDEDED;
+  color: #363636;
+}
+/* ROW HOVER COLOR */
+.md table tr:hover {
+  background-color: #bdff8b;
 }
 /* alien */
 #header-img-a {
@@ -43,18 +93,6 @@
   background: #02021a url(%%header%%) no-repeat right top;
   height: 126px;
 }
-.redditname a {
-  text-indent: -1px;
-  margin-top: 30px;
-  color: white;
-  font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
-  font-style: italic;
-  font-weight: normal;
-}
-.redditname a {
-  display: inline;
-  float: left;
-}
 #header-bottom-left span.pagename a {
   display: block;
   height: 125px;
@@ -63,6 +101,16 @@
   margin-top: 10px;
   background: url(%%logo%%) no-repeat scroll 0 0 transparent;
   font-size: 0!important;
+}
+.redditname a {
+  text-indent: -1px;
+  margin-top: 30px;
+  color: white;
+  font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
+  font-style: italic;
+  font-weight: normal;
+  display: inline;
+  float: left;
 }
 /* Moves userbar down below header image */
 #header-bottom-right {
@@ -103,152 +151,12 @@
   line-height: 28px;
   color: #fff;
 }
-/* Hides tabmenu, domain, leave contributor button & RES nav annotations */
-#header .tabmenu,
-#viewImagesButton,
-.domain,
-.side .leavecontributor-button,
-table .keyNavAnnotation,
-a[href^="#"] + .keyNavAnnotation,
-#siteTable .keyNavAnnotation {
+/* Hides tabmenu */
+#header .tabmenu {
   display: none;
 }
 .link.last-clicked {
   overflow: hidden;
-}
-.link.last-clicked {
-  overflow: hidden;
-}
-/* Timestamps */
-.edited-timestamp::after {
-  content: " (" attr(title) ")";
-  font-size: 90%;
-}
-/* Collapsable in entries */
-.entry .md h3 {
-  margin-bottom: 8px;
-}
-.entry .md h3 + p {
-  position: absolute;
-  margin-top: -25px;
-  height: 30px;
-  width: 294px;
-}
-.entry .md h3 + p + * {
-  display: none;
-}
-.entry .md h3 + p:hover + *,
-.entry .md h3 + p + *:hover,
-.entry .md h3:hover + p + * {
-  display: table;
-}
-/* Red text in posts & disabled stylesheet warning */
-.usertext-body h4 {
-  color: #f00;
-  font-weight: bold;
-}
-.usertext-body blockquote a[href="#no_stylesheet"] {
-  display: none;
-}
-/* tables */
-.md table {
-  border: 1px solid #444;
-  font-family: Arial, Helvetica, Sans-serif;
-  margin: 10px 0px;
-}
-.md table * {
-  border: 10px;
-}
-.md table th {
-  text-align: center;
-}
-.md table tr:nth-child(even),
-.md table thead {
-  background-color: #f6f6f6;
-}
-.md table td,
-.md table th {
-  border-right: 1px solid #888;
-  padding: 4px 8px;
-}
-.side .md table {
-  width: 100%;
-}
-.md th {
-  white-space: nowrap;
-  background-color: #444;
-  color: whitesmoke;
-  padding: 6px 10px;
-  border: 1px solid #444;
-}
-/* ALTERNATE ROW COLORS */
-.md tr:nth-of-type(odd) {
-  background: #fff;
-  color: #363636;
-}
-.md tr:nth-of-type(even) {
-  background: #EDEDED;
-  color: #363636;
-}
-/* ROW HOVER COLOR */
-.md table tr:hover {
-  background-color: #bdff8b;
-}
-/* Hides video expandos in posts */
-.usertext-body .md .RESdupeimg,
-.usertext-body .md .expando-button.video,
-.usertext-body .md .expando-button.video.collapsed,
-.usertext-body .md .expando-button.video.expanded {
-  display: none!important;
-}
-/* Hides downvote arrow on posts only; still accessible on comments*/
-.arrow.down {
-  visibility: hidden;
-  display: none;
-}
-.comment .arrow.down {
-  visibility: visible;
-  display: block;
-}
-/* Next 4 sections make deleted messages less noticeable -djimbob*/
-form.grayed,
-form.grayed ~ ul.flat-list.buttons {
-  display: none;
-}
-p.tagline > a.expand:first-child + em,
-div.collapsed > a.expand:first-child + em {
-  visibility: hidden;
-  font-size: 0;
-}
-p.tagline > a.expand:first-child + em:after,
-div.collapsed > a.expand:first-child + em:after {
-  visibility: visible;
-  font-size: x-small;
-  font-weight: bold;
-  content: "Comment removed by user";
-}
-div.collapsed > a.expand:first-child + em + time + a.expand,
-div.collapsed > a.expand:first-child + em + time + em + a.expand {
-  display: none;
-}
-/* Notice in comment box */
-.commentarea {
-  position: static;
-}
-.commentarea .usertext textarea {
-  background-image: url(%%commentrules%%);
-  background-repeat: no-repeat;
-  border: 1px solid #ccc;
-}
-.commentarea .usertext textarea:focus {
-  background-position: -504px -104px;
-}
-/* This consider that the Team X columns in
- * the matches description are left and right aligned
- */
-.expando th[align="left"],
-.expando th[align="right"] {
-  min-width: 70px;
 }
 /* Tournament icons in header */
 .side a[href="/r/LoLeventVoDs/comments/2taw1o/"],
@@ -303,67 +211,75 @@ div.collapsed > a.expand:first-child + em + time + em + a.expand {
  * of the main subreddit content.
  */
 .titlebox .usertext-body .md h6 {
-  background: url(%%gray%%);
-  display: block;
   position: absolute;
   top: 145px;
   left: 0;
   right: 0;
+  padding: 4px 13px 4px 4px;
+  margin-top: 0px!important;
+  margin-left: 35px;
+  display: block;
+  background: url(%%gray%%);
   font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
   font-size: 15px;
   font-weight: bold;
   color: white;
   text-align: left;
   text-decoration: none!important;
-  padding: 4px 13px 4px 4px;
   line-height: 26px;
-  margin-left: 35px;
-  margin-top: 0px!important;
-  text-decoration: none;
 }
 h6 a {
   color: #F2E972!important;
 }
+/* Visited links color change */
+.entry a:visited {
+  color: #551a8b;
+}
+.entry a:visited[href*="lol.eventvods.com"] {
+  color: #0079d3!important;
+}
+/* Red text in posts & disabled stylesheet warning */
+.usertext-body h4 {
+  color: #f00;
+  font-weight: bold;
+}
+.usertext-body blockquote a[href="#no_stylesheet"] {
+  display: none;
+}
+.usertext-body blockquote a[href="#no_stylesheet"]:after {
+  content: none!important;
+}
+/* Hides video expandos in posts */
+.usertext-body .md .RESdupeimg,
+.usertext-body .md .expando-button.video,
+.usertext-body .md .expando-button.video.collapsed,
+.usertext-body .md .expando-button.video.expanded {
+  display: none!important;
+}
+/* Hides downvote arrow on posts only; still accessible on comments*/
+.arrow.down {
+  visibility: hidden;
+  display: none;
+}
+.comment .arrow.down {
+  visibility: visible;
+  display: block;
+}
+/* Notice in comment box */
+.commentarea {
+  position: static;
+}
+.commentarea .usertext textarea {
+  background-image: url(%%commentrules%%);
+  background-repeat: no-repeat;
+  border: 1px solid #ccc;
+}
+.commentarea .usertext textarea:focus {
+  background-position: -504px -104px;
+}
 /* No flairs on front page */
 .listing-page #siteTable .flair {
   display: none;
-}
-/* HEADER TEAM POPOUT MENU (credit: /u/gavin19) */
-.side h6 + ul {
-  list-style-type: none;
-  position: absolute;
-  top: 15px;
-  right: 70px;
-  z-index: 99;
-  margin: 0;
-  padding: 3em 0 3em 3em;
-}
-.side h6 + ul li {
-  display: block;
-}
-.side h6 + ul li ~ li {
-  display: none;
-}
-.side h6 + ul li:first-child {
-  position: absolute;
-  right: -60px;
-}
-.side h6 + ul li:first-child a {
-  display: inline-block;
-  width: 30px;
-  height: 25px;
-  line-height: 0;
-  margin: 0;
-  background: transparent url(%%thumbnails%%) no-repeat 0 -550px;
-}
-.side h6 + ul li:first-child a:hover {
-  opacity: 0.8;
-}
-.side h6 + ul li:first-child a[href="/r/LoLeventVoDs"]:before {
-  content: normal;
-}
-.side .md h6 + ul li {
-  background-color: transparent!important;
 }
 .side {
   margin: 36px 5px 0 5px;
@@ -692,17 +608,6 @@ a[href="/spoiler"]:hover {
   display: block;
   min-width: 30px;
 }
-a[href="/hidden"] {
-  display: block;
-  background: none repeat scroll 0 0 #000 !important;
-  color: #000 !important;
-  cursor: default;
-  border-radius: 3px;
-  padding: 0 3px;
-}
-a[href="/hidden"]:hover {
-  color: #fff !important;
-}
 .thing .thumbnail[href*="allstar"],
 .thing .thumbnail[href*="android"],
 .thing .thumbnail[href*="best_zed"],
@@ -871,366 +776,366 @@ a[href="#"]:after {
 }
 /* LCS EU */
 a[href="#cw"]:after {
-  background-position: 0 0;
+  background-position: 0 0 !important;
 }
 a[href="#el"]:after {
-  background-position: 0 -20px;
+  background-position: 0 -20px !important;
 }
 a[href="#fnatic"]:after,
 a[href="#fnc"]:after {
-  background-position: 0 -40px;
+  background-position: 0 -40px !important;
 }
 a[href="#gia"]:after {
-  background-position: 0 -60px;
+  background-position: 0 -60px !important;
 }
 a[href="#gambit"]:after,
 a[href="#gmb"]:after {
-  background-position: 0 -80px;
+  background-position: 0 -80px !important;
 }
 a[href="#h2k"]:after {
-  background-position: 0 -100px;
+  background-position: 0 -100px !important;
 }
 a[href="#mym"]:after {
-  background-position: 0 -120px;
+  background-position: 0 -120px !important;
 }
 a[href="#roc"]:after {
-  background-position: 0 -140px;
+  background-position: 0 -140px !important;
 }
 a[href="#sk"]:after {
-  background-position: 0 -160px;
+  background-position: 0 -160px !important;
 }
 a[href="#uol"]:after {
-  background-position: 0 -180px;
+  background-position: 0 -180px !important;
 }
 /* LCS NA */
 a[href="#c9"]:after {
-  background-position: -36px 0;
+  background-position: -36px 0 !important;
 }
 a[href="#clg"]:after {
-  background-position: -36px -20px;
+  background-position: -36px -20px !important;
 }
 a[href="#coast"]:after,
 a[href="#cst"]:after {
-  background-position: -36px -40px;
+  background-position: -36px -40px !important;
 }
 a[href="#dig"]:after {
-  background-position: -36px -60px;
+  background-position: -36px -60px !important;
 }
 a[href="#gv"]:after {
-  background-position: -36px -80px;
+  background-position: -36px -80px !important;
 }
 a[href="#tl"]:after {
-  background-position: -36px -100px;
+  background-position: -36px -100px !important;
 }
 a[href="#t8"]:after {
-  background-position: -36px -120px;
+  background-position: -36px -120px !important;
 }
 a[href="#tip"]:after {
-  background-position: -36px -140px;
+  background-position: -36px -140px !important;
 }
 a[href="#tsm"]:after {
-  background-position: -36px -160px;
+  background-position: -36px -160px !important;
 }
 a[href="#wfx"]:after {
-  background-position: -36px -180px;
+  background-position: -36px -180px !important;
 }
 /* OGN */
 a[href="#cj"]:after {
-  background-position: -72px 0;
+  background-position: -72px 0 !important;
 }
 a[href="#get"]:after {
-  background-position: -72px -20px;
+  background-position: -72px -20px !important;
 }
 a[href="#im"]:after {
-  background-position: -72px -40px;
+  background-position: -72px -40px !important;
 }
 a[href="#jinair"]:after,
 a[href="#jas"]:after,
 a[href="#jaf"]:after {
-  background-position: -72px -60px;
+  background-position: -72px -60px !important;
 }
 a[href="#kt"]:after,
 a[href="#kta"]:after,
 a[href="#ktb"]:after {
-  background-position: -72px -80px;
+  background-position: -72px -80px !important;
 }
 a[href="#najin"]:after {
-  background-position: -72px -100px;
+  background-position: -72px -100px !important;
 }
 a[href="#ozone"]:after,
 a[href="#sso"]:after,
 a[href="#ssw"]:after,
 a[href="#ssb"]:after,
 a[href="#ssg"]:after {
-  background-position: -72px -120px;
+  background-position: -72px -120px !important;
 }
 a[href="#skt"]:after {
-  background-position: -72px -140px;
+  background-position: -72px -140px !important;
 }
 /* LPL */
 a[href="#edg"]:after {
-  background-position: -108px 0;
+  background-position: -108px 0 !important;
 }
 a[href="#ep"]:after,
 a[href="#ephk"]:after {
-  background-position: -108px -20px;
+  background-position: -108px -20px !important;
 }
 a[href="#gtf"]:after {
-  background-position: -108px -40px;
+  background-position: -108px -40px !important;
 }
 a[href="#ig"]:after {
-  background-position: -108px -60px;
+  background-position: -108px -60px !important;
 }
 a[href="#lgd"]:after {
-  background-position: -108px -80px;
+  background-position: -108px -80px !important;
 }
 a[href="#m3"]:after {
-  background-position: -108px -100px;
+  background-position: -108px -100px !important;
 }
 a[href="#omg"]:after {
-  background-position: -108px -120px;
+  background-position: -108px -120px !important;
 }
 a[href="#sh"]:after,
 a[href="#shr"]:after {
-  background-position: -108px -140px;
+  background-position: -108px -140px !important;
 }
 a[href="#tk"]:after {
-  background-position: -108px -160px;
+  background-position: -108px -160px !important;
 }
 a[href="#ts"]:after {
-  background-position: -108px -180px;
+  background-position: -108px -180px !important;
 }
 a[href="#vg"]:after {
-  background-position: -108px -200px;
+  background-position: -108px -200px !important;
 }
 a[href="#we"]:after {
-  background-position: -108px -220px;
+  background-position: -108px -220px !important;
 }
 /* GPL */
 a[href="#269"]:after {
-  background-position: -144px 0;
+  background-position: -144px 0 !important;
 }
 a[href="#apu"]:after {
-  background-position: -144px -20px;
+  background-position: -144px -20px !important;
 }
 a[href="#asf"]:after {
-  background-position: -144px -40px;
+  background-position: -144px -40px !important;
 }
 a[href="#bkt"]:after {
-  background-position: -144px -60px;
+  background-position: -144px -60px !important;
 }
 a[href="#fl"]:after {
-  background-position: -144px -80px;
+  background-position: -144px -80px !important;
 }
 a[href="#ifin"]:after {
-  background-position: -144px -100px;
+  background-position: -144px -100px !important;
 }
 a[href="#is"]:after,
 a[href="#isl"]:after,
 a[href="#igl"]:after {
-  background-position: -144px -120px;
+  background-position: -144px -120px !important;
 }
 a[href="#j2g"]:after {
-  background-position: -144px -140px;
+  background-position: -144px -140px !important;
 }
 a[href="#klh"]:after {
-  background-position: -144px -160px;
+  background-position: -144px -160px !important;
 }
 a[href="#kth"]:after {
-  background-position: -144px -180px;
+  background-position: -144px -180px !important;
 }
 a[href="#min"]:after,
 a[href="#msk"]:after {
-  background-position: -144px -200px;
+  background-position: -144px -200px !important;
 }
 a[href="#saj"]:after {
-  background-position: -144px -220px;
+  background-position: -144px -220px !important;
 }
 a[href="#sf5"]:after {
-  background-position: -144px -240px;
+  background-position: -144px -240px !important;
 }
 a[href="#tfr"]:after {
-  background-position: -144px -260px;
+  background-position: -144px -260px !important;
 }
 a[href="#war"]:after {
-  background-position: -144px -280px;
+  background-position: -144px -280px !important;
 }
 a[href="#wgd"]:after {
-  background-position: -144px -300px;
+  background-position: -144px -300px !important;
 }
 /* LMS */
 a[href="#ahq"]:after {
-  background-position: -180px 0;
+  background-position: -180px 0 !important;
 }
 a[href="#dly"]:after {
-  background-position: -180px -20px;
+  background-position: -180px -20px !important;
 }
 a[href="#dor"]:after {
-  background-position: -180px -40px;
+  background-position: -180px -40px !important;
 }
 a[href="#hkes"]:after {
-  background-position: -180px -60px;
+  background-position: -180px -60px !important;
 }
 a[href="#logs"]:after {
-  background-position: -180px -80px;
+  background-position: -180px -80px !important;
 }
 a[href="#mc"]:after {
-  background-position: -180px -100px;
+  background-position: -180px -100px !important;
 }
 a[href="#mse"]:after {
-  background-position: -180px -120px;
+  background-position: -180px -120px !important;
 }
 a[href="#ngu"]:after {
-  background-position: -180px -140px;
+  background-position: -180px -140px !important;
 }
 a[href="#tpa"]:after {
-  background-position: -180px -160px;
+  background-position: -180px -160px !important;
 }
 a[href="#yoefw"]:after {
-  background-position: -180px -180px;
+  background-position: -180px -180px !important;
 }
 /* CBLOL (Brazil) */
 a[href="#awp"]:after {
-  background-position: -216px 0;
+  background-position: -216px 0 !important;
 }
 a[href="#cnb"]:after {
-  background-position: -216px -20px;
+  background-position: -216px -20px !important;
 }
 a[href="#kbm"]:after {
-  background-position: -216px -40px;
+  background-position: -216px -40px !important;
 }
 a[href="#kst"]:after {
-  background-position: -216px -60px;
+  background-position: -216px -60px !important;
 }
 a[href="#pain"]:after,
 a[href="#png"]:after {
-  background-position: -216px -80px;
+  background-position: -216px -80px !important;
 }
 a[href="#unt"]:after {
-  background-position: -216px -100px;
+  background-position: -216px -100px !important;
 }
 /* Worlds */
 a[href="#dp"]:after {
-  background-position: -252px 0;
+  background-position: -252px 0 !important;
 }
 a[href="#bears"]:after,
 a[href="#gam"]:after {
-  background-position: -252px -20px;
+  background-position: -252px -20px !important;
 }
 a[href="#gg"]:after,
 a[href="#gaming"]:after {
-  background-position: -252px -40px;
+  background-position: -252px -40px !important;
 }
 a[href="#ryl"]:after,
 a[href="#royal"]:after {
-  background-position: -252px -60px;
+  background-position: -252px -60px !important;
 }
 /* Old */
 a[href="#ahqF"]:after {
-  background-position: -288px 0;
+  background-position: -288px 0 !important;
 }
 a[href="#all"]:after {
-  background-position: -288px -20px;
+  background-position: -288px -20px !important;
 }
 a[href="#atn"]:after {
-  background-position: -288px -40px;
+  background-position: -288px -40px !important;
 }
 a[href="#blc"]:after,
 a[href="#bm"]:after {
-  background-position: -288px -60px;
+  background-position: -288px -60px !important;
 }
 a[href="#cjb"]:after {
-  background-position: -288px -80px;
+  background-position: -288px -80px !important;
 }
 a[href="#cjf"]:after {
-  background-position: -288px -100px;
+  background-position: -288px -100px !important;
 }
 a[href="#col"]:after,
 a[href="#colA"]:after {
-  background-position: -288px -120px;
+  background-position: -288px -120px !important;
 }
 a[href="#crs"]:after,
 a[href="#crsA"]:after {
-  background-position: -288px -140px;
+  background-position: -288px -140px !important;
 }
 a[href="#eg"]:after {
-  background-position: -288px -160px;
+  background-position: -288px -160px !important;
 }
 a[href="#hka"]:after {
-  background-position: -288px -180px;
+  background-position: -288px -180px !important;
 }
 a[href="#ipt"]:after {
-  background-position: -288px -200px;
+  background-position: -288px -200px !important;
 }
 a[href="#isr"]:after,
 a[href="#igr"]:after {
-  background-position: -288px -220px;
+  background-position: -288px -220px !important;
 }
 a[href="#ld"]:after {
-  background-position: -288px -240px;
+  background-position: -288px -240px !important;
 }
 a[href="#lmq"]:after {
-  background-position: -288px -260px;
+  background-position: -288px -260px !important;
 }
 a[href="#machi"]:after {
-  background-position: -288px -280px;
+  background-position: -288px -280px !important;
 }
 a[href="#midas"]:after {
-  background-position: -288px -300px;
+  background-position: -288px -300px !important;
 }
 a[href="#millenium"]:after,
 a[href="#mil"]:after {
-  background-position: -324px 0;
+  background-position: -324px 0 !important;
 }
 a[href="#mkz"]:after {
-  background-position: -324px -20px;
+  background-position: -324px -20px !important;
 }
 a[href="#mle"]:after {
-  background-position: -324px -40px;
+  background-position: -324px -40px !important;
 }
 a[href="#nip"]:after,
 a[href="#nip2"]:after {
-  background-position: -324px -60px;
+  background-position: -324px -60px !important;
 }
 a[href="#nsw"]:after,
 a[href="#njbs"]:after {
-  background-position: -324px -80px;
+  background-position: -324px -80px !important;
 }
 a[href="#nsh"]:after,
 a[href="#njws"]:after {
-  background-position: -324px -100px;
+  background-position: -324px -100px !important;
 }
 a[href="#pe"]:after {
-  background-position: -324px -120px;
+  background-position: -324px -120px !important;
 }
 a[href="#prime"]:after {
-  background-position: -324px -140px;
+  background-position: -324px -140px !important;
 }
 a[href="#sgs"]:after {
-  background-position: -324px -160px;
+  background-position: -324px -160px !important;
 }
 a[href="#shc"]:after {
-  background-position: -324px -180px;
+  background-position: -324px -180px !important;
 }
 a[href="#tps"]:after {
-  background-position: -324px -200px;
+  background-position: -324px -200px !important;
 }
 a[href="#ves"]:after {
-  background-position: -324px -220px;
+  background-position: -324px -220px !important;
 }
 a[href="#vul"]:after,
 a[href="#xdg"]:after {
-  background-position: -324px -240px;
+  background-position: -324px -240px !important;
 }
 a[href="#wea"]:after {
-  background-position: -324px -260px;
+  background-position: -324px -260px !important;
 }
 a[href="#xs"]:after,
 a[href="#storm"]:after {
-  background-position: -324px -280px;
+  background-position: -324px -280px !important;
 }
 a[href="#yg"]:after {
-  background-position: -324px -300px;
+  background-position: -324px -300px !important;
 }
 /* Allstars */
 a[href="#america"]:after,
@@ -1244,49 +1149,24 @@ a[href="#sea"]:after {
   background: url(%%teams%%) no-repeat scroll 16px 11px transparent;
   display: inline-block;
   vertical-align: 1%;
-  cursor: default !important;
+  cursor: default!important;
 }
 a[href="#america"]:after {
-  background-position: -360px 0px;
+  background-position: -360px 0px !important;
 }
 a[href="#china"]:after {
-  background-position: -360px -11px;
+  background-position: -360px -11px !important;
 }
 a[href="#europe"]:after {
-  background-position: -360px -22px;
+  background-position: -360px -22px !important;
 }
 a[href="#korea"]:after {
-  background-position: -360px -33px;
+  background-position: -360px -33px !important;
 }
 a[href="#sea"]:after {
-  background-position: -360px -44px;
+  background-position: -360px -44px !important;
 }
-.flat-list a[href^="#a"]:after,
-.flat-list a[href^="#b"]:after,
-.flat-list a[href^="#c"]:after,
-.flat-list a[href^="#d"]:after,
-.flat-list a[href^="#e"]:after,
-.flat-list a[href^="#f"]:after,
-.flat-list a[href^="#g"]:after,
-.flat-list a[href^="#h"]:after,
-.flat-list a[href^="#i"]:after,
-.flat-list a[href^="#j"]:after,
-.flat-list a[href^="#k"]:after,
-.flat-list a[href^="#l"]:after,
-.flat-list a[href^="#m"]:after,
-.flat-list a[href^="#n"]:after,
-.flat-list a[href^="#o"]:after,
-.flat-list a[href^="#p"]:after,
-.flat-list a[href^="#q"]:after,
-.flat-list a[href^="#r"]:after,
-.flat-list a[href^="#s"]:after,
-.flat-list a[href^="#t"]:after,
-.flat-list a[href^="#u"]:after,
-.flat-list a[href^="#v"]:after,
-.flat-list a[href^="#w"]:after,
-.flat-list a[href^="#x"]:after,
-.flat-list a[href^="#y"]:after,
-.flat-list a[href^="#z"]:after {
+.flat-list a[href^="#"]:after {
   width: 0px;
 }
 /* Users */
