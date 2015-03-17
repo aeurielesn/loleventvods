@@ -166,36 +166,64 @@
 
   // Tournament icons in header
   .side {
-    a[href="/r/LoLeventVoDs/comments/1v6w31/s4_lcs_europe_spring_season/"],
-    a[href="/r/LoLeventVoDs/comments/1vgje3/s4_lcs_north_america_spring_season/"],
-    a[href="/r/LoLeventVoDs/comments/1wd6yu/iem_sao_paulo_2014/"],
-    a[href="/r/LoLeventVoDs/comments/1tn6v4/pandoratv_201314_ogn_winter_playoffs/"] {
-      .headers();
+    // In order, header icons for the following tourneys, left to right
+    // IEM, EU LCS, OGN/LCK, LPL, NA LCS
+    a[href="/r/LoLeventVoDs/comments/2ywjmx/"],
+    a[href="/r/LoLeventVoDs/comments/2x8ymq/"],
+    a[href="/r/LoLeventVoDs/comments/2x1sek/"],
+    a[href="/r/LoLeventVoDs/comments/2xckeu/"],
+    a[href="/r/LoLeventVoDs/comments/2xhgar/"] {
+      background: url(%%headers%%) no-repeat top left;
+      height: 125px;
       display: block;
       position: absolute;
       top: 19px;
       z-index: 9999;
     }
-
-    a[href="/r/LoLeventVoDs/comments/1v6w31/s4_lcs_europe_spring_season/"] {
-      right: 640px;
-      .headers-eu-off();
-      &:hover { .headers-eu-on(); }
+    // IEM
+    a[href="/r/LoLeventVoDs/comments/2ywjmx/"] {
+      right: 670px;
+      width: 250px;
+      .bg-pos;
+      &:hover {
+        .bg-pos(0, @header-icons-height);
+      }
     }
-    a[href="/r/LoLeventVoDs/comments/1vgje3/s4_lcs_north_america_spring_season/"] {
+    // EU LCS
+    a[href="/r/LoLeventVoDs/comments/2x8ymq/"] {
+      right: 520px;
+      width: 140px;
+      .bg-pos(-250px, 0);
+      &:hover {
+        .bg-pos(-250px, @header-icons-height);
+      }
+    }
+    // OGN/LCK
+    a[href="/r/LoLeventVoDs/comments/2x1sek/"] {
+      right: 320px;
+      width: 200px;
+      .bg-pos(-380px, 0);
+      &:hover {
+        .bg-pos(-380px, @header-icons-height);
+      }
+    }
+    // LPL
+    a[href="/r/LoLeventVoDs/comments/2xckeu/"] {
+      right: 175px;
+      width: 130px;
+      .bg-pos(-580px, 0);
+      &:hover {
+        .bg-pos(-580px, @header-icons-height);
+      }
+    }
+    // NA LCS
+    a[href="/r/LoLeventVoDs/comments/2xhgar/"] {
       right: 0;
-      .headers-na-off();
-      &:hover { .headers-na-on(); }
-    }
-    a[href="/r/LoLeventVoDs/comments/1wd6yu/iem_sao_paulo_2014/"] {
-      right: 400px;
-      .headers-iem-off();
-      &:hover { .headers-iem-on(); }
-    }
-    a[href="/r/LoLeventVoDs/comments/1tn6v4/pandoratv_201314_ogn_winter_playoffs/"] {
-      right: 145px;
-      .headers-ogn-off();
-      &:hover { .headers-ogn-on(); }
+      width: 140px;
+      .bg-pos(-710px, 0);
+      &:hover {
+        .bg-pos(-710px, @header-icons-height);
+      }
     }
   }
 }

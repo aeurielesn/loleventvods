@@ -1,3 +1,4 @@
+// General mixins
 .box-shadow (@string) {
 	-webkit-box-shadow: @string;
 	-moz-box-shadow:    @string;
@@ -43,3 +44,8 @@
 }
 
 .bg-pos (@x-pos: 0, @y-pos: 0) { background-position: @x-pos @y-pos; }
+
+// Social media mixins
+.social-left-col()  { margin-left: 0; }
+.social-right-col() { margin-left: 6px; margin-right: 0px;}
+.social-top-row()   { margin-top: 6px;}

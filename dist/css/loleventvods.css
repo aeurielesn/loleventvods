@@ -159,10 +159,11 @@ a[href^="#"] + .keyNavAnnotation {
   overflow: hidden;
 }
 /* Tournament icons in header */
-.side a[href="/r/LoLeventVoDs/comments/2taw1o/"],
-.side a[href="/r/LoLeventVoDs/comments/2tjhh4/"],
-.side a[href="/r/LoLeventVoDs/comments/2tx8ou/"],
-.side a[href="/r/LoLeventVoDs/comments/2rm5z6/"] {
+.side a[href="/r/LoLeventVoDs/comments/2ywjmx/"],
+.side a[href="/r/LoLeventVoDs/comments/2x8ymq/"],
+.side a[href="/r/LoLeventVoDs/comments/2x1sek/"],
+.side a[href="/r/LoLeventVoDs/comments/2xckeu/"],
+.side a[href="/r/LoLeventVoDs/comments/2xhgar/"] {
   background: url(%%headers%%) no-repeat top left;
   height: 125px;
   display: block;
@@ -170,41 +171,45 @@ a[href^="#"] + .keyNavAnnotation {
   top: 19px;
   z-index: 9999;
 }
-.side a[href="/r/LoLeventVoDs/comments/2taw1o/"] {
-  right: 640px;
+.side a[href="/r/LoLeventVoDs/comments/2ywjmx/"] {
+  right: 670px;
+  width: 250px;
   background-position: 0 0;
-  width: 150px;
 }
-.side a[href="/r/LoLeventVoDs/comments/2taw1o/"]:hover {
-  background-position: 0 -125px;
-  width: 150px;
+.side a[href="/r/LoLeventVoDs/comments/2ywjmx/"]:hover {
+  background-position: 0 -150px;
 }
-.side a[href="/r/LoLeventVoDs/comments/2tjhh4/"] {
-  right: 0;
+.side a[href="/r/LoLeventVoDs/comments/2x8ymq/"] {
+  right: 520px;
+  width: 140px;
+  background-position: -250px 0;
+}
+.side a[href="/r/LoLeventVoDs/comments/2x8ymq/"]:hover {
+  background-position: -250px -150px;
+}
+.side a[href="/r/LoLeventVoDs/comments/2x1sek/"] {
+  right: 320px;
+  width: 200px;
   background-position: -380px 0;
-  width: 150px;
 }
-.side a[href="/r/LoLeventVoDs/comments/2tjhh4/"]:hover {
-  background-position: -380px -125px;
-  width: 150px;
+.side a[href="/r/LoLeventVoDs/comments/2x1sek/"]:hover {
+  background-position: -380px -150px;
 }
-.side a[href="/r/LoLeventVoDs/comments/2tx8ou/"] {
-  right: 400px;
-  background-position: -150px 0;
-  width: 230px;
+.side a[href="/r/LoLeventVoDs/comments/2xckeu/"] {
+  right: 175px;
+  width: 130px;
+  background-position: -580px 0;
 }
-.side a[href="/r/LoLeventVoDs/comments/2tx8ou/"]:hover {
-  background-position: -150px -125px;
-  width: 230px;
+.side a[href="/r/LoLeventVoDs/comments/2xckeu/"]:hover {
+  background-position: -580px -150px;
 }
-.side a[href="/r/LoLeventVoDs/comments/2rm5z6/"] {
-  right: 145px;
-  background-position: -530px 0;
-  width: 255px;
+.side a[href="/r/LoLeventVoDs/comments/2xhgar/"] {
+  right: 0;
+  width: 140px;
+  background-position: -710px 0;
 }
-.side a[href="/r/LoLeventVoDs/comments/2rm5z6/"]:hover {
-  background-position: -530px -125px;
-  width: 255px;
+.side a[href="/r/LoLeventVoDs/comments/2xhgar/"]:hover {
+  background-position: -710px -150px;
 }
 /* Top announcement.
  * It works by enabling <h6/> in the sidebar as a announcement banner on top
@@ -265,6 +270,11 @@ h6 a {
   visibility: visible;
   display: block;
 }
+/* Resizes font in post titles */
+.thing .title {
+  margin-top: 10px;
+  font-size: large!important;
+}
 /* Notice in comment box */
 .commentarea {
   position: static;
@@ -282,7 +292,8 @@ h6 a {
   display: none;
 }
 /* Hide rank and vertically center votes
-   Adds padding too */
+ * Adds padding too
+ */
 #siteTable .thing {
   padding-left: 5px;
 }
@@ -306,6 +317,7 @@ h6 a {
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
+  margin-top: 4px;
 }
 .side a[href="https://www.facebook.com/loleventvods"]:hover,
 .side a[href="https://www.twitter.com/loleventvods"]:hover,
@@ -317,16 +329,18 @@ h6 a {
 }
 .side a[href="https://www.facebook.com/loleventvods"] {
   background-position: 0 0;
-  margin-left: 0px;
+  margin-left: 0;
+  margin-top: 6px;
 }
 .side a[href="https://www.twitter.com/loleventvods"] {
   background-position: 0 -49px;
   margin-left: 6px;
   margin-right: 0px;
+  margin-top: 6px;
 }
 .side a[href="http://www.youtube.com/loleventvods"] {
   background-position: 0 -98px;
-  margin-left: 0px;
+  margin-left: 0;
 }
 .side a[href="https://play.google.com/store/apps/details?id=com.kox.zzreal"] {
   background-position: 0 -147px;
@@ -335,7 +349,7 @@ h6 a {
 }
 .side a[href="http://appsto.re/us/Eh0m1.i"] {
   background-position: 0 -196px;
-  margin-left: 0px;
+  margin-left: 0;
 }
 .side a[href="http://www.eventvods.com/donate"] {
   background-position: 0 -245px;
@@ -428,13 +442,13 @@ h6 a {
 }
 /* User flair */
 .flairselector .customizer {
-  display: none !important;
+  display: none!important;
 }
 /* Sidebar headings */
 .sidecontentbox .content,
 .linkinfo,
 .footer {
-  background: transparent !important;
+  background: transparent!important;
   font-size: small;
   border: 1px solid #ccc;
   margin: 7px 0 0;
@@ -464,10 +478,10 @@ h6 a {
   border-radius: 10px;
 }
 .titlebox .bottom {
-  border: 0;
+  display: none;
 }
 .titlebox form.toggle {
-  background-color: transparent !important;
+  background-color: transparent!important;
 }
 .titlebox .usertext {
   margin: 15px 0;
@@ -480,7 +494,7 @@ h6 a {
 }
 .titlebox .usertext .md h2 {
   font-weight: bold;
-  color: #000 !important;
+  color: #000!important;
 }
 .titlebox .usertext .md > h1 {
   font-size: large;
@@ -488,16 +502,16 @@ h6 a {
   border: none;
   background: url(%%gray%%);
   width: 287px;
-  color: #fff !important;
+  color: #fff!important;
   padding: 4px 0 4px 20px;
   margin: 10px 13px 5px -18px;
-  border-bottom: 1px solid #193064 !important;
+  border-bottom: 1px solid #193064!important;
   z-index: 100;
 }
 .titlebox .usertext .md > h1:after {
   display: block;
   content: "";
-  border-color: transparent #193064 transparent transparent !important;
+  border-color: transparent #193064 transparent transparent!important;
   border-style: solid;
   border-width: 15px;
   height: 0;
@@ -751,14 +765,12 @@ a[href="#cw"]:after {
 a[href="#el"]:after {
   background-position: 0 -20px !important;
 }
-a[href="#fnatic"]:after,
 a[href="#fnc"]:after {
   background-position: 0 -40px !important;
 }
 a[href="#gia"]:after {
   background-position: 0 -60px !important;
 }
-a[href="#gambit"]:after,
 a[href="#gmb"]:after {
   background-position: 0 -80px !important;
 }
@@ -784,7 +796,6 @@ a[href="#c9"]:after {
 a[href="#clg"]:after {
   background-position: -36px -20px !important;
 }
-a[href="#coast"]:after,
 a[href="#cst"]:after {
   background-position: -36px -40px !important;
 }
@@ -1147,76 +1158,140 @@ a[href="#sea"]:after {
 }
 /* Users */
 .flair {
-  background: url(%%flairs%%) no-repeat top left;
+  background: url(%%user-flairs%%) no-repeat top left;
   display: inline-block;
   border: 0;
   padding: 0;
-}
-.flair-red {
-  background-position: 0 -75px;
-  width: 15px;
-  height: 15px;
 }
 .flair-yellow {
   background-position: 0 -120px;
   width: 15px;
   height: 14px;
 }
+.flair-red {
+  background-position: 0 -75px;
+  width: 15px;
+  height: 15px;
+}
 /* Links */
 .linkflairlabel {
+  display: none;
+}
+.linkflair-ongoing .thumbnail:before,
+.linkflair-finished .thumbnail:before,
+.linkflair-featured .thumbnail:before,
+.linkflair-upcoming .thumbnail:before,
+.linkflair-twitchongoing .thumbnail:before,
+.linkflair-twitchfinished .thumbnail:before,
+.linkflair-twitchfeatured .thumbnail:before,
+.linkflair-twitchupcoming .thumbnail:before,
+.flairselector .linkflair-ongoing .linkflairlabel,
+.flairselector .linkflair-finished .linkflairlabel,
+.flairselector .linkflair-featured .linkflairlabel,
+.flairselector .linkflair-upcoming .linkflairlabel,
+.flairselector .linkflair-twitchongoing .linkflairlabel,
+.flairselector .linkflair-twitchfinished .linkflairlabel,
+.flairselector .linkflair-twitchfeatured .linkflairlabel,
+.flairselector .linkflair-twitchupcoming .linkflairlabel,
+.flairtemplate .linkflair-ongoing .linkflairlabel,
+.flairtemplate .linkflair-finished .linkflairlabel,
+.flairtemplate .linkflair-featured .linkflairlabel,
+.flairtemplate .linkflair-upcoming .linkflairlabel,
+.flairtemplate .linkflair-twitchongoing .linkflairlabel,
+.flairtemplate .linkflair-twitchfinished .linkflairlabel,
+.flairtemplate .linkflair-twitchfeatured .linkflairlabel,
+.flairtemplate .linkflair-twitchupcoming .linkflairlabel {
+  background: url(%%post-flairs%%) no-repeat top left;
+  content: "";
   display: inline-block;
-  margin-right: .5em;
-  padding: 2px 2px 2px 2px;
-  background: #f5f5f5;
-  color: #555;
-  border: 1px solid #ddd;
-  border-radius: 2px;
-  height: 13px;
-  overflow: hidden;
-  vertical-align: -3px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  width: 120px;
+  height: 20px;
 }
-.linkflair-ongoing .linkflairlabel,
-.linkflair-finished .linkflairlabel,
-.linkflair-featured .linkflairlabel,
-.linkflair-upcoming .linkflairlabel,
-.linkflair-twitchongoing .linkflairlabel,
-.linkflair-twitchfinished .linkflairlabel,
-.linkflair-twitchfeatured .linkflairlabel,
-.linkflair-twitchupcoming .linkflairlabel {
-  background: url(%%flairs-sprites%%) no-repeat top left;
-  padding: 2px 2px 2px 17px;
+.linkflair-ongoing .thumbnail:before,
+.linkflair-finished .thumbnail:before,
+.linkflair-featured .thumbnail:before,
+.linkflair-upcoming .thumbnail:before,
+.linkflair-twitchongoing .thumbnail:before,
+.linkflair-twitchfinished .thumbnail:before,
+.linkflair-twitchfeatured .thumbnail:before,
+.linkflair-twitchupcoming .thumbnail:before {
+  position: relative;
+  top: 50px;
+  left: 58px;
+  transition: left 0.3s;
 }
-.linkflair-ongoing .linkflairlabel,
-.linkflair-twitchongoing .linkflairlabel,
-.flairoptionpane .linkflair-ongoing .linkflairlabel,
-.flairoptionpane .linkflair-twitchongoing .linkflairlabel {
-  background-position: -9px -80px;
-  padding: 2px 2px 2px 16px;
+.linkflair-ongoing:hover .thumbnail:before,
+.linkflair-finished:hover .thumbnail:before,
+.linkflair-featured:hover .thumbnail:before,
+.linkflair-upcoming:hover .thumbnail:before,
+.linkflair-twitchongoing:hover .thumbnail:before,
+.linkflair-twitchfinished:hover .thumbnail:before,
+.linkflair-twitchfeatured:hover .thumbnail:before,
+.linkflair-twitchupcoming:hover .thumbnail:before {
+  left: -20px;
+  transition: left 0.3s;
 }
-.linkflair-finished .linkflairlabel,
-.linkflair-twitchfinished .linkflairlabel,
-.flairoptionpane .linkflair-finished .linkflairlabel,
-.flairoptionpane .linkflair-twitchfinished .linkflairlabel {
-  background-position: -9px -45px;
+.linkflair-ongoing .thumbnail:before,
+.flairselector .linkflair-ongoing .linkflairlabel,
+.flairtemplate .linkflair-ongoing .linkflairlabel {
+  background-position: 0 0;
 }
-.linkflair-featured .linkflairlabel,
-.linkflair-twitchfeatured .linkflairlabel,
-.flairoptionpane .linkflair-featured .linkflairlabel,
-.flairoptionpane .linkflair-twitchfeatured .linkflairlabel {
-  background-position: -9px -10px;
-  padding: 2px 2px 2px 19px;
+.linkflair-finished .thumbnail:before,
+.flairselector .linkflair-finished .linkflairlabel,
+.flairtemplate .linkflair-finished .linkflairlabel {
+  background-position: 0 -20px;
 }
-.linkflair-upcoming .linkflairlabel,
-.linkflair-twitchupcoming .linkflairlabel,
-.flairoptionpane .linkflair-upcoming .linkflairlabel,
-.flairoptionpane .linkflair-twitchupcoming .linkflairlabel {
-  background-position: -9px -150px;
+.linkflair-featured .thumbnail:before,
+.flairselector .linkflair-featured .linkflairlabel,
+.flairtemplate .linkflair-featured .linkflairlabel {
+  background-position: 0 -40px;
 }
-.linkflair-red a.title,
+.linkflair-upcoming .thumbnail:before,
+.flairselector .linkflair-upcoming .linkflairlabel,
+.flairtemplate .linkflair-upcoming .linkflairlabel {
+  background-position: 0 -60px;
+}
+.linkflair-twitchongoing .thumbnail:before,
+.flairselector .linkflair-twitchongoing .linkflairlabel,
+.flairtemplate .linkflair-twitchongoing .linkflairlabel {
+  background-position: 0 -80px;
+}
+.linkflair-twitchfinished .thumbnail:before,
+.flairselector .linkflair-twitchfinished .linkflairlabel,
+.flairtemplate .linkflair-twitchfinished .linkflairlabel {
+  background-position: 0 -100px;
+}
+.linkflair-twitchfeatured .thumbnail:before,
+.flairselector .linkflair-twitchfeatured .linkflairlabel,
+.flairtemplate .linkflair-twitchfeatured .linkflairlabel {
+  background-position: 0 -120px;
+}
+.linkflair-twitchupcoming .thumbnail:before,
+.flairselector .linkflair-twitchupcoming .linkflairlabel,
+.flairtemplate .linkflair-twitchupcoming .linkflairlabel {
+  background-position: 0 -140px;
+}
 .linkflair-featured a.title,
-.linkflair-finishedfeatured a.title,
 .linkflair-twitchfeatured a.title {
-  color: red !important;
+  color: red!important;
+}
+.flairoptionpane ul {
+  width: 300px!important;
+}
+.flairselector .linkflairlabel {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  padding-right: 20px!important;
+}
+/* Resizes stylesheet editor box, wiki editor/revision boxes */
+.sheets .col,
+.wikirevisionlisting,
+.wiki-page-content #editform {
+  width: 94%!important;
 }
 html:lang(dd) .share-button .option,
 html:lang(dd) .share .option,
@@ -1743,14 +1818,16 @@ html:lang(dd) .res-commentBoxes .comments-page .comment .comment .comment .comme
   margin-right: 0px;
   background-color: #080808!important;
 }
-.res-nightmode .side a[href="/r/LoLeventVoDs/comments/1v6w31/s4_lcs_europe_spring_season/"],
-html:lang(dd) .side a[href="/r/LoLeventVoDs/comments/1v6w31/s4_lcs_europe_spring_season/"],
-.res-nightmode .side a[href="/r/LoLeventVoDs/comments/1vgje3/s4_lcs_north_america_spring_season/"],
-html:lang(dd) .side a[href="/r/LoLeventVoDs/comments/1vgje3/s4_lcs_north_america_spring_season/"],
-.res-nightmode .side a[href="/r/LoLeventVoDs/comments/1wd6yu/iem_sao_paulo_2014/"],
-html:lang(dd) .side a[href="/r/LoLeventVoDs/comments/1wd6yu/iem_sao_paulo_2014/"],
-.res-nightmode .side a[href="/r/LoLeventVoDs/comments/1tn6v4/pandoratv_201314_ogn_winter_playoffs/"],
-html:lang(dd) .side a[href="/r/LoLeventVoDs/comments/1tn6v4/pandoratv_201314_ogn_winter_playoffs/"] {
+.res-nightmode .side a[href="/r/LoLeventVoDs/comments/2ywjmx/"],
+html:lang(dd) .side a[href="/r/LoLeventVoDs/comments/2ywjmx/"],
+.res-nightmode .side a[href="/r/LoLeventVoDs/comments/2x8ymq/"],
+html:lang(dd) .side a[href="/r/LoLeventVoDs/comments/2x8ymq/"],
+.res-nightmode .side a[href="/r/LoLeventVoDs/comments/2x1sek/"],
+html:lang(dd) .side a[href="/r/LoLeventVoDs/comments/2x1sek/"],
+.res-nightmode .side a[href="/r/LoLeventVoDs/comments/2xckeu/"],
+html:lang(dd) .side a[href="/r/LoLeventVoDs/comments/2xckeu/"],
+.res-nightmode .side a[href="/r/LoLeventVoDs/comments/2xhgar/"],
+html:lang(dd) .side a[href="/r/LoLeventVoDs/comments/2xhgar/"] {
   background: url(%%headers%%) no-repeat top left;
   height: 125px;
   display: block;
@@ -1758,49 +1835,55 @@ html:lang(dd) .side a[href="/r/LoLeventVoDs/comments/1tn6v4/pandoratv_201314_ogn
   top: 19px;
   z-index: 9999;
 }
-.res-nightmode .side a[href="/r/LoLeventVoDs/comments/1v6w31/s4_lcs_europe_spring_season/"],
-html:lang(dd) .side a[href="/r/LoLeventVoDs/comments/1v6w31/s4_lcs_europe_spring_season/"] {
-  right: 640px;
+.res-nightmode .side a[href="/r/LoLeventVoDs/comments/2ywjmx/"],
+html:lang(dd) .side a[href="/r/LoLeventVoDs/comments/2ywjmx/"] {
+  right: 670px;
+  width: 250px;
   background-position: 0 0;
-  width: 150px;
 }
-.res-nightmode .side a[href="/r/LoLeventVoDs/comments/1v6w31/s4_lcs_europe_spring_season/"]:hover,
-html:lang(dd) .side a[href="/r/LoLeventVoDs/comments/1v6w31/s4_lcs_europe_spring_season/"]:hover {
-  background-position: 0 -125px;
-  width: 150px;
+.res-nightmode .side a[href="/r/LoLeventVoDs/comments/2ywjmx/"]:hover,
+html:lang(dd) .side a[href="/r/LoLeventVoDs/comments/2ywjmx/"]:hover {
+  background-position: 0 -150px;
 }
-.res-nightmode .side a[href="/r/LoLeventVoDs/comments/1vgje3/s4_lcs_north_america_spring_season/"],
-html:lang(dd) .side a[href="/r/LoLeventVoDs/comments/1vgje3/s4_lcs_north_america_spring_season/"] {
-  right: 0;
+.res-nightmode .side a[href="/r/LoLeventVoDs/comments/2x8ymq/"],
+html:lang(dd) .side a[href="/r/LoLeventVoDs/comments/2x8ymq/"] {
+  right: 520px;
+  width: 140px;
+  background-position: -250px 0;
+}
+.res-nightmode .side a[href="/r/LoLeventVoDs/comments/2x8ymq/"]:hover,
+html:lang(dd) .side a[href="/r/LoLeventVoDs/comments/2x8ymq/"]:hover {
+  background-position: -250px -150px;
+}
+.res-nightmode .side a[href="/r/LoLeventVoDs/comments/2x1sek/"],
+html:lang(dd) .side a[href="/r/LoLeventVoDs/comments/2x1sek/"] {
+  right: 320px;
+  width: 200px;
   background-position: -380px 0;
-  width: 150px;
 }
-.res-nightmode .side a[href="/r/LoLeventVoDs/comments/1vgje3/s4_lcs_north_america_spring_season/"]:hover,
-html:lang(dd) .side a[href="/r/LoLeventVoDs/comments/1vgje3/s4_lcs_north_america_spring_season/"]:hover {
-  background-position: -380px -125px;
-  width: 150px;
+.res-nightmode .side a[href="/r/LoLeventVoDs/comments/2x1sek/"]:hover,
+html:lang(dd) .side a[href="/r/LoLeventVoDs/comments/2x1sek/"]:hover {
+  background-position: -380px -150px;
 }
-.res-nightmode .side a[href="/r/LoLeventVoDs/comments/1wd6yu/iem_sao_paulo_2014/"],
-html:lang(dd) .side a[href="/r/LoLeventVoDs/comments/1wd6yu/iem_sao_paulo_2014/"] {
-  right: 400px;
-  background-position: -150px 0;
-  width: 230px;
+.res-nightmode .side a[href="/r/LoLeventVoDs/comments/2xckeu/"],
+html:lang(dd) .side a[href="/r/LoLeventVoDs/comments/2xckeu/"] {
+  right: 175px;
+  width: 130px;
+  background-position: -580px 0;
 }
-.res-nightmode .side a[href="/r/LoLeventVoDs/comments/1wd6yu/iem_sao_paulo_2014/"]:hover,
-html:lang(dd) .side a[href="/r/LoLeventVoDs/comments/1wd6yu/iem_sao_paulo_2014/"]:hover {
-  background-position: -150px -125px;
-  width: 230px;
+.res-nightmode .side a[href="/r/LoLeventVoDs/comments/2xckeu/"]:hover,
+html:lang(dd) .side a[href="/r/LoLeventVoDs/comments/2xckeu/"]:hover {
+  background-position: -580px -150px;
 }
-.res-nightmode .side a[href="/r/LoLeventVoDs/comments/1tn6v4/pandoratv_201314_ogn_winter_playoffs/"],
-html:lang(dd) .side a[href="/r/LoLeventVoDs/comments/1tn6v4/pandoratv_201314_ogn_winter_playoffs/"] {
-  right: 145px;
-  background-position: -530px 0;
-  width: 255px;
+.res-nightmode .side a[href="/r/LoLeventVoDs/comments/2xhgar/"],
+html:lang(dd) .side a[href="/r/LoLeventVoDs/comments/2xhgar/"] {
+  right: 0;
+  width: 140px;
+  background-position: -710px 0;
 }
-.res-nightmode .side a[href="/r/LoLeventVoDs/comments/1tn6v4/pandoratv_201314_ogn_winter_playoffs/"]:hover,
-html:lang(dd) .side a[href="/r/LoLeventVoDs/comments/1tn6v4/pandoratv_201314_ogn_winter_playoffs/"]:hover {
-  background-position: -530px -125px;
-  width: 255px;
+.res-nightmode .side a[href="/r/LoLeventVoDs/comments/2xhgar/"]:hover,
+html:lang(dd) .side a[href="/r/LoLeventVoDs/comments/2xhgar/"]:hover {
+  background-position: -710px -150px;
 }
 .res-nightmode .titlebox .usertext-body .md h6,
 html:lang(dd) .titlebox .usertext-body .md h6 {

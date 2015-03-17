@@ -104,36 +104,66 @@
 }
 
 /* Tournament icons in header */
+@header-icons-height: -150px;
 .side {
-  a[href="/r/LoLeventVoDs/comments/2taw1o/"],
-  a[href="/r/LoLeventVoDs/comments/2tjhh4/"],
-  a[href="/r/LoLeventVoDs/comments/2tx8ou/"],
-  a[href="/r/LoLeventVoDs/comments/2rm5z6/"] {
-    .headers();
+  // In order, header icons for the following tourneys, left to right
+  // IEM, EU LCS, OGN/LCK, LPL, NA LCS
+  a[href="/r/LoLeventVoDs/comments/2ywjmx/"],
+  a[href="/r/LoLeventVoDs/comments/2x8ymq/"],
+  a[href="/r/LoLeventVoDs/comments/2x1sek/"],
+  a[href="/r/LoLeventVoDs/comments/2xckeu/"],
+  a[href="/r/LoLeventVoDs/comments/2xhgar/"] {
+    background: url(%%headers%%) no-repeat top left;
+    height: 125px;
     display: block;
     position: absolute;
     top: 19px;
     z-index: 9999;
   }
-  a[href="/r/LoLeventVoDs/comments/2taw1o/"] {
-    right: 640px;
-    .headers-eu-off();
-    &:hover { .headers-eu-on(); }
+  // IEM
+  a[href="/r/LoLeventVoDs/comments/2ywjmx/"] {
+    right: 670px;
+    width: 250px;
+    .bg-pos;
+    &:hover {
+      .bg-pos(0, @header-icons-height);
+    }
   }
-  a[href="/r/LoLeventVoDs/comments/2tjhh4/"] {
+  // EU LCS
+  a[href="/r/LoLeventVoDs/comments/2x8ymq/"] {
+    right: 520px;
+    width: 140px;
+    .bg-pos(-250px, 0);
+    &:hover {
+      .bg-pos(-250px, @header-icons-height);
+    }
+  }
+  // OGN/LCK
+  a[href="/r/LoLeventVoDs/comments/2x1sek/"] {
+    right: 320px;
+    width: 200px;
+    .bg-pos(-380px, 0);
+    &:hover {
+      .bg-pos(-380px, @header-icons-height);
+    }
+  }
+  // LPL
+  a[href="/r/LoLeventVoDs/comments/2xckeu/"] {
+    right: 175px;
+    width: 130px;
+    .bg-pos(-580px, 0);
+    &:hover {
+      .bg-pos(-580px, @header-icons-height);
+    }
+  }
+  // NA LCS
+  a[href="/r/LoLeventVoDs/comments/2xhgar/"] {
     right: 0;
-    .headers-na-off();
-    &:hover { .headers-na-on(); }
-  }
-  a[href="/r/LoLeventVoDs/comments/2tx8ou/"] {
-    right: 400px;
-    .headers-iem-off();
-    &:hover { .headers-iem-on(); }
-  }
-  a[href="/r/LoLeventVoDs/comments/2rm5z6/"] {
-    right: 145px;
-    .headers-ogn-off();
-    &:hover { .headers-ogn-on(); }
+    width: 140px;
+    .bg-pos(-710px, 0);
+    &:hover {
+      .bg-pos(-710px, @header-icons-height);
+    }
   }
 }
 
