@@ -1,3 +1,20 @@
+## 2015-03-17
+
+####Echo
+
+* Cleanup of common.less (deletion of conflicting/legacy rules)
+* Some cleaning in sidebar.less (see above)
+* Edits to sidebar rules; "About us" and "Our team" sections now expand on hover
+* Removed banner look of h1 elements in sidebar
+* Began changes for "Related Subreddits" section in sidebar
+
+**Incorporation of changes by Simon**
+
+* Match ticker -> table in sidebar
+* Sidebar promo img
+
+
+
 ## 2015-03-16
 
 ####Echo
@@ -10,6 +27,7 @@
 **Incorporation of changes by Simon**
 
 * Increase in font size for post titles to match larger thumbnails
+
 
 
 ## 2015-03-13

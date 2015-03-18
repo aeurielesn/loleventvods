@@ -21,20 +21,24 @@ a[href^="#"] + .keyNavAnnotation {
   font-family: Arial, Helvetica, Sans-serif;
   margin: 10px 0px;
 }
-.md table * {
-  border: 10px;
-}
 .md table th {
-  text-align: center;
-}
-.md table thead,
-.md table tr:nth-child(even) {
-  background-color: #f6f6f6;
+  text-align: center!important;
 }
 .md table td,
 .md table th {
   border-right: 1px solid #888;
   padding: 4px 8px;
+}
+.md table tr:nth-of-type(odd) {
+  background-color: #fff;
+  color: #363636;
+}
+.md table tr:nth-of-type(even) {
+  background-color: #EDEDED;
+  color: #363636;
+}
+.md table tr:hover {
+  background-color: #bdff8b;
 }
 .md th {
   border: 1px solid #444;
@@ -42,22 +46,6 @@ a[href^="#"] + .keyNavAnnotation {
   white-space: nowrap;
   background-color: #444;
   color: whitesmoke;
-}
-.side .md table {
-  width: 100%;
-}
-/* ALTERNATE ROW COLORS */
-.md tr:nth-of-type(odd) {
-  background: #fff;
-  color: #363636;
-}
-.md tr:nth-of-type(even) {
-  background: #EDEDED;
-  color: #363636;
-}
-/* ROW HOVER COLOR */
-.md table tr:hover {
-  background-color: #bdff8b;
 }
 /* alien */
 #header-img-a {
@@ -106,8 +94,7 @@ a[href^="#"] + .keyNavAnnotation {
   text-indent: -1px;
   margin-top: 30px;
   color: white;
-  font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
-  font-style: italic;
+  font-family: Optima, Segoe, sans-serif;
   font-weight: normal;
   display: inline;
   float: left;
@@ -164,6 +151,9 @@ a[href^="#"] + .keyNavAnnotation {
 .side a[href="/r/LoLeventVoDs/comments/2x1sek/"],
 .side a[href="/r/LoLeventVoDs/comments/2xckeu/"],
 .side a[href="/r/LoLeventVoDs/comments/2xhgar/"] {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
   background: url(%%headers%%) no-repeat top left;
   height: 125px;
   display: block;
@@ -221,20 +211,20 @@ a[href^="#"] + .keyNavAnnotation {
   left: 0;
   right: 0;
   padding: 4px 13px 4px 4px;
-  margin-top: 0px!important;
+  margin-top: 0px;
   margin-left: 35px;
   display: block;
   background: url(%%gray%%);
-  font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
+  font-family: Optima, Segoe, sans-serif;
   font-size: 15px;
   font-weight: bold;
   color: white;
   text-align: left;
-  text-decoration: none!important;
+  text-decoration: none;
   line-height: 26px;
 }
 h6 a {
-  color: #F2E972!important;
+  color: #F2E972;
 }
 /* Visited links color change */
 .entry a:visited {
@@ -303,85 +293,34 @@ h6 a {
 #siteTable .thing .midcol {
   margin-top: 10px;
 }
-/* sidebar social media icons */
-.side a[href="https://www.facebook.com/loleventvods"],
-.side a[href="https://www.twitter.com/loleventvods"],
-.side a[href="http://www.youtube.com/loleventvods"],
-.side a[href="https://play.google.com/store/apps/details?id=com.kox.zzreal"],
-.side a[href="http://appsto.re/us/Eh0m1.i"],
-.side a[href="http://www.eventvods.com/social"] {
-  display: inline-block;
-  background: url(%%sidebar%%) no-repeat;
-  width: 147px;
-  height: 49px;
-  text-indent: 100%;
-  white-space: nowrap;
-  overflow: hidden;
-  margin-top: 4px;
-}
-.side a[href="https://www.facebook.com/loleventvods"]:hover,
-.side a[href="https://www.twitter.com/loleventvods"]:hover,
-.side a[href="http://www.youtube.com/loleventvods"]:hover,
-.side a[href="https://play.google.com/store/apps/details?id=com.kox.zzreal"]:hover,
-.side a[href="http://appsto.re/us/Eh0m1.i"]:hover,
-.side a[href="http://www.eventvods.com/social"]:hover {
-  opacity: 0.6;
-}
-.side a[href="https://www.facebook.com/loleventvods"] {
-  background-position: 0 0;
-  margin-left: 0;
-  margin-top: 6px;
-}
-.side a[href="https://www.twitter.com/loleventvods"] {
-  background-position: 0 -49px;
-  margin-left: 6px;
-  margin-right: 0px;
-  margin-top: 6px;
-}
-.side a[href="http://www.youtube.com/loleventvods"] {
-  background-position: 0 -98px;
-  margin-left: 0;
-}
-.side a[href="https://play.google.com/store/apps/details?id=com.kox.zzreal"] {
-  background-position: 0 -147px;
-  margin-left: 6px;
-  margin-right: 0px;
-}
-.side a[href="http://appsto.re/us/Eh0m1.i"] {
-  background-position: 0 -196px;
-  margin-left: 0;
-}
-.side a[href="http://www.eventvods.com/donate"] {
-  background-position: 0 -245px;
-  margin-left: 6px;
-  margin-right: 0px;
-}
 .side {
-  margin: 36px 5px 0 5px;
-}
-.side .md p > em {
-  display: inline-block;
-  padding: 5px;
-  background: #F6E69F;
-  border: 1px solid orange;
-}
-.side .md p > em > strong {
-  font-style: italic;
+  width: 325px;
+  margin: 36px 10px 0 5px;
+  /* sidebar social media icons */
 }
 .side h4,
 .side h5 {
   height: 0;
 }
+.side .md a[href$="#sidebar_img"] {
+  background-image: url(%%sidebar-promoimg%%);
+  display: inline-block;
+  height: 200px;
+  width: 325px;
+  text-indent: -9999px;
+  margin-left: -10px;
+}
 .side a[href="//www.reddit.com/r/loleventvods/"],
 .side a[href="#2themes"],
 .side a[href="//dd.reddit.com/r/loleventvods/"] {
-  margin: 0;
+  margin: 10px 0 0 0;
   height: 50px;
   display: inline-block;
   background: url(%%theme-selector%%) no-repeat;
 }
 .side a[href="//www.reddit.com/r/loleventvods/"] {
   width: 75px;
+  margin-left: 20px;
 }
 .side a[href="//www.reddit.com/r/loleventvods/"]:hover {
   background-position: 0px -50px;
@@ -397,13 +336,150 @@ h6 a {
 }
 .side a[href="//dd.reddit.com/r/loleventvods/"] {
   margin-left: -5px;
+  margin-right: -20px;
   width: 75px;
   background-position: -213px 0px;
 }
 .side a[href="//dd.reddit.com/r/loleventvods/"]:hover {
   background-position: -213px -50px;
 }
-/* Modify submit a new post */
+.side a[href="https://www.facebook.com/loleventvods"],
+.side a[href="https://www.twitter.com/loleventvods"],
+.side a[href="http://www.youtube.com/loleventvods"],
+.side a[href="https://play.google.com/store/apps/details?id=com.kox.zzreal"],
+.side a[href="http://appsto.re/us/Eh0m1.i"],
+.side a[href="http://www.eventvods.com/donate"] {
+  display: inline-block;
+  background: url(%%sidebar%%) no-repeat;
+  width: 147px;
+  height: 49px;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  margin-left: 3px;
+}
+.side a[href="https://www.facebook.com/loleventvods"]:hover,
+.side a[href="https://www.twitter.com/loleventvods"]:hover,
+.side a[href="http://www.youtube.com/loleventvods"]:hover,
+.side a[href="https://play.google.com/store/apps/details?id=com.kox.zzreal"]:hover,
+.side a[href="http://appsto.re/us/Eh0m1.i"]:hover,
+.side a[href="http://www.eventvods.com/donate"]:hover {
+  opacity: 0.6;
+}
+.side a[href="https://www.facebook.com/loleventvods"] {
+  background-position: 0 0;
+  margin-left: 3px;
+  margin-top: 6px;
+}
+.side a[href="https://www.twitter.com/loleventvods"] {
+  background-position: 0 -49px;
+  margin-right: 0;
+  margin-top: 6px;
+}
+.side a[href="http://www.youtube.com/loleventvods"] {
+  background-position: 0 -98px;
+  margin-left: 3px;
+}
+.side a[href="https://play.google.com/store/apps/details?id=com.kox.zzreal"] {
+  background-position: 0 -147px;
+  margin-right: 0;
+}
+.side a[href="http://appsto.re/us/Eh0m1.i"] {
+  background-position: 0 -196px;
+  margin-left: 3px;
+}
+.side a[href="http://www.eventvods.com/donate"] {
+  background-position: 0 -245px;
+  margin-right: 0;
+}
+/* Table in sidebar */
+.side .md table {
+  width: 325px;
+  margin: -5px 10px 10px -10px;
+  border-bottom: none;
+  border-collapse: collapse;
+  color: #0a5a36!important;
+  font-size: 11px;
+  -webkit-box-shadow: 1px 1px 1px #193064;
+  -moz-box-shadow: 1px 1px 1px #193064;
+  box-shadow: 1px 1px 1px #193064;
+}
+.side .md table thead {
+  display: none;
+}
+.side .md table td {
+  border: 0!important;
+}
+.side .md table td[align="left"] a {
+  float: right;
+}
+.side .md table td[align="right"] a {
+  float: left;
+}
+/* Drop downs */
+.side .titlebox .md ul {
+  list-style-type: none;
+  padding-left: 10px;
+}
+.side .titlebox .md ul li {
+  display: none;
+  background-color: #eee;
+  width: 310px;
+  line-height: 18px;
+  font-weight: normal;
+  font-size: 12px;
+  margin: 0 0 0 -21px;
+  border-left: 7px solid #ccc;
+  border-bottom: 1px solid #bbb;
+  padding: 5px 2px 5px 8px;
+}
+.side .titlebox .md ul li:hover {
+  background-color: #ccc;
+}
+.side .titlebox .md ul li:nth-child(1) {
+  font-family: Arial, Verdana, Helvetica, san-serif;
+  font-size: large;
+  line-height: 26px;
+  border: none;
+  background-color: #222;
+  width: 307px;
+  color: white!important;
+  margin: 0 13px 5px -11px;
+  border-left: 7px solid #ccc;
+  padding: 4px 0 4px 13px;
+  z-index: 100;
+  margin-left: -21px;
+  display: block;
+}
+.side .titlebox .md ul li:nth-child(1):hover {
+  border-left: 7px solid #367588;
+}
+.side .titlebox .md ul li:nth-child(1):hover {
+  border-left: 7px solid #367588;
+}
+.side .titlebox .md ul li:nth-child(2) {
+  margin-top: -5px;
+}
+.side .titlebox .md ul:hover li {
+  display: block;
+}
+.side .titlebox .md h3 {
+  display: none;
+}
+/* Related subreddits */
+.side .titlebox blockquote a[href="/r/leagueoflegends"],
+.side .titlebox blockquote a[href="/r/hearthstonevods"],
+.side .titlebox blockquote a[href="/r/cseventvods"],
+.side .titlebox blockquote a[href="/r/SpoilerFreeSc"] {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 300px;
+  height: 100px;
+  margin: 5px 0;
+  background: url(%%related-subreddits%%) top left no-repeat;
+}
+/* Modify submit a new post, hide "submit link" button */
 .submit .morelink {
   background: url(%%gray%%);
   border: none;
@@ -424,6 +500,9 @@ h6 a {
   color: white;
 }
 .submit .morelink .nub {
+  display: none;
+}
+.submit-link {
   display: none;
 }
 /* Subscribers */
@@ -458,24 +537,9 @@ h6 a {
 }
 .titlebox {
   padding: 10px;
-  background: transparent !important;
-  border: 1px solid #ccc;
+  background: transparent!important;
+  border: none;
   color: #000;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  border-radius: 10px;
-}
-.titlebox h1 a {
-  display: none;
-}
-.titlebox blockquote {
-  border: 1px solid #AAA;
-  text-shadow: 0 1px 0 white;
-  color: #000;
-  font-weight: bold;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  border-radius: 10px;
 }
 .titlebox .bottom {
   display: none;
@@ -492,138 +556,27 @@ h6 a {
   padding: 0;
   overflow: visible;
 }
-.titlebox .usertext .md h2 {
-  font-weight: bold;
-  color: #000!important;
-}
 .titlebox .usertext .md > h1 {
+  font-family: Arial, Verdana, Helvetica, san-serif;
   font-size: large;
   line-height: 26px;
   border: none;
-  background: url(%%gray%%);
-  width: 287px;
-  color: #fff!important;
-  padding: 4px 0 4px 20px;
-  margin: 10px 13px 5px -18px;
-  border-bottom: 1px solid #193064!important;
+  background-color: #222;
+  width: 307px;
+  color: white!important;
+  margin: 0 13px 5px -11px;
+  border-left: 7px solid #ccc;
+  padding: 4px 0 4px 13px;
   z-index: 100;
 }
-.titlebox .usertext .md > h1:after {
-  display: block;
-  content: "";
-  border-color: transparent #193064 transparent transparent!important;
-  border-style: solid;
-  border-width: 15px;
-  height: 0;
-  width: 0;
-  position: absolute;
-  z-index: -1;
-  margin-left: -35px;
-  margin-top: -10px;
-}
-/* drop down */
-.side {
-  z-index: -100;
-}
-.side .md h3 {
-  margin-bottom: 8px;
-}
-.side .md h3 + p + table {
-  display: none;
-}
-.side .md h3 + p:hover + table,
-.side .md h3 + p + table:hover {
-  display: table;
-}
-.side .md h3 + p {
-  position: absolute;
-  margin-top: -25px;
-  height: 30px;
-  width: 294px;
-}
-.side .md h3 + ul {
-  margin-top: 0;
-  margin-bottom: 0;
-  padding: 3px;
-}
-.md {
-  overflow: visible;
-}
-.titlebox h1,
-.titlebox .md h2,
-.titlebox .md h3,
-.titlebox .md h4,
-.titlebox h1 a,
-.titlebox .md h2 a,
-.titlebox .md h3 a,
-.titlebox .md h4 a {
-  color: #000;
+.titlebox .usertext .md > h1:hover {
+  border-left: 7px solid #367588;
 }
 .sidecontentbox a.helplink {
   margin-right: 5px;
 }
 .icon-menu a {
   background: transparent;
-}
-.titlebox .md h3 + ul {
-  display: none;
-}
-.titlebox .md h3:hover + ul,
-.titlebox .md ul:hover {
-  display: block;
-}
-.titlebox .md h2,
-.titlebox .md h3,
-.titlebox .md h4 {
-  background-color: #ccc!important;
-  width: 280px;
-  line-height: 26px;
-  font-weight: normal;
-  font-size: 12px;
-  padding-left: 20px;
-  margin-top: 4px;
-  margin-left: -11px;
-}
-.titlebox .md h2:after,
-.titlebox .md h3:after,
-.titlebox .md h4:after {
-  margin-bottom: 10px;
-}
-.titlebox .md h3:before {
-  content: "+";
-  color: #000;
-  padding-right: 5px;
-}
-.titlebox .md h3:hover:before {
-  content: "–";
-  padding-right: 6px;
-}
-/* Table in sidebar */
-.side .md table th {
-  background: #193064;
-  border: none;
-  border-right: 1px solid #193064;
-  padding: .2em;
-  color: #fff;
-  font-weight: bold;
-  text-align: center;
-  text-shadow: 1px 1px 0 #000;
-  font-size: 11px;
-}
-.side .usertext table {
-  width: 280px;
-  color: #0a5a36!important;
-  font-size: 11px;
-  -webkit-box-shadow: 1px 1px 1px #193064;
-  -moz-box-shadow: 1px 1px 1px #193064;
-  box-shadow: 1px 1px 1px #193064;
-  margin-top: 0;
-}
-.side .usertext table a {
-  color: #0a5a36;
-}
-.side .usertext table a:hover {
-  text-decoration: underline;
 }
 /* hide "Create your own subreddit" button */
 div.sidebox.create {
@@ -2058,86 +2011,6 @@ html:lang(dd) .titlebox .usertext .md > h1 {
 .res-nightmode .titlebox .usertext .md > h1:after,
 html:lang(dd) .titlebox .usertext .md > h1:after {
   border-color: transparent #37e transparent transparent !important;
-}
-.res-nightmode .thing .thumbnail[href*="allstar"],
-html:lang(dd) .thing .thumbnail[href*="allstar"],
-.res-nightmode .thing .thumbnail[href*="android"],
-html:lang(dd) .thing .thumbnail[href*="android"],
-.res-nightmode .thing .thumbnail[href*="best_zed"],
-html:lang(dd) .thing .thumbnail[href*="best_zed"],
-.res-nightmode .thing .thumbnail[href*="brazilian_cir"],
-html:lang(dd) .thing .thumbnail[href*="brazilian_cir"],
-.res-nightmode .thing .thumbnail[href*="the_champions"],
-html:lang(dd) .thing .thumbnail[href*="the_champions"],
-.res-nightmode .thing .thumbnail[href*="champions_k"],
-html:lang(dd) .thing .thumbnail[href*="champions_k"],
-.res-nightmode .thing .thumbnail[href*="dreamhack"],
-html:lang(dd) .thing .thumbnail[href*="dreamhack"],
-.res-nightmode .thing .thumbnail[href*="eu_lcs"],
-html:lang(dd) .thing .thumbnail[href*="eu_lcs"],
-.res-nightmode .thing .thumbnail[href*="eu_chall"],
-html:lang(dd) .thing .thumbnail[href*="eu_chall"],
-.res-nightmode .thing .thumbnail[href*="esl"],
-html:lang(dd) .thing .thumbnail[href*="esl"],
-.res-nightmode .thing .thumbnail[href*="esportspedia"],
-html:lang(dd) .thing .thumbnail[href*="esportspedia"],
-.res-nightmode .thing .thumbnail[href*="faceit"],
-html:lang(dd) .thing .thumbnail[href*="faceit"],
-.res-nightmode .thing .thumbnail[href*="giveaway"],
-html:lang(dd) .thing .thumbnail[href*="giveaway"],
-.res-nightmode .thing .thumbnail[href*="gpl"],
-html:lang(dd) .thing .thumbnail[href*="gpl"],
-.res-nightmode .thing .thumbnail[href*="hitbox"],
-html:lang(dd) .thing .thumbnail[href*="hitbox"],
-.res-nightmode .thing .thumbnail[href*="iem"],
-html:lang(dd) .thing .thumbnail[href*="iem"],
-.res-nightmode .thing .thumbnail[href*="intel_extreme"],
-html:lang(dd) .thing .thumbnail[href*="intel_extreme"],
-.res-nightmode .thing .thumbnail[href*="ios"],
-html:lang(dd) .thing .thumbnail[href*="ios"],
-.res-nightmode .thing .thumbnail[href*="lcs_eu"],
-html:lang(dd) .thing .thumbnail[href*="lcs_eu"],
-.res-nightmode .thing .thumbnail[href*="lcs_na"],
-html:lang(dd) .thing .thumbnail[href*="lcs_na"],
-.res-nightmode .thing .thumbnail[href*="lcs_north"],
-html:lang(dd) .thing .thumbnail[href*="lcs_north"],
-.res-nightmode .thing .thumbnail[href*="lone_star"],
-html:lang(dd) .thing .thumbnail[href*="lone_star"],
-.res-nightmode .thing .thumbnail[href*="lms"],
-html:lang(dd) .thing .thumbnail[href*="lms"],
-.res-nightmode .thing .thumbnail[href*="lpl"],
-html:lang(dd) .thing .thumbnail[href*="lpl"],
-.res-nightmode .thing .thumbnail[href*="masters"],
-html:lang(dd) .thing .thumbnail[href*="masters"],
-.res-nightmode .thing .thumbnail[href*="mlg"],
-html:lang(dd) .thing .thumbnail[href*="mlg"],
-.res-nightmode .thing .thumbnail[href*="monster"],
-html:lang(dd) .thing .thumbnail[href*="monster"],
-.res-nightmode .thing .thumbnail[href*="na_lcs"],
-html:lang(dd) .thing .thumbnail[href*="na_lcs"],
-.res-nightmode .thing .thumbnail[href*="na_chall"],
-html:lang(dd) .thing .thumbnail[href*="na_chall"],
-.res-nightmode .thing .thumbnail[href*="new_year"],
-html:lang(dd) .thing .thumbnail[href*="new_year"],
-.res-nightmode .thing .thumbnail[href*="nlb_"],
-html:lang(dd) .thing .thumbnail[href*="nlb_"],
-.res-nightmode .thing .thumbnail[href*="ogn"],
-html:lang(dd) .thing .thumbnail[href*="ogn"],
-.res-nightmode .thing .thumbnail[href*="poro"],
-html:lang(dd) .thing .thumbnail[href*="poro"],
-.res-nightmode .thing .thumbnail[href*="pandoratv"],
-html:lang(dd) .thing .thumbnail[href*="pandoratv"],
-.res-nightmode .thing .thumbnail[href*="regional_qual"],
-html:lang(dd) .thing .thumbnail[href*="regional_qual"],
-.res-nightmode .thing .thumbnail[href*="scan"],
-html:lang(dd) .thing .thumbnail[href*="scan"],
-.res-nightmode .thing .thumbnail[href*="trending"],
-html:lang(dd) .thing .thumbnail[href*="trending"],
-.res-nightmode .thing .thumbnail[href*="wildcard"],
-html:lang(dd) .thing .thumbnail[href*="wildcard"],
-.res-nightmode .thing .thumbnail[href*="world"],
-html:lang(dd) .thing .thumbnail[href*="world"] {
-  background-image: url(%%nightmode-thumbs%%) !important;
 }
 .res-nightmode a[href="#269"]:after,
 html:lang(dd) a[href="#269"]:after,
