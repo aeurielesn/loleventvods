@@ -472,6 +472,9 @@ h6 a {
 .side .titlebox .md h3 {
   display: none;
 }
+.side .titlebox .md a[href$="Compatible"]:after {
+  content: none!important;
+}
 /* Related subreddits */
 .titlebox blockquote {
   border: none;
