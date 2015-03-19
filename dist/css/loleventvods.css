@@ -78,7 +78,7 @@ a[href^="#"] + .keyNavAnnotation {
   border: none;
 }
 #header-bottom-left {
-  background: #02021a url(%%header%%) no-repeat right top;
+  background: #02021a url(%%header-background%%) no-repeat right top;
   height: 126px;
 }
 #header-bottom-left span.pagename a {
@@ -154,7 +154,7 @@ a[href^="#"] + .keyNavAnnotation {
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
-  background: url(%%headers%%) no-repeat top left;
+  background: url(%%header-events%%) no-repeat top left;
   height: 125px;
   display: block;
   position: absolute;
@@ -263,23 +263,29 @@ h6 a {
 /* Resizes font in post titles */
 .thing .title {
   margin-top: 10px;
-  font-size: large!important;
+  font-size: 17px!important;
 }
 /* Notice in comment box */
 .commentarea {
   position: static;
 }
 .commentarea .usertext textarea {
-  background-image: url(%%commentrules%%);
+  background-image: url(%%comment-rules%%);
   background-repeat: no-repeat;
   border: 1px solid #ccc;
 }
 .commentarea .usertext textarea:focus {
   background-position: -504px -104px;
 }
-/* No flairs on front page */
+.listing-page {
+  /* No flairs on front page */
+}
 .listing-page #siteTable .flair {
   display: none;
+}
+.listing-page .linklisting .thing,
+.listing-page .linklisting .tagline {
+  font-size: 10.5px;
 }
 /* Hide rank and vertically center votes
  * Adds padding too
@@ -350,7 +356,7 @@ h6 a {
 .side a[href="http://appsto.re/us/Eh0m1.i"],
 .side a[href="http://www.eventvods.com/donate"] {
   display: inline-block;
-  background: url(%%sidebar%%) no-repeat;
+  background: url(%%sidebar-social%%) no-repeat;
   width: 147px;
   height: 49px;
   text-indent: 100%;
@@ -467,17 +473,39 @@ h6 a {
   display: none;
 }
 /* Related subreddits */
-.side .titlebox blockquote a[href="/r/leagueoflegends"],
-.side .titlebox blockquote a[href="/r/hearthstonevods"],
-.side .titlebox blockquote a[href="/r/cseventvods"],
-.side .titlebox blockquote a[href="/r/SpoilerFreeSc"] {
+.titlebox blockquote {
+  border: none;
+  padding-left: 0;
+}
+.titlebox blockquote p {
+  width: 300px;
+  min-height: 100px;
+  margin: 5px 0;
+}
+.titlebox blockquote a[href="/r/leagueoflegends"],
+.titlebox blockquote a[href="/r/hearthstonevods"],
+.titlebox blockquote a[href="/r/cseventvods"],
+.titlebox blockquote a[href="/r/SpoilerFreeSC"] {
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
-  width: 300px;
-  height: 100px;
-  margin: 5px 0;
+  padding: 0 300px 85px 0;
   background: url(%%related-subreddits%%) top left no-repeat;
+}
+.titlebox blockquote a[href="/r/leagueoflegends"]:hover,
+.titlebox blockquote a[href="/r/hearthstonevods"]:hover,
+.titlebox blockquote a[href="/r/cseventvods"]:hover,
+.titlebox blockquote a[href="/r/SpoilerFreeSC"]:hover {
+  opacity: 0.6;
+}
+.titlebox blockquote a[href="/r/hearthstonevods"] {
+  background-position: 0 -100px;
+}
+.titlebox blockquote a[href="/r/cseventvods"] {
+  background-position: 0 -200px;
+}
+.titlebox blockquote a[href="/r/SpoilerFreeSC"] {
+  background-position: 0 -300px;
 }
 /* Modify submit a new post, hide "submit link" button */
 .submit .morelink {
@@ -701,12 +729,11 @@ a[href="/spoiler"]:hover {
 .thing .thumbnail[href*="poro_king"] {
   background-position: -400px -350px;
 }
-.side a[href^="#"]:after,
 .usertext-body a[href^="#"]:after {
   content: "";
   width: 36px;
   height: 20px;
-  background: url(%%teams%%) no-repeat scroll 36px 20px transparent;
+  background: url(%%teams%%) no-repeat scroll 0 -300px transparent;
   display: inline-block;
   vertical-align: middle;
   cursor: default!important;
@@ -1370,163 +1397,6 @@ html:lang(dd) .side blockquote,
 html:lang(dd) .modactionlisting table * {
   background-color: #080808;
 }
-.res-nightmode body > .content,
-html:lang(dd) body > .content {
-  background-color: transparent !important;
-}
-.res-nightmode .entry a,
-html:lang(dd) .entry a {
-  color: #007dc3;
-}
-.res-nightmode .entry a:visited[href*="lol.eventvods.com"],
-html:lang(dd) .entry a:visited[href*="lol.eventvods.com"] {
-  color: #007dc3;
-}
-.res-nightmode .RES-keyNav-activeElement .entry a:visited[href*="lol.eventvods.com"],
-html:lang(dd) .RES-keyNav-activeElement .entry a:visited[href*="lol.eventvods.com"] {
-  color: #8ad!important;
-}
-.res-nightmode #header-img-a,
-html:lang(dd) #header-img-a {
-  border-right: 1px solid #080808;
-  background-position: 0 -68px;
-}
-.res-nightmode #header-img-a:hover,
-html:lang(dd) #header-img-a:hover {
-  background-position: 0 -102px;
-}
-.res-nightmode #header-bottom-left,
-html:lang(dd) #header-bottom-left {
-  background: #02021a url(%%header%%) no-repeat right top !important;
-}
-.res-nightmode #header-bottom-right,
-html:lang(dd) #header-bottom-right {
-  background: url(%%gray%%);
-  background-position: 0 -68px;
-}
-.res-nightmode #header-bottom-right a,
-html:lang(dd) #header-bottom-right a {
-  color: #080808;
-}
-.res-nightmode .user,
-html:lang(dd) .user {
-  color: #080808;
-}
-.res-nightmode .user .userkarma,
-html:lang(dd) .user .userkarma {
-  border-color: #080808;
-}
-.res-nightmode .separator,
-html:lang(dd) .separator {
-  color: #ccc;
-}
-.res-nightmode #header-bottom-right.res-navTop,
-html:lang(dd) #header-bottom-right.res-navTop {
-  top: 145px;
-  bottom: -34px;
-  line-height: 22px;
-  padding-left: 5px;
-  background: url(%%gray%%) 0px -68px;
-  border-radius: 0;
-  border-left: 1px solid #080808;
-}
-.res-nightmode #header-bottom-right.res-navTop #userbarToggle,
-html:lang(dd) #header-bottom-right.res-navTop #userbarToggle {
-  border-radius: 0;
-  background: url(%%gray%%) 0px -68px;
-  border-right: 1px dotted #444;
-  border-left: 1px solid #444;
-  line-height: 28px;
-  color: #080808;
-}
-.res-nightmode .link.last-clicked,
-html:lang(dd) .link.last-clicked {
-  overflow: hidden;
-}
-.res-nightmode .thumbnail,
-html:lang(dd) .thumbnail {
-  background: url(%%nightmode-sprites%%) 0px 1px no-repeat #080808;
-}
-.res-nightmode .entry .tagline:first-of-type,
-html:lang(dd) .entry .tagline:first-of-type,
-.res-nightmode .entry time,
-html:lang(dd) .entry time {
-  color: #b4b47d!important;
-}
-.res-nightmode .entry .md h3,
-html:lang(dd) .entry .md h3 {
-  margin-bottom: 8px;
-}
-.res-nightmode .usertext-body h4,
-html:lang(dd) .usertext-body h4 {
-  color: #f23;
-  font-weight: bold;
-}
-.res-nightmode .link .usertext-body .md,
-html:lang(dd) .link .usertext-body .md,
-.res-nightmode .side .linkinfo,
-html:lang(dd) .side .linkinfo {
-  border-color: #88f;
-}
-.res-nightmode .md table *,
-html:lang(dd) .md table * {
-  border: 10px;
-}
-.res-nightmode .md table th,
-html:lang(dd) .md table th {
-  text-align: center;
-}
-.res-nightmode .md table thead,
-html:lang(dd) .md table thead {
-  background-color: #333;
-}
-.res-nightmode .md table td,
-html:lang(dd) .md table td,
-.res-nightmode .md table th,
-html:lang(dd) .md table th {
-  border-right: 1px solid #888;
-  padding: 4px 8px;
-}
-.res-nightmode .side .md table,
-html:lang(dd) .side .md table {
-  width: 100%;
-}
-.res-nightmode .md th,
-html:lang(dd) .md th {
-  background-color: #101010;
-  border-color: #101010;
-}
-.res-nightmode .md tr:nth-of-type(odd),
-html:lang(dd) .md tr:nth-of-type(odd) {
-  background: #181818;
-  color: #dcdcdc;
-}
-.res-nightmode .md tr:nth-of-type(even),
-html:lang(dd) .md tr:nth-of-type(even) {
-  background: #222;
-  color: #dcdcdc;
-}
-.res-nightmode .md table tr:hover,
-html:lang(dd) .md table tr:hover {
-  background-color: #7d7;
-  color: #080808;
-}
-.res-nightmode .md table tr:hover a,
-html:lang(dd) .md table tr:hover a,
-.res-nightmode .md table tr:hover a[href*="lol.eventvods.com"],
-html:lang(dd) .md table tr:hover a[href*="lol.eventvods.com"] {
-  color: #55c!important;
-}
-.res-nightmode .usertext-body .md .RESdupeimg,
-html:lang(dd) .usertext-body .md .RESdupeimg,
-.res-nightmode .usertext-body .md .expando-button.video,
-html:lang(dd) .usertext-body .md .expando-button.video,
-.res-nightmode .usertext-body .md .expando-button.video.collapsed,
-html:lang(dd) .usertext-body .md .expando-button.video.collapsed,
-.res-nightmode .usertext-body .md .expando-button.video.expanded,
-html:lang(dd) .usertext-body .md .expando-button.video.expanded {
-  display: none!important;
-}
 .res-nightmode .arrow,
 html:lang(dd) .arrow,
 .res-nightmode .arrow.up,
@@ -1572,6 +1442,506 @@ html:lang(dd) .comment .arrow.downmod {
   background-position: -15px -52px !important;
   margin-top: 5px;
 }
+.res-nightmode body > .content,
+html:lang(dd) body > .content {
+  background-color: transparent !important;
+}
+.res-nightmode #header-img-a,
+html:lang(dd) #header-img-a {
+  border-right: 1px solid #080808;
+  background-position: 0 -68px;
+}
+.res-nightmode #header-img-a:hover,
+html:lang(dd) #header-img-a:hover {
+  background-position: 0 -102px;
+}
+.res-nightmode #header-bottom-left,
+html:lang(dd) #header-bottom-left {
+  background: #02021a url(%%header-background%%) no-repeat right top !important;
+}
+.res-nightmode #header-bottom-right,
+html:lang(dd) #header-bottom-right {
+  background: url(%%gray%%);
+  background-position: 0 -68px;
+}
+.res-nightmode #header-bottom-right a,
+html:lang(dd) #header-bottom-right a {
+  color: #080808;
+}
+.res-nightmode .user,
+html:lang(dd) .user {
+  color: #080808;
+}
+.res-nightmode .user .userkarma,
+html:lang(dd) .user .userkarma {
+  border-color: #080808;
+}
+.res-nightmode .separator,
+html:lang(dd) .separator {
+  color: #ccc;
+}
+.res-nightmode #header-bottom-right.res-navTop,
+html:lang(dd) #header-bottom-right.res-navTop {
+  top: 145px;
+  bottom: -34px;
+  line-height: 22px;
+  padding-left: 5px;
+  background: url(%%gray%%) 0px -68px;
+  border-radius: 0;
+  border-left: 1px solid #080808;
+}
+.res-nightmode #header-bottom-right.res-navTop #userbarToggle,
+html:lang(dd) #header-bottom-right.res-navTop #userbarToggle {
+  border-radius: 0;
+  background: url(%%gray%%) 0px -68px;
+  border-right: 1px dotted #444;
+  border-left: 1px solid #444;
+  line-height: 28px;
+  color: #080808;
+}
+.res-nightmode .link.last-clicked,
+html:lang(dd) .link.last-clicked {
+  overflow: hidden;
+}
+.res-nightmode .titlebox .usertext-body .md h6,
+html:lang(dd) .titlebox .usertext-body .md h6 {
+  background-position: 0px -68px;
+  color: #000;
+}
+.res-nightmode .titlebox .usertext-body .md h6 a,
+html:lang(dd) .titlebox .usertext-body .md h6 a {
+  color: #F2E972!important;
+}
+.res-nightmode .link.last-clicked,
+html:lang(dd) .link.last-clicked {
+  overflow: hidden;
+}
+.res-nightmode .expando-button.selftext.collapsed,
+html:lang(dd) .expando-button.selftext.collapsed,
+.res-nightmode .expando-button.video.collapsed,
+html:lang(dd) .expando-button.video.collapsed,
+.res-nightmode .expando-button.image.collapsed,
+html:lang(dd) .expando-button.image.collapsed,
+.res-nightmode .expando-button.selftext.collapsed,
+html:lang(dd) .expando-button.selftext.collapsed,
+.res-nightmode .expando-button.selftext.collapsed:hover,
+html:lang(dd) .expando-button.selftext.collapsed:hover,
+.res-nightmode .expando-button.video.collapsed:hover,
+html:lang(dd) .expando-button.video.collapsed:hover,
+.res-nightmode .expando-button.image.collapsed:hover,
+html:lang(dd) .expando-button.image.collapsed:hover,
+.res-nightmode .expando-button.selftext.collapsed:hover,
+html:lang(dd) .expando-button.selftext.collapsed:hover {
+  background: url(%%nightmode-sprites%%) !important;
+}
+.res-nightmode .expando-button.selftext.collapsed,
+html:lang(dd) .expando-button.selftext.collapsed {
+  background-position: 0px -80px !important;
+}
+.res-nightmode .expando-button.selftext.expanded,
+html:lang(dd) .expando-button.selftext.expanded {
+  background-position: 0px -105px !important;
+}
+.res-nightmode .expando-button.selftext.collapsed:hover,
+html:lang(dd) .expando-button.selftext.collapsed:hover {
+  background-position: -25px -80px !important;
+}
+.res-nightmode .expando-button.selftext.expanded:hover,
+html:lang(dd) .expando-button.selftext.expanded:hover {
+  background-position: -25px -105px !important;
+}
+.res-nightmode .expando-button.video.collapsed,
+html:lang(dd) .expando-button.video.collapsed {
+  background-position: 0px -130px !important;
+}
+.res-nightmode .expando-button.video.expanded,
+html:lang(dd) .expando-button.video.expanded {
+  background-position: 0px -155px !important;
+}
+.res-nightmode .expando-button.video.collapsed:hover,
+html:lang(dd) .expando-button.video.collapsed:hover {
+  background-position: -25px -130px !important;
+}
+.res-nightmode .expando-button.video.expanded:hover,
+html:lang(dd) .expando-button.video.expanded:hover {
+  background-position: -25px -155px !important;
+}
+.res-nightmode .expando-button.image.collapsed,
+html:lang(dd) .expando-button.image.collapsed {
+  background-position: 0px -180px !important;
+}
+.res-nightmode .expando-button.image.expanded,
+html:lang(dd) .expando-button.image.expanded {
+  background-position: 0px -205px !important;
+}
+.res-nightmode .expando-button.image.collapsed:hover,
+html:lang(dd) .expando-button.image.collapsed:hover {
+  background-position: -25px -180px !important;
+}
+.res-nightmode .expando-button.image.expanded:hover,
+html:lang(dd) .expando-button.image.expanded:hover {
+  background-position: -25px -205px !important;
+}
+.res-nightmode .expando-button.image.gallery.collapsed,
+html:lang(dd) .expando-button.image.gallery.collapsed {
+  background-position: 0px -230px !important;
+}
+.res-nightmode .expando-button.image.gallery.expanded,
+html:lang(dd) .expando-button.image.gallery.expanded {
+  background-position: 0px -255px !important;
+}
+.res-nightmode .expando-button.image.gallery.collapsed:hover,
+html:lang(dd) .expando-button.image.gallery.collapsed:hover {
+  background-position: -25px -230px !important;
+}
+.res-nightmode .expando-button.image.gallery.expanded:hover,
+html:lang(dd) .expando-button.image.gallery.expanded:hover {
+  background-position: -25px -255px !important;
+}
+.res-nightmode .listing-page .sitetable .flair,
+html:lang(dd) .listing-page .sitetable .flair {
+  display: none;
+}
+.res-nightmode .RES-keyNav-activeElement .tagline .stickied-tagline,
+html:lang(dd) .RES-keyNav-activeElement .tagline .stickied-tagline {
+  color: #7c7;
+}
+.res-nightmode #progressIndicator,
+html:lang(dd) #progressIndicator {
+  background-color: #26293c!important;
+}
+.res-nightmode .listing-page .sitetable > div:nth-of-type(4n+1) {
+  background-color: #080808;
+}
+.res-nightmode h1 {
+  border-bottom: none !important;
+}
+.res-nightmode .sidebox {
+  background-color: transparent!important;
+  border: none!important;
+  color: #000!important;
+  border-radius: 5px!important;
+}
+.res-nightmode .side .titlebox .usertext-body ul {
+  background-color: #080808!important;
+}
+.res-nightmode .RES-keyNav-activeElement .usertext .md a:visited[href*="lol.eventvods.com"] {
+  color: #8ad;
+}
+.res-nightmode .side .spacer > #search input,
+html:lang(dd) .side .spacer > #search input {
+  background-color: #444;
+  color: #ccc;
+}
+.res-nightmode .side .titlebox,
+html:lang(dd) .side .titlebox {
+  color: #ddd;
+}
+.res-nightmode .side .md table,
+html:lang(dd) .side .md table {
+  width: 325px;
+  -webkit-box-shadow: 1px 1px 1px #3261ca;
+  -moz-box-shadow: 1px 1px 1px #3261ca;
+  box-shadow: 1px 1px 1px #3261ca;
+}
+.res-nightmode .infobar,
+html:lang(dd) .infobar {
+  background-color: transparent!important;
+}
+.res-nightmode .sidebox .morelink,
+html:lang(dd) .sidebox .morelink,
+.res-nightmode .submit .morelink,
+html:lang(dd) .submit .morelink {
+  background: url(%%gray%%);
+  background-position: 0px -68px;
+}
+.res-nightmode .sidebox .morelink:hover,
+html:lang(dd) .sidebox .morelink:hover,
+.res-nightmode .submit .morelink:hover,
+html:lang(dd) .submit .morelink:hover {
+  background-position: 0px -34px;
+}
+.res-nightmode .sidebox .morelink a:before,
+html:lang(dd) .sidebox .morelink a:before,
+.res-nightmode .submit .morelink a:before,
+html:lang(dd) .submit .morelink a:before {
+  color: #000;
+}
+.res-nightmode .sidebox .morelink a:hover:before,
+html:lang(dd) .sidebox .morelink a:hover:before,
+.res-nightmode .submit .morelink a:hover:before,
+html:lang(dd) .submit .morelink a:hover:before {
+  color: #fff;
+}
+.res-nightmode .sidebox .spacer,
+html:lang(dd) .sidebox .spacer {
+  background-color: #080808;
+  color: #ccc!important;
+}
+.res-nightmode .side .titlebox .md > h1,
+html:lang(dd) .side .titlebox .md > h1,
+.res-nightmode .side .titlebox .md ul li:nth-child(1),
+html:lang(dd) .side .titlebox .md ul li:nth-child(1) {
+  border-left: 7px solid #666;
+  background-color: #ccc;
+  color: black!important;
+}
+.res-nightmode .side .titlebox .md > h1:hover,
+html:lang(dd) .side .titlebox .md > h1:hover,
+.res-nightmode .side .titlebox .md ul li:nth-child(1):hover,
+html:lang(dd) .side .titlebox .md ul li:nth-child(1):hover {
+  border-left: 7px solid #367588;
+}
+.res-nightmode .side .titlebox .md ul:hover,
+html:lang(dd) .side .titlebox .md ul:hover {
+  -webkit-box-shadow: 12px 0 10px #cccccc;
+  -moz-box-shadow: 12px 0 10px #cccccc;
+  box-shadow: 12px 0 10px #cccccc;
+}
+.res-nightmode .side .titlebox .md ul strong,
+html:lang(dd) .side .titlebox .md ul strong {
+  color: black!important;
+}
+.res-nightmode .side .titlebox .md ul li,
+html:lang(dd) .side .titlebox .md ul li {
+  color: #ddd;
+  background-color: #111;
+  border-left: 7px solid #666;
+  border-bottom: 1px solid #777;
+}
+.res-nightmode .side .titlebox .md ul li:hover,
+html:lang(dd) .side .titlebox .md ul li:hover {
+  background-color: #333;
+}
+.res-nightmode .side .titlebox .md ul li:nth-child(1):hover,
+html:lang(dd) .side .titlebox .md ul li:nth-child(1):hover {
+  background-color: #ccc;
+}
+.res-nightmode .self .thumbnail,
+html:lang(dd) .self .thumbnail {
+  background: url(%%thumbnails%%) no-repeat 0 -210px;
+  width: 100px;
+  height: 70px;
+  padding: 0;
+}
+.res-nightmode .thing .thumbnail[href*="s3_china"],
+html:lang(dd) .thing .thumbnail[href*="s3_china"],
+.res-nightmode .thing .thumbnail[href*="s3_korea"],
+html:lang(dd) .thing .thumbnail[href*="s3_korea"],
+.res-nightmode .thing .thumbnail[href*="s3_sea"],
+html:lang(dd) .thing .thumbnail[href*="s3_sea"],
+.res-nightmode .thing .thumbnail[href*="3_world_championship"],
+html:lang(dd) .thing .thumbnail[href*="3_world_championship"] {
+  background-position: 0 0;
+}
+.res-nightmode .thing .thumbnail[href*="eu_chall"],
+html:lang(dd) .thing .thumbnail[href*="eu_chall"] {
+  background-position: 0 -70px;
+}
+.res-nightmode .thing .thumbnail[href*="solo_king"],
+html:lang(dd) .thing .thumbnail[href*="solo_king"] {
+  background-position: 0 -140px;
+}
+.res-nightmode .thing .thumbnail[href*="iem"],
+html:lang(dd) .thing .thumbnail[href*="iem"],
+.res-nightmode .thing .thumbnail[href*="intel_extreme_masters"],
+html:lang(dd) .thing .thumbnail[href*="intel_extreme_masters"] {
+  background-position: 0 -280px;
+}
+.res-nightmode .thing .thumbnail[href*="lpl"],
+html:lang(dd) .thing .thumbnail[href*="lpl"] {
+  background-position: 0 -350px;
+}
+.res-nightmode .thing .thumbnail[href*="regional_qualifiers"],
+html:lang(dd) .thing .thumbnail[href*="regional_qualifiers"],
+.res-nightmode .thing .thumbnail[href*="4_world_championship"],
+html:lang(dd) .thing .thumbnail[href*="4_world_championship"] {
+  background-position: -100px 0;
+}
+.res-nightmode .thing .thumbnail[href*="ljl"],
+html:lang(dd) .thing .thumbnail[href*="ljl"] {
+  background-position: -100px -70px;
+}
+.res-nightmode .thing .thumbnail[href*="allstar_paris"],
+html:lang(dd) .thing .thumbnail[href*="allstar_paris"] {
+  background-position: -100px -140px;
+}
+.res-nightmode .thing .thumbnail[href*="esportspedia"],
+html:lang(dd) .thing .thumbnail[href*="esportspedia"] {
+  background-position: -100px -210px;
+}
+.res-nightmode .thing .thumbnail[href*="ios_"],
+html:lang(dd) .thing .thumbnail[href*="ios_"] {
+  background-position: -100px -280px;
+}
+.res-nightmode .thing .thumbnail[href*="masters"],
+html:lang(dd) .thing .thumbnail[href*="masters"] {
+  background-position: -100px -350px;
+}
+.res-nightmode .thing .thumbnail[href*="best_zed"],
+html:lang(dd) .thing .thumbnail[href*="best_zed"] {
+  background-position: -200px 0;
+}
+.res-nightmode .thing .thumbnail[href*="na_lcs"],
+html:lang(dd) .thing .thumbnail[href*="na_lcs"],
+.res-nightmode .thing .thumbnail[href*="lcs_na"],
+html:lang(dd) .thing .thumbnail[href*="lcs_na"],
+.res-nightmode .thing .thumbnail[href*="lcs_north"],
+html:lang(dd) .thing .thumbnail[href*="lcs_north"],
+.res-nightmode .thing .thumbnail[href*="american_lcs"],
+html:lang(dd) .thing .thumbnail[href*="american_lcs"] {
+  background-position: -200px -70px;
+}
+.res-nightmode .thing .thumbnail[href*="android"],
+html:lang(dd) .thing .thumbnail[href*="android"] {
+  background-position: -200px -140px;
+}
+.res-nightmode .thing .thumbnail[href*="wildcard"],
+html:lang(dd) .thing .thumbnail[href*="wildcard"] {
+  background-position: -200px -210px;
+}
+.res-nightmode .thing .thumbnail[href*="lms"],
+html:lang(dd) .thing .thumbnail[href*="lms"] {
+  background-position: -200px -280px;
+}
+.res-nightmode .thing .thumbnail[href*="ogn_"],
+html:lang(dd) .thing .thumbnail[href*="ogn_"] {
+  background-position: -200px -350px;
+}
+.res-nightmode .thing .thumbnail[href*="dreamhack"],
+html:lang(dd) .thing .thumbnail[href*="dreamhack"] {
+  background-position: -300px 0;
+}
+.res-nightmode .thing .thumbnail[href*="na_chall"],
+html:lang(dd) .thing .thumbnail[href*="na_chall"] {
+  background-position: -300px -70px;
+}
+.res-nightmode .thing .thumbnail[href*="lck"],
+html:lang(dd) .thing .thumbnail[href*="lck"],
+.res-nightmode .thing .thumbnail[href*="champions_korea"],
+html:lang(dd) .thing .thumbnail[href*="champions_korea"] {
+  background-position: -300px -140px;
+}
+.res-nightmode .thing .thumbnail[href*="gpl"],
+html:lang(dd) .thing .thumbnail[href*="gpl"] {
+  background-position: -300px -210px;
+}
+.res-nightmode .thing .thumbnail[href*="cblol"],
+html:lang(dd) .thing .thumbnail[href*="cblol"],
+.res-nightmode .thing .thumbnail[href*="brazilian_cir"],
+html:lang(dd) .thing .thumbnail[href*="brazilian_cir"] {
+  background-position: -300px -280px;
+}
+.res-nightmode .thing .thumbnail[href*="oceanic_"],
+html:lang(dd) .thing .thumbnail[href*="oceanic_"] {
+  background-position: -300px -350px;
+}
+.res-nightmode .thing .thumbnail[href*="lcs_eu"],
+html:lang(dd) .thing .thumbnail[href*="lcs_eu"],
+.res-nightmode .thing .thumbnail[href*="eu_lcs"],
+html:lang(dd) .thing .thumbnail[href*="eu_lcs"],
+.res-nightmode .thing .thumbnail[href*="european_lcs"],
+html:lang(dd) .thing .thumbnail[href*="european_lcs"] {
+  background-position: -400px 0;
+}
+.res-nightmode .thing .thumbnail[href*="nlb"],
+html:lang(dd) .thing .thumbnail[href*="nlb"] {
+  background-position: -400px -70px;
+}
+.res-nightmode .thing .thumbnail[href*="latin_america"],
+html:lang(dd) .thing .thumbnail[href*="latin_america"] {
+  background-position: -400px -140px;
+}
+.res-nightmode .thing .thumbnail[href*="hitboxtv"],
+html:lang(dd) .thing .thumbnail[href*="hitboxtv"] {
+  background-position: -400px -210px;
+}
+.res-nightmode .thing .thumbnail[href*="lone_star_clash"],
+html:lang(dd) .thing .thumbnail[href*="lone_star_clash"] {
+  background-position: -400px -280px;
+}
+.res-nightmode .thing .thumbnail[href*="poro_king"],
+html:lang(dd) .thing .thumbnail[href*="poro_king"] {
+  background-position: -400px -350px;
+}
+.res-nightmode .entry a,
+html:lang(dd) .entry a {
+  color: #007dc3;
+}
+.res-nightmode .entry a:visited[href*="lol.eventvods.com"],
+html:lang(dd) .entry a:visited[href*="lol.eventvods.com"] {
+  color: #007dc3;
+}
+.res-nightmode .RES-keyNav-activeElement .entry a:visited[href*="lol.eventvods.com"],
+html:lang(dd) .RES-keyNav-activeElement .entry a:visited[href*="lol.eventvods.com"] {
+  color: #8ad!important;
+}
+.res-nightmode .usertext-body h4,
+html:lang(dd) .usertext-body h4 {
+  color: #f23;
+  font-weight: bold;
+}
+.res-nightmode .link .usertext-body .md,
+html:lang(dd) .link .usertext-body .md,
+.res-nightmode .side .linkinfo,
+html:lang(dd) .side .linkinfo {
+  border-color: #88f;
+}
+.res-nightmode .md table *,
+html:lang(dd) .md table * {
+  border: 10px;
+}
+.res-nightmode .md table th,
+html:lang(dd) .md table th {
+  text-align: center;
+}
+.res-nightmode .md table thead,
+html:lang(dd) .md table thead {
+  background-color: #333;
+}
+.res-nightmode .md table td,
+html:lang(dd) .md table td,
+.res-nightmode .md table th,
+html:lang(dd) .md table th {
+  border-right: 1px solid #888;
+  padding: 4px 8px;
+}
+.res-nightmode .md th,
+html:lang(dd) .md th {
+  background-color: #101010;
+  border-color: #101010;
+}
+.res-nightmode .md tr:nth-of-type(odd),
+html:lang(dd) .md tr:nth-of-type(odd) {
+  background: #181818;
+  color: #dcdcdc;
+}
+.res-nightmode .md tr:nth-of-type(even),
+html:lang(dd) .md tr:nth-of-type(even) {
+  background: #222;
+  color: #dcdcdc;
+}
+.res-nightmode .md table tr:hover,
+html:lang(dd) .md table tr:hover {
+  background-color: #7d7;
+  color: #080808;
+}
+.res-nightmode .md table tr:hover a,
+html:lang(dd) .md table tr:hover a,
+.res-nightmode .md table tr:hover a[href*="lol.eventvods.com"],
+html:lang(dd) .md table tr:hover a[href*="lol.eventvods.com"] {
+  color: #55c!important;
+}
+.res-nightmode .usertext-body .md .RESdupeimg,
+html:lang(dd) .usertext-body .md .RESdupeimg,
+.res-nightmode .usertext-body .md .expando-button.video,
+html:lang(dd) .usertext-body .md .expando-button.video,
+.res-nightmode .usertext-body .md .expando-button.video.collapsed,
+html:lang(dd) .usertext-body .md .expando-button.video.collapsed,
+.res-nightmode .usertext-body .md .expando-button.video.expanded,
+html:lang(dd) .usertext-body .md .expando-button.video.expanded {
+  display: none!important;
+}
 .res-nightmode .RES-keyNav-activeElement,
 html:lang(dd) .RES-keyNav-activeElement,
 .res-nightmode .RES-keyNav-activeElement .usertext-body,
@@ -1587,11 +1957,6 @@ html:lang(dd) .RES-keyNav-activeElement .noncollapsed .md,
 .res-nightmode .RES-keyNav-activeElement .noncollapsed .md p,
 html:lang(dd) .RES-keyNav-activeElement .noncollapsed .md p {
   background-color: #3a3a3a !important;
-}
-.res-nightmode .commentarea .usertext .usertext-edit:after,
-html:lang(dd) .commentarea .usertext .usertext-edit:after {
-  background-color: inherit;
-  color: #ccc;
 }
 .res-nightmode .comment,
 html:lang(dd) .comment {
@@ -1771,553 +2136,32 @@ html:lang(dd) .res-commentBoxes .comments-page .comment .comment .comment .comme
   margin-right: 0px;
   background-color: #080808!important;
 }
-.res-nightmode .side a[href="/r/LoLeventVoDs/comments/2ywjmx/"],
-html:lang(dd) .side a[href="/r/LoLeventVoDs/comments/2ywjmx/"],
-.res-nightmode .side a[href="/r/LoLeventVoDs/comments/2x8ymq/"],
-html:lang(dd) .side a[href="/r/LoLeventVoDs/comments/2x8ymq/"],
-.res-nightmode .side a[href="/r/LoLeventVoDs/comments/2x1sek/"],
-html:lang(dd) .side a[href="/r/LoLeventVoDs/comments/2x1sek/"],
-.res-nightmode .side a[href="/r/LoLeventVoDs/comments/2xckeu/"],
-html:lang(dd) .side a[href="/r/LoLeventVoDs/comments/2xckeu/"],
-.res-nightmode .side a[href="/r/LoLeventVoDs/comments/2xhgar/"],
-html:lang(dd) .side a[href="/r/LoLeventVoDs/comments/2xhgar/"] {
-  background: url(%%headers%%) no-repeat top left;
-  height: 125px;
-  display: block;
-  position: absolute;
-  top: 19px;
-  z-index: 9999;
-}
-.res-nightmode .side a[href="/r/LoLeventVoDs/comments/2ywjmx/"],
-html:lang(dd) .side a[href="/r/LoLeventVoDs/comments/2ywjmx/"] {
-  right: 670px;
-  width: 250px;
-  background-position: 0 0;
-}
-.res-nightmode .side a[href="/r/LoLeventVoDs/comments/2ywjmx/"]:hover,
-html:lang(dd) .side a[href="/r/LoLeventVoDs/comments/2ywjmx/"]:hover {
-  background-position: 0 -150px;
-}
-.res-nightmode .side a[href="/r/LoLeventVoDs/comments/2x8ymq/"],
-html:lang(dd) .side a[href="/r/LoLeventVoDs/comments/2x8ymq/"] {
-  right: 520px;
-  width: 140px;
-  background-position: -250px 0;
-}
-.res-nightmode .side a[href="/r/LoLeventVoDs/comments/2x8ymq/"]:hover,
-html:lang(dd) .side a[href="/r/LoLeventVoDs/comments/2x8ymq/"]:hover {
-  background-position: -250px -150px;
-}
-.res-nightmode .side a[href="/r/LoLeventVoDs/comments/2x1sek/"],
-html:lang(dd) .side a[href="/r/LoLeventVoDs/comments/2x1sek/"] {
-  right: 320px;
-  width: 200px;
-  background-position: -380px 0;
-}
-.res-nightmode .side a[href="/r/LoLeventVoDs/comments/2x1sek/"]:hover,
-html:lang(dd) .side a[href="/r/LoLeventVoDs/comments/2x1sek/"]:hover {
-  background-position: -380px -150px;
-}
-.res-nightmode .side a[href="/r/LoLeventVoDs/comments/2xckeu/"],
-html:lang(dd) .side a[href="/r/LoLeventVoDs/comments/2xckeu/"] {
-  right: 175px;
-  width: 130px;
-  background-position: -580px 0;
-}
-.res-nightmode .side a[href="/r/LoLeventVoDs/comments/2xckeu/"]:hover,
-html:lang(dd) .side a[href="/r/LoLeventVoDs/comments/2xckeu/"]:hover {
-  background-position: -580px -150px;
-}
-.res-nightmode .side a[href="/r/LoLeventVoDs/comments/2xhgar/"],
-html:lang(dd) .side a[href="/r/LoLeventVoDs/comments/2xhgar/"] {
-  right: 0;
-  width: 140px;
-  background-position: -710px 0;
-}
-.res-nightmode .side a[href="/r/LoLeventVoDs/comments/2xhgar/"]:hover,
-html:lang(dd) .side a[href="/r/LoLeventVoDs/comments/2xhgar/"]:hover {
-  background-position: -710px -150px;
-}
-.res-nightmode .titlebox .usertext-body .md h6,
-html:lang(dd) .titlebox .usertext-body .md h6 {
-  background-position: 0px -68px;
-  color: #000;
-}
-.res-nightmode .titlebox .usertext-body .md h6 a,
-html:lang(dd) .titlebox .usertext-body .md h6 a {
-  color: #F2E972!important;
-}
-.res-nightmode .expando-button.selftext.collapsed,
-html:lang(dd) .expando-button.selftext.collapsed,
-.res-nightmode .expando-button.video.collapsed,
-html:lang(dd) .expando-button.video.collapsed,
-.res-nightmode .expando-button.image.collapsed,
-html:lang(dd) .expando-button.image.collapsed,
-.res-nightmode .expando-button.selftext.collapsed,
-html:lang(dd) .expando-button.selftext.collapsed,
-.res-nightmode .expando-button.selftext.collapsed:hover,
-html:lang(dd) .expando-button.selftext.collapsed:hover,
-.res-nightmode .expando-button.video.collapsed:hover,
-html:lang(dd) .expando-button.video.collapsed:hover,
-.res-nightmode .expando-button.image.collapsed:hover,
-html:lang(dd) .expando-button.image.collapsed:hover,
-.res-nightmode .expando-button.selftext.collapsed:hover,
-html:lang(dd) .expando-button.selftext.collapsed:hover {
-  background: url(%%nightmode-sprites%%) !important;
-}
-.res-nightmode .expando-button.selftext.collapsed,
-html:lang(dd) .expando-button.selftext.collapsed {
-  background-position: 0px -80px !important;
-}
-.res-nightmode .expando-button.selftext.expanded,
-html:lang(dd) .expando-button.selftext.expanded {
-  background-position: 0px -105px !important;
-}
-.res-nightmode .expando-button.selftext.collapsed:hover,
-html:lang(dd) .expando-button.selftext.collapsed:hover {
-  background-position: -25px -80px !important;
-}
-.res-nightmode .expando-button.selftext.expanded:hover,
-html:lang(dd) .expando-button.selftext.expanded:hover {
-  background-position: -25px -105px !important;
-}
-.res-nightmode .expando-button.video.collapsed,
-html:lang(dd) .expando-button.video.collapsed {
-  background-position: 0px -130px !important;
-}
-.res-nightmode .expando-button.video.expanded,
-html:lang(dd) .expando-button.video.expanded {
-  background-position: 0px -155px !important;
-}
-.res-nightmode .expando-button.video.collapsed:hover,
-html:lang(dd) .expando-button.video.collapsed:hover {
-  background-position: -25px -130px !important;
-}
-.res-nightmode .expando-button.video.expanded:hover,
-html:lang(dd) .expando-button.video.expanded:hover {
-  background-position: -25px -155px !important;
-}
-.res-nightmode .expando-button.image.collapsed,
-html:lang(dd) .expando-button.image.collapsed {
-  background-position: 0px -180px !important;
-}
-.res-nightmode .expando-button.image.expanded,
-html:lang(dd) .expando-button.image.expanded {
-  background-position: 0px -205px !important;
-}
-.res-nightmode .expando-button.image.collapsed:hover,
-html:lang(dd) .expando-button.image.collapsed:hover {
-  background-position: -25px -180px !important;
-}
-.res-nightmode .expando-button.image.expanded:hover,
-html:lang(dd) .expando-button.image.expanded:hover {
-  background-position: -25px -205px !important;
-}
-.res-nightmode .expando-button.image.gallery.collapsed,
-html:lang(dd) .expando-button.image.gallery.collapsed {
-  background-position: 0px -230px !important;
-}
-.res-nightmode .expando-button.image.gallery.expanded,
-html:lang(dd) .expando-button.image.gallery.expanded {
-  background-position: 0px -255px !important;
-}
-.res-nightmode .expando-button.image.gallery.collapsed:hover,
-html:lang(dd) .expando-button.image.gallery.collapsed:hover {
-  background-position: -25px -230px !important;
-}
-.res-nightmode .expando-button.image.gallery.expanded:hover,
-html:lang(dd) .expando-button.image.gallery.expanded:hover {
-  background-position: -25px -255px !important;
-}
-.res-nightmode .listing-page .sitetable .flair,
-html:lang(dd) .listing-page .sitetable .flair {
-  display: none;
-}
-.res-nightmode .RES-keyNav-activeElement .tagline .stickied-tagline,
-html:lang(dd) .RES-keyNav-activeElement .tagline .stickied-tagline {
-  color: #7c7;
-}
-.res-nightmode #progressIndicator,
-html:lang(dd) #progressIndicator {
-  background-color: #26293c!important;
-}
-.res-nightmode .listing-page .sitetable > div:nth-of-type(4n+1) {
-  background-color: #080808;
-}
-.res-nightmode h1 {
-  border-bottom: none !important;
-}
-.res-nightmode .sidebox {
-  background-color: transparent!important;
-  border: none!important;
-  color: #000!important;
-  border-radius: 5px!important;
-}
-.res-nightmode .side .titlebox .usertext-body ul {
-  background-color: #080808!important;
-}
-.res-nightmode .RES-keyNav-activeElement .usertext .md a:visited[href*="lol.eventvods.com"] {
-  color: #8ad;
-}
-.res-nightmode .side .spacer > #search input,
-html:lang(dd) .side .spacer > #search input {
-  background-color: #444;
-  color: #ccc;
-}
-.res-nightmode .side .titlebox,
-html:lang(dd) .side .titlebox {
-  color: #ddd;
-}
-.res-nightmode .infobar,
-html:lang(dd) .infobar {
-  background-color: transparent!important;
-}
-.res-nightmode .sidebox .morelink,
-html:lang(dd) .sidebox .morelink,
-.res-nightmode .submit .morelink,
-html:lang(dd) .submit .morelink {
-  background: url(%%gray%%);
-  background-position: 0px -68px;
-}
-.res-nightmode .sidebox .morelink:hover,
-html:lang(dd) .sidebox .morelink:hover,
-.res-nightmode .submit .morelink:hover,
-html:lang(dd) .submit .morelink:hover {
-  background-position: 0px -34px;
-}
-.res-nightmode .sidebox .morelink a:before,
-html:lang(dd) .sidebox .morelink a:before,
-.res-nightmode .submit .morelink a:before,
-html:lang(dd) .submit .morelink a:before {
-  color: #000;
-}
-.res-nightmode .sidebox .morelink a:hover:before,
-html:lang(dd) .sidebox .morelink a:hover:before,
-.res-nightmode .submit .morelink a:hover:before,
-html:lang(dd) .submit .morelink a:hover:before {
-  color: #fff;
-}
-.res-nightmode .sidebox .spacer,
-html:lang(dd) .sidebox .spacer {
-  background-color: #080808;
-  color: #ccc!important;
-}
-.res-nightmode .titlebox .usertext .md > h1,
-html:lang(dd) .titlebox .usertext .md > h1 {
-  background-position: 0px -68px;
-  color: #000 !important;
-  border-color: #37e !important;
-}
-.res-nightmode .titlebox .usertext .md > h1:after,
-html:lang(dd) .titlebox .usertext .md > h1:after {
-  border-color: transparent #37e transparent transparent !important;
-}
-.res-nightmode a[href="#269"]:after,
-html:lang(dd) a[href="#269"]:after,
-.res-nightmode a[href^="#a"]:after,
-html:lang(dd) a[href^="#a"]:after,
-.res-nightmode a[href^="#b"]:after,
-html:lang(dd) a[href^="#b"]:after,
-.res-nightmode a[href^="#c"]:after,
-html:lang(dd) a[href^="#c"]:after,
-.res-nightmode a[href^="#d"]:after,
-html:lang(dd) a[href^="#d"]:after,
-.res-nightmode a[href^="#e"]:after,
-html:lang(dd) a[href^="#e"]:after,
-.res-nightmode a[href^="#f"]:after,
-html:lang(dd) a[href^="#f"]:after,
-.res-nightmode a[href^="#g"]:after,
-html:lang(dd) a[href^="#g"]:after,
-.res-nightmode a[href^="#h"]:after,
-html:lang(dd) a[href^="#h"]:after,
-.res-nightmode a[href^="#i"]:after,
-html:lang(dd) a[href^="#i"]:after,
-.res-nightmode a[href^="#j"]:after,
-html:lang(dd) a[href^="#j"]:after,
-.res-nightmode a[href^="#k"]:after,
-html:lang(dd) a[href^="#k"]:after,
-.res-nightmode a[href^="#l"]:after,
-html:lang(dd) a[href^="#l"]:after,
-.res-nightmode a[href^="#m"]:after,
-html:lang(dd) a[href^="#m"]:after,
-.res-nightmode a[href^="#n"]:after,
-html:lang(dd) a[href^="#n"]:after,
-.res-nightmode a[href^="#o"]:after,
-html:lang(dd) a[href^="#o"]:after,
-.res-nightmode a[href^="#p"]:after,
-html:lang(dd) a[href^="#p"]:after,
-.res-nightmode a[href^="#q"]:after,
-html:lang(dd) a[href^="#q"]:after,
-.res-nightmode a[href^="#r"]:after,
-html:lang(dd) a[href^="#r"]:after,
-.res-nightmode a[href^="#s"]:after,
-html:lang(dd) a[href^="#s"]:after,
-.res-nightmode a[href^="#t"]:after,
-html:lang(dd) a[href^="#t"]:after,
-.res-nightmode a[href^="#u"]:after,
-html:lang(dd) a[href^="#u"]:after,
-.res-nightmode a[href^="#v"]:after,
-html:lang(dd) a[href^="#v"]:after,
-.res-nightmode a[href^="#w"]:after,
-html:lang(dd) a[href^="#w"]:after,
-.res-nightmode a[href^="#x"]:after,
-html:lang(dd) a[href^="#x"]:after,
-.res-nightmode a[href^="#y"]:after,
-html:lang(dd) a[href^="#y"]:after,
-.res-nightmode a[href^="#z"]:after,
-html:lang(dd) a[href^="#z"]:after {
+.res-nightmode a[href^="#"]:after,
+html:lang(dd) a[href^="#"]:after {
   content: "";
   background-image: url(%%nightmode-teams%%);
 }
-.res-nightmode .md table tr:hover a[href="#269"]:after,
-html:lang(dd) .md table tr:hover a[href="#269"]:after,
-.res-nightmode .md table tr:hover a[href^="#a"]:after,
-html:lang(dd) .md table tr:hover a[href^="#a"]:after,
-.res-nightmode .md table tr:hover a[href^="#b"]:after,
-html:lang(dd) .md table tr:hover a[href^="#b"]:after,
-.res-nightmode .md table tr:hover a[href^="#c"]:after,
-html:lang(dd) .md table tr:hover a[href^="#c"]:after,
-.res-nightmode .md table tr:hover a[href^="#d"]:after,
-html:lang(dd) .md table tr:hover a[href^="#d"]:after,
-.res-nightmode .md table tr:hover a[href^="#e"]:after,
-html:lang(dd) .md table tr:hover a[href^="#e"]:after,
-.res-nightmode .md table tr:hover a[href^="#f"]:after,
-html:lang(dd) .md table tr:hover a[href^="#f"]:after,
-.res-nightmode .md table tr:hover a[href^="#g"]:after,
-html:lang(dd) .md table tr:hover a[href^="#g"]:after,
-.res-nightmode .md table tr:hover a[href^="#h"]:after,
-html:lang(dd) .md table tr:hover a[href^="#h"]:after,
-.res-nightmode .md table tr:hover a[href^="#i"]:after,
-html:lang(dd) .md table tr:hover a[href^="#i"]:after,
-.res-nightmode .md table tr:hover a[href^="#j"]:after,
-html:lang(dd) .md table tr:hover a[href^="#j"]:after,
-.res-nightmode .md table tr:hover a[href^="#k"]:after,
-html:lang(dd) .md table tr:hover a[href^="#k"]:after,
-.res-nightmode .md table tr:hover a[href^="#l"]:after,
-html:lang(dd) .md table tr:hover a[href^="#l"]:after,
-.res-nightmode .md table tr:hover a[href^="#m"]:after,
-html:lang(dd) .md table tr:hover a[href^="#m"]:after,
-.res-nightmode .md table tr:hover a[href^="#n"]:after,
-html:lang(dd) .md table tr:hover a[href^="#n"]:after,
-.res-nightmode .md table tr:hover a[href^="#o"]:after,
-html:lang(dd) .md table tr:hover a[href^="#o"]:after,
-.res-nightmode .md table tr:hover a[href^="#p"]:after,
-html:lang(dd) .md table tr:hover a[href^="#p"]:after,
-.res-nightmode .md table tr:hover a[href^="#q"]:after,
-html:lang(dd) .md table tr:hover a[href^="#q"]:after,
-.res-nightmode .md table tr:hover a[href^="#r"]:after,
-html:lang(dd) .md table tr:hover a[href^="#r"]:after,
-.res-nightmode .md table tr:hover a[href^="#s"]:after,
-html:lang(dd) .md table tr:hover a[href^="#s"]:after,
-.res-nightmode .md table tr:hover a[href^="#t"]:after,
-html:lang(dd) .md table tr:hover a[href^="#t"]:after,
-.res-nightmode .md table tr:hover a[href^="#u"]:after,
-html:lang(dd) .md table tr:hover a[href^="#u"]:after,
-.res-nightmode .md table tr:hover a[href^="#v"]:after,
-html:lang(dd) .md table tr:hover a[href^="#v"]:after,
-.res-nightmode .md table tr:hover a[href^="#w"]:after,
-html:lang(dd) .md table tr:hover a[href^="#w"]:after,
-.res-nightmode .md table tr:hover a[href^="#x"]:after,
-html:lang(dd) .md table tr:hover a[href^="#x"]:after,
-.res-nightmode .md table tr:hover a[href^="#y"]:after,
-html:lang(dd) .md table tr:hover a[href^="#y"]:after,
-.res-nightmode .md table tr:hover a[href^="#z"]:after,
-html:lang(dd) .md table tr:hover a[href^="#z"]:after {
-  background-image: url(%%teams%%);
-}
-.res-nightmode .md table tr:nth-of-type(odd) a[href="#269"]:after,
-html:lang(dd) .md table tr:nth-of-type(odd) a[href="#269"]:after,
-.res-nightmode .md table tr:nth-of-type(odd) a[href^="#a"]:after,
-html:lang(dd) .md table tr:nth-of-type(odd) a[href^="#a"]:after,
-.res-nightmode .md table tr:nth-of-type(odd) a[href^="#b"]:after,
-html:lang(dd) .md table tr:nth-of-type(odd) a[href^="#b"]:after,
-.res-nightmode .md table tr:nth-of-type(odd) a[href^="#c"]:after,
-html:lang(dd) .md table tr:nth-of-type(odd) a[href^="#c"]:after,
-.res-nightmode .md table tr:nth-of-type(odd) a[href^="#d"]:after,
-html:lang(dd) .md table tr:nth-of-type(odd) a[href^="#d"]:after,
-.res-nightmode .md table tr:nth-of-type(odd) a[href^="#e"]:after,
-html:lang(dd) .md table tr:nth-of-type(odd) a[href^="#e"]:after,
-.res-nightmode .md table tr:nth-of-type(odd) a[href^="#f"]:after,
-html:lang(dd) .md table tr:nth-of-type(odd) a[href^="#f"]:after,
-.res-nightmode .md table tr:nth-of-type(odd) a[href^="#g"]:after,
-html:lang(dd) .md table tr:nth-of-type(odd) a[href^="#g"]:after,
-.res-nightmode .md table tr:nth-of-type(odd) a[href^="#h"]:after,
-html:lang(dd) .md table tr:nth-of-type(odd) a[href^="#h"]:after,
-.res-nightmode .md table tr:nth-of-type(odd) a[href^="#i"]:after,
-html:lang(dd) .md table tr:nth-of-type(odd) a[href^="#i"]:after,
-.res-nightmode .md table tr:nth-of-type(odd) a[href^="#j"]:after,
-html:lang(dd) .md table tr:nth-of-type(odd) a[href^="#j"]:after,
-.res-nightmode .md table tr:nth-of-type(odd) a[href^="#k"]:after,
-html:lang(dd) .md table tr:nth-of-type(odd) a[href^="#k"]:after,
-.res-nightmode .md table tr:nth-of-type(odd) a[href^="#l"]:after,
-html:lang(dd) .md table tr:nth-of-type(odd) a[href^="#l"]:after,
-.res-nightmode .md table tr:nth-of-type(odd) a[href^="#m"]:after,
-html:lang(dd) .md table tr:nth-of-type(odd) a[href^="#m"]:after,
-.res-nightmode .md table tr:nth-of-type(odd) a[href^="#n"]:after,
-html:lang(dd) .md table tr:nth-of-type(odd) a[href^="#n"]:after,
-.res-nightmode .md table tr:nth-of-type(odd) a[href^="#o"]:after,
-html:lang(dd) .md table tr:nth-of-type(odd) a[href^="#o"]:after,
-.res-nightmode .md table tr:nth-of-type(odd) a[href^="#p"]:after,
-html:lang(dd) .md table tr:nth-of-type(odd) a[href^="#p"]:after,
-.res-nightmode .md table tr:nth-of-type(odd) a[href^="#q"]:after,
-html:lang(dd) .md table tr:nth-of-type(odd) a[href^="#q"]:after,
-.res-nightmode .md table tr:nth-of-type(odd) a[href^="#r"]:after,
-html:lang(dd) .md table tr:nth-of-type(odd) a[href^="#r"]:after,
-.res-nightmode .md table tr:nth-of-type(odd) a[href^="#s"]:after,
-html:lang(dd) .md table tr:nth-of-type(odd) a[href^="#s"]:after,
-.res-nightmode .md table tr:nth-of-type(odd) a[href^="#t"]:after,
-html:lang(dd) .md table tr:nth-of-type(odd) a[href^="#t"]:after,
-.res-nightmode .md table tr:nth-of-type(odd) a[href^="#u"]:after,
-html:lang(dd) .md table tr:nth-of-type(odd) a[href^="#u"]:after,
-.res-nightmode .md table tr:nth-of-type(odd) a[href^="#v"]:after,
-html:lang(dd) .md table tr:nth-of-type(odd) a[href^="#v"]:after,
-.res-nightmode .md table tr:nth-of-type(odd) a[href^="#w"]:after,
-html:lang(dd) .md table tr:nth-of-type(odd) a[href^="#w"]:after,
-.res-nightmode .md table tr:nth-of-type(odd) a[href^="#x"]:after,
-html:lang(dd) .md table tr:nth-of-type(odd) a[href^="#x"]:after,
-.res-nightmode .md table tr:nth-of-type(odd) a[href^="#y"]:after,
-html:lang(dd) .md table tr:nth-of-type(odd) a[href^="#y"]:after,
-.res-nightmode .md table tr:nth-of-type(odd) a[href^="#z"]:after,
-html:lang(dd) .md table tr:nth-of-type(odd) a[href^="#z"]:after {
-  background-image: url(%%dark-teams-odd%%);
-}
-.res-nightmode .md table tr:nth-of-type(even) a[href="#269"]:after,
-html:lang(dd) .md table tr:nth-of-type(even) a[href="#269"]:after,
-.res-nightmode .md table tr:nth-of-type(even) a[href^="#a"]:after,
-html:lang(dd) .md table tr:nth-of-type(even) a[href^="#a"]:after,
-.res-nightmode .md table tr:nth-of-type(even) a[href^="#b"]:after,
-html:lang(dd) .md table tr:nth-of-type(even) a[href^="#b"]:after,
-.res-nightmode .md table tr:nth-of-type(even) a[href^="#c"]:after,
-html:lang(dd) .md table tr:nth-of-type(even) a[href^="#c"]:after,
-.res-nightmode .md table tr:nth-of-type(even) a[href^="#d"]:after,
-html:lang(dd) .md table tr:nth-of-type(even) a[href^="#d"]:after,
-.res-nightmode .md table tr:nth-of-type(even) a[href^="#e"]:after,
-html:lang(dd) .md table tr:nth-of-type(even) a[href^="#e"]:after,
-.res-nightmode .md table tr:nth-of-type(even) a[href^="#f"]:after,
-html:lang(dd) .md table tr:nth-of-type(even) a[href^="#f"]:after,
-.res-nightmode .md table tr:nth-of-type(even) a[href^="#g"]:after,
-html:lang(dd) .md table tr:nth-of-type(even) a[href^="#g"]:after,
-.res-nightmode .md table tr:nth-of-type(even) a[href^="#h"]:after,
-html:lang(dd) .md table tr:nth-of-type(even) a[href^="#h"]:after,
-.res-nightmode .md table tr:nth-of-type(even) a[href^="#i"]:after,
-html:lang(dd) .md table tr:nth-of-type(even) a[href^="#i"]:after,
-.res-nightmode .md table tr:nth-of-type(even) a[href^="#j"]:after,
-html:lang(dd) .md table tr:nth-of-type(even) a[href^="#j"]:after,
-.res-nightmode .md table tr:nth-of-type(even) a[href^="#k"]:after,
-html:lang(dd) .md table tr:nth-of-type(even) a[href^="#k"]:after,
-.res-nightmode .md table tr:nth-of-type(even) a[href^="#l"]:after,
-html:lang(dd) .md table tr:nth-of-type(even) a[href^="#l"]:after,
-.res-nightmode .md table tr:nth-of-type(even) a[href^="#m"]:after,
-html:lang(dd) .md table tr:nth-of-type(even) a[href^="#m"]:after,
-.res-nightmode .md table tr:nth-of-type(even) a[href^="#n"]:after,
-html:lang(dd) .md table tr:nth-of-type(even) a[href^="#n"]:after,
-.res-nightmode .md table tr:nth-of-type(even) a[href^="#o"]:after,
-html:lang(dd) .md table tr:nth-of-type(even) a[href^="#o"]:after,
-.res-nightmode .md table tr:nth-of-type(even) a[href^="#p"]:after,
-html:lang(dd) .md table tr:nth-of-type(even) a[href^="#p"]:after,
-.res-nightmode .md table tr:nth-of-type(even) a[href^="#q"]:after,
-html:lang(dd) .md table tr:nth-of-type(even) a[href^="#q"]:after,
-.res-nightmode .md table tr:nth-of-type(even) a[href^="#r"]:after,
-html:lang(dd) .md table tr:nth-of-type(even) a[href^="#r"]:after,
-.res-nightmode .md table tr:nth-of-type(even) a[href^="#s"]:after,
-html:lang(dd) .md table tr:nth-of-type(even) a[href^="#s"]:after,
-.res-nightmode .md table tr:nth-of-type(even) a[href^="#t"]:after,
-html:lang(dd) .md table tr:nth-of-type(even) a[href^="#t"]:after,
-.res-nightmode .md table tr:nth-of-type(even) a[href^="#u"]:after,
-html:lang(dd) .md table tr:nth-of-type(even) a[href^="#u"]:after,
-.res-nightmode .md table tr:nth-of-type(even) a[href^="#v"]:after,
-html:lang(dd) .md table tr:nth-of-type(even) a[href^="#v"]:after,
-.res-nightmode .md table tr:nth-of-type(even) a[href^="#w"]:after,
-html:lang(dd) .md table tr:nth-of-type(even) a[href^="#w"]:after,
-.res-nightmode .md table tr:nth-of-type(even) a[href^="#x"]:after,
-html:lang(dd) .md table tr:nth-of-type(even) a[href^="#x"]:after,
-.res-nightmode .md table tr:nth-of-type(even) a[href^="#y"]:after,
-html:lang(dd) .md table tr:nth-of-type(even) a[href^="#y"]:after,
-.res-nightmode .md table tr:nth-of-type(even) a[href^="#z"]:after,
-html:lang(dd) .md table tr:nth-of-type(even) a[href^="#z"]:after {
-  background-image: url(%%dark-teams-even%%);
-}
-.res-nightmode .RES-keyNav-activeElement a[href="#269"]:after,
-html:lang(dd) .RES-keyNav-activeElement a[href="#269"]:after,
-.res-nightmode .RES-keyNav-activeElement a[href^="#a"]:after,
-html:lang(dd) .RES-keyNav-activeElement a[href^="#a"]:after,
-.res-nightmode .RES-keyNav-activeElement a[href^="#b"]:after,
-html:lang(dd) .RES-keyNav-activeElement a[href^="#b"]:after,
-.res-nightmode .RES-keyNav-activeElement a[href^="#c"]:after,
-html:lang(dd) .RES-keyNav-activeElement a[href^="#c"]:after,
-.res-nightmode .RES-keyNav-activeElement a[href^="#d"]:after,
-html:lang(dd) .RES-keyNav-activeElement a[href^="#d"]:after,
-.res-nightmode .RES-keyNav-activeElement a[href^="#e"]:after,
-html:lang(dd) .RES-keyNav-activeElement a[href^="#e"]:after,
-.res-nightmode .RES-keyNav-activeElement a[href^="#f"]:after,
-html:lang(dd) .RES-keyNav-activeElement a[href^="#f"]:after,
-.res-nightmode .RES-keyNav-activeElement a[href^="#g"]:after,
-html:lang(dd) .RES-keyNav-activeElement a[href^="#g"]:after,
-.res-nightmode .RES-keyNav-activeElement a[href^="#h"]:after,
-html:lang(dd) .RES-keyNav-activeElement a[href^="#h"]:after,
-.res-nightmode .RES-keyNav-activeElement a[href^="#i"]:after,
-html:lang(dd) .RES-keyNav-activeElement a[href^="#i"]:after,
-.res-nightmode .RES-keyNav-activeElement a[href^="#j"]:after,
-html:lang(dd) .RES-keyNav-activeElement a[href^="#j"]:after,
-.res-nightmode .RES-keyNav-activeElement a[href^="#k"]:after,
-html:lang(dd) .RES-keyNav-activeElement a[href^="#k"]:after,
-.res-nightmode .RES-keyNav-activeElement a[href^="#l"]:after,
-html:lang(dd) .RES-keyNav-activeElement a[href^="#l"]:after,
-.res-nightmode .RES-keyNav-activeElement a[href^="#m"]:after,
-html:lang(dd) .RES-keyNav-activeElement a[href^="#m"]:after,
-.res-nightmode .RES-keyNav-activeElement a[href^="#n"]:after,
-html:lang(dd) .RES-keyNav-activeElement a[href^="#n"]:after,
-.res-nightmode .RES-keyNav-activeElement a[href^="#o"]:after,
-html:lang(dd) .RES-keyNav-activeElement a[href^="#o"]:after,
-.res-nightmode .RES-keyNav-activeElement a[href^="#p"]:after,
-html:lang(dd) .RES-keyNav-activeElement a[href^="#p"]:after,
-.res-nightmode .RES-keyNav-activeElement a[href^="#q"]:after,
-html:lang(dd) .RES-keyNav-activeElement a[href^="#q"]:after,
-.res-nightmode .RES-keyNav-activeElement a[href^="#r"]:after,
-html:lang(dd) .RES-keyNav-activeElement a[href^="#r"]:after,
-.res-nightmode .RES-keyNav-activeElement a[href^="#s"]:after,
-html:lang(dd) .RES-keyNav-activeElement a[href^="#s"]:after,
-.res-nightmode .RES-keyNav-activeElement a[href^="#t"]:after,
-html:lang(dd) .RES-keyNav-activeElement a[href^="#t"]:after,
-.res-nightmode .RES-keyNav-activeElement a[href^="#u"]:after,
-html:lang(dd) .RES-keyNav-activeElement a[href^="#u"]:after,
-.res-nightmode .RES-keyNav-activeElement a[href^="#v"]:after,
-html:lang(dd) .RES-keyNav-activeElement a[href^="#v"]:after,
-.res-nightmode .RES-keyNav-activeElement a[href^="#w"]:after,
-html:lang(dd) .RES-keyNav-activeElement a[href^="#w"]:after,
-.res-nightmode .RES-keyNav-activeElement a[href^="#x"]:after,
-html:lang(dd) .RES-keyNav-activeElement a[href^="#x"]:after,
-.res-nightmode .RES-keyNav-activeElement a[href^="#y"]:after,
-html:lang(dd) .RES-keyNav-activeElement a[href^="#y"]:after,
-.res-nightmode .RES-keyNav-activeElement a[href^="#z"]:after,
-html:lang(dd) .RES-keyNav-activeElement a[href^="#z"]:after {
-  background-image: url(%%dark-teams-active%%);
-}
 .res-nightmode .drop-choices,
-html[lang="dd"] .drop-choices {
+html:lang(dd) .drop-choices {
   background-color: #fff;
 }
 .res-nightmode .RES-keyNav-activeElement .drop-choices a.title:first-of-type,
-html[lang="dd"] .RES-keyNav-activeElement .drop-choices a.title:first-of-type {
+html:lang(dd) .RES-keyNav-activeElement .drop-choices a.title:first-of-type {
   color: #222!important;
 }
-.res-nightmode .linkflair-red a.title,
 .res-nightmode .linkflair-featured a.title,
-.res-nightmode .linkflair-finishedfeatured a.title,
 .res-nightmode .linkflair-twitchfeatured a.title,
-.res-nightmode .linkflair-red .RES-keyNav-activeElement a.title:first-of-type,
 .res-nightmode .linkflair-featured .RES-keyNav-activeElement a.title:first-of-type,
-.res-nightmode .linkflair-finishedfeatured .RES-keyNav-activeElement a.title:first-of-type,
 .res-nightmode .linkflair-twitchfeatured .RES-keyNav-activeElement a.title:first-of-type {
   color: #f23 !important;
   font-weight: bold;
 }
 .res-nightmode a[href="/spoiler"],
 html:lang(dd) a[href="/spoiler"] {
-  background: none repeat scroll 0 0 #888 !important;
-  color: #888 !important;
+  background: none repeat scroll 0 0 #888!important;
+  color: #888!important;
 }
 .res-nightmode a[href="/spoiler"]:hover,
 html:lang(dd) a[href="/spoiler"]:hover {
-  color: #080808 !important;
+  color: #080808!important;
 }

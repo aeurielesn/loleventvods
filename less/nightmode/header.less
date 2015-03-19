@@ -1,0 +1,59 @@
+@header-spacing: -34px;
+
+.res-nightmode, html:lang(dd) {
+  // Shows/unhides sidebar header nubs
+  body > .content { background-color: transparent !important; }
+
+  // alien
+  #header-img-a {
+    border-right: 1px solid #080808;
+    .bg-pos(0, @header-spacing * 2);
+    &:hover { .bg-pos(0, @header-spacing * 3); }
+  }
+
+  // Header image
+  #header-bottom-left { background: #02021a url(%%header-background%%) no-repeat right top!important; }
+
+  // Moves userbar down below header image
+  #header-bottom-right {
+    background: url(%%gray%%);
+    .bg-pos(0, @header-spacing * 2);
+    a { color: #080808; }
+  }
+
+  .user {
+    color: #080808;
+    .userkarma { border-color: #080808; }
+  }
+  .separator { color: #ccc; }
+
+  // RES-specific userbar tweaks
+  #header-bottom-right.res-navTop {
+    top: 145px;
+    bottom: @header-spacing;
+    line-height: 22px;
+    padding-left: 5px;
+    background: url(%%gray%%) 0px (@header-spacing * 2);
+    border-radius: 0;
+    border-left: 1px solid #080808;
+    #userbarToggle {
+      border-radius: 0;
+      background: url(%%gray%%) 0px (@header-spacing * 2);
+      border-right: 1px dotted #444;
+      border-left: 1px solid #444;
+      line-height: 28px;
+      color: #080808;
+    }
+  }
+
+  .link.last-clicked { overflow: hidden; }
+  
+  // Top announcement.
+  // It works by enabling <h6/> in the sidebar as a announcement banner on top
+  // of the main subreddit content.
+  .titlebox .usertext-body .md h6 {
+    background-position: 0px -68px;
+    color: #000;
+    a { color: #F2E972!important; }
+  }
+}

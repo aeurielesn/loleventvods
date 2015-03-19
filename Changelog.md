@@ -1,3 +1,23 @@
+## 2015-03-19
+
+####Echo
+
+* Edit to frontpage font size
+* Addition of Related Subreddits thumbnails & rules
+* Fix to subreddit subscribe button's width
+* Removal of zip files, unused images, hidden.less, flags.less, shelve.less
+* Added new PSDs, images
+* Misc. file renamings to clarify purpose
+
+**Nightmode changes*
+
+* Removal of tournament header images from nightmode/common.less
+* Spun out nightmode/common.less into nightmode/header.less and nightmode/posts.less to more clearly define which rules apply to which sections
+* Fix for sidebar headings in nightmode/sidebar.less
+* Commented out alternative team spritesheets (since the rules weren't triggering) in nightmode/team.less
+
+
+
 ## 2015-03-17
 
 ####Echo

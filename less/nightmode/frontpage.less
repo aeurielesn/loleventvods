@@ -1,13 +1,5 @@
 .res-nightmode, html:lang(dd) {
-  // Top announcement.
-  // It works by enabling <h6/> in the sidebar as a announcement banner on top
-  // of the main subreddit content.
-
-  .titlebox .usertext-body .md h6 {
-    background-position: 0px -68px;
-    color: #000;
-    a { color: #F2E972!important; }
-  }
+  .link.last-clicked { overflow: hidden; }
   
   .expando-button {
     &.selftext, &.video, &.image, &.selftext {
@@ -40,26 +32,6 @@
       &.expanded:hover { background-position: -25px -255px!important; }
     }
   }
-  
-  //.expando-button.selftext.collapsed { background-position: 0px -80px!important; }
-  //.expando-button.selftext.collapsed:hover { background-position: -25px -80px!important; }
-  //.expando-button.selftext.expanded { background-position: 0px -105px!important; }
-  //.expando-button.selftext.expanded:hover { background-position: -25px -105px!important; }
-  //
-  //.expando-button.video.collapsed { background-position: 0px -80px!important; }
-  //.expando-button.video.collapsed:hover { background-position: -25px -80px!important; }
-  //.expando-button.video.expanded { background-position: 0px -105px!important; }
-  //.expando-button.video.expanded:hover { background-position: -25px -105px!important; }
-  //
-  //.expando-button.image.collapsed { background-position: 0px -80px!important; }
-  //.expando-button.image.collapsed:hover { background-position: -25px -80px!important; }
-  //.expando-button.image.expanded { background-position: 0px -105px!important; }
-  //.expando-button.image.expanded:hover { background-position: -25px -105px!important; }
-  //
-  //.expando-button.selftext.collapsed { background-position: 0px -80px!important; }
-  //.expando-button.selftext.collapsed:hover { background-position: -25px -80px!important; }
-  //.expando-button.selftext.expanded { background-position: 0px -105px!important; }
-  //.expando-button.selftext.expanded:hover { background-position: -25px -105px!important; }
 
   // No flairs on front page
   .listing-page .sitetable .flair { display: none; }
@@ -70,6 +42,7 @@
   // Changes background of the progress indicator (the "click here to load next page" at the end of the frontpage)
   #progressIndicator { background-color: #26293c!important; }
 }
+// Remove alternate post color from RES nightmode
 .res-nightmode {
   .listing-page .sitetable > div:nth-of-type(4n+1) { background-color: #080808; }
 }

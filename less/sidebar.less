@@ -60,7 +60,7 @@
   a[href="http://appsto.re/us/Eh0m1.i"],
   a[href="http://www.eventvods.com/donate"]  {
     display: inline-block;
-    background: url(%%sidebar%%) no-repeat;
+    background: url(%%sidebar-social%%) no-repeat;
     width: 147px;
     height: -@social-height;
     text-indent: 100%;
@@ -167,17 +167,33 @@
 }
 
 /* Related subreddits */
-.side .titlebox blockquote {
+.titlebox blockquote {
+  border: none;
+  padding-left: 0;
+  p {
+    width: 300px;
+    min-height: 100px;
+    margin: 5px 0;
+  }
   a[href="/r/leagueoflegends"],
   a[href="/r/hearthstonevods"],
   a[href="/r/cseventvods"],
-  a[href="/r/SpoilerFreeSc"] {
+  a[href="/r/SpoilerFreeSC"] {
     .hide-text;
-    width: 300px;
-    height: 100px;
-    margin: 5px 0;
+    padding: 0 300px 85px 0;
     background: url(%%related-subreddits%%) top left no-repeat;
-    
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+  a[href="/r/hearthstonevods"] {
+    .bg-pos(0, -100px);
+  }
+  a[href="/r/cseventvods"] {
+    .bg-pos(0, -200px);
+  }
+  a[href="/r/SpoilerFreeSC"] {
+    .bg-pos(0, -300px);
   }
 }
 

@@ -1,16 +1,14 @@
 @teams-width: -36px;
 @teams-height: -20px;
 
-.side, .usertext-body {
-  a[href^="#"]:after {
-    content:"";
-    width: -@teams-width;
-    height: -@teams-height;
-    background: url(%%teams%%) no-repeat scroll -@teams-width -@teams-height transparent;
-    display: inline-block;
-    vertical-align: middle;
-    cursor: default!important;
-  }
+.usertext-body a[href^="#"]:after {
+  content:"";
+  width: -@teams-width;
+  height: -@teams-height;
+  background: url(%%teams%%) no-repeat scroll 0 (@teams-height * 15) transparent;
+  display: inline-block;
+  vertical-align: middle;
+  cursor: default!important;
 }
 
 
