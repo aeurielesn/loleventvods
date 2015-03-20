@@ -8,6 +8,9 @@
 * Removal of zip files, unused images, hidden.less, flags.less, shelve.less
 * Added new PSDs, images
 * Misc. file renamings to clarify purpose
+* Addition of #nje team tag
+* Restructure of sidebar to remove any "&" symbols
+* Added fall-backs to sidebar if stylesheet is disabled
 
 **Nightmode changes*
 

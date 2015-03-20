@@ -96,7 +96,7 @@ a[href^="#"] + .keyNavAnnotation {
   color: white;
   font-family: Optima, Segoe, sans-serif;
   font-weight: normal;
-  display: inline;
+  display: none;
   float: left;
 }
 /* Moves userbar down below header image */
@@ -315,6 +315,7 @@ h6 a {
   width: 325px;
   text-indent: -9999px;
   margin-left: -10px;
+  margin-top: 10px;
 }
 .side a[href="//www.reddit.com/r/loleventvods/"],
 .side a[href="#2themes"],
@@ -469,7 +470,7 @@ h6 a {
 .side .titlebox .md ul:hover li {
   display: block;
 }
-.side .titlebox .md h3 {
+.side .titlebox .md hr {
   display: none;
 }
 .side .titlebox .md a[href$="Compatible"]:after {
@@ -509,6 +510,9 @@ h6 a {
 }
 .titlebox blockquote a[href="/r/SpoilerFreeSC"] {
   background-position: 0 -300px;
+}
+.titlebox blockquote ul {
+  display: none;
 }
 /* Modify submit a new post, hide "submit link" button */
 .submit .morelink {
@@ -825,6 +829,7 @@ a[href="#kta"]:after,
 a[href="#ktb"]:after {
   background-position: -72px -80px !important;
 }
+a[href="#nje"]:after,
 a[href="#najin"]:after {
   background-position: -72px -100px !important;
 }

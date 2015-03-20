@@ -13,6 +13,7 @@
     width: 325px;
     text-indent: -9999px;
     margin-left: -10px;
+    margin-top: 10px;
   }
   
   // Theme Switcher
@@ -160,8 +161,8 @@
       display: block;
     }
   }
-  // Hide &nbsp; divider
-  h3 {
+  // Hide divider
+  hr {
     display: none;
   }
   // Hide team icon from displaying for RES nightmode compatible tag
@@ -198,6 +199,11 @@
   }
   a[href="/r/SpoilerFreeSC"] {
     .bg-pos(0, -300px);
+  }
+  // Fall-back for "Stay connected" and "Related subreddits" sections
+  // in case stylesheet is disabled or doesn't load
+  ul {
+    display: none;
   }
 }
 
