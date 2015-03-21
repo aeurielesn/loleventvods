@@ -1,3 +1,12 @@
+## 2015-03-20
+
+####Echo
+
+* Selector added for Copa Latinoamerica thumbnail
+* Fix for comment rules image position when comment area gets focus
+
+---
+
 ## 2015-03-19
 
 ####Echo
@@ -10,7 +19,7 @@
 * Misc. file renamings to clarify purpose
 * Addition of #nje team tag
 * Restructure of sidebar to remove any "&" symbols
-* Added fall-backs to sidebar if stylesheet is disabled
+* Added fall backs to sidebar if stylesheet is disabled
 
 **Nightmode changes*
 
@@ -19,7 +28,7 @@
 * Fix for sidebar headings in nightmode/sidebar.less
 * Commented out alternative team spritesheets (since the rules weren't triggering) in nightmode/team.less
 
-
+---
 
 ## 2015-03-17
 
@@ -36,7 +45,7 @@
 * Match ticker -> table in sidebar
 * Sidebar promo img
 
-
+---
 
 ## 2015-03-16
 
@@ -51,7 +60,7 @@
 
 * Increase in font size for post titles to match larger thumbnails
 
-
+---
 
 ## 2015-03-13
 

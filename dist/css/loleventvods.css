@@ -275,7 +275,7 @@ h6 a {
   border: 1px solid #ccc;
 }
 .commentarea .usertext textarea:focus {
-  background-position: -504px -104px;
+  background-position: -525px -125px;
 }
 .listing-page {
   /* No flairs on front page */
@@ -724,7 +724,8 @@ a[href="/spoiler"]:hover {
 .thing .thumbnail[href*="nlb"] {
   background-position: -400px -70px;
 }
-.thing .thumbnail[href*="latin_america"] {
+.thing .thumbnail[href*="latin_america"],
+.thing .thumbnail[href*="latinoamerica"] {
   background-position: -400px -140px;
 }
 .thing .thumbnail[href*="hitboxtv"] {
