@@ -1,3 +1,4 @@
+// General mixins
 .box-shadow (@string) {
 	-webkit-box-shadow: @string;
 	-moz-box-shadow:    @string;
@@ -43,3 +44,32 @@
 }
 
 .bg-pos (@x-pos: 0, @y-pos: 0) { background-position: @x-pos @y-pos; }
+
+.hide-text() {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+// Social media mixins
+.social-left-col()  { margin-left: 3px; }
+.social-right-col() { margin-right: 0; }
+.social-top-row()   { margin-top: 6px; }
+
+// Sidebar mixins
+.sidebar-header() {
+  font-family: Arial, Verdana, Helvetica, san-serif;
+  font-size: large;
+  line-height: 26px;
+  border: none;
+  background-color: #222;
+  width: 307px;
+  color: white!important;
+  margin: 0 13px 5px -11px;
+  border-left: 7px solid #ccc;
+  padding: 4px 0 4px 13px;
+  z-index: 100;
+  &:hover {
+    border-left: 7px solid #367588;
+  }
+}

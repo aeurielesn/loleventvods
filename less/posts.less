@@ -1,0 +1,59 @@
+/* Visited links color change */
+.entry {
+  a:visited { 
+    color: #551a8b;
+    &[href*="lol.eventvods.com"] {
+      color: #0079d3!important;
+    }
+  }
+}
+
+/* Red text in posts & disabled stylesheet warning */
+.usertext-body  {
+  h4 {
+    color: #f00;
+    font-weight: bold;
+  }
+  blockquote a[href="#no_stylesheet"] {
+    display: none;
+    &:after {
+      content: none!important;
+    }
+  }
+}
+
+/* Hides video expandos in posts */
+.usertext-body .md {
+  .RESdupeimg, .expando-button.video, 
+  .expando-button.video.collapsed,
+  .expando-button.video.expanded {
+    display: none!important;
+  }
+}
+
+/* Hides downvote arrow on posts only; still accessible on comments*/
+.arrow.down { 
+  visibility: hidden;
+  display: none;
+}
+.comment .arrow.down {
+  visibility: visible;
+  display: block;
+}
+
+/* Resizes font in post titles */
+.thing .title {
+  margin-top: 10px;
+  font-size: 17px!important;
+}
+
+/* Notice in comment box */
+.commentarea {
+  position: static;
+  .usertext textarea {
+		background-image: url(%%comment-rules%%);
+		background-repeat: no-repeat;
+		border: 1px solid #ccc;
+		&:focus { .bg-pos(-525px, -125px); }
+  }
+}
