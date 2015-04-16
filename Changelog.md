@@ -1,3 +1,25 @@
+## 2015-04-14
+
+####Simon
+
+* AlphaDraft Challenger League (ADCL) thumbnail added
+* Announcement linkflair added
+* Fixed left and bottom borders for tables
+* Fixed post/wiki max-width issue (put in common.less)
+
+####Echo
+
+* Updated header icon links
+* Added & integraded ADCL team icons
+* Fixed announcement bar link color
+* Added team icons to wiki pages
+* Added RES video expando hiding for wiki pages (in posts.less)
+* Fixed disabled submission button's background-image to use url(%%gray%%) instead of Reddit's default
+* Fixed spoiler link color correction for nightmode/dark theme (nightmode/posts.less)
+* Fixed thumbnail display issue for IEM (was matching with thumbnail for LoL Masters)
+
+---
+
 ## 2015-03-20
 
 ####Echo

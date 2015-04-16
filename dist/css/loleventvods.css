@@ -29,6 +29,14 @@ a[href^="#"] + .keyNavAnnotation {
   border-right: 1px solid #888;
   padding: 4px 8px;
 }
+.md table td:first-child,
+.md table th:first-child {
+  border-left: 1px solid #888;
+  padding: 4px 8px;
+}
+.md table tr:last-child {
+  border-bottom: 1px solid #888;
+}
 .md table tr:nth-of-type(odd) {
   background-color: #fff;
   color: #363636;
@@ -46,6 +54,9 @@ a[href^="#"] + .keyNavAnnotation {
   white-space: nowrap;
   background-color: #444;
   color: whitesmoke;
+}
+.wiki-page .wiki-page-content .wiki.md {
+  max-width: none!important;
 }
 /* alien */
 #header-img-a {
@@ -147,10 +158,10 @@ a[href^="#"] + .keyNavAnnotation {
 }
 /* Tournament icons in header */
 .side a[href="/r/LoLeventVoDs/comments/2ywjmx/"],
-.side a[href="/r/LoLeventVoDs/comments/2x8ymq/"],
+.side a[href="/r/LoLeventVoDs/comments/31fbus/"],
 .side a[href="/r/LoLeventVoDs/comments/2x1sek/"],
-.side a[href="/r/LoLeventVoDs/comments/2xckeu/"],
-.side a[href="/r/LoLeventVoDs/comments/2xhgar/"] {
+.side a[href="/r/LoLeventVoDs/comments/32jzcr/"],
+.side a[href="/r/LoLeventVoDs/comments/31gbqv/"] {
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
@@ -169,12 +180,12 @@ a[href^="#"] + .keyNavAnnotation {
 .side a[href="/r/LoLeventVoDs/comments/2ywjmx/"]:hover {
   background-position: 0 -150px;
 }
-.side a[href="/r/LoLeventVoDs/comments/2x8ymq/"] {
+.side a[href="/r/LoLeventVoDs/comments/31fbus/"] {
   right: 520px;
   width: 140px;
   background-position: -250px 0;
 }
-.side a[href="/r/LoLeventVoDs/comments/2x8ymq/"]:hover {
+.side a[href="/r/LoLeventVoDs/comments/31fbus/"]:hover {
   background-position: -250px -150px;
 }
 .side a[href="/r/LoLeventVoDs/comments/2x1sek/"] {
@@ -185,20 +196,20 @@ a[href^="#"] + .keyNavAnnotation {
 .side a[href="/r/LoLeventVoDs/comments/2x1sek/"]:hover {
   background-position: -380px -150px;
 }
-.side a[href="/r/LoLeventVoDs/comments/2xckeu/"] {
+.side a[href="/r/LoLeventVoDs/comments/32jzcr/"] {
   right: 175px;
   width: 130px;
   background-position: -580px 0;
 }
-.side a[href="/r/LoLeventVoDs/comments/2xckeu/"]:hover {
+.side a[href="/r/LoLeventVoDs/comments/32jzcr/"]:hover {
   background-position: -580px -150px;
 }
-.side a[href="/r/LoLeventVoDs/comments/2xhgar/"] {
+.side a[href="/r/LoLeventVoDs/comments/31gbqv/"] {
   right: 0;
   width: 140px;
   background-position: -710px 0;
 }
-.side a[href="/r/LoLeventVoDs/comments/2xhgar/"]:hover {
+.side a[href="/r/LoLeventVoDs/comments/31gbqv/"]:hover {
   background-position: -710px -150px;
 }
 /* Top announcement.
@@ -224,7 +235,7 @@ a[href^="#"] + .keyNavAnnotation {
   line-height: 26px;
 }
 h6 a {
-  color: #F2E972;
+  color: #F2E972!important;
 }
 /* Visited links color change */
 .entry a:visited {
@@ -232,6 +243,11 @@ h6 a {
 }
 .entry a:visited[href*="lol.eventvods.com"] {
   color: #0079d3!important;
+}
+.md,
+.res-nightmode .md,
+html:lang(dd) .md {
+  max-width: 66em!important;
 }
 /* Red text in posts & disabled stylesheet warning */
 .usertext-body h4 {
@@ -244,11 +260,15 @@ h6 a {
 .usertext-body blockquote a[href="#no_stylesheet"]:after {
   content: none!important;
 }
-/* Hides video expandos in posts */
+/* Hides video expandos in posts and wiki */
 .usertext-body .md .RESdupeimg,
+.wiki-page-content .md .RESdupeimg,
 .usertext-body .md .expando-button.video,
+.wiki-page-content .md .expando-button.video,
 .usertext-body .md .expando-button.video.collapsed,
-.usertext-body .md .expando-button.video.expanded {
+.wiki-page-content .md .expando-button.video.collapsed,
+.usertext-body .md .expando-button.video.expanded,
+.wiki-page-content .md .expando-button.video.expanded {
   display: none!important;
 }
 /* Hides downvote arrow on posts only; still accessible on comments*/
@@ -523,7 +543,7 @@ h6 a {
   border-radius: 5px;
 }
 .submit .morelink:hover {
-  background-position: 0px -36px;
+  background: url(%%gray%%) 0px -36px;
 }
 .submit .morelink a {
   content: '';
@@ -672,7 +692,7 @@ a[href="/spoiler"]:hover {
 .thing .thumbnail[href*="ios_"] {
   background-position: -100px -280px;
 }
-.thing .thumbnail[href*="masters"] {
+.thing .thumbnail[href*="lol_masters"] {
   background-position: -100px -350px;
 }
 .thing .thumbnail[href*="best_zed"] {
@@ -737,6 +757,10 @@ a[href="/spoiler"]:hover {
 .thing .thumbnail[href*="poro_king"] {
   background-position: -400px -350px;
 }
+.thing .thumbnail[href*="alphadraft"] {
+  background-position: -500px 0px;
+}
+.wiki a[href^="#"]:after,
 .usertext-body a[href^="#"]:after {
   content: "";
   width: 36px;
@@ -745,6 +769,9 @@ a[href="/spoiler"]:hover {
   display: inline-block;
   vertical-align: middle;
   cursor: default!important;
+}
+.wiki .toc a[href^="#"]:after {
+  display: none;
 }
 /* LCS EU */
 a[href="#cw"]:after {
@@ -993,128 +1020,150 @@ a[href="#png"]:after {
 a[href="#unt"]:after {
   background-position: -216px -100px !important;
 }
+/* AlphaDraft Challenger League */
+a[href="#crb"]:after {
+  background-position: -252px 0 !important;
+}
+a[href="#crw"]:after {
+  background-position: -252px -20px !important;
+}
+a[href="#drm"]:after {
+  background-position: -252px -40px !important;
+}
+a[href="#elg"]:after {
+  background-position: -252px -60px !important;
+}
+a[href="#ffg"]:after {
+  background-position: -252px -80px !important;
+}
+a[href="#int"]:after {
+  background-position: -252px -100px !important;
+}
+a[href="#syn"]:after {
+  background-position: -252px -120px !important;
+}
 /* Worlds */
 a[href="#dp"]:after {
-  background-position: -252px 0 !important;
+  background-position: -288px 0 !important;
 }
 a[href="#bears"]:after,
 a[href="#gam"]:after {
-  background-position: -252px -20px !important;
+  background-position: -288px -20px !important;
 }
 a[href="#gg"]:after,
 a[href="#gaming"]:after {
-  background-position: -252px -40px !important;
+  background-position: -288px -40px !important;
 }
 a[href="#ryl"]:after,
 a[href="#royal"]:after {
-  background-position: -252px -60px !important;
+  background-position: -288px -60px !important;
 }
 /* Old */
 a[href="#ahqF"]:after {
-  background-position: -288px 0 !important;
+  background-position: -324px 0 !important;
 }
 a[href="#all"]:after {
-  background-position: -288px -20px !important;
+  background-position: -324px -20px !important;
 }
 a[href="#atn"]:after {
-  background-position: -288px -40px !important;
+  background-position: -324px -40px !important;
 }
 a[href="#blc"]:after,
 a[href="#bm"]:after {
-  background-position: -288px -60px !important;
+  background-position: -324px -60px !important;
 }
 a[href="#cjb"]:after {
-  background-position: -288px -80px !important;
+  background-position: -324px -80px !important;
 }
 a[href="#cjf"]:after {
-  background-position: -288px -100px !important;
+  background-position: -324px -100px !important;
 }
 a[href="#col"]:after,
 a[href="#colA"]:after {
-  background-position: -288px -120px !important;
+  background-position: -324px -120px !important;
 }
 a[href="#crs"]:after,
 a[href="#crsA"]:after {
-  background-position: -288px -140px !important;
+  background-position: -324px -140px !important;
 }
 a[href="#eg"]:after {
-  background-position: -288px -160px !important;
+  background-position: -324px -160px !important;
 }
 a[href="#hka"]:after {
-  background-position: -288px -180px !important;
+  background-position: -324px -180px !important;
 }
 a[href="#ipt"]:after {
-  background-position: -288px -200px !important;
+  background-position: -324px -200px !important;
 }
 a[href="#isr"]:after,
 a[href="#igr"]:after {
-  background-position: -288px -220px !important;
+  background-position: -324px -220px !important;
 }
 a[href="#ld"]:after {
-  background-position: -288px -240px !important;
+  background-position: -324px -240px !important;
 }
 a[href="#lmq"]:after {
-  background-position: -288px -260px !important;
+  background-position: -324px -260px !important;
 }
 a[href="#machi"]:after {
-  background-position: -288px -280px !important;
+  background-position: -324px -280px !important;
 }
 a[href="#midas"]:after {
-  background-position: -288px -300px !important;
+  background-position: -324px -300px !important;
 }
 a[href="#millenium"]:after,
 a[href="#mil"]:after {
-  background-position: -324px 0 !important;
+  background-position: -360px 0 !important;
 }
 a[href="#mkz"]:after {
-  background-position: -324px -20px !important;
+  background-position: -360px -20px !important;
 }
 a[href="#mle"]:after {
-  background-position: -324px -40px !important;
+  background-position: -360px -40px !important;
 }
 a[href="#nip"]:after,
 a[href="#nip2"]:after {
-  background-position: -324px -60px !important;
+  background-position: -360px -60px !important;
 }
 a[href="#nsw"]:after,
 a[href="#njbs"]:after {
-  background-position: -324px -80px !important;
+  background-position: -360px -80px !important;
 }
 a[href="#nsh"]:after,
 a[href="#njws"]:after {
-  background-position: -324px -100px !important;
+  background-position: -360px -100px !important;
 }
 a[href="#pe"]:after {
-  background-position: -324px -120px !important;
+  background-position: -360px -120px !important;
 }
 a[href="#prime"]:after {
-  background-position: -324px -140px !important;
+  background-position: -360px -140px !important;
 }
 a[href="#sgs"]:after {
-  background-position: -324px -160px !important;
+  background-position: -360px -160px !important;
 }
 a[href="#shc"]:after {
-  background-position: -324px -180px !important;
+  background-position: -360px -180px !important;
 }
 a[href="#tps"]:after {
-  background-position: -324px -200px !important;
+  background-position: -360px -200px !important;
 }
 a[href="#ves"]:after {
-  background-position: -324px -220px !important;
+  background-position: -360px -220px !important;
 }
 a[href="#vul"]:after,
 a[href="#xdg"]:after {
-  background-position: -324px -240px !important;
+  background-position: -360px -240px !important;
 }
 a[href="#wea"]:after {
-  background-position: -324px -260px !important;
+  background-position: -360px -260px !important;
 }
 a[href="#xs"]:after,
 a[href="#storm"]:after {
-  background-position: -324px -280px !important;
+  background-position: -360px -280px !important;
 }
 a[href="#yg"]:after {
-  background-position: -324px -300px !important;
+  background-position: -360px -300px !important;
 }
 /* Allstars */
 a[href="#america"]:after,
@@ -1131,19 +1180,19 @@ a[href="#sea"]:after {
   cursor: default!important;
 }
 a[href="#america"]:after {
-  background-position: -360px 0px !important;
+  background-position: -396px 0px !important;
 }
 a[href="#china"]:after {
-  background-position: -360px -11px !important;
+  background-position: -396px -11px !important;
 }
 a[href="#europe"]:after {
-  background-position: -360px -22px !important;
+  background-position: -396px -22px !important;
 }
 a[href="#korea"]:after {
-  background-position: -360px -33px !important;
+  background-position: -396px -33px !important;
 }
 a[href="#sea"]:after {
-  background-position: -360px -44px !important;
+  background-position: -396px -44px !important;
 }
 /* Users */
 .flair {
@@ -1266,6 +1315,11 @@ a[href="#sea"]:after {
 .linkflair-featured a.title,
 .linkflair-twitchfeatured a.title {
   color: red!important;
+}
+.linkflair-announce a.title {
+  color: red!important;
+  text-transform: uppercase;
+  text-shadow: 0px 0px 20px blue;
 }
 .flairoptionpane ul {
   width: 300px!important;
@@ -1879,7 +1933,7 @@ html:lang(dd) .entry a {
 }
 .res-nightmode .entry a:visited[href*="lol.eventvods.com"],
 html:lang(dd) .entry a:visited[href*="lol.eventvods.com"] {
-  color: #007dc3;
+  color: #8ad!important;
 }
 .res-nightmode .RES-keyNav-activeElement .entry a:visited[href*="lol.eventvods.com"],
 html:lang(dd) .RES-keyNav-activeElement .entry a:visited[href*="lol.eventvods.com"] {
