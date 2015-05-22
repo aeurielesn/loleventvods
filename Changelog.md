@@ -1,3 +1,14 @@
+## 2015-05-21
+
+####Echo
+
+* Addition of team icons & rules for Summer 2015
+* Removal of old team icons & rules (including Lemondogs, XDG, Manila Eagles, among others)
+* Fix for spoiler-prevention rules in nightmode
+* Increased visibility for important parts of comment rules (i.e. no spoilers)
+
+---
+
 ## 2015-04-14
 
 ####Simon

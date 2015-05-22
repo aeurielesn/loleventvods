@@ -792,7 +792,7 @@ a[href="#gmb"]:after {
 a[href="#h2k"]:after {
   background-position: 0 -100px !important;
 }
-a[href="#mym"]:after {
+a[href="#og"]:after {
   background-position: 0 -120px !important;
 }
 a[href="#roc"]:after {
@@ -811,103 +811,94 @@ a[href="#c9"]:after {
 a[href="#clg"]:after {
   background-position: -36px -20px !important;
 }
-a[href="#cst"]:after {
+a[href="#dig"]:after {
   background-position: -36px -40px !important;
 }
-a[href="#dig"]:after {
+a[href="#gv"]:after {
   background-position: -36px -60px !important;
 }
-a[href="#gv"]:after {
+a[href="#nme"]:after {
   background-position: -36px -80px !important;
 }
-a[href="#tl"]:after {
+a[href="#tdk"]:after {
   background-position: -36px -100px !important;
 }
-a[href="#t8"]:after {
+a[href="#tl"]:after {
   background-position: -36px -120px !important;
 }
-a[href="#tip"]:after {
+a[href="#t8"]:after {
   background-position: -36px -140px !important;
 }
-a[href="#tsm"]:after {
+a[href="#tip"]:after {
   background-position: -36px -160px !important;
 }
-a[href="#wfx"]:after {
+a[href="#tsm"]:after {
   background-position: -36px -180px !important;
 }
 /* OGN/LCK */
-a[href="#cj"]:after {
+a[href="#anc"]:after {
   background-position: -72px 0 !important;
 }
-a[href="#ge"]:after,
-a[href="#get"]:after {
+a[href="#cj"]:after {
   background-position: -72px -20px !important;
 }
 a[href="#im"]:after {
   background-position: -72px -40px !important;
 }
-a[href="#jinair"]:after,
-a[href="#jag"]:after,
-a[href="#jas"]:after,
-a[href="#jaf"]:after {
+a[href="#jag"]:after {
   background-position: -72px -60px !important;
 }
-a[href="#kt"]:after,
-a[href="#kta"]:after,
-a[href="#ktb"]:after {
+a[href="#koo"]:after,
+a[href="#ge"]:after,
+a[href="#get"]:after {
   background-position: -72px -80px !important;
 }
-a[href="#nje"]:after,
-a[href="#najin"]:after {
+a[href="#kt"]:after {
   background-position: -72px -100px !important;
 }
-a[href="#ozone"]:after,
-a[href="#sso"]:after,
-a[href="#ssw"]:after,
-a[href="#ssb"]:after,
-a[href="#ssg"]:after {
+a[href="#nje"]:after {
   background-position: -72px -120px !important;
 }
-a[href="#skt"]:after {
+a[href="#ssg"]:after {
   background-position: -72px -140px !important;
+}
+a[href="#sbenu"]:after {
+  background-position: -72px -160px !important;
+}
+a[href="#skt"]:after {
+  background-position: -72px -180px !important;
 }
 /* LPL */
 a[href="#edg"]:after {
   background-position: -108px 0 !important;
 }
-a[href="#ep"]:after,
-a[href="#ephk"]:after {
+a[href="#ig"]:after {
   background-position: -108px -20px !important;
 }
-a[href="#gt"]:after,
-a[href="#gtf"]:after {
+a[href="#lgd"]:after {
   background-position: -108px -40px !important;
 }
-a[href="#ig"]:after {
+a[href="#m3"]:after {
   background-position: -108px -60px !important;
 }
-a[href="#lgd"]:after {
+a[href="#omg"]:after {
   background-position: -108px -80px !important;
 }
-a[href="#m3"]:after {
+a[href="#qg"]:after {
   background-position: -108px -100px !important;
 }
-a[href="#omg"]:after {
+a[href="#rngu"]:after {
   background-position: -108px -120px !important;
 }
-a[href="#sh"]:after,
-a[href="#shr"]:after {
+a[href="#snk"]:after {
   background-position: -108px -140px !important;
 }
-a[href="#tk"]:after,
 a[href="#kng"]:after {
   background-position: -108px -160px !important;
 }
-a[href="#ts"]:after,
-a[href="#snk"]:after {
+a[href="#upg"]:after {
   background-position: -108px -180px !important;
 }
-a[href="#vg"]:after,
 a[href="#vcg"]:after {
   background-position: -108px -200px !important;
 }
@@ -970,35 +961,28 @@ a[href="#wgd"]:after {
 a[href="#ahq"]:after {
   background-position: -180px 0 !important;
 }
-a[href="#dly"]:after {
+a[href="#as"]:after {
   background-position: -180px -20px !important;
-}
-a[href="#dor"]:after {
-  background-position: -180px -40px !important;
 }
 a[href="#hke"]:after,
 a[href="#hkes"]:after {
-  background-position: -180px -60px !important;
+  background-position: -180px -40px !important;
 }
 a[href="#lgs"]:after,
 a[href="#logs"]:after {
+  background-position: -180px -60px !important;
+}
+a[href="#mac"]:after {
   background-position: -180px -80px !important;
 }
-a[href="#mc"]:after {
+a[href="#mse"]:after {
   background-position: -180px -100px !important;
 }
-a[href="#mse"]:after {
+a[href="#tpa"]:after {
   background-position: -180px -120px !important;
 }
-a[href="#ngu"]:after {
+a[href="#yfw"]:after {
   background-position: -180px -140px !important;
-}
-a[href="#tpa"]:after {
-  background-position: -180px -160px !important;
-}
-a[href="#yfw"]:after,
-a[href="#yoefw"]:after {
-  background-position: -180px -180px !important;
 }
 /* CBLOL (Brazil) */
 a[href="#awp"]:after {
@@ -1043,20 +1027,23 @@ a[href="#syn"]:after {
   background-position: -252px -120px !important;
 }
 /* Worlds */
-a[href="#dp"]:after {
+a[href="#bjk"]:after {
   background-position: -288px 0 !important;
+}
+a[href="#dp"]:after {
+  background-position: -288px -20px !important;
 }
 a[href="#bears"]:after,
 a[href="#gam"]:after {
-  background-position: -288px -20px !important;
+  background-position: -288px -40px !important;
 }
 a[href="#gg"]:after,
 a[href="#gaming"]:after {
-  background-position: -288px -40px !important;
+  background-position: -288px -60px !important;
 }
 a[href="#ryl"]:after,
 a[href="#royal"]:after {
-  background-position: -288px -60px !important;
+  background-position: -288px -80px !important;
 }
 /* Old */
 a[href="#ahqF"]:after {
@@ -1065,17 +1052,17 @@ a[href="#ahqF"]:after {
 a[href="#all"]:after {
   background-position: -324px -20px !important;
 }
-a[href="#atn"]:after {
-  background-position: -324px -40px !important;
-}
 a[href="#blc"]:after,
 a[href="#bm"]:after {
-  background-position: -324px -60px !important;
+  background-position: -324px -40px !important;
 }
 a[href="#cjb"]:after {
-  background-position: -324px -80px !important;
+  background-position: -324px -60px !important;
 }
 a[href="#cjf"]:after {
+  background-position: -324px -80px !important;
+}
+a[href="#cst"]:after {
   background-position: -324px -100px !important;
 }
 a[href="#col"]:after,
@@ -1086,43 +1073,44 @@ a[href="#crs"]:after,
 a[href="#crsA"]:after {
   background-position: -324px -140px !important;
 }
-a[href="#eg"]:after {
+a[href="#ep"]:after,
+a[href="#ephk"]:after {
   background-position: -324px -160px !important;
 }
-a[href="#hka"]:after {
+a[href="#eg"]:after {
   background-position: -324px -180px !important;
 }
-a[href="#ipt"]:after {
+a[href="#gt"]:after,
+a[href="#gtf"]:after {
   background-position: -324px -200px !important;
+}
+a[href="#hka"]:after {
+  background-position: -324px -220px !important;
+}
+a[href="#ipt"]:after {
+  background-position: -324px -240px !important;
 }
 a[href="#isr"]:after,
 a[href="#igr"]:after {
-  background-position: -324px -220px !important;
-}
-a[href="#ld"]:after {
-  background-position: -324px -240px !important;
-}
-a[href="#lmq"]:after {
   background-position: -324px -260px !important;
 }
-a[href="#machi"]:after {
+a[href="#lmq"]:after {
   background-position: -324px -280px !important;
 }
-a[href="#midas"]:after {
+a[href="#machi"]:after {
   background-position: -324px -300px !important;
+}
+a[href="#mym"]:after {
+  background-position: -360px 0 !important;
+}
+a[href="#midas"]:after {
+  background-position: -360px -20px !important;
 }
 a[href="#millenium"]:after,
 a[href="#mil"]:after {
-  background-position: -360px 0 !important;
-}
-a[href="#mkz"]:after {
-  background-position: -360px -20px !important;
-}
-a[href="#mle"]:after {
   background-position: -360px -40px !important;
 }
-a[href="#nip"]:after,
-a[href="#nip2"]:after {
+a[href="#mkz"]:after {
   background-position: -360px -60px !important;
 }
 a[href="#nsw"]:after,
@@ -1133,37 +1121,33 @@ a[href="#nsh"]:after,
 a[href="#njws"]:after {
   background-position: -360px -100px !important;
 }
-a[href="#pe"]:after {
+a[href="#prime"]:after {
   background-position: -360px -120px !important;
 }
-a[href="#prime"]:after {
+a[href="#sgs"]:after {
   background-position: -360px -140px !important;
 }
-a[href="#sgs"]:after {
+a[href="#shc"]:after {
   background-position: -360px -160px !important;
 }
-a[href="#shc"]:after {
+a[href="#shr"]:after {
   background-position: -360px -180px !important;
 }
 a[href="#tps"]:after {
   background-position: -360px -200px !important;
 }
-a[href="#ves"]:after {
+a[href="#wea"]:after {
   background-position: -360px -220px !important;
 }
-a[href="#vul"]:after,
-a[href="#xdg"]:after {
+a[href="#wfx"]:after {
   background-position: -360px -240px !important;
-}
-a[href="#wea"]:after {
-  background-position: -360px -260px !important;
 }
 a[href="#xs"]:after,
 a[href="#storm"]:after {
-  background-position: -360px -280px !important;
+  background-position: -360px -260px !important;
 }
 a[href="#yg"]:after {
-  background-position: -360px -300px !important;
+  background-position: -360px -280px !important;
 }
 /* Allstars */
 a[href="#america"]:after,
