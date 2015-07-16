@@ -1,13 +1,13 @@
 {
   "name": "loleventvods",
   "description": "A collection of CSS customizations for LoLeventVoDs' subreddit.",
-  "version": "1.0.0",
+  "version": "3.0.3",
   "repository": {
     "type": "git",
-    "url": "https://github.com/aeurielesn/loleventvods.git"
+    "url": "https://github.com/simon--poole/loleventvods.git"
   },
   "bugs": {
-    "url": "https://github.com/aeurielesn/loleventvods/issues"
+    "url": "https://github.com/simon--poole/loleventvods/issues"
   },
   "devDependencies": {
     "grunt": "~0.4.2",

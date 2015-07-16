@@ -158,10 +158,10 @@ a[href^="#"] + .keyNavAnnotation {
 }
 /* Tournament icons in header */
 .side a[href="/r/LoLeventVoDs/comments/2ywjmx/"],
-.side a[href="/r/LoLeventVoDs/comments/31fbus/"],
-.side a[href="/r/LoLeventVoDs/comments/2x1sek/"],
-.side a[href="/r/LoLeventVoDs/comments/32jzcr/"],
-.side a[href="/r/LoLeventVoDs/comments/31gbqv/"] {
+.side a[href="/r/LoLeventVoDs/comments/3cp9zu/"],
+.side a[href="/r/LoLeventVoDs/comments/3bqjgw/"],
+.side a[href="/r/LoLeventVoDs/comments/3byhni/"],
+.side a[href="/r/LoLeventVoDs/comments/3cxq5u/"] {
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
@@ -180,36 +180,36 @@ a[href^="#"] + .keyNavAnnotation {
 .side a[href="/r/LoLeventVoDs/comments/2ywjmx/"]:hover {
   background-position: 0 -150px;
 }
-.side a[href="/r/LoLeventVoDs/comments/31fbus/"] {
+.side a[href="/r/LoLeventVoDs/comments/3cp9zu/"] {
   right: 520px;
   width: 140px;
   background-position: -250px 0;
 }
-.side a[href="/r/LoLeventVoDs/comments/31fbus/"]:hover {
+.side a[href="/r/LoLeventVoDs/comments/3cp9zu/"]:hover {
   background-position: -250px -150px;
 }
-.side a[href="/r/LoLeventVoDs/comments/2x1sek/"] {
+.side a[href="/r/LoLeventVoDs/comments/3bqjgw/"] {
   right: 320px;
   width: 200px;
   background-position: -380px 0;
 }
-.side a[href="/r/LoLeventVoDs/comments/2x1sek/"]:hover {
+.side a[href="/r/LoLeventVoDs/comments/3bqjgw/"]:hover {
   background-position: -380px -150px;
 }
-.side a[href="/r/LoLeventVoDs/comments/32jzcr/"] {
+.side a[href="/r/LoLeventVoDs/comments/3byhni/"] {
   right: 175px;
   width: 130px;
   background-position: -580px 0;
 }
-.side a[href="/r/LoLeventVoDs/comments/32jzcr/"]:hover {
+.side a[href="/r/LoLeventVoDs/comments/3byhni/"]:hover {
   background-position: -580px -150px;
 }
-.side a[href="/r/LoLeventVoDs/comments/31gbqv/"] {
+.side a[href="/r/LoLeventVoDs/comments/3cxq5u/"] {
   right: 0;
   width: 140px;
   background-position: -710px 0;
 }
-.side a[href="/r/LoLeventVoDs/comments/31gbqv/"]:hover {
+.side a[href="/r/LoLeventVoDs/comments/3cxq5u/"]:hover {
   background-position: -710px -150px;
 }
 /* Top announcement.
@@ -1917,10 +1917,10 @@ html:lang(dd) .entry a {
 }
 .res-nightmode .entry a:visited[href*="lol.eventvods.com"],
 html:lang(dd) .entry a:visited[href*="lol.eventvods.com"] {
-  color: #8ad!important;
+  color: #007dc3!important;
 }
-.res-nightmode .RES-keyNav-activeElement .entry a:visited[href*="lol.eventvods.com"],
-html:lang(dd) .RES-keyNav-activeElement .entry a:visited[href*="lol.eventvods.com"] {
+.res-nightmode .RES-keyNav-activeElement .usertext .md a:visited[href*="lol.eventvods.com"],
+html:lang(dd) .RES-keyNav-activeElement .usertext .md a:visited[href*="lol.eventvods.com"] {
   color: #8ad!important;
 }
 .res-nightmode .usertext-body h4,
