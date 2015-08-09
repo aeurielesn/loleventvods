@@ -7,6 +7,11 @@ var less = require('gulp-less');
 var cssmin = require('gulp-cssmin');
 var rename = require('gulp-rename');
 var cssbeautify = require('gulp-cssbeautify');
+var gulpif = require('gulp-if');
+var sprity = require('sprity');
+var sprityless = require('sprity-less');
+var lwip = require('gulp-lwip');
+var gutil = require('gulp-util');
 
 //Default task - watches
 gulp.task('default', ['build']);
@@ -17,6 +22,31 @@ gulp.task('build', ['minify-css']);
 gulp.task('clean', function(){
 	return gulp.src('dist/')
         .pipe(clean());
+});
+
+gulp.task('clean-images', function(){
+	return gulp.src('./teams/dist')
+        .pipe(clean());
+});
+gulp.task('resize', ['clean-images'], function(){
+	return gulp.src(["./teams/**/*.png", "!./teams/dist/*.png"])
+		.pipe(lwip
+			.resize(48, 20)
+			.exportAs("png")
+		)
+		.pipe(gulp.dest("./teams/dist"));
+});
+
+gulp.task('sprites', ['resize'], function () {
+  return sprity.src({
+    src: './teams/dist/**/*.png',
+    style: './less/team-sprites.less',
+    name: 'teams',
+    processor: 'less',
+	margin: 0,
+  })
+   .on('error', gutil.log)
+  .pipe(gulpif('*.png', gulp.dest('./images/'), gulp.dest('./less/')))
 });
 
 gulp.task('less-build', ['clean'], function() {

@@ -1,15 +1,17 @@
-@teams-width: -36px;
-@teams-height: -20px;
+@import (reference) "team-sprites.less";
+
 
 .wiki a[href^="#"]:after,
 .usertext-body a[href^="#"]:after {
   content:"";
-  width: -@teams-width;
-  height: -@teams-height;
-  background: url(%%teams%%) no-repeat scroll 0 (@teams-height * 15) transparent;
+  width: 48px;
+  height: 20px;
+  background: url(%%teams%%) no-repeat transparent;
   display: inline-block;
   vertical-align: middle;
   cursor: default!important;
+  .sprite-position(@default);
+  text-align: center;
 }
 .wiki .toc a[href^="#"]:after {
   display: none;
@@ -17,181 +19,100 @@
 
 
 /* LCS EU */
-a[href="#cw"]:after  { .bg-pos!important; }
-a[href="#el"]:after  { .bg-pos(0, @teams-height)!important; }
-a[href="#fnc"]:after { .bg-pos(0, @teams-height * 2)!important; }
-a[href="#gia"]:after { .bg-pos(0, @teams-height * 3)!important; }
-a[href="#gmb"]:after { .bg-pos(0, @teams-height * 4)!important; }
-a[href="#h2k"]:after { .bg-pos(0, @teams-height * 5)!important; }
-a[href="#og"]:after { .bg-pos(0, @teams-height * 6)!important; }
-a[href="#roc"]:after { .bg-pos(0, @teams-height * 7)!important; }
-a[href="#sk"]:after  { .bg-pos(0, @teams-height * 8)!important; }
-a[href="#uol"]:after { .bg-pos(0, @teams-height * 9)!important; }
+a[href="#cw"]:after  { .sprite-position(@eu-cw)!important; }
+a[href="#el"]:after  { .sprite-position(@eu-el)!important; }
+a[href="#fnatic"]:after,
+a[href="#fnc"]:after { .sprite-position(@eu-fnc)!important; }
+a[href="#gia"]:after { .sprite-position(@eu-gia)!important; }
+a[href="#gmb"]:after { .sprite-position(@eu-gmb)!important; }
+a[href="#h2k"]:after { .sprite-position(@eu-h2k)!important; }
+a[href="#og"]:after { .sprite-position(@eu-og)!important; }
+a[href="#roc"]:after { .sprite-position(@eu-roc)!important; }
+a[href="#sk"]:after  { .sprite-position(@eu-sk)!important; }
+a[href="#uol"]:after { .sprite-position(@eu-uol)!important; }
 
 
 /* LCS NA */
-a[href="#c9"]:after  { .bg-pos(@teams-width, 0)!important; }
-a[href="#clg"]:after { .bg-pos(@teams-width, @teams-height)!important; }
-a[href="#dig"]:after { .bg-pos(@teams-width, @teams-height * 2)!important; }
-a[href="#gv"]:after  { .bg-pos(@teams-width, @teams-height * 3)!important; }
-a[href="#nme"]:after { .bg-pos(@teams-width, @teams-height * 4)!important; }
-a[href="#tdk"]:after { .bg-pos(@teams-width, @teams-height * 5)!important; }
-a[href="#tl"]:after  { .bg-pos(@teams-width, @teams-height * 6)!important; }
-a[href="#t8"]:after  { .bg-pos(@teams-width, @teams-height * 7)!important; }
-a[href="#tip"]:after { .bg-pos(@teams-width, @teams-height * 8)!important; }
-a[href="#tsm"]:after { .bg-pos(@teams-width, @teams-height * 9)!important; }
+a[href="#c9"]:after  { .sprite-position(@na-c9)!important; }
+a[href="#clg"]:after { .sprite-position(@na-clg)!important; }
+a[href="#dig"]:after { .sprite-position(@na-dig)!important; }
+a[href="#gv"]:after  { .sprite-position(@na-gv)!important; }
+a[href="#nme"]:after { .sprite-position(@na-nme)!important; }
+a[href="#tdk"]:after { .sprite-position(@na-tdk)!important; }
+a[href="#tl"]:after  { .sprite-position(@na-tl)!important; }
+a[href="#t8"]:after  { .sprite-position(@na-t8)!important; }
+a[href="#tip"]:after { .sprite-position(@na-tip)!important; }
+a[href="#tsm"]:after { .sprite-position(@na-tsm)!important; }
 
 
 /* OGN/LCK */
-a[href="#anc"]:after                      { .bg-pos(@teams-width * 2, 0)!important; }
-a[href="#cj"]:after                       { .bg-pos(@teams-width * 2, @teams-height)!important; }
-a[href="#im"]:after                       { .bg-pos(@teams-width * 2, @teams-height * 2)!important; }
-a[href="#jag"]:after                      { .bg-pos(@teams-width * 2, @teams-height * 3)!important; }
+a[href="#anc"]:after                      { .sprite-position(@kr-anc)!important; }
+a[href="#cj"]:after                       { .sprite-position(@kr-cj)!important; }
+a[href="#im"]:after , a[href="#im"]:after { .sprite-position(@kr-lz)!important; }
+a[href="#jag"]:after                      { .sprite-position(@kr-jag)!important; }
 a[href="#koo"]:after,
-a[href="#ge"]:after, a[href="#get"]:after { .bg-pos(@teams-width * 2, @teams-height * 4)!important; }
-a[href="#kt"]:after                       { .bg-pos(@teams-width * 2, @teams-height * 5)!important; }
-a[href="#nje"]:after                      { .bg-pos(@teams-width * 2, @teams-height * 6)!important; }
-a[href="#ssg"]:after                      { .bg-pos(@teams-width * 2, @teams-height * 7)!important; }
+a[href="#ge"]:after, a[href="#get"]:after { .sprite-position(@kr-koo)!important; }
+a[href="#kt"]:after                       { .sprite-position(@kr-kt)!important; }
+a[href="#nje"]:after, a[href="#njf"]:after{ .sprite-position(@kr-njf)!important; }
+a[href="#ssg"]:after, a[href="#ssb"]:after, 
+a[href="#ssw"]:after, 					  { .sprite-position(@kr-ssg)!important; }
 a[href="#sbenu"]:after, 
-a[href="#sbe"]:after                      { .bg-pos(@teams-width * 2, @teams-height * 8)!important; }
-a[href="#skt"]:after                      { .bg-pos(@teams-width * 2, @teams-height * 9)!important; }
+a[href="#sbe"]:after                      { .sprite-position(@kr-sbe)!important; }
+a[href="#skt"]:after                      { .sprite-position(@kr-skt)!important; }
 
 
 /* LPL */
-a[href="#edg"]:after  { .bg-pos(@teams-width * 3, 0)!important; }
-a[href="#ig"]:after   { .bg-pos(@teams-width * 3, @teams-height)!important; }
-a[href="#lgd"]:after  { .bg-pos(@teams-width * 3, @teams-height * 2)!important; }
-a[href="#m3"]:after   { .bg-pos(@teams-width * 3, @teams-height * 3)!important; }
-a[href="#omg"]:after  { .bg-pos(@teams-width * 3, @teams-height * 4)!important; }
-a[href="#qg"]:after   { .bg-pos(@teams-width * 3, @teams-height * 5)!important; }
+a[href="#edg"]:after  { .sprite-position(@ch-edg)!important; }
+a[href="#ig"]:after   { .sprite-position(@ch-ig)!important; }
+a[href="#lgd"]:after  { .sprite-position(@ch-lgd)!important; }
+a[href="#m3"]:after   { .sprite-position(@ch-m3)!important; }
+a[href="#omg"]:after  { .sprite-position(@ch-omg)!important; }
+a[href="#qg"]:after   { .sprite-position(@ch-qg)!important; }
 a[href="#rngu"]:after,
-a[href="#rng"]:after { .bg-pos(@teams-width * 3, @teams-height * 6)!important; }
+a[href="#rng"]:after  { .sprite-position(@ch-rng)!important; }
 a[href="#snk"]:after,
-a[href="#ss"]:after  { .bg-pos(@teams-width * 3, @teams-height * 7)!important; }
-a[href="#kng"]:after  { .bg-pos(@teams-width * 3, @teams-height * 8)!important; }
-a[href="#upg"]:after  { .bg-pos(@teams-width * 3, @teams-height * 9)!important; }
+a[href="#ss"]:after   { .sprite-position(@ch-snk)!important; }
+a[href="#kng"]:after  { .sprite-position(@ch-kng)!important; }
+a[href="#upg"]:after  { .sprite-position(@ch-upg)!important; }
 a[href="#vcg"]:after,
-a[href="#vg"]:after  { .bg-pos(@teams-width * 3, @teams-height * 10)!important; }
-a[href="#we"]:after   { .bg-pos(@teams-width * 3, @teams-height * 11)!important; }
-
-
-/* GPL */
-a[href="#269"]:after    { .bg-pos(@teams-width * 4, 0)!important; }
-a[href="#apu"]:after    { .bg-pos(@teams-width * 4, @teams-height)!important; }
-a[href="#asf"]:after    { .bg-pos(@teams-width * 4, @teams-height * 2)!important; }
-a[href="#bkt"]:after    { .bg-pos(@teams-width * 4, @teams-height * 3)!important; }
-a[href="#fl"]:after     { .bg-pos(@teams-width * 4, @teams-height * 4)!important; }
-a[href="#ifin"]:after   { .bg-pos(@teams-width * 4, @teams-height * 5)!important; }
-a[href="#is"]:after,                       
-a[href="#isl"]:after,                      
-a[href="#igl"]:after    { .bg-pos(@teams-width * 4, @teams-height * 6)!important; }
-a[href="#j2g"]:after    { .bg-pos(@teams-width * 4, @teams-height * 7)!important; }
-a[href="#klh"]:after    { .bg-pos(@teams-width * 4, @teams-height * 8)!important; }
-a[href="#kth"]:after    { .bg-pos(@teams-width * 4, @teams-height * 9)!important; }
-a[href="#min"]:after,
-a[href="#msk"]:after    { .bg-pos(@teams-width * 4, @teams-height * 10)!important; }
-a[href="#saj"]:after    { .bg-pos(@teams-width * 4, @teams-height * 11)!important; }
-a[href="#sf5"]:after    { .bg-pos(@teams-width * 4, @teams-height * 12)!important; }
-a[href="#tfr"]:after    { .bg-pos(@teams-width * 4, @teams-height * 13)!important; }
-a[href="#war"]:after    { .bg-pos(@teams-width * 4, @teams-height * 14)!important; }
-a[href="#wgd"]:after    { .bg-pos(@teams-width * 4, @teams-height * 15)!important; }
-
+a[href="#vg"]:after  { .sprite-position(@ch-vg)!important; }
+a[href="#we"]:after   { .sprite-position(@ch-we)!important; }
 
 /* LMS */
-a[href="#ahq"]:after  { .bg-pos(@teams-width * 5, 0)!important; }
-a[href="#as"]:after   { .bg-pos(@teams-width * 5, @teams-height)!important; }
+a[href="#ahq"]:after  { .sprite-position(@tw-ahq)!important; }
+a[href="#as"]:after   { .sprite-position(@tw-as)!important; }
 a[href="#hke"]:after,
-a[href="#hkes"]:after { .bg-pos(@teams-width * 5, @teams-height * 2)!important; }
+a[href="#hkes"]:after { .sprite-position(@tw-hkes)!important; }
 a[href="#lgs"]:after,
-a[href="#logs"]:after { .bg-pos(@teams-width * 5, @teams-height * 3)!important; }
-a[href="#mac"]:after  { .bg-pos(@teams-width * 5, @teams-height * 4)!important; }
-a[href="#mse"]:after  { .bg-pos(@teams-width * 5, @teams-height * 5)!important; }
-a[href="#tpa"]:after  { .bg-pos(@teams-width * 5, @teams-height * 6)!important; }
-a[href="#yfw"]:after  { .bg-pos(@teams-width * 5, @teams-height * 7)!important; }
+a[href="#logs"]:after { .sprite-position(@tw-lgs)!important; }
+a[href="#mac"]:after  { .sprite-position(@tw-mac)!important; }
+a[href="#mse"]:after  { .sprite-position(@tw-mse)!important; }
+a[href="#tpa"]:after  { .sprite-position(@tw-tpa)!important; }
+a[href="#yfw"]:after  { .sprite-position(@tw-yfw)!important; }
 
 
 /* CBLOL (Brazil) */
-a[href="#awp"]:after                        { .bg-pos(@teams-width * 6, 0)!important; }
-a[href="#cnb"]:after                        { .bg-pos(@teams-width * 6, @teams-height)!important; }
-a[href="#kbm"]:after                        { .bg-pos(@teams-width * 6, @teams-height * 2)!important; }
-a[href="#kst"]:after                        { .bg-pos(@teams-width * 6, @teams-height * 3)!important; }
-a[href="#pain"]:after, a[href="#png"]:after { .bg-pos(@teams-width * 6, @teams-height * 4)!important; }
-a[href="#unt"]:after                        { .bg-pos(@teams-width * 6, @teams-height * 5)!important; }
-
-
-/* AlphaDraft Challenger League */
-a[href="#crb"]:after { .bg-pos(@teams-width * 7, 0)!important; }
-a[href="#crw"]:after { .bg-pos(@teams-width * 7, @teams-height)!important; }
-a[href="#drm"]:after { .bg-pos(@teams-width * 7, @teams-height * 2)!important; }
-a[href="#elg"]:after { .bg-pos(@teams-width * 7, @teams-height * 3)!important; }
-a[href="#ffg"]:after { .bg-pos(@teams-width * 7, @teams-height * 4)!important; }
-a[href="#int"]:after { .bg-pos(@teams-width * 7, @teams-height * 5)!important; }
-a[href="#syn"]:after { .bg-pos(@teams-width * 7, @teams-height * 6)!important; }
+a[href="#cnb"]:after 	{ .sprite-position(@br-cnb)!important; }
+a[href="#g3x"]:after    { .sprite-position(@br-g3x)!important; }
+a[href="#itz"]:after    { .sprite-position(@br-itz)!important; }
+a[href="#itz-r"]:after,
+a[href="#red"]:after	{ .sprite-position(@br-itz-r)!important; }
+a[href="#kbb"]:after,
+a[href="#kbm-b"]:after	{ .sprite-position(@br-kbm-b)!important; }
+a[href="#kbm"]:after,
+a[href="#kbm-o"]:after	{ .sprite-position(@br-kbm-o)!important; }
+a[href="#keyd"]:after   { .sprite-position(@br-keyd)!important; }
+a[href="#pain"]:after,
+a[href="#png"]:after	{ .sprite-position(@br-pain)!important; }
 
 
 /* Worlds */
-a[href="#bjk"]:after    { .bg-pos(@teams-width * 8, 0)!important; }
-a[href="#dp"]:after     { .bg-pos(@teams-width * 8, @teams-height)!important; }
+a[href="#bjk"]:after    { .sprite-position(@s3-bjk)!important; }
+a[href="#dp"]:after     { .sprite-position(@s3-dp)!important; }
 a[href="#bears"]:after,
-a[href="#gam"]:after    { .bg-pos(@teams-width * 8, @teams-height * 2)!important; }
+a[href="#gam"]:after    { .sprite-position(@s3-gam)!important; }
 a[href="#gg"]:after,
-a[href="#gaming"]:after { .bg-pos(@teams-width * 8, @teams-height * 3)!important; }
-a[href="#ryl"]:after,
-a[href="#royal"]:after  { .bg-pos(@teams-width * 8, @teams-height * 4)!important; }
-
-
-/* Old */
-a[href="#ahqF"]:after                            { .bg-pos(@teams-width * 9, 0)!important; }
-a[href="#all"]:after                             { .bg-pos(@teams-width * 9, @teams-height)!important; }
-a[href="#blc"]:after, a[href="#bm"]:after        { .bg-pos(@teams-width * 9, @teams-height * 2)!important; }
-a[href="#cjb"]:after                             { .bg-pos(@teams-width * 9, @teams-height * 3)!important; }
-a[href="#cjf"]:after                             { .bg-pos(@teams-width * 9, @teams-height * 4)!important; }
-a[href="#cst"]:after                             { .bg-pos(@teams-width * 9, @teams-height * 5)!important; }
-a[href="#col"]:after, a[href="#colA"]:after      { .bg-pos(@teams-width * 9, @teams-height * 6)!important; }
-a[href="#crs"]:after, a[href="#crsA"]:after      { .bg-pos(@teams-width * 9, @teams-height * 7)!important; }
-a[href="#ep"]:after, a[href="#ephk"]:after       { .bg-pos(@teams-width * 9, @teams-height * 8)!important; }
-a[href="#eg"]:after                              { .bg-pos(@teams-width * 9, @teams-height * 9)!important; }
-a[href="#gt"]:after, a[href="#gtf"]:after        { .bg-pos(@teams-width * 9, @teams-height * 10)!important; }
-a[href="#hka"]:after                             { .bg-pos(@teams-width * 9, @teams-height * 11)!important; }
-a[href="#ipt"]:after                             { .bg-pos(@teams-width * 9, @teams-height * 12)!important; }
-a[href="#isr"]:after, a[href="#igr"]:after       { .bg-pos(@teams-width * 9, @teams-height * 13)!important; }
-a[href="#lmq"]:after                             { .bg-pos(@teams-width * 9, @teams-height * 14)!important; }
-a[href="#machi"]:after                           { .bg-pos(@teams-width * 9, @teams-height * 15)!important; }
-
-a[href="#mym"]:after                             { .bg-pos(@teams-width * 10, 0)!important; }
-a[href="#midas"]:after                           { .bg-pos(@teams-width * 10, @teams-height)!important; }
-a[href="#millenium"]:after, a[href="#mil"]:after { .bg-pos(@teams-width * 10, @teams-height * 2)!important; }
-a[href="#mkz"]:after                             { .bg-pos(@teams-width * 10, @teams-height * 3)!important; }
-a[href="#nsw"]:after, a[href="#njbs"]:after      { .bg-pos(@teams-width * 10, @teams-height * 4)!important; }
-a[href="#nsh"]:after, a[href="#njws"]:after      { .bg-pos(@teams-width * 10, @teams-height * 5)!important; }
-a[href="#prime"]:after                           { .bg-pos(@teams-width * 10, @teams-height * 6)!important; }
-a[href="#sgs"]:after                             { .bg-pos(@teams-width * 10, @teams-height * 7)!important; }
-a[href="#shc"]:after                             { .bg-pos(@teams-width * 10, @teams-height * 8)!important; }
-a[href="#shr"]:after                             { .bg-pos(@teams-width * 10, @teams-height * 9)!important; }
-a[href="#tps"]:after                             { .bg-pos(@teams-width * 10, @teams-height * 10)!important; }  
-a[href="#wea"]:after                             { .bg-pos(@teams-width * 10, @teams-height * 11)!important; }
-a[href="#wfx"]:after                             { .bg-pos(@teams-width * 10, @teams-height * 12)!important; }
-a[href="#xs"]:after, a[href="#storm"]:after      { .bg-pos(@teams-width * 10, @teams-height * 13)!important; }
-a[href="#yg"]:after                              { .bg-pos(@teams-width * 10, @teams-height * 14)!important; }
-
-
-/* Allstars */
-a[href="#america"]:after,
-a[href="#china"]:after,
-a[href="#europe"]:after,
-a[href="#korea"]:after,
-a[href="#sea"]:after {
-  content: "";
-  width: 16px;
-  height: 11px;
-  background: url(%%teams%%) no-repeat scroll 16px 11px transparent;
-  display: inline-block;
-  vertical-align: 1%;
-  cursor: default!important;
-}
-
-a[href="#america"]:after { .bg-pos(@teams-width * 11, 0px)!important; }
-a[href="#china"]:after   { .bg-pos(@teams-width * 11, -11px)!important; }
-a[href="#europe"]:after  { .bg-pos(@teams-width * 11, -22px)!important; }
-a[href="#korea"]:after   { .bg-pos(@teams-width * 11, -33px)!important; }
-a[href="#sea"]:after     { .bg-pos(@teams-width * 11, -44px)!important; }
+a[href="#gaming"]:after { .sprite-position(@s3-gg)!important; }
+a[href="#msk"]:after    { .sprite-position(@s3-msk)!important; }
+a[href="#ryl"]:after, a[href="#sh"]:after, a[href="#shrc"]:after,
+a[href="#royal"]:after  { .sprite-position(@s3-ryl)!important; }

@@ -1,0 +1,87 @@
+@kr-cj: -0px -0px 48px 20px;
+@default: -0px -20px 48px 20px;
+@br-g3x: -0px -40px 48px 20px;
+@br-itz-r: -0px -60px 48px 20px;
+@br-itz: -0px -80px 48px 20px;
+@br-kbm-b: -0px -100px 48px 20px;
+@br-kbm-o: -0px -120px 48px 20px;
+@br-keyd: -0px -140px 48px 20px;
+@br-pain: -0px -160px 48px 20px;
+@ch-edg: -0px -180px 48px 20px;
+@ch-ig: -0px -200px 48px 20px;
+@ch-kng: -0px -220px 48px 20px;
+@ch-lgd: -0px -240px 48px 20px;
+@ch-m3: -0px -260px 48px 20px;
+@ch-omg: -0px -280px 48px 20px;
+@ch-qg: -0px -300px 48px 20px;
+@ch-rng: -0px -320px 48px 20px;
+@ch-snk: -0px -340px 48px 20px;
+@ch-upg: -0px -360px 48px 20px;
+@ch-vg: -0px -380px 48px 20px;
+@ch-we: -0px -400px 48px 20px;
+@eu-cw: -0px -420px 48px 20px;
+@eu-el: -0px -440px 48px 20px;
+@eu-fnc: -0px -460px 48px 20px;
+@eu-gia: -0px -480px 48px 20px;
+@eu-gmb: -0px -500px 48px 20px;
+@eu-h2k: -0px -520px 48px 20px;
+@eu-og: -0px -540px 48px 20px;
+@eu-roc: -0px -560px 48px 20px;
+@eu-sk: -0px -580px 48px 20px;
+@eu-uol: -0px -600px 48px 20px;
+@kr-anc: -0px -620px 48px 20px;
+@br-cnb: -0px -640px 48px 20px;
+@kr-jag: -0px -660px 48px 20px;
+@kr-koo: -0px -680px 48px 20px;
+@kr-kt: -0px -700px 48px 20px;
+@kr-lz: -0px -720px 48px 20px;
+@kr-njf: -0px -740px 48px 20px;
+@kr-sbe: -0px -760px 48px 20px;
+@kr-skt: -0px -780px 48px 20px;
+@kr-ssg: -0px -800px 48px 20px;
+@na-c9: -0px -820px 48px 20px;
+@na-clg: -0px -840px 48px 20px;
+@na-dig: -0px -860px 48px 20px;
+@na-gv: -0px -880px 48px 20px;
+@na-nme: -0px -900px 48px 20px;
+@na-t8: -0px -920px 48px 20px;
+@na-tdk: -0px -940px 48px 20px;
+@na-tip: -0px -960px 48px 20px;
+@na-tl: -0px -980px 48px 20px;
+@na-tsm: -0px -1000px 48px 20px;
+@s3-bjk: -0px -1020px 48px 20px;
+@s3-dp: -0px -1040px 48px 20px;
+@s3-gam: -0px -1060px 48px 20px;
+@s3-gg: -0px -1080px 48px 20px;
+@s3-msk: -0px -1100px 48px 20px;
+@s3-ryl: -0px -1120px 48px 20px;
+@tw-ahq: -0px -1140px 48px 20px;
+@tw-as: -0px -1160px 48px 20px;
+@tw-hkes: -0px -1180px 48px 20px;
+@tw-lgs: -0px -1200px 48px 20px;
+@tw-mac: -0px -1220px 48px 20px;
+@tw-mse: -0px -1240px 48px 20px;
+@tw-tpa: -0px -1260px 48px 20px;
+@tw-yfw: -0px -1280px 48px 20px;
+.sprite-width(@sprite) {
+  width: extract(@sprite, 3);
+}
+.sprite-height(@sprite) {
+  height: extract(@sprite, 4);
+}
+.sprite-position(@sprite) {
+  @sprite-offset-x: extract(@sprite, 1);
+  @sprite-offset-y: extract(@sprite, 2);
+  background-position: @sprite-offset-x @sprite-offset-y;
+}
+.sprite(@sprite, @display: block) {
+  .sprite-position(@sprite);
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: @display;
+  .sprite-width(@sprite);
+  .sprite-height(@sprite);
+}
+.icon {
+  background-image: url("../images/teams.png");
+}

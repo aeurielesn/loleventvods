@@ -17,5 +17,11 @@
     "gulp-less": "^3.0.3",
     "gulp-rename": "^1.2.2",
     "gulp-util": "^3.0.6"
+  },
+  "dependencies": {
+    "gulp-if": "^1.2.5",
+    "gulp-lwip": "^0.1.0",
+    "sprity": "^1.0.7",
+    "sprity-less": "^1.0.3"
   }
 }
