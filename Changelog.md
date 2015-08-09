@@ -1,3 +1,11 @@
+## 2015-07-23
+
+####Simon
+* Swapped from Grunt compilation to Gulp compilation.
+* Swapped Vici Gaming icon from #vcg to #vg
+
+---
+
 ## 2015-05-21
 
 ####Echo

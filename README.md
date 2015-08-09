@@ -4,18 +4,22 @@ This repository contains a collection of CSS customizations for [LoLeventVoDs][L
 
 This project overall structure is heavily influenced by [Bootstrap][twbs].
 
-## Compiling
+## Downloading
 
-The complete CSS can be compiled using [Grunt][Grunt]. Install [Grunt's command line interface][grunt-cli] and run one of the following commands.
+To download the respository, simply clone the repository.
 
-### Compiling CSS
+	git clone https://github.com/simon--poole/loleventvods
 
-    $ grunt
+## Setting up dev environment
 
-It will compile the CSS into a clean `dist` folder. It uses [Less][Less].
+To set up your environment to make changes or build the source from scratch, you'll need to install `Gulp` and a few prerequisites.
+This can be done quickly using
 
-  [twbs]: https://github.com/twbs/bootstrap
-  [LoLeventVoDs]: http://www.reddit.com/r/LoLeventVoDs/
-  [Less]: http://lesscss.org/
-  [Grunt]: http://gruntjs.com/
-  [grunt-cli]: http://gruntjs.com/getting-started#installing-the-cli
+	npm install --dev
+
+## Building the source
+Building the sourcce is extremely simple - simply run
+
+	gulp build
+	
+The resulting css files can be found in **dist/**.

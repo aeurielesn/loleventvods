@@ -1,19 +1,21 @@
 {
   "name": "loleventvods",
   "description": "A collection of CSS customizations for LoLeventVoDs' subreddit.",
-  "version": "1.0.0",
+  "version": "3.0.4",
   "repository": {
     "type": "git",
-    "url": "https://github.com/aeurielesn/loleventvods.git"
+    "url": "https://github.com/simon--poole/loleventvods.git"
   },
   "bugs": {
-    "url": "https://github.com/aeurielesn/loleventvods/issues"
+    "url": "https://github.com/simon--poole/loleventvods/issues"
   },
   "devDependencies": {
-    "grunt": "~0.4.2",
-    "grunt-contrib-clean": "~0.5.0",
-    "grunt-contrib-cssmin": "^0.12.1",
-    "grunt-contrib-less": "~0.9.0",
-    "load-grunt-tasks": "~0.3.0"
+    "gulp": "^3.9.0",
+    "gulp-clean": "^0.3.1",
+    "gulp-cssbeautify": "^0.1.3",
+    "gulp-cssmin": "^0.1.7",
+    "gulp-less": "^3.0.3",
+    "gulp-rename": "^1.2.2",
+    "gulp-util": "^3.0.6"
   }
 }
