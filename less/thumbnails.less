@@ -1,54 +1,54 @@
-@thumb-width: -100px;
-@thumb-height: -70px;
+@import (reference) "thumb-sprites.less";
 
 .self .thumbnail {
-  background: url(%%thumbnails%%) no-repeat 0 -210px;
-  width: -@thumb-width;
-  height: -@thumb-height;
+  background: url(%%thumbnails%%) no-repeat;
+  width: 100px;
+  height: 70px;
   padding: 0;
+  .sprite-position(@lev)!important;
 }
 .thing .thumbnail {
   &[href*="s3_china"],
   &[href*="s3_korea"],
   &[href*="s3_sea"],
-  &[href*="3_world_championship"]  { .bg-pos; }
-  &[href*="eu_chall"]              { .bg-pos(0, @thumb-height); }
-  &[href*="solo_king"]             { .bg-pos(0, @thumb-height * 2); }
+  &[href*="3_world_championship"]  { .sprite-position(@s3)!important; }
+  &[href*="eu_chall"]              { .sprite-position(@eucs)!important; }
+  &[href*="solo_king"]             { .sprite-position(@soloking)!important; }
   &[href*="iem"],
-  &[href*="intel_extreme_masters"] { .bg-pos(0, @thumb-height * 4); }
-  &[href*="lpl"]                   { .bg-pos(0, @thumb-height * 5); }
+  &[href*="intel_extreme_masters"] { .sprite-position(@iem)!important; }
+  &[href*="lpl"]                   { .sprite-position(@lpl)!important; }
   &[href*="regional_qualifiers"],
-  &[href*="4_world_championship"]  { .bg-pos(@thumb-width, 0); }
-  &[href*="ljl"]                   { .bg-pos(@thumb-width, @thumb-height); }
-  &[href*="allstar_paris"]         { .bg-pos(@thumb-width, @thumb-height * 2); }
-  &[href*="esportspedia"]          { .bg-pos(@thumb-width, @thumb-height * 3); }
-  &[href*="ios_"]                  { .bg-pos(@thumb-width, @thumb-height * 4); }
-  &[href*="lol_masters"]           { .bg-pos(@thumb-width, @thumb-height * 5); }
-  &[href*="best_zed"]              { .bg-pos(@thumb-width * 2, 0); }
+  &[href*="4_world_championship"]  { .sprite-position(@s4)!important; }
+  &[href*="ljl"]                   { .sprite-position(@ljl)!important; }
+  &[href*="allstar_paris"]         { .sprite-position(@allstar)!important; }
+  &[href*="esportspedia"]          { .sprite-position(@esportspedia)!important;; }
+  &[href*="ios_"]                  { .sprite-position(@ios)!important; }
+  &[href*="lol_masters"]           { .sprite-position(@masters)!important; }
+  &[href*="best_zed"]              { .sprite-position(@bestzedna)!important; }
   &[href*="na_lcs"],
   &[href*="lcs_na"],
   &[href*="lcs_north"],
-  &[href*="american_lcs"]          { .bg-pos(@thumb-width * 2, @thumb-height); }
-  &[href*="android"]               { .bg-pos(@thumb-width * 2, @thumb-height * 2); }
-  &[href*="wildcard"]              { .bg-pos(@thumb-width * 2, @thumb-height * 3); }
-  &[href*="lms"]                   { .bg-pos(@thumb-width * 2, @thumb-height * 4); }
-  &[href*="ogn_"]                  { .bg-pos(@thumb-width * 2, @thumb-height * 5); }
-  &[href*="dreamhack"]             { .bg-pos(@thumb-width * 3, 0); }
-  &[href*="na_chall"]              { .bg-pos(@thumb-width * 3, @thumb-height); }
+  &[href*="american_lcs"]          { .sprite-position(@nalcs)!important; }
+  &[href*="android"]               { .sprite-position(@android)!important; }
+  &[href*="wildcard"]              { .sprite-position(@wildcard)!important; }
+  &[href*="lms"]                   { .sprite-position(@lms)!important; }
+  &[href*="ogn_"]                  { .sprite-position(@ogn)!important; }
+  &[href*="dreamhack"]             { .sprite-position(@dh)!important; }
+  &[href*="na_chall"]              { .sprite-position(@nalcs)!important; }
   &[href*="lck"],
-  &[href*="champions_korea"]       { .bg-pos(@thumb-width * 3, @thumb-height * 2); }
-  &[href*="gpl"]                   { .bg-pos(@thumb-width * 3, @thumb-height * 3); }
+  &[href*="champions_korea"]       { .sprite-position(@lck)!important; }
+  &[href*="gpl"]                   { .sprite-position(@gpl)!important; }
   &[href*="cblol"],
-  &[href*="brazilian_cir"]         { .bg-pos(@thumb-width * 3, @thumb-height * 4); }
-  &[href*="oceanic_"]              { .bg-pos(@thumb-width * 3, @thumb-height * 5); }
+  &[href*="brazilian_cir"]         { .sprite-position(@cblol)!important; }
+  &[href*="oceanic_"]              { .sprite-position(@opl)!important; }
   &[href*="lcs_eu"],
   &[href*="eu_lcs"],
-  &[href*="european_lcs"]          { .bg-pos(@thumb-width * 4, 0); }
-  &[href*="nlb"]                   { .bg-pos(@thumb-width * 4, @thumb-height); }
+  &[href*="european_lcs"]          { .sprite-position(@eulcs)!important; }
+  &[href*="nlb"]                   { .sprite-position(@nlb)!important; }
   &[href*="latin_america"],
-  &[href*="latinoamerica"]         { .bg-pos(@thumb-width * 4, @thumb-height * 2); }
-  &[href*="hitboxtv"]              { .bg-pos(@thumb-width * 4, @thumb-height * 3); }
-  &[href*="lone_star_clash"]       { .bg-pos(@thumb-width * 4, @thumb-height * 4); }
-  &[href*="poro_king"]             { .bg-pos(@thumb-width * 4, @thumb-height * 5); }
-  &[href*="alphadraft"]             { .bg-pos(@thumb-width * 5, @thumb-height * 0); }           
+  &[href*="latinoamerica"]         { .sprite-position(@latam)!important; }
+  &[href*="hitboxtv"]              { .sprite-position(@faceoff)!important; }
+  &[href*="lone_star_clash"]       { .sprite-position(@lonestar)!important; }
+  &[href*="poro_king"]             { .sprite-position(@poro)!important; }
+  &[href*="alphadraft"]            { .sprite-position(@adcl)!important; }           
 }

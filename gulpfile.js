@@ -24,11 +24,11 @@ gulp.task('clean', function(){
         .pipe(clean());
 });
 
-gulp.task('clean-images', function(){
+gulp.task('clean-team-icons', function(){
 	return gulp.src('./teams/dist')
         .pipe(clean());
 });
-gulp.task('resize', ['clean-images'], function(){
+gulp.task('resize-team-icons', ['clean-team-icons'], function(){
 	return gulp.src(["./teams/**/*.png", "!./teams/dist/*.png"])
 		.pipe(lwip
 			.resize(48, 20)
@@ -37,7 +37,7 @@ gulp.task('resize', ['clean-images'], function(){
 		.pipe(gulp.dest("./teams/dist"));
 });
 
-gulp.task('sprites', ['resize'], function () {
+gulp.task('generate-team-icons', ['resize-team-icons'], function () {
   return sprity.src({
     src: './teams/dist/**/*.png',
     style: './less/team-sprites.less',
@@ -48,6 +48,20 @@ gulp.task('sprites', ['resize'], function () {
    .on('error', gutil.log)
   .pipe(gulpif('*.png', gulp.dest('./images/'), gulp.dest('./less/')))
 });
+
+gulp.task('generate-thumbnails',function () {
+  return sprity.src({
+    src: './thumbs/*.png',
+    style: './less/thumb-sprites.less',
+    name: 'thumbnails',
+    processor: 'less',
+	margin: 0,
+  })
+   .on('error', gutil.log)
+  .pipe(gulpif('*.png', gulp.dest('./images/'), gulp.dest('./less/')))
+});
+
+gulp.task('sprites', ['generate-team-icons', 'generate-thumbnails']);
 
 gulp.task('less-build', ['clean'], function() {
     return gulp.src('less/loleventvods.less')
