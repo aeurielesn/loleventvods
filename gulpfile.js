@@ -49,7 +49,7 @@ gulp.task('generate-team-icons', ['resize-team-icons'], function () {
   .pipe(gulpif('*.png', gulp.dest('./images/'), gulp.dest('./less/')))
 });
 
-gulp.task('generate-thumbnails',function () {
+gulp.task('generate-thumbnails', ['generate-team-icons'], function () {
   return sprity.src({
     src: './thumbs/*.png',
     style: './less/thumb-sprites.less',
@@ -61,7 +61,7 @@ gulp.task('generate-thumbnails',function () {
   .pipe(gulpif('*.png', gulp.dest('./images/'), gulp.dest('./less/')))
 });
 
-gulp.task('sprites', ['generate-team-icons', 'generate-thumbnails']);
+gulp.task('sprites', ['generate-thumbnails']);
 
 gulp.task('less-build', ['clean'], function() {
     return gulp.src('less/loleventvods.less')
