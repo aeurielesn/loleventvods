@@ -21,6 +21,43 @@
 		  margin: 5px 5px 0px 2px!important;
 	  }
   }
+		
+  .md {
+        ul:first-of-type {
+            li:not(:first-of-type) {
+                text-align: center;
+				& > a {
+                    display: inline-block;
+					cursor: default!important;
+				}
+                & > a[href="#spoiler"],
+				& > a[href="#team"] {
+                    min-width: 45px;
+                    text-align: center;
+					padding: 0 3px;
+					font-weight: bolder;
+					&:after { display: none!important;}
+                }
+				& > a[href="#team"] {
+					color: black;
+				}
+                & > a[href$="#title"] {
+                    width: 100%;
+                    text-align: left;
+                    color: black;
+					font-weight: bolder;
+					&:after { display: none!important;}
+                }
+                & > a[href$="#countdown"] {
+                    width: 100%;
+                    text-align: left;
+                    color: black;
+					&:after { display: none!important;}
+                }
+            }
+        }
+  }
+	
   
   // Contest thumbnail/announcement
   .md a[href$="#sidebar_img"] {
