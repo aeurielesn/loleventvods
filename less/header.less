@@ -35,12 +35,16 @@
   height: 126px;
   span.pagename a {
     display: block;
-    height: 125px;
-    width: 228px;
-    margin-left: 10px;
-    margin-top: 10px;
+    height: 100px;
+    width: 458px;
+    margin-left: 30px;
+	margin-top: 13px;
     background: url(%%logo%%) no-repeat scroll 0 0 transparent;
     font-size: 0!important;
+	overflow: hidden;
+	&:hover {
+		.bg-pos(0, -100px)
+	}
   }
 }
 .redditname a {
@@ -102,7 +106,24 @@
   overflow: hidden;
 }
 
-/* Tournament icons in header */
+/* Worlds tournament icon */
+
+.side {
+	a[href*="#worlds"] {
+		.hide-text;
+		background: url(%%header-events%%) no-repeat top left;
+		height: 125px;
+		display: block;
+		position: absolute;
+		top: 19px;
+		z-index: 9999;
+		&:hover {
+		  .bg-pos(0, -125px);
+		}
+	}
+}
+
+/* Standard Tournament icons in header
 @header-icons-height: -150px;
 .side {
   // In order, header icons for the following tourneys, left to right
