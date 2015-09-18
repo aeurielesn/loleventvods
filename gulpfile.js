@@ -12,6 +12,7 @@ var sprity = require('sprity');
 var sprityless = require('sprity-less');
 var lwip = require('gulp-lwip');
 var gutil = require('gulp-util');
+var imop = require('gulp-image-optimization');
 
 //Default task - watches
 gulp.task('default', ['build']);
@@ -61,7 +62,15 @@ gulp.task('generate-thumbnails', ['generate-team-icons'], function () {
   .pipe(gulpif('*.png', gulp.dest('./images/'), gulp.dest('./less/')))
 });
 
-gulp.task('sprites', ['generate-thumbnails']);
+gulp.task('sprites', ['generate-thumbnails'], function () {
+	return gulp.src(['images/thumbnails.png','images/teams.png'])
+		.pipe(imop({
+        optimizationLevel: 7,
+        progressive: true,
+        interlaced: true
+		}))
+		.pipe(gulp.dest('images/'))
+});
 
 gulp.task('less-build', ['clean'], function() {
     return gulp.src('less/loleventvods.less')
