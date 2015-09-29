@@ -1,109 +1,115 @@
 /* alien */
+
 #header-img-a {
-  position: absolute;
-  content: "";
-  display: inline-block;
-  top: 145px;
-  left: 0px;
-  width: 35px;
-  height: 34px;
-  border-right: 1px solid #ccc;
-  background: url(%%alien%%)  no-repeat;
-  &:hover { 
-    .bg-pos(0, -34px);
-  }
+	position: absolute;
+	content: "";
+	display: inline-block;
+	top: 145px;
+	left: 0px;
+	width: 35px;
+	height: 34px;
+	border-right: 1px solid #ccc;
+	background: url(%%alien%%) no-repeat;
+	&:hover {
+		.bg-pos(0, -34px);
+	}
 }
 #header-img {
-  display: none;
+	display: none;
 }
 .titlebox form {
-  position: static;
+	position: static;
 }
 
 /* This lowers the links to create space */
+
 .content {
-  padding-top: 2px;
-  margin-top: 41px;
+	padding-top: 2px;
+	margin-top: 41px;
 }
 
 /* Header image */
+
 #header {
-  border: none;
+	border: none;
 }
 #header-bottom-left {
-  background: #02021a url(%%header-background%%) no-repeat right top;
-  height: 126px;
-  span.pagename a {
-    display: block;
-    height: 100px;
-    width: 458px;
-    margin-left: 30px;
-	margin-top: 13px;
-    background: url(%%logo%%) no-repeat scroll 0 0 transparent;
-    font-size: 0!important;
-	overflow: hidden;
-	&:hover {
-		.bg-pos(0, -100px)
+	background: #02021a url(%%header-background%%) no-repeat right top;
+	height: 126px;
+	span.pagename a {
+		display: block;
+		height: 100px;
+		width: 458px;
+		margin-left: 30px;
+		margin-top: 13px;
+		background: url(%%logo%%) no-repeat scroll 0 0 transparent;
+		font-size: 0!important;
+		overflow: hidden;
+		&:hover {
+			.bg-pos(0, -100px)
+		}
 	}
-  }
 }
 .redditname a {
-  text-indent: -1px;
-  margin-top: 30px;
-  color: white;
-  font-family: Optima, Segoe, sans-serif;
-  font-weight: normal;
-  display: none;
-  float: left;
+	text-indent: -1px;
+	margin-top: 30px;
+	color: white;
+	font-family: Optima, Segoe, sans-serif;
+	font-weight: normal;
+	display: none;
+	float: left;
 }
 
 /* Moves userbar down below header image */
+
 #header-bottom-right {
-  bottom: -34px;
-  line-height: 26px;
-  padding-left: 15px;
-  background: url(%%gray%%);
-  border-radius: 0;
-  z-index: 20;
-  a {
-    color: #fff;
-  }
+	bottom: -34px;
+	line-height: 26px;
+	padding-left: 15px;
+	background: url(%%gray%%);
+	border-radius: 0;
+	z-index: 20;
+	a {
+		color: #fff;
+	}
 }
 .user {
-  color: #fff;
-  .userkarma {
-    border-color: #fff;
-  }
+	color: #fff;
+	.userkarma {
+		border-color: #fff;
+	}
 }
 .separator {
-  color: #bbb;
+	color: #bbb;
 }
 
 /* RES-specific userbar tweaks */
+
 #header-bottom-right.res-navTop {
-  top: 145px;
-  bottom: -34px;
-  line-height: 23px;
-  padding-left: 5px;
-  background: url(%%gray%%);
-  border-radius: 0;
-  border-left: 1px solid #5f99cf;
-  #userbarToggle {
-    border-radius: 0;
-    background: url(%%gray%%);
-    border-right: 1px dotted #bbb;
-    border-left: 1px solid #bbb;
-    line-height: 28px;
-    color: #fff;
-  }
+	top: 145px;
+	bottom: -34px;
+	line-height: 23px;
+	padding-left: 5px;
+	background: url(%%gray%%);
+	border-radius: 0;
+	border-left: 1px solid #5f99cf;
+	#userbarToggle {
+		border-radius: 0;
+		background: url(%%gray%%);
+		border-right: 1px dotted #bbb;
+		border-left: 1px solid #bbb;
+		line-height: 28px;
+		color: #fff;
+	}
 }
 
 /* Hides tabmenu */
+
 #header .tabmenu {
-  display: none;
+	display: none;
 }
 .link.last-clicked {
-  overflow: hidden;
+	overflow: hidden;
 }
 
 /* Worlds tournament icon */
@@ -111,6 +117,7 @@
 .side {
 	a[href*="#worlds"] {
 		.hide-text;
+		width: 221px!important;
 		background: url(%%header-events%%) no-repeat top left;
 		height: 125px;
 		display: block;
@@ -118,7 +125,7 @@
 		top: 19px;
 		z-index: 9999;
 		&:hover {
-		  .bg-pos(0, -125px);
+			.bg-pos(0, -125px);
 		}
 	}
 }
@@ -194,23 +201,23 @@
  */
 
 .titlebox .usertext-body .md h6 {
-  position: absolute;
-  top: 145px;
-  left: 0;
-  right: 0;
-  padding: 4px 13px 4px 4px;
+	position: absolute;
+	top: 145px;
+	left: 0;
+	right: 0;
+	padding: 4px 13px 4px 4px;
 	margin-top: 0px;
-  margin-left: 35px;
-  display: block;
-  background: url(%%gray%%);
-  font-family: Optima, Segoe, sans-serif;
-  font-size: 15px;
-  font-weight: bold;
-  color: white;
-  text-align: left;
-  text-decoration: none;
-  line-height: 26px;
+	margin-left: 35px;
+	display: block;
+	background: url(%%gray%%);
+	font-family: Optima, Segoe, sans-serif;
+	font-size: 15px;
+	font-weight: bold;
+	color: white;
+	text-align: left;
+	text-decoration: none;
+	line-height: 26px;
 }
 h6 a {
-  color:#F2E972!important;
+	color: #F2E972!important;
 }
