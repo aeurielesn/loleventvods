@@ -20,16 +20,16 @@ gulp.task('default', ['build']);
 //Build umbrella task
 gulp.task('build', ['minify-css']);
 
-gulp.task('clean', function(){
+gulp.task('clean', function() {
 	return gulp.src('dist/')
-        .pipe(clean());
+		.pipe(clean());
 });
 
-gulp.task('clean-team-icons', function(){
+gulp.task('clean-team-icons', function() {
 	return gulp.src('./teams/dist')
-        .pipe(clean());
+		.pipe(clean());
 });
-gulp.task('resize-team-icons', ['clean-team-icons'], function(){
+gulp.task('resize-team-icons', ['clean-team-icons'], function() {
 	return gulp.src(["./teams/**/*.png", "!./teams/dist/*.png"])
 		.pipe(lwip
 			.resize(48, 20)
@@ -38,53 +38,56 @@ gulp.task('resize-team-icons', ['clean-team-icons'], function(){
 		.pipe(gulp.dest("./teams/dist"));
 });
 
-gulp.task('generate-team-icons', ['resize-team-icons'], function () {
-  return sprity.src({
-    src: './teams/dist/**/*.png',
-    style: './less/team-sprites.less',
-    name: 'teams',
-    processor: 'less',
-	margin: 0,
-  })
-   .on('error', gutil.log)
-  .pipe(gulpif('*.png', gulp.dest('./images/'), gulp.dest('./less/')))
+gulp.task('generate-team-icons', ['resize-team-icons'], function() {
+	return sprity.src({
+			src: './teams/dist/**/*.png',
+			style: './less/team-sprites.less',
+			name: 'teams',
+			processor: 'less',
+			margin: 0,
+		})
+		.on('error', gutil.log)
+		.pipe(gulpif('*.png', gulp.dest('./images/'), gulp.dest('./less/')))
 });
 
-gulp.task('generate-thumbnails', ['generate-team-icons'], function () {
-  return sprity.src({
-    src: './thumbs/*.png',
-    style: './less/thumb-sprites.less',
-    name: 'thumbnails',
-    processor: 'less',
-	margin: 0,
-  })
-   .on('error', gutil.log)
-  .pipe(gulpif('*.png', gulp.dest('./images/'), gulp.dest('./less/')))
+gulp.task('generate-thumbnails', ['generate-team-icons'], function() {
+	return sprity.src({
+			src: './thumbs/*.png',
+			style: './less/thumb-sprites.less',
+			name: 'thumbnails',
+			processor: 'less',
+			format: "jpg",
+			margin: 0,
+		})
+		.on('error', gutil.log)
+		.pipe(gulpif('*.jpg', gulp.dest('./images/'), gulp.dest('./less/')))
 });
 
-gulp.task('sprites', ['generate-thumbnails'], function () {
-	return gulp.src(['images/thumbnails.png','images/teams.png'])
+gulp.task('sprites', ['generate-thumbnails'], function() {
+	return gulp.src('images/teams.png')
 		.pipe(imop({
-        optimizationLevel: 7,
-        progressive: true,
-        interlaced: true
+			optimizationLevel: 7,
+			progressive: true,
+			interlaced: true
 		}))
 		.pipe(gulp.dest('images/'))
 });
 
 gulp.task('less-build', ['clean'], function() {
-    return gulp.src('less/loleventvods.less')
-        .pipe(less())
+	return gulp.src('less/loleventvods.less')
+		.pipe(less())
 		.pipe(cssbeautify({
-            indent: '	',
-            openbrace: 'separate-line',
-            autosemicolon: true
-        }))
-        .pipe(gulp.dest('dist/'));
+			indent: '	',
+			openbrace: 'separate-line',
+			autosemicolon: true
+		}))
+		.pipe(gulp.dest('dist/'));
 });
-gulp.task('minify-css', ['less-build'], function(){
+gulp.task('minify-css', ['less-build'], function() {
 	return gulp.src('dist/loleventvods.css')
 		.pipe(cssmin())
-		.pipe(rename({suffix: '.min'}))
+		.pipe(rename({
+			suffix: '.min'
+		}))
 		.pipe(gulp.dest('dist/'));
 });
