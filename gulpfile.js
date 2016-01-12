@@ -10,7 +10,7 @@ var cssbeautify = require('gulp-cssbeautify');
 var gulpif = require('gulp-if');
 var sprity = require('sprity');
 var sprityless = require('sprity-less');
-var lwip = require('gulp-lwip');
+var gm = require('gulp-gm');
 var gutil = require('gulp-util');
 var imop = require('gulp-image-optimization');
 
@@ -20,25 +20,24 @@ gulp.task('default', ['build']);
 //Build umbrella task
 gulp.task('build', ['minify-css']);
 
-gulp.task('clean', function() {
+gulp.task('clean', function () {
 	return gulp.src('dist/')
 		.pipe(clean());
 });
 
-gulp.task('clean-team-icons', function() {
+gulp.task('clean-team-icons', function () {
 	return gulp.src('./teams/dist')
 		.pipe(clean());
 });
-gulp.task('resize-team-icons', ['clean-team-icons'], function() {
+gulp.task('resize-team-icons', ['clean-team-icons'], function () {
 	return gulp.src(["./teams/**/*.png", "!./teams/dist/*.png"])
-		.pipe(lwip
-			.resize(48, 20)
-			.exportAs("png")
-		)
+		.pipe(gm(function (gmfile) {
+			return gmfile.resize(48, 20);
+		}))
 		.pipe(gulp.dest("./teams/dist"));
 });
 
-gulp.task('generate-team-icons', ['resize-team-icons'], function() {
+gulp.task('generate-team-icons', ['resize-team-icons'], function () {
 	return sprity.src({
 			src: './teams/dist/**/*.png',
 			style: './less/team-sprites.less',
@@ -50,7 +49,7 @@ gulp.task('generate-team-icons', ['resize-team-icons'], function() {
 		.pipe(gulpif('*.png', gulp.dest('./images/'), gulp.dest('./less/')))
 });
 
-gulp.task('generate-thumbnails', ['generate-team-icons'], function() {
+gulp.task('generate-thumbnails', ['generate-team-icons'], function () {
 	return sprity.src({
 			src: './thumbs/*.png',
 			style: './less/thumb-sprites.less',
@@ -63,8 +62,8 @@ gulp.task('generate-thumbnails', ['generate-team-icons'], function() {
 		.pipe(gulpif('*.jpg', gulp.dest('./images/'), gulp.dest('./less/')))
 });
 
-gulp.task('sprites', ['generate-thumbnails'], function() {
-	return gulp.src('images/teams.png')
+gulp.task('sprites', ['generate-thumbnails'], function () {
+	return gulp.src(['images/teams.png','images/thumbnails.jpg'])
 		.pipe(imop({
 			optimizationLevel: 7,
 			progressive: true,
@@ -73,7 +72,7 @@ gulp.task('sprites', ['generate-thumbnails'], function() {
 		.pipe(gulp.dest('images/'))
 });
 
-gulp.task('less-build', ['clean'], function() {
+gulp.task('less-build', ['clean'], function () {
 	return gulp.src('less/loleventvods.less')
 		.pipe(less())
 		.pipe(cssbeautify({
@@ -83,7 +82,7 @@ gulp.task('less-build', ['clean'], function() {
 		}))
 		.pipe(gulp.dest('dist/'));
 });
-gulp.task('minify-css', ['less-build'], function() {
+gulp.task('minify-css', ['less-build'], function () {
 	return gulp.src('dist/loleventvods.css')
 		.pipe(cssmin())
 		.pipe(rename({

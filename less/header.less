@@ -46,7 +46,7 @@
 		font-size: 0!important;
 		overflow: hidden;
 		&:hover {
-			.bg-pos(0, -102px)
+			opacity: 0.6;
 		}
 	}
 }
@@ -112,7 +112,7 @@
 	overflow: hidden;
 }
 
-/* Worlds tournament icon */
+/* Worlds tournament icon 
 
 .side {
 	a[href*="#worlds"] {
@@ -128,69 +128,69 @@
 			.bg-pos(0, -135px);
 		}
 	}
-}
+} */
 
-/* Standard Tournament icons in header
-@header-icons-height: -150px;
+/* Standard Tournament icons in header */
+@header-icons-height: -121px;
 .side {
   // In order, header icons for the following tourneys, left to right
   // IEM, EU LCS, OGN/LCK, LPL, NA LCS
-  a[href="/r/LoLeventVoDs/comments/2ywjmx/"],
-  a[href="/r/LoLeventVoDs/comments/3iuodj/"],
-  a[href="/r/LoLeventVoDs/comments/3bqjgw/"],
-  a[href="/r/LoLeventVoDs/comments/3byhni/"],
-  a[href="/r/LoLeventVoDs/comments/3ivegm/"] {
+  a[href*="#lms"],
+  a[href*="#eulcs"],
+  a[href*="#lck"],
+  a[href*="#lpl"],
+  a[href*="#nalcs"] {
     .hide-text;
     background: url(%%header-events%%) no-repeat top left;
     height: 125px;
     display: block;
     position: absolute;
-    top: 19px;
-    z-index: 9999;
+    top: 21px;
+    z-index: 1000;
   }
-  // IEM
-  a[href="/r/LoLeventVoDs/comments/2ywjmx/"] {
-    right: 670px;
-    width: 250px;
-    .bg-pos;
+  // LMS
+  a[href*="#lms"] {
+    right: 331px;
+    width: 81px;
+    .bg-pos(-512px, 0);
+    &:hover {
+      .bg-pos(-512px, @header-icons-height);
+    }
+  }
+  // EU LCS
+  a[href*="#eulcs"] {
+    right: 462px;
+    width: 113px;
+    .bg-pos(-649px, 0);
+    &:hover {
+      .bg-pos(-649px, @header-icons-height);
+    }
+  }
+  // OGN/LCK
+  a[href*="#lck"] {
+    right: 625px;
+    width: 111px;
+    .bg-pos(0, 0);
     &:hover {
       .bg-pos(0, @header-icons-height);
     }
   }
-  // EU LCS
-  a[href="/r/LoLeventVoDs/comments/3iuodj/"] {
-    right: 520px;
-    width: 140px;
-    .bg-pos(-250px, 0);
-    &:hover {
-      .bg-pos(-250px, @header-icons-height);
-    }
-  }
-  // OGN/LCK
-  a[href="/r/LoLeventVoDs/comments/3bqjgw/"] {
-    right: 320px;
-    width: 200px;
-    .bg-pos(-380px, 0);
-    &:hover {
-      .bg-pos(-380px, @header-icons-height);
-    }
-  }
   // LPL
-  a[href="/r/LoLeventVoDs/comments/3byhni/"] {
-    right: 175px;
-    width: 130px;
-    .bg-pos(-580px, 0);
+  a[href*="#lpl"] {
+    right: 164px;
+    width: 117px;
+    .bg-pos(-334px, 0);
     &:hover {
-      .bg-pos(-580px, @header-icons-height);
+      .bg-pos(-334px, @header-icons-height);
     }
   }
   // NA LCS
-  a[href="/r/LoLeventVoDs/comments/3ivegm/"] {
-    right: 0;
-    width: 140px;
-    .bg-pos(-710px, 0);
+  a[href*="#nalcs"] {
+    right: 25px;
+    width: 114px;
+    .bg-pos(-164px, 0);
     &:hover {
-      .bg-pos(-710px, @header-icons-height);
+      .bg-pos(-164px, @header-icons-height);
     }
   }
 }
@@ -217,6 +217,7 @@
 	text-align: left;
 	text-decoration: none;
 	line-height: 26px;
+	z-index: 1001;
 }
 h6 a {
 	color: #F2E972!important;
