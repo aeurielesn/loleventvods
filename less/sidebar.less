@@ -4,6 +4,60 @@
   h4, h5 {
     height: 0;
   }
+  #search input[type="text"] {
+	  width: 100%;
+	  .border-radius
+  }
+  .login-form-side {
+	  .border-radius;
+	  input[type="text"]{
+		  .border-radius;
+		  margin: 5px 3px 0px 5px!important;
+		  width: 154px;
+	  }
+	  input[type="password"]{
+		  .border-radius;
+		  width: 154px;
+		  margin: 5px 5px 0px 2px!important;
+	  }
+  }
+		
+  .md {
+        ul:first-of-type {
+            li:not(:first-of-type) {
+                text-align: center;
+				& > a {
+                    display: inline-block;
+					cursor: default!important;
+				}
+                & > a[href="#spoiler"],
+				& > a[href="#team"] {
+                    min-width: 45px;
+                    text-align: center;
+					padding: 0 3px;
+					font-weight: bolder;
+					&:after { display: none!important;}
+                }
+				& > a[href="#team"] {
+					color: black;
+				}
+                & > a[href$="#title"] {
+                    width: 100%;
+                    text-align: left;
+                    color: black;
+					font-weight: bolder;
+					&:after { display: none!important;}
+                }
+                & > a[href$="#countdown"] {
+                    width: 100%;
+                    text-align: left;
+                    color: black;
+					&:after { display: none!important;}
+                }
+            }
+        }
+  }
+	
   
   // Contest thumbnail/announcement
   .md a[href$="#sidebar_img"] {
@@ -54,7 +108,7 @@
   /* sidebar social media icons */
   @social-height: -49px;
   
-  a[href="https://www.facebook.com/loleventvods"],
+  a[href="https://www.facebook.com/eventvods"],
   a[href="https://www.twitter.com/loleventvods"],
   a[href="http://www.youtube.com/loleventvods"],
   a[href="https://play.google.com/store/apps/details?id=com.kox.zzreal"],
@@ -73,7 +127,7 @@
     }
   }
 
-  a[href="https://www.facebook.com/loleventvods"] {
+  a[href="https://www.facebook.com/eventvods"] {
     .bg-pos;
     .social-left-col();
     .social-top-row();
@@ -116,6 +170,7 @@
     }
     td {
       border: 0!important;
+	  line-height: 20px;
       &[align="left"] a {
         float: right;
       }
@@ -157,10 +212,11 @@
         margin-top: -5px;
       }
     }
-    &:hover li {
+    &:hover li, 
+	&:first-of-type li{
       display: block;
     }
-  }
+  }	  
   // Hide divider
   hr {
     display: none;

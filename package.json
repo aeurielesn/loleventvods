@@ -16,6 +16,13 @@
     "gulp-cssmin": "^0.1.7",
     "gulp-less": "^3.0.3",
     "gulp-rename": "^1.2.2",
-    "gulp-util": "^3.0.6"
+    "gulp-util": "^3.0.6",
+    "gulp-if": "^1.2.5",
+    "sprity": "*",
+    "sprity-less": "*"
+  },
+  "dependencies": {
+    "gulp-gm": "0.0.8",
+    "gulp-image-optimization": "^0.1.3"
   }
 }

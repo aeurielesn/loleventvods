@@ -6,6 +6,8 @@
 # Except PNGs in images
 !images/*.png
 !images/*.jpg
+!teams/**
+!thumbs/**
 
 # Ignore generated sprites directory
 ./visual-resources/generated-sprites
@@ -16,3 +18,4 @@
 # Folders
 node_modules
 dist
+teams/dist

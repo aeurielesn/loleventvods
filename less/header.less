@@ -1,168 +1,196 @@
 /* alien */
+
 #header-img-a {
-  position: absolute;
-  content: "";
-  display: inline-block;
-  top: 145px;
-  left: 0px;
-  width: 35px;
-  height: 34px;
-  border-right: 1px solid #ccc;
-  background: url(%%alien%%)  no-repeat;
-  &:hover { 
-    .bg-pos(0, -34px);
-  }
+	position: absolute;
+	content: "";
+	display: inline-block;
+	top: 145px;
+	left: 0px;
+	width: 35px;
+	height: 34px;
+	border-right: 1px solid #ccc;
+	background: url(%%alien%%) no-repeat;
+	&:hover {
+		.bg-pos(0, -34px);
+	}
 }
 #header-img {
-  display: none;
+	display: none;
 }
 .titlebox form {
-  position: static;
+	position: static;
 }
 
 /* This lowers the links to create space */
+
 .content {
-  padding-top: 2px;
-  margin-top: 41px;
+	padding-top: 2px;
+	margin-top: 41px;
 }
 
 /* Header image */
+
 #header {
-  border: none;
+	border: none;
 }
 #header-bottom-left {
-  background: #02021a url(%%header-background%%) no-repeat right top;
-  height: 126px;
-  span.pagename a {
-    display: block;
-    height: 125px;
-    width: 228px;
-    margin-left: 10px;
-    margin-top: 10px;
-    background: url(%%logo%%) no-repeat scroll 0 0 transparent;
-    font-size: 0!important;
-  }
+	background: #02021a url(%%header-background%%) no-repeat right top;
+	height: 126px;
+	span.pagename a {
+		display: block;
+		height: 100px;
+		width: 458px;
+		margin-left: 30px;
+		margin-top: 13px;
+		background: url(%%logo%%) no-repeat scroll 0 0 transparent;
+		font-size: 0!important;
+		overflow: hidden;
+		&:hover {
+			opacity: 0.6;
+		}
+	}
 }
 .redditname a {
-  text-indent: -1px;
-  margin-top: 30px;
-  color: white;
-  font-family: Optima, Segoe, sans-serif;
-  font-weight: normal;
-  display: none;
-  float: left;
+	text-indent: -1px;
+	margin-top: 30px;
+	color: white;
+	font-family: Optima, Segoe, sans-serif;
+	font-weight: normal;
+	display: none;
+	float: left;
 }
 
 /* Moves userbar down below header image */
+
 #header-bottom-right {
-  bottom: -34px;
-  line-height: 26px;
-  padding-left: 15px;
-  background: url(%%gray%%);
-  border-radius: 0;
-  z-index: 20;
-  a {
-    color: #fff;
-  }
+	bottom: -34px;
+	line-height: 26px;
+	padding-left: 15px;
+	background: url(%%gray%%);
+	border-radius: 0;
+	z-index: 20;
+	a {
+		color: #fff;
+	}
 }
 .user {
-  color: #fff;
-  .userkarma {
-    border-color: #fff;
-  }
+	color: #fff;
+	.userkarma {
+		border-color: #fff;
+	}
 }
 .separator {
-  color: #bbb;
+	color: #bbb;
 }
 
 /* RES-specific userbar tweaks */
+
 #header-bottom-right.res-navTop {
-  top: 145px;
-  bottom: -34px;
-  line-height: 23px;
-  padding-left: 5px;
-  background: url(%%gray%%);
-  border-radius: 0;
-  border-left: 1px solid #5f99cf;
-  #userbarToggle {
-    border-radius: 0;
-    background: url(%%gray%%);
-    border-right: 1px dotted #bbb;
-    border-left: 1px solid #bbb;
-    line-height: 28px;
-    color: #fff;
-  }
+	top: 145px;
+	bottom: -34px;
+	line-height: 23px;
+	padding-left: 5px;
+	background: url(%%gray%%);
+	border-radius: 0;
+	border-left: 1px solid #5f99cf;
+	#userbarToggle {
+		border-radius: 0;
+		background: url(%%gray%%);
+		border-right: 1px dotted #bbb;
+		border-left: 1px solid #bbb;
+		line-height: 28px;
+		color: #fff;
+	}
 }
 
 /* Hides tabmenu */
+
 #header .tabmenu {
-  display: none;
+	display: none;
 }
 .link.last-clicked {
-  overflow: hidden;
+	overflow: hidden;
 }
 
-/* Tournament icons in header */
-@header-icons-height: -150px;
+/* Worlds tournament icon 
+
+.side {
+	a[href*="#worlds"] {
+		.hide-text;
+		width: 221px!important;
+		background: url(%%header-events%%) no-repeat top left;
+		height: 125px;
+		display: block;
+		position: absolute;
+		top: 19px;
+		z-index: 9999;
+		&:hover {
+			.bg-pos(0, -135px);
+		}
+	}
+} */
+
+/* Standard Tournament icons in header */
+@header-icons-height: -121px;
 .side {
   // In order, header icons for the following tourneys, left to right
   // IEM, EU LCS, OGN/LCK, LPL, NA LCS
-  a[href="/r/LoLeventVoDs/comments/2ywjmx/"],
-  a[href="/r/LoLeventVoDs/comments/3cp9zu/"],
-  a[href="/r/LoLeventVoDs/comments/3bqjgw/"],
-  a[href="/r/LoLeventVoDs/comments/3byhni/"],
-  a[href="/r/LoLeventVoDs/comments/3cxq5u/"] {
+  a[href*="#lms"],
+  a[href*="#eulcs"],
+  a[href*="#lck"],
+  a[href*="#lpl"],
+  a[href*="#nalcs"] {
     .hide-text;
     background: url(%%header-events%%) no-repeat top left;
-    height: 125px;
+    height: 124px;
     display: block;
     position: absolute;
-    top: 19px;
-    z-index: 9999;
+    top: 21px;
+	z-index: 1000;
   }
-  // IEM
-  a[href="/r/LoLeventVoDs/comments/2ywjmx/"] {
-    right: 670px;
-    width: 250px;
-    .bg-pos;
+  // LMS
+  a[href*="#lms"] {
+    right: 331px;
+    width: 81px;
+    .bg-pos(-512px, 0);
+    &:hover {
+      .bg-pos(-512px, @header-icons-height);
+    }
+  }
+  // EU LCS
+  a[href*="#eulcs"] {
+    right: 462px;
+    width: 113px;
+    .bg-pos(-649px, 0);
+    &:hover {
+      .bg-pos(-649px, @header-icons-height);
+    }
+  }
+  // OGN/LCK
+  a[href*="#lck"] {
+    right: 625px;
+    width: 111px;
+    .bg-pos(0, 0);
     &:hover {
       .bg-pos(0, @header-icons-height);
     }
   }
-  // EU LCS
-  a[href="/r/LoLeventVoDs/comments/3cp9zu/"] {
-    right: 520px;
-    width: 140px;
-    .bg-pos(-250px, 0);
-    &:hover {
-      .bg-pos(-250px, @header-icons-height);
-    }
-  }
-  // OGN/LCK
-  a[href="/r/LoLeventVoDs/comments/3bqjgw/"] {
-    right: 320px;
-    width: 200px;
-    .bg-pos(-380px, 0);
-    &:hover {
-      .bg-pos(-380px, @header-icons-height);
-    }
-  }
   // LPL
-  a[href="/r/LoLeventVoDs/comments/3byhni/"] {
-    right: 175px;
-    width: 130px;
-    .bg-pos(-580px, 0);
+  a[href*="#lpl"] {
+    right: 164px;
+    width: 117px;
+    .bg-pos(-334px, 0);
     &:hover {
-      .bg-pos(-580px, @header-icons-height);
+      .bg-pos(-334px, @header-icons-height);
     }
   }
   // NA LCS
-  a[href="/r/LoLeventVoDs/comments/3cxq5u/"] {
-    right: 0;
-    width: 140px;
-    .bg-pos(-710px, 0);
+  a[href*="#nalcs"] {
+    right: 25px;
+    width: 114px;
+    .bg-pos(-164px, 0);
     &:hover {
-      .bg-pos(-710px, @header-icons-height);
+      .bg-pos(-164px, @header-icons-height);
     }
   }
 }
@@ -173,23 +201,23 @@
  */
 
 .titlebox .usertext-body .md h6 {
-  position: absolute;
-  top: 145px;
-  left: 0;
-  right: 0;
-  padding: 4px 13px 4px 4px;
+	position: absolute;
+	top: 145px;
+	left: 0;
+	right: 0;
+	padding: 4px 13px 4px 4px;
 	margin-top: 0px;
-  margin-left: 35px;
-  display: block;
-  background: url(%%gray%%);
-  font-family: Optima, Segoe, sans-serif;
-  font-size: 15px;
-  font-weight: bold;
-  color: white;
-  text-align: left;
-  text-decoration: none;
-  line-height: 26px;
+	margin-left: 35px;
+	display: block;
+	background: url(%%gray%%);
+	font-family: Optima, Segoe, sans-serif;
+	font-size: 15px;
+	font-weight: bold;
+	color: white;
+	text-align: left;
+	text-decoration: none;
+	line-height: 26px;
 }
 h6 a {
-  color:#F2E972!important;
+	color: #F2E972!important;
 }

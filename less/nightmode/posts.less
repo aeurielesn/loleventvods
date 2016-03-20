@@ -1,84 +1,128 @@
 @header-spacing: -34px;
-
-.res-nightmode, html:lang(dd) {
-  // Visited links color change
-  .entry a { color: #007dc3; }
-  .entry a:visited[href*="lol.eventvods.com"] { color: #007dc3!important; }
-  .RES-keyNav-activeElement .usertext .md a:visited[href*="lol.eventvods.com"] { color: #8ad!important; }
-  
-  // Red text in posts
-  .usertext-body h4 { color: #f23; font-weight: bold; }
-  
-  // Changes post border color to be visible
-  .link .usertext-body .md, .side .linkinfo { border-color: #88f; }
-  
-  // tables
-  .md table {
-    * { border: 10px; }
-    th { text-align: center; }
-    thead { background-color: #333; }
-    td, th { border-right: 1px solid #888; padding: 4px 8px; }
-  }
-
-  .md th { background-color: #101010; border-color: #101010; }
-  
-  // ALTERNATE ROW COLORS
-  .md tr:nth-of-type(odd) { background: #181818; color: #dcdcdc; }
-  .md tr:nth-of-type(even) { background: #222; color: #dcdcdc; }
-
-  // ROW HOVER COLOR
-  .md table tr:hover { 
-    background-color: #7d7; 
-    color: #080808;
-    a, a[href*="lol.eventvods.com"] { color: #55c!important; }
-  }
-  
-  // Hides video expandos in posts
-  .usertext-body .md {
-    .RESdupeimg, .expando-button.video, 
-    .expando-button.video.collapsed,
-    .expando-button.video.expanded {
-      display: none!important;
-    }
-  }
-  
-  // Change active keynav bg-color
-  .RES-keyNav-activeElement {
-    &, .usertext-body, .usertext-body .md, .usertext-body .md p,
-    .commentarea & .noncollapsed, .noncollapsed .md, .noncollapsed .md p {
-      background-color: #3a3a3a !important;
-    }
-  }
-  
-  // Comments coloring
-  .comment { border-radius: 3px; border: none!important; }
-  .comments-page .comment,
-  .comments-page .comment .comment .comment, 
-  .comments-page .comment .comment .comment .comment .comment, 
-  .comments-page .comment .comment .comment .comment .comment .comment .comment, 
-  .comments-page .comment .comment .comment .comment .comment .comment .comment .comment .comment,
-  .res-commentBoxes .comments-page .comment,
-  .res-commentBoxes .comments-page .comment .comment .comment, 
-  .res-commentBoxes .comments-page .comment .comment .comment .comment .comment, 
-  .res-commentBoxes .comments-page .comment .comment .comment .comment .comment .comment .comment, 
-  .res-commentBoxes .comments-page .comment .comment .comment .comment .comment .comment .comment .comment .comment {
-    background-color: #1a1a1a!important;
-    .arrow.up, .arrow.up:hover { background-position: -30px -66px !important; }
-    .arrow.upmod { background-position: -45px -66px !important; }
-    .arrow.down, .arrow.down:hover { background-position: 0px -66px!important;}
-    .arrow.downmod { background-position: -15px -66px!important; }
-  }
-  .comments-page .comment .comment,
-  .comments-page .comment .comment .comment .comment, 
-  .comments-page .comment .comment .comment .comment .comment .comment, 
-  .comments-page .comment .comment .comment .comment .comment .comment .comment .comment,
-  .comments-page .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment,
-  .res-commentBoxes .comments-page .comment .comment,
-  .res-commentBoxes .comments-page .comment .comment .comment .comment, 
-  .res-commentBoxes .comments-page .comment .comment .comment .comment .comment .comment, 
-  .res-commentBoxes .comments-page .comment .comment .comment .comment .comment .comment .comment .comment,
-  .res-commentBoxes .comments-page .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment {
-    margin-right: 0px;
-    background-color: #080808!important;
-  }
+.res-nightmode,
+html:lang(dd) {
+	// Visited links color change
+	.entry a {
+		color: #007dc3;
+	}
+	.entry a:visited {
+		color: #551a8b
+	}
+	.entry a:visited[href*="lol.eventvods.com"] {
+		color: #007dc3!important;
+	}
+	// Red text in posts
+	.usertext-body h4 {
+		color: #f23;
+		font-weight: bold;
+	}
+	// Changes post border color to be visible
+	.link .usertext-body .md,
+	.side .linkinfo {
+		border-color: #88f;
+	}
+	// tables
+	.md table {
+		* {
+			border: 10px;
+		}
+		th {
+			text-align: center;
+		}
+		thead {
+			background-color: #333;
+		}
+		td,
+		th {
+			border-right: 1px solid #888;
+			padding: 4px 8px;
+		}
+	}
+	.md th {
+		background-color: #101010;
+		border-color: #101010;
+	}
+	// ALTERNATE ROW COLORS
+	.md tr:nth-of-type(odd) {
+		background: #181818;
+		color: #dcdcdc;
+	}
+	.md tr:nth-of-type(even) {
+		background: #222;
+		color: #dcdcdc;
+	}
+	// ROW HOVER COLOR
+	.md table tr:hover {
+		background-color: #7d7;
+		color: #080808;
+		a,
+		a[href*="lol.eventvods.com"] {
+			color: #55c!important;
+		}
+	}
+	// Hides video expandos in posts
+	.usertext-body .md {
+		.RESdupeimg,
+		.expando-button.video,
+		.expando-button.video.collapsed,
+		.expando-button.video.expanded {
+			display: none!important;
+		}
+	}
+	// Change active keynav bg-color
+	.RES-keyNav-activeElement {
+		&,
+		.usertext-body,
+		.usertext-body .md,
+		.usertext-body .md p,
+		.commentarea & .noncollapsed,
+		.noncollapsed .md,
+		.noncollapsed .md p {
+			background-color: #3a3a3a !important;
+		}
+	}
+	// Comments coloring
+	.comment {
+		border-radius: 3px;
+		border: none!important;
+	}
+	.comments-page .comment,
+	.comments-page .comment .comment .comment,
+	.comments-page .comment .comment .comment .comment .comment,
+	.comments-page .comment .comment .comment .comment .comment .comment .comment,
+	.comments-page .comment .comment .comment .comment .comment .comment .comment .comment .comment,
+	.res-commentBoxes .comments-page .comment,
+	.res-commentBoxes .comments-page .comment .comment .comment,
+	.res-commentBoxes .comments-page .comment .comment .comment .comment .comment,
+	.res-commentBoxes .comments-page .comment .comment .comment .comment .comment .comment .comment,
+	.res-commentBoxes .comments-page .comment .comment .comment .comment .comment .comment .comment .comment .comment {
+		background-color: #1a1a1a!important;
+		.arrow.up,
+		.arrow.up:hover {
+			background-position: -30px -66px !important;
+		}
+		.arrow.upmod {
+			background-position: -45px -66px !important;
+		}
+		.arrow.down,
+		.arrow.down:hover {
+			background-position: 0px -66px!important;
+		}
+		.arrow.downmod {
+			background-position: -15px -66px!important;
+		}
+	}
+	.comments-page .comment .comment,
+	.comments-page .comment .comment .comment .comment,
+	.comments-page .comment .comment .comment .comment .comment .comment,
+	.comments-page .comment .comment .comment .comment .comment .comment .comment .comment,
+	.comments-page .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment,
+	.res-commentBoxes .comments-page .comment .comment,
+	.res-commentBoxes .comments-page .comment .comment .comment .comment,
+	.res-commentBoxes .comments-page .comment .comment .comment .comment .comment .comment,
+	.res-commentBoxes .comments-page .comment .comment .comment .comment .comment .comment .comment .comment,
+	.res-commentBoxes .comments-page .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment {
+		margin-right: 0px;
+		background-color: #080808!important;
+	}
 }
