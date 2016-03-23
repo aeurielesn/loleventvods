@@ -1,247 +1,73 @@
-/* Visited links color change */
-.entry a:visited { color: #551a8b; }
-.entry a:visited[href="http://lol.eventvods.com"], .entry a:visited[href="lol.eventvods.com"] { color: #369; }
-
-/* change width */
-.md { max-width:90em; }
-
-/* alien */
-#header-img-a {
-  position: absolute;
-  content: "";
-  display: inline-block;
-  top: 145px;
-  left: 0px;
-  width: 35px;
-  height: 34px;
-  background: url(%%alien-in-black%%)  no-repeat 0 -1px;
-  
-  &:hover {
-    background-position: 0 -36px;
-  }
-}
-
-#header-img {
-  display: none;
-}
-
-.titlebox form { position: static; }
-
-/* This lowers the links to create space */
-.content {
-  padding-top: 2px;
-  margin-top: 41px;
-}
-
-/* Header image */
-
-#header { border: none; }
-#header-bottom-left {
-  background: #02021a url(%%header%%) no-repeat right top;
-  height: 126px;
-}
-
-.redditname a {
-  text-indent:-1px;
-  margin-top:30px;
-  color:white;
-  font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
-  font-style:italic;
-  font-weight: normal;
-}
-
-.redditname a { display: inline; float: left; }
-
-#header-bottom-left span.pagename a {
-  display: block;
-  height: 125px;
-  width: 228px;
-  margin-left: 10px;
-  margin-top: 10px;
-  background: url(%%logo%%) no-repeat scroll 0 0 transparent;
-  font-size: 0!important;
-}
-
-/* Moves userbar down below header image */
-
-#header-bottom-right {
-  bottom: -34px;
-  line-height: 26px;
-  padding-left: 15px;
-  background: url(%%gray%%);
-  border-radius: 0;
-  a {
-    color: #fff;
-  }
-}
-
-.user {
-  color: #fff;
-  .userkarma {
-    border-color: #fff;
-  }
-}
-
-.separator {
-  color: #bbb;
-}
-
-/* RES-specific userbar tweaks */
-#header-bottom-right.res-navTop {
-  top: 145px;
-  bottom: -34px;
-  line-height: 23px;
-  padding-left: 5px;
-  background: url(%%gray%%);
-  border-radius: 0;
-  border-left: 1px solid #5f99cf;
-  #userbarToggle {
-    border-radius: 0;
-    background: url(%%gray%%);
-    border-right: 1px dotted #bbb;
-    border-left: 1px solid #bbb;
-    line-height: 28px;
-    color: #fff;
-  }
-}
-
-/* Hides tabmenu, domain, leave contributor button & RES nav annotations */
-#header .tabmenu,
+/* Hides domain, leave contributor button & RES nav annotations */
 #viewImagesButton,
 .domain,
 .side .leavecontributor-button,
 table .keyNavAnnotation,
-a[href^="#"] + .keyNavAnnotation,
-#siteTable .keyNavAnnotation
-{
+#siteTable .keyNavAnnotation,
+a[href^="#"] + .keyNavAnnotation {
   display: none;
 }
-
-.link.last-clicked { overflow: hidden; }
-
-.link.last-clicked { overflow: hidden; }
+.link.last-clicked {
+  overflow: hidden;
+}
 
 /* Timestamps */
-.edited-timestamp::after { content:" (" attr(title) ")"; font-size: 90%; }
-
-/* Collapsable in entries */
-.entry .md h3 {
-  margin-bottom: 8px;
-  & + p {
-    position: absolute;
-    margin-top: -25px;
-    height: 30px;
-    width: 294px;
-    & + * { display: none; }
-  }
-  & + p:hover + *, & + p + *:hover, &:hover + p + * { display: table; }
+.edited-timestamp::after {
+  content:" (" attr(title) ")";
+  font-size: 90%;
 }
 
 /* tables */
-.md table {
-  border: 1px solid #444;
-  font-family: Arial, Helvetica, Sans-serif;
-  margin: 10px 0px;
-  * { border: 10px; }
-  th { text-align: center; }
-  tr:nth-child(even), thead { background-color: #f6f6f6; }
-  td, th { border-right: 1px solid #888; padding: 4px 8px; }
-}
-.side .md table { width:100%; }
-
-.md th {
+.md { 
+  table {
+    border: 1px solid #444;
+    font-family: Arial, Helvetica, Sans-serif;
+    margin: 10px 0px;
+    th {
+      text-align: center!important;
+    }
+    td, th {
+      border-right: 1px solid #888;
+      padding: 4px 8px;
+      &:first-child {
+        border-left: 1px solid #888;
+        padding: 4px 8px;
+      }
+    }
+    tr:last-child td {
+          border-bottom: 1px solid #888;
+    }
+    // Row coloring
+    tr:nth-of-type(odd) {
+      background-color: #fff;
+      color: #363636;
+    }
+    tr:nth-of-type(even) {
+      background-color: #EDEDED;
+      color: #363636;
+      
+    }
+    // Row hover color
+    tr:hover {
+      background-color: #bdff8b;
+    }
+  }
+  th {
+    border: 1px solid #444;
+    padding: 6px 10px;
     white-space: nowrap;
     background-color: #444;
     color: whitesmoke;
-    padding: 6px 10px;
-    border: 1px solid #444;
+  }
 }
-
-/* ALTERNATE ROW COLORS */
-.md tr:nth-of-type(odd) { background: #fff; color: #363636; }
-.md tr:nth-of-type(even) { background: #EDEDED; color: #363636; }
-
-/* ROW HOVER COLOR */
-.md table tr:hover { background-color: #bdff8b; }
-
-/* Hides downvote arrow on posts only; still accessible on comments*/
-.arrow.down { visibility: hidden; display: none; }
-.comment .arrow.down { visibility: visible; display: block; }
-
-/* Next 4 sections make deleted messages less noticeable -djimbob*/
-form.grayed, form.grayed ~ ul.flat-list.buttons { display: none }
-p.tagline, div.collapsed {
-  & > a.expand:first-child + em {
-    visibility: hidden;
-    font-size: 0;
-    &:after {
-      visibility: visible;
-      font-size: x-small;
-      font-weight: bold;
-      content: "Comment removed by user"
+.wiki-page {
+    .wiki-page-content {
+        .wiki.md {
+            max-width: none!important;
+        }
     }
-  }
-}
-div.collapsed > a.expand:first-child + em + time {
-   & + a.expand, & + em + a.expand {display: none; }
 }
 
-/* notice below comments */
-.commentarea {
-  position: static;
-  .usertext .usertext-edit:after {
-    content: "Note: Please use the spoiler tag if you want to discuss/suggest recommended games, picks & bans or something else related.";
-    display: block;
-    text-align: center;
-    margin-top: -5px;
-    padding: 4px;
-    background-color: #def;
-    border: 1px solid #59c;
-    font-size: 11px;
-    font-weight: bold;
-  }
-}
-
-/* This consider that the Team X columns in
- * the matches description are left and right aligned
- */
-
-.expando th {
-  &[align="left"], &[align="right"] { min-width: 70px; }
-}
-
-/* Tournament icons in header */
-
-.side {
-  a[href="/r/LoLeventVoDs/comments/1v6w31/s4_lcs_europe_spring_season/"],
-  a[href="/r/LoLeventVoDs/comments/1vgje3/s4_lcs_north_america_spring_season/"],
-  a[href="/r/LoLeventVoDs/comments/1wd6yu/iem_sao_paulo_2014/"],
-  a[href="/r/LoLeventVoDs/comments/1tn6v4/pandoratv_201314_ogn_winter_playoffs/"] {
-    .headers();
-    display: block;
-    position: absolute;
-    top: 19px;
-    z-index: 9999;
-  }
-
-  a[href="/r/LoLeventVoDs/comments/1v6w31/s4_lcs_europe_spring_season/"] {
-    right: 640px;
-    .headers-eu-off();
-    &:hover { .headers-eu-on(); }
-  }
-  a[href="/r/LoLeventVoDs/comments/1vgje3/s4_lcs_north_america_spring_season/"] {
-    right: 0;
-    .headers-na-off();
-    &:hover { .headers-na-on(); }
-  }
-  a[href="/r/LoLeventVoDs/comments/1wd6yu/iem_sao_paulo_2014/"] {
-    right: 400px;
-    .headers-iem-off();
-    &:hover { .headers-iem-on(); }
-  }
-  a[href="/r/LoLeventVoDs/comments/1tn6v4/pandoratv_201314_ogn_winter_playoffs/"] {
-    right: 145px;
-    .headers-ogn-off();
-    &:hover { .headers-ogn-on(); }
-  }
+.entry.RES-keyNav-activeElement {
+	background: inherit!important;
 }

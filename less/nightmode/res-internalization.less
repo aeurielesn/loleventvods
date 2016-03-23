@@ -1,0 +1,47 @@
+// Intended to internalize most of RES's nightmode styling
+
+html:lang(dd) {
+  .share-button .option, .share .option,  .help-toggle .option, 
+  .tagline .head .author, .parent .author, .parent .subreddit, 
+  .link .score.dislikes, .linkcompressed .score.dislikes, 
+  .dsq-help, .reddiquette, .RES-keyNav-activeElement .md, a[rel="tag"], 
+  #subscribe a, .tagline a, .footer a, .wired a, .side a, 
+  .subredditbox li a, #authorInfoToolTip h3 a, .morecomments a, .comment .md p a {
+    color: #007dc3;
+  }
+  .entry .buttons li a, .entry .morecomments .gray, .markdownEditor .RESCharCounter {
+    color: #aaa;
+  }
+  .side .spacer, .content, .traffic-tables .traffic-table tr, .sitetable .thing .md, 
+  .parentComment .md, .post-body.entry-content, .dsq-auth-header, .instructions .preftable th, 
+  #BigEditor .markdownEditor a, #BigEditor .markdownEditor .RESMacroDropdownTitle {
+    color: #ccc;
+  }
+  > .content > .spacer > .sitetable::before, > .content > .sharelink ~ .sitetable::before, 
+  .side .age, .trophy-info *, .golddvertisement, .flair-jump .title, #siteTable .thing .title.loggedin, 
+  #siteTable .thing .title, .NERdupe p.title::after, .savedComment, .organic-listing .thing .title,
+  .side .titlebox form.flairtoggle, .NERPageMarker {
+    color: #ddd;
+  }
+  .side .usertext-body .md em, .side .usertext-body .md p {
+    color: #eee;
+  }
+  .usertext-edit textarea {
+    color: #ccc;
+    background-color: #666;
+  }
+  input[type="text"] { background-color: #aaa; }
+  #commentNavButtons *, .updateTime, .toggle .option {
+    color: #fff;
+  }
+  .linkcompressed .entry .buttons li a, .link .usertext .md,
+  .thing .compressed, .organic-listing .link, .link.promotedlink, 
+  .link.promotedlink.promoted, .commentreply .help tr,
+  .organic-listing .linkcompressed, .sr-interest-bar .bubble {
+    background: none;
+  }
+  // Comment active keynav bg-color fix
+  .RES-keyNav-activeElement, .commentarea .RES-keyNav-activeElement .md, .commentarea .RES-keyNav-activeElement.entry .noncollapsed {
+    background-color: transparent !important;
+  }
+}

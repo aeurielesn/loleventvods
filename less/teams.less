@@ -1,222 +1,160 @@
-@teams-width: -36px;
-@teams-height: -20px;
+@import (reference) "team-sprites.less";
 
-a[href="#aaa"]:after,
-a[href="#all"]:after,
-a[href="#anexis"]:after,
-a[href="#atn"]:after,
-a[href="#aware"]:after, a[href="#awg"]:after,
-a[href="#azure"]:after,
-a[href="#bears"]:after, a[href="#gam"]:after,
-a[href="#c9"]:after, a[href$="/wiki/c9"]:before,
-a[href="#cjb"]:after,
-a[href="#clg"]:after, a[href$="/wiki/clg"]:before,
-a[href="#coast"]:after, a[href="#cst"]:after, a[href$="/wiki/coast"]:before,
-a[href="#cog"]:after,
-a[href="#col"]:after, a[href="#colA"]:after,
-a[href="#crs"]:after, a[href="#crsA"]:after, a[href$="/wiki/crs"]:before,
-a[href="#cw"]:after,
-a[href="#db"]:after,
-a[href="#dbl"]:after,
-a[href="#dig"]:after, a[href$="/wiki/dig"]:before,
-a[href="#dnl"]:after,
-a[href="#dp"]:after,
-a[href="#dru"]:after,
-a[href="#eg"]:after, a[href$="/wiki/eg"]:before,
-a[href="#esuba"]:after,
-a[href="#ete"]:after,
-a[href="#eternity"]:after,
-a[href="#fid"]:after,
-a[href="#fnatic"]:after, a[href="#fnc"]:after,
-a[href="#fxo"]:after,
-a[href="#gambit"]:after, a[href="#gmb"]:after,
-a[href="#gaming"]:after, a[href="#gg"]:after,
-a[href="#ggLA"]:after,
-a[href="#ggu"]:after,
-a[href="#gia"]:after,
-a[href="#hc"]:after,
-a[href="#ig"]:after,
-a[href="#im"]:after,
-a[href="#iodd"]:after,
-a[href="#jas"]:after,
-a[href="#ld"]:after,
-a[href="#marn"]:after, a[href="#mrn"]:after,
-a[href="#millenium"]:after, a[href="#mil"]:after,
-a[href="#min"]:after, a[href="#msk"]:after,
-a[href="#mouz"]:after,
-a[href="#mym"]:after,
-a[href="#nid"]:after,
-a[href="#nip"]:after,
-a[href="#nip2"]:after,
-a[href="#nsh"]:after,
-a[href="#nsw"]:after,
-a[href="#nwe"]:after,
-a[href="#omg"]:after,
-a[href="#ozone"]:after, a[href="#sso"]:after,
-a[href="#pain"]:after,
-a[href="#pe"]:after,
-a[href="#qg"]:after, a[href="#qtc"]:after,
-a[href="#rg"]:after,
-a[href="#roc"]:after,
-a[href="#roughnex"]:after,
-a[href="#royal"]:after, a[href="#ryl"]:after,
-a[href="#rxg"]:after,
-a[href="#shc"]:after,
-a[href="#sk"]:after,
-a[href="#skt"]:after,
-a[href="#sns"]:after,
-a[href="#sword"]:after,
-a[href="#tap"]:after,
-a[href="#tbd"]:after,
-a[href="#tcm"]:after,
-a[href="#ts"]:after,
-a[href="#tsb"]:after,
-a[href="#tsm"]:after, a[href$="/wiki/tsm"]:before,
-a[href="#tt"]:after,
-a[href="#ttd"]:after,
-a[href="#ves"]:after,
-a[href="#vul"]:after, a[href="#xdg"]:after, a[href$="/wiki/vul"]:before,
-a[href="#we"]:after,
-a[href="#wizards"]:after,
-a[href="#wzb"]:after,
-a[href="#xts"]:after {
+
+.wiki a[href^="#"]:after,
+.usertext-body a[href^="#"]:after {
   content:"";
-  width: -@teams-width;
-  height: -@teams-height;
-  background: url(%%teams%%) no-repeat scroll -@teams-width -@teams-height transparent;
+  width: 48px;
+  height: 20px;
+  background: url(%%teams%%) no-repeat transparent;
   display: inline-block;
   vertical-align: middle;
-  cursor: default !important;
+  cursor: default!important;
+  .sprite-position(@default);
+  text-align: center;
+}
+.wiki .toc a[href^="#"]:after,
+.voteWeight:after {
+  display: none;
 }
 
 
-/* LCS EU */
-a[href="#aaa"]:after                             { .bg-pos; }
-a[href="#all"]:after                             { .bg-pos(0, @teams-height); }
-a[href="#atn"]:after                             { .bg-pos(0, @teams-height * 2); }
-a[href="#cw"]:after                              { .bg-pos(0, @teams-height * 3); }
-a[href="#db"]:after                              { .bg-pos(0, @teams-height * 4); }
-a[href="#fnatic"]:after, a[href="#fnc"]:after    { .bg-pos(0, @teams-height * 5); }
-a[href="#gia"]:after                             { .bg-pos(0, @teams-height * 6); }
-a[href="#gambit"]:after, a[href="#gmb"]:after    { .bg-pos(0, @teams-height * 7); }
-a[href="#ld"]:after                              { .bg-pos(0, @teams-height * 8); }
-a[href="#mym"]:after                             { .bg-pos(0, @teams-height * 9); }
-a[href="#millenium"]:after, a[href="#mil"]:after { .bg-pos(0, @teams-height * 10); }
-a[href="#nip2"]:after                            { .bg-pos(0, @teams-height * 11); }
-a[href="#roc"]:after                             { .bg-pos(0, @teams-height * 12); }
-a[href="#shc"]:after                             { .bg-pos(0, @teams-height * 13); }
-a[href="#sk"]:after                              { .bg-pos(0, @teams-height * 14); }
+
+/* LCS EU 2015*/
+a[href="#cw"]:after  { .sprite-position(@eu-cw)!important; }
+a[href="#el"]:after  { .sprite-position(@eu-el)!important; }
+a[href="#fnatic"]:after,
+a[href="#fnc"]:after { .sprite-position(@eu-fnc)!important; }
+a[href="#gia"]:after { .sprite-position(@eu-gia)!important; }
+a[href="#gmb"]:after { .sprite-position(@eu-gmb)!important; }
+a[href="#h2k"]:after { .sprite-position(@eu-h2k)!important; }
+a[href="#og"]:after { .sprite-position(@eu-og)!important; }
+a[href="#roc"]:after { .sprite-position(@eu-roc)!important; }
+a[href="#sk"]:after  { .sprite-position(@eu-sk)!important; }
+a[href="#uol"]:after { .sprite-position(@eu-uol)!important; }
+/* LCS EU 2016 additions */
+a[href="#g2"]:after    { .sprite-position(@eu-g2)!important; }
+a[href="#spy"]:after { .sprite-position(@eu-spy)!important; }
+a[href="#vit"]:after { .sprite-position(@eu-vit)!important; }
 
 
 /* LCS NA */
-a[href="#c9"]:after, a[href$="/wiki/c9"]:before                             { .bg-pos(@teams-width, 0); }
-a[href="#clg"]:after, a[href$="/wiki/clg"]:before                           { .bg-pos(@teams-width, @teams-height); }
-a[href="#col"]:after, a[href="#colA"]:after                                 { .bg-pos(@teams-width, @teams-height * 2); }
-a[href="#crs"]:after, a[href="#crsA"]:after, a[href$="/wiki/crs"]:before    { .bg-pos(@teams-width, @teams-height * 3); }
-a[href="#coast"]:after, a[href="#cst"]:after, a[href$="/wiki/coast"]:before { .bg-pos(@teams-width, @teams-height * 4); }
-a[href="#dig"]:after, a[href$="/wiki/dig"]:before                           { .bg-pos(@teams-width, @teams-height * 5); }
-a[href="#eg"]:after, a[href$="/wiki/eg"]:before                             { .bg-pos(@teams-width, @teams-height * 6); }
-a[href="#ggu"]:after                                                        { .bg-pos(@teams-width, @teams-height * 7); }
-a[href="#marn"]:after, a[href="#mrn"]:after                                 { .bg-pos(@teams-width, @teams-height * 8); }
-a[href="#tsm"]:after, a[href$="/wiki/tsm"]:before                           { .bg-pos(@teams-width, @teams-height * 9); }
-a[href="#ves"]:after                                                        { .bg-pos(@teams-width, @teams-height * 10); }
-a[href="#vul"]:after, a[href="#xdg"]:after, a[href$="/wiki/vul"]:before     { .bg-pos(@teams-width, @teams-height * 11); }
+a[href="#c9"]:after  { .sprite-position(@na-c9)!important; }
+a[href="#clg"]:after { .sprite-position(@na-clg)!important; }
+a[href="#dig"]:after { .sprite-position(@na-dig)!important; }
+a[href="#gv"]:after  { .sprite-position(@na-gv)!important; }
+a[href="#nme"]:after { .sprite-position(@na-nme)!important; }
+a[href="#tdk"]:after { .sprite-position(@na-tdk)!important; }
+a[href="#tl"]:after  { .sprite-position(@na-tl)!important; }
+a[href="#t8"]:after  { .sprite-position(@na-t8)!important; }
+a[href="#tip"]:after { .sprite-position(@na-tip)!important; }
+a[href="#tsm"]:after { .sprite-position(@na-tsm)!important; }
+/* LCS NA 2016 additions */
+a[href="#rng-na"]:after    { .sprite-position(@na-rng)!important; }
+a[href="#nrg"]:after { .sprite-position(@na-nrg)!important; }
+a[href="#efx"]:after { .sprite-position(@na-efx)!important; }
+a[href="#imt"]:after { .sprite-position(@na-imt)!important; }
 
 
-/* LCS Promos EU */ 
-a[href="#mouz"]:after    { .bg-pos(@teams-width * 2, 0); }
-a[href="#tcm"]:after     { .bg-pos(@teams-width * 2, @teams-height); }
-a[href="#wizards"]:after { .bg-pos(@teams-width * 2, @teams-height * 2); }
-
-
-/* LCS Promos NA */
-a[href="#azure"]:after                    { .bg-pos(@teams-width * 3, 0); }
-a[href="#cog"]:after                      { .bg-pos(@teams-width * 3, @teams-height); }
-a[href="#dbl"]:after                      { .bg-pos(@teams-width * 3, @teams-height * 2); }
-a[href="#fid"]:after                      { .bg-pos(@teams-width * 3, @teams-height * 3); }
-a[href="#qg"]:after, a[href="#qtc"]:after { .bg-pos(@teams-width * 3, @teams-height * 4); }
-a[href="#tap"]:after                      { .bg-pos(@teams-width * 3, @teams-height * 5); }
-a[href="#ts"]:after                       { .bg-pos(@teams-width * 3, @teams-height * 6); }
-a[href="#tsb"]:after                      { .bg-pos(@teams-width * 3, @teams-height * 7); }
-
-
-/* OGN */
-a[href="#cjb"]:after                         { .bg-pos(@teams-width * 4, 0); }
-a[href="#im"]:after                          { .bg-pos(@teams-width * 4, @teams-height); }
-a[href="#jas"]:after                         { .bg-pos(@teams-width * 4, @teams-height * 2); }
-a[href="#nsw"]:after                         { .bg-pos(@teams-width * 4, @teams-height * 3); }
-a[href="#nsh"]:after                         { .bg-pos(@teams-width * 4, @teams-height * 4); }
-a[href="#ozone"]:after, a[href="#sso"]:after { .bg-pos(@teams-width * 4, @teams-height * 5); }
-a[href="#skt"]:after                         { .bg-pos(@teams-width * 4, @teams-height * 6); }
-
+/* OGN/LCK */
+a[href="#anc"]:after                      { .sprite-position(@kr-anc)!important; }
+a[href="#cj"]:after                       { .sprite-position(@kr-cj)!important; }
+a[href="#im"]:after , a[href="#lz"]:after { .sprite-position(@kr-lz)!important; }
+a[href="#jag"]:after                      { .sprite-position(@kr-jag)!important; }
+a[href="#koo"]:after, a[href="#rox"]:after,
+a[href="#ge"]:after, a[href="#get"]:after { .sprite-position(@kr-koo)!important; }
+a[href="#kt"]:after                       { .sprite-position(@kr-kt)!important; }
+a[href="#nje"]:after, a[href="#njf"]:after{ .sprite-position(@kr-njf)!important; }
+a[href="#ssg"]:after, a[href="#ssb"]:after, 
+a[href="#ssw"]:after, 					  { .sprite-position(@kr-ssg)!important; }
+a[href="#sbenu"]:after, 
+a[href="#sbe"]:after                      { .sprite-position(@kr-sbe)!important; }
+a[href="#skt"]:after                      { .sprite-position(@kr-skt)!important; }
+/* 2016 LCK additions */
+a[href="#afc"]:after                      { .sprite-position(@kr-afc)!important; }
+a[href="#emf"]:after                      { .sprite-position(@kr-emf)!important; }
+a[href="#ever"]:after                     { .sprite-position(@kr-ever)!important; }
 
 /* LPL */
-a[href="#ig"]:after  { .bg-pos(@teams-width * 5, 0); }
-a[href="#omg"]:after { .bg-pos(@teams-width * 5, @teams-height); }
-a[href="#pe"]:after  { .bg-pos(@teams-width * 5, @teams-height * 2); }
-a[href="#we"]:after  { .bg-pos(@teams-width * 5, @teams-height * 3); }
+a[href="#2dg"]:after   { .sprite-position(@cn-2dg)!important; }
+a[href="#edg"]:after  { .sprite-position(@cn-edg)!important; }
+a[href="#ig"]:after   { .sprite-position(@cn-ig)!important; }
+a[href="#lgd"]:after  { .sprite-position(@cn-lgd)!important; }
+a[href="#ep"]:after  { .sprite-position(@cn-ep)!important; }
+a[href="#hyg"]:after  { .sprite-position(@cn-hyg)!important; }
+a[href="#m3"]:after   { .sprite-position(@cn-m3)!important; }
+a[href="#nwb"]:after   { .sprite-position(@cn-nwb)!important; }
+a[href="#omg"]:after  { .sprite-position(@cn-omg)!important; }
+a[href="#qg"]:after   { .sprite-position(@cn-qg)!important; }
+a[href="#rngu"]:after,
+a[href="#rng"]:after  { .sprite-position(@cn-rng)!important; }
+a[href="#snk"]:after,
+a[href="#ss"]:after   { .sprite-position(@cn-snk)!important; }
+a[href="#kng"]:after  { .sprite-position(@cn-kng)!important; }
+a[href="#upg"]:after  { .sprite-position(@cn-upg)!important; }
+a[href="#vcg"]:after,
+a[href="#vg"]:after  { .sprite-position(@cn-vg)!important; }
+a[href="#we"]:after   { .sprite-position(@cn-we)!important; }
+a[href="#wef"]:after   { .sprite-position(@cn-wef)!important; }
+a[href="#yg"]:after   { .sprite-position(@cn-yg)!important; }
+
+/* LMS */
+a[href="#ahq"]:after  { .sprite-position(@tw-ahq)!important; }
+a[href="#as"]:after   { .sprite-position(@tw-as)!important; }
+a[href="#hke"]:after,
+a[href="#hkes"]:after { .sprite-position(@tw-hkes)!important; }
+a[href="#lgs"]:after,
+a[href="#logs"]:after { .sprite-position(@tw-lgs)!important; }
+a[href="#mac"]:after  { .sprite-position(@tw-mac)!important; }
+a[href="#mse"]:after  { .sprite-position(@tw-mse)!important; }
+a[href="#tpa"]:after  { .sprite-position(@tw-tpa)!important; }
+a[href="#yfw"]:after  { .sprite-position(@tw-yfw)!important; }
+/* LMS 2016 */
+a[href="#cges"]:after  { .sprite-position(@tw-cges)!important; }
+a[href="#hw"]:after  { .sprite-position(@tw-hw)!important; }
+a[href="#xg"]:after  { .sprite-position(@tw-xg)!important; }
 
 
-/* MCS */
-a[href="#aware"]:after, a[href="#awg"]:after { .bg-pos(@teams-width * 6, 0); }
-a[href="#dnl"]:after, a[href="#nid"]:after   { .bg-pos(@teams-width * 6, @teams-height); }
-a[href="#xts"]:after                         { .bg-pos(@teams-width * 6, @teams-height * 2); }
-a[href="#fxo"]:after                         { .bg-pos(@teams-width * 6, @teams-height * 3); }
-a[href="#ggLA"]:after                        { .bg-pos(@teams-width * 6, @teams-height * 4); }
-a[href="#iodd"]:after                        { .bg-pos(@teams-width * 6, @teams-height * 5); }
-a[href="#nwe"]:after                         { .bg-pos(@teams-width * 6, @teams-height * 6); }
-a[href="#rxg"]:after                         { .bg-pos(@teams-width * 6, @teams-height * 7); }
-a[href="#tbd"]:after                         { .bg-pos(@teams-width * 6, @teams-height * 8); }
-a[href="#ttd"]:after                         { .bg-pos(@teams-width * 6, @teams-height * 9); }
-a[href="#tt"]:after                          { .bg-pos(@teams-width * 6, @teams-height * 10); }
-a[href="#wzb"]:after                         { .bg-pos(@teams-width * 6, @teams-height * 11); }
+/* CBLOL (Brazil) */
+a[href="#cnb"]:after 	{ .sprite-position(@br-cnb)!important; }
+a[href="#g3x"]:after    { .sprite-position(@br-g3x)!important; }
+a[href="#itz"]:after    { .sprite-position(@br-itz)!important; }
+a[href="#itz-r"]:after,
+a[href="#red"]:after	{ .sprite-position(@br-itz-r)!important; }
+a[href="#kbb"]:after,
+a[href="#kbm-b"]:after	{ .sprite-position(@br-kbm-b)!important; }
+a[href="#kbm"]:after,
+a[href="#kbm-o"]:after	{ .sprite-position(@br-kbm-o)!important; }
+a[href="#keyd"]:after   { .sprite-position(@br-keyd)!important; }
+a[href="#pain"]:after,
+a[href="#png"]:after	{ .sprite-position(@br-pain)!important; }
 
 
-/* Worlds */
-a[href="#dp"]:after                          { .bg-pos(@teams-width * 7, 0); }
-a[href="#bears"]:after, a[href="#gam"]:after { .bg-pos(@teams-width * 7, @teams-height); }
-a[href="#gaming"]:after, a[href="#gg"]:after { .bg-pos(@teams-width * 7, @teams-height * 2); }
-a[href="#min"]:after, a[href="#msk"]:after   { .bg-pos(@teams-width * 7, @teams-height * 3); }
-a[href="#royal"]:after, a[href="#ryl"]:after { .bg-pos(@teams-width * 7, @teams-height * 4); }
+/* Worlds S3 / S4*/
+a[href="#bjk"]:after    { .sprite-position(@s3-bjk)!important; }
+a[href="#dp"]:after     { .sprite-position(@s3-dp)!important; }
+a[href="#bears"]:after,
+a[href="#gam"]:after    { .sprite-position(@s3-gam)!important; }
+a[href="#gg"]:after,
+a[href="#gaming"]:after { .sprite-position(@s3-gg)!important; }
+a[href="#msk"]:after    { .sprite-position(@s3-msk)!important; }
+a[href="#ryl"]:after, a[href="#sh"]:after, a[href="#shrc"]:after,
+a[href="#royal"]:after  { .sprite-position(@s3-ryl)!important; }
 
 
-/* SCAN EUW */
-a[href="#anexis"]:after                         { .bg-pos(@teams-width * 8, 0); }
-a[href="#ete"]:after, a[href="#eternity"]:after { .bg-pos(@teams-width * 8, @teams-height); }
-a[href="#hc"]:after                             { .bg-pos(@teams-width * 8, @teams-height * 2); }
-a[href="#rg"]:after                             { .bg-pos(@teams-width * 8, @teams-height * 3); }
+/* 2015 Season Worlds */
 
+/* IWC */
+a[href="#bkt"]:after    { .sprite-position(@iwc2015-bkt)!important; }
+a[href="#chf"]:after    { .sprite-position(@iwc2015-chf)!important; }
+a[href="#dfm"]:after    { .sprite-position(@iwc2015-dfm)!important; }
+a[href="#hr"]:after    { .sprite-position(@iwc2015-hr)!important; }
+a[href="#klg"]:after    { .sprite-position(@iwc2015-klg)!important; }
+//Pain Gaming under brazil
+//Dark Passage under S3 worlds
 
-/* Disbanded/old */
-a[href="#dru"]:after   { .bg-pos(@teams-width * 9, 0); }
-a[href="#sns"]:after   { .bg-pos(@teams-width * 9, @teams-height); }
-a[href="#nip"]:after   { .bg-pos(@teams-width * 9, @teams-height * 3); }
-a[href="#sword"]:after { .bg-pos(@teams-width * 9, @teams-height * 4); }
-
-
-/* Unsorted */
-a[href="#esuba"]:after    { .bg-pos(@teams-width * 10, 0); }
-a[href="#pain"]:after     { .bg-pos(@teams-width * 10, @teams-height); }
-a[href="#roughnex"]:after { .bg-pos(@teams-width * 10, @teams-height * 3); }
-
-
-/* Allstars */
-a[href="#america"]:after,
-a[href="#china"]:after,
-a[href="#europe"]:after,
-a[href="#korea"]:after,
-a[href="#sea"]:after {
-  content: "";
-  width: 16px;
-  height: 11px;
-  background: url(%%teams%%) no-repeat scroll 16px 11px transparent;
-  display: inline-block;
-  vertical-align: 1%;
-  cursor: default !important;
-}
-
-a[href="#america"]:after { .bg-pos(@teams-width * 11, 0px) }
-a[href="#china"]:after   { .bg-pos(@teams-width * 11, -11px); }
-a[href="#europe"]:after  { .bg-pos(@teams-width * 11, -22px); }
-a[href="#korea"]:after   { .bg-pos(@teams-width * 11, -33px); }
-a[href="#sea"]:after     { .bg-pos(@teams-width * 11, -44px); }
+/* 2016 LCS Promos - move qualifiers to region */
+a[href="#mou"]:after    { .sprite-position(@eu-mouz)!important; }
+a[href="#cst"]:after    { .sprite-position(@na-cst)!important; }
+a[href="#img"]:after    { .sprite-position(@na-img)!important; }
+//Existing LCS times are currently under their respective regions.

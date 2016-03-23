@@ -1,0 +1,48 @@
+.res-nightmode, html:lang(dd) {
+  .link.last-clicked { overflow: hidden; }
+  
+  .expando-button {
+    &.selftext, &.video, &.image, &.selftext {
+      &.collapsed, &.collapsed:hover {
+        background: url(%%nightmode-sprites%%)!important;
+      }
+    }
+    &.selftext {
+      &.collapsed { background-position: 0px -80px!important; }
+      &.expanded { background-position: 0px -105px!important; }
+      &.collapsed:hover { background-position: -25px -80px!important; }
+      &.expanded:hover { background-position: -25px -105px!important; }
+    }
+    &.video {
+      &.collapsed { background-position: 0px -130px!important; }
+      &.expanded { background-position: 0px -155px!important; }
+      &.collapsed:hover { background-position: -25px -130px!important; }
+      &.expanded:hover { background-position: -25px -155px!important; }
+    }
+    &.image {
+      &.collapsed { background-position: 0px -180px!important; }
+      &.expanded { background-position: 0px -205px!important; }
+      &.collapsed:hover { background-position: -25px -180px!important; }
+      &.expanded:hover { background-position: -25px -205px!important; }
+    }
+    &.image.gallery {
+      &.collapsed { background-position: 0px -230px!important; }
+      &.expanded { background-position: 0px -255px!important; }
+      &.collapsed:hover { background-position: -25px -230px!important; }
+      &.expanded:hover { background-position: -25px -255px!important; }
+    }
+  }
+
+  // No flairs on front page
+  .listing-page .sitetable .flair { display: none; }
+  
+  // Changes "stickied post" text color to make it visible for RES key nav highlighting
+  .RES-keyNav-activeElement .tagline .stickied-tagline { color: #7c7; }
+  
+  // Changes background of the progress indicator (the "click here to load next page" at the end of the frontpage)
+  #progressIndicator { background-color: #26293c!important; }
+}
+// Remove alternate post color from RES nightmode
+.res-nightmode {
+  .listing-page .sitetable > div:nth-of-type(4n+1) { background-color: #080808; }
+}

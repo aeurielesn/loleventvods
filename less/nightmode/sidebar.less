@@ -1,0 +1,88 @@
+@icon-spacing: -19px;
+@social-spacing: -49px;
+
+.res-nightmode {
+  h1 { border-bottom: none !important; }
+  .sidebox {
+    background-color: transparent!important;
+    border: none!important;
+    color: #000!important;
+    border-radius: 5px!important;
+  }
+  .side .titlebox .usertext-body ul { background-color: #080808!important; }
+  .RES-keyNav-activeElement .usertext .md a:visited[href*="lol.eventvods.com"] {
+    color: #8ad;
+  }
+}
+
+.res-nightmode, html:lang(dd) {
+    
+  // Search box modifications
+  .side {
+    .spacer > #search input {
+      background-color: #444;
+      color: #ccc;
+    }
+    .titlebox { color: #ddd; }
+  }
+  
+  // Sidebar table modification
+  .side {
+    .md table {
+      width: 325px;
+      .box-shadow(1px 1px 1px #3261ca);
+    }
+  }
+  
+  .infobar { background-color: transparent!important; }
+  
+  // Modify submit a new post
+  .sidebox .morelink, .submit .morelink {
+    background: url(%%gray%%);
+    background-position: 0px -68px;
+    &:hover { background-position: 0px -34px; }
+    a { 
+      &:before { color: #000; }
+      &:hover:before { color: #fff; }
+    }
+  }
+  
+  // Change non-approved submitter message coloring
+  .sidebox .spacer {
+    background-color: #080808;
+    color: #ccc!important;
+  }
+
+  // Sidebar headings
+  .side .titlebox .md {
+    > h1, ul li:nth-child(1) {
+      border-left: 7px solid #666;
+      background-color: #ccc;
+      color: black!important;
+      &:hover {
+        border-left: 7px solid #367588;
+      }
+    }
+    ul {
+      &:hover {
+        .box-shadow(12px 0 10px #ccc);
+      }
+      // Fix for overenthusiastic RES selector
+      strong {
+        color: black!important;
+      }
+      li {
+        color: #ddd;
+        background-color: #111;
+        border-left: 7px solid #666;
+        border-bottom: 1px solid #777;
+        &:hover {
+          background-color: #333;
+        }
+        &:nth-child(1):hover {
+          background-color: #ccc;
+        }
+      }
+    }
+  }
+}

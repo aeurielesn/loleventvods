@@ -1,0 +1,23 @@
+@header-spacing: -34px;
+
+.res-nightmode, html:lang(dd) {
+  // Changes background color for everything
+  body, .side, .flairselector, .linefield, 
+  .icon-menu a, .side .leavemoderator, .side .leavecontributor-button, 
+  .side .titlebox, .side .spacer .titlebox .redditname, .side .titlebox .flairtoggle, 
+  .side .usertext-body .md ol, .side .usertext-body .md ol ol,
+  .side .usertext-body .md ol ol li, .side blockquote, .modactionlisting table * {
+    background-color: #080808;
+  }
+  
+  // Hides downvote arrow on posts only; still accessible on comments
+  // Also replaces default RES nightmode arrow sprites
+  .arrow, .arrow.up, .arrow.up:hover, .arrow.upmod,
+  .arrow.down, .arrow.down:hover, .arrow.downmod { background: url(%%nightmode-sprites%%)!important; }
+  
+  .arrow.up, .arrow.up:hover { background-position: -30px -52px!important; }
+  .arrow.upmod { background-position: -45px -52px!important; }
+  .arrow.down { visibility: hidden; display: none; }
+  .comment .arrow.down, .comment .arrow.down:hover { visibility: visible; display: block; background-position: 0px -52px!important; margin-top: 5px; }
+  .comment .arrow.downmod { background-position: -15px -52px!important; margin-top: 5px; }
+}
